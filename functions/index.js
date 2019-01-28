@@ -15,8 +15,12 @@ app.get('/:id', (req, res) => {
     });
 });
 
-app.get('/:id/image', async (request, response) => {
-    return require('./image').generateImage(request, response);
+app.get('/:id/image/random', async (request, response) => {
+    return require('./image').generateRandomSVG(request, response);
+});
+
+app.get('/:base/:body/:roof/image', async (request, response) => {
+    return require('./image').generateSVG(request, response);
 });
 
 // Expose Express API as a single Cloud Function:
