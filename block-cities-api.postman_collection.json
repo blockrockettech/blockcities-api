@@ -59,6 +59,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Random fill",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://us-central1-block-cities.cloudfunctions.net/api/1/image/fill",
+					"protocol": "https",
+					"host": [
+						"us-central1-block-cities",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"1",
+						"image",
+						"fill"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
