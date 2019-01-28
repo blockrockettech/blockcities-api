@@ -316,6 +316,9 @@ module.exports = {
 
             canvas.svg(svgRaw);
 
+            canvas.select('#top-T2').fill(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
+            canvas.select('#body-R2').fill(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
+            canvas.select('#body-L2').fill(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
             canvas.select('#windows-R2 .window').fill(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
             canvas.select('#windows-L2 .window').fill(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
 
