@@ -1,4 +1,5 @@
 const {createCanvas, loadImage} = require('canvas');
+const blockcitiesContractService = require('../services/blockcities.contract.service');
 
 const loadSvgs = async function () {
     const base0 = await loadImage('./image/svgs/bases/432-park-curt-base.svg');
@@ -42,6 +43,8 @@ module.exports = {
 
     async generateRandomSVG (request, response) {
         console.log('generateRandomSVG:', request.params, request.headers);
+
+        console.log(blockcitiesContractService.details(1));
 
         try {
             const {bases, bodies, roofs} = await loadSvgs();

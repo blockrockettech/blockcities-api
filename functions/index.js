@@ -11,11 +11,15 @@ app.get('/:id', (req, res) => {
     return res.json({
         name: `building ${req.params.id}`,
         description: `building ${req.params.id}`,
-        image: `http://${req.headers.host}/block-cities/us-central1/api/image`
+        image: `https://${req.headers.host}/block-cities/us-central1/api/${req.params.id}/image`
     });
 });
 
 app.get('/:id/image/random', async (request, response) => {
+    return require('./image').generateRandomSVG(request, response);
+});
+
+app.get('/:id/image', async (request, response) => {
     return require('./image').generateRandomSVG(request, response);
 });
 
