@@ -23,6 +23,10 @@ app.get('/:base/:body/:roof/image', async (request, response) => {
     return require('./image').generateSVG(request, response);
 });
 
+app.get('/:id/image/fill', async (request, response) => {
+    return require('./image').fillSVG(request, response);
+});
+
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
 

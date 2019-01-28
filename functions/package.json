@@ -9,11 +9,13 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
+    "canvas": "^2.3.1",
+    "cors": "^2.8.4",
     "firebase-admin": "~6.0.0",
     "firebase-functions": "^2.1.0",
-    "cors": "^2.8.4",
     "lodash": "^4.17.10",
-    "canvas": "^2.3.1"
+    "svg.js": "^2.7.1",
+    "svgdom": "0.0.18"
   },
   "private": true,
   "engines": {
