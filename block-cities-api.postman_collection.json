@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "1aa77f00-c741-4f7f-afe9-687e7192db81",
+		"name": "block-cities-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Base-Body-Roof",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://us-central1-block-cities.cloudfunctions.net/api/1/1/1/image",
+					"protocol": "https",
+					"host": [
+						"us-central1-block-cities",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"1",
+						"1",
+						"1",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://us-central1-block-cities.cloudfunctions.net/api/1/image/random",
+					"protocol": "https",
+					"host": [
+						"us-central1-block-cities",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"1",
+						"image",
+						"random"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
