@@ -1,6 +1,7 @@
 const {createCanvas, loadImage} = require('canvas');
-const cheerio = require('cheerio');
+
 const blockcitiesContractService = require('../services/blockcities.contract.service');
+const cheerioSVGService = require('../services/cheerioSVGService.service');
 
 const loadSvgs = async function () {
     const base0 = await loadImage('./image/svgs/bases/432-park-curt-base.svg');
@@ -140,34 +141,26 @@ module.exports = {
         }
     },
 
-    async fillSVG (request, response) {
+    async processSVG (request, response) {
 
         try {
-            let svgRaw = require('./testSvg');
+            const fills = [
+                {className: '.exterior_x002D_L1', fill: 'pink'},
+                {className: '.exterior_x002D_R2', fill: 'yellow'},
+                {className: '.top_x002D_T1', fill: 'red'},
+                {className: '.window_x002D_R1', fill: 'green'},
+                {className: '.st0', fill: 'purple'},
+                {className: '.st1', fill: 'cyan'},
+                {className: '.st2', fill: 'blue'}
+            ];
 
-            const $ = cheerio.load(svgRaw);
+            const processedSvg = cheerioSVGService.process(
+                require('./testSvg'),
+                fills
+            );
 
-            // <style type="text/css">
-            // .exterior_x002D_L1{fill:#2E2E2E;}
-            // .exterior_x002D_R2{fill:#5D5D5D;}
-            // .top_x002D_T1{fill:#E8E8E8;}
-            // .window_x002D_R1{fill:#171717;}
-            // .st0{fill:#A2A2A2;}
-            // .st1{fill:#D1D1D1;}
-            // .st2{fill:#8B8B8B;}
-            // </style>
-
-            $('.exterior_x002D_L1').attr('fill', 'pink');
-            $('.exterior_x002D_R2').attr('fill', 'yellow');
-            $('.top_x002D_T1').attr('fill', 'red');
-            $('.window_x002D_R1').attr('fill', 'green');
-            $('.st0').attr('fill', 'purple');
-            $('.st1').attr('fill', 'cyan');
-            $('.st2').attr('fill', 'blue');
-
-            // console.log(canvas.svg());
             response.contentType('image/svg+xml');
-            return response.send($.xml());
+            return response.send(processedSvg);
         } catch (e) {
             console.error(e);
         }
