@@ -7,7 +7,7 @@ const app = express();
 // Automatically allow cross-origin requests
 app.use(cors({origin: true}));
 
-app.get('/:id', (req, res) => {
+app.get('/token/:id', (req, res) => {
     return res.json({
         name: `building ${req.params.id}`,
         description: `building ${req.params.id}`,
@@ -31,7 +31,7 @@ app.get('/image/process', async (request, response) => {
     return require('./image').processSVG(request, response);
 });
 
-app.get('/image/process/stack', async (request, response) => {
+app.get('/stitch', async (request, response) => {
     return require('./image').processAndStack(request, response);
 });
 

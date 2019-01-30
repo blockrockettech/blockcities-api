@@ -143,13 +143,15 @@ module.exports = {
     async processAndStack (request, response) {
         console.log('processAndStack:', request.params, request.headers);
 
+        const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
+
         try {
             const fills = [
-                {className: '.exterior_x002D_L1', fill: 'pink'},
-                {className: '.exterior_x002D_R2', fill: 'red'},
-                {className: '.top_x002D_T1', fill: 'yellow'},
-                {className: '.top_x002D_T2', fill: 'blue'},
-                {className: '.window_x002D_R1', fill: 'purple'},
+                {className: '.exterior_x002D_L1', fill: qOr(request,'exterior_x002D_L1', '#2E2E2E') },
+                {className: '.exterior_x002D_R2', fill: qOr(request,'exterior_x002D_R2', '#5D5D5D')},
+                {className: '.top_x002D_T1', fill: qOr(request,'top_x002D_T1', '#E8E8E8')},
+                {className: '.top_x002D_T2', fill: qOr(request,'top_x002D_T2', '#B9B9B9')},
+                {className: '.window_x002D_R1', fill: qOr(request,'window_x002D_R1', '#171717')},
             ];
 
             const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
