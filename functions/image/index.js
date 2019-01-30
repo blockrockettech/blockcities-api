@@ -152,6 +152,7 @@ module.exports = {
                 {className: '.top_x002D_T1', fill: qOr(request,'top_x002D_T1', '#E8E8E8')},
                 {className: '.top_x002D_T2', fill: qOr(request,'top_x002D_T2', '#B9B9B9')},
                 {className: '.window_x002D_R1', fill: qOr(request,'window_x002D_R1', '#171717')},
+                {className: '.window_x002D_L1', fill: qOr(request,'window_x002D_L1', '#171717')},
             ];
 
             const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
