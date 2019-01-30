@@ -31,6 +31,10 @@ app.get('/image/process', async (request, response) => {
     return require('./image').processSVG(request, response);
 });
 
+app.get('/image/process/stack', async (request, response) => {
+    return require('./image').processAndStack(request, response);
+});
+
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
 

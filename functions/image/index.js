@@ -1,4 +1,5 @@
-const {createCanvas, loadImage} = require('canvas');
+const readFilePromise = require('fs-readfile-promise');
+const {createCanvas, loadImage, Image} = require('canvas');
 
 const blockcitiesContractService = require('../services/blockcities.contract.service');
 const cheerioSVGService = require('../services/cheerioSVGService.service');
@@ -98,8 +99,6 @@ module.exports = {
         try {
             const {bases, bodies, roofs} = await loadSvgs();
 
-            // new Image("data:image/svg+xml," + svgdata);
-
             const randomBase = request.params.base;
             const randomBody = request.params.body;
             const randomRoof = request.params.roof;
@@ -132,6 +131,69 @@ module.exports = {
             response.contentType('image/svg+xml');
             const buffer = canvas.toBuffer('image/svg+xml', {
                 title: `base ${randomBase} body ${randomBody} roof ${randomRoof}`,
+                keywords: 'BlockCities',
+                creationDate: new Date()
+            });
+            return response.send(buffer);
+        } catch (e) {
+            console.error(e);
+        }
+    },
+
+    async processAndStack (request, response) {
+        console.log('processAndStack:', request.params, request.headers);
+
+        try {
+            const fills = [
+                {className: '.exterior_x002D_L1', fill: 'pink'},
+                {className: '.exterior_x002D_R2', fill: 'red'},
+                {className: '.top_x002D_T1', fill: '#E8E8E8'},
+                {className: '.top_x002D_T2', fill: '#B9B9B9'},
+                {className: '.window_x002D_R1', fill: '#171717'},
+            ];
+
+            const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
+            const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-01.svg', 'utf8');
+            const rawRoofSvg = await readFilePromise('./image/svgs/equitable-standard-roof-01.svg', 'utf8');
+
+            const processedBaseSvg = cheerioSVGService.process(rawBaseSvg, fills);
+            const processedBodySvg = cheerioSVGService.process(rawBodySvg, fills);
+            const processedRoofSvg = cheerioSVGService.process(rawRoofSvg, fills);
+
+            const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
+            const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
+            const roofImage = await loadImage(Buffer.from(processedRoofSvg, 'utf8'));
+
+            const base = {width: baseImage.width, height: baseImage.height, anchor: 81, svg: baseImage};
+            const body = {width: bodyImage.width, height: bodyImage.height, anchor: 420, svg: bodyImage};
+            const roof = {width: roofImage.width, height: roofImage.height, svg: roofImage};
+
+            // height of the base, body, roof - minus the difference in the offset anchor from body and height
+            const canvasHeight = base.height
+                + body.height
+                + roof.height
+                - (base.height - base.anchor)
+                - (body.height - body.anchor);
+
+            // Always assume the base if the widest post for now
+            const canvasWidth = base.width;
+
+            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+
+            const ctx = canvas.getContext('2d');
+
+            // Base
+            ctx.drawImage(base.svg, (canvasWidth - base.width) / 2, canvasHeight - base.height);
+
+            // Body
+            ctx.drawImage(body.svg, (canvasWidth - body.width) / 2, canvasHeight - base.anchor - body.height);
+
+            // Roof
+            ctx.drawImage(roof.svg, (canvasWidth - roof.width) / 2, canvasHeight - base.anchor - body.anchor - roof.height);
+
+            response.contentType('image/svg+xml');
+            const buffer = canvas.toBuffer('image/svg+xml', {
+                title: `BlockCities`,
                 keywords: 'BlockCities',
                 creationDate: new Date()
             });

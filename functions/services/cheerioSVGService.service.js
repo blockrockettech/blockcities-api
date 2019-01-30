@@ -3,7 +3,7 @@ const _ = require('lodash');
 class CheerioSVGService {
 
     process (svgXml, fillClasses = [], opacityClasses = []) {
-        const $ = require('cheerio').load(svgXml);
+        const $ = require('cheerio').load(svgXml, {xmlMode: true});
 
         _.forEach(fillClasses, (c) => $(c.className).attr('fill', c.fill));
 
