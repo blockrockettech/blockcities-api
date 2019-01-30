@@ -147,9 +147,9 @@ module.exports = {
             const fills = [
                 {className: '.exterior_x002D_L1', fill: 'pink'},
                 {className: '.exterior_x002D_R2', fill: 'red'},
-                {className: '.top_x002D_T1', fill: '#E8E8E8'},
-                {className: '.top_x002D_T2', fill: '#B9B9B9'},
-                {className: '.window_x002D_R1', fill: '#171717'},
+                {className: '.top_x002D_T1', fill: 'yellow'},
+                {className: '.top_x002D_T2', fill: 'blue'},
+                {className: '.window_x002D_R1', fill: 'purple'},
             ];
 
             const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
