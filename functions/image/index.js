@@ -149,30 +149,53 @@ module.exports = {
         const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
 
         try {
+            <!--.windows_x002D_R1{fill:#171717;}-->
+            <!--.body_x002D_L1{fill:#2E2E2E;}-->
+            <!--.body_x002D_R1{fill:#5D5D5D;}-->
+            <!--.top_x002D_T1{fill:#8B8B8B;}-->
+
             const fills = [
-                {className: '.exterior_x002D_L1', fill: qOr(request,'exterior_x002D_L1', '#2E2E2E') },
-                {className: '.exterior_x002D_R2', fill: qOr(request,'exterior_x002D_R2', '#5D5D5D')},
-                {className: '.top_x002D_T1', fill: qOr(request,'top_x002D_T1', '#E8E8E8')},
-                {className: '.top_x002D_T2', fill: qOr(request,'top_x002D_T2', '#B9B9B9')},
-                {className: '.window_x002D_R1', fill: qOr(request,'window_x002D_R1', '#171717')},
-                {className: '.window_x002D_L1', fill: qOr(request,'window_x002D_L1', '#171717')},
+                {className: '.exterior_x002D_L1', fill: qOr(request, 'exterior_x002D_L1', '#2E2E2E')},
+                {className: '.exterior_x002D_R2', fill: qOr(request, 'exterior_x002D_R2', '#5D5D5D')},
+                {className: '.top_x002D_T1', fill: qOr(request, 'top_x002D_T1', '#E8E8E8')},
+                {className: '.top_x002D_T2', fill: qOr(request, 'top_x002D_T2', '#B9B9B9')},
+                <!--.body_x002D_L1{fill:#2E2E2E;}-->
+                <!--.body_x002D_R1{fill:#5D5D5D;}-->
+                {className: '.window_x002D_R1', fill: qOr(request, 'window_x002D_R1', '#171717')},
+                {className: '.window_x002D_L1', fill: qOr(request, 'window_x002D_L1', '#171717')},
             ];
 
             const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
-            const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-01.svg', 'utf8');
+            // const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-01.svg', 'utf8');
+            const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-tall-01.svg', 'utf8');
             const rawRoofSvg = await readFilePromise('./image/svgs/equitable-standard-roof-01.svg', 'utf8');
+            // const rawRoofSvg = await readFilePromise('./image/svgs/pool-roof-7-01.svg', 'utf8');
 
-            const processedBaseSvg = cheerioSVGService.process(rawBaseSvg, fills);
-            const processedBodySvg = cheerioSVGService.process(rawBodySvg, fills);
-            const processedRoofSvg = cheerioSVGService.process(rawRoofSvg, fills);
+            const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
+            const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
+            const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg, fills);
 
             const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
             const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
             const roofImage = await loadImage(Buffer.from(processedRoofSvg, 'utf8'));
 
-            const base = {width: baseImage.width, height: baseImage.height, anchor: 81, svg: baseImage};
-            const body = {width: bodyImage.width, height: bodyImage.height, anchor: 420, svg: bodyImage};
-            const roof = {width: roofImage.width, height: roofImage.height, svg: roofImage};
+            const base = {
+                width: baseImage.width,
+                height: baseImage.height,
+                anchor: processedBaseAnchor,
+                svg: baseImage
+            };
+            const body = {
+                width: bodyImage.width,
+                height: bodyImage.height,
+                anchor: processedBodyAnchor,
+                svg: bodyImage
+            };
+            const roof = {
+                width: roofImage.width,
+                height: roofImage.height,
+                svg: roofImage
+            };
 
             // height of the base, body, roof - minus the difference in the offset anchor from body and height
             const canvasHeight = base.height

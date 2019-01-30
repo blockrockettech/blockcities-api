@@ -7,8 +7,10 @@ class CheerioSVGService {
 
         _.forEach(fillClasses, (c) => $(c.className).attr('fill', c.fill));
 
-        console.log($.xml());
-        return $.xml();
+        const svgId = $('svg').attr('id');
+        const anchor = svgId.split('_')[1];
+        console.log(anchor);
+        return {svg: $.xml(), anchor};
     }
 }
 
