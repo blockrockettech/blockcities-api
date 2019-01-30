@@ -140,6 +140,9 @@ module.exports = {
         }
     },
 
+    /*
+        https://us-central1-block-cities.cloudfunctions.net/api/stitch?exterior_x002D_L1=yellow&exterior_x002D_R2=cyan&top_x002D_T1=pink&top_x002D_T2=purple&window_x002D_R1=lime&window_x002D_L1=magenta
+    */
     async processAndStack (request, response) {
         console.log('processAndStack:', request.params, request.headers);
 
