@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1aa77f00-c741-4f7f-afe9-687e7192db81",
+		"_postman_id": "c5f48dc8-01cd-464b-938e-858327a2c5ac",
 		"name": "block-cities-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -82,6 +82,65 @@
 						"1",
 						"image",
 						"fill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token Metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"block-cities",
+						"us-central1",
+						"api",
+						"network",
+						"5777",
+						"token",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/1/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"block-cities",
+						"us-central1",
+						"api",
+						"network",
+						"5777",
+						"token",
+						"1",
+						"details"
 					]
 				}
 			},

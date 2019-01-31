@@ -7,14 +7,6 @@ const app = express();
 // Automatically allow cross-origin requests
 app.use(cors({origin: true}));
 
-app.get('/token/:id', (req, res) => {
-    return res.json({
-        name: `building ${req.params.id}`,
-        description: `building ${req.params.id}`,
-        image: `https://${req.headers.host}/block-cities/us-central1/api/${req.params.id}/image`
-    });
-});
-
 app.get('/:id/image/random', async (request, response) => {
     return require('./image').generateRandomSVG(request, response);
 });
@@ -34,6 +26,23 @@ app.get('/image/process', async (request, response) => {
 app.get('/stitch', async (request, response) => {
     return require('./image').processAndStack(request, response);
 });
+
+// Notes:
+//  - I think we should version the tokens URI lookups to help migrations and changes
+//  - Reason as once the image generated we may want to cache it and serve this direct from the API
+//  - V2 may then be a more advanced version etc and would reduce the testing surface needed for changes
+//  - It would me that the token URI hash we set in the contract is `/v1/:tokenId`
+
+// Token URI looking defined in the contract
+app.get('/network/5777/token/:tokenId', async (request, response) => {
+    return require('./tokenUri').tokenMetadata(5777, request, response);
+});
+
+// A more detailed lookup method for pulling back all details for a token
+app.get('/network/5777/token/:tokenId/details', async (request, response) => {
+    return require('./tokenUri').lookupTokenDetails(5777, request, response);
+});
+
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);

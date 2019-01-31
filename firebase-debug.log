@@ -1,0 +1,31 @@
+[debug] [2019-01-31T14:32:56.186Z] ----------------------------------------------------------------------
+[debug] [2019-01-31T14:32:56.188Z] Command:       /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/node /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/firebase serve --only functions
+[debug] [2019-01-31T14:32:56.188Z] CLI Version:   4.2.1
+[debug] [2019-01-31T14:32:56.188Z] Platform:      darwin
+[debug] [2019-01-31T14:32:56.188Z] Node Version:  v8.9.4
+[debug] [2019-01-31T14:32:56.189Z] Time:          Thu Jan 31 2019 14:32:56 GMT+0000 (GMT)
+[debug] [2019-01-31T14:32:56.189Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-31T14:32:56.289Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-31T14:32:56.290Z] > authorizing via signed-in user
+[debug] [2019-01-31T14:32:56.292Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-01-31T14:32:56.292Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2019-01-31T14:32:56.473Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-31T14:32:56.486Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/block-cities  
+ 
+[debug] [2019-01-31T14:32:57.106Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-31T14:32:57.107Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/block-cities  
+ 
+[debug] [2019-01-31T14:32:57.858Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jamesmorgan/Dropbox/workspace-blockrocket/blockcities-api'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-01-31T14:33:12.474Z] Fetching environment
+[debug] [2019-01-31T14:33:12.477Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/34610683078:getServerAppConfig  
+ 
+[debug] [2019-01-31T14:33:12.666Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-31T14:33:12.666Z] Starting @google-cloud/functions-emulator
+[debug] [2019-01-31T14:33:17.237Z] Parsing function triggers
+[info] ✔  functions: api: http://localhost:5000/block-cities/us-central1/api
