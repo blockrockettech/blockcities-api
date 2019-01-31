@@ -126,7 +126,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/1/details",
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/2/details",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -139,8 +139,38 @@
 						"network",
 						"5777",
 						"token",
-						"1",
+						"2",
 						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/2/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"block-cities",
+						"us-central1",
+						"api",
+						"network",
+						"5777",
+						"token",
+						"2",
+						"image"
 					]
 				}
 			},

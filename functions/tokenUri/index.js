@@ -4,8 +4,7 @@ const blockcitiesContractService = require('../services/blockcities.contract.ser
 
 module.exports = {
 
-    // TODO switch network for multiple end points
-    async tokenMetadata(network = 1, request, response) {
+    async tokenMetadata(request, response) {
 
         const tokenId = request.params.tokenId;
         if (!tokenId) {
@@ -13,6 +12,8 @@ module.exports = {
                 failure: `Token ID not provided`
             });
         }
+
+        const network = request.params.network;
 
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         console.log(tokenBaseURI);
@@ -20,11 +21,11 @@ module.exports = {
         return response.status(200).json({
             name: `building ${tokenId}`,
             description: `building ${tokenId}`,
-            image: `${tokenBaseURI[0]}/${tokenId}/image`
+            image: `${tokenBaseURI[0]}/token/${tokenId}/image`
         });
     },
 
-    async lookupTokenDetails(network = 1, request, response) {
+    async lookupTokenDetails(request, response) {
 
         const tokenId = request.params.tokenId;
         if (!tokenId) {
@@ -32,6 +33,8 @@ module.exports = {
                 failure: `Token ID not provided`
             });
         }
+
+        const network = request.params.network;
 
         const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
         console.log(tokenDetails);

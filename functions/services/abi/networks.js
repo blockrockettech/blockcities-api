@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const Eth = require('ethjs');
 
 const {INFURA_KEY} = require('../constants');
@@ -11,7 +12,7 @@ const connectToBlockCities = (network) => {
 };
 
 function getHttpProviderUri(network) {
-    if (network === 5777) {
+    if (_.toNumber(network) === 5777) {
         return 'http://127.0.0.1:7545'; // a.k.a. truffle
     }
     return `https://${getNetwork(network)}.infura.io/v3/${INFURA_KEY}`;

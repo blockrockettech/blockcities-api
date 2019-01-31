@@ -14,6 +14,8 @@ const lookupMetadata = async (tokenUri) => {
 class BlockcitiesContractService {
 
     async tokenBaseURI(network = 1) {
+        console.log(`Find base token URI on network [${network}]`);
+
         const token = connectToBlockCities(network);
         const tokenBaseURI = await token.tokenBaseURI();
         console.log(tokenBaseURI);
@@ -21,11 +23,11 @@ class BlockcitiesContractService {
     }
 
     async tokenDetails(network = 1, tokenId) {
-        console.log(`looking up:`, tokenId);
+        console.log(`Find token details for [${tokenId}] on network [${network}]`);
 
         const token = connectToBlockCities(network);
 
-        // get token attributes
+        // Get token attributes
         const {
             _city,
             _base,
@@ -40,14 +42,13 @@ class BlockcitiesContractService {
             _architect
         } = await token.attributes(tokenId);
 
-        // get token URI
+        // Get token URI
         const tokenURI = await token.tokenURI(tokenId);
-        console.log("tokenURI", tokenURI);
 
-        // get metadata
+        // Get metadata
         const metadata = await lookupMetadata(tokenURI[0]);
-        console.log("metadata", metadata);
 
+        // Build full details response
         return {
             city: _city,
             base: _base,

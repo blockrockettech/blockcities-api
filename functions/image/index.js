@@ -44,7 +44,7 @@ const loadSvgs = async function () {
 
 module.exports = {
 
-    async generateRandomSVG (request, response) {
+    async generateRandomSVG(request, response) {
         console.log('generateRandomSVG:', request.params, request.headers);
 
         console.log(blockcitiesContractService.details(1));
@@ -93,7 +93,7 @@ module.exports = {
         }
     },
 
-    async generateSVG (request, response) {
+    async generateSVG(request, response) {
         console.log('generateSVG:', request.params, request.headers);
 
         try {
@@ -143,7 +143,7 @@ module.exports = {
     /*
         https://us-central1-block-cities.cloudfunctions.net/api/stitch?exterior_x002D_L1=yellow&exterior_x002D_R2=cyan&top_x002D_T1=pink&top_x002D_T2=purple&window_x002D_R1=lime&window_x002D_L1=magenta
     */
-    async processAndStack (request, response) {
+    async processAndStack(request, response) {
         console.log('processAndStack:', request.params, request.headers);
 
         const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
@@ -232,7 +232,7 @@ module.exports = {
         }
     },
 
-    async processSVG (request, response) {
+    async processSVG(request, response) {
 
         try {
             const fills = [
@@ -255,7 +255,11 @@ module.exports = {
         } catch (e) {
             console.error(e);
         }
+    },
+
+    async generateTokenImage(request, response) {
+
+
     }
 
-}
-;
+};
