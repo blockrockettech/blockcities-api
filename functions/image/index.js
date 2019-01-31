@@ -5,19 +5,19 @@ const blockcitiesContractService = require('../services/blockcities.contract.ser
 const cheerioSVGService = require('../services/cheerioSVGService.service');
 
 const loadSvgs = async function () {
-    const base0 = await loadImage('./image/svgs/bases/432-park-curt-base.svg');
-    const base1 = await loadImage('./image/svgs/bases/432-park-horiz-base.svg');
-    const base2 = await loadImage('./image/svgs/bases/432-park-rect-base.svg');
-    const base3 = await loadImage('./image/svgs/bases/432-park-vert-base.svg');
+    const base0 = await loadImage('./image/raw_svgs/svgs/bases/432-park-curt-base.svg');
+    const base1 = await loadImage('./image/raw_svgs/svgs/bases/432-park-horiz-base.svg');
+    const base2 = await loadImage('./image/raw_svgs/svgs/bases/432-park-rect-base.svg');
+    const base3 = await loadImage('./image/raw_svgs/svgs/bases/432-park-vert-base.svg');
 
-    const body0 = await loadImage('./image/svgs/bodies/body-curt-windows.svg');
-    const body1 = await loadImage('./image/svgs/bodies/body-horiz-windows.svg');
-    const body2 = await loadImage('./image/svgs/bodies/body-rect-windows.svg');
-    const body3 = await loadImage('./image/svgs/bodies/body-vert-windows.svg');
+    const body0 = await loadImage('./image/raw_svgs/svgs/bodies/body-curt-windows.svg');
+    const body1 = await loadImage('./image/raw_svgs/svgs/bodies/body-horiz-windows.svg');
+    const body2 = await loadImage('./image/raw_svgs/svgs/bodies/body-rect-windows.svg');
+    const body3 = await loadImage('./image/raw_svgs/svgs/bodies/body-vert-windows.svg');
 
-    const roof0 = await loadImage('./image/svgs/roofs/432-park-roof.svg');
-    const roof1 = await loadImage('./image/svgs/roofs/200-vesey-roof.svg');
-    const roof2 = await loadImage('./image/svgs/roofs/pool-roof-11.svg');
+    const roof0 = await loadImage('./image/raw_svgs/svgs/roofs/432-park-roof.svg');
+    const roof1 = await loadImage('./image/raw_svgs/svgs/roofs/200-vesey-roof.svg');
+    const roof2 = await loadImage('./image/raw_svgs/svgs/roofs/pool-roof-11.svg');
 
     const bases = [
         {width: base0.width, height: base0.height, anchor: 81, svg: base0},
@@ -165,11 +165,11 @@ module.exports = {
                 {className: '.window_x002D_L1', fill: qOr(request, 'window_x002D_L1', '#171717')},
             ];
 
-            const rawBaseSvg = await readFilePromise('./image/svgs/equitable-standard-base.svg', 'utf8');
-            // const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-01.svg', 'utf8');
-            const rawBodySvg = await readFilePromise('./image/svgs/equitable-body-tall-01.svg', 'utf8');
-            const rawRoofSvg = await readFilePromise('./image/svgs/equitable-standard-roof-01.svg', 'utf8');
-            // const rawRoofSvg = await readFilePromise('./image/svgs/pool-roof-7-01.svg', 'utf8');
+            const rawBaseSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-base.svg', 'utf8');
+            // const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-01.svg', 'utf8');
+            const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-tall-01.svg', 'utf8');
+            const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-roof-01.svg', 'utf8');
+            // const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/pool-roof-7-01.svg', 'utf8');
 
             const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
             const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
@@ -258,6 +258,29 @@ module.exports = {
     },
 
     async generateTokenImage(request, response) {
+
+        const tokenId = request.params.tokenId;
+        if (!tokenId) {
+            return response.status(400).json({
+                failure: `Token ID not provided`
+            });
+        }
+
+        const network = request.params.network;
+
+        const {
+            city,
+            base, baseExteriorColorway, baseWindowColorway,
+            body, bodyExteriorColorway, bodyWindowColorway,
+            roof, roofExteriorColorway, roofWindowColorway,
+        } = await blockcitiesContractService.tokenDetails(network, tokenId);
+
+        const rootPath = `./raw_svgs/data/${city}`;
+
+        const basePath = `${rootPath}/base/${base}.svg`;
+        const bodyPath = `${rootPath}/body/${body}.svg`;
+        const roofPath = `${rootPath}/roof/${roof}.svg`;
+
 
 
     }
