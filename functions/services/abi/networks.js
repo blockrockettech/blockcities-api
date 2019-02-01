@@ -4,14 +4,13 @@ const Eth = require('ethjs');
 const {INFURA_KEY} = require('../constants');
 const {abi} = require('./blockcities.abi');
 
-
 const connectToBlockCities = (network) => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
         .contract(abi)
         .at('0x194bAfbf8eb2096e63C5d9296363d6DAcdb32527'); // TODO this is local, use a lookup switch
 };
 
-function getHttpProviderUri(network) {
+function getHttpProviderUri (network) {
     if (_.toNumber(network) === 5777) {
         return 'http://127.0.0.1:7545'; // a.k.a. truffle
     }
@@ -43,14 +42,16 @@ const networkSplitter = (network, {ropsten, rinkeby, mainnet, local}) => {
 };
 
 const getNetwork = (network) => {
-    return networkSplitter(network, {
-        mainnet: 'mainnet',
-        ropsten: 'ropsten',
-        rinkeby: 'rinkeby',
-        local: 'local'
-    });
+    return networkSplitter(
+        network,
+        {
+            mainnet: 'mainnet',
+            ropsten: 'ropsten',
+            rinkeby: 'rinkeby',
+            local: 'local'
+        }
+    );
 };
-
 
 module.exports = {
     connectToBlockCities

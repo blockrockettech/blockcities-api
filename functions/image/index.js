@@ -44,7 +44,7 @@ const loadSvgs = async function () {
 
 module.exports = {
 
-    async generateRandomSVG(request, response) {
+    async generateRandomSVG (request, response) {
         console.log('generateRandomSVG:', request.params, request.headers);
 
         console.log(blockcitiesContractService.details(1));
@@ -93,7 +93,7 @@ module.exports = {
         }
     },
 
-    async generateSVG(request, response) {
+    async generateSVG (request, response) {
         console.log('generateSVG:', request.params, request.headers);
 
         try {
@@ -143,7 +143,7 @@ module.exports = {
     /*
         https://us-central1-block-cities.cloudfunctions.net/api/stitch?exterior_x002D_L1=yellow&exterior_x002D_R2=cyan&top_x002D_T1=pink&top_x002D_T2=purple&window_x002D_R1=lime&window_x002D_L1=magenta
     */
-    async processAndStack(request, response) {
+    async processAndStack (request, response) {
         console.log('processAndStack:', request.params, request.headers);
 
         const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
@@ -232,7 +232,7 @@ module.exports = {
         }
     },
 
-    async processSVG(request, response) {
+    async processSVG (request, response) {
 
         try {
             const fills = [
@@ -257,7 +257,23 @@ module.exports = {
         }
     },
 
-    async generateTokenImage(request, response) {
+    async generateTokenImage (request, response) {
+
+        const cityMapping = (id) => {
+            return 11;
+        };
+
+        const baseMapping = (id) => {
+            return 0;
+        };
+
+        const bodyMapping = (id) => {
+            return id;
+        };
+
+        const roofMapping = (id) => {
+            return id;
+        };
 
         const tokenId = request.params.tokenId;
         if (!tokenId) {
@@ -269,19 +285,100 @@ module.exports = {
         const network = request.params.network;
 
         const {
-            city,
-            base, baseExteriorColorway, baseWindowColorway,
-            body, bodyExteriorColorway, bodyWindowColorway,
-            roof, roofExteriorColorway, roofWindowColorway,
+            city: tokenCity,
+            base: tokenBase, baseExteriorColorway, baseWindowColorway,
+            body: tokenBody, bodyExteriorColorway, bodyWindowColorway,
+            roof: tokenRoof, roofExteriorColorway, roofWindowColorway,
         } = await blockcitiesContractService.tokenDetails(network, tokenId);
 
-        const rootPath = `./raw_svgs/data/${city}`;
+        const buildingSize = cityMapping(tokenCity);
+        const rootPath = `./raw_svgs/${buildingSize}`;
 
-        const basePath = `${rootPath}/base/${base}.svg`;
-        const bodyPath = `${rootPath}/body/${body}.svg`;
-        const roofPath = `${rootPath}/roof/${roof}.svg`;
+        const basePath = `${rootPath}/bases/${baseMapping(tokenBase)}.svg`;
+        const bodyPath = `${rootPath}/bodies/${bodyMapping(tokenBody)}.svg`;
+        const roofPath = `${rootPath}/roofs/${roofMapping(tokenRoof)}.svg`;
 
+        console.log(basePath);
+        console.log(bodyPath);
+        console.log(roofPath);
 
+        const fills = [
+            {className: '.exterior_x002D_L1', fill: '#2E2E2E'},
+            {className: '.exterior_x002D_R2', fill: '#5D5D5D'},
+            {className: '.top_x002D_T1', fill: '#E8E8E8'},
+            {className: '.top_x002D_T2', fill: '#B9B9B9'},
+            {className: '.window_x002D_R1', fill: '#171717'},
+            {className: '.window_x002D_L1', fill: '#171717'},
+        ];
+
+        const rawBaseSvg = await readFilePromise(basePath, 'utf8');
+        const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
+        const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
+
+        // console.log(rawBaseSvg);
+        // console.log(rawBodySvg);
+        // console.log(rawRoofSvg);
+
+        const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
+        const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
+        const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg, fills);
+
+        // console.log(processedBaseSvg);
+        // console.log(rawBodySvg);
+        // console.log(rawRoofSvg);
+
+        const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
+        const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
+        const roofImage = await loadImage(Buffer.from(processedRoofSvg, 'utf8'));
+
+        const base = {
+            width: baseImage.width,
+            height: baseImage.height,
+            anchor: processedBaseAnchor,
+            svg: baseImage
+        };
+        const body = {
+            width: bodyImage.width,
+            height: bodyImage.height,
+            anchor: processedBodyAnchor,
+            svg: bodyImage
+        };
+        const roof = {
+            width: roofImage.width,
+            height: roofImage.height,
+            svg: roofImage
+        };
+
+        // height of the base, body, roof - minus the difference in the offset anchor from body and height
+        const canvasHeight = base.height
+            + body.height
+            + roof.height
+            - (base.height - base.anchor)
+            - (body.height - body.anchor);
+
+        // Always assume the base if the widest post for now
+        const canvasWidth = base.width;
+
+        const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+
+        const ctx = canvas.getContext('2d');
+
+        // Base
+        ctx.drawImage(base.svg, (canvasWidth - base.width) / 2, canvasHeight - base.height);
+
+        // Body
+        ctx.drawImage(body.svg, (canvasWidth - body.width) / 2, canvasHeight - base.anchor - body.height);
+
+        // Roof
+        ctx.drawImage(roof.svg, (canvasWidth - roof.width) / 2, canvasHeight - base.anchor - body.anchor - roof.height);
+
+        response.contentType('image/svg+xml');
+        const buffer = canvas.toBuffer('image/svg+xml', {
+            title: `BlockCities`,
+            keywords: 'BlockCities',
+            creationDate: new Date()
+        });
+        return response.send(buffer);
 
     }
 
