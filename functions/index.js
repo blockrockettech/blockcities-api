@@ -7,26 +7,6 @@ const app = express();
 // Automatically allow cross-origin requests
 app.use(cors({origin: true}));
 
-app.get('/:id/image/random', async (request, response) => {
-    return require('./image').generateRandomSVG(request, response);
-});
-
-app.get('/:id/image', async (request, response) => {
-    return require('./image').generateRandomSVG(request, response);
-});
-
-app.get('/:base/:body/:roof/image', async (request, response) => {
-    return require('./image').generateSVG(request, response);
-});
-
-app.get('/image/process', async (request, response) => {
-    return require('./image').processSVG(request, response);
-});
-
-app.get('/stitch', async (request, response) => {
-    return require('./image').processAndStack(request, response);
-});
-
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
