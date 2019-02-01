@@ -2,14 +2,16 @@ const _ = require('lodash');
 
 class CheerioSVGService {
 
-    process (svgXml, fillClasses = [], opacityClasses = []) {
+    process (svgXml, exteriorFill = {}, windowsFill = {}, concreteFill = {}) {
         const $ = require('cheerio').load(svgXml, {xmlMode: true});
 
-        // _.forEach(fillClasses, (c) => $(c.className).attr('fill', c.fill));
+        _.forEach(exteriorFill, (v, k) => $(`.exterior_x002D_${k}`).attr('fill', v));
+        _.forEach(windowsFill, (v, k) => $(`.window_x002D_${k}`).attr('fill', v));
+        _.forEach(concreteFill, (v, k) => $(`.concrete_x002D_${k}`).attr('fill', v));
 
         const svgId = $('svg').attr('id');
         const anchor = svgId.split('_')[1];
-        console.log(anchor);
+
         return {svg: $.xml(), anchor};
     }
 }

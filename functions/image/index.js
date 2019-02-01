@@ -4,6 +4,77 @@ const {createCanvas, loadImage, Image} = require('canvas');
 const blockcitiesContractService = require('../services/blockcities.contract.service');
 const cheerioSVGService = require('../services/cheerioSVGService.service');
 
+const colourways = {
+    exteriors: {
+        red: {
+            L1: '#2D0E0C',
+            L2: '#461B19',
+            L3: '#512220',
+            L4: '#2D0E0C',
+            C1: '#512220',
+            C2: '#73302E',
+            C3: '#712624',
+            C4: '#933835',
+            R1: '#712624',
+            R2: '#933835',
+            R3: '#A64C49',
+            R4: '#D05752',
+            T1: '#DD8A87',
+            T2: '#ECA09E',
+            T3: '#FFB3B0',
+            T4: '#FFC8C6',
+        },
+        darkgrey: {
+            L1: '#2E2E2E',
+            L2: '#3B3B3B',
+            L3: '#404040',
+            L4: '#A4A4A4',
+            C1: '#404040',
+            C2: '#A4A4A4',
+            C3: '#B3B3B3',
+            C4: '#444444',
+            R1: '#B3B3B3',
+            R2: '#444444',
+            R3: '#515050',
+            R4: '#D5D5D5',
+            T1: '#B8B8B8',
+            T2: '#B9B9B9',
+            T3: '#B9B9B9',
+            T4: '#E8E8E8',
+        },
+        lightbeige: {
+            L1: '#938A82',
+            L2: '#B0A59B',
+            L3: '#BFAF9F',
+            L4: '#D7C5B4',
+            C1: '#D7C5B4',
+            C2: '#A4A4A4',
+            C3: '#B3B3B3',
+            C4: '#D0CAC5',
+            R1: '#D0CAC5',
+            R2: '#D0CAC5',
+            R3: '#DBD7D4',
+            R4: '#F7F2EF',
+            T1: '#F7F3F1',
+            T2: '#F7F3F2',
+            T3: '#FFFCFA',
+            T4: '#FFFCFA',
+        }
+    },
+    concrete: {
+        classic: {
+            L1: '#A2A2A2',
+            R1: '#D1D1D1',
+            T1: '#E8E8E8',
+        },
+        dark: {
+            L1: '#8B8B8B',
+            R1: '#E8E8E8',
+            T1: '#A2A2A2',
+        },
+    }
+};
+
 const loadSvgs = async function () {
     const base0 = await loadImage('./image/raw_svgs/svgs/bases/432-park-curt-base.svg');
     const base1 = await loadImage('./image/raw_svgs/svgs/bases/432-park-horiz-base.svg');
@@ -44,218 +115,218 @@ const loadSvgs = async function () {
 
 module.exports = {
 
-    async generateRandomSVG (request, response) {
-        console.log('generateRandomSVG:', request.params, request.headers);
+    // async generateRandomSVG (request, response) {
+    //     console.log('generateRandomSVG:', request.params, request.headers);
+    //
+    //     console.log(blockcitiesContractService.details(1));
+    //
+    //     try {
+    //         const {bases, bodies, roofs} = await loadSvgs();
+    //
+    //         const randomBase = Math.floor(Math.random() * bases.length);
+    //         const randomBody = Math.floor(Math.random() * bodies.length);
+    //         const randomRoof = Math.floor(Math.random() * roofs.length);
+    //
+    //         console.log(`base ${randomBase} body ${randomBody} roof ${randomRoof}`);
+    //
+    //         // height of the base, body, roof - minus the difference in the offset anchor from body and height
+    //         const canvasHeight = bases[randomBase].height
+    //             + bodies[randomBody].height
+    //             + roofs[randomRoof].height
+    //             - (bases[randomBase].height - bases[randomBase].anchor)
+    //             - (bodies[randomBody].height - bodies[randomBody].anchor);
+    //
+    //         // Always assume the base if the widest post for now
+    //         const canvasWidth = bases[randomBase].width;
+    //
+    //         const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+    //
+    //         const ctx = canvas.getContext('2d');
+    //
+    //         // Base
+    //         ctx.drawImage(bases[randomBase].svg, (canvasWidth - bases[randomBase].width) / 2, canvasHeight - bases[randomBase].height);
+    //
+    //         // Body
+    //         ctx.drawImage(bodies[randomBody].svg, (canvasWidth - bodies[randomBody].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].height);
+    //
+    //         // Roof
+    //         ctx.drawImage(roofs[randomRoof].svg, (canvasWidth - roofs[randomRoof].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].anchor - roofs[randomRoof].height);
+    //
+    //         response.contentType('image/svg+xml');
+    //         const buffer = canvas.toBuffer('image/svg+xml', {
+    //             title: `base ${randomBase} body ${randomBody} roof ${randomRoof}`,
+    //             keywords: 'BlockCities',
+    //             creationDate: new Date()
+    //         });
+    //         return response.send(buffer);
+    //     } catch (e) {
+    //         console.error(e);
+    //     }
+    // },
+    //
+    // async generateSVG (request, response) {
+    //     console.log('generateSVG:', request.params, request.headers);
+    //
+    //     try {
+    //         const {bases, bodies, roofs} = await loadSvgs();
+    //
+    //         const randomBase = request.params.base;
+    //         const randomBody = request.params.body;
+    //         const randomRoof = request.params.roof;
+    //
+    //         console.log(`base ${randomBase} body ${randomBody} roof ${randomRoof}`);
+    //
+    //         // height of the base, body, roof - minus the difference in the offset anchor from body and height
+    //         const canvasHeight = bases[randomBase].height
+    //             + bodies[randomBody].height
+    //             + roofs[randomRoof].height
+    //             - (bases[randomBase].height - bases[randomBase].anchor)
+    //             - (bodies[randomBody].height - bodies[randomBody].anchor);
+    //
+    //         // Always assume the base if the widest post for now
+    //         const canvasWidth = bases[randomBase].width;
+    //
+    //         const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+    //
+    //         const ctx = canvas.getContext('2d');
+    //
+    //         // Base
+    //         ctx.drawImage(bases[randomBase].svg, (canvasWidth - bases[randomBase].width) / 2, canvasHeight - bases[randomBase].height);
+    //
+    //         // Body
+    //         ctx.drawImage(bodies[randomBody].svg, (canvasWidth - bodies[randomBody].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].height);
+    //
+    //         // Roof
+    //         ctx.drawImage(roofs[randomRoof].svg, (canvasWidth - roofs[randomRoof].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].anchor - roofs[randomRoof].height);
+    //
+    //         response.contentType('image/svg+xml');
+    //         const buffer = canvas.toBuffer('image/svg+xml', {
+    //             title: `base ${randomBase} body ${randomBody} roof ${randomRoof}`,
+    //             keywords: 'BlockCities',
+    //             creationDate: new Date()
+    //         });
+    //         return response.send(buffer);
+    //     } catch (e) {
+    //         console.error(e);
+    //     }
+    // },
+    //
+    // /*
+    //     https://us-central1-block-cities.cloudfunctions.net/api/stitch?exterior_x002D_L1=yellow&exterior_x002D_R2=cyan&top_x002D_T1=pink&top_x002D_T2=purple&window_x002D_R1=lime&window_x002D_L1=magenta
+    // */
+    // async processAndStack (request, response) {
+    //     console.log('processAndStack:', request.params, request.headers);
+    //
+    //     const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
+    //
+    //     try {
+    //         <!--.windows_x002D_R1{fill:#171717;}-->
+    //         <!--.body_x002D_L1{fill:#2E2E2E;}-->
+    //         <!--.body_x002D_R1{fill:#5D5D5D;}-->
+    //         <!--.top_x002D_T1{fill:#8B8B8B;}-->
+    //
+    //         const fills = [
+    //             {className: '.exterior_x002D_L1', fill: qOr(request, 'exterior_x002D_L1', '#2E2E2E')},
+    //             {className: '.exterior_x002D_R2', fill: qOr(request, 'exterior_x002D_R2', '#5D5D5D')},
+    //             {className: '.top_x002D_T1', fill: qOr(request, 'top_x002D_T1', '#E8E8E8')},
+    //             {className: '.top_x002D_T2', fill: qOr(request, 'top_x002D_T2', '#B9B9B9')},
+    //             <!--.body_x002D_L1{fill:#2E2E2E;}-->
+    //             <!--.body_x002D_R1{fill:#5D5D5D;}-->
+    //             {className: '.window_x002D_R1', fill: qOr(request, 'window_x002D_R1', '#171717')},
+    //             {className: '.window_x002D_L1', fill: qOr(request, 'window_x002D_L1', '#171717')},
+    //         ];
+    //
+    //         const rawBaseSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-base.svg', 'utf8');
+    //         // const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-01.svg', 'utf8');
+    //         const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-tall-01.svg', 'utf8');
+    //         const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-roof-01.svg', 'utf8');
+    //         // const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/pool-roof-7-01.svg', 'utf8');
+    //
+    //         const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
+    //         const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
+    //         const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg, fills);
+    //
+    //         const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
+    //         const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
+    //         const roofImage = await loadImage(Buffer.from(processedRoofSvg, 'utf8'));
+    //
+    //         const base = {
+    //             width: baseImage.width,
+    //             height: baseImage.height,
+    //             anchor: processedBaseAnchor,
+    //             svg: baseImage
+    //         };
+    //         const body = {
+    //             width: bodyImage.width,
+    //             height: bodyImage.height,
+    //             anchor: processedBodyAnchor,
+    //             svg: bodyImage
+    //         };
+    //         const roof = {
+    //             width: roofImage.width,
+    //             height: roofImage.height,
+    //             svg: roofImage
+    //         };
+    //
+    //         // height of the base, body, roof - minus the difference in the offset anchor from body and height
+    //         const canvasHeight = base.height
+    //             + body.height
+    //             + roof.height
+    //             - (base.height - base.anchor)
+    //             - (body.height - body.anchor);
+    //
+    //         // Always assume the base if the widest post for now
+    //         const canvasWidth = base.width;
+    //
+    //         const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+    //
+    //         const ctx = canvas.getContext('2d');
+    //
+    //         // Base
+    //         ctx.drawImage(base.svg, (canvasWidth - base.width) / 2, canvasHeight - base.height);
+    //
+    //         // Body
+    //         ctx.drawImage(body.svg, (canvasWidth - body.width) / 2, canvasHeight - base.anchor - body.height);
+    //
+    //         // Roof
+    //         ctx.drawImage(roof.svg, (canvasWidth - roof.width) / 2, canvasHeight - base.anchor - body.anchor - roof.height);
+    //
+    //         response.contentType('image/svg+xml');
+    //         const buffer = canvas.toBuffer('image/svg+xml', {
+    //             title: `BlockCities`,
+    //             keywords: 'BlockCities',
+    //             creationDate: new Date()
+    //         });
+    //         return response.send(buffer);
+    //     } catch (e) {
+    //         console.error(e);
+    //     }
+    // },
 
-        console.log(blockcitiesContractService.details(1));
-
-        try {
-            const {bases, bodies, roofs} = await loadSvgs();
-
-            const randomBase = Math.floor(Math.random() * bases.length);
-            const randomBody = Math.floor(Math.random() * bodies.length);
-            const randomRoof = Math.floor(Math.random() * roofs.length);
-
-            console.log(`base ${randomBase} body ${randomBody} roof ${randomRoof}`);
-
-            // height of the base, body, roof - minus the difference in the offset anchor from body and height
-            const canvasHeight = bases[randomBase].height
-                + bodies[randomBody].height
-                + roofs[randomRoof].height
-                - (bases[randomBase].height - bases[randomBase].anchor)
-                - (bodies[randomBody].height - bodies[randomBody].anchor);
-
-            // Always assume the base if the widest post for now
-            const canvasWidth = bases[randomBase].width;
-
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-
-            const ctx = canvas.getContext('2d');
-
-            // Base
-            ctx.drawImage(bases[randomBase].svg, (canvasWidth - bases[randomBase].width) / 2, canvasHeight - bases[randomBase].height);
-
-            // Body
-            ctx.drawImage(bodies[randomBody].svg, (canvasWidth - bodies[randomBody].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].height);
-
-            // Roof
-            ctx.drawImage(roofs[randomRoof].svg, (canvasWidth - roofs[randomRoof].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].anchor - roofs[randomRoof].height);
-
-            response.contentType('image/svg+xml');
-            const buffer = canvas.toBuffer('image/svg+xml', {
-                title: `base ${randomBase} body ${randomBody} roof ${randomRoof}`,
-                keywords: 'BlockCities',
-                creationDate: new Date()
-            });
-            return response.send(buffer);
-        } catch (e) {
-            console.error(e);
-        }
-    },
-
-    async generateSVG (request, response) {
-        console.log('generateSVG:', request.params, request.headers);
-
-        try {
-            const {bases, bodies, roofs} = await loadSvgs();
-
-            const randomBase = request.params.base;
-            const randomBody = request.params.body;
-            const randomRoof = request.params.roof;
-
-            console.log(`base ${randomBase} body ${randomBody} roof ${randomRoof}`);
-
-            // height of the base, body, roof - minus the difference in the offset anchor from body and height
-            const canvasHeight = bases[randomBase].height
-                + bodies[randomBody].height
-                + roofs[randomRoof].height
-                - (bases[randomBase].height - bases[randomBase].anchor)
-                - (bodies[randomBody].height - bodies[randomBody].anchor);
-
-            // Always assume the base if the widest post for now
-            const canvasWidth = bases[randomBase].width;
-
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-
-            const ctx = canvas.getContext('2d');
-
-            // Base
-            ctx.drawImage(bases[randomBase].svg, (canvasWidth - bases[randomBase].width) / 2, canvasHeight - bases[randomBase].height);
-
-            // Body
-            ctx.drawImage(bodies[randomBody].svg, (canvasWidth - bodies[randomBody].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].height);
-
-            // Roof
-            ctx.drawImage(roofs[randomRoof].svg, (canvasWidth - roofs[randomRoof].width) / 2, canvasHeight - bases[randomBase].anchor - bodies[randomBody].anchor - roofs[randomRoof].height);
-
-            response.contentType('image/svg+xml');
-            const buffer = canvas.toBuffer('image/svg+xml', {
-                title: `base ${randomBase} body ${randomBody} roof ${randomRoof}`,
-                keywords: 'BlockCities',
-                creationDate: new Date()
-            });
-            return response.send(buffer);
-        } catch (e) {
-            console.error(e);
-        }
-    },
-
-    /*
-        https://us-central1-block-cities.cloudfunctions.net/api/stitch?exterior_x002D_L1=yellow&exterior_x002D_R2=cyan&top_x002D_T1=pink&top_x002D_T2=purple&window_x002D_R1=lime&window_x002D_L1=magenta
-    */
-    async processAndStack (request, response) {
-        console.log('processAndStack:', request.params, request.headers);
-
-        const qOr = (r, p, d) => r.query[p] ? r.query[p] : d;
-
-        try {
-            <!--.windows_x002D_R1{fill:#171717;}-->
-            <!--.body_x002D_L1{fill:#2E2E2E;}-->
-            <!--.body_x002D_R1{fill:#5D5D5D;}-->
-            <!--.top_x002D_T1{fill:#8B8B8B;}-->
-
-            const fills = [
-                {className: '.exterior_x002D_L1', fill: qOr(request, 'exterior_x002D_L1', '#2E2E2E')},
-                {className: '.exterior_x002D_R2', fill: qOr(request, 'exterior_x002D_R2', '#5D5D5D')},
-                {className: '.top_x002D_T1', fill: qOr(request, 'top_x002D_T1', '#E8E8E8')},
-                {className: '.top_x002D_T2', fill: qOr(request, 'top_x002D_T2', '#B9B9B9')},
-                <!--.body_x002D_L1{fill:#2E2E2E;}-->
-                <!--.body_x002D_R1{fill:#5D5D5D;}-->
-                {className: '.window_x002D_R1', fill: qOr(request, 'window_x002D_R1', '#171717')},
-                {className: '.window_x002D_L1', fill: qOr(request, 'window_x002D_L1', '#171717')},
-            ];
-
-            const rawBaseSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-base.svg', 'utf8');
-            // const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-01.svg', 'utf8');
-            const rawBodySvg = await readFilePromise('./image/raw_svgs/svgs/equitable-body-tall-01.svg', 'utf8');
-            const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/equitable-standard-roof-01.svg', 'utf8');
-            // const rawRoofSvg = await readFilePromise('./image/raw_svgs/svgs/pool-roof-7-01.svg', 'utf8');
-
-            const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
-            const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
-            const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg, fills);
-
-            const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
-            const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
-            const roofImage = await loadImage(Buffer.from(processedRoofSvg, 'utf8'));
-
-            const base = {
-                width: baseImage.width,
-                height: baseImage.height,
-                anchor: processedBaseAnchor,
-                svg: baseImage
-            };
-            const body = {
-                width: bodyImage.width,
-                height: bodyImage.height,
-                anchor: processedBodyAnchor,
-                svg: bodyImage
-            };
-            const roof = {
-                width: roofImage.width,
-                height: roofImage.height,
-                svg: roofImage
-            };
-
-            // height of the base, body, roof - minus the difference in the offset anchor from body and height
-            const canvasHeight = base.height
-                + body.height
-                + roof.height
-                - (base.height - base.anchor)
-                - (body.height - body.anchor);
-
-            // Always assume the base if the widest post for now
-            const canvasWidth = base.width;
-
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-
-            const ctx = canvas.getContext('2d');
-
-            // Base
-            ctx.drawImage(base.svg, (canvasWidth - base.width) / 2, canvasHeight - base.height);
-
-            // Body
-            ctx.drawImage(body.svg, (canvasWidth - body.width) / 2, canvasHeight - base.anchor - body.height);
-
-            // Roof
-            ctx.drawImage(roof.svg, (canvasWidth - roof.width) / 2, canvasHeight - base.anchor - body.anchor - roof.height);
-
-            response.contentType('image/svg+xml');
-            const buffer = canvas.toBuffer('image/svg+xml', {
-                title: `BlockCities`,
-                keywords: 'BlockCities',
-                creationDate: new Date()
-            });
-            return response.send(buffer);
-        } catch (e) {
-            console.error(e);
-        }
-    },
-
-    async processSVG (request, response) {
-
-        try {
-            const fills = [
-                {className: '.exterior_x002D_L1', fill: 'pink'},
-                {className: '.exterior_x002D_R2', fill: 'yellow'},
-                {className: '.top_x002D_T1', fill: 'red'},
-                {className: '.window_x002D_R1', fill: 'green'},
-                {className: '.st0', fill: 'purple'},
-                {className: '.st1', fill: 'cyan'},
-                {className: '.st2', fill: 'blue'}
-            ];
-
-            const processedSvg = cheerioSVGService.process(
-                require('./testSvg'),
-                fills
-            );
-
-            response.contentType('image/svg+xml');
-            return response.send(processedSvg);
-        } catch (e) {
-            console.error(e);
-        }
-    },
+    // async processSVG (request, response) {
+    //
+    //     try {
+    //         const fills = [
+    //             {className: '.exterior_x002D_L1', fill: 'pink'},
+    //             {className: '.exterior_x002D_R2', fill: 'yellow'},
+    //             {className: '.top_x002D_T1', fill: 'red'},
+    //             {className: '.window_x002D_R1', fill: 'green'},
+    //             {className: '.st0', fill: 'purple'},
+    //             {className: '.st1', fill: 'cyan'},
+    //             {className: '.st2', fill: 'blue'}
+    //         ];
+    //
+    //         const processedSvg = cheerioSVGService.process(
+    //             require('./testSvg'),
+    //             fills
+    //         );
+    //
+    //         response.contentType('image/svg+xml');
+    //         return response.send(processedSvg);
+    //     } catch (e) {
+    //         console.error(e);
+    //     }
+    // },
 
     async generateTokenImage (request, response) {
 
@@ -302,14 +373,6 @@ module.exports = {
         console.log(bodyPath);
         console.log(roofPath);
 
-        const fills = [
-            {className: '.exterior_x002D_L1', fill: '#2E2E2E'},
-            {className: '.exterior_x002D_R2', fill: '#5D5D5D'},
-            {className: '.top_x002D_T1', fill: '#E8E8E8'},
-            {className: '.top_x002D_T2', fill: '#B9B9B9'},
-            {className: '.window_x002D_R1', fill: '#171717'},
-            {className: '.window_x002D_L1', fill: '#171717'},
-        ];
 
         const rawBaseSvg = await readFilePromise(basePath, 'utf8');
         const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
@@ -319,12 +382,27 @@ module.exports = {
         // console.log(rawBodySvg);
         // console.log(rawRoofSvg);
 
-        const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(rawBaseSvg, fills);
-        const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(rawBodySvg, fills);
-        const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg, fills);
+        const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(
+            rawBaseSvg,
+            colourways.exteriors.red,
+            {},
+            colourways.concrete.classic
+            );
+        const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(
+            rawBodySvg,
+            colourways.exteriors.red,
+            {},
+            colourways.concrete.classic
+            );
+        const {svg: processedRoofSvg} = cheerioSVGService.process(
+            rawRoofSvg,
+            colourways.exteriors.red,
+            {},
+            colourways.concrete.classic,
+            );
 
         // console.log(processedBaseSvg);
-        // console.log(rawBodySvg);
+        console.log(rawBodySvg);
         // console.log(rawRoofSvg);
 
         const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
