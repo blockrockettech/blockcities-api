@@ -6,6 +6,7 @@ class CheerioSVGService {
         const $ = require('cheerio').load(svgXml, {xmlMode: true});
 
         _.forEach(exteriorFill, (v, k) => $(`.exterior_x002D_${k}`).attr('fill', v));
+        _.forEach(exteriorFill, (v, k) => $(`.top_x002D_${k}`).attr('fill', v));
         _.forEach(windowsFill, (v, k) => $(`.window_x002D_${k}`).attr('fill', v));
         _.forEach(concreteFill, (v, k) => $(`.concrete_x002D_${k}`).attr('fill', v));
 

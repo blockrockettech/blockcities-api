@@ -61,6 +61,50 @@ const colourways = {
             T4: '#FFFCFA',
         }
     },
+    windows: {
+        black: {
+            L1: '#000000',
+            L2: '#000000',
+            L3: '#050505',
+            L4: '#050505',
+            C1: '#0B0B0B',
+            C2: '#0B0B0B',
+            C3: '#101010',
+            C4: '#101010',
+            R1: '#171717',
+            R2: '#171717',
+            R3: '#1C1C1C',
+            R4: '#1C1C1C',
+        },
+        aquablue: {
+            L1: '#224F64',
+            L2: '#224F64',
+            L3: '#457D95',
+            L4: '#457D95',
+            C1: '#48849D',
+            C2: '#48849D',
+            C3: '#4686A2',
+            C4: '#4686A2',
+            R1: '#4C8FAC',
+            R2: '#4C8FAC',
+            R3: '#59ADD0',
+            R4: '#59ADD0',
+        },
+        lightgrey: {
+            L1: '#9A9C9F',
+            L2: '#9A9C9F',
+            L3: '#AEB0B3',
+            L4: '#AEB0B3',
+            C1: '#B9BBBD',
+            C2: '#B9BBBD',
+            C3: '#C5C6C8',
+            C4: '#C5C6C8',
+            R1: '#C5C8CC',
+            R2: '#C5C8CC',
+            R3: '#D0D3D7',
+            R4: '#D0D3D7',
+        }
+    },
     concrete: {
         classic: {
             L1: '#A2A2A2',
@@ -74,6 +118,10 @@ const colourways = {
         },
     }
 };
+
+const exteriorsKeys = Object.keys(colourways.exteriors);
+const windowsKeys = Object.keys(colourways.windows);
+const concreteKeys = Object.keys(colourways.concrete);
 
 const loadSvgs = async function () {
     const base0 = await loadImage('./image/raw_svgs/svgs/bases/432-park-curt-base.svg');
@@ -369,41 +417,29 @@ module.exports = {
         const bodyPath = `${rootPath}/bodies/${bodyMapping(tokenBody)}.svg`;
         const roofPath = `${rootPath}/roofs/${roofMapping(tokenRoof)}.svg`;
 
-        console.log(basePath);
-        console.log(bodyPath);
-        console.log(roofPath);
-
-
         const rawBaseSvg = await readFilePromise(basePath, 'utf8');
         const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
         const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-        // console.log(rawBaseSvg);
-        // console.log(rawBodySvg);
-        // console.log(rawRoofSvg);
 
         const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(
             rawBaseSvg,
-            colourways.exteriors.red,
-            {},
+            colourways.exteriors[exteriorsKeys[bodyExteriorColorway]],
+            colourways.windows[windowsKeys[bodyWindowColorway]],
             colourways.concrete.classic
-            );
+        );
         const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(
             rawBodySvg,
-            colourways.exteriors.red,
-            {},
+            colourways.exteriors[exteriorsKeys[bodyExteriorColorway]],
+            colourways.windows[windowsKeys[bodyWindowColorway]],
             colourways.concrete.classic
-            );
+        );
         const {svg: processedRoofSvg} = cheerioSVGService.process(
             rawRoofSvg,
-            colourways.exteriors.red,
-            {},
+            colourways.exteriors[exteriorsKeys[bodyExteriorColorway]],
+            colourways.windows[windowsKeys[bodyWindowColorway]],
             colourways.concrete.classic,
-            );
-
-        // console.log(processedBaseSvg);
-        console.log(rawBodySvg);
-        // console.log(rawRoofSvg);
+        );
 
         const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
         const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
