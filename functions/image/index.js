@@ -12,6 +12,7 @@ const concreteKeys = Object.keys(colourways.concrete);
 
 const cityMapping = (id) => {
     // contract has 4 cities - only two types currently
+    // 1,2,3 is 55%
     return id <= 3 ? 4 : 11;
 };
 
