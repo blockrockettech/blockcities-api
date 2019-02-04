@@ -10,8 +10,9 @@ const exteriorsKeys = Object.keys(colourways.exteriors);
 const windowsKeys = Object.keys(colourways.windows);
 const concreteKeys = Object.keys(colourways.concrete);
 
+// TODO we are using city to map these correct
+
 const cityMapping = (id) => {
-    // TODO we are using city to map these correct
     if (id < 2) {
         return 4;
     }

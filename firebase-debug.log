@@ -1,22 +1,25 @@
-[debug] [2019-02-04T16:34:47.444Z] ----------------------------------------------------------------------
-[debug] [2019-02-04T16:34:47.446Z] Command:       /usr/local/bin/node /Users/andy/.node/bin/firebase deploy --only functions
-[debug] [2019-02-04T16:34:47.447Z] CLI Version:   6.0.1
-[debug] [2019-02-04T16:34:47.447Z] Platform:      darwin
-[debug] [2019-02-04T16:34:47.447Z] Node Version:  v8.9.4
-[debug] [2019-02-04T16:34:47.447Z] Time:          Mon Feb 04 2019 16:34:47 GMT+0000 (GMT)
-[debug] [2019-02-04T16:34:47.447Z] ----------------------------------------------------------------------
+[debug] [2019-02-04T16:47:09.953Z] ----------------------------------------------------------------------
+[debug] [2019-02-04T16:47:09.955Z] Command:       /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/node /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/firebase deploy --only functions
+[debug] [2019-02-04T16:47:09.955Z] CLI Version:   4.2.1
+[debug] [2019-02-04T16:47:09.955Z] Platform:      darwin
+[debug] [2019-02-04T16:47:09.955Z] Node Version:  v8.9.4
+[debug] [2019-02-04T16:47:09.956Z] Time:          Mon Feb 04 2019 16:47:09 GMT+0000 (GMT)
+[debug] [2019-02-04T16:47:09.956Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-02-04T16:34:47.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-04T16:34:47.458Z] > authorizing via signed-in user
-[debug] [2019-02-04T16:34:47.458Z] [iam] checking project block-cities for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2019-02-04T16:34:47.460Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/block-cities:testIamPermissions  
+[debug] [2019-02-04T16:47:09.967Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-04T16:47:09.968Z] > authorizing via signed-in user
+[debug] [2019-02-04T16:47:09.970Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-04T16:47:09.970Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
 
-[debug] [2019-02-04T16:34:48.223Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:10.159Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:10.172Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/block-cities  
+ 
+[debug] [2019-02-04T16:47:10.726Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'block-cities'...
 [info] 
 [info] i  deploying functions
-[debug] [2019-02-04T16:34:49.381Z] > [functions] package.json contents: {
+[debug] [2019-02-04T16:47:14.583Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {},
@@ -37,126 +40,44 @@
   }
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2019-02-04T16:34:49.382Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/block-cities?view=CONSUMER_VIEW  
+[debug] [2019-02-04T16:47:14.583Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/block-cities?view=CONSUMER_VIEW  
  
-[debug] [2019-02-04T16:34:49.383Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/block-cities?view=CONSUMER_VIEW  
+[debug] [2019-02-04T16:47:14.584Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/block-cities?view=CONSUMER_VIEW  
  
-[debug] [2019-02-04T16:34:50.582Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:50.681Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:15.369Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2019-02-04T16:34:50.682Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/block-cities  
+[debug] [2019-02-04T16:47:15.724Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:15.725Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/block-cities  
  
-[debug] [2019-02-04T16:34:51.462Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:51.463Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/34610683078:getServerAppConfig  
+[debug] [2019-02-04T16:47:16.441Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:16.441Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/34610683078:getServerAppConfig  
  
-[debug] [2019-02-04T16:34:51.656Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T16:47:16.629Z] <<< HTTP RESPONSE 200
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2019-02-04T16:34:51.662Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/block-cities/configs  
+[debug] [2019-02-04T16:47:16.634Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/block-cities/configs  
  
-[debug] [2019-02-04T16:34:52.514Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (620.69 KB) for uploading
-[debug] [2019-02-04T16:34:52.958Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/block-cities/locations/us-central1/functions:generateUploadUrl  
+[debug] [2019-02-04T16:47:16.857Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T17:22:52.992Z] ----------------------------------------------------------------------
+[debug] [2019-02-04T17:22:52.995Z] Command:       /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/node /Users/jamesmorgan/.nvm/versions/node/v8.9.4/bin/firebase functions:shell
+[debug] [2019-02-04T17:22:52.995Z] CLI Version:   4.2.1
+[debug] [2019-02-04T17:22:52.995Z] Platform:      darwin
+[debug] [2019-02-04T17:22:52.995Z] Node Version:  v8.9.4
+[debug] [2019-02-04T17:22:52.996Z] Time:          Mon Feb 04 2019 17:22:52 GMT+0000 (GMT)
+[debug] [2019-02-04T17:22:52.996Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-04T17:22:53.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-04T17:22:53.008Z] > authorizing via signed-in user
+[debug] [2019-02-04T17:22:53.010Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/block-cities  
  
-[debug] [2019-02-04T16:34:53.305Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:53.305Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-7368d235-d0ba-455c-9fe6-e4642975531e/82ffc396-e4e3-413f-be39-30e7f0870186.zip?GoogleAccessId=service-34610683078@gcf-admin-robot.iam.gserviceaccount.com&Expires=1549299893&Signature=pnEMF8LUCam4Y0kV602nH6l5iv6mT0e0L2I7ArXZ3zUxUG6jlCVlexl0Gi7kUvGzmjEwNlDDeuA2S5Bw2q%2FnYSXYVx8SrTmFEixrfOoJ6crzkg8cBhKzL61PkvooDb%2BL%2BCf6EzbD95ZazQUuBjphKVlspC2UhWFBGFSmTUXKcEB29JbzkX4bwe1VlR3e6xf624jteGvEJitOJisoY66ZeBtIRdgOkOFqQOccl9cnLw6tsRN83%2Bqps%2FuHmdPEvsxMsoX6CycPRjioI%2B2D%2FPgLlC5qT7Z37oKjSgYk1V8489%2BGJtgNXYPyRbKXAulY5jk47f%2Fh3VY%2F4yJYCOx53Y5qFw%3D%3D  
-
-[debug] [2019-02-04T16:34:53.928Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: functions folder uploaded successfully
-[debug] [2019-02-04T16:34:53.931Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/block-cities/locations/-/functions  
+[debug] [2019-02-04T17:22:53.944Z] <<< HTTP RESPONSE 200
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-04T17:23:04.415Z] Fetching environment
+[debug] [2019-02-04T17:23:04.418Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/block-cities  
  
-[debug] [2019-02-04T16:34:54.403Z] <<< HTTP RESPONSE 200
-[info] i  functions: updating Node.js 8 function api(us-central1)...
-[debug] [2019-02-04T16:34:54.406Z] Trigger is:  {"httpsTrigger":{}}
-[debug] [2019-02-04T16:34:54.407Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/block-cities/locations/us-central1/functions/api {"updateMask":"sourceUploadUrl,name,labels,runtime,httpsTrigger"} 
-
-[debug] [2019-02-04T16:34:54.840Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:54.845Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/block-cities/locations/-/functions  
+[debug] [2019-02-04T17:23:04.659Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T17:23:04.659Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/34610683078:getServerAppConfig  
  
-[debug] [2019-02-04T16:34:55.245Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:55.246Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:34:55.477Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:57.478Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:34:57.691Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:34:59.693Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:34:59.908Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:01.910Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:02.152Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:04.153Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:04.381Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:06.386Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:06.590Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:08.594Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:08.806Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:10.811Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:11.010Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:13.016Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:13.206Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:15.211Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:15.403Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:17.404Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:17.658Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:19.663Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:19.871Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:21.877Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:22.086Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:24.088Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:24.282Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:26.287Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:26.491Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:28.492Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:28.700Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:30.705Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:30.909Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:32.915Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:33.133Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:35.140Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:35.343Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:37.343Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:37.542Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:39.548Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:39.753Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:41.753Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:41.979Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:43.984Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:44.168Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:46.169Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:46.361Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:48.362Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:48.572Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:50.575Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:50.761Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:52.763Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:52.958Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:54.959Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:55.185Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-04T16:35:57.186Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/YmxvY2stY2l0aWVzL3VzLWNlbnRyYWwxL2FwaS93SGtpZjN5LTN4OA  
- 
-[debug] [2019-02-04T16:35:57.383Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T17:23:04.871Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-04T17:23:04.872Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-04T17:23:07.421Z] Parsing function triggers
+[info] ✔  functions: api
