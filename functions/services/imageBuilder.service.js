@@ -22,7 +22,7 @@ const cityMapping = (id) => {
 };
 
 const baseMapping = (id) => {
-    return 0;
+    return id;
 };
 
 const bodyMapping = (id) => {
