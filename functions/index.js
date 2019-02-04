@@ -22,6 +22,11 @@ app.use(cors({origin: true}));
 /////////////////////////////////////////////////
 
 // Token URI looking defined in the contract
+app.get('/network/:network/token/pointers', async (request, response) => {
+    return require('./tokenUri').tokenPointers(request, response);
+});
+
+// Token URI looking defined in the contract
 app.get('/network/:network/token/:tokenId', async (request, response) => {
     return require('./tokenUri').tokenMetadata(request, response);
 });

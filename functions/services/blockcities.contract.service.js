@@ -22,6 +22,21 @@ class BlockcitiesContractService {
         return tokenBaseURI;
     }
 
+    async tokenPointers(network = 1) {
+        const token = connectToBlockCities(network);
+        const totalBuildings = await token.totalBuildings();
+        const cityPointer = await token.cityPointer();
+        const tokenIdPointer = await token.tokenIdPointer();
+        const {_nextTokenID} = await token.nextTokenId();
+
+        return {
+            totalBuildings: totalBuildings[0],
+            cityPointer: cityPointer[0],
+            tokenIdPointer: tokenIdPointer[0],
+            nextTokenId: _nextTokenID
+        };
+    }
+
     async tokenDetails(network = 1, tokenId) {
         console.log(`Find token details for [${tokenId}] on network [${network}]`);
 
@@ -29,16 +44,12 @@ class BlockcitiesContractService {
 
         // Get token attributes
         const {
+            _exteriorColorway,
+            _windowColorway,
             _city,
             _base,
-            _baseExteriorColorway,
-            _baseWindowColorway,
             _body,
-            _bodyExteriorColorway,
-            _bodyWindowColorway,
             _roof,
-            _roofExteriorColorway,
-            _roofWindowColorway,
             _architect
         } = await token.attributes(tokenId);
 
@@ -50,16 +61,12 @@ class BlockcitiesContractService {
 
         // Build full details response
         return {
+            exteriorColorway: _exteriorColorway,
+            windowColorway: _windowColorway,
             city: _city,
             base: _base,
-            baseExteriorColorway: _baseExteriorColorway,
-            baseWindowColorway: _baseWindowColorway,
             body: _body,
-            bodyExteriorColorway: _bodyExteriorColorway,
-            bodyWindowColorway: _bodyWindowColorway,
             roof: _roof,
-            roofExteriorColorway: _roofExteriorColorway,
-            roofWindowColorway: _roofWindowColorway,
             architect: _architect,
             ...metadata
         };

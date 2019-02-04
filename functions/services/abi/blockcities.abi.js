@@ -537,16 +537,11 @@ const tokenABI = [
                 "indexed": true,
                 "name": "_architect",
                 "type": "address"
-            },
-            {
-                "indexed": false,
-                "name": "_tokenURI",
-                "type": "string"
             }
         ],
         "name": "BuildingMinted",
         "type": "event",
-        "signature": "0x4b80c82134aabbb49e870761f80469abd265f43d8db3b860ab5e02f943b717c1"
+        "signature": "0x90ac329ea07c00bb85a3b33470a0318e5d1a5e181fd50431248bc3c750695277"
     },
     {
         "anonymous": false,
@@ -691,6 +686,14 @@ const tokenABI = [
         "constant": false,
         "inputs": [
             {
+                "name": "_exteriorColorway",
+                "type": "uint256"
+            },
+            {
+                "name": "_windowColorway",
+                "type": "uint256"
+            },
+            {
                 "name": "_city",
                 "type": "uint256"
             },
@@ -699,35 +702,11 @@ const tokenABI = [
                 "type": "uint256"
             },
             {
-                "name": "_baseExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_baseWindowColorway",
-                "type": "uint256"
-            },
-            {
                 "name": "_body",
                 "type": "uint256"
             },
             {
-                "name": "_bodyExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_bodyWindowColorway",
-                "type": "uint256"
-            },
-            {
                 "name": "_roof",
-                "type": "uint256"
-            },
-            {
-                "name": "_roofExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_roofWindowColorway",
                 "type": "uint256"
             },
             {
@@ -745,7 +724,7 @@ const tokenABI = [
         "payable": false,
         "stateMutability": "nonpayable",
         "type": "function",
-        "signature": "0x1b3382b8"
+        "signature": "0xa0168aa2"
     },
     {
         "constant": true,
@@ -758,6 +737,14 @@ const tokenABI = [
         "name": "attributes",
         "outputs": [
             {
+                "name": "_exteriorColorway",
+                "type": "uint256"
+            },
+            {
+                "name": "_windowColorway",
+                "type": "uint256"
+            },
+            {
                 "name": "_city",
                 "type": "uint256"
             },
@@ -766,35 +753,11 @@ const tokenABI = [
                 "type": "uint256"
             },
             {
-                "name": "_baseExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_baseWindowColorway",
-                "type": "uint256"
-            },
-            {
                 "name": "_body",
                 "type": "uint256"
             },
             {
-                "name": "_bodyExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_bodyWindowColorway",
-                "type": "uint256"
-            },
-            {
                 "name": "_roof",
-                "type": "uint256"
-            },
-            {
-                "name": "_roofExteriorColorway",
-                "type": "uint256"
-            },
-            {
-                "name": "_roofWindowColorway",
                 "type": "uint256"
             },
             {

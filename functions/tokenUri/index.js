@@ -4,6 +4,13 @@ const blockcitiesContractService = require('../services/blockcities.contract.ser
 
 module.exports = {
 
+    async tokenPointers(request, response) {
+        const network = request.params.network;
+        const tokenPointers = await blockcitiesContractService.tokenPointers(network);
+        console.log(tokenPointers);
+        return response.status(200).json(tokenPointers);
+    },
+
     async tokenMetadata(request, response) {
 
         const tokenId = request.params.tokenId;
