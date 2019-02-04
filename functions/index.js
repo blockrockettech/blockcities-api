@@ -21,7 +21,7 @@ app.use(cors({origin: true}));
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
-// Token URI looking defined in the contract
+// Gets all token pointers form the contract
 app.get('/network/:network/token/pointers', async (request, response) => {
     return require('./tokenUri').tokenPointers(request, response);
 });

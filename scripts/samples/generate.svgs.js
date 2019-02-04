@@ -9,6 +9,7 @@ void async function () {
     const NETWORK = 5777;
 
     const {tokenIdPointer} = await blockcitiesContractService.tokenPointers(NETWORK);
+    console.log('tokenIdPointer', tokenIdPointer);
 
     for (let i = 1; i < tokenIdPointer; i++) {
         const image = await imageBuilderService.generateTokenImage(NETWORK, i);

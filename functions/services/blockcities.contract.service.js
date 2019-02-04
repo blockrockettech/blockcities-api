@@ -18,7 +18,7 @@ class BlockcitiesContractService {
 
         const token = connectToBlockCities(network);
         const tokenBaseURI = await token.tokenBaseURI();
-        console.log(tokenBaseURI);
+        // console.log(tokenBaseURI);
         return tokenBaseURI;
     }
 
