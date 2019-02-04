@@ -27,13 +27,11 @@ class BlockcitiesContractService {
         const totalBuildings = await token.totalBuildings();
         const cityPointer = await token.cityPointer();
         const tokenIdPointer = await token.tokenIdPointer();
-        const {_nextTokenID} = await token.nextTokenId();
 
         return {
             totalBuildings: totalBuildings[0],
             cityPointer: cityPointer[0],
-            tokenIdPointer: tokenIdPointer[0],
-            nextTokenId: _nextTokenID
+            tokenIdPointer: tokenIdPointer[0]
         };
     }
 
