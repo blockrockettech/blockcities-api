@@ -7,7 +7,7 @@ const {abi} = require('./blockcities.abi');
 const connectToBlockCities = (network) => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
         .contract(abi)
-        .at('0x194bAfbf8eb2096e63C5d9296363d6DAcdb32527'); // TODO this is local, use a lookup switch
+        .at(getAddressForNetwork(network));
 };
 
 function getHttpProviderUri (network) {
@@ -51,6 +51,30 @@ const getNetwork = (network) => {
             local: 'local'
         }
     );
+};
+
+const getAddressForNetwork = (network) => {
+    switch (network) {
+        case 1:
+        case '1':
+        case 'mainnet':
+            return `0x0`;
+        case 3:
+        case '3':
+        case 'ropsten':
+            return `0x69B158FfF1835c8dD22521DA5d78dFA7Cde460a0`;
+        case 4:
+        case '4':
+        case 'rinkeby':
+            return `0x0`;
+        case 5777:
+        case '5777':
+        case 'local':
+            // This may change if a clean deploy
+            return `0x194bAfbf8eb2096e63C5d9296363d6DAcdb32527`;
+        default:
+            throw new Error(`Unknown network ID ${network}`);
+    }
 };
 
 module.exports = {
