@@ -126,7 +126,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/2/details",
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/50/details",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -139,7 +139,7 @@
 						"network",
 						"5777",
 						"token",
-						"2",
+						"50",
 						"details"
 					]
 				}
@@ -156,7 +156,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/2/image",
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/33/image",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -169,8 +169,37 @@
 						"network",
 						"5777",
 						"token",
-						"2",
+						"33",
 						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token Pointers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/block-cities/us-central1/api/network/5777/token/pointers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"block-cities",
+						"us-central1",
+						"api",
+						"network",
+						"5777",
+						"token",
+						"pointers"
 					]
 				}
 			},
