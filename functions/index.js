@@ -4,8 +4,7 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 
-// Automatically allow cross-origin requests
-app.use(cors({origin: true}));
+app.use(cors());
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
