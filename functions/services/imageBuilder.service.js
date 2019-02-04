@@ -59,7 +59,7 @@ class ImageBuilderService {
         } = await blockcitiesContractService.tokenDetails(network, tokenId);
 
         const buildingSize = cityMapping(city);
-        const rootPath = `./functions/raw_svgs/${buildingSize}`;
+        const rootPath = `./raw_svgs/${buildingSize}`;
 
         const basePath = `${rootPath}/bases/${baseMapping(base)}.svg`;
         const bodyPath = `${rootPath}/bodies/${bodyMapping(body)}.svg`;
