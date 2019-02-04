@@ -793,21 +793,6 @@ const tokenABI = [
     {
         "constant": true,
         "inputs": [],
-        "name": "nextTokenId",
-        "outputs": [
-            {
-                "name": "_nextTokenID",
-                "type": "uint256"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
-        "type": "function",
-        "signature": "0x75794a3c"
-    },
-    {
-        "constant": true,
-        "inputs": [],
         "name": "totalCities",
         "outputs": [
             {
