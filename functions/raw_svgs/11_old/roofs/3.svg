@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <svg version="1.1" id="Layer_1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130.11 93.82"
 	 style="enable-background:new 0 0 130.11 93.82;" xml:space="preserve">
 <style type="text/css">
-	<!--.exterior_x002D_L_x002D_prim{fill:#2E2E2E;}-->
-	<!--.exterior_x002D_R_x002D_prim{fill:#5D5D5D;}-->
-	<!--.top_x002D_prim{fill:#B9B9B9;}-->
-	<!--.top_x002D_light{fill:#E8E8E8;}-->
-	<!--.top_x002D_dark{fill:#8B8B8B;}-->
+	<!--.exterior_x002D_L1{fill:#2E2E2E;}-->
+	<!--.exterior_x002D_R4{fill:#5D5D5D;}-->
+	<!--.top_x002D_T3{fill:#B9B9B9;}-->
+	<!--.top_x002D_T4{fill:#E8E8E8;}-->
+	<!--.top_x002D_T1{fill:#8B8B8B;}-->
 	.st0{fill:#E8E8E8;}
 	.st1{fill:#FFFFFF;}
 	.st2{fill:#B9B9B9;}
@@ -16,20 +17,20 @@
 	.st5{fill:#464646;}
 </style>
 <switch>
-	<g>
+	<g >
 		<g id="Group_8_">
 			<path id="Path" class="st0" d="M16.25,65.54l65.08-37.39l48.78,28.28L65.03,93.82L16.25,65.54z"/>
-			<path id="Path_1_" class="top_x002D_light" d="M0,37.53l65.08,37.53L130,37.53L64.92,0L0,37.53z"/>
-			<path id="Path_2_" class="exterior_x002D_R_x002D_prim" d="M130,56.3V37.53L65,75.06v18.76L130,56.3z"/>
-			<path id="Path_3_" class="exterior_x002D_L_x002D_prim" d="M0,56.55V37.53l65,37.53v18.76L0,56.55z"/>
+			<path id="Path_1_" class="top_x002D_T4" d="M0,37.53l65.08,37.53L130,37.53L64.92,0L0,37.53z"/>
+			<path id="Path_2_" class="exterior_x002D_R4" d="M130,56.3V37.53L65,75.06v18.76L130,56.3z"/>
+			<path id="Path_3_" class="exterior_x002D_L1" d="M0,56.55V37.53l65,37.53v18.76L0,56.55z"/>
 			<path id="Path_4_" class="st1" d="M77.92,74.64l39.16-22.61c0.4-0.24,0.73-0.05,0.73,0.42v3c0,0.47-0.33,1.03-0.73,1.27
 				L77.92,79.33c-0.4,0.23-0.73,0.04-0.73-0.42V75.9C77.19,75.44,77.52,74.87,77.92,74.64z"/>
 			<path id="Path_5_" class="st2" d="M73.13,9.39l48.83,28.14L65.08,70.37L16.25,42.22L73.13,9.39z"/>
-			<path id="Path_6_" class="exterior_x002D_L_x002D_prim" d="M65,4.69v2.35l54.92,31.66l2.04-1.17L65,4.69z"/>
-			<path id="Path_7_" class="exterior_x002D_R_x002D_prim" d="M8.13,37.53L65,4.69v2.35L10.16,38.7L8.13,37.53z"/>
-			<path id="Path_8_" class="top_x002D_dark" d="M20.31,32.84l36.57-21.11l12.18,7.04L32.5,39.88L20.31,32.84z"/>
-			<path id="Path_9_" class="exterior_x002D_R_x002D_prim" d="M56.88,18.77V9.39l-36.57,21.1v2.4l6.1,3.47L56.88,18.77z"/>
-			<path id="Path_10_" class="exterior_x002D_L_x002D_prim" d="M56.88,18.77l6.09,3.52l6.09-3.52l-12.18-7.04V18.77z"/>
+			<path id="Path_6_" class="exterior_x002D_L1" d="M65,4.69v2.35l54.92,31.66l2.04-1.17L65,4.69z"/>
+			<path id="Path_7_" class="exterior_x002D_R4" d="M8.13,37.53L65,4.69v2.35L10.16,38.7L8.13,37.53z"/>
+			<path id="Path_8_" class="top_x002D_T1" d="M20.31,32.84l36.57-21.11l12.18,7.04L32.5,39.88L20.31,32.84z"/>
+			<path id="Path_9_" class="exterior_x002D_R4" d="M56.88,18.77V9.39l-36.57,21.1v2.4l6.1,3.47L56.88,18.77z"/>
+			<path id="Path_10_" class="exterior_x002D_L1" d="M56.88,18.77l6.09,3.52l6.09-3.52l-12.18-7.04V18.77z"/>
 			<g id="Group_3_">
 				<path id="Path_11_" class="st3" d="M43.11,23.53l5.2,3l13.85-7.99l-5.2-3L43.11,23.53z"/>
 				<path id="Path_12_" class="st2" d="M48.31,26.53v5.59l-5.2-3v-5.59L48.31,26.53z"/>
@@ -76,9 +77,11 @@
 					<ellipse id="Ellipse_11_" vector-effect="non-scaling-stroke" class="st1" cx="41.75" cy="26.22" rx="1.85" ry="1.07"/>
 				</g>
 			</g>
-			<path id="Path_23_" class="top_x002D_prim" d="M10.16,38.7l10.15-5.86l12.19,7.04l36.56-21.11l-12.18-7.04L65,7.04l54.92,31.66
+			<path id="Path_23_" class="top_x002D_T3" d="M10.16,38.7l10.15-5.86l12.19,7.04l36.56-21.11l-12.18-7.04L65,7.04l54.92,31.66
 				L65.08,70.37L10.16,38.7z"/>
 		</g>
+
 	</g>
 </switch>
+
 </svg>

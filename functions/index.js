@@ -40,6 +40,12 @@ app.get('/network/:network/token/:tokenId/image', async (request, response) => {
     return require('./image').generateTokenImage(request, response);
 });
 
+// The image tester
+app.get('/size/:size/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
+    return require('./image').generateTestImage(request, response);
+});
+
+
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
