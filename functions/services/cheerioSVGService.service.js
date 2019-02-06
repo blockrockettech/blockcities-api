@@ -17,6 +17,7 @@ class CheerioSVGService {
         _.forEach(windowsFill.left, (v, k) => $(`.window_x002D_L_x002D_${k}`).attr('fill', v));
         _.forEach(windowsFill.right, (v, k) => $(`.window_x002D_R_x002D_${k}`).attr('fill', v));
 
+        // FIXME if darkgrey exterior then dark concrete
         _.forEach(concreteFill.classic, (v, k) => $(`.concrete_x002D_${k}`).attr('fill', v));
 
         return {
