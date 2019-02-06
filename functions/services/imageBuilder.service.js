@@ -3,7 +3,7 @@ const {createCanvas, loadImage, Image} = require('canvas');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 
-const colourways = require('./colourwaysV2');
+const colourways = require('./colourways');
 
 const exteriorsKeys = Object.keys(colourways.exteriors);
 const windowsKeys = Object.keys(colourways.windows);
