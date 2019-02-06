@@ -84,15 +84,9 @@ module.exports = {
     },
     concrete: {
         classic: {
-            left: {
-                prim: '#A2A2A2'
-            },
-            right: {
-                prim: '#D1D1D1'
-            },
-            top: {
-                prim: '#E8E8E8'
-            },
+            left: '#A2A2A2',
+            right: '#D1D1D1',
+            top: '#E8E8E8'
         },
         dark: {
 

@@ -174,19 +174,19 @@ class ImageBuilderService {
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
-                colourways.concrete[concreteKeys[concreteMapping(exteriorColorway)]],
+                colourways.concrete,
             );
             const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
-                colourways.concrete[concreteKeys[concreteMapping(exteriorColorway)]],
+                colourways.concrete,
             );
             const {svg: processedRoofSvg} = cheerioSVGService.process(
                 rawRoofSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
-                colourways.concrete[concreteKeys[concreteMapping(exteriorColorway)]],
+                colourways.concrete,
             );
 
             const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
