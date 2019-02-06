@@ -174,7 +174,9 @@ module.exports = {
             top: '#E8E8E8'
         },
         dark: {
-
+            left: '#8B8B8B',
+            right: '#E8E8E8',
+            top: '#A2A2A2'
         }
     }
 };
