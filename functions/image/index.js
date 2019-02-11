@@ -6,13 +6,10 @@ module.exports = {
     async generateTokenImage (request, response) {
 
         const cityMapping = (id) => {
-            if (id < 2) {
+            if (id < 5) {
                 return 4;
             }
-            if (id < 3) {
-                return 7;
-            }
-            return 11;
+            return 7;
         };
 
         const tokenId = request.params.tokenId;
