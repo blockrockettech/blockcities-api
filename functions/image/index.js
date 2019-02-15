@@ -5,49 +5,55 @@ module.exports = {
 
     async generateTokenImage (request, response) {
 
-        const cityMapping = (id) => {
-            if (id < 5) {
-                return 4;
+        try {
+            const cityMapping = (id) => {
+                return id < 4 ? id : 0;
+            };
+
+            const tokenId = request.params.tokenId;
+            if (!tokenId) {
+                return response.status(400).json({
+                    failure: `Token ID not provided`
+                });
             }
-            return 7;
-        };
 
-        const tokenId = request.params.tokenId;
-        if (!tokenId) {
-            return response.status(400).json({
-                failure: `Token ID not provided`
-            });
+            const network = request.params.network;
+            if (!network) {
+                return response.status(400).json({
+                    failure: `Network not provided`
+                });
+            }
+
+            const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
+            tokenDetails.building = cityMapping(tokenDetails.city);
+
+            const image = await imageBuilderService.generateImage(tokenDetails);
+
+            return response
+                .contentType('image/svg+xml')
+                .send(image);
+        } catch (e) {
+            console.error(e);
         }
-
-        const network = request.params.network;
-        if (!network) {
-            return response.status(400).json({
-                failure: `Network not provided`
-            });
-        }
-
-        const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
-        tokenDetails.size = cityMapping(tokenDetails.city);
-
-        const image = await imageBuilderService.generateImage(tokenDetails);
-
-        return response
-            .contentType('image/svg+xml')
-            .send(image);
     },
 
     async generateTestImage (request, response) {
-        const image = await imageBuilderService.generateImage({
-            size: parseInt(request.params.size),
-            base: parseInt(request.params.base),
-            body: parseInt(request.params.body),
-            roof: parseInt(request.params.roof),
-            exteriorColorway: parseInt(request.params.exterior),
-            windowColorway: parseInt(request.params.windows)
-        });
+        try {
+            console.log(request.params);
+            const image = await imageBuilderService.generateImage({
+                building: parseInt(request.params.building),
+                base: parseInt(request.params.base),
+                body: parseInt(request.params.body),
+                roof: parseInt(request.params.roof),
+                exteriorColorway: parseInt(request.params.exterior),
+                windowColorway: parseInt(request.params.windows)
+            });
 
-        return response
-            .contentType('image/svg+xml')
-            .send(image);
+            return response
+                .contentType('image/svg+xml')
+                .send(image);
+        } catch (e) {
+            console.error(e);
+        }
     }
 };

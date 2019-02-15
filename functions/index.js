@@ -41,7 +41,7 @@ app.get('/network/:network/token/:tokenId/image', async (request, response) => {
 });
 
 // The image tester
-app.get('/size/:size/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
+app.get('/building/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
     return require('./image').generateTestImage(request, response);
 });
 

@@ -12,7 +12,7 @@ class ImageBuilderService {
 
     async generateImage (
         {
-            size,
+            building,
             base,
             body,
             roof,
@@ -21,8 +21,7 @@ class ImageBuilderService {
         }) {
 
         try {
-            const buildingSize = size;
-            const rootPath = `${__dirname}/../raw_svgs/${buildingSize}`;
+            const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
             const basePath = `${rootPath}/bases/${base}.svg`;
             const bodyPath = `${rootPath}/bodies/${body}.svg`;
