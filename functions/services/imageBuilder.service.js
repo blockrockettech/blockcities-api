@@ -7,6 +7,7 @@ const colourways = require('./colourways');
 
 const exteriorsKeys = Object.keys(colourways.exteriors);
 const windowsKeys = Object.keys(colourways.windows);
+const curtainsKeys = Object.keys(colourways.curtains);
 
 class ImageBuilderService {
 
@@ -35,18 +36,21 @@ class ImageBuilderService {
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
+                colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
             const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
+                colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
             const {svg: processedRoofSvg} = cheerioSVGService.process(
                 rawRoofSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
+                colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
 
