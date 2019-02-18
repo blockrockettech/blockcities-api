@@ -2,7 +2,7 @@
      viewBox="0 0 130 357.96">
     <defs>
         <style>
-            .cls-1{fill:none;}.top-prim{fill:#dd8986;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}.exterior-L-dark{fill:#512220;}.cls-4{fill:url(#linear-gradient-3);}.cls-5{fill:url(#linear-gradient-4);}.cls-6{fill:url(#linear-gradient-5);}.cls-7{fill:url(#linear-gradient-6);}.cls-8{fill:url(#linear-gradient-7);}.cls-9{fill:url(#linear-gradient-8);}.exterior-L-prim{fill:#74302f;}.exterior-R-prim{fill:#d15752;}.curtain-R-prim-light{fill:#2d95ac;}.curtain-L-prim-light{fill:#186273;}.curtain-R-prim-dark{fill:#1f788c;}.curtain-L-prim-dark{fill:#11424d;}.top-prim-2{fill:#dd8a87;}
+            .cls-1{fill:none;}.top-prim{fill:#dd8986;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}.exterior-L-dark{fill:#512220;}.cls-4{fill:url(#linear-gradient-3);}.cls-5{fill:url(#linear-gradient-4);}.cls-6{fill:url(#linear-gradient-5);}.cls-7{fill:url(#linear-gradient-6);}.cls-8{fill:url(#linear-gradient-7);}.cls-9{fill:url(#linear-gradient-8);}.exterior-L-prim{fill:#74302f;}.exterior-R-prim{fill:#d15752;}.curtain-R-prim-light{fill:#2d95ac;}.curtain-L-prim-light{fill:#186273;}.curtain-R-prim-dark{fill:#1f788c;}.curtain-L-prim-dark{fill:#11424d;}.top-prim{fill:#dd8a87;}
         </style>
         <linearGradient id="linear-gradient" x1="-2904.7" y1="-3811.1" x2="-2904.49" y2="-3811.09"
                         gradientTransform="matrix(90, 0, 0, -24.32, 261523.58, -92509.79)"
@@ -181,20 +181,20 @@
              points="125 178.98 125 178.98 125 178.98 117.06 183.56 115 184.75 115 184.75 115 184.75 115 178.98 115 173.2 115 173.2 113.72 173.94 110 176.09 110 186.64 110 187.64 110 187.64 110 187.64 104.06 191.06 100 193.41 100 193.41 100 187.64 100 186.64 100 181.86 100 181.86 97.45 183.33 95 184.75 95 196.3 95 196.3 95 196.3 91.03 198.59 90 199.19 85 202.07 85 202.07 85 196.3 85 190.52 85 190.52 81.2 192.72 80 193.41 80 204.96 80 204.96 80 204.96 77.97 206.13 75 207.85 70 210.73 70 210.73 70 204.96 70 199.18 70 199.18 65 202.07 65 213.62 65 219.39 65 230.94 70 228.05 70 216.5 75 213.62 80 210.73 80 222.28 80 222.28 81.3 221.53 85 219.39 85 209.91 85 207.84 90 204.96 95 202.07 95 213.62 95 213.62 97.5 212.18 100 210.73 100 202.96 100 199.18 105 196.29 110 193.41 110 204.96 110 204.96 113.8 202.76 115 202.07 115 190.52 120 187.63 120 187.63 125 184.75 125 196.3 125 196.3 130 193.41 130 181.86 130 176.09 130 164.54 125 167.43 125 178.98"/>
     <polygon class="exterior-L-prim"
              points="5 196.3 5 184.75 10 187.63 10 187.63 15 190.52 15 202.07 16.2 202.76 20 204.96 20 204.96 20 193.41 25 196.29 30 199.18 30 202.96 30 210.73 32.5 212.18 35 213.62 35 213.62 35 202.07 40 204.96 45 207.84 45 209.91 45 219.39 48.7 221.53 50 222.28 50 222.28 50 210.73 55 213.62 60 216.5 60 228.05 65 230.94 65 219.39 65 213.62 65 202.07 60 199.18 60 199.18 60 204.96 60 210.73 60 210.73 55 207.85 52.03 206.13 50 204.96 50 204.96 50 204.96 50 193.41 48.8 192.72 45 190.52 45 190.52 45 196.3 45 202.07 45 202.07 40 199.19 38.97 198.59 35 196.3 35 196.3 35 196.3 35 184.75 32.55 183.33 30 181.86 30 181.86 30 186.64 30 187.64 30 193.41 30 193.41 25.94 191.06 20 187.64 20 187.64 20 187.64 20 186.64 20 176.09 16.27 173.94 15 173.2 15 173.2 15 178.98 15 184.75 15 184.75 15 184.75 12.94 183.56 5 178.98 5 178.98 5 178.98 5 167.43 0 164.54 0 176.09 0 181.86 0 193.41 5 196.3 5 196.3"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="70 204.96 70 210.73 75 207.84 77.97 206.13 80 204.96 80 204.96 75 202.07 70 204.96"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="105 184.75 101.73 186.64 100 187.64 100 193.41 104.06 191.06 110 187.64 110 187.64 105 184.75"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="85 196.3 85 202.07 90 199.19 91.03 198.59 95 196.3 95 196.3 90 193.41 85 196.3"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="115 178.98 115 184.75 115 184.75 117.06 183.56 125 178.98 125 178.98 120 176.09 115 178.98"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="50 204.96 50 204.96 52.03 206.13 55 207.84 60 210.73 60 204.96 55 202.07 50 204.96"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="25 184.75 20 187.64 20 187.64 25.94 191.06 30 193.41 30 187.64 28.27 186.64 25 184.75"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="35 196.3 35 196.3 38.97 198.59 40 199.19 45 202.07 45 196.3 40 193.41 35 196.3"/>
-    <polygon class="top-prim-2"
+    <polygon class="top-prim"
              points="5 178.98 5 178.98 12.94 183.56 15 184.75 15 184.75 15 178.98 10 176.09 5 178.98"/>
 </svg>
