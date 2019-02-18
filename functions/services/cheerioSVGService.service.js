@@ -2,7 +2,7 @@ const _ = require('lodash');
 
 class CheerioSVGService {
 
-    process (svgXml, exteriorFill = {}, windowsFill = {}, concreteFill = {}) {
+    process (svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}, concreteFill = {}) {
 
         try {
             const $ = require('cheerio').load(svgXml, {xmlMode: true});
@@ -14,6 +14,9 @@ class CheerioSVGService {
             _.forEach(windowsFill.left, (v, k) => $(`.window-L-${k}`).attr('style', `fill: ${v}`));
             _.forEach(windowsFill.right, (v, k) => $(`.window-R-${k}`).attr('style', `fill: ${v}`));
 
+            _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-')}`).attr('style', `fill: ${v}`));
+            _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-')}`).attr('style', `fill: ${v}`));
+
             // FIXME if darkgrey exterior then dark concrete
             _.forEach(concreteFill.classic, (v, k) => $(`.concrete-${k}`).attr('style', `fill: ${v}`));
 
@@ -22,6 +25,7 @@ class CheerioSVGService {
 
             if (anchorElement && anchorElement.attr('id')) {
                 anchor = anchorElement.attr('id').split('_')[1];
+                console.log(`anchor ${anchor}`);
             }
 
             return {

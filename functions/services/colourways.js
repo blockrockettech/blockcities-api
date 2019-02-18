@@ -167,6 +167,38 @@ module.exports = {
             },
         }
     },
+    curtains: {
+        trueblue: {
+            left: {
+                prim_dark: '#2A5A95',
+                prim_light: '#3D79C1'
+            },
+            right: {
+                prim_dark: '#90C2FF',
+                prim_light: '#BEDBFF'
+            },
+        },
+        aquablue: {
+            left: {
+                prim_dark: '#11424D',
+                prim_light: '#186273'
+            },
+            right: {
+                prim_dark: '#1F788C',
+                prim_light: '#2D95AC'
+            },
+        },
+        gold: {
+            left: {
+                prim_dark: '#4D3B24',
+                prim_light: '#795A30'
+            },
+            right: {
+                prim_dark: '#BD9664',
+                prim_light: '#EACB87'
+            },
+        }
+    },
     concrete: {
         classic: {
             left: '#A2A2A2',
