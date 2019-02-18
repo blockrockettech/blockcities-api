@@ -12,6 +12,6 @@ https://paper.dropbox.com/doc/Component-Record--AXk64B1I8E9b1DEmCYW9i8KmAg-DeLzr
 | Aon Center     | 3  | 0, 1, 2     |
 | Citygroup      | 4  |             |
 | Coastal States | 5  |             |
-| Salesforce     | 6  |             |
-| Trump          | 7  |             |
+| Trump          | 6  |             |
+| Salesforce     | 7  |             |
 
