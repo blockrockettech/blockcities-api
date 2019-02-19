@@ -24,9 +24,9 @@ class ImageBuilderService {
         try {
             const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
-            const basePath = `${rootPath}/bases/${base}.svg`;
-            const bodyPath = `${rootPath}/bodies/${body}.svg`;
-            const roofPath = `${rootPath}/roofs/${roof}.svg`;
+            const basePath = `${rootPath}/Bases/${base}.svg`;
+            const bodyPath = `${rootPath}/Bodies/${body}.svg`;
+            const roofPath = `${rootPath}/Roofs/${roof}.svg`;
 
             const rawBaseSvg = await readFilePromise(basePath, 'utf8');
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');

@@ -1,0 +1,56 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 82.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #73302f;
+      }
+
+      .top-light {
+        fill: #fac7c6;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+
+      .cls-2 {
+        fill: #d15752;
+      }
+
+      .cls-3 {
+        fill: #7fb8b7;
+      }
+
+      .cls-4 {
+        fill: #567572;
+      }
+
+      .cls-5 {
+        fill: #6f9594;
+      }
+
+      .cls-6 {
+        fill: #89cecc;
+      }
+
+      .cls-7 {
+        fill: #c3e7ea;
+      }
+    </style>
+  </defs>
+  <title>Artboard 10</title>
+  <g id="_200-vesey-roof" data-name=" 200-vesey-roof">
+    <path id="body-L2" class="cls-1" d="M65,82.56,0,45V37.5L65,75.05Z"/>
+    <path id="top-T2" class="top-light" d="M65,75.05l65-37.52L65,0,0,37.53Z"/>
+    <path id="top-T1" class="top-prim" d="M4.33,37.53,65,2.5l60.67,35L65,72.55Z"/>
+    <path id="body-R2" class="cls-2" d="M65,75.05v7.51L130,45V37.5Z"/>
+    <path id="Path" class="cls-3" d="M65,70.05l52-30V30L65,60Z"/>
+    <path id="Path-2" class="cls-4" d="M65,70.05,13,40V30L65,60Z"/>
+    <path id="Path-3" class="cls-5" d="M65,60V12.51L13,30Z"/>
+    <path id="Path-4" class="cls-6" d="M117,30,65,60V12.51Z"/>
+    <path id="Path-5" class="cls-7" d="M65,12.51V0l52,30Z"/>
+    <path id="Path-6" class="cls-4" d="M13,30,65,0V12.51Z"/>
+    <path id="body-R2-2" class="cls-2" d="M13,35,6.5,38.78,4.33,37.53l8.67-5Z"/>
+    <path id="body-L2-2" class="cls-1" d="M123.5,38.78,117,35V32.52l8.67,5Z"/>
+  </g>
+</svg>

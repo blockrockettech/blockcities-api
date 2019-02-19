@@ -1,0 +1,80 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.04 127.3076">
+  <defs>
+    <style>
+      .top-light-2 {
+        fill: #fac7c6;
+      }
+
+      .top-prim-2 {
+        fill: #dd8987;
+      }
+
+      .exterior-R-prim-2 {
+        fill: #d15752;
+      }
+
+      .exterior-L-prim-2 {
+        fill: #73302f;
+      }
+
+      .exterior-R-dark {
+        fill: #a74d4a;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+    </style>
+  </defs>
+  <title>Artboard 18</title>
+  <g id="Group">
+    <path id="Roof-top" class="top-light-2" d="M85.02,98.1654,0,49.0762,85.02,0l85.02,49.0762Z"/>
+    <path id="Roof-top-inner" class="top-prim-2" d="M164.73,49.0762,85.02,3.0607,5.3105,49.0762,85.02,95.1047Z"/>
+    <path id="Roof-Mechanical-Floor-Left" class="exterior-R-prim-2" d="M85.02,127.3076l85.02-49.0761V49.0762L85.02,98.1654Z"/>
+    <path id="Roof-Mechanical-Floor-Left-2" class="exterior-L-prim-2" d="M85.02,127.3076,0,78.2315V49.0762L85.02,98.1654Z"/>
+    <path id="roof-top-2" class="top-light-2" d="M114.2407,46.0154,85.02,29.1422,55.7993,46.0154,85.02,62.8886Z"/>
+    <path id="roof-top-inner-2" class="top-prim-2" d="M108.93,46.0154,85.02,32.203,61.11,46.0154,85.02,59.8148Z"/>
+    <path id="Path" class="exterior-R-prim-2" d="M114.2407,46.0154v9.156L85.02,72.097V62.941Z"/>
+    <path id="Path-2" class="exterior-L-prim-2" d="M55.7993,46.0154v9.156L85.02,72.097V62.941Z"/>
+    <path id="Path-3" class="exterior-R-dark" d="M89.0094,99.6958l9.3-5.3628v19.5546l-9.3,5.3758Z"/>
+    <path id="Path-4" class="exterior-L-dark" d="M81.096,99.6958l-9.3-5.3628v19.5546l9.3,5.3758Z"/>
+    <path id="Path-5" class="exterior-R-dark" d="M115.5749,84.366l9.3-5.3759V98.61l-9.3,5.3759Z"/>
+    <path id="Path-6" class="exterior-L-dark" d="M54.4651,84.366l-9.3-5.3759V98.61l9.3,5.3759Z"/>
+    <path id="Path-7" class="exterior-R-dark" d="M142.14,69.0232l9.3-5.3628V83.215l-9.3,5.3628Z"/>
+    <path id="Path-8" class="exterior-L-dark" d="M27.9,69.0232,18.6,63.66V83.215l9.3,5.3628Z"/>
+    <path id="Path-9" class="exterior-R-dark" d="M102.2856,92.0309l9.3-5.3628v19.5546l-9.3,5.3628Z"/>
+    <path id="Path-10" class="exterior-L-dark" d="M67.7544,92.0309l-9.3-5.3628v19.5546l9.3,5.3628Z"/>
+    <path id="Path-11" class="exterior-R-dark" d="M128.8642,76.688l9.2868-5.3628v19.62l-9.2868,5.3759Z"/>
+    <path id="Path-12" class="exterior-L-dark" d="M41.1758,76.688l-9.3-5.3628v19.62l9.3,5.3759Z"/>
+    <path id="Path-13" class="exterior-R-dark" d="M155.43,61.3583l9.3-5.3759v19.62l-9.3,5.3759Z"/>
+    <path id="Path-14" class="exterior-L-dark" d="M14.61,61.3583l-9.3-5.3759v19.62l9.3,5.3759Z"/>
+    <path id="Path-15" class="top-prim-2" d="M89.0094,119.2634l9.3-5.3758,1.9881,1.151-11.288,6.54Z"/>
+    <path id="Path-16" class="top-prim-2" d="M81.096,119.2634l-9.3-5.3758-2.0535,1.2164,11.288,6.54Z"/>
+    <path id="Path-17" class="top-prim-2" d="M102.2856,111.5855l9.3-5.3628,2.0012,1.151-11.3011,6.54Z"/>
+    <path id="Path-18" class="top-prim-2" d="M67.7544,111.5855l-9.3-5.3628-2.0012,1.151,11.3011,6.54Z"/>
+    <path id="Path-19" class="top-prim-2" d="M115.5749,103.9206l9.3-5.3759,1.9881,1.1511-11.288,6.54Z"/>
+    <path id="Path-20" class="top-prim-2" d="M54.4651,103.9206l-9.3-5.3759L43.164,99.6958l11.288,6.54Z"/>
+    <path id="Path-21" class="top-prim-2" d="M128.8642,96.2557l9.3-5.3759,1.9882,1.1511-11.288,6.54Z"/>
+    <path id="Path-22" class="top-prim-2" d="M41.1758,96.2557l-9.3-5.3759-1.9882,1.1511,11.288,6.54Z"/>
+    <path id="Path-23" class="top-prim-2" d="M142.14,88.5778l9.3-5.3628,1.9882,1.151-11.288,6.54Z"/>
+    <path id="Path-24" class="top-prim-2" d="M27.9,88.5778,18.6,83.215l-1.9882,1.151L27.9,90.906Z"/>
+    <path id="Path-25" class="top-prim-2" d="M155.43,80.9129l9.3-5.3759,1.9882,1.151-11.288,6.54Z"/>
+    <path id="Path-26" class="top-prim-2" d="M14.61,80.9129l-9.3-5.3759L3.3223,76.688,14.61,83.228Z"/>
+    <path id="Path-27" class="exterior-L-prim-2" d="M100.2974,93.1819V115.104l-1.9881-1.151V94.333Z"/>
+    <path id="Path-28" class="exterior-R-prim-2" d="M69.7426,93.1819V115.104l1.9881-1.151V94.333Z"/>
+    <path id="Path-29" class="exterior-L-prim-2" d="M113.5867,85.517v21.8567l-2.0012-1.151V86.6681Z"/>
+    <path id="Path-30" class="exterior-R-prim-2" d="M56.4533,85.517v21.8567l2.0012-1.151V86.6681Z"/>
+    <path id="Path-31" class="exterior-L-prim-2" d="M126.876,77.8391V99.6958l-1.9881-1.1511v-19.62Z"/>
+    <path id="Path-32" class="exterior-R-prim-2" d="M43.164,77.8391V99.6958l1.9882-1.1511v-19.62Z"/>
+    <path id="Path-33" class="exterior-L-prim-2" d="M140.1522,70.1742V92.0309L138.1641,90.88V71.26Z"/>
+    <path id="Path-34" class="exterior-R-prim-2" d="M29.8878,70.1742V92.0309L31.876,90.88V71.26Z"/>
+    <path id="Path-35" class="exterior-L-prim-2" d="M153.4284,62.5093V84.366L151.44,83.215V63.66Z"/>
+    <path id="Path-36" class="exterior-R-prim-2" d="M16.6116,62.5093V84.366L18.6,83.215V63.66Z"/>
+    <path id="Path-37" class="exterior-L-prim-2" d="M166.7177,54.8314V76.688L164.73,75.537V55.917Z"/>
+    <path id="Path-38" class="exterior-R-prim-2" d="M3.3223,54.8314V76.688l1.9882-1.151V55.917Z"/>
+    <path id="Path-39" class="exterior-L-prim-2" d="M85.02,3.0607V6.1345l77.0543,44.472,2.616-1.5434Z"/>
+    <path id="Path-40" class="exterior-R-prim-2" d="M5.3105,49.0762,7.9265,50.62,85.02,6.1345V3.0607Z"/>
+    <path id="Path-41" class="exterior-L-prim-2" d="M108.93,46.0154l-1.308.7587L85.02,33.7464V32.203Z"/>
+    <path id="Path-42" class="exterior-R-prim-2" d="M61.11,46.0154,85.02,32.203v1.5434l-22.5892,13.08Z"/>
+  </g>
+</svg>

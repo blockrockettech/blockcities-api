@@ -1,0 +1,61 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 542.71">
+  <defs>
+    <style>
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
+      .window-L-prim {
+        fill: #4d3b25;
+      }
+    </style>
+  </defs>
+  <title>Artboard 8</title>
+  <g>
+    <path class="exterior-L-prim" d="M110,155.88,0,92.37V479.2l110,63.51ZM25,476.31v5.77l-15-8.66V109.69l15,8.66Zm25,14.43v5.78l-15-8.66V124.13L40,127h0l10,5.77Zm25,14.44V511l-15-8.66V138.56l15,8.66Zm25,14.43v5.78l-15-8.66V153l15,8.66Z"/>
+    <path class="exterior-R-prim" d="M110,542.71l160-92.38V63.51L110,155.88Zm135-95.27V89.49l10-5.77h0l5-2.88V444.56l-15,8.66Zm-25,14.44v-358l15-8.66V459l-15,8.66Zm-25,14.43v-358l15-8.66V473.42l-15,8.66Zm-25,14.43v-358L180,127h0l5-2.88V487.86l-15,8.66Zm-25,14.44v-358l15-8.66V502.29L145,511Zm-25,14.43v-358L135,153V516.73l-15,8.66Z"/>
+    <polygon id="anchor-01_386.83" data-name="anchor-01 386.83" class="top-prim" points="270 63.51 160 0 0 92.37 110 155.88 270 63.51"/>
+    <polygon class="window-R-prim" points="130 155.88 135 152.99 120 161.65 120 519.61 130 513.84 130 155.88"/>
+    <polygon class="window-R-prim" points="180 127.02 170 132.79 170 490.74 180 484.97 180 127.02"/>
+    <polygon class="window-R-prim" points="230 98.15 235 95.26 220 103.92 220 461.88 230 456.1 230 98.15"/>
+    <polygon class="window-R-prim" points="155 141.45 160 138.56 145 147.22 145 505.18 155 499.4 155 141.45"/>
+    <polygon class="window-R-prim" points="205 112.58 210 109.69 195 118.35 195 476.31 205 470.54 205 112.58"/>
+    <polygon class="window-R-prim" points="255 83.72 245 89.49 245 447.44 255 441.67 255 83.72"/>
+    <polygon class="top-prim" points="130 513.84 120 519.61 120 525.39 135 516.73 130 513.84"/>
+    <polygon class="top-prim" points="155 499.4 145 505.18 145 510.95 160 502.29 155 499.4"/>
+    <polygon class="top-prim" points="180 484.97 170 490.74 170 496.52 185 487.86 180 484.97"/>
+    <polygon class="top-prim" points="205 470.54 195 476.31 195 482.08 210 473.42 205 470.54"/>
+    <polygon class="top-prim" points="230 456.1 220 461.88 220 467.65 235 458.99 230 456.1"/>
+    <polygon class="top-prim" points="255 441.67 245 447.44 245 453.22 260 444.56 255 441.67"/>
+    <polygon class="exterior-L-prim" points="130 513.84 135 516.73 135 152.99 130 155.88 130 513.84"/>
+    <polygon class="exterior-L-prim" points="155 499.4 160 502.29 160 138.56 155 141.45 155 499.4"/>
+    <polygon class="exterior-L-prim" points="185 487.86 185 124.13 180 127.01 180 127.02 180 484.97 185 487.86"/>
+    <polygon class="exterior-L-prim" points="205 470.54 210 473.42 210 109.69 205 112.58 205 470.54"/>
+    <polygon class="exterior-L-prim" points="230 456.1 235 458.99 235 95.26 230 98.15 230 456.1"/>
+    <polygon class="exterior-L-prim" points="260 444.56 260 80.83 255 83.71 255 83.72 255 441.67 260 444.56"/>
+    <polygon class="window-L-prim" points="90 155.88 90 513.84 100 519.61 100 161.65 85 152.99 90 155.88"/>
+    <polygon class="window-L-prim" points="40 484.97 50 490.74 50 132.79 40 127.02 40 484.97"/>
+    <polygon class="window-L-prim" points="65 141.45 65 499.4 75 505.18 75 147.22 60 138.56 65 141.45"/>
+    <polygon class="window-L-prim" points="15 112.58 15 470.54 25 476.31 25 118.35 10 109.69 15 112.58"/>
+    <polygon class="top-prim" points="85 516.73 100 525.39 100 519.61 90 513.84 85 516.73"/>
+    <polygon class="top-prim" points="60 502.29 75 510.95 75 505.18 65 499.4 60 502.29"/>
+    <polygon class="top-prim" points="35 487.86 50 496.52 50 490.74 40 484.97 35 487.86"/>
+    <polygon class="top-prim" points="10 473.42 25 482.08 25 476.31 15 470.54 10 473.42"/>
+    <polygon class="exterior-R-prim" points="90 155.88 85 152.99 85 516.73 90 513.84 90 155.88"/>
+    <polygon class="exterior-R-prim" points="65 141.45 60 138.56 60 502.29 65 499.4 65 141.45"/>
+    <polygon class="exterior-R-prim" points="40 127.02 40 127.01 35 124.13 35 487.86 40 484.97 40 127.02"/>
+    <polygon class="exterior-R-prim" points="15 112.58 10 109.69 10 473.42 15 470.54 15 112.58"/>
+  </g>
+</svg>
