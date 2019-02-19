@@ -28,7 +28,7 @@ module.exports = {
         return response.status(200).json({
             name: `building ${tokenId}`,
             description: `building ${tokenId}`,
-            image: `${tokenBaseURI[0]}/token/${tokenId}/image`
+            image: `${tokenBaseURI[0]}${tokenId}/image`
         });
     },
 

@@ -6,10 +6,6 @@ module.exports = {
     async generateTokenImage (request, response) {
 
         try {
-            const cityMapping = (id) => {
-                return id < 4 ? id : 0;
-            };
-
             const tokenId = request.params.tokenId;
             if (!tokenId) {
                 return response.status(400).json({
@@ -25,7 +21,7 @@ module.exports = {
             }
 
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
-            tokenDetails.building = cityMapping(tokenDetails.city);
+            tokenDetails.building = tokenDetails.city;
 
             const image = await imageBuilderService.generateImage(tokenDetails);
 

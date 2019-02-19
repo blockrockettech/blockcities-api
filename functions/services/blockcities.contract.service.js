@@ -53,6 +53,7 @@ class BlockcitiesContractService {
 
         // Get token URI
         const tokenURI = await token.tokenURI(tokenId);
+        console.log(tokenURI);
 
         // Get metadata
         const metadata = await lookupMetadata(tokenURI[0]);

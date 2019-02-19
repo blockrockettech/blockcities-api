@@ -21,11 +21,11 @@
         fill: #414042;
       }
 
-      .cls-1 {
+      .window-R-prim-dark {
         fill: #353535;
       }
 
-      .cls-2 {
+      .window-L-prim-dark {
         fill: #1b1b1b;
       }
     </style>
@@ -50,363 +50,363 @@
       <path id="windows-L2-6" data-name="windows-L2" class="window-L-prim" d="M15,63.51,7.5,59.18V394.04l7.5,4.33Z"/>
       <g id="Group-3" data-name="Group">
         <g id="Group-4" data-name="Group">
-          <path id="Path" class="cls-1" d="M92.5,99.59l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-2" data-name="Path" class="cls-1" d="M117.5,85.16l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-3" data-name="Path" class="cls-1" d="M142.5,70.73,150,66.4v8.66l-7.5,4.33Z"/>
-          <path id="Path-4" data-name="Path" class="cls-1" d="M105,92.38l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-5" data-name="Path" class="cls-1" d="M130,77.94l7.5-4.33v8.66L130,86.6Z"/>
-          <path id="Path-6" data-name="Path" class="cls-1" d="M155,63.51l7.5-4.33v8.66L155,72.17Z"/>
+          <path id="Path" class="window-R-prim-dark" d="M92.5,99.59l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-2" data-name="Path" class="window-R-prim-dark" d="M117.5,85.16l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-3" data-name="Path" class="window-R-prim-dark" d="M142.5,70.73,150,66.4v8.66l-7.5,4.33Z"/>
+          <path id="Path-4" data-name="Path" class="window-R-prim-dark" d="M105,92.38l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-5" data-name="Path" class="window-R-prim-dark" d="M130,77.94l7.5-4.33v8.66L130,86.6Z"/>
+          <path id="Path-6" data-name="Path" class="window-R-prim-dark" d="M155,63.51l7.5-4.33v8.66L155,72.17Z"/>
         </g>
       </g>
       <g id="Group-5" data-name="Group">
         <g id="Group-6" data-name="Group">
-          <path id="Path-7" data-name="Path" class="cls-1" d="M92.5,134.23l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-8" data-name="Path" class="cls-1" d="M117.5,119.8l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-9" data-name="Path" class="cls-1" d="M142.5,105.37l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-10" data-name="Path" class="cls-1" d="M105,127.02l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-11" data-name="Path" class="cls-1" d="M130,112.58l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-12" data-name="Path" class="cls-1" d="M155,98.15l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-7" data-name="Path" class="window-R-prim-dark" d="M92.5,134.23l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-8" data-name="Path" class="window-R-prim-dark" d="M117.5,119.8l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-9" data-name="Path" class="window-R-prim-dark" d="M142.5,105.37l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-10" data-name="Path" class="window-R-prim-dark" d="M105,127.02l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-11" data-name="Path" class="window-R-prim-dark" d="M130,112.58l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-12" data-name="Path" class="window-R-prim-dark" d="M155,98.15l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-7" data-name="Group">
         <g id="Group-8" data-name="Group">
-          <path id="Path-13" data-name="Path" class="cls-1" d="M92.5,168.88l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-14" data-name="Path" class="cls-1" d="M117.5,154.44l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-15" data-name="Path" class="cls-1" d="M142.5,140.01l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-16" data-name="Path" class="cls-1" d="M105,161.66l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-17" data-name="Path" class="cls-1" d="M130,147.22l7.5-4.33v8.66l-7.5,4.34Z"/>
-          <path id="Path-18" data-name="Path" class="cls-1" d="M155,132.79l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-13" data-name="Path" class="window-R-prim-dark" d="M92.5,168.88l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-14" data-name="Path" class="window-R-prim-dark" d="M117.5,154.44l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-15" data-name="Path" class="window-R-prim-dark" d="M142.5,140.01l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-16" data-name="Path" class="window-R-prim-dark" d="M105,161.66l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-17" data-name="Path" class="window-R-prim-dark" d="M130,147.22l7.5-4.33v8.66l-7.5,4.34Z"/>
+          <path id="Path-18" data-name="Path" class="window-R-prim-dark" d="M155,132.79l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-9" data-name="Group">
         <g id="Group-10" data-name="Group">
-          <path id="Path-19" data-name="Path" class="cls-1" d="M92.5,203.52l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-20" data-name="Path" class="cls-1" d="M117.5,189.08l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-21" data-name="Path" class="cls-1" d="M142.5,174.65l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-22" data-name="Path" class="cls-1" d="M105,196.3l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-23" data-name="Path" class="cls-1" d="M130,181.87l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-24" data-name="Path" class="cls-1" d="M155,167.43l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-19" data-name="Path" class="window-R-prim-dark" d="M92.5,203.52l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-20" data-name="Path" class="window-R-prim-dark" d="M117.5,189.08l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-21" data-name="Path" class="window-R-prim-dark" d="M142.5,174.65l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-22" data-name="Path" class="window-R-prim-dark" d="M105,196.3l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-23" data-name="Path" class="window-R-prim-dark" d="M130,181.87l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-24" data-name="Path" class="window-R-prim-dark" d="M155,167.43l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-11" data-name="Group">
         <g id="Group-12" data-name="Group">
-          <path id="Path-25" data-name="Path" class="cls-1" d="M92.5,238.16l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-26" data-name="Path" class="cls-1" d="M117.5,223.72l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-27" data-name="Path" class="cls-1" d="M142.5,209.29l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-28" data-name="Path" class="cls-1" d="M105,230.94l7.5-4.33v8.66L105,239.6Z"/>
-          <path id="Path-29" data-name="Path" class="cls-1" d="M130,216.51l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-30" data-name="Path" class="cls-1" d="M155,202.07l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-25" data-name="Path" class="window-R-prim-dark" d="M92.5,238.16l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-26" data-name="Path" class="window-R-prim-dark" d="M117.5,223.72l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-27" data-name="Path" class="window-R-prim-dark" d="M142.5,209.29l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-28" data-name="Path" class="window-R-prim-dark" d="M105,230.94l7.5-4.33v8.66L105,239.6Z"/>
+          <path id="Path-29" data-name="Path" class="window-R-prim-dark" d="M130,216.51l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-30" data-name="Path" class="window-R-prim-dark" d="M155,202.07l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-13" data-name="Group">
         <g id="Group-14" data-name="Group">
-          <path id="Path-31" data-name="Path" class="cls-1" d="M92.5,272.8l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-32" data-name="Path" class="cls-1" d="M117.5,258.36l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-33" data-name="Path" class="cls-1" d="M142.5,243.93l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-34" data-name="Path" class="cls-1" d="M105,265.58l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-35" data-name="Path" class="cls-1" d="M130,251.15l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-36" data-name="Path" class="cls-1" d="M155,236.71l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-31" data-name="Path" class="window-R-prim-dark" d="M92.5,272.8l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-32" data-name="Path" class="window-R-prim-dark" d="M117.5,258.36l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-33" data-name="Path" class="window-R-prim-dark" d="M142.5,243.93l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-34" data-name="Path" class="window-R-prim-dark" d="M105,265.58l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-35" data-name="Path" class="window-R-prim-dark" d="M130,251.15l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-36" data-name="Path" class="window-R-prim-dark" d="M155,236.71l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-15" data-name="Group">
         <g id="Group-16" data-name="Group">
-          <path id="Path-37" data-name="Path" class="cls-1" d="M92.5,307.44l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-38" data-name="Path" class="cls-1" d="M117.5,293.01l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-39" data-name="Path" class="cls-1" d="M142.5,278.57l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-40" data-name="Path" class="cls-1" d="M105,300.22l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-41" data-name="Path" class="cls-1" d="M130,285.79l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-42" data-name="Path" class="cls-1" d="M155,271.36l7.5-4.34v8.67l-7.5,4.33Z"/>
+          <path id="Path-37" data-name="Path" class="window-R-prim-dark" d="M92.5,307.44l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-38" data-name="Path" class="window-R-prim-dark" d="M117.5,293.01l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-39" data-name="Path" class="window-R-prim-dark" d="M142.5,278.57l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-40" data-name="Path" class="window-R-prim-dark" d="M105,300.22l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-41" data-name="Path" class="window-R-prim-dark" d="M130,285.79l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-42" data-name="Path" class="window-R-prim-dark" d="M155,271.36l7.5-4.34v8.67l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-17" data-name="Group">
         <g id="Group-18" data-name="Group">
-          <path id="Path-43" data-name="Path" class="cls-1" d="M92.5,342.08l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-44" data-name="Path" class="cls-1" d="M117.5,327.65l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-45" data-name="Path" class="cls-1" d="M142.5,313.21l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-46" data-name="Path" class="cls-1" d="M105,334.86l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-47" data-name="Path" class="cls-1" d="M130,320.43l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-48" data-name="Path" class="cls-1" d="M155,306l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-43" data-name="Path" class="window-R-prim-dark" d="M92.5,342.08l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-44" data-name="Path" class="window-R-prim-dark" d="M117.5,327.65l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-45" data-name="Path" class="window-R-prim-dark" d="M142.5,313.21l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-46" data-name="Path" class="window-R-prim-dark" d="M105,334.86l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-47" data-name="Path" class="window-R-prim-dark" d="M130,320.43l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-48" data-name="Path" class="window-R-prim-dark" d="M155,306l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-19" data-name="Group">
         <g id="Group-20" data-name="Group">
-          <path id="Path-49" data-name="Path" class="cls-1" d="M92.5,376.72l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-50" data-name="Path" class="cls-1" d="M117.5,362.29l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-51" data-name="Path" class="cls-1" d="M142.5,347.85l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-52" data-name="Path" class="cls-1" d="M105,369.5l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-53" data-name="Path" class="cls-1" d="M130,355.07l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-54" data-name="Path" class="cls-1" d="M155,340.64l7.5-4.33v8.66L155,349.3Z"/>
+          <path id="Path-49" data-name="Path" class="window-R-prim-dark" d="M92.5,376.72l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-50" data-name="Path" class="window-R-prim-dark" d="M117.5,362.29l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-51" data-name="Path" class="window-R-prim-dark" d="M142.5,347.85l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-52" data-name="Path" class="window-R-prim-dark" d="M105,369.5l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-53" data-name="Path" class="window-R-prim-dark" d="M130,355.07l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-54" data-name="Path" class="window-R-prim-dark" d="M155,340.64l7.5-4.33v8.66L155,349.3Z"/>
         </g>
       </g>
       <g id="Group-21" data-name="Group">
         <g id="Group-22" data-name="Group">
-          <path id="Path-55" data-name="Path" class="cls-1" d="M92.5,411.36l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-56" data-name="Path" class="cls-1" d="M117.5,396.93l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-57" data-name="Path" class="cls-1" d="M142.5,382.49l7.5-4.33v8.67l-7.5,4.33Z"/>
-          <path id="Path-58" data-name="Path" class="cls-1" d="M105,404.15l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-59" data-name="Path" class="cls-1" d="M130,389.71l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-60" data-name="Path" class="cls-1" d="M155,375.28l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-55" data-name="Path" class="window-R-prim-dark" d="M92.5,411.36l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-56" data-name="Path" class="window-R-prim-dark" d="M117.5,396.93l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-57" data-name="Path" class="window-R-prim-dark" d="M142.5,382.49l7.5-4.33v8.67l-7.5,4.33Z"/>
+          <path id="Path-58" data-name="Path" class="window-R-prim-dark" d="M105,404.15l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-59" data-name="Path" class="window-R-prim-dark" d="M130,389.71l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-60" data-name="Path" class="window-R-prim-dark" d="M155,375.28l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-23" data-name="Group">
         <g id="Group-24" data-name="Group">
-          <path id="Path-61" data-name="Path" class="cls-1" d="M92.6,116.91l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-62" data-name="Path" class="cls-1" d="M117.6,102.48l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-63" data-name="Path" class="cls-1" d="M142.6,88.05l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-64" data-name="Path" class="cls-1" d="M105.1,109.7l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-65" data-name="Path" class="cls-1" d="M130.1,95.26l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-66" data-name="Path" class="cls-1" d="M155.1,80.83l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-61" data-name="Path" class="window-R-prim-dark" d="M92.6,116.91l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-62" data-name="Path" class="window-R-prim-dark" d="M117.6,102.48l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-63" data-name="Path" class="window-R-prim-dark" d="M142.6,88.05l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-64" data-name="Path" class="window-R-prim-dark" d="M105.1,109.7l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-65" data-name="Path" class="window-R-prim-dark" d="M130.1,95.26l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-66" data-name="Path" class="window-R-prim-dark" d="M155.1,80.83l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-25" data-name="Group">
         <g id="Group-26" data-name="Group">
-          <path id="Path-67" data-name="Path" class="cls-1" d="M92.6,151.55l7.5-4.33v8.67l-7.5,4.33Z"/>
-          <path id="Path-68" data-name="Path" class="cls-1" d="M117.6,137.12l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-69" data-name="Path" class="cls-1" d="M142.6,122.69l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-70" data-name="Path" class="cls-1" d="M105.1,144.34l7.5-4.33v8.66L105.1,153Z"/>
-          <path id="Path-71" data-name="Path" class="cls-1" d="M130.1,129.9l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-72" data-name="Path" class="cls-1" d="M155.1,115.47l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-67" data-name="Path" class="window-R-prim-dark" d="M92.6,151.55l7.5-4.33v8.67l-7.5,4.33Z"/>
+          <path id="Path-68" data-name="Path" class="window-R-prim-dark" d="M117.6,137.12l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-69" data-name="Path" class="window-R-prim-dark" d="M142.6,122.69l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-70" data-name="Path" class="window-R-prim-dark" d="M105.1,144.34l7.5-4.33v8.66L105.1,153Z"/>
+          <path id="Path-71" data-name="Path" class="window-R-prim-dark" d="M130.1,129.9l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-72" data-name="Path" class="window-R-prim-dark" d="M155.1,115.47l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-27" data-name="Group">
         <g id="Group-28" data-name="Group">
-          <path id="Path-73" data-name="Path" class="cls-1" d="M92.6,186.2l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-74" data-name="Path" class="cls-1" d="M117.6,171.76l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-75" data-name="Path" class="cls-1" d="M142.6,157.33l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-76" data-name="Path" class="cls-1" d="M105.1,178.98l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-77" data-name="Path" class="cls-1" d="M130.1,164.55l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-78" data-name="Path" class="cls-1" d="M155.1,150.11l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-73" data-name="Path" class="window-R-prim-dark" d="M92.6,186.2l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-74" data-name="Path" class="window-R-prim-dark" d="M117.6,171.76l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-75" data-name="Path" class="window-R-prim-dark" d="M142.6,157.33l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-76" data-name="Path" class="window-R-prim-dark" d="M105.1,178.98l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-77" data-name="Path" class="window-R-prim-dark" d="M130.1,164.55l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-78" data-name="Path" class="window-R-prim-dark" d="M155.1,150.11l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-29" data-name="Group">
         <g id="Group-30" data-name="Group">
-          <path id="Path-79" data-name="Path" class="cls-1" d="M92.6,220.84l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-80" data-name="Path" class="cls-1" d="M117.6,206.4l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-81" data-name="Path" class="cls-1" d="M142.6,191.97l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-82" data-name="Path" class="cls-1" d="M105.1,213.62l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-83" data-name="Path" class="cls-1" d="M130.1,199.19l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-84" data-name="Path" class="cls-1" d="M155.1,184.75l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-79" data-name="Path" class="window-R-prim-dark" d="M92.6,220.84l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-80" data-name="Path" class="window-R-prim-dark" d="M117.6,206.4l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-81" data-name="Path" class="window-R-prim-dark" d="M142.6,191.97l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-82" data-name="Path" class="window-R-prim-dark" d="M105.1,213.62l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-83" data-name="Path" class="window-R-prim-dark" d="M130.1,199.19l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-84" data-name="Path" class="window-R-prim-dark" d="M155.1,184.75l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-31" data-name="Group">
         <g id="Group-32" data-name="Group">
-          <path id="Path-85" data-name="Path" class="cls-1" d="M92.6,255.48l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-86" data-name="Path" class="cls-1" d="M117.6,241.04l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-87" data-name="Path" class="cls-1" d="M142.6,226.61l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-88" data-name="Path" class="cls-1" d="M105.1,248.26l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-89" data-name="Path" class="cls-1" d="M130.1,233.83l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-90" data-name="Path" class="cls-1" d="M155.1,219.39l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-85" data-name="Path" class="window-R-prim-dark" d="M92.6,255.48l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-86" data-name="Path" class="window-R-prim-dark" d="M117.6,241.04l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-87" data-name="Path" class="window-R-prim-dark" d="M142.6,226.61l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-88" data-name="Path" class="window-R-prim-dark" d="M105.1,248.26l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-89" data-name="Path" class="window-R-prim-dark" d="M130.1,233.83l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-90" data-name="Path" class="window-R-prim-dark" d="M155.1,219.39l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-33" data-name="Group">
         <g id="Group-34" data-name="Group">
-          <path id="Path-91" data-name="Path" class="cls-1" d="M92.6,290.12l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-92" data-name="Path" class="cls-1" d="M117.6,275.69l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-93" data-name="Path" class="cls-1" d="M142.6,261.25l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-94" data-name="Path" class="cls-1" d="M105.1,282.9l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-95" data-name="Path" class="cls-1" d="M130.1,268.47l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-96" data-name="Path" class="cls-1" d="M155.1,254.03l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-91" data-name="Path" class="window-R-prim-dark" d="M92.6,290.12l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-92" data-name="Path" class="window-R-prim-dark" d="M117.6,275.69l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-93" data-name="Path" class="window-R-prim-dark" d="M142.6,261.25l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-94" data-name="Path" class="window-R-prim-dark" d="M105.1,282.9l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-95" data-name="Path" class="window-R-prim-dark" d="M130.1,268.47l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-96" data-name="Path" class="window-R-prim-dark" d="M155.1,254.03l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-35" data-name="Group">
         <g id="Group-36" data-name="Group">
-          <path id="Path-97" data-name="Path" class="cls-1" d="M92.6,324.76l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-98" data-name="Path" class="cls-1" d="M117.6,310.33l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-99" data-name="Path" class="cls-1" d="M142.6,295.89l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-100" data-name="Path" class="cls-1" d="M105.1,317.54l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-101" data-name="Path" class="cls-1" d="M130.1,303.11l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-102" data-name="Path" class="cls-1" d="M155.1,288.68l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-97" data-name="Path" class="window-R-prim-dark" d="M92.6,324.76l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-98" data-name="Path" class="window-R-prim-dark" d="M117.6,310.33l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-99" data-name="Path" class="window-R-prim-dark" d="M142.6,295.89l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-100" data-name="Path" class="window-R-prim-dark" d="M105.1,317.54l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-101" data-name="Path" class="window-R-prim-dark" d="M130.1,303.11l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-102" data-name="Path" class="window-R-prim-dark" d="M155.1,288.68l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-37" data-name="Group">
         <g id="Group-38" data-name="Group">
-          <path id="Path-103" data-name="Path" class="cls-1" d="M92.6,359.4l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-104" data-name="Path" class="cls-1" d="M117.6,344.97l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-105" data-name="Path" class="cls-1" d="M142.6,330.53l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-106" data-name="Path" class="cls-1" d="M105.1,352.18l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-107" data-name="Path" class="cls-1" d="M130.1,337.75l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-108" data-name="Path" class="cls-1" d="M155.1,323.32l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-103" data-name="Path" class="window-R-prim-dark" d="M92.6,359.4l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-104" data-name="Path" class="window-R-prim-dark" d="M117.6,344.97l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-105" data-name="Path" class="window-R-prim-dark" d="M142.6,330.53l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-106" data-name="Path" class="window-R-prim-dark" d="M105.1,352.18l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-107" data-name="Path" class="window-R-prim-dark" d="M130.1,337.75l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-108" data-name="Path" class="window-R-prim-dark" d="M155.1,323.32l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-39" data-name="Group">
         <g id="Group-40" data-name="Group">
-          <path id="Path-109" data-name="Path" class="cls-1" d="M92.6,394.04l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-110" data-name="Path" class="cls-1" d="M117.6,379.61l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-111" data-name="Path" class="cls-1" d="M142.6,365.17l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-112" data-name="Path" class="cls-1" d="M105.1,386.83l7.5-4.34v8.67l-7.5,4.33Z"/>
-          <path id="Path-113" data-name="Path" class="cls-1" d="M130.1,372.39l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-114" data-name="Path" class="cls-1" d="M155.1,357.96l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-109" data-name="Path" class="window-R-prim-dark" d="M92.6,394.04l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-110" data-name="Path" class="window-R-prim-dark" d="M117.6,379.61l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-111" data-name="Path" class="window-R-prim-dark" d="M142.6,365.17l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-112" data-name="Path" class="window-R-prim-dark" d="M105.1,386.83l7.5-4.34v8.67l-7.5,4.33Z"/>
+          <path id="Path-113" data-name="Path" class="window-R-prim-dark" d="M130.1,372.39l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-114" data-name="Path" class="window-R-prim-dark" d="M155.1,357.96l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-41" data-name="Group">
         <g id="Group-42" data-name="Group">
-          <path id="Path-115" data-name="Path" class="cls-1" d="M92.5,428.68l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-116" data-name="Path" class="cls-1" d="M117.5,414.25l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-117" data-name="Path" class="cls-1" d="M142.5,399.82l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-118" data-name="Path" class="cls-1" d="M105,421.47l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-119" data-name="Path" class="cls-1" d="M130,407.03l7.5-4.33v8.66l-7.5,4.33Z"/>
-          <path id="Path-120" data-name="Path" class="cls-1" d="M155,392.6l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-115" data-name="Path" class="window-R-prim-dark" d="M92.5,428.68l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-116" data-name="Path" class="window-R-prim-dark" d="M117.5,414.25l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-117" data-name="Path" class="window-R-prim-dark" d="M142.5,399.82l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-118" data-name="Path" class="window-R-prim-dark" d="M105,421.47l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-119" data-name="Path" class="window-R-prim-dark" d="M130,407.03l7.5-4.33v8.66l-7.5,4.33Z"/>
+          <path id="Path-120" data-name="Path" class="window-R-prim-dark" d="M155,392.6l7.5-4.33v8.66l-7.5,4.33Z"/>
         </g>
       </g>
       <g id="Group-43" data-name="Group">
-        <path id="windows-L1" class="cls-2" d="M77.5,99.59,70,95.26v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-2" data-name="windows-L1" class="cls-2" d="M52.5,85.16,45,80.83v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-3" data-name="windows-L1" class="cls-2" d="M27.5,70.73,20,66.4v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-4" data-name="windows-L1" class="cls-2" d="M65,92.38l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-5" data-name="windows-L1" class="cls-2" d="M40,77.94l-7.5-4.33v8.66L40,86.6Z"/>
-        <path id="windows-L1-6" data-name="windows-L1" class="cls-2" d="M15,63.51,7.5,59.18v8.66L15,72.17Z"/>
+        <path id="windows-L1" class="window-L-prim-dark" d="M77.5,99.59,70,95.26v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-2" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,85.16,45,80.83v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-3" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,70.73,20,66.4v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-4" data-name="windows-L1" class="window-L-prim-dark" d="M65,92.38l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-5" data-name="windows-L1" class="window-L-prim-dark" d="M40,77.94l-7.5-4.33v8.66L40,86.6Z"/>
+        <path id="windows-L1-6" data-name="windows-L1" class="window-L-prim-dark" d="M15,63.51,7.5,59.18v8.66L15,72.17Z"/>
       </g>
       <g id="Group-44" data-name="Group">
-        <path id="windows-L1-7" data-name="windows-L1" class="cls-2" d="M77.5,134.23,70,129.9v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-8" data-name="windows-L1" class="cls-2" d="M52.5,119.8,45,115.47v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-9" data-name="windows-L1" class="cls-2" d="M27.5,105.37,20,101.04v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-10" data-name="windows-L1" class="cls-2" d="M65,127.02l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-11" data-name="windows-L1" class="cls-2" d="M40,112.58l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-12" data-name="windows-L1" class="cls-2" d="M15,98.15,7.5,93.82v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-7" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,134.23,70,129.9v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-8" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,119.8,45,115.47v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-9" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,105.37,20,101.04v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-10" data-name="windows-L1" class="window-L-prim-dark" d="M65,127.02l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-11" data-name="windows-L1" class="window-L-prim-dark" d="M40,112.58l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-12" data-name="windows-L1" class="window-L-prim-dark" d="M15,98.15,7.5,93.82v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-45" data-name="Group">
-        <path id="windows-L1-13" data-name="windows-L1" class="cls-2" d="M77.5,168.88,70,164.55v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-14" data-name="windows-L1" class="cls-2" d="M52.5,154.44,45,150.11v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-15" data-name="windows-L1" class="cls-2" d="M27.5,140.01,20,135.68v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-16" data-name="windows-L1" class="cls-2" d="M65,161.66l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-17" data-name="windows-L1" class="cls-2" d="M40,147.22l-7.5-4.33v8.66l7.5,4.34Z"/>
-        <path id="windows-L1-18" data-name="windows-L1" class="cls-2" d="M15,132.79l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-13" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,168.88,70,164.55v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-14" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,154.44,45,150.11v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-15" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,140.01,20,135.68v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-16" data-name="windows-L1" class="window-L-prim-dark" d="M65,161.66l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-17" data-name="windows-L1" class="window-L-prim-dark" d="M40,147.22l-7.5-4.33v8.66l7.5,4.34Z"/>
+        <path id="windows-L1-18" data-name="windows-L1" class="window-L-prim-dark" d="M15,132.79l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-46" data-name="Group">
-        <path id="windows-L1-19" data-name="windows-L1" class="cls-2" d="M77.5,203.52,70,199.19v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-20" data-name="windows-L1" class="cls-2" d="M52.5,189.08,45,184.75v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-21" data-name="windows-L1" class="cls-2" d="M27.5,174.65,20,170.32v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-22" data-name="windows-L1" class="cls-2" d="M65,196.3l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-23" data-name="windows-L1" class="cls-2" d="M40,181.87l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-24" data-name="windows-L1" class="cls-2" d="M15,167.43,7.5,163.1v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-19" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,203.52,70,199.19v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-20" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,189.08,45,184.75v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-21" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,174.65,20,170.32v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-22" data-name="windows-L1" class="window-L-prim-dark" d="M65,196.3l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-23" data-name="windows-L1" class="window-L-prim-dark" d="M40,181.87l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-24" data-name="windows-L1" class="window-L-prim-dark" d="M15,167.43,7.5,163.1v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-47" data-name="Group">
-        <path id="windows-L1-25" data-name="windows-L1" class="cls-2" d="M77.5,238.16,70,233.83v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-26" data-name="windows-L1" class="cls-2" d="M52.5,223.72,45,219.39v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-27" data-name="windows-L1" class="cls-2" d="M27.5,209.29,20,204.96v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-28" data-name="windows-L1" class="cls-2" d="M65,230.94l-7.5-4.33v8.66L65,239.6Z"/>
-        <path id="windows-L1-29" data-name="windows-L1" class="cls-2" d="M40,216.51l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-30" data-name="windows-L1" class="cls-2" d="M15,202.07l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-25" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,238.16,70,233.83v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-26" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,223.72,45,219.39v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-27" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,209.29,20,204.96v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-28" data-name="windows-L1" class="window-L-prim-dark" d="M65,230.94l-7.5-4.33v8.66L65,239.6Z"/>
+        <path id="windows-L1-29" data-name="windows-L1" class="window-L-prim-dark" d="M40,216.51l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-30" data-name="windows-L1" class="window-L-prim-dark" d="M15,202.07l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-48" data-name="Group">
-        <path id="windows-L1-31" data-name="windows-L1" class="cls-2" d="M77.5,272.8,70,268.47v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-32" data-name="windows-L1" class="cls-2" d="M52.5,258.36,45,254.03v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-33" data-name="windows-L1" class="cls-2" d="M27.5,243.93,20,239.6v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-34" data-name="windows-L1" class="cls-2" d="M65,265.58l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-35" data-name="windows-L1" class="cls-2" d="M40,251.15l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-36" data-name="windows-L1" class="cls-2" d="M15,236.71l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-31" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,272.8,70,268.47v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-32" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,258.36,45,254.03v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-33" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,243.93,20,239.6v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-34" data-name="windows-L1" class="window-L-prim-dark" d="M65,265.58l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-35" data-name="windows-L1" class="window-L-prim-dark" d="M40,251.15l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-36" data-name="windows-L1" class="window-L-prim-dark" d="M15,236.71l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-49" data-name="Group">
-        <path id="windows-L1-37" data-name="windows-L1" class="cls-2" d="M77.5,307.44,70,303.11v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-38" data-name="windows-L1" class="cls-2" d="M52.5,293.01,45,288.68v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-39" data-name="windows-L1" class="cls-2" d="M27.5,278.57,20,274.24v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-40" data-name="windows-L1" class="cls-2" d="M65,300.22l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-41" data-name="windows-L1" class="cls-2" d="M40,285.79l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-42" data-name="windows-L1" class="cls-2" d="M15,271.36l-7.5-4.34v8.67l7.5,4.33Z"/>
+        <path id="windows-L1-37" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,307.44,70,303.11v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-38" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,293.01,45,288.68v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-39" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,278.57,20,274.24v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-40" data-name="windows-L1" class="window-L-prim-dark" d="M65,300.22l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-41" data-name="windows-L1" class="window-L-prim-dark" d="M40,285.79l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-42" data-name="windows-L1" class="window-L-prim-dark" d="M15,271.36l-7.5-4.34v8.67l7.5,4.33Z"/>
       </g>
       <g id="Group-50" data-name="Group">
-        <path id="windows-L1-43" data-name="windows-L1" class="cls-2" d="M77.5,342.08,70,337.75v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-44" data-name="windows-L1" class="cls-2" d="M52.5,327.65,45,323.32v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-45" data-name="windows-L1" class="cls-2" d="M27.5,313.21,20,308.88v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-46" data-name="windows-L1" class="cls-2" d="M65,334.86l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-47" data-name="windows-L1" class="cls-2" d="M40,320.43l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-48" data-name="windows-L1" class="cls-2" d="M15,306l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-43" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,342.08,70,337.75v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-44" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,327.65,45,323.32v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-45" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,313.21,20,308.88v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-46" data-name="windows-L1" class="window-L-prim-dark" d="M65,334.86l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-47" data-name="windows-L1" class="window-L-prim-dark" d="M40,320.43l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-48" data-name="windows-L1" class="window-L-prim-dark" d="M15,306l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-51" data-name="Group">
-        <path id="windows-L1-49" data-name="windows-L1" class="cls-2" d="M77.5,376.72,70,372.39v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-50" data-name="windows-L1" class="cls-2" d="M52.5,362.29,45,357.96v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-51" data-name="windows-L1" class="cls-2" d="M27.5,347.85,20,343.52v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-52" data-name="windows-L1" class="cls-2" d="M65,369.5l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-53" data-name="windows-L1" class="cls-2" d="M40,355.07l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-54" data-name="windows-L1" class="cls-2" d="M15,340.64l-7.5-4.33v8.66L15,349.3Z"/>
+        <path id="windows-L1-49" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,376.72,70,372.39v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-50" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,362.29,45,357.96v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-51" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,347.85,20,343.52v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-52" data-name="windows-L1" class="window-L-prim-dark" d="M65,369.5l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-53" data-name="windows-L1" class="window-L-prim-dark" d="M40,355.07l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-54" data-name="windows-L1" class="window-L-prim-dark" d="M15,340.64l-7.5-4.33v8.66L15,349.3Z"/>
       </g>
       <g id="Group-52" data-name="Group">
-        <path id="windows-L1-55" data-name="windows-L1" class="cls-2" d="M77.5,411.36,70,407.03v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-56" data-name="windows-L1" class="cls-2" d="M52.5,396.93,45,392.6v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-57" data-name="windows-L1" class="cls-2" d="M27.5,382.49,20,378.16v8.67l7.5,4.33Z"/>
-        <path id="windows-L1-58" data-name="windows-L1" class="cls-2" d="M65,404.15l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-59" data-name="windows-L1" class="cls-2" d="M40,389.71l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-60" data-name="windows-L1" class="cls-2" d="M15,375.28l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-55" data-name="windows-L1" class="window-L-prim-dark" d="M77.5,411.36,70,407.03v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-56" data-name="windows-L1" class="window-L-prim-dark" d="M52.5,396.93,45,392.6v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-57" data-name="windows-L1" class="window-L-prim-dark" d="M27.5,382.49,20,378.16v8.67l7.5,4.33Z"/>
+        <path id="windows-L1-58" data-name="windows-L1" class="window-L-prim-dark" d="M65,404.15l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-59" data-name="windows-L1" class="window-L-prim-dark" d="M40,389.71l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-60" data-name="windows-L1" class="window-L-prim-dark" d="M15,375.28l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-53" data-name="Group">
-        <path id="windows-L1-61" data-name="windows-L1" class="cls-2" d="M77.6,116.91l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-62" data-name="windows-L1" class="cls-2" d="M52.6,102.48l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-63" data-name="windows-L1" class="cls-2" d="M27.6,88.05l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-64" data-name="windows-L1" class="cls-2" d="M65.1,109.7l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-65" data-name="windows-L1" class="cls-2" d="M40.1,95.26l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-66" data-name="windows-L1" class="cls-2" d="M15.1,80.83,7.6,76.5v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-61" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,116.91l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-62" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,102.48l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-63" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,88.05l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-64" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,109.7l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-65" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,95.26l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-66" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,80.83,7.6,76.5v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-54" data-name="Group">
-        <path id="windows-L1-67" data-name="windows-L1" class="cls-2" d="M77.6,151.55l-7.5-4.33v8.67l7.5,4.33Z"/>
-        <path id="windows-L1-68" data-name="windows-L1" class="cls-2" d="M52.6,137.12l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-69" data-name="windows-L1" class="cls-2" d="M27.6,122.69l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-70" data-name="windows-L1" class="cls-2" d="M65.1,144.34l-7.5-4.33v8.66L65.1,153Z"/>
-        <path id="windows-L1-71" data-name="windows-L1" class="cls-2" d="M40.1,129.9l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-72" data-name="windows-L1" class="cls-2" d="M15.1,115.47l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-67" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,151.55l-7.5-4.33v8.67l7.5,4.33Z"/>
+        <path id="windows-L1-68" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,137.12l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-69" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,122.69l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-70" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,144.34l-7.5-4.33v8.66L65.1,153Z"/>
+        <path id="windows-L1-71" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,129.9l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-72" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,115.47l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-55" data-name="Group">
-        <path id="windows-L1-73" data-name="windows-L1" class="cls-2" d="M77.6,186.2l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-74" data-name="windows-L1" class="cls-2" d="M52.6,171.76l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-75" data-name="windows-L1" class="cls-2" d="M27.6,157.33,20.1,153v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-76" data-name="windows-L1" class="cls-2" d="M65.1,178.98l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-77" data-name="windows-L1" class="cls-2" d="M40.1,164.55l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-78" data-name="windows-L1" class="cls-2" d="M15.1,150.11l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-73" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,186.2l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-74" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,171.76l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-75" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,157.33,20.1,153v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-76" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,178.98l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-77" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,164.55l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-78" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,150.11l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-56" data-name="Group">
-        <path id="windows-L1-79" data-name="windows-L1" class="cls-2" d="M77.6,220.84l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-80" data-name="windows-L1" class="cls-2" d="M52.6,206.4l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-81" data-name="windows-L1" class="cls-2" d="M27.6,191.97l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-82" data-name="windows-L1" class="cls-2" d="M65.1,213.62l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-83" data-name="windows-L1" class="cls-2" d="M40.1,199.19l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-84" data-name="windows-L1" class="cls-2" d="M15.1,184.75l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-79" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,220.84l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-80" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,206.4l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-81" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,191.97l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-82" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,213.62l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-83" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,199.19l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-84" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,184.75l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-57" data-name="Group">
-        <path id="windows-L1-85" data-name="windows-L1" class="cls-2" d="M77.6,255.48l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-86" data-name="windows-L1" class="cls-2" d="M52.6,241.04l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-87" data-name="windows-L1" class="cls-2" d="M27.6,226.61l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-88" data-name="windows-L1" class="cls-2" d="M65.1,248.26l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-89" data-name="windows-L1" class="cls-2" d="M40.1,233.83l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-90" data-name="windows-L1" class="cls-2" d="M15.1,219.39l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-85" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,255.48l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-86" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,241.04l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-87" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,226.61l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-88" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,248.26l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-89" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,233.83l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-90" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,219.39l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-58" data-name="Group">
-        <path id="windows-L1-91" data-name="windows-L1" class="cls-2" d="M77.6,290.12l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-92" data-name="windows-L1" class="cls-2" d="M52.6,275.69l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-93" data-name="windows-L1" class="cls-2" d="M27.6,261.25l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-94" data-name="windows-L1" class="cls-2" d="M65.1,282.9l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-95" data-name="windows-L1" class="cls-2" d="M40.1,268.47l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-96" data-name="windows-L1" class="cls-2" d="M15.1,254.03,7.6,249.7v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-91" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,290.12l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-92" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,275.69l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-93" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,261.25l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-94" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,282.9l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-95" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,268.47l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-96" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,254.03,7.6,249.7v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-59" data-name="Group">
-        <path id="windows-L1-97" data-name="windows-L1" class="cls-2" d="M77.6,324.76l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-98" data-name="windows-L1" class="cls-2" d="M52.6,310.33,45.1,306v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-99" data-name="windows-L1" class="cls-2" d="M27.6,295.89l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-100" data-name="windows-L1" class="cls-2" d="M65.1,317.54l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-101" data-name="windows-L1" class="cls-2" d="M40.1,303.11l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-102" data-name="windows-L1" class="cls-2" d="M15.1,288.68l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-97" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,324.76l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-98" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,310.33,45.1,306v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-99" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,295.89l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-100" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,317.54l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-101" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,303.11l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-102" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,288.68l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-60" data-name="Group">
-        <path id="windows-L1-103" data-name="windows-L1" class="cls-2" d="M77.6,359.4l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-104" data-name="windows-L1" class="cls-2" d="M52.6,344.97l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-105" data-name="windows-L1" class="cls-2" d="M27.6,330.53l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-106" data-name="windows-L1" class="cls-2" d="M65.1,352.18l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-107" data-name="windows-L1" class="cls-2" d="M40.1,337.75l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-108" data-name="windows-L1" class="cls-2" d="M15.1,323.32l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-103" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,359.4l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-104" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,344.97l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-105" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,330.53l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-106" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,352.18l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-107" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,337.75l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-108" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,323.32l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-61" data-name="Group">
-        <path id="windows-L1-109" data-name="windows-L1" class="cls-2" d="M77.6,394.04l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-110" data-name="windows-L1" class="cls-2" d="M52.6,379.61l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-111" data-name="windows-L1" class="cls-2" d="M27.6,365.17l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-112" data-name="windows-L1" class="cls-2" d="M65.1,386.83l-7.5-4.34v8.67l7.5,4.33Z"/>
-        <path id="windows-L1-113" data-name="windows-L1" class="cls-2" d="M40.1,372.39l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-114" data-name="windows-L1" class="cls-2" d="M15.1,357.96l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-109" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,394.04l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-110" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,379.61l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-111" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,365.17l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-112" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,386.83l-7.5-4.34v8.67l7.5,4.33Z"/>
+        <path id="windows-L1-113" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,372.39l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-114" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,357.96l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
       <g id="Group-62" data-name="Group">
-        <path id="windows-L1-115" data-name="windows-L1" class="cls-2" d="M77.6,428.68l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-116" data-name="windows-L1" class="cls-2" d="M52.6,414.25l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-117" data-name="windows-L1" class="cls-2" d="M27.6,399.82l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-118" data-name="windows-L1" class="cls-2" d="M65.1,421.47l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-119" data-name="windows-L1" class="cls-2" d="M40.1,407.03l-7.5-4.33v8.66l7.5,4.33Z"/>
-        <path id="windows-L1-120" data-name="windows-L1" class="cls-2" d="M15.1,392.6l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-115" data-name="windows-L1" class="window-L-prim-dark" d="M77.6,428.68l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-116" data-name="windows-L1" class="window-L-prim-dark" d="M52.6,414.25l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-117" data-name="windows-L1" class="window-L-prim-dark" d="M27.6,399.82l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-118" data-name="windows-L1" class="window-L-prim-dark" d="M65.1,421.47l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-119" data-name="windows-L1" class="window-L-prim-dark" d="M40.1,407.03l-7.5-4.33v8.66l7.5,4.33Z"/>
+        <path id="windows-L1-120" data-name="windows-L1" class="window-L-prim-dark" d="M15.1,392.6l-7.5-4.33v8.66l7.5,4.33Z"/>
       </g>
     </g>
   </g>

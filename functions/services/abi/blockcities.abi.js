@@ -455,26 +455,6 @@ const tokenABI = [
         "signature": "0xbb5f747b"
     },
     {
-        "constant": true,
-        "inputs": [
-            {
-                "name": "tokenId",
-                "type": "uint256"
-            }
-        ],
-        "name": "tokenURI",
-        "outputs": [
-            {
-                "name": "",
-                "type": "string"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
-        "type": "function",
-        "signature": "0xc87b56dd"
-    },
-    {
         "constant": false,
         "inputs": [],
         "name": "renounceWhitelisted",
@@ -730,6 +710,26 @@ const tokenABI = [
         "constant": true,
         "inputs": [
             {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenURI",
+        "outputs": [
+            {
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xc87b56dd"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
                 "name": "_tokenId",
                 "type": "uint256"
             }
@@ -844,25 +844,6 @@ const tokenABI = [
         "stateMutability": "nonpayable",
         "type": "function",
         "signature": "0x42966c68"
-    },
-    {
-        "constant": false,
-        "inputs": [
-            {
-                "name": "_tokenId",
-                "type": "uint256"
-            },
-            {
-                "name": "_tokenUri",
-                "type": "string"
-            }
-        ],
-        "name": "setTokenURI",
-        "outputs": [],
-        "payable": false,
-        "stateMutability": "nonpayable",
-        "type": "function",
-        "signature": "0x162094c4"
     },
     {
         "constant": false,
