@@ -5,7 +5,7 @@
         fill: #dd8987;
       }
 
-      .cls-1 {
+      .top-dark {
         fill: #c67471;
       }
 
@@ -49,9 +49,9 @@
   <title>Artboard 15</title>
   <g id="Group">
     <path id="Path" class="top-prim" d="M0,34.6388,60,0l60,34.6388L60,69.2812Z"/>
-    <path id="Path-2" class="cls-1" d="M82.5,34.6388l16.875,9.75,16.875-9.75-16.875-9.75Z"/>
-    <path id="Path-3" class="cls-1" d="M41.25,34.6388,60,45.465,78.75,34.6388,60,23.8162Z"/>
-    <path id="Path-4" class="cls-1" d="M61.875,22.7325l18.75,10.8262,16.875-9.75L78.75,12.99Z"/>
+    <path id="Path-2" class="top-dark" d="M82.5,34.6388l16.875,9.75,16.875-9.75-16.875-9.75Z"/>
+    <path id="Path-3" class="top-dark" d="M41.25,34.6388,60,45.465,78.75,34.6388,60,23.8162Z"/>
+    <path id="Path-4" class="top-dark" d="M61.875,22.7325l18.75,10.8262,16.875-9.75L78.75,12.99Z"/>
     <path id="Path-5" class="exterior-L-prim" d="M99.375,24.8962v6.495l11.25,6.4838,5.625-3.2475Z"/>
     <path id="Path-6" class="exterior-L-prim" d="M60,23.8162v6.4951L73.125,37.875l5.625-3.2475Z"/>
     <path id="Path-7" class="exterior-L-prim" d="M78.75,12.99V19.5l13.125,7.5787L97.5,23.8312Z"/>
