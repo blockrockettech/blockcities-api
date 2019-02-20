@@ -17,7 +17,7 @@
         fill: #bd9563;
       }
 
-      .cls-1 {
+      .window-L-prim {
         fill: #4d3b25;
       }
     </style>
@@ -60,16 +60,16 @@
     <polygon class="window-R-prim" points="110 294.45 270 202.07 270 190.52 110 282.9 110 294.45"/>
     <polygon class="window-R-prim" points="110 340.63 270 248.26 270 236.71 110 329.09 110 340.63"/>
     <polygon class="window-R-prim" points="110 386.82 270 294.45 270 282.9 110 375.27 110 386.82"/>
-    <polygon class="cls-1" points="110 167.43 0 103.92 0 115.47 110 178.98 110 167.43"/>
-    <polygon class="cls-1" points="110 213.62 0 150.11 0 161.65 110 225.16 110 213.62"/>
-    <polygon class="cls-1" points="110 259.8 0 196.3 0 207.84 110 271.35 110 259.8"/>
-    <polygon class="cls-1" points="110 305.99 0 242.48 0 254.03 110 317.54 110 305.99"/>
-    <polygon class="cls-1" points="110 352.18 0 288.67 0 300.22 110 363.73 110 352.18"/>
-    <polygon class="cls-1" points="110 398.37 0 334.86 0 346.41 110 409.92 110 398.37"/>
-    <polygon class="cls-1" points="110 190.52 0 127.01 0 138.56 110 202.07 110 190.52"/>
-    <polygon class="cls-1" points="110 236.71 0 173.2 0 184.75 110 248.26 110 236.71"/>
-    <polygon class="cls-1" points="110 282.9 0 219.39 0 230.94 110 294.45 110 282.9"/>
-    <polygon class="cls-1" points="110 329.09 0 265.58 0 277.12 110 340.63 110 329.09"/>
-    <polygon class="cls-1" points="110 375.27 0 311.77 0 323.31 110 386.82 110 375.27"/>
+    <polygon class="window-L-prim" points="110 167.43 0 103.92 0 115.47 110 178.98 110 167.43"/>
+    <polygon class="window-L-prim" points="110 213.62 0 150.11 0 161.65 110 225.16 110 213.62"/>
+    <polygon class="window-L-prim" points="110 259.8 0 196.3 0 207.84 110 271.35 110 259.8"/>
+    <polygon class="window-L-prim" points="110 305.99 0 242.48 0 254.03 110 317.54 110 305.99"/>
+    <polygon class="window-L-prim" points="110 352.18 0 288.67 0 300.22 110 363.73 110 352.18"/>
+    <polygon class="window-L-prim" points="110 398.37 0 334.86 0 346.41 110 409.92 110 398.37"/>
+    <polygon class="window-L-prim" points="110 190.52 0 127.01 0 138.56 110 202.07 110 190.52"/>
+    <polygon class="window-L-prim" points="110 236.71 0 173.2 0 184.75 110 248.26 110 236.71"/>
+    <polygon class="window-L-prim" points="110 282.9 0 219.39 0 230.94 110 294.45 110 282.9"/>
+    <polygon class="window-L-prim" points="110 329.09 0 265.58 0 277.12 110 340.63 110 329.09"/>
+    <polygon class="window-L-prim" points="110 375.27 0 311.77 0 323.31 110 386.82 110 375.27"/>
   </g>
 </svg>

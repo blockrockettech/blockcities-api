@@ -1,9 +1,6 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 204.96">
   <defs>
     <style>
-      .cls-1 {
-        fill: #a2a2a1;
-      }
 
       .top-dark {
         fill: #c67471;
@@ -21,12 +18,8 @@
         fill: #dd8987;
       }
 
-      .cls-2 {
-        fill: #e9e8e8;
-      }
-
       .cls-3 {
-        fill: #bababa;
+        fill: #Aababa;
       }
 
       .cls-4 {
@@ -68,12 +61,12 @@
       <path id="Path-9" data-name="Path" class="top-prim" d="M10,92.38,160,5.78V0L0,92.38Z"/>
       <path id="Path-10" data-name="Path" class="top-prim" d="M110,150.11v5.78L270,63.51H260Z"/>
     </g>
-    <path id="Path-11" data-name="Path" class="cls-2" d="M75,75.06l70-40.42L200,66.4l-70,40.41Z"/>
-    <path id="Path-12" data-name="Path" class="cls-1" d="M75,75.06v28.87l55,31.75V106.81Z"/>
-    <path id="Path-13" data-name="Path" class="cls-3" d="M200,66.4V95.27l-70,40.41V106.81Z"/>
-    <path id="Path-14" data-name="Path" class="cls-4" d="M85,75.06l45,25.98L190,66.4,145,40.42Z"/>
-    <path id="Path-15" data-name="Path" class="cls-1" d="M145,40.42v5.77l40,23.09,5-2.88Z"/>
-    <path id="Path-16" data-name="Path" class="cls-3" d="M85,75.06l60-34.64v5.77L90,77.94Z"/>
+    <path id="Path-11" data-name="Path" class="top-prim" d="M75,75.06l70-40.42L200,66.4l-70,40.41Z"/>
+    <path id="Path-12" data-name="Path" class="exterior-L-prim" d="M75,75.06v28.87l55,31.75V106.81Z"/>
+    <path id="Path-13" data-name="Path" class="exterior-R-prim" d="M200,66.4V95.27l-70,40.41V106.81Z"/>
+    <path id="Path-14" data-name="Path" class="top-dark" d="M85,75.06l45,25.98L190,66.4,145,40.42Z"/>
+    <path id="Path-15" data-name="Path" class="exterior-L-prim" d="M145,40.42v5.77l40,23.09,5-2.88Z"/>
+    <path id="Path-16" data-name="Path" class="exterior-R-prim" d="M85,75.06l60-34.64v5.77L90,77.94Z"/>
     <g id="Group-3" data-name="Group">
       <path id="Path-17" data-name="Path" class="cls-5" d="M117.5,116.45l-11.93,6.89L73.74,104.97l11.93-6.89Z"/>
       <path id="Path-18" data-name="Path" class="cls-4" d="M105.57,123.34v13.78l11.93-6.89V116.45Z"/>

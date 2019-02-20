@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 215.8858">
   <defs>
     <style>
-      .cls-1 {
+      .top-prim {
         fill: #dd8987;
       }
 
@@ -13,7 +13,7 @@
         fill: #d15752;
       }
 
-      .cls-2 {
+      .top-dark {
         fill: #c67471;
       }
 
@@ -48,12 +48,12 @@
   </defs>
   <title>Artboard 14</title>
   <g id="Group">
-    <path id="Path" class="cls-1" d="M0,95.9331,166.1538,0,270,59.9608,103.8462,155.8835Z"/>
+    <path id="Path" class="top-prim" d="M0,95.9331,166.1538,0,270,59.9608,103.8462,155.8835Z"/>
     <path id="Path-2" class="exterior-L-prim" d="M103.8462,155.8835v59.9607L0,155.8835v-59.95Z"/>
     <path id="Path-3" class="exterior-R-prim" d="M270,59.9608v59.95l-166.1538,95.933V155.8835Z"/>
     <path id="Path-4" class="exterior-R-prim" d="M54.5192,121.4169l2.5962-1.5057V68.9538l-46.7308,27Z"/>
-    <path id="Path-5" class="cls-2" d="M168.75,61.4562,212.8846,86.94l46.7308-27L215.4808,34.4769Z"/>
-    <path id="Path-6" class="cls-2" d="M62.3077,65.9527l44.1346,25.4838,51.9231-29.98L114.2308,35.9723Z"/>
+    <path id="Path-5" class="top-dark" d="M168.75,61.4562,212.8846,86.94l46.7308-27L215.4808,34.4769Z"/>
+    <path id="Path-6" class="top-dark" d="M62.3077,65.9527l44.1346,25.4838,51.9231-29.98L114.2308,35.9723Z"/>
     <path id="Path-7" class="exterior-R-prim" d="M103.8462,149.8915l2.5961-1.4954V97.4285l-46.7308,27Z"/>
     <path id="Path-8" class="exterior-R-prim" d="M163.5577,58.455l2.5961-1.4954V6.0023l-46.7307,27Z"/>
     <path id="Path-9" class="exterior-R-prim" d="M181.7308,68.9538l33.75-19.4919V34.4769l-46.7308,27Z"/>
@@ -87,7 +87,7 @@
         <ellipse id="Ellipse-6" class="cls-7" cx="169.5912" cy="29.2742" rx="5.4935" ry="3.1777"/>
       </g>
     </g>
-    <path id="Path-23" class="cls-1" d="M114.2308,35.9723l5.1923-2.9908L163.5577,58.455l-5.1923,3.0012Z"/>
+    <path id="Path-23" class="top-prim" d="M114.2308,35.9723l5.1923-2.9908L163.5577,58.455l-5.1923,3.0012Z"/>
     <path id="Path-24" class="exterior-R-dark" d="M103.8462,155.8835l5.1923-2.9908v59.9919l-5.1923,3.0012Z"/>
     <path id="Path-25" class="exterior-L-light" d="M103.8462,155.8835l-5.1924-2.9908v59.9919l5.1924,3.0012Z"/>
     <path id="Path-26" class="exterior-L-light" d="M83.0769,143.9l-5.1923-3.0011v59.9607l5.1923,2.9908Z"/>
