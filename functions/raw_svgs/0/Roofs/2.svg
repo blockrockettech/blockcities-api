@@ -9,7 +9,7 @@
         fill: #f4f4f4;
       }
 
-      .cls-2 {
+      .exterior-L-prim {
         fill: #73302f;
       }
 
@@ -25,7 +25,7 @@
         fill: #f6fcfe;
       }
 
-      .cls-6 {
+      .exterior-R-prim {
         fill: #d15752;
       }
 
@@ -173,7 +173,7 @@
   <g id="Group">
     <path id="top-T2" class="top-light" d="M0,38.73,65.06,76.29l65.05-37.56L65.06,1.17Z"/>
     <path id="Path" class="cls-1" d="M65.06,74l61-35.22L67.09,4.7,6.1,39.91Z"/>
-    <path id="Path-2" class="cls-2" d="M122,38.73,66.07,6.46V4.11L124,37.56Z"/>
+    <path id="Path-2" class="exterior-L-prim" d="M122,38.73,66.07,6.46V4.11L124,37.56Z"/>
     <path id="Path-3" class="cls-3" d="M124,37.56l2-1.17L66,1.76V4.11Z"/>
     <g class="cls-4">
       <path id="Path-4" class="cls-5" d="M128.08,36.39,66.07.59V1.76l60,34.63Z"/>
@@ -182,9 +182,9 @@
     <g class="cls-4">
       <path id="Path-6" class="cls-5" d="M66.07.59,61,3.52l1,.59,4.06-2.35Z"/>
     </g>
-    <path id="Path-7" class="cls-6" d="M69.12,5.87V8.22L67.09,7Z"/>
-    <path id="body-R2" class="cls-6" d="M130.11,55.17V38.73L65.06,76.29V92.73Z"/>
-    <path id="body-L2" class="cls-2" d="M0,55.17V38.73L65.06,76.29V92.73Z"/>
+    <path id="Path-7" class="exterior-R-prim" d="M69.12,5.87V8.22L67.09,7Z"/>
+    <path id="body-R2" class="exterior-R-prim" d="M130.11,55.17V38.73L65.06,76.29V92.73Z"/>
+    <path id="body-L2" class="exterior-L-prim" d="M0,55.17V38.73L65.06,76.29V92.73Z"/>
     <g id="Group-2">
       <path id="Path-8" class="cls-7" d="M67.29,13.45,72,16.19l1.18-.69-4.74-2.74Z"/>
       <g id="Group-3">
@@ -204,7 +204,7 @@
     <path id="Path-12" class="cls-15" d="M28.46,45.78,73.19,20V10.56L28.46,36.39Z"/>
     <path id="Path-13" class="cls-1" d="M68.1,23.89,30.49,45.6v-8L68.1,15.85Z"/>
     <path id="Path-14" class="cls-15" d="M62,19.37l6.09-3.52v7Z"/>
-    <path id="Path-15" class="cls-6" d="M12.2,36.39V34L4.07,38.73l2,1.18Z"/>
+    <path id="Path-15" class="exterior-R-prim" d="M12.2,36.39V34L4.07,38.73l2,1.18Z"/>
     <g id="Group-6">
       <g id="Group-7">
         <path id="Path-16" class="cls-16" d="M35.08,54.3l-1-.59,1-.59,1,.59Z"/>

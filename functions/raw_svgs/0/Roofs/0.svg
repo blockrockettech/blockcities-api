@@ -9,11 +9,11 @@
         fill: #dd8987;
       }
 
-      .cls-1 {
+      .exterior-L-prim {
         fill: #73302f;
       }
 
-      .cls-2 {
+      .exterior-R-prim {
         fill: #d15752;
       }
 
@@ -46,11 +46,11 @@
   <g id="Group">
     <path id="top-T2" class="top-light" d="M65,0l65,37.53L65,75.06,0,37.53Z"/>
     <path id="top-T2-2" class="top-prim" d="M65,5.77l55,31.76L65,69.28,10,37.53Z"/>
-    <path id="Path" class="cls-1" d="M65,5.77V26l37.5,21.65L120,37.53Z"/>
-    <path id="Path-2" class="cls-2" d="M65,5.77V26L27.5,47.63,10,37.53Z"/>
+    <path id="Path" class="exterior-L-prim" d="M65,5.77V26l37.5,21.65L120,37.53Z"/>
+    <path id="Path-2" class="exterior-R-prim" d="M65,5.77V26L27.5,47.63,10,37.53Z"/>
     <path id="Path-3" class="top-light" d="M52.5,27.42l15-8.66L102.5,39l-15,8.66Z"/>
-    <path id="Path-4" class="cls-1" d="M52.5,27.42V41.86l30.32,17.5,4.68-3.07V47.63Z"/>
-    <path id="Path-5" class="cls-2" d="M102.5,39v8.66l-15,8.66V47.63Z"/>
+    <path id="Path-4" class="exterior-L-prim" d="M52.5,27.42V41.86l30.32,17.5,4.68-3.07V47.63Z"/>
+    <path id="Path-5" class="exterior-R-prim" d="M102.5,39v8.66l-15,8.66V47.63Z"/>
     <path id="Path-6" class="top-prim" d="M57.5,27.42l10-5.77L97.5,39l-10,5.77Z"/>
     <g id="Group-2">
       <path id="Path-7" class="cls-3" d="M80,52,70,57.74,41.25,41.14l10-5.78Z"/>
