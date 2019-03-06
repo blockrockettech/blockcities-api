@@ -23,9 +23,9 @@ module.exports = {
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
             tokenDetails.building = tokenDetails.city;
 
-            if (parseInt(tokenId) < 11) {
-                console.log(`Loading special for Token ID:`, tokenId);
-                const specialSvg = await imageBuilderService.loadSpecial(tokenId);
+            if (tokenDetails.special.toNumber() !== 0) {
+                console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+                const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special.toNumber());
                 return response
                     .contentType('image/svg+xml')
                     .send(specialSvg);

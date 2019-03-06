@@ -48,6 +48,7 @@ class BlockcitiesContractService {
             _base,
             _body,
             _roof,
+            _special,
             _architect
         } = await token.attributes(tokenId);
 
@@ -66,6 +67,7 @@ class BlockcitiesContractService {
             base: _base,
             body: _body,
             roof: _roof,
+            special: _special,
             architect: _architect,
             ...metadata
         };
