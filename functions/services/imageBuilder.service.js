@@ -11,6 +11,17 @@ const curtainsKeys = Object.keys(colourways.curtains);
 
 class ImageBuilderService {
 
+    async loadSpecial (specialId) {
+
+        try {
+            const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
+            const rawSvg = await readFilePromise(path, 'utf8');
+            return rawSvg;
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
     async generateImage (
         {
             building,
