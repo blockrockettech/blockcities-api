@@ -35,6 +35,11 @@ app.get('/network/:network/token/:tokenId/details', async (request, response) =>
     return require('./tokenUri').lookupTokenDetails(request, response);
 });
 
+// A more detailed lookup method for pulling back all details for a token
+app.get('/network/:network/tokens/:owner/details', async (request, response) => {
+    return require('./tokenUri').lookupTokenDetailsForOwner(request, response);
+});
+
 // The image generator
 app.get('/network/:network/token/:tokenId/image', async (request, response) => {
     return require('./image').generateTokenImage(request, response);

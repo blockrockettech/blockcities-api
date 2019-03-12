@@ -18,7 +18,6 @@ class BlockcitiesContractService {
 
         const token = connectToBlockCities(network);
         const tokenBaseURI = await token.tokenBaseURI();
-        // console.log(tokenBaseURI);
         return tokenBaseURI;
     }
 
@@ -33,6 +32,15 @@ class BlockcitiesContractService {
             cityPointer: cityPointer[0],
             tokenIdPointer: tokenIdPointer[0]
         };
+    }
+
+    async tokensOfOwner(network = 1, owner) {
+        const token = connectToBlockCities(network);
+        const tokensOfOwner = await token.tokensOfOwner(owner);
+
+        console.log(tokensOfOwner);
+
+        return tokensOfOwner;
     }
 
     async tokenAttributes(network = 1, tokenId) {
@@ -66,10 +74,6 @@ class BlockcitiesContractService {
 
         // Get token URI
         const tokenURI = await token.tokenURI(tokenId);
-        console.log(tokenURI);
-
-        // Get metadata
-        const metadata = await lookupMetadata(tokenURI[0]);
 
         // Build full details response
         return {
@@ -81,7 +85,6 @@ class BlockcitiesContractService {
             roof: _roof,
             special: _special,
             architect: _architect,
-            ...metadata
         };
     }
 

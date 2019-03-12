@@ -1,32 +1,15 @@
-/*
-| Georgia Power          | 0  | Atlanta       |
-| ---------------------- | -- | ------------- |
-| GP Tower               | 1  | Atlanta       |
-| Westin Peachtree Plaza | 2  | Atlanta       |
-| Crain Communications   | 3  | Chicago       |
-| Trump Tower Chicago    | 4  | Chicago       |
-| Willis Tower           | 5  | Chicago       |
-| Linkedin Building      | 6  | San Francisco |
-| Transamerica Pyramid   | 7  | San Francisco |
-| US Bank                | 8  | San Francisco |
-| BoA Tower              | 9  | New York City |
-| 56 Leonard             | 10 | New York City |
-| Citigroup Center       | 11 | New York City |
-*/
-
-
 module.exports = {
-  0: {name: 'Georgia Power', city:'Atlanta'},
-  1: {name: 'GP Tower', city:'Atlanta'},
-  2: {name: 'Westin Peachtree Plaza', city:'Atlanta'},
-  3: {name: 'Crain Communications', city:'Chicago'},
-  4: {name: 'Trump Tower Chicago', city:'Chicago'},
-  5: {name: 'Willis Tower', city:'Chicago'},
-  6: {name: 'Linkedin Building', city:' San Francisco'},
-  7: {name: 'Transamerica Pyramid', city:' San Francisco'},
-  8: {name: 'US Bank', city:' San Francisco'},
-  9: {name: 'BoA Tower', city:'New York City'},
-  10: {name: '56 Leonard', city:'New York City'},
-  11: {name: 'Citigroup Center  ', city:'New York City'},
+    0: {name: '241 Ralph McGill', bname: 'Georgia Power', city: 'Atlanta'},
+    1: {name: '133 Peachtree', bname: 'GP Tower', city: 'Atlanta'},
+    2: {name: '210 Peachtree', bname: 'Westin Peachtree Plaza', city: 'Atlanta'},
+    3: {name: '150 North Michigan', bname: 'Crain Communications', city: 'Chicago'},
+    4: {name: '401 North Wabash', bname: 'Trump Tower Chicago', city: 'Chicago'},
+    5: {name: '233 South Wacker', bname: 'Willis Tower', city: 'Chicago'},
+    6: {name: '222 Second Street', bname: 'Linkedin Building', city: ' San Francisco'},
+    7: {name: '600 Montgomery', bname: 'Transamerica Pyramid', city: ' San Francisco'},
+    8: {name: 'One California', bname: 'US Bank', city: ' San Francisco'},
+    9: {name: 'One Bryant Park', bname: 'BoA Tower', city: 'New York City'},
+    10: {name: '56 Leonard', bname: '56 Leonard', city: 'New York City'},
+    11: {name: '601 Lexington', bname: 'Citigroup Center  ', city: 'New York City'},
 };
 
