@@ -1,0 +1,79 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 161.66">
+  <defs>
+    <style>
+      .top-light {
+        fill: #fac7c6;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .cls-1 {
+        fill: #f9f9fa;
+      }
+
+      .cls-2 {
+        fill: #a2a2a1;
+      }
+
+      .cls-3 {
+        fill: #d2d2d2;
+      }
+
+      .cls-4 {
+        fill: #474747;
+      }
+
+      .cls-5 {
+        fill: #bababa;
+      }
+
+      .cls-6 {
+        fill: #e9e8e8;
+      }
+    </style>
+  </defs>
+  <title>Artboard 6</title>
+  <g id="Group">
+    <path id="top-T1" class="top-light" d="M160,0,280,69.28,120,161.66,0,92.38Z"/>
+    <path id="top-T2" class="top-prim" d="M160,11.55,260,69.28,120,150.11,20,92.38Z"/>
+    <path id="Path" class="exterior-L-prim" d="M160,11.55V46.19L230,86.6l30-17.32Z"/>
+    <path id="Path-2" class="exterior-R-prim" d="M160,11.55V46.19L50,109.7,20,92.38Z"/>
+    <path id="Path-3" class="top-light" d="M95,72.17l70-40.42,65,37.53L161.54,111Z"/>
+    <path id="Path-4" class="exterior-L-prim" d="M95,72.17V95.26l60,34.64,5-2.88V109.7Z"/>
+    <path id="Path-5" class="exterior-R-prim" d="M230,69.28V86.6L160,127V109.7Z"/>
+    <path id="Path-6" class="top-prim" d="M105,72.17l60-34.64,55,31.75-60,34.64Z"/>
+    <g id="Group-2">
+      <path id="Path-7" class="cls-1" d="M147.5,119.8,130,129.9,77.5,99.59,95,89.49Z"/>
+      <path id="Path-8" class="cls-2" d="M130,129.9v14.44l17.5-10.11V119.8Z"/>
+      <path id="Path-9" class="cls-3" d="M77.5,99.59v26L120,150.11l10-5.77V129.9Z"/>
+      <path id="Path-10" class="cls-4" d="M125,132.79l-12.5-7.22V140l12.5,7.21Z"/>
+      <path id="Path-11" class="cls-4" d="M107.5,122.69l-10-5.78v14.44l10,5.77Z"/>
+      <path id="Path-12" class="cls-4" d="M92.5,114,80,106.81v14.43l12.5,7.22Z"/>
+      <g id="Group-3">
+        <ellipse id="Ellipse" class="cls-5" cx="128.35" cy="118.18" rx="7.08" ry="4.09"/>
+        <rect id="Rectangle" class="cls-5" x="121.27" y="114.62" width="14.15" height="3.56"/>
+        <ellipse id="Ellipse-2" class="cls-6" cx="128.35" cy="114.62" rx="7.08" ry="4.09"/>
+      </g>
+      <g id="Group-4">
+        <ellipse id="Ellipse-3" class="cls-5" cx="111.17" cy="108.57" rx="7.08" ry="4.09"/>
+        <rect id="Rectangle-2" class="cls-5" x="104.09" y="105.01" width="14.15" height="3.56"/>
+        <ellipse id="Ellipse-4" class="cls-6" cx="111.17" cy="105.01" rx="7.08" ry="4.09"/>
+      </g>
+      <g id="Group-5">
+        <ellipse id="Ellipse-5" class="cls-5" cx="94" cy="98.96" rx="7.08" ry="4.09"/>
+        <rect id="Rectangle-3" class="cls-5" x="86.92" y="95.4" width="14.15" height="3.56"/>
+        <ellipse id="Ellipse-6" class="cls-6" cx="94" cy="95.4" rx="7.08" ry="4.09"/>
+      </g>
+    </g>
+  </g>
+</svg>

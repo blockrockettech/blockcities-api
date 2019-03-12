@@ -43,14 +43,14 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-            const {svg: processedBaseSvg, anchor: processedBaseAnchor} = cheerioSVGService.process(
+            const {svg: processedBaseSvg, anchorX: processedBaseAnchorX,  anchorY: processedBaseAnchorY} = cheerioSVGService.process(
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
                 colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
-            const {svg: processedBodySvg, anchor: processedBodyAnchor} = cheerioSVGService.process(
+            const {svg: processedBodySvg, anchorX: processedBodyAnchorX,  anchorY: processedBodyAnchorY} = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
@@ -72,13 +72,15 @@ class ImageBuilderService {
             const baseConfig = {
                 width: baseImage.width,
                 height: baseImage.height,
-                anchor: processedBaseAnchor,
+                anchorX: parseFloat(processedBaseAnchorX),
+                anchorY: parseFloat(processedBaseAnchorY),
                 svg: baseImage
             };
             const bodyConfig = {
                 width: bodyImage.width,
                 height: bodyImage.height,
-                anchor: processedBodyAnchor,
+                anchorX: parseFloat(processedBodyAnchorX),
+                anchorY: parseFloat(processedBodyAnchorY),
                 svg: bodyImage
             };
             const roofConfig = {
@@ -91,24 +93,28 @@ class ImageBuilderService {
             const canvasHeight = baseConfig.height
                 + bodyConfig.height
                 + roofConfig.height
-                - (baseConfig.height - baseConfig.anchor)
-                - (bodyConfig.height - bodyConfig.anchor);
+                - baseConfig.anchorY
+                - bodyConfig.anchorY;
 
-            // Always assume the baseConfig if the widest post for now
+            // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
 
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
 
             const ctx = canvas.getContext('2d');
 
-            // Base
-            ctx.drawImage(baseConfig.svg, (canvasWidth - baseConfig.width) / 2, canvasHeight - baseConfig.height);
+            // Base - stick in middle
+            console.log(`base config`, baseConfig);
+            console.log(`body config`, bodyConfig);
+            console.log(`roof config`, roofConfig);
+
+            ctx.drawImage(baseConfig.svg, 0, canvasHeight - baseConfig.height);
 
             // Body
-            ctx.drawImage(bodyConfig.svg, (canvasWidth - bodyConfig.width) / 2, canvasHeight - baseConfig.anchor - bodyConfig.height);
+            ctx.drawImage(bodyConfig.svg, baseConfig.anchorX, canvasHeight - bodyConfig.height - baseConfig.height + baseConfig.anchorY);
 
             // Roof
-            ctx.drawImage(roofConfig.svg, (canvasWidth - roofConfig.width) / 2, canvasHeight - baseConfig.anchor - bodyConfig.anchor - roofConfig.height);
+            ctx.drawImage(roofConfig.svg, baseConfig.anchorX, canvasHeight - bodyConfig.height - baseConfig.anchorY);
 
             return canvas.toBuffer('image/svg+xml', {
                 title: `BlockCities`,

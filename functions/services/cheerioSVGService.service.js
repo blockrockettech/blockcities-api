@@ -20,17 +20,23 @@ class CheerioSVGService {
             // FIXME if darkgrey exterior then dark concrete
             _.forEach(concreteFill.classic, (v, k) => $(`.concrete-${k}`).attr('style', `fill: ${v}`));
 
-            let anchorElement = $('[id^=anchor-01_]').first();
-            let anchor = undefined;
+            let anchorElement = $('[id^=anchor_]').first();
+            let anchorX = undefined;
+            let anchorY = undefined;
 
             if (anchorElement && anchorElement.attr('id')) {
-                anchor = anchorElement.attr('id').split('_')[1];
-                console.log(`anchor ${anchor}`);
+                let id = anchorElement.attr('id');
+                console.log(`id ${id}`);
+                anchorX = id.split('_')[1];
+                anchorY = id.split('_')[2];
+                console.log(`anchorX ${anchorX}`);
+                console.log(`anchorY ${anchorY}`);
             }
 
             return {
                 svg: $.xml(),
-                anchor: anchor
+                anchorX: anchorX,
+                anchorY: anchorY,
             };
         } catch (e) {
             console.error(e);
