@@ -43,14 +43,24 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-            const {svg: processedBaseSvg, anchorX: processedBaseAnchorX, anchorY: processedBaseAnchorY} = cheerioSVGService.process(
+            const {
+                svg: processedBaseSvg,
+                anchorX: processedBaseAnchorX,
+                anchorY: processedBaseAnchorY,
+                anchorWidthPath: processedBaseAnchorWidthPath
+            } = cheerioSVGService.process(
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
                 colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
-            const {svg: processedBodySvg, anchorX: processedBodyAnchorX, anchorY: processedBodyAnchorY} = cheerioSVGService.process(
+            const {
+                svg: processedBodySvg,
+                anchorX: processedBodyAnchorX,
+                anchorY: processedBodyAnchorY,
+                anchorWidthPath: processedBodyAnchorWidthPath
+            } = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
@@ -74,7 +84,7 @@ class ImageBuilderService {
                 height: baseImage.height,
                 anchorX: parseFloat(processedBaseAnchorX),
                 anchorY: parseFloat(processedBaseAnchorY),
-                anchorWidthPath: 150,
+                anchorWidthPath: parseFloat(processedBaseAnchorWidthPath),
                 svg: baseImage
             };
             const bodyConfig = {
@@ -82,6 +92,7 @@ class ImageBuilderService {
                 height: bodyImage.height,
                 anchorX: parseFloat(processedBodyAnchorX),
                 anchorY: parseFloat(processedBodyAnchorY),
+                anchorWidthPath: parseFloat(processedBodyAnchorWidthPath),
                 svg: bodyImage
             };
             const roofConfig = {
@@ -98,7 +109,7 @@ class ImageBuilderService {
                 + adjustedBodyHeight
                 + adjustedRoofHeight
                 - baseConfig.anchorY;
-                // - adjustedBodyConfigAnchorY;
+            // - adjustedBodyConfigAnchorY;
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
@@ -106,9 +117,9 @@ class ImageBuilderService {
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
 
-            console.log(`base config`, baseConfig);
-            console.log(`body config`, bodyConfig);
-            console.log(`roof config`, roofConfig);
+            // console.log(`base config`, baseConfig);
+            // console.log(`body config`, bodyConfig);
+            // console.log(`roof config`, roofConfig);
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;

@@ -23,20 +23,24 @@ class CheerioSVGService {
             let anchorElement = $('[id^=anchor_]').first();
             let anchorX = undefined;
             let anchorY = undefined;
+            let anchorWidthPath = undefined;
 
             if (anchorElement && anchorElement.attr('id')) {
                 let id = anchorElement.attr('id');
-                console.log(`id ${id}`);
-                anchorX = id.split('_')[1];
-                anchorY = id.split('_')[2];
-                console.log(`anchorX ${anchorX}`);
-                console.log(`anchorY ${anchorY}`);
+                let split = id.split('_');
+                anchorX = split[1];
+                anchorY = split[2];
+                anchorWidthPath = split[3];
+                // console.log(`anchorX ${anchorX}`);
+                // console.log(`anchorY ${anchorY}`);
+                // console.log(`anchorWidthPath ${anchorWidthPath}`);
             }
 
             return {
                 svg: $.xml(),
                 anchorX: anchorX,
                 anchorY: anchorY,
+                anchorWidthPath: anchorWidthPath,
             };
         } catch (e) {
             console.error(e);
