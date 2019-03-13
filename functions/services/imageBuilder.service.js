@@ -43,14 +43,14 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-            const {svg: processedBaseSvg, anchorX: processedBaseAnchorX,  anchorY: processedBaseAnchorY} = cheerioSVGService.process(
+            const {svg: processedBaseSvg, anchorX: processedBaseAnchorX, anchorY: processedBaseAnchorY} = cheerioSVGService.process(
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
                 colourways.curtains[curtainsKeys[windowColorway]],
                 colourways.concrete,
             );
-            const {svg: processedBodySvg, anchorX: processedBodyAnchorX,  anchorY: processedBodyAnchorY} = cheerioSVGService.process(
+            const {svg: processedBodySvg, anchorX: processedBodyAnchorX, anchorY: processedBodyAnchorY} = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
                 colourways.windows[windowsKeys[windowColorway]],
@@ -74,6 +74,7 @@ class ImageBuilderService {
                 height: baseImage.height,
                 anchorX: parseFloat(processedBaseAnchorX),
                 anchorY: parseFloat(processedBaseAnchorY),
+                anchorWidthPath: 150,
                 svg: baseImage
             };
             const bodyConfig = {
@@ -89,32 +90,54 @@ class ImageBuilderService {
                 svg: roofImage
             };
 
+            const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+            const adjustedRoofHeight = roofConfig.height * (baseConfig.anchorWidthPath / roofConfig.width);
+
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             const canvasHeight = baseConfig.height
-                + bodyConfig.height
-                + roofConfig.height
-                - baseConfig.anchorY
-                - bodyConfig.anchorY;
+                + adjustedBodyHeight
+                + adjustedRoofHeight
+                - baseConfig.anchorY;
+                // - adjustedBodyConfigAnchorY;
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
 
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-
             const ctx = canvas.getContext('2d');
 
-            // Base - stick in middle
             console.log(`base config`, baseConfig);
             console.log(`body config`, bodyConfig);
             console.log(`roof config`, roofConfig);
 
-            ctx.drawImage(baseConfig.svg, 0, canvasHeight - baseConfig.height);
+            const startBaseY = canvasHeight - baseConfig.height;
+            const startBodyY = canvasHeight - adjustedBodyHeight;
+
+            // Base
+            ctx.drawImage(
+                baseConfig.svg,
+                0,
+                startBaseY
+            );
 
             // Body
-            ctx.drawImage(bodyConfig.svg, baseConfig.anchorX, canvasHeight - bodyConfig.height - baseConfig.height + baseConfig.anchorY);
+            console.log(`% body`, baseConfig.anchorWidthPath / bodyConfig.width);
+            ctx.drawImage(
+                bodyConfig.svg,
+                baseConfig.anchorX,
+                startBodyY - baseConfig.height + baseConfig.anchorY,
+                baseConfig.anchorWidthPath,
+                adjustedBodyHeight,
+            );
 
             // Roof
-            ctx.drawImage(roofConfig.svg, baseConfig.anchorX, canvasHeight - bodyConfig.height - baseConfig.anchorY);
+            ctx.drawImage(
+                roofConfig.svg,
+                baseConfig.anchorX,
+                startBodyY - baseConfig.height + baseConfig.anchorY,
+                baseConfig.anchorWidthPath,
+                adjustedRoofHeight
+            );
 
             return canvas.toBuffer('image/svg+xml', {
                 title: `BlockCities`,
