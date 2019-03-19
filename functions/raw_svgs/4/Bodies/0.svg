@@ -1,12 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.1 450.33">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 536.9302">
   <defs>
     <style>
-      .exterior-R-prim {
-        fill: #d15752;
-      }
-
       .exterior-L-prim {
         fill: #73302f;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
       }
 
       .top-prim {
@@ -16,119 +16,76 @@
       .window-R-prim {
         fill: #202020;
       }
-
-      .window-L-prim {
-        fill: #414042;
-      }
     </style>
   </defs>
-  <title>Artboard 2</title>
-  <g id="group">
-    <g id="Group-2" data-name="Group">
-      <path id="exterior-R-prim" class="exterior-R-prim" d="M85.1,98.15,85,450.33l85-49.07.1-352.18Z"/>
-      <path id="exterior-L-prim" class="exterior-L-prim" d="M85.1,98.15,85,450.33,0,401.26.1,49.08Z"/>
-      <path id="anchor-01_352.18" class="top-prim" d="M85,98.15l85-49.07L85,0,0,49.08Z"/>
-      <g id="window-R-prim">
-        <g id="Group-3" data-name="Group">
-          <path id="windows-R3" class="window-R-prim" d="M85.1,103.92l85-49.07v8.66l-13.68,7.9L85.1,112.58Z"/>
-        </g>
-        <g id="Group-4" data-name="Group">
-          <path id="windows-R3-2" data-name="windows-R3" class="window-R-prim" d="M85.1,132.79l85-49.07v8.66l-13.68,7.9L85.1,141.45Z"/>
-        </g>
-        <g id="Group-5" data-name="Group">
-          <path id="windows-R3-3" data-name="windows-R3" class="window-R-prim" d="M85.1,161.66l85-49.08v8.66l-13.68,7.91L85.1,170.32Z"/>
-        </g>
-        <g id="Group-6" data-name="Group">
-          <path id="windows-R3-4" data-name="windows-R3" class="window-R-prim" d="M85.1,190.53l85-49.08v8.66l-13.68,7.9L85.1,199.19Z"/>
-        </g>
-        <g id="Group-7" data-name="Group">
-          <path id="windows-R3-5" data-name="windows-R3" class="window-R-prim" d="M85.1,219.39l85-49.07v8.66l-13.68,7.9L85.1,228.05Z"/>
-        </g>
-        <g id="Group-8" data-name="Group">
-          <path id="windows-R3-6" data-name="windows-R3" class="window-R-prim" d="M85.1,248.26l85-49.07v8.66l-13.68,7.9L85.1,256.92Z"/>
-        </g>
-        <g id="Group-9" data-name="Group">
-          <path id="windows-R3-7" data-name="windows-R3" class="window-R-prim" d="M85.1,277.13l85-49.08v8.66l-13.68,7.91L85.1,285.79Z"/>
-        </g>
-        <g id="Group-10" data-name="Group">
-          <path id="windows-R3-8" data-name="windows-R3" class="window-R-prim" d="M85.1,306l85-49.08v8.66l-13.68,7.9L85.1,314.66Z"/>
-        </g>
-        <g id="Group-11" data-name="Group">
-          <path id="windows-R3-9" data-name="windows-R3" class="window-R-prim" d="M85.1,334.86l85-49.07v8.66l-13.68,7.9L85.1,343.52Z"/>
-        </g>
-        <g id="Group-12" data-name="Group">
-          <path id="windows-R3-10" data-name="windows-R3" class="window-R-prim" d="M85.1,363.73l85-49.07v8.66l-13.68,7.9L85.1,372.39Z"/>
-        </g>
-        <g id="Group-13" data-name="Group">
-          <path id="windows-R3-11" data-name="windows-R3" class="window-R-prim" d="M85.1,392.6l85-49.08v8.66l-13.68,7.91L85.1,401.26Z"/>
-        </g>
-        <g id="Group-14" data-name="Group">
-          <path id="windows-R3-12" data-name="windows-R3" class="window-R-prim" d="M85.1,421.47l85-49.08v8.66l-13.68,7.9L85.1,430.13Z"/>
-        </g>
-        <g id="Group-15" data-name="Group">
-          <path id="windows-R3-13" data-name="windows-R3" class="window-R-prim" d="M85.1,118.36l85-49.08v8.66l-13.68,7.9L85.1,127.02Z"/>
-          <path id="windows-R3-14" data-name="windows-R3" class="window-R-prim" d="M85.1,118.36l85-49.08v8.66l-13.68,7.9L85.1,127.02Z"/>
-        </g>
-        <g id="Group-16" data-name="Group">
-          <path id="windows-R3-15" data-name="windows-R3" class="window-R-prim" d="M85.1,147.22l85-49.07v8.66l-13.68,7.9L85.1,155.88Z"/>
-        </g>
-        <g id="Group-17" data-name="Group">
-          <path id="windows-R3-16" data-name="windows-R3" class="window-R-prim" d="M85.1,176.09l85-49.07v8.66l-13.68,7.9L85.1,184.75Z"/>
-        </g>
-        <g id="Group-18" data-name="Group">
-          <path id="windows-R3-17" data-name="windows-R3" class="window-R-prim" d="M85.1,204.96l85-49.07v8.66l-13.68,7.9L85.1,213.62Z"/>
-        </g>
-        <g id="Group-19" data-name="Group">
-          <path id="windows-R3-18" data-name="windows-R3" class="window-R-prim" d="M85.1,233.83l85-49.08v8.66l-13.68,7.9L85.1,242.49Z"/>
-        </g>
-        <g id="Group-20" data-name="Group">
-          <path id="windows-R3-19" data-name="windows-R3" class="window-R-prim" d="M85.1,262.69l85-49.07v8.66l-13.68,7.9L85.1,271.35Z"/>
-        </g>
-        <g id="Group-21" data-name="Group">
-          <path id="windows-R3-20" data-name="windows-R3" class="window-R-prim" d="M85.1,291.56l85-49.07v8.66l-13.68,7.9L85.1,300.22Z"/>
-        </g>
-        <g id="Group-22" data-name="Group">
-          <path id="windows-R3-21" data-name="windows-R3" class="window-R-prim" d="M85.1,320.43l85-49.08v8.67l-13.68,7.9L85.1,329.09Z"/>
-        </g>
-        <g id="Group-23" data-name="Group">
-          <path id="windows-R3-22" data-name="windows-R3" class="window-R-prim" d="M85.1,349.3l85-49.08v8.66l-13.68,7.9L85.1,357.96Z"/>
-        </g>
-        <g id="Group-24" data-name="Group">
-          <path id="windows-R3-23" data-name="windows-R3" class="window-R-prim" d="M85.1,378.16l85-49.07v8.66l-13.68,7.9L85.1,386.83Z"/>
-        </g>
-        <g id="Group-25" data-name="Group">
-          <path id="windows-R3-24" data-name="windows-R3" class="window-R-prim" d="M85.1,407.03l85-49.07v8.66l-13.68,7.9L85.1,415.69Z"/>
-        </g>
-        <g id="Group-26" data-name="Group">
-          <path id="windows-R3-25" data-name="windows-R3" class="window-R-prim" d="M85.1,435.9l85-49.07v8.66l-13.68,7.9L85.1,444.56Z"/>
-        </g>
-      </g>
-    </g>
-    <g id="window-L-prim">
-      <path id="windows-L2" class="window-L-prim" d="M85.06,103.92.06,54.85.1,63.51l85,49.07Z"/>
-      <path id="windows-L2-2" data-name="windows-L2" class="window-L-prim" d="M85.06,132.79.06,83.72.1,92.38l85,49.07Z"/>
-      <path id="windows-L2-3" data-name="windows-L2" class="window-L-prim" d="M85.06,161.66l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-4" data-name="windows-L2" class="window-L-prim" d="M85.06,190.53l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-5" data-name="windows-L2" class="window-L-prim" d="M85.06,219.39l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-6" data-name="windows-L2" class="window-L-prim" d="M85.06,248.26l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-7" data-name="windows-L2" class="window-L-prim" d="M85.06,277.13l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-8" data-name="windows-L2" class="window-L-prim" d="M85.06,306l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-9" data-name="windows-L2" class="window-L-prim" d="M85.06,334.86l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-10" data-name="windows-L2" class="window-L-prim" d="M85.06,363.73l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-11" data-name="windows-L2" class="window-L-prim" d="M85.06,392.6l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-12" data-name="windows-L2" class="window-L-prim" d="M85.06,421.47l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-13" data-name="windows-L2" class="window-L-prim" d="M85.06,118.36.06,69.28.1,77.94l85,49.08Z"/>
-      <path id="windows-L2-14" data-name="windows-L2" class="window-L-prim" d="M85.06,147.22.06,98.15l.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-15" data-name="windows-L2" class="window-L-prim" d="M85.06,176.09l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-16" data-name="windows-L2" class="window-L-prim" d="M85.06,204.96l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-17" data-name="windows-L2" class="window-L-prim" d="M85.06,233.83l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-18" data-name="windows-L2" class="window-L-prim" d="M85.06,262.69l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-19" data-name="windows-L2" class="window-L-prim" d="M85.06,291.56l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-20" data-name="windows-L2" class="window-L-prim" d="M85.06,320.43l-85-49.08.04,8.67,85,49.07Z"/>
-      <path id="windows-L2-21" data-name="windows-L2" class="window-L-prim" d="M85.06,349.3l-85-49.08.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-22" data-name="windows-L2" class="window-L-prim" d="M85.06,378.16l-85-49.07.04,8.66,85,49.08Z"/>
-      <path id="windows-L2-23" data-name="windows-L2" class="window-L-prim" d="M85.06,407.03l-85-49.07.04,8.66,85,49.07Z"/>
-      <path id="windows-L2-24" data-name="windows-L2" class="window-L-prim" d="M85.06,435.9l-85-49.07.04,8.66,85,49.07Z"/>
-    </g>
+  <title>Artboard 12</title>
+  <g>
+    <polygon class="exterior-L-prim" points="110 363.73 0 300.22 0 311.77 110 375.27 110 363.73"/>
+    <polygon class="exterior-L-prim" points="110 248.26 0 184.75 0 196.3 110 259.8 110 248.26"/>
+    <polygon class="exterior-L-prim" points="110 178.98 0 115.47 0 127.01 110 190.52 110 178.98"/>
+    <polygon class="exterior-L-prim" points="110 202.07 0 138.56 0 150.11 110 213.62 110 202.07"/>
+    <polygon class="exterior-L-prim" points="110 340.63 0 277.12 0 288.67 110 352.18 110 340.63"/>
+    <polygon class="exterior-L-prim" points="110 225.16 0 161.65 0 173.2 110 236.71 110 225.16"/>
+    <polygon class="exterior-L-prim" points="110 155.88 0 92.37 0 103.92 110 167.43 110 155.88"/>
+    <polygon class="exterior-L-prim" points="110 317.54 0 254.03 0 265.58 110 329.09 110 317.54"/>
+    <polygon class="exterior-L-prim" points="110 271.35 0 207.84 0 219.39 110 282.9 110 271.35"/>
+    <polygon class="exterior-L-prim" points="110 294.45 0 230.94 0 242.48 110 305.99 110 294.45"/>
+    <polygon class="exterior-L-prim" points="110 386.82 0 323.31 0 334.86 110 398.37 110 386.82"/>
+    <polygon class="exterior-L-prim" points="110 502.29 0 438.78 0 450.33 110 513.84 110 502.29"/>
+    <polygon class="exterior-L-prim" points="110 479.2 0 415.69 0 427.24 110 490.74 110 479.2"/>
+    <polygon class="exterior-L-prim" points="0 461.88 0 473.42 110 536.93 110 525.39 0 461.88"/>
+    <polygon class="exterior-L-prim" points="110 409.92 0 346.41 0 357.95 110 421.46 110 409.92"/>
+    <polygon class="exterior-L-prim" points="110 456.1 0 392.59 0 404.14 110 467.65 110 456.1"/>
+    <polygon class="exterior-L-prim" points="110 433.01 0 369.5 0 381.05 110 444.56 110 433.01"/>
+    <polygon class="exterior-R-prim" points="110 444.56 270 352.18 270 340.63 110 433.01 110 444.56"/>
+    <polygon class="exterior-R-prim" points="110 421.46 270 329.09 270 317.54 110 409.92 110 421.46"/>
+    <polygon class="exterior-R-prim" points="110 490.74 270 398.37 270 386.82 110 479.2 110 490.74"/>
+    <polygon class="exterior-R-prim" points="110 513.84 270 421.46 270 409.92 110 502.29 110 513.84"/>
+    <polygon class="exterior-R-prim" points="110 536.93 270 444.56 270 433.01 110 525.39 110 536.93"/>
+    <polygon class="exterior-R-prim" points="110 398.37 270 305.99 270 294.45 110 386.82 110 398.37"/>
+    <polygon class="exterior-R-prim" points="110 467.65 270 375.27 270 363.73 110 456.1 110 467.65"/>
+    <polygon class="exterior-R-prim" points="110 305.99 270 213.62 270 202.07 110 294.45 110 305.99"/>
+    <polygon class="exterior-R-prim" points="110 375.27 270 282.9 270 271.35 110 363.73 110 375.27"/>
+    <polygon class="exterior-R-prim" points="110 329.09 270 236.71 270 225.16 110 317.54 110 329.09"/>
+    <polygon class="exterior-R-prim" points="110 282.9 270 190.52 270 178.98 110 271.35 110 282.9"/>
+    <polygon class="exterior-R-prim" points="110 236.71 270 144.33 270 132.79 110 225.16 110 236.71"/>
+    <polygon class="exterior-R-prim" points="110 352.18 270 259.8 270 248.26 110 340.63 110 352.18"/>
+    <polygon class="exterior-R-prim" points="110 190.52 270 98.15 270 86.6 110 178.98 110 190.52"/>
+    <polygon class="exterior-R-prim" points="110 259.8 270 167.43 270 155.88 110 248.26 110 259.8"/>
+    <polygon class="exterior-R-prim" points="110 213.62 270 121.24 270 109.69 110 202.07 110 213.62"/>
+    <polygon class="exterior-R-prim" points="110 167.43 270 75.05 270 63.51 110 155.88 110 167.43"/>
+    <polygon id="anchor_0_155.88_270" class="top-prim" points="0 92.37 110 155.88 270 63.51 160 0 0 92.37"/>
+    <polygon class="window-R-prim" points="110 178.98 270 86.6 270 75.05 110 167.43 110 178.98"/>
+    <polygon class="window-R-prim" points="110 225.16 270 132.79 270 121.24 110 213.62 110 225.16"/>
+    <polygon class="window-R-prim" points="110 271.35 270 178.98 270 167.43 110 259.8 110 271.35"/>
+    <polygon class="window-R-prim" points="110 317.54 270 225.16 270 213.62 110 305.99 110 317.54"/>
+    <polygon class="window-R-prim" points="110 363.73 270 271.35 270 259.8 110 352.18 110 363.73"/>
+    <polygon class="window-R-prim" points="110 409.92 270 317.54 270 305.99 110 398.37 110 409.92"/>
+    <polygon class="window-R-prim" points="110 456.1 270 363.73 270 352.18 110 444.56 110 456.1"/>
+    <polygon class="window-R-prim" points="110 502.29 270 409.92 270 398.37 110 490.74 110 502.29"/>
+    <polygon class="window-R-prim" points="110 202.07 270 109.69 270 98.15 110 190.52 110 202.07"/>
+    <polygon class="window-R-prim" points="110 248.26 270 155.88 270 144.33 110 236.71 110 248.26"/>
+    <polygon class="window-R-prim" points="110 294.45 270 202.07 270 190.52 110 282.9 110 294.45"/>
+    <polygon class="window-R-prim" points="110 340.63 270 248.26 270 236.71 110 329.09 110 340.63"/>
+    <polygon class="window-R-prim" points="110 386.82 270 294.45 270 282.9 110 375.27 110 386.82"/>
+    <polygon class="window-R-prim" points="110 433.01 270 340.63 270 329.09 110 421.46 110 433.01"/>
+    <polygon class="window-R-prim" points="110 479.2 270 386.82 270 375.27 110 467.65 110 479.2"/>
+    <polygon class="window-R-prim" points="110 525.39 270 433.01 270 421.46 110 513.84 110 525.39"/>
+    <polygon points="110 167.43 0 103.92 0 115.47 110 178.98 110 167.43"/>
+    <polygon points="110 213.62 0 150.11 0 161.65 110 225.16 110 213.62"/>
+    <polygon points="110 259.8 0 196.3 0 207.84 110 271.35 110 259.8"/>
+    <polygon points="110 305.99 0 242.48 0 254.03 110 317.54 110 305.99"/>
+    <polygon points="110 352.18 0 288.67 0 300.22 110 363.73 110 352.18"/>
+    <polygon points="110 398.37 0 334.86 0 346.41 110 409.92 110 398.37"/>
+    <polygon points="110 444.56 0 381.05 0 392.59 110 456.1 110 444.56"/>
+    <polygon points="110 490.74 0 427.24 0 438.78 110 502.29 110 490.74"/>
+    <polygon points="110 190.52 0 127.01 0 138.56 110 202.07 110 190.52"/>
+    <polygon points="110 236.71 0 173.2 0 184.75 110 248.26 110 236.71"/>
+    <polygon points="110 282.9 0 219.39 0 230.94 110 294.45 110 282.9"/>
+    <polygon points="110 329.09 0 265.58 0 277.12 110 340.63 110 329.09"/>
+    <polygon points="110 375.27 0 311.77 0 323.31 110 386.82 110 375.27"/>
+    <polygon points="110 421.46 0 357.95 0 369.5 110 433.01 110 421.46"/>
+    <polygon points="110 467.65 0 404.14 0 415.69 110 479.2 110 467.65"/>
+    <polygon points="110 513.84 0 450.33 0 461.88 110 525.39 110 513.84"/>
   </g>
 </svg>

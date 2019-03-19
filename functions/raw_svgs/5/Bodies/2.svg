@@ -1,49 +1,61 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 681.27">
-    <defs>
-        <style>
-            .curtain-L-prim-light{fill:#196273;}.curtain-L-prim-dark{fill:#11424d;}.curtain-R-prim-light{fill:#2b95ac;}.curtain-R-prim-dark{fill:#21788c;}.top-prim{fill:#dd8987;}
-        </style>
-    </defs>
-    <title>Artboard 4</title>
-    <polygon class="curtain-L-prim-light" points="10 98.15 10 623.53 20 629.31 20 103.92 10 98.15"/>
-    <polygon class="curtain-L-prim-light"
-             points="110 155.88 82.52 140.02 90 144.34 90 669.72 100 675.5 100 150.11 110 155.88"/>
-    <polygon class="curtain-L-prim-light" points="27.5 108.25 30 109.7 30 635.08 40 640.85 40 115.47 27.5 108.25"/>
-    <polygon class="curtain-L-prim-light"
-             points="50 121.24 50 646.63 60 652.4 60 127.02 70 132.79 70 658.17 80 663.95 80 138.56 50 121.24"/>
-    <polygon class="curtain-L-prim-dark" points="0 92.38 0 617.76 10 623.54 10 623.53 10 98.15 0 92.38"/>
-    <polygon class="curtain-R-prim-light"
-             points="139.07 139.09 110 155.88 120 150.11 120 675.5 130 669.72 130 144.34 139.07 139.09"/>
-    <polygon class="curtain-R-prim-light"
-             points="170 121.24 140 138.56 140 663.95 139.08 664.48 150 658.18 150 132.79 160 127.02 160 652.4 174 644.32 170 646.63 170 121.24"/>
-    <polygon class="curtain-R-prim-light"
-             points="197.25 105.51 174.08 118.89 180 115.47 180 640.86 190 635.09 190 109.7 197.25 105.51"/>
-    <polygon class="curtain-R-prim-light"
-             points="260 594.67 250 600.44 250 75.06 255.41 71.93 238 81.98 240 80.83 240 606.22 270 588.9 270 63.51 260 69.28 260 594.67"/>
-    <polygon class="curtain-R-prim-light"
-             points="230 86.6 200 103.92 200 629.31 197.31 630.86 210 623.54 210 98.15 220 92.38 220 617.76 211.83 622.48 237.96 607.4 230 611.99 230 86.6"/>
-    <polygon class="curtain-R-prim-dark" points="110 155.88 110 681.27 120 675.5 120 675.5 120 150.11 110 155.88"/>
-    <polygon class="curtain-R-prim-dark"
-             points="150 132.79 150 658.18 150 658.18 160 652.41 160 652.4 160 127.02 150 132.79"/>
-    <polygon class="curtain-R-prim-dark"
-             points="200 103.92 197.25 105.51 190 109.7 190 635.09 190 635.09 197.31 630.86 200 629.31 200 103.92"/>
-    <polygon class="curtain-L-prim-dark"
-             points="82.52 140.02 80 138.56 80 663.95 80 663.95 90 669.73 90 669.72 90 144.34 82.52 140.02"/>
-    <polygon class="curtain-R-prim-dark"
-             points="238 81.98 230 86.6 230 611.99 237.96 607.4 240 606.22 240 606.22 240 80.83 238 81.98"/>
-    <polygon class="curtain-L-prim-dark"
-             points="40 115.47 40 640.85 40 640.86 50 646.63 50 646.63 50 121.24 40 115.47"/>
-    <polygon class="curtain-R-prim-dark"
-             points="140 138.56 139.07 139.09 130 144.34 130 669.72 130 669.73 139.08 664.48 140 663.95 140 138.56"/>
-    <polygon class="curtain-R-prim-dark"
-             points="174.08 118.89 170 121.24 170 646.63 174 644.32 180 640.86 180 640.86 180 115.47 174.08 118.89"/>
-    <polygon class="curtain-L-prim-dark" points="100 150.11 100 675.5 100 675.5 110 681.27 110 155.88 100 150.11"/>
-    <polygon class="curtain-R-prim-dark"
-             points="220 92.38 210 98.15 210 623.54 210 623.54 211.83 622.48 220 617.76 220 92.38"/>
-    <polygon class="curtain-L-prim-dark" points="60 127.02 60 652.4 60 652.41 70 658.18 70 658.17 70 132.79 60 127.02"/>
-    <polygon class="curtain-R-prim-dark" points="250 600.44 260 594.67 260 69.28 255.41 71.93 250 75.06 250 600.44"/>
-    <polygon class="curtain-L-prim-dark"
-             points="30 635.09 30 635.08 30 109.7 27.5 108.25 20 103.92 20 629.31 20 629.31 30 635.09"/>
-    <polygon id="anchor-01_525.39" class="top-prim"
-             points="20 103.92 27.5 108.25 40 115.47 50 121.24 80 138.56 82.52 140.02 110 155.88 139.07 139.09 140 138.56 170 121.24 174.08 118.89 197.25 105.51 200 103.92 230 86.6 238 81.98 255.41 71.93 260 69.28 270 63.51 160 0 0 92.38 10 98.15 20 103.92"/>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 536.93">
+  <defs>
+    <style>
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
+      .window-L-prim {
+        fill: #4d3b25;
+      }
+    </style>
+  </defs>
+  <title>Artboard 18</title>
+  <path id="Path" class="exterior-L-prim" d="M0,92.37V473.42l110,63.51V155.88Z"/>
+  <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M110,536.93l160-92.37V63.51L110,155.88Z"/>
+  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.37,160,0,270,63.51,110,155.88Z"/>
+  <path id="Path-3" data-name="Path" class="window-R-prim" d="M110,167.43,270,75.05V86.6L110,178.98Z"/>
+  <path id="Path-4" data-name="Path" class="window-R-prim" d="M110,213.62l160-92.38v11.55L110,225.16Z"/>
+  <path id="Path-5" data-name="Path" class="window-R-prim" d="M110,259.8l160-92.37v11.55L110,271.35Z"/>
+  <path id="Path-6" data-name="Path" class="window-R-prim" d="M110,305.99l160-92.37v11.54L110,317.54Z"/>
+  <path id="Path-7" data-name="Path" class="window-R-prim" d="M110,352.18,270,259.8v11.55L110,363.73Z"/>
+  <path id="Path-8" data-name="Path" class="window-R-prim" d="M110,398.37l160-92.38v11.55L110,409.92Z"/>
+  <path id="Path-9" data-name="Path" class="window-R-prim" d="M110,444.56l160-92.38v11.55L110,456.1Z"/>
+  <path id="Path-10" data-name="Path" class="window-R-prim" d="M110,490.74l160-92.37v11.55L110,502.29Z"/>
+  <path id="Path-11" data-name="Path" class="window-R-prim" d="M110,190.52,270,98.15v11.54L110,202.07Z"/>
+  <path id="Path-12" data-name="Path" class="window-R-prim" d="M110,236.71l160-92.38v11.55L110,248.26Z"/>
+  <path id="Path-13" data-name="Path" class="window-R-prim" d="M110,282.9l160-92.38v11.55L110,294.45Z"/>
+  <path id="Path-14" data-name="Path" class="window-R-prim" d="M110,329.09l160-92.38v11.55L110,340.63Z"/>
+  <path id="Path-15" data-name="Path" class="window-R-prim" d="M110,375.27,270,282.9v11.55L110,386.82Z"/>
+  <path id="Path-16" data-name="Path" class="window-R-prim" d="M110,421.46l160-92.37v11.54L110,433.01Z"/>
+  <path id="Path-17" data-name="Path" class="window-R-prim" d="M110,467.65l160-92.38v11.55L110,479.2Z"/>
+  <path id="Path-18" data-name="Path" class="window-R-prim" d="M110,513.84l160-92.38v11.55L110,525.39Z"/>
+  <path id="Path-19" data-name="Path" class="window-L-prim" d="M110,178.98,0,115.47V103.92l110,63.51Z"/>
+  <path id="Path-20" data-name="Path" class="window-L-prim" d="M110,225.16,0,161.65V150.11l110,63.51Z"/>
+  <path id="Path-21" data-name="Path" class="window-L-prim" d="M110,271.35,0,207.84V196.3l110,63.5Z"/>
+  <path id="Path-22" data-name="Path" class="window-L-prim" d="M110,317.54,0,254.03V242.48l110,63.51Z"/>
+  <path id="Path-23" data-name="Path" class="window-L-prim" d="M110,363.73,0,300.22V288.67l110,63.51Z"/>
+  <path id="Path-24" data-name="Path" class="window-L-prim" d="M110,409.92,0,346.41V334.86l110,63.51Z"/>
+  <path id="Path-25" data-name="Path" class="window-L-prim" d="M110,456.1,0,392.59V381.05l110,63.51Z"/>
+  <path id="Path-26" data-name="Path" class="window-L-prim" d="M110,502.29,0,438.78V427.24l110,63.5Z"/>
+  <path id="Path-27" data-name="Path" class="window-L-prim" d="M110,202.07,0,138.56V127.01l110,63.51Z"/>
+  <path id="Path-28" data-name="Path" class="window-L-prim" d="M110,248.26,0,184.75V173.2l110,63.51Z"/>
+  <path id="Path-29" data-name="Path" class="window-L-prim" d="M110,294.45,0,230.94V219.39L110,282.9Z"/>
+  <path id="Path-30" data-name="Path" class="window-L-prim" d="M110,340.63,0,277.12V265.58l110,63.51Z"/>
+  <path id="Path-31" data-name="Path" class="window-L-prim" d="M110,386.82,0,323.31V311.77l110,63.5Z"/>
+  <path id="Path-32" data-name="Path" class="window-L-prim" d="M110,433.01,0,369.5V357.95l110,63.51Z"/>
+  <path id="Path-33" data-name="Path" class="window-L-prim" d="M110,479.2,0,415.69V404.14l110,63.51Z"/>
+  <path id="Path-34" data-name="Path" class="window-L-prim" d="M110,525.39,0,461.88V450.33l110,63.51Z"/>
 </svg>

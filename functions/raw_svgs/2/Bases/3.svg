@@ -1,0 +1,90 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 216.5063">
+  <defs>
+    <style>
+      .concrete-top {
+        fill: #e8e8e8;
+      }
+
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
+      .window-L-prim {
+        fill: #4d3b25;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .cls-1 {
+        fill: none;
+      }
+
+      .concrete-left {
+        fill: #a2a1a1;
+      }
+
+      .concrete-right {
+        fill: #d2d2d1;
+      }
+
+      .top-light {
+        fill: #fac7c6;
+      }
+    </style>
+  </defs>
+  <title>Artboard 8</title>
+  <g>
+    <path id="Path" class="concrete-top" d="M130,210.7328,0,135.6774l170-98.15,130,75.0557Z"/>
+    <path id="Path-2" data-name="Path" class="window-R-prim" d="M137.5,186.1956,260,115.47l2.5-30.3108-125,72.1687Z"/>
+    <path id="Path-3" data-name="Path" class="window-L-prim" d="M122.5,186.1956,30,132.7906,27.5,102.48l95,54.8484Z"/>
+    <g id="Group">
+      <path id="Path-4" data-name="Path" class="exterior-R-prim" d="M47.5,85.1592,35,77.9423,10,92.3761l20,46.188,12.5,7.2169,5-2.8868Z"/>
+      <path id="Path-5" data-name="Path" class="exterior-L-prim" d="M22.5,99.5929,10,92.3761l20,46.1881,12.5,7.2168Z"/>
+    </g>
+    <g id="Group-2" data-name="Group">
+      <path id="Path-6" data-name="Path" class="exterior-R-prim" d="M75,101.0363,62.5,93.82l-25,14.4338,20,46.188L70,161.6581l5-2.8869Z"/>
+      <path id="Path-7" data-name="Path" class="exterior-L-prim" d="M50,115.47l-12.5-7.2168,20,46.188L70,161.6582Z"/>
+    </g>
+    <g id="Group-3" data-name="Group">
+      <path id="Path-8" data-name="Path" class="exterior-R-prim" d="M102.5,116.9135,90,109.6965,65,124.13l20,46.188,12.5,7.2168,5-2.8868Z"/>
+      <path id="Path-9" data-name="Path" class="exterior-L-prim" d="M77.5,131.3473,65,124.13l20,46.1881,12.5,7.2168Z"/>
+    </g>
+    <g id="Group-4" data-name="Group">
+      <path id="Path-10" data-name="Path" class="exterior-R-prim" d="M130,132.7905l-12.5-7.2168-25,14.4337,20,46.188,12.5,7.217,5-2.8869Z"/>
+      <path id="Path-11" data-name="Path" class="exterior-L-prim" d="M105,147.2244l-12.5-7.217,20,46.1882,12.5,7.2168Z"/>
+    </g>
+    <g id="Group-5" data-name="Group">
+      <path id="Path-12" data-name="Path" class="exterior-L-prim" d="M252.5,62.0652,265,54.8483l25,14.4338L270,115.47l-12.5,7.2168-5-2.8867Z"/>
+      <path id="Path-13" data-name="Path" class="exterior-R-prim" d="M277.5,76.4989,290,69.2821,270,115.47l-12.5,7.2168Z"/>
+    </g>
+    <g id="Group-6" data-name="Group">
+      <path id="Path-14" data-name="Path" class="exterior-L-prim" d="M221.875,79.7465l12.5-7.2168,25,14.4338-20,46.188-12.5,7.2168-5-2.8869Z"/>
+      <path id="Path-15" data-name="Path" class="exterior-R-prim" d="M246.875,94.18l12.5-7.2168-20,46.188-12.5,7.2169Z"/>
+    </g>
+    <g id="Group-7" data-name="Group">
+      <path id="Path-16" data-name="Path" class="exterior-L-prim" d="M191.25,97.4279l12.5-7.217,25,14.4339-20,46.188-12.5,7.2169-5-2.8869Z"/>
+      <path id="Path-17" data-name="Path" class="exterior-R-prim" d="M216.25,111.8617l12.5-7.2169-20,46.1881-12.5,7.2168Z"/>
+    </g>
+    <g id="Group-8" data-name="Group">
+      <path id="Path-18" data-name="Path" class="exterior-L-prim" d="M160.625,115.1091l12.5-7.2168,25,14.4339-20,46.188-12.5,7.2168-5-2.8869Z"/>
+      <path id="Path-19" data-name="Path" class="exterior-R-prim" d="M185.625,129.543l12.5-7.2168-20,46.188-12.5,7.2169Z"/>
+    </g>
+    <g id="Group-9" data-name="Group">
+      <path id="Path-20" data-name="Path" class="exterior-L-prim" d="M130,132.7905l12.5-7.2169,25,14.4338-20,46.188-12.5,7.217-5-2.8869Z"/>
+      <path id="Path-21" data-name="Path" class="exterior-R-prim" d="M155,147.2244l12.5-7.217-20,46.1882L135,193.4124Z"/>
+    </g>
+    <line id="roof-right" class="cls-1" x1="105" y1="147.2244" y2="86.6025"/>
+    <line id="roof-left" class="cls-1" x1="155" y1="147.2244" x2="290" y2="69.2821"/>
+    <line id="Path-22" data-name="Path" class="cls-1" x1="130" y1="132.7906" x2="155" y2="147.2244"/>
+    <line id="Path-23" data-name="Path" class="cls-1" x1="130" y1="132.7905" x2="105" y2="147.2244"/>
+    <path id="Path-24" data-name="Path" class="concrete-left" d="M130,210.7328v5.7735L0,141.4508v-5.7734Z"/>
+    <path id="Path-25" data-name="Path" class="concrete-right" d="M130,210.7328v5.7735l170-98.1495v-5.7734Z"/>
+    <path id="anchor_10_161.658_290" class="top-light" d="M10,92.3761,170,0,290,69.2821l-160,92.376Z"/>
+  </g>
+</svg>

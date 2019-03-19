@@ -1,79 +1,57 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.15 617.76">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 687.04">
   <defs>
     <style>
-      .curtain-R-prim-dark {
-        fill: #21788c;
+      .exterior-L-prim {
+        fill: #73302f;
       }
 
-      .curtain-L-prim-dark {
-        fill: #11424d;
+      .exterior-R-prim {
+        fill: #d15752;
       }
 
       .top-prim {
         fill: #dd8987;
       }
 
-      .curtain-R-prim-light {
-        fill: #2b95ac;
-      }
-
-      .curtain-L-prim-light {
-        fill: #196273;
+      .window-R-prim {
+        fill: #202020;
       }
     </style>
   </defs>
   <title>Artboard 7</title>
-  <g id="Group">
-    <path id="windows-R3" class="curtain-R-prim-dark" d="M85.15,98.14V617.76l85-49.07V49.07Z"/>
-    <path id="windows-L2" class="curtain-L-prim-dark" d="M85.15,98.14V617.76l-85-49.07V49.07Z"/>
-    <path id="anchor-01_519.61" class="top-prim" d="M85,98.14l85-49.07L85,0,0,49.07Z"/>
-    <g id="windows-R4">
-      <path id="Path" class="curtain-R-prim-light" d="M85.15,271.35l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-2" data-name="Path" class="curtain-R-prim-light" d="M85.15,248.26l85-49.08v11.55l-85,49.07Z"/>
-      <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M85.15,225.16l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-4" data-name="Path" class="curtain-R-prim-light" d="M85.15,202.07l85-49.08v11.55l-85,49.07Z"/>
-      <path id="Path-5" data-name="Path" class="curtain-R-prim-light" d="M85.15,178.97l85-49.07v11.55l-85,49.07Z"/>
-      <path id="Path-6" data-name="Path" class="curtain-R-prim-light" d="M85.15,155.88l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-7" data-name="Path" class="curtain-R-prim-light" d="M85.15,132.79l85-49.08V95.26l-85,49.07Z"/>
-      <path id="Path-8" data-name="Path" class="curtain-R-prim-light" d="M85.15,109.69l85-49.07V72.16l-85,49.08Z"/>
-      <path id="Path-9" data-name="Path" class="curtain-R-prim-light" d="M85.15,409.91l85-49.07v11.55l-85,49.07Z"/>
-      <path id="Path-10" data-name="Path" class="curtain-R-prim-light" d="M85.15,548.48l85-49.08v11.55l-85,49.08Z"/>
-      <path id="Path-11" data-name="Path" class="curtain-R-prim-light" d="M85.15,340.63l85-49.07V303.1l-85,49.08Z"/>
-      <path id="Path-12" data-name="Path" class="curtain-R-prim-light" d="M85.15,479.2l85-49.08v11.55l-85,49.07Z"/>
-      <path id="Path-13" data-name="Path" class="curtain-R-prim-light" d="M85.15,294.44l85-49.07v11.55l-85,49.07Z"/>
-      <path id="Path-14" data-name="Path" class="curtain-R-prim-light" d="M85.15,433.01l85-49.08v11.55l-85,49.08Z"/>
-      <path id="Path-15" data-name="Path" class="curtain-R-prim-light" d="M85.15,571.57l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-16" data-name="Path" class="curtain-R-prim-light" d="M85.15,363.73l85-49.08V326.2l-85,49.07Z"/>
-      <path id="Path-17" data-name="Path" class="curtain-R-prim-light" d="M85.15,502.29l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-18" data-name="Path" class="curtain-R-prim-light" d="M85.15,317.54l85-49.08v11.55l-85,49.07Z"/>
-      <path id="Path-19" data-name="Path" class="curtain-R-prim-light" d="M85.15,456.1l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-20" data-name="Path" class="curtain-R-prim-light" d="M85.15,594.67l85-49.08v11.55l-85,49.07Z"/>
-      <path id="Path-21" data-name="Path" class="curtain-R-prim-light" d="M85.15,386.82l85-49.07v11.54l-85,49.08Z"/>
-      <path id="Path-22" data-name="Path" class="curtain-R-prim-light" d="M85.15,525.38l85-49.07v11.55l-85,49.07Z"/>
-    </g>
-    <g id="windows-L1">
-      <path id="Path-23" data-name="Path" class="curtain-L-prim-light" d="M85.15,271.35l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-24" data-name="Path" class="curtain-L-prim-light" d="M85.15,248.26l-85-49.08v11.55l85,49.07Z"/>
-      <path id="Path-25" data-name="Path" class="curtain-L-prim-light" d="M85.15,225.16l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-26" data-name="Path" class="curtain-L-prim-light" d="M85.15,202.07l-85-49.08v11.55l85,49.07Z"/>
-      <path id="Path-27" data-name="Path" class="curtain-L-prim-light" d="M85.15,178.97.15,129.9v11.55l85,49.07Z"/>
-      <path id="Path-28" data-name="Path" class="curtain-L-prim-light" d="M85.15,155.88l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-29" data-name="Path" class="curtain-L-prim-light" d="M85.15,132.79.15,83.71V95.26l85,49.07Z"/>
-      <path id="Path-30" data-name="Path" class="curtain-L-prim-light" d="M85.15,109.69.15,60.62V72.16l85,49.08Z"/>
-      <path id="Path-31" data-name="Path" class="curtain-L-prim-light" d="M85.15,409.91l-85-49.07v11.55l85,49.07Z"/>
-      <path id="Path-32" data-name="Path" class="curtain-L-prim-light" d="M85.15,548.48.15,499.4v11.55l85,49.08Z"/>
-      <path id="Path-33" data-name="Path" class="curtain-L-prim-light" d="M85.15,340.63l-85-49.07V303.1l85,49.08Z"/>
-      <path id="Path-34" data-name="Path" class="curtain-L-prim-light" d="M85.15,479.2l-85-49.08v11.55l85,49.07Z"/>
-      <path id="Path-35" data-name="Path" class="curtain-L-prim-light" d="M85.15,294.44l-85-49.07v11.55l85,49.07Z"/>
-      <path id="Path-36" data-name="Path" class="curtain-L-prim-light" d="M85.15,433.01l-85-49.08v11.55l85,49.08Z"/>
-      <path id="Path-37" data-name="Path" class="curtain-L-prim-light" d="M85.15,571.57.15,522.5v11.54l85,49.08Z"/>
-      <path id="Path-38" data-name="Path" class="curtain-L-prim-light" d="M85.15,363.73l-85-49.08V326.2l85,49.07Z"/>
-      <path id="Path-39" data-name="Path" class="curtain-L-prim-light" d="M85.15,502.29l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-40" data-name="Path" class="curtain-L-prim-light" d="M85.15,317.54l-85-49.08v11.55l85,49.07Z"/>
-      <path id="Path-41" data-name="Path" class="curtain-L-prim-light" d="M85.15,456.1l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-42" data-name="Path" class="curtain-L-prim-light" d="M85.15,594.67l-85-49.08v11.55l85,49.07Z"/>
-      <path id="Path-43" data-name="Path" class="curtain-L-prim-light" d="M85.15,386.82l-85-49.07v11.54l85,49.08Z"/>
-      <path id="Path-44" data-name="Path" class="curtain-L-prim-light" d="M85.15,525.38l-85-49.07v11.55l85,49.07Z"/>
-    </g>
+  <g>
+    <path class="exterior-L-prim" d="M110,155.88,0,92.37V623.53l110,63.51ZM25,620.65v5.77l-15-8.66V109.69l15,8.66Zm25,14.43v5.78L35,632.2V124.13l5,2.88v.0066L50,132.79Zm25,14.44v5.77l-15-8.66V138.56l15,8.66Zm25,14.43v5.77l-15-8.66V152.99l15,8.66Z"/>
+    <path class="exterior-R-prim" d="M110,687.04l160-92.37V63.51L110,155.88Zm135-95.26V89.49l10-5.7733V83.71l5-2.88V588.89l-15,8.66Zm-25,14.43V103.92l15-8.66V603.33l-15,8.66Zm-25,14.44V118.35l15-8.66V617.76l-15,8.66Zm-25,14.43V132.79l10-5.7734V127.01l5-2.88V632.2l-15,8.66Zm-25,14.44V147.22l15-8.66V646.63l-15,8.66Zm-25,14.43V161.65l15-8.66V661.06l-15,8.66Z"/>
+    <polygon id="anchor_0_155.88_270" class="top-prim" points="270 63.51 160 0 0 92.37 110 155.88 270 63.51"/>
+    <polygon class="window-R-prim" points="130 155.88 135 152.99 120 161.65 120 663.95 130 658.18 130 155.88"/>
+    <polygon class="window-R-prim" points="180 127.017 170 132.79 170 635.08 180 629.31 180 127.017"/>
+    <polygon class="window-R-prim" points="230 98.15 235 95.26 220 103.92 220 606.21 230 600.44 230 98.15"/>
+    <polygon class="window-R-prim" points="155 141.45 160 138.56 145 147.22 145 649.52 155 643.74 155 141.45"/>
+    <polygon class="window-R-prim" points="205 112.58 210 109.69 195 118.35 195 620.65 205 614.87 205 112.58"/>
+    <polygon class="window-R-prim" points="255 83.717 245 89.49 245 591.78 255 586.01 255 83.717"/>
+    <polygon class="top-prim" points="130 658.18 120 663.95 120 669.72 135 661.06 130 658.18"/>
+    <polygon class="top-prim" points="155 643.74 145 649.52 145 655.29 160 646.63 155 643.74"/>
+    <polygon class="top-prim" points="180 629.31 170 635.08 170 640.86 185 632.2 180 629.31"/>
+    <polygon class="top-prim" points="205 614.87 195 620.65 195 626.42 210 617.76 205 614.87"/>
+    <polygon class="top-prim" points="230 600.44 220 606.21 220 611.99 235 603.33 230 600.44"/>
+    <polygon class="top-prim" points="255 586.01 245 591.78 245 597.55 260 588.89 255 586.01"/>
+    <polygon class="exterior-L-prim" points="130 658.18 135 661.06 135 152.99 130 155.88 130 658.18"/>
+    <polygon class="exterior-L-prim" points="155 643.74 160 646.63 160 138.56 155 141.45 155 643.74"/>
+    <polygon class="exterior-L-prim" points="185 632.2 185 124.13 180 127.01 180 127.017 180 629.31 185 632.2"/>
+    <polygon class="exterior-L-prim" points="205 614.87 210 617.76 210 109.69 205 112.58 205 614.87"/>
+    <polygon class="exterior-L-prim" points="230 600.44 235 603.33 235 95.26 230 98.15 230 600.44"/>
+    <polygon class="exterior-L-prim" points="260 588.89 260 80.83 255 83.71 255 83.717 255 586.01 260 588.89"/>
+    <polygon points="90 155.88 90 658.18 100 663.95 100 161.65 85 152.99 90 155.88"/>
+    <polygon points="40 629.31 50 635.08 50 132.79 40 127.017 40 629.31"/>
+    <polygon points="65 141.45 65 643.74 75 649.52 75 147.22 60 138.56 65 141.45"/>
+    <polygon points="15 112.58 15 614.87 25 620.65 25 118.35 10 109.69 15 112.58"/>
+    <polygon class="top-prim" points="85 661.06 100 669.72 100 663.95 90 658.18 85 661.06"/>
+    <polygon class="top-prim" points="60 646.63 75 655.29 75 649.52 65 643.74 60 646.63"/>
+    <polygon class="top-prim" points="35 632.2 50 640.86 50 635.08 40 629.31 35 632.2"/>
+    <polygon class="top-prim" points="10 617.76 25 626.42 25 620.65 15 614.87 10 617.76"/>
+    <polygon class="exterior-R-prim" points="90 155.88 85 152.99 85 661.06 90 658.18 90 155.88"/>
+    <polygon class="exterior-R-prim" points="65 141.45 60 138.56 60 646.63 65 643.74 65 141.45"/>
+    <polygon class="exterior-R-prim" points="40 127.017 40 127.01 35 124.13 35 632.2 40 629.31 40 127.017"/>
+    <polygon class="exterior-R-prim" points="15 112.58 10 109.69 10 617.76 15 614.87 15 112.58"/>
   </g>
 </svg>

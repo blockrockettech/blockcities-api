@@ -1,5 +1,5 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 254.03">
-<defs>
+  <defs>
     <style>
       .concrete-top {
         fill: #e8e8e8;
@@ -68,7 +68,7 @@
   </defs>
   <title>Artboard 11</title>
   <g id="Group">
-    <path id="anchor-01_98.34" class="concrete-top" d="M155,251.15,360,132.79,205,43.3,0,161.66Z"/>
+    <path id="Path" class="concrete-top" d="M155,251.15,360,132.79,205,43.3,0,161.66Z"/>
     <path id="Path-2" data-name="Path" class="concrete-right" d="M360,135.68,155,254.03v-2.88L360,132.79Z"/>
     <path id="Path-3" data-name="Path" class="concrete-left" d="M0,161.66v2.88l155,89.49v-2.88Z"/>
     <path id="Path-4" data-name="Path" class="curtain-L-prim-light" d="M125,155.88,57.5,116.91v49.08L125,204.96Z"/>
@@ -128,6 +128,6 @@
     <path id="Path-50" data-name="Path" class="cls-6" d="M185,176.09l12.5,7.22L165,202.07l-12.5-7.22Z"/>
     <path id="Path-51" data-name="Path" class="cls-6" d="M287.5,116.91l12.5,7.22-35,20.21V129.9Z"/>
     <path id="Path-52" data-name="Path" class="top-prim" d="M52.5,160.21l5-2.88L125,196.3v5.77Z"/>
-    <path id="Path-53" data-name="Path" class="top-prim" d="M45,92.37,205,0,315,63.51,155,155.88Z"/>
+    <path id="anchor_45_155.88_270" class="top-prim" d="M45,92.37,205,0,315,63.51,155,155.88Z"/>
   </g>
 </svg>

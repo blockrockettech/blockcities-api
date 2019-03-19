@@ -103,13 +103,16 @@ class ImageBuilderService {
 
             const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedRoofHeight = roofConfig.height * (baseConfig.anchorWidthPath / roofConfig.width);
+            const adjustedBodyAnchor = bodyConfig.anchorY * (baseConfig.anchorWidthPath / bodyConfig.width);
 
-            // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
+            // console.log(`adjusted body height`, adjustedBodyHeight);
+            // console.log(`adjusted roof height`, adjustedRoofHeight);
+
             const canvasHeight = baseConfig.height
                 + adjustedBodyHeight
                 + adjustedRoofHeight
-                - baseConfig.anchorY;
-            // - adjustedBodyConfigAnchorY;
+                - baseConfig.anchorY
+                - adjustedBodyAnchor;
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
@@ -132,7 +135,6 @@ class ImageBuilderService {
             );
 
             // Body
-            console.log(`% body`, baseConfig.anchorWidthPath / bodyConfig.width);
             ctx.drawImage(
                 bodyConfig.svg,
                 baseConfig.anchorX,
@@ -145,7 +147,7 @@ class ImageBuilderService {
             ctx.drawImage(
                 roofConfig.svg,
                 baseConfig.anchorX,
-                startBodyY - baseConfig.height + baseConfig.anchorY,
+                0,
                 baseConfig.anchorWidthPath,
                 adjustedRoofHeight
             );

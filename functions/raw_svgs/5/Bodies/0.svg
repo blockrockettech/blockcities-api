@@ -1,1 +1,43 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 536.94"><defs><style>.curtain-L-prim-light{fill:#196273;}.curtain-L-prim-dark{fill:#11424d;}.curtain-R-prim-light{fill:#2b95ac;}.curtain-R-prim-dark{fill:#21788c;}.top-prim{fill:#dd8987;}</style></defs><title>Artboard 3</title><path class="curtain-L-prim-light" d="M50,121.24V502.29l-10-5.77v-381l-12.5-7.21L30,109.7V490.75L20,485v-381L10,98.15v381L0,473.43l80,46.19V138.56ZM60,508.07V127l10,5.77V513.84Z"/><polygon class="curtain-L-prim-light" points="100 150.11 110 155.88 82.52 140.02 90 144.34 90 525.39 82.58 521.11 110 536.94 100 531.16 100 150.11"/><polygon class="curtain-L-prim-dark" points="10 98.15 0 92.38 0 473.43 10 479.2 10 98.15"/><path class="curtain-R-prim-light" d="M255.41,71.93,238,82l2-1.15V461.88l-10,5.77V86.6l-30,17.32V485l-10,5.78v-381l7.25-4.19-23.17,13.38,5.92-3.42v381l-10,5.77v-381l-30,17.32V519.62l76.67-44.27L210,479.2v-381l10-5.77V473.43l30-17.32v-381ZM160,508.07l-10,5.77V132.79L160,127Z"/><polygon class="curtain-R-prim-light" points="130 144.34 139.07 139.09 110 155.88 120 150.11 120 531.16 110 536.94 136.59 521.59 130 525.39 130 144.34"/><polygon class="curtain-R-prim-light" points="260 450.33 253.97 453.81 270 444.56 270 63.51 260 69.28 260 450.33"/><polygon class="curtain-R-prim-dark" points="120 150.11 110 155.88 110 536.94 120 531.16 120 150.11"/><polygon class="curtain-R-prim-dark" points="150 513.84 160 508.07 160 127.02 150 132.79 150 513.84"/><polygon class="curtain-R-prim-dark" points="190 490.75 200 484.97 200 103.92 197.25 105.51 190 109.7 190 490.75"/><polygon class="curtain-L-prim-dark" points="82.58 521.11 90 525.39 90 144.34 82.52 140.02 80 138.56 80 519.62 80 519.62 82.58 521.11"/><polygon class="curtain-R-prim-dark" points="240 461.88 240 80.83 238 81.98 230 86.6 230 467.65 240 461.88"/><polygon class="curtain-L-prim-dark" points="40 496.52 50 502.29 50 121.24 40 115.47 40 496.52"/><polygon class="curtain-R-prim-dark" points="139.07 139.09 130 144.34 130 525.39 136.59 521.59 140 519.62 140 519.62 140 138.56 139.07 139.09"/><polygon class="curtain-R-prim-dark" points="180 496.52 180 115.47 174.08 118.89 170 121.24 170 502.29 180 496.52"/><polygon class="curtain-L-prim-dark" points="100 150.11 100 531.16 110 536.94 110 155.88 100 150.11"/><polygon class="curtain-R-prim-dark" points="210 98.15 210 479.2 216.67 475.35 220 473.43 220 473.43 220 92.38 210 98.15"/><polygon class="curtain-L-prim-dark" points="60 127.02 60 508.07 70 513.84 70 132.79 60 127.02"/><polygon class="curtain-R-prim-dark" points="260 69.28 255.41 71.93 250 75.06 250 456.11 250 456.11 253.97 453.81 260 450.33 260 69.28"/><polygon class="curtain-L-prim-dark" points="20 484.97 30 490.75 30 109.7 27.5 108.25 20 103.92 20 484.97"/><polygon id="anchor-01_381.06" class="top-prim" points="20 103.92 27.5 108.25 40 115.47 50 121.24 80 138.56 82.52 140.02 110 155.88 139.07 139.09 140 138.56 170 121.24 174.08 118.89 197.25 105.51 200 103.92 230 86.6 238 81.98 255.41 71.93 260 69.28 270 63.51 160 0 0 92.38 10 98.15 20 103.92"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 536.94">
+  <defs>
+    <style>
+      .curtain-L-prim-light {
+        fill: #196273;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #11424d;
+      }
+
+      .curtain-R-prim-light {
+        fill: #2b95ac;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #21788c;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+    </style>
+  </defs>
+  <title>Artboard 15</title>
+  <path id="Path" class="curtain-L-prim-light" d="M0,92.38V473.43l110,63.51V155.88Z"/>
+  <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M10,98.15,0,92.38V473.43l10,5.77Z"/>
+  <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M110,536.94l160-92.38V63.51L110,155.88Z"/>
+  <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M110,155.88l10-5.77V531.16l-10,5.78Z"/>
+  <path id="Path-5" data-name="Path" class="curtain-R-prim-dark" d="M150,132.79l10-5.77V508.07l-10,5.77Z"/>
+  <path id="Path-6" data-name="Path" class="curtain-R-prim-dark" d="M190,109.7l10-5.78V484.97l-10,5.78Z"/>
+  <path id="Path-7" data-name="Path" class="curtain-L-prim-dark" d="M90,144.34l-10-5.78V519.62l10,5.77Z"/>
+  <path id="Path-8" data-name="Path" class="curtain-R-prim-dark" d="M230,86.6l10-5.77V461.88l-10,5.77Z"/>
+  <path id="Path-9" data-name="Path" class="curtain-L-prim-dark" d="M50,121.24l-10-5.77V496.52l10,5.77Z"/>
+  <path id="Path-10" data-name="Path" class="curtain-R-prim-dark" d="M130,144.34l10-5.78V519.62l-10,5.77Z"/>
+  <path id="Path-11" data-name="Path" class="curtain-R-prim-dark" d="M170,121.24l10-5.77V496.52l-10,5.77Z"/>
+  <path id="Path-12" data-name="Path" class="curtain-L-prim-dark" d="M110,155.88l-10-5.77V531.16l10,5.78Z"/>
+  <path id="Path-13" data-name="Path" class="curtain-R-prim-dark" d="M210,98.15l10-5.77V473.43l-10,5.77Z"/>
+  <path id="Path-14" data-name="Path" class="curtain-L-prim-dark" d="M70,132.79l-10-5.77V508.07l10,5.77Z"/>
+  <path id="Path-15" data-name="Path" class="curtain-R-prim-dark" d="M250,75.06l10-5.78V450.33l-10,5.78Z"/>
+  <path id="Path-16" data-name="Path" class="curtain-L-prim-dark" d="M30,109.7l-10-5.78V484.97l10,5.78Z"/>
+  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.38,160,0,270,63.51,110,155.88Z"/>
+</svg>
