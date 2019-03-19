@@ -50,7 +50,7 @@ app.get('/building/:building/base/:base/body/:body/roof/:roof/exterior/:exterior
     return require('./image').generateTestImage(request, response);
 });
 
-app.get('/buildings/:building/:baseNo', async (request, response) => {
+app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
     return require('./image').generateTestImages(request, response);
 });
 

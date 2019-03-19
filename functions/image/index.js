@@ -65,17 +65,19 @@ module.exports = {
         try {
 
             const allBases = [];
-            for (let i = 0; i < parseInt(request.params.baseNo); i++) {
-
-
-                allBases.push(imageBuilderService.generateImage({
-                    building: parseInt(request.params.building),
-                    base: i,
-                    body: 0,
-                    roof: 2,
-                    exteriorColorway: 0,
-                    windowColorway: 0
-                }));
+            for (let x = 0; x < parseInt(request.params.baseNo); x++) {
+                for (let y = 0; y < parseInt(request.params.bodyNo); y++) {
+                    for (let z = 0; z < parseInt(request.params.roofNo); z++) {
+                    allBases.push(imageBuilderService.generateImage({
+                        building: parseInt(request.params.building),
+                        base: x,
+                        body: y,
+                        roof: z,
+                        exteriorColorway: 0,
+                        windowColorway: 0
+                    }));
+                    }
+                }
             }
 
             const buildings = await Promise.all(allBases);
