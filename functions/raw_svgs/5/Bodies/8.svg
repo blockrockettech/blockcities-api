@@ -1,119 +1,43 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 675.5">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 681.27">
   <defs>
     <style>
-      .exterior-L-prim {
-        fill: #73302f;
+      .curtain-L-prim-light {
+        fill: #196273;
       }
 
-      .exterior-R-prim {
-        fill: #d15752;
+      .curtain-L-prim-dark {
+        fill: #11424d;
+      }
+
+      .curtain-R-prim-light {
+        fill: #2b95ac;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #21788c;
       }
 
       .top-prim {
         fill: #dd8987;
       }
-
-      .window-R-prim {
-        fill: #bd9563;
-      }
-
-      .window-L-prim {
-        fill: #4d3b25;
-      }
     </style>
   </defs>
-  <title>Artboard 4</title>
-  <g>
-    <polygon class="exterior-L-prim" points="110 202.07 0 138.56 0 150.11 110 213.62 110 202.07"/>
-    <polygon class="exterior-L-prim" points="110 363.73 0 300.22 0 311.77 110 375.27 110 363.73"/>
-    <polygon class="exterior-L-prim" points="110 340.63 0 277.12 0 288.67 110 352.18 110 340.63"/>
-    <polygon class="exterior-L-prim" points="110 178.98 0 115.47 0 127.01 110 190.52 110 178.98"/>
-    <polygon class="exterior-L-prim" points="110 317.54 0 254.03 0 265.58 110 329.09 110 317.54"/>
-    <polygon class="exterior-L-prim" points="110 248.26 0 184.75 0 196.3 110 259.8 110 248.26"/>
-    <polygon class="exterior-L-prim" points="110 225.16 0 161.65 0 173.2 110 236.71 110 225.16"/>
-    <polygon class="exterior-L-prim" points="110 294.45 0 230.94 0 242.48 110 305.99 110 294.45"/>
-    <polygon class="exterior-L-prim" points="110 386.82 0 323.31 0 334.86 110 398.37 110 386.82"/>
-    <polygon class="exterior-L-prim" points="110 271.35 0 207.84 0 219.39 110 282.9 110 271.35"/>
-    <polygon class="exterior-L-prim" points="110 594.67 0 531.16 0 542.71 110 606.21 110 594.67"/>
-    <polygon class="exterior-L-prim" points="110 571.57 0 508.06 0 519.61 110 583.12 110 571.57"/>
-    <polygon class="exterior-L-prim" points="110 640.86 0 577.35 0 588.89 110 652.4 110 640.86"/>
-    <polygon class="exterior-L-prim" points="110 548.48 0 484.97 0 496.52 110 560.03 110 548.48"/>
-    <polygon class="exterior-L-prim" points="110 617.76 0 554.25 0 565.8 110 629.31 110 617.76"/>
-    <polygon class="exterior-L-prim" points="110 409.92 0 346.41 0 357.95 110 421.46 110 409.92"/>
-    <polygon class="exterior-L-prim" points="110 456.1 0 392.59 0 404.14 110 467.65 110 456.1"/>
-    <polygon class="exterior-L-prim" points="110 433.01 0 369.5 0 381.05 110 444.56 110 433.01"/>
-    <polygon class="exterior-L-prim" points="110 502.29 0 438.78 0 450.33 110 513.84 110 502.29"/>
-    <polygon class="exterior-L-prim" points="110 525.39 0 461.88 0 473.42 110 536.93 110 525.39"/>
-    <polygon class="exterior-L-prim" points="110 479.2 0 415.69 0 427.24 110 490.74 110 479.2"/>
-    <polygon class="exterior-L-prim" points="0 600.44 0 611.99 110 675.5 110 663.95 0 600.44"/>
-    <polygon class="exterior-L-prim" points="110 155.88 0 92.37 0 103.92 110 167.43 110 155.88"/>
-    <polygon class="exterior-R-prim" points="110 560.03 270 467.65 270 456.1 110 548.48 110 560.03"/>
-    <polygon class="exterior-R-prim" points="110 305.99 270 213.62 270 202.07 110 294.45 110 305.99"/>
-    <polygon class="exterior-R-prim" points="110 583.12 270 490.74 270 479.2 110 571.57 110 583.12"/>
-    <polygon class="exterior-R-prim" points="110 606.21 270 513.84 270 502.29 110 594.67 110 606.21"/>
-    <polygon class="exterior-R-prim" points="110 398.37 270 305.99 270 294.45 110 386.82 110 398.37"/>
-    <polygon class="exterior-R-prim" points="110 375.27 270 282.9 270 271.35 110 363.73 110 375.27"/>
-    <polygon class="exterior-R-prim" points="110 421.46 270 329.09 270 317.54 110 409.92 110 421.46"/>
-    <polygon class="exterior-R-prim" points="110 629.31 270 536.93 270 525.39 110 617.76 110 629.31"/>
-    <polygon class="exterior-R-prim" points="110 513.84 270 421.46 270 409.92 110 502.29 110 513.84"/>
-    <polygon class="exterior-R-prim" points="110 236.71 270 144.33 270 132.79 110 225.16 110 236.71"/>
-    <polygon class="exterior-R-prim" points="110 490.74 270 398.37 270 386.82 110 479.2 110 490.74"/>
-    <polygon class="exterior-R-prim" points="110 259.8 270 167.43 270 155.88 110 248.26 110 259.8"/>
-    <polygon class="exterior-R-prim" points="110 467.65 270 375.27 270 363.73 110 456.1 110 467.65"/>
-    <polygon class="exterior-R-prim" points="110 329.09 270 236.71 270 225.16 110 317.54 110 329.09"/>
-    <polygon class="exterior-R-prim" points="110 536.93 270 444.56 270 433.01 110 525.39 110 536.93"/>
-    <polygon class="exterior-R-prim" points="110 190.52 270 98.15 270 86.6 110 178.98 110 190.52"/>
-    <polygon class="exterior-R-prim" points="110 167.43 270 75.05 270 63.51 110 155.88 110 167.43"/>
-    <polygon class="exterior-R-prim" points="110 444.56 270 352.18 270 340.63 110 433.01 110 444.56"/>
-    <polygon class="exterior-R-prim" points="110 213.62 270 121.24 270 109.69 110 202.07 110 213.62"/>
-    <polygon class="exterior-R-prim" points="110 282.9 270 190.52 270 178.98 110 271.35 110 282.9"/>
-    <polygon class="exterior-R-prim" points="110 352.18 270 259.8 270 248.26 110 340.63 110 352.18"/>
-    <polygon class="exterior-R-prim" points="110 675.5 270 583.12 270 571.57 110 663.95 110 675.5"/>
-    <polygon class="exterior-R-prim" points="110 652.4 270 560.03 270 548.48 110 640.86 110 652.4"/>
-    <polygon id="anchor-01_519.62" data-name="anchor-01 519.62" class="top-prim" points="0 92.37 110 155.88 270 63.51 160 0 0 92.37"/>
-    <polygon class="window-R-prim" points="110 178.98 270 86.6 270 75.05 110 167.43 110 178.98"/>
-    <polygon class="window-R-prim" points="110 225.16 270 132.79 270 121.24 110 213.62 110 225.16"/>
-    <polygon class="window-R-prim" points="110 271.35 270 178.98 270 167.43 110 259.8 110 271.35"/>
-    <polygon class="window-R-prim" points="110 317.54 270 225.16 270 213.62 110 305.99 110 317.54"/>
-    <polygon class="window-R-prim" points="110 363.73 270 271.35 270 259.8 110 352.18 110 363.73"/>
-    <polygon class="window-R-prim" points="110 409.92 270 317.54 270 305.99 110 398.37 110 409.92"/>
-    <polygon class="window-R-prim" points="110 456.1 270 363.73 270 352.18 110 444.56 110 456.1"/>
-    <polygon class="window-R-prim" points="110 502.29 270 409.92 270 398.37 110 490.74 110 502.29"/>
-    <polygon class="window-R-prim" points="110 202.07 270 109.69 270 98.15 110 190.52 110 202.07"/>
-    <polygon class="window-R-prim" points="110 248.26 270 155.88 270 144.33 110 236.71 110 248.26"/>
-    <polygon class="window-R-prim" points="110 294.45 270 202.07 270 190.52 110 282.9 110 294.45"/>
-    <polygon class="window-R-prim" points="110 340.63 270 248.26 270 236.71 110 329.09 110 340.63"/>
-    <polygon class="window-R-prim" points="110 386.82 270 294.45 270 282.9 110 375.27 110 386.82"/>
-    <polygon class="window-R-prim" points="110 433.01 270 340.63 270 329.09 110 421.46 110 433.01"/>
-    <polygon class="window-R-prim" points="110 479.2 270 386.82 270 375.27 110 467.65 110 479.2"/>
-    <polygon class="window-R-prim" points="110 525.39 270 433.01 270 421.46 110 513.84 110 525.39"/>
-    <polygon class="window-R-prim" points="110 571.57 270 479.2 270 467.65 110 560.03 110 571.57"/>
-    <polygon class="window-R-prim" points="110 617.76 270 525.39 270 513.84 110 606.21 110 617.76"/>
-    <polygon class="window-R-prim" points="110 663.95 270 571.57 270 560.03 110 652.4 110 663.95"/>
-    <polygon class="window-R-prim" points="110 548.48 270 456.1 270 444.56 110 536.93 110 548.48"/>
-    <polygon class="window-R-prim" points="110 594.67 270 502.29 270 490.74 110 583.12 110 594.67"/>
-    <polygon class="window-R-prim" points="110 640.86 270 548.48 270 536.93 110 629.31 110 640.86"/>
-    <polygon class="window-L-prim" points="110 167.43 0 103.92 0 115.47 110 178.98 110 167.43"/>
-    <polygon class="window-L-prim" points="110 213.62 0 150.11 0 161.65 110 225.16 110 213.62"/>
-    <polygon class="window-L-prim" points="110 259.8 0 196.3 0 207.84 110 271.35 110 259.8"/>
-    <polygon class="window-L-prim" points="110 305.99 0 242.48 0 254.03 110 317.54 110 305.99"/>
-    <polygon class="window-L-prim" points="110 352.18 0 288.67 0 300.22 110 363.73 110 352.18"/>
-    <polygon class="window-L-prim" points="110 398.37 0 334.86 0 346.41 110 409.92 110 398.37"/>
-    <polygon class="window-L-prim" points="110 444.56 0 381.05 0 392.59 110 456.1 110 444.56"/>
-    <polygon class="window-L-prim" points="110 490.74 0 427.24 0 438.78 110 502.29 110 490.74"/>
-    <polygon class="window-L-prim" points="110 190.52 0 127.01 0 138.56 110 202.07 110 190.52"/>
-    <polygon class="window-L-prim" points="110 236.71 0 173.2 0 184.75 110 248.26 110 236.71"/>
-    <polygon class="window-L-prim" points="110 282.9 0 219.39 0 230.94 110 294.45 110 282.9"/>
-    <polygon class="window-L-prim" points="110 329.09 0 265.58 0 277.12 110 340.63 110 329.09"/>
-    <polygon class="window-L-prim" points="110 375.27 0 311.77 0 323.31 110 386.82 110 375.27"/>
-    <polygon class="window-L-prim" points="110 421.46 0 357.95 0 369.5 110 433.01 110 421.46"/>
-    <polygon class="window-L-prim" points="110 467.65 0 404.14 0 415.69 110 479.2 110 467.65"/>
-    <polygon class="window-L-prim" points="110 513.84 0 450.33 0 461.88 110 525.39 110 513.84"/>
-    <polygon class="window-L-prim" points="110 560.03 0 496.52 0 508.06 110 571.57 110 560.03"/>
-    <polygon class="window-L-prim" points="110 606.21 0 542.71 0 554.25 110 617.76 110 606.21"/>
-    <polygon class="window-L-prim" points="110 652.4 0 588.89 0 600.44 110 663.95 110 652.4"/>
-    <polygon class="window-L-prim" points="110 536.93 0 473.42 0 484.97 110 548.48 110 536.93"/>
-    <polygon class="window-L-prim" points="110 583.12 0 519.61 0 531.16 110 594.67 110 583.12"/>
-    <polygon class="window-L-prim" points="110 629.31 0 565.8 0 577.35 110 640.86 110 629.31"/>
-  </g>
+  <title>Artboard 19</title>
+  <path id="Path" class="curtain-L-prim-light" d="M0,92.38V617.76l110,63.51V155.88Z"/>
+  <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M10,98.15,0,92.38V617.76l10,5.78Z"/>
+  <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M110,681.27,270,588.9V63.51L110,155.88Z"/>
+  <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M110,155.88l10-5.77V675.5l-10,5.77Z"/>
+  <path id="Path-5" data-name="Path" class="curtain-R-prim-dark" d="M150,132.79l10-5.77V652.41l-10,5.77Z"/>
+  <path id="Path-6" data-name="Path" class="curtain-R-prim-dark" d="M190,109.7l10-5.78V629.31l-10,5.78Z"/>
+  <path id="Path-7" data-name="Path" class="curtain-L-prim-dark" d="M90,144.34l-10-5.78V663.95l10,5.78Z"/>
+  <path id="Path-8" data-name="Path" class="curtain-R-prim-dark" d="M230,86.6l10-5.77V606.22l-10,5.77Z"/>
+  <path id="Path-9" data-name="Path" class="curtain-L-prim-dark" d="M50,121.24l-10-5.77V640.86l10,5.77Z"/>
+  <path id="Path-10" data-name="Path" class="curtain-R-prim-dark" d="M130,144.34l10-5.78V663.95l-10,5.78Z"/>
+  <path id="Path-11" data-name="Path" class="curtain-R-prim-dark" d="M170,121.24l10-5.77V640.86l-10,5.77Z"/>
+  <path id="Path-12" data-name="Path" class="curtain-L-prim-dark" d="M110,155.88l-10-5.77V675.5l10,5.77Z"/>
+  <path id="Path-13" data-name="Path" class="curtain-R-prim-dark" d="M210,98.15l10-5.77V617.76l-10,5.78Z"/>
+  <path id="Path-14" data-name="Path" class="curtain-L-prim-dark" d="M70,132.79l-10-5.77V652.41l10,5.77Z"/>
+  <path id="Path-15" data-name="Path" class="curtain-R-prim-dark" d="M250,75.06l10-5.78V594.67l-10,5.77Z"/>
+  <path id="Path-16" data-name="Path" class="curtain-L-prim-dark" d="M30,109.7l-10-5.78V629.31l10,5.78Z"/>
+  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.38,160,0,270,63.51,110,155.88Z"/>
 </svg>

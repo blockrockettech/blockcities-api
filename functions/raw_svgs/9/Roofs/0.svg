@@ -1,0 +1,53 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 407.6922">
+  <defs>
+    <style>
+      .top-light {
+        fill: #fac7c6;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .cls-1 {
+        fill: #c2c1c1;
+      }
+
+      .cls-2 {
+        fill: #ebebeb;
+      }
+    </style>
+  </defs>
+  <title>Artboard 4</title>
+  <g>
+    <path id="Path" class="top-light" d="M80,407.6922l160-92.376-80-46.188L0,361.5042Z"/>
+    <path id="Path-2" data-name="Path" class="top-prim" d="M80,396.1171l140-80.829L160,280.647,20,361.4761Z"/>
+    <path id="Path-3" data-name="Path" class="exterior-R-prim" d="M20,361.4761,160,280.647v17.32L35,370.1363Z"/>
+    <path id="Path-4" data-name="Path" class="exterior-L-prim" d="M220,315.2881l-15,8.66-45-25.9808v-17.32Z"/>
+    <ellipse id="Ellipse" class="cls-1" cx="162" cy="210.5063" rx="10" ry="5.7735"/>
+    <ellipse id="Ellipse-2" data-name="Ellipse" class="cls-1" cx="162" cy="325.9764" rx="10" ry="5.7735"/>
+    <rect id="Rectangle" class="cls-1" x="152" y="210.5064" width="20" height="115.47"/>
+    <ellipse id="Ellipse-3" data-name="Ellipse" class="cls-2" cx="162" cy="210.5063" rx="10" ry="5.7735"/>
+    <ellipse id="Ellipse-4" data-name="Ellipse" class="cls-1" cx="162" cy="209.8461" rx="5" ry="2.8867"/>
+    <rect id="Rectangle-2" data-name="Rectangle" class="cls-1" x="157" y="2.8864" width="10" height="206.959"/>
+    <ellipse id="Ellipse-5" data-name="Ellipse" class="cls-2" cx="162" cy="2.8867" rx="5" ry="2.8867"/>
+    <path id="Path-5" data-name="Path" class="exterior-L-prim" d="M120,367.25v-23.094l-30-17.32v23.094Z"/>
+    <path id="Path-6" data-name="Path" class="top-light" d="M165,318.1748l-45,25.9808-30-17.32,45-25.9808Z"/>
+    <path id="Path-7" data-name="Path" class="exterior-R-prim" d="M120,367.25l45-25.9808v-23.094l-45,25.9808Z"/>
+    <ellipse id="Ellipse-6" data-name="Ellipse" class="cls-1" cx="78" cy="255.8076" rx="10" ry="5.7735"/>
+    <ellipse id="Ellipse-7" data-name="Ellipse" class="cls-1" cx="78" cy="371.2776" rx="10" ry="5.7735"/>
+    <rect id="Rectangle-3" data-name="Rectangle" class="cls-1" x="68" y="255.8074" width="20" height="115.47"/>
+    <ellipse id="Ellipse-8" data-name="Ellipse" class="cls-2" cx="78" cy="255.8076" rx="10" ry="5.7735"/>
+    <ellipse id="Ellipse-9" data-name="Ellipse" class="cls-1" cx="78" cy="255.1474" rx="5" ry="2.8868"/>
+    <rect id="Rectangle-4" data-name="Rectangle" class="cls-1" x="73" y="48.1884" width="10" height="206.959"/>
+    <ellipse id="Ellipse-10" data-name="Ellipse" class="cls-2" cx="78" cy="48.188" rx="5" ry="2.8867"/>
+  </g>
+</svg>

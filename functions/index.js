@@ -50,6 +50,10 @@ app.get('/building/:building/base/:base/body/:body/roof/:roof/exterior/:exterior
     return require('./image').generateTestImage(request, response);
 });
 
+app.get('/buildings/:building/:baseNo', async (request, response) => {
+    return require('./image').generateTestImages(request, response);
+});
+
 
 
 // Expose Express API as a single Cloud Function:

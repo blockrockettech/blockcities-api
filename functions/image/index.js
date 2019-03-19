@@ -59,5 +59,32 @@ module.exports = {
         } catch (e) {
             console.error(e);
         }
-    }
+    },
+
+    async generateTestImages (request, response) {
+        try {
+
+            const allBases = [];
+            for (let i = 0; i < parseInt(request.params.baseNo); i++) {
+
+
+                allBases.push(imageBuilderService.generateImage({
+                    building: parseInt(request.params.building),
+                    base: i,
+                    body: 0,
+                    roof: 2,
+                    exteriorColorway: 0,
+                    windowColorway: 0
+                }));
+            }
+
+            const buildings = await Promise.all(allBases);
+
+            return response
+                .contentType('text/html')
+                .send(buildings.reduce((p, b) => p + b, ''));
+        } catch (e) {
+            console.error(e);
+        }
+    },
 };
