@@ -21,7 +21,6 @@ module.exports = {
             }
 
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
-            tokenDetails.building = tokenDetails.city;
 
             if (tokenDetails.special.toNumber() !== 0) {
                 console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());

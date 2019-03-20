@@ -122,16 +122,26 @@ class ImageBuilderService {
 
             const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
 
-            console.log(`height`, bodyConfig.height, adjustedBodyHeight);
-            console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
-            console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
+            // console.log(`height`, bodyConfig.height, adjustedBodyHeight);
+            // console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
+            // console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
-            const canvasHeight = baseConfig.height
+            let canvasHeight = baseConfig.height
                 + adjustedBodyHeight
                 + adjustedRoofHeight
                 - baseConfig.anchorY
                 - adjustedBodyAnchorY;
+
+            let roofNudge = 0;
+            if (adjustedBodyAnchorY > adjustedRoofHeight) {
+                roofNudge = adjustedBodyAnchorY - adjustedRoofHeight;
+                canvasHeight = canvasHeight + roofNudge;
+            }
+
+
+            console.log(`adjustedBodyAnchorY`, adjustedBodyAnchorY);
+            console.log(`adjustedRoofHeight`, adjustedRoofHeight);
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
@@ -139,9 +149,9 @@ class ImageBuilderService {
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
 
-            console.log(`base config`, baseConfig);
-            console.log(`body config`, bodyConfig);
-            console.log(`roof config`, roofConfig);
+            // console.log(`base config`, baseConfig);
+            // console.log(`body config`, bodyConfig);
+            // console.log(`roof config`, roofConfig);
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
@@ -167,7 +177,7 @@ class ImageBuilderService {
             ctx.drawImage(
                 roofConfig.svg,
                 baseConfig.anchorX + adjustedBodyAnchorX,
-                0,
+                0 + roofNudge,
                 adjustedBodyWidthPath,
                 adjustedRoofHeight
             );
