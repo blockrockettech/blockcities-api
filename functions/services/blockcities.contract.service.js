@@ -50,6 +50,9 @@ class BlockcitiesContractService {
 
         // Get token attributes
         const tokenAttrs = await token.attributes(tokenId);
+
+
+
         return {
             ...tokenAttrs
         };

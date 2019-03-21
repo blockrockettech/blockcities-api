@@ -34,7 +34,7 @@ class ImageBuilderService {
 
         try {
 
-            if (building === 8) {
+            if (parseInt(building) === 8) {
                 return await this.generateNoRoofImage(
                     {
                         building,
