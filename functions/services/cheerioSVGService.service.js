@@ -31,9 +31,6 @@ class CheerioSVGService {
                 anchorX = split[1];
                 anchorY = split[2];
                 anchorWidthPath = split[3];
-                // console.log(`anchorX ${anchorX}`);
-                // console.log(`anchorY ${anchorY}`);
-                // console.log(`anchorWidthPath ${anchorWidthPath}`);
             }
 
             return {
