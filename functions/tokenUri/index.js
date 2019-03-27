@@ -15,20 +15,26 @@ module.exports = {
     async _metadata (network, tokenId) {
 
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
-        const tokenAttrs = await blockcitiesContractService.tokenAttributes(network, tokenId);
+        const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
 
-        if (tokenAttrs._special.toNumber() !== 0) {
+        if (tokenAttrs.special !== 0) {
             return {
-                name: `${specialMapping[tokenAttrs._special.toNumber()].name}`,
-                description: `${specialMapping[tokenAttrs._special.toNumber()].city}`,
-                image: `${tokenBaseURI[0]}${tokenId}/image`
+                name: `${specialMapping[tokenAttrs.special].name}`,
+                description: `${specialMapping[tokenAttrs.special].city}`,
+                image: `${tokenBaseURI[0]}${tokenId}/image`,
+                attributes: {
+                    ...tokenAttrs
+                }
             };
         }
 
         return {
             name: `building ${tokenId}`,
             description: `building ${tokenId}`,
-            image: `${tokenBaseURI[0]}${tokenId}/image`
+            image: `${tokenBaseURI[0]}${tokenId}/image`,
+            attributes: {
+                ...tokenAttrs
+            }
         };
     },
 
@@ -37,7 +43,9 @@ module.exports = {
         const tokenId = request.params.tokenId;
         const network = request.params.network;
 
-        return response.status(200).json(this._metadata(network, tokenId));
+        const metadata = await this._metadata(network, tokenId);
+
+        return response.status(200).json(metadata);
     },
 
     async lookupTokenDetails (request, response) {
