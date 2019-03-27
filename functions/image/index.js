@@ -21,7 +21,6 @@ module.exports = {
             }
 
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
-            tokenDetails.building = tokenDetails.city;
 
             if (tokenDetails.special.toNumber() !== 0) {
                 console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
@@ -59,5 +58,34 @@ module.exports = {
         } catch (e) {
             console.error(e);
         }
-    }
+    },
+
+    async generateTestImages (request, response) {
+        try {
+
+            const allBases = [];
+            for (let x = 0; x < parseInt(request.params.baseNo); x++) {
+                for (let y = 0; y < parseInt(request.params.bodyNo); y++) {
+                    for (let z = 0; z < parseInt(request.params.roofNo); z++) {
+                    allBases.push(imageBuilderService.generateImage({
+                        building: parseInt(request.params.building),
+                        base: x,
+                        body: y,
+                        roof: z,
+                        exteriorColorway: 0,
+                        windowColorway: 0
+                    }));
+                    }
+                }
+            }
+
+            const buildings = await Promise.all(allBases);
+
+            return response
+                .contentType('text/html')
+                .send(buildings.reduce((p, b) => p + b, ''));
+        } catch (e) {
+            console.error(e);
+        }
+    },
 };

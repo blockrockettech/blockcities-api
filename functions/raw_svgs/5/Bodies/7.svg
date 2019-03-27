@@ -1,4 +1,4 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 421.46">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 427.24">
   <defs>
     <style>
       .exterior-L-prim {
@@ -22,54 +22,42 @@
       }
     </style>
   </defs>
-  <title>Artboard 3</title>
-  <g>
-    <polygon class="exterior-L-prim" points="110 248.26 0 184.75 0 196.3 110 259.8 110 248.26"/>
-    <polygon class="exterior-L-prim" points="110 225.16 0 161.65 0 173.2 110 236.71 110 225.16"/>
-    <polygon class="exterior-L-prim" points="110 340.63 0 277.12 0 288.67 110 352.18 110 340.63"/>
-    <polygon class="exterior-L-prim" points="110 386.82 0 323.31 0 334.86 110 398.37 110 386.82"/>
-    <polygon class="exterior-L-prim" points="110 317.54 0 254.03 0 265.58 110 329.09 110 317.54"/>
-    <polygon class="exterior-L-prim" points="110 294.45 0 230.94 0 242.48 110 305.99 110 294.45"/>
-    <polygon class="exterior-L-prim" points="110 271.35 0 207.84 0 219.39 110 282.9 110 271.35"/>
-    <polygon class="exterior-L-prim" points="110 202.07 0 138.56 0 150.11 110 213.62 110 202.07"/>
-    <polygon class="exterior-L-prim" points="110 155.88 0 92.37 0 103.92 110 167.43 110 155.88"/>
-    <polygon class="exterior-L-prim" points="0 346.41 0 357.95 110 421.46 110 409.92 0 346.41"/>
-    <polygon class="exterior-L-prim" points="110 178.98 0 115.47 0 127.01 110 190.52 110 178.98"/>
-    <polygon class="exterior-L-prim" points="110 363.73 0 300.22 0 311.77 110 375.27 110 363.73"/>
-    <polygon class="exterior-R-prim" points="110 282.9 270 190.52 270 178.98 110 271.35 110 282.9"/>
-    <polygon class="exterior-R-prim" points="110 305.99 270 213.62 270 202.07 110 294.45 110 305.99"/>
-    <polygon class="exterior-R-prim" points="110 421.46 270 329.09 270 317.54 110 409.92 110 421.46"/>
-    <polygon class="exterior-R-prim" points="110 352.18 270 259.8 270 248.26 110 340.63 110 352.18"/>
-    <polygon class="exterior-R-prim" points="110 398.37 270 305.99 270 294.45 110 386.82 110 398.37"/>
-    <polygon class="exterior-R-prim" points="110 236.71 270 144.33 270 132.79 110 225.16 110 236.71"/>
-    <polygon class="exterior-R-prim" points="110 375.27 270 282.9 270 271.35 110 363.73 110 375.27"/>
-    <polygon class="exterior-R-prim" points="110 329.09 270 236.71 270 225.16 110 317.54 110 329.09"/>
-    <polygon class="exterior-R-prim" points="110 259.8 270 167.43 270 155.88 110 248.26 110 259.8"/>
-    <polygon class="exterior-R-prim" points="110 155.88 110 167.43 270 75.05 270 63.51 110 155.88"/>
-    <polygon class="exterior-R-prim" points="110 213.62 270 121.24 270 109.69 110 202.07 110 213.62"/>
-    <polygon class="exterior-R-prim" points="110 190.52 270 98.15 270 86.6 110 178.98 110 190.52"/>
-    <polygon id="anchor-01_265.58" data-name="anchor-01 265.58" class="top-prim" points="270 63.51 160 0 0 92.37 110 155.88 270 63.51"/>
-    <polygon class="window-R-prim" points="110 178.98 270 86.6 270 75.05 110 167.43 110 178.98"/>
-    <polygon class="window-R-prim" points="110 225.16 270 132.79 270 121.24 110 213.62 110 225.16"/>
-    <polygon class="window-R-prim" points="110 271.35 270 178.98 270 167.43 110 259.8 110 271.35"/>
-    <polygon class="window-R-prim" points="110 317.54 270 225.16 270 213.62 110 305.99 110 317.54"/>
-    <polygon class="window-R-prim" points="110 363.73 270 271.35 270 259.8 110 352.18 110 363.73"/>
-    <polygon class="window-R-prim" points="110 409.92 270 317.54 270 305.99 110 398.37 110 409.92"/>
-    <polygon class="window-R-prim" points="110 202.07 270 109.69 270 98.15 110 190.52 110 202.07"/>
-    <polygon class="window-R-prim" points="110 248.26 270 155.88 270 144.33 110 236.71 110 248.26"/>
-    <polygon class="window-R-prim" points="110 294.45 270 202.07 270 190.52 110 282.9 110 294.45"/>
-    <polygon class="window-R-prim" points="110 340.63 270 248.26 270 236.71 110 329.09 110 340.63"/>
-    <polygon class="window-R-prim" points="110 386.82 270 294.45 270 282.9 110 375.27 110 386.82"/>
-    <polygon class="window-L-prim" points="110 167.43 0 103.92 0 115.47 110 178.98 110 167.43"/>
-    <polygon class="window-L-prim" points="110 213.62 0 150.11 0 161.65 110 225.16 110 213.62"/>
-    <polygon class="window-L-prim" points="110 259.8 0 196.3 0 207.84 110 271.35 110 259.8"/>
-    <polygon class="window-L-prim" points="110 305.99 0 242.48 0 254.03 110 317.54 110 305.99"/>
-    <polygon class="window-L-prim" points="110 352.18 0 288.67 0 300.22 110 363.73 110 352.18"/>
-    <polygon class="window-L-prim" points="110 398.37 0 334.86 0 346.41 110 409.92 110 398.37"/>
-    <polygon class="window-L-prim" points="110 190.52 0 127.01 0 138.56 110 202.07 110 190.52"/>
-    <polygon class="window-L-prim" points="110 236.71 0 173.2 0 184.75 110 248.26 110 236.71"/>
-    <polygon class="window-L-prim" points="110 282.9 0 219.39 0 230.94 110 294.45 110 282.9"/>
-    <polygon class="window-L-prim" points="110 329.09 0 265.58 0 277.12 110 340.63 110 329.09"/>
-    <polygon class="window-L-prim" points="110 375.27 0 311.77 0 323.31 110 386.82 110 375.27"/>
+  <title>Artboard 24</title>
+  <path id="Path" class="exterior-L-prim" d="M0,92.37V363.73l110,63.51V155.88Z"/>
+  <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M110,427.24l160-92.38V63.51L110,155.88Z"/>
+  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.37,160,0,270,63.51,110,155.88Z"/>
+  <g id="Group">
+    <path id="Path-3" data-name="Path" class="window-R-prim" d="M120,161.65l15-8.66V401.26l-15,8.66Z"/>
+    <path id="Path-4" data-name="Path" class="window-R-prim" d="M170,132.79l15-8.66V372.39l-15,8.66Z"/>
+    <path id="Path-5" data-name="Path" class="window-R-prim" d="M220,103.92l15-8.66V343.52l-15,8.66Z"/>
+    <path id="Path-6" data-name="Path" class="window-R-prim" d="M145,147.22l15-8.66V386.82l-15,8.66Z"/>
+    <path id="Path-7" data-name="Path" class="window-R-prim" d="M195,118.35l15-8.66V357.95l-15,8.66Z"/>
+    <path id="Path-8" data-name="Path" class="window-R-prim" d="M245,89.49l15-8.66V329.09l-15,8.66Z"/>
+    <path id="Path-9" data-name="Path" class="top-prim" d="M120,409.92l15-8.66-5-2.89-10,5.77Z"/>
+    <path id="Path-10" data-name="Path" class="top-prim" d="M145,395.48l15-8.66-5-2.89-10,5.78Z"/>
+    <path id="Path-11" data-name="Path" class="top-prim" d="M170,381.05l15-8.66-5-2.89-10,5.77Z"/>
+    <path id="Path-12" data-name="Path" class="top-prim" d="M195,366.61l15-8.66-5-2.88-10,5.77Z"/>
+    <path id="Path-13" data-name="Path" class="top-prim" d="M220,352.18l15-8.66-5-2.89-10,5.78Z"/>
+    <path id="Path-14" data-name="Path" class="top-prim" d="M245,337.75l15-8.66-5-2.89-10,5.77Z"/>
+    <path id="Path-15" data-name="Path" class="exterior-L-prim" d="M130,398.37V155.88l5-2.89V401.26Z"/>
+    <path id="Path-16" data-name="Path" class="exterior-L-prim" d="M160,386.82l-5-2.89V141.45l5-2.89Z"/>
+    <path id="Path-17" data-name="Path" class="exterior-L-prim" d="M185,372.39l-5-2.89V127.01l5-2.88Z"/>
+    <path id="Path-18" data-name="Path" class="exterior-L-prim" d="M210,357.95l-5-2.88V112.58l5-2.89Z"/>
+    <path id="Path-19" data-name="Path" class="exterior-L-prim" d="M235,343.52l-5-2.89V98.15l5-2.89Z"/>
+    <path id="Path-20" data-name="Path" class="exterior-L-prim" d="M260,329.09l-5-2.89V83.71l5-2.88Z"/>
+  </g>
+  <g id="Group-2" data-name="Group">
+    <path id="Path-21" data-name="Path" class="window-L-prim" d="M100,161.65l-15-8.66V401.26l15,8.66Z"/>
+    <path id="Path-22" data-name="Path" class="window-L-prim" d="M50,132.79l-15-8.66V372.39l15,8.66Z"/>
+    <path id="Path-23" data-name="Path" class="window-L-prim" d="M75,147.22l-15-8.66V386.82l15,8.66Z"/>
+    <path id="Path-24" data-name="Path" class="window-L-prim" d="M25,118.35l-15-8.66V357.95l15,8.66Z"/>
+    <path id="Path-25" data-name="Path" class="top-prim" d="M100,409.92l-15-8.66,5-2.89,10,5.77Z"/>
+    <path id="Path-26" data-name="Path" class="top-prim" d="M75,395.48l-15-8.66,5-2.89,10,5.78Z"/>
+    <path id="Path-27" data-name="Path" class="top-prim" d="M50,381.05l-15-8.66,5-2.89,10,5.77Z"/>
+    <path id="Path-28" data-name="Path" class="top-prim" d="M25,366.61l-15-8.66,5-2.88,10,5.77Z"/>
+    <path id="Path-29" data-name="Path" class="exterior-R-prim" d="M90,398.37V155.88l-5-2.89V401.26Z"/>
+    <path id="Path-30" data-name="Path" class="exterior-R-prim" d="M60,386.82l5-2.89V141.45l-5-2.89Z"/>
+    <path id="Path-31" data-name="Path" class="exterior-R-prim" d="M35,372.39l5-2.89V127.01l-5-2.88Z"/>
+    <path id="Path-32" data-name="Path" class="exterior-R-prim" d="M10,357.95l5-2.88V112.58l-5-2.89Z"/>
   </g>
 </svg>

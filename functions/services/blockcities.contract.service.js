@@ -43,6 +43,22 @@ class BlockcitiesContractService {
         return tokensOfOwner;
     }
 
+    async tokenAttributes(network = 1, tokenId) {
+        console.log(`Find token attrs for [${tokenId}] on network [${network}]`);
+
+        const token = connectToBlockCities(network);
+
+        // Get token attributes
+        const tokenAttrs = await token.attributes(tokenId);
+
+
+
+        return {
+            ...tokenAttrs
+        };
+    }
+
+
     async tokenDetails(network = 1, tokenId) {
         console.log(`Find token details for [${tokenId}] on network [${network}]`);
 
@@ -60,6 +76,11 @@ class BlockcitiesContractService {
             _special,
             _architect
         } = await token.attributes(tokenId);
+        
+        console.log('building', _building);
+
+        // Get token URI
+        const tokenURI = await token.tokenURI(tokenId);
 
         // Build full details response
         return {

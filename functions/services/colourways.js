@@ -144,26 +144,42 @@ module.exports = {
     windows: {
         black: {
             left: {
-                prim: '#000000'
+                prim: '#000000',
+                light: '#2E2E2E',
             },
             right: {
-                prim: '#202020'
+                prim: '#202020',
+                light: '#464646',
             },
         },
         aquablue: {
             left: {
-                prim: '#224F64'
+                prim: '#2E5464',
+                light: '#416879',
             },
             right: {
-                prim: '#4C8FAC'
+                prim: '#3C99C1',
+                light: '#59ADD0',
             },
         },
         lightgrey: {
             left: {
-                prim: '#9A9C9F'
+                prim: '#9A9C9F',
+                light: '#B2B4B7',
             },
             right: {
-                prim: '#D1D1D1'
+                prim: '#D1D1D1',
+                light: '#F7F7F7',
+            },
+        },
+        gold: {
+            left: {
+                prim: '#4D3B24',
+                light: '#795A30',
+            },
+            right: {
+                prim: '#BD9664',
+                light: '#EACB87',
             },
         }
     },
@@ -190,7 +206,7 @@ module.exports = {
         },
         gold: {
             left: {
-                prim_dark: '#4D3B24',
+                prim_dark: '#392E20',
                 prim_light: '#795A30'
             },
             right: {
