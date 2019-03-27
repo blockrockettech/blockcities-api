@@ -55,7 +55,7 @@ const getAddressForNetwork = (network) => {
         mainnet: '0x0',
         ropsten: '0x771e2639F5a9cfb67B59544E4EeF89A96a445e9a',
         rinkeby: '0x0',
-        local: '0x194bAfbf8eb2096e63C5d9296363d6DAcdb32527'
+        local: '0xFfE3da3717EBcCd1F52c138F0b07059F534AC8Fa'
     });
 };
 

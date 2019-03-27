@@ -43,18 +43,6 @@ class BlockcitiesContractService {
         return tokensOfOwner;
     }
 
-    async tokenAttributes(network = 1, tokenId) {
-        console.log(`Find token attrs for [${tokenId}] on network [${network}]`);
-
-        const token = connectToBlockCities(network);
-
-        // Get token attributes
-        const tokenAttrs = await token.attributes(tokenId);
-        return {
-            ...tokenAttrs
-        };
-    }
-
     async tokenDetails(network = 1, tokenId) {
         console.log(`Find token details for [${tokenId}] on network [${network}]`);
 
@@ -65,6 +53,7 @@ class BlockcitiesContractService {
             _exteriorColorway,
             _windowColorway,
             _city,
+            _building,
             _base,
             _body,
             _roof,
@@ -72,18 +61,16 @@ class BlockcitiesContractService {
             _architect
         } = await token.attributes(tokenId);
 
-        // Get token URI
-        const tokenURI = await token.tokenURI(tokenId);
-
         // Build full details response
         return {
-            exteriorColorway: _exteriorColorway,
-            windowColorway: _windowColorway,
-            city: _city,
-            base: _base,
-            body: _body,
-            roof: _roof,
-            special: _special,
+            exteriorColorway: _exteriorColorway.toNumber(),
+            windowColorway: _windowColorway.toNumber(),
+            city: _city.toNumber(),
+            building: _building.toNumber(),
+            base: _base.toNumber(),
+            body: _body.toNumber(),
+            roof: _roof.toNumber(),
+            special: _special.toNumber(),
             architect: _architect,
         };
     }
