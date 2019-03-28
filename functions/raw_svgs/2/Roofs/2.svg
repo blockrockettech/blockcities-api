@@ -1,8 +1,8 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280 205">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280 164.5448">
   <defs>
     <style>
       .top-light {
-        fill: #fac7c6;
+        fill: #ffc8c6;
       }
 
       .cls-1 {
@@ -10,11 +10,11 @@
       }
 
       .exterior-L-prim {
-        fill: #73302f;
+        fill: #73302e;
       }
 
       .cls-2 {
-        fill: #ddf2fa;
+        fill: #dbf8ff;
       }
 
       .cls-3 {
@@ -22,578 +22,569 @@
       }
 
       .cls-4 {
-        fill: #f6fcfe;
-      }
-
-      .cls-5 {
-        fill: #5e5e5e;
+        fill: #f6fdff;
       }
 
       .exterior-R-prim {
-        fill: #d15752;
+        fill: #d05752;
       }
 
-      .cls-6 {
+      .cls-5 {
         fill: #1e1d1c;
       }
 
-      .cls-7 {
+      .cls-6 {
         fill: url(#linear-gradient);
       }
 
-      .cls-8 {
+      .cls-7 {
         fill: url(#linear-gradient-2);
       }
 
-      .cls-9 {
+      .cls-8 {
         fill: url(#linear-gradient-3);
       }
 
-      .cls-10 {
+      .cls-9 {
         fill: url(#linear-gradient-4);
       }
 
+      .cls-10 {
+        fill: #a2a2a2;
+      }
+
       .cls-11 {
-        fill: #fff;
+        fill: #e8e8e8;
       }
 
       .cls-12 {
-        fill: #a2a2a1;
+        fill: #b9b9b9;
       }
 
       .cls-13 {
-        fill: #e9e8e8;
-      }
-
-      .cls-14 {
-        fill: #bababa;
-      }
-
-      .cls-15 {
         fill: #8b8b8b;
       }
 
+      .cls-14 {
+        fill: #96eaff;
+      }
+
+      .cls-15 {
+        fill: #6cd4ee;
+      }
+
       .cls-16 {
-        fill: #a1ddf2;
+        fill: #46b5d0;
       }
 
       .cls-17 {
-        fill: #72cfe9;
+        fill: #a69a8e;
       }
 
       .cls-18 {
-        fill: #47b5cf;
-      }
-
-      .cls-19 {
-        fill: #a6998e;
-      }
-
-      .cls-20 {
         fill: #dbc8b9;
       }
 
-      .cls-21 {
+      .cls-19 {
         fill: url(#linear-gradient-5);
       }
 
-      .cls-22 {
+      .cls-20 {
         fill: url(#linear-gradient-6);
       }
 
-      .cls-23 {
+      .cls-21 {
         fill: url(#linear-gradient-7);
       }
 
-      .cls-24 {
+      .cls-22 {
         fill: url(#linear-gradient-8);
       }
 
-      .cls-25, .cls-32 {
+      .cls-23, .cls-30 {
         fill: none;
       }
 
-      .cls-25 {
-        stroke: #c0bfbf;
+      .cls-23 {
+        stroke: #bfbfbf;
         stroke-width: 0.5px;
       }
 
-      .cls-25, .cls-31 {
+      .cls-23, .cls-29 {
         stroke-linecap: round;
         stroke-linejoin: round;
       }
 
+      .cls-24 {
+        fill: #f2ebe5;
+      }
+
+      .cls-25 {
+        fill: #149963;
+      }
+
       .cls-26 {
-        fill: #f2ebe4;
+        fill: #00574a;
       }
 
       .cls-27 {
-        fill: #149964;
-      }
-
-      .cls-28 {
-        fill: #02584b;
-      }
-
-      .cls-29 {
         fill: url(#linear-gradient-9);
       }
 
-      .cls-30 {
+      .cls-28 {
         fill: url(#linear-gradient-10);
       }
 
-      .cls-31 {
-        fill: #94d7e8;
+      .cls-29 {
+        fill: #93d7e8;
       }
 
-      .cls-31, .cls-32 {
-        stroke: #47b5cf;
+      .cls-29, .cls-30 {
+        stroke: #46b5d0;
         stroke-width: 0.25px;
       }
 
-      .cls-32 {
+      .cls-30 {
         stroke-linecap: square;
         stroke-miterlimit: 3;
       }
     </style>
-    <linearGradient id="linear-gradient" x1="-1736.2603" y1="1562.143" x2="-1735.2903" y2="1561.923" gradientTransform="translate(3525.7998 -7862.9276) scale(1.94 5.05)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#332819"/>
-      <stop offset="1" stop-color="#603e19"/>
+    <linearGradient id="linear-gradient" x1="-243.5797" y1="327.7401" x2="-242.6047" y2="327.9638" gradientTransform="matrix(1.9443, 0, 0, -5.0514, 631.0401, 1681.4526)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#332716"/>
+      <stop offset="1" stop-color="#603d16"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="-2952.5028" y1="1783.7745" x2="-2951.5728" y2="1783.4046" gradientTransform="translate(34608.7935 -28022.1678) scale(11.67 15.72)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#02574b"/>
-      <stop offset="1" stop-color="#149d66"/>
+    <linearGradient id="linear-gradient-2" x1="-136.3858" y1="239.8842" x2="-135.4608" y2="240.2554" gradientTransform="matrix(11.6658, 0, 0, -15.7156, 1744.1519, 3788.7074)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00564a"/>
+      <stop offset="1" stop-color="#169d65"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="-1736.2611" y1="1562.1394" x2="-1735.2911" y2="1561.9194" gradientTransform="translate(3534.5398 -7857.8776) scale(1.94 5.05)" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-4" x1="-2952.5028" y1="1783.7746" x2="-2951.5728" y2="1783.4046" gradientTransform="translate(34617.5435 -28017.118) scale(11.67 15.72)" xlink:href="#linear-gradient-2"/>
-    <linearGradient id="linear-gradient-5" x1="-1736.2609" y1="1562.1402" x2="-1735.2909" y2="1561.9201" gradientTransform="translate(3400.7998 -7791.5975) scale(1.94 5.05)" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-6" x1="-2952.5028" y1="1783.7745" x2="-2951.5728" y2="1783.4045" gradientTransform="translate(34483.7935 -27950.8377) scale(11.67 15.72)" xlink:href="#linear-gradient-2"/>
-    <linearGradient id="linear-gradient-7" x1="-1736.2607" y1="1562.1413" x2="-1735.2907" y2="1561.9212" gradientTransform="translate(3409.5398 -7786.5475) scale(1.94 5.05)" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-8" x1="-2952.5026" y1="1783.7751" x2="-2951.5726" y2="1783.4051" gradientTransform="translate(34492.5435 -27945.7879) scale(11.67 15.72)" xlink:href="#linear-gradient-2"/>
-    <linearGradient id="linear-gradient-9" x1="-2968.6486" y1="1660.1574" x2="-2967.6486" y2="1660.1574" gradientTransform="translate(37250.6073 -11942.3162) scale(12.5 7.22)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#02584b"/>
-      <stop offset="0.98" stop-color="#149964"/>
+    <linearGradient id="linear-gradient-3" x1="-243.5797" y1="327.7401" x2="-242.6047" y2="327.9638" gradientTransform="matrix(1.9443, 0, 0, -5.0514, 639.7895, 1686.504)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-136.3858" y1="239.8842" x2="-135.4608" y2="240.2554" gradientTransform="matrix(11.6658, 0, 0, -15.7156, 1752.9012, 3793.7588)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="-243.5797" y1="327.7401" x2="-242.6047" y2="327.9638" gradientTransform="matrix(1.9443, 0, 0, -5.0514, 506.0401, 1752.7864)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-136.3858" y1="239.8842" x2="-135.4608" y2="240.2554" gradientTransform="matrix(11.6658, 0, 0, -15.7156, 1619.1519, 3860.0412)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="-243.5797" y1="327.7401" x2="-242.6047" y2="327.9638" gradientTransform="matrix(1.9443, 0, 0, -5.0514, 514.7895, 1757.8379)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="-136.3858" y1="239.8842" x2="-135.4608" y2="240.2554" gradientTransform="matrix(11.6658, 0, 0, -15.7156, 1627.9012, 3865.0927)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-9" x1="-135" y1="289.0172" x2="-134" y2="289.0172" gradientTransform="matrix(12.5, 0, 0, -7.2169, 1830, 2129.8313)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00574a"/>
+      <stop offset="0.9826" stop-color="#149963"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-10" x1="-2065.9696" y1="1316.6298" x2="-2062.4096" y2="1318.4398" gradientTransform="translate(5222.5792 -3712.6869) scale(2.5 2.89)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-10" x1="-217.9416" y1="426.294" x2="-214.3797" y2="424.4872" gradientTransform="matrix(2.5, 0, 0, -2.8867, 602.5, 1322.9712)" xlink:href="#linear-gradient-9"/>
   </defs>
-  <title>Artboard 9</title>
+  <title>Artboard 6</title>
   <g id="Group">
-    <path id="Path" class="top-light" d="M0,95.26l120,69.28L280,72.17,160.5,2.78Z"/>
-    <path id="Path-2" class="cls-1" d="M120,158.77l150-86.6L160,8.66,10,95.26Z"/>
-    <path id="Path-3" class="exterior-L-prim" d="M260,72.17,160,14.43V8.66L265,69.28Z"/>
-    <path id="Path-4" class="cls-2" d="M265,69.28l5-2.89L160,2.88V8.66Z"/>
-    <g class="cls-3">
-      <path id="Path-5" class="cls-4" d="M275,66.39,160,0V2.88L270,66.39Z"/>
-    </g>
-    <path id="Path-6" class="cls-2" d="M155,11.54l5-2.88V2.88L150,8.66Z"/>
-    <g class="cls-3">
-      <path id="Path-7" class="cls-4" d="M160,0,147.5,7.21,150,8.66l10-5.78Z"/>
-    </g>
-    <path id="Path-8" class="cls-5" d="M160,8.66v5.77l-5-2.89Z"/>
-    <path id="Path-9" class="exterior-R-prim" d="M280,112.58V72.17L120,164.54V205Z"/>
-    <path id="Path-10" class="exterior-L-prim" d="M0,135.67V95.26l120,69.28V205Z"/>
-    <g id="Group-2">
-      <path id="Path-11" class="cls-6" d="M155.5,27.29,167.17,34l2.91-1.68-11.66-6.74Z"/>
-      <g id="Group-3">
-        <g id="Group-4">
-          <path id="Compound_Shape" data-name="Compound Shape" class="cls-7" d="M159.39,27.46h0c0,.31-.44.56-1,.56s-1-.25-1-.56h0V23h1.94v4.49Z"/>
-          <ellipse id="Ellipse" class="cls-8" cx="158.42" cy="15.91" rx="5.83" ry="7.86"/>
-        </g>
-        <g id="Group-5">
-          <path id="Compound_Shape-2" data-name="Compound Shape-2" class="cls-9" d="M168.14,32.51h0c0,.31-.44.56-1,.56s-1-.25-1-.56h0V28h1.95v4.49Z"/>
-          <ellipse id="Ellipse-2" class="cls-10" cx="167.17" cy="20.96" rx="5.83" ry="7.86"/>
-        </g>
+    <g id="Group-2" data-name="Group">
+      <path id="Path" class="top-light" d="M0,95.2628l120,69.282L280,72.1687,160.5,2.7831Z"/>
+      <path id="Path-2" data-name="Path" class="cls-1" d="M120,158.7713,270,72.1687,160,8.66,10,95.2628Z"/>
+      <path id="Path-3" data-name="Path" class="exterior-L-prim" d="M260,72.1687,160,14.4337V8.66L265,69.282Z"/>
+      <path id="Path-4" data-name="Path" class="cls-2" d="M265,69.282l5-2.8868L160,2.8867V8.66Z"/>
+      <g class="cls-3">
+        <path id="Path-5" data-name="Path" class="cls-4" d="M275,66.3952,160,0V2.8867L270,66.3952Z"/>
       </g>
-    </g>
-    <path id="Path-12" class="cls-11" d="M146.57,165.87l104.48-60.33c.86-.49,1.55-.09,1.55.9v6.77a3.43,3.43,0,0,1-1.55,2.69L146.57,176.22c-.86.49-1.55.09-1.55-.9v-6.76A3.42,3.42,0,0,1,146.57,165.87Z"/>
-    <path id="Path-13" class="cls-12" d="M25,86.6l35,20.21V83.71L25,63.5Z"/>
-    <path id="Path-14" class="cls-13" d="M135,0l35,20.2L60,83.71,25,63.5Z"/>
-    <path id="Path-15" class="cls-14" d="M60,106.81,170,43.3V20.2L60,83.71Z"/>
-    <path id="Path-16" class="cls-1" d="M157.5,50.51,65,103.92V86.6l92.5-53.41Z"/>
-    <path id="Path-17" class="cls-15" d="M142.5,41.85l15-8.66V50.51Z"/>
-    <path id="Path-18" class="cls-16" d="M80,89.49l15,8.66L70,112.58l50,28.87L230,77.94,180,49.07,155,63.5l-15-8.66Z"/>
-    <path id="Path-19" class="cls-17" d="M180,49.07v5.77L155,69.28V63.5Z"/>
-    <path id="Path-20" class="cls-18" d="M140,54.84v5.78l15,8.66V63.5Z"/>
-    <path id="Path-21" class="cls-17" d="M85,92.37l55-31.75V54.84L80,89.49Z"/>
-    <path id="Path-22" class="cls-17" d="M95,98.15v5.77L75,115.47l-5-2.89Z"/>
-    <path id="Path-23" class="cls-18" d="M180,54.84V49.07l50,28.87-5,2.89Z"/>
-    <path id="Path-24" class="cls-5" d="M30,89.49V83.71L10,95.26l5,2.89Z"/>
-    <g id="Group-6">
-      <path id="Path-25" class="cls-19" d="M190,46.18l-2.5-1.44,2.5-4.33,2.5,1.44Z"/>
-      <path id="Path-26" class="cls-20" d="M185,49.07l5-2.89-2.5-1.44-5,2.89Z"/>
-    </g>
-    <g id="Group-7">
-      <path id="Path-27" class="cls-19" d="M67.56,122.69l-2.5-1.44,2.5-1.45,2.5,1.45Z"/>
-      <path id="Path-28" class="cls-20" d="M72.56,116.92l-5,2.88,2.5,1.45,5-2.89Z"/>
-    </g>
-    <g id="Group-8">
-      <path id="Path-29" class="cls-19" d="M97.44,139.94l-2.5-1.44,2.5-1.45,2.5,1.45Z"/>
-      <path id="Path-30" class="cls-20" d="M102.44,134.17l-5,2.88,2.5,1.45,5-2.89Z"/>
-    </g>
-    <g id="Group-9">
-      <path id="Path-31" class="cls-19" d="M82.56,131.35l-2.5-1.44,2.5-1.45,2.5,1.45Z"/>
-      <path id="Path-32" class="cls-20" d="M87.56,125.58l-5,2.88,2.5,1.45,5-2.89Z"/>
-    </g>
-    <g id="Group-10">
-      <path id="Path-33" class="cls-19" d="M72.56,125.58l-2.5-1.45,2.5-1.44,2.5,1.44Z"/>
-      <path id="Path-34" class="cls-20" d="M77.56,119.8l-5,2.89,2.5,1.44,5-2.88Z"/>
-    </g>
-    <g id="Group-11">
-      <path id="Path-35" class="cls-19" d="M87.56,134.24l-2.5-1.45,2.5-1.44,2.5,1.44Z"/>
-      <path id="Path-36" class="cls-20" d="M92.56,128.46l-5,2.89,2.5,1.44,5-2.88Z"/>
-    </g>
-    <g id="Group-12">
-      <path id="Path-37" class="cls-19" d="M62.56,116.92l2.5,1.44-2.5,1.44-2.5-1.44Z"/>
-      <path id="Path-38" class="cls-20" d="M70.06,115.47l-5,2.89-2.5-1.44,5-2.89Z"/>
-    </g>
-    <g id="Group-13">
-      <path id="Path-39" class="cls-19" d="M92.44,134.17l2.5,1.44-2.5,1.44-2.5-1.44Z"/>
-      <path id="Path-40" class="cls-20" d="M99.94,132.72l-5,2.89-2.5-1.44,5-2.89Z"/>
-    </g>
-    <g id="Group-14">
-      <path id="Path-41" class="cls-19" d="M77.56,125.58l2.5,1.44-2.5,1.44L75.06,127Z"/>
-      <path id="Path-42" class="cls-20" d="M85.06,124.13l-5,2.89-2.5-1.44,5-2.89Z"/>
-    </g>
-    <g id="Group-15">
-      <path id="Path-43" class="cls-19" d="M205,54.84l-2.5-1.44,2.5-4.33,2.5,1.44Z"/>
-      <path id="Path-44" class="cls-20" d="M200,57.73l5-2.89-2.5-1.44-5,2.89Z"/>
-    </g>
-    <g id="Group-16">
-      <path id="Path-45" class="cls-19" d="M220,63.5l-2.5-1.44,2.5-4.33,2.5,1.44Z"/>
-      <path id="Path-46" class="cls-20" d="M215,66.39l5-2.89-2.5-1.44-5,2.89Z"/>
-    </g>
-    <g id="Group-17">
-      <path id="Path-47" class="cls-19" d="M195,49.07l-2.5-1.44L195,43.3l2.5,1.44Z"/>
-      <path id="Path-48" class="cls-20" d="M190,52l5-2.89-2.5-1.44-5,2.88Z"/>
-    </g>
-    <g id="Group-18">
-      <path id="Path-49" class="cls-19" d="M210,57.73l-2.5-1.44L210,52l2.5,1.44Z"/>
-      <path id="Path-50" class="cls-20" d="M205,60.62l5-2.89-2.5-1.44-5,2.88Z"/>
-    </g>
-    <g id="Group-19">
-      <path id="Path-51" class="cls-19" d="M225,66.39,222.5,65l2.5-4.33,2.5,1.44Z"/>
-      <path id="Path-52" class="cls-20" d="M220,69.28l5-2.89L222.5,65l-5,2.88Z"/>
-    </g>
-    <g id="Group-20">
-      <path id="Path-53" class="cls-19" d="M200,52l-2.5-1.45,2.5-4.33,2.5,1.45Z"/>
-      <path id="Path-54" class="cls-20" d="M195,54.84,200,52l-2.5-1.45-5,2.89Z"/>
-    </g>
-    <g id="Group-21">
-      <path id="Path-55" class="cls-19" d="M215,60.62l-2.5-1.45,2.5-4.33,2.5,1.45Z"/>
-      <path id="Path-56" class="cls-20" d="M210,63.5l5-2.88-2.5-1.45-5,2.89Z"/>
-    </g>
-    <path id="Path-57" class="cls-16" d="M105,75.05l2.5,1.45,10-5.78L115,69.28Z"/>
-    <path id="Path-58" class="cls-16" d="M107.5,79.38l2.5,1.45,10-5.78-2.5-1.44Z"/>
-    <path id="Path-59" class="cls-17" d="M107.5,79.38V76.5l10-5.78v2.89Z"/>
-    <path id="Path-60" class="cls-17" d="M110,80.83v2.88l10-5.77V75.05Z"/>
-    <path id="Path-61" class="cls-18" d="M105,80.83l5,2.88V80.83l-2.5-1.45V76.5L105,75.05Z"/>
-    <path id="Path-62" class="cls-15" d="M25,86.6l5-2.89-5-2.88-5,2.88Z"/>
-    <g id="Group-22">
-      <g id="Group-23">
-        <path id="Path-63" class="cls-20" d="M126.25,140.73l5,2.88,2.5-1.44-5-2.89Z"/>
-        <path id="Path-64" class="cls-19" d="M133.75,145.06l2.5-1.45-2.5-1.44-2.5,1.44Z"/>
+      <path id="Path-6" data-name="Path" class="cls-2" d="M155,11.547,160,8.66V2.8867L150,8.66Z"/>
+      <g class="cls-3">
+        <path id="Path-7" data-name="Path" class="cls-4" d="M160,0,147.5,7.2168,150,8.66l10-5.7735Z"/>
       </g>
-      <g id="Group-24">
-        <path id="Path-65" class="cls-20" d="M141.25,132.07l5,2.88,2.5-1.44-5-2.89Z"/>
-        <path id="Path-66" class="cls-19" d="M148.75,136.4l2.5-1.45-2.5-1.44-2.5,1.44Z"/>
-      </g>
-      <g id="Group-25">
-        <g id="Group-26">
-          <path id="Path-67" class="cls-20" d="M131.25,137.84l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-68" class="cls-19" d="M138.75,142.17l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
+      <path id="Path-8" data-name="Path" class="exterior-R-prim" d="M160,8.66v5.7735l-5-2.8867Z"/>
+      <g id="Group-3" data-name="Group">
+        <path id="Path-9" data-name="Path" class="cls-5" d="M155.5013,27.2973l11.6658,6.7352,2.9165-1.6838-11.6658-6.7352Z"/>
+        <g id="Group-4" data-name="Group">
+          <g id="Group-5" data-name="Group">
+            <path id="Compound_Shape" data-name="Compound Shape" class="cls-6" d="M159.39,27.46h0c0,.31-.4356.5613-.9721.5613s-.9722-.2515-.9722-.5613h0V22.97H159.39v4.49Z"/>
+            <ellipse id="Ellipse" class="cls-7" cx="158.4178" cy="15.9095" rx="5.8329" ry="7.8578"/>
+          </g>
+          <g id="Group-6" data-name="Group">
+            <path id="Compound_Shape-2" data-name="Compound Shape" class="cls-8" d="M168.1393,32.5111h0c0,.31-.4356.5612-.9722.5612s-.9721-.2515-.9721-.5612h0v-4.49h1.9443v4.49Z"/>
+            <ellipse id="Ellipse-2" data-name="Ellipse" class="cls-9" cx="167.1671" cy="20.961" rx="5.8329" ry="7.8578"/>
+          </g>
         </g>
       </g>
-      <g id="Group-27">
-        <g id="Group-28">
-          <path id="Path-69" class="cls-20" d="M146.25,129.18l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-70" class="cls-19" d="M153.75,133.51l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
+      <path id="Path-10" data-name="Path" class="cls-10" d="M25,86.6025,60,106.81V83.7158L25,63.5085Z"/>
+      <path id="Path-11" data-name="Path" class="cls-11" d="M135,0l35,20.2072L60,83.7158,25,63.5085Z"/>
+      <path id="Path-12" data-name="Path" class="cls-12" d="M60,106.81,170,43.3012V20.2072L60,83.7158Z"/>
+      <path id="Path-13" data-name="Path" class="cls-1" d="M157.5,50.5181,65,103.923v-17.32l92.5-53.4049Z"/>
+      <path id="Path-14" data-name="Path" class="cls-13" d="M142.5,41.8579l15-8.66v17.32Z"/>
+      <path id="Path-15" data-name="Path" class="cls-14" d="M80,89.4893l15,8.66L70,112.5833l50,28.8675L230,77.9422,180,49.0747,155,63.5085l-15-8.66Z"/>
+      <path id="Path-16" data-name="Path" class="cls-15" d="M180,49.0747v5.7735L155,69.282V63.5085Z"/>
+      <path id="Path-17" data-name="Path" class="cls-16" d="M140,54.8482v5.7735l15,8.66V63.5085Z"/>
+      <path id="Path-18" data-name="Path" class="cls-15" d="M85,92.376l55-31.7543V54.8482L80,89.4893Z"/>
+      <path id="Path-19" data-name="Path" class="cls-15" d="M95,98.15v5.7735L75,115.47l-5-2.8867Z"/>
+      <path id="Path-20" data-name="Path" class="cls-16" d="M180,54.8482V49.0747l50,28.8675-5,2.8868Z"/>
+      <path id="Path-21" data-name="Path" class="exterior-R-prim" d="M30,89.4893V83.7158L10,95.2628,15,98.15Z"/>
+      <g id="Group-7" data-name="Group">
+        <path id="Path-22" data-name="Path" class="cls-17" d="M190,46.188l-2.5-1.4434,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-23" data-name="Path" class="cls-18" d="M185,49.0747l5-2.8867-2.5-1.4434-5,2.8868Z"/>
+      </g>
+      <g id="Group-8" data-name="Group">
+        <path id="Path-24" data-name="Path" class="cls-17" d="M67.5625,122.6928l-2.5-1.4434,2.5-1.4434,2.5,1.4434Z"/>
+        <path id="Path-25" data-name="Path" class="cls-18" d="M72.5625,116.9193l-5,2.8867,2.5,1.4434,5-2.8868Z"/>
+      </g>
+      <g id="Group-9" data-name="Group">
+        <path id="Path-26" data-name="Path" class="cls-17" d="M97.4375,139.9428l-2.5-1.4434,2.5-1.4434,2.5,1.4434Z"/>
+        <path id="Path-27" data-name="Path" class="cls-18" d="M102.4375,134.1693l-5,2.8867,2.5,1.4434,5-2.8868Z"/>
+      </g>
+      <g id="Group-10" data-name="Group">
+        <path id="Path-28" data-name="Path" class="cls-17" d="M82.5625,131.353l-2.5-1.4434,2.5-1.4433,2.5,1.4434Z"/>
+        <path id="Path-29" data-name="Path" class="cls-18" d="M87.5625,125.58l-5,2.8868,2.5,1.4433,5-2.8867Z"/>
+      </g>
+      <g id="Group-11" data-name="Group">
+        <path id="Path-30" data-name="Path" class="cls-17" d="M72.5625,125.58l-2.5-1.4434,2.5-1.4433,2.5,1.4434Z"/>
+        <path id="Path-31" data-name="Path" class="cls-18" d="M77.5625,119.806l-5,2.8868,2.5,1.4433,5-2.8867Z"/>
+      </g>
+      <g id="Group-12" data-name="Group">
+        <path id="Path-32" data-name="Path" class="cls-17" d="M87.5625,134.24l-2.5-1.4434,2.5-1.4434,2.5,1.4434Z"/>
+        <path id="Path-33" data-name="Path" class="cls-18" d="M92.5625,128.4663l-5,2.8867,2.5,1.4434,5-2.8868Z"/>
+      </g>
+      <g id="Group-13" data-name="Group">
+        <path id="Path-34" data-name="Path" class="cls-17" d="M62.5625,116.9193l2.5,1.4433-2.5,1.4434-2.5-1.4434Z"/>
+        <path id="Path-35" data-name="Path" class="cls-18" d="M70.0625,115.4759l-5,2.8867-2.5-1.4433,5-2.8868Z"/>
+      </g>
+      <g id="Group-14" data-name="Group">
+        <path id="Path-36" data-name="Path" class="cls-17" d="M92.4375,134.1693l2.5,1.4433-2.5,1.4434-2.5-1.4434Z"/>
+        <path id="Path-37" data-name="Path" class="cls-18" d="M99.9375,132.7259l-5,2.8867-2.5-1.4433,5-2.8868Z"/>
+      </g>
+      <g id="Group-15" data-name="Group">
+        <path id="Path-38" data-name="Path" class="cls-17" d="M77.5625,125.58l2.5,1.4434-2.5,1.4434-2.5-1.4434Z"/>
+        <path id="Path-39" data-name="Path" class="cls-18" d="M85.0625,124.1362l-5,2.8867-2.5-1.4434,5-2.8867Z"/>
+      </g>
+      <g id="Group-16" data-name="Group">
+        <path id="Path-40" data-name="Path" class="cls-17" d="M205,54.8482l-2.5-1.4433,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-41" data-name="Path" class="cls-18" d="M200,57.735l5-2.8868-2.5-1.4433-5,2.8867Z"/>
+      </g>
+      <g id="Group-17" data-name="Group">
+        <path id="Path-42" data-name="Path" class="cls-17" d="M220,63.5085l-2.5-1.4434,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-43" data-name="Path" class="cls-18" d="M215,66.3952l5-2.8867-2.5-1.4434-5,2.8868Z"/>
+      </g>
+      <g id="Group-18" data-name="Group">
+        <path id="Path-44" data-name="Path" class="cls-17" d="M195,49.0747l-2.5-1.4433,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-45" data-name="Path" class="cls-18" d="M190,51.9615l5-2.8868-2.5-1.4433-5,2.8867Z"/>
+      </g>
+      <g id="Group-19" data-name="Group">
+        <path id="Path-46" data-name="Path" class="cls-17" d="M210,57.735l-2.5-1.4434,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-47" data-name="Path" class="cls-18" d="M205,60.6217l5-2.8867-2.5-1.4434-5,2.8868Z"/>
+      </g>
+      <g id="Group-20" data-name="Group">
+        <path id="Path-48" data-name="Path" class="cls-17" d="M225,66.3952l-2.5-1.4433,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-49" data-name="Path" class="cls-18" d="M220,69.282l5-2.8868-2.5-1.4433-5,2.8867Z"/>
+      </g>
+      <g id="Group-21" data-name="Group">
+        <path id="Path-50" data-name="Path" class="cls-17" d="M200,51.9615l-2.5-1.4434,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-51" data-name="Path" class="cls-18" d="M195,54.8482l5-2.8867-2.5-1.4434-5,2.8868Z"/>
+      </g>
+      <g id="Group-22" data-name="Group">
+        <path id="Path-52" data-name="Path" class="cls-17" d="M215,60.6217l-2.5-1.4433,2.5-4.33,2.5,1.4434Z"/>
+        <path id="Path-53" data-name="Path" class="cls-18" d="M210,63.5085l5-2.8868-2.5-1.4433-5,2.8867Z"/>
+      </g>
+      <path id="Path-54" data-name="Path" class="cls-14" d="M105,75.0555l2.5,1.4434,10-5.7735L115,69.282Z"/>
+      <path id="Path-55" data-name="Path" class="cls-14" d="M107.5,79.3856,110,80.829l10-5.7735-2.5-1.4434Z"/>
+      <path id="Path-56" data-name="Path" class="cls-15" d="M107.5,79.3856V76.4989l10-5.7735v2.8867Z"/>
+      <path id="Path-57" data-name="Path" class="cls-15" d="M110,80.829v2.8868l10-5.7735V75.0555Z"/>
+      <path id="Path-58" data-name="Path" class="cls-16" d="M105,80.829l5,2.8868V80.829l-2.5-1.4434V76.4989L105,75.0555Z"/>
+      <path id="Path-59" data-name="Path" class="cls-13" d="M25,86.6025l5-2.8867L25,80.829l-5,2.8868Z"/>
+      <g id="Group-23" data-name="Group">
+        <g id="Group-24" data-name="Group">
+          <path id="Path-60" data-name="Path" class="cls-18" d="M126.25,140.7291l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+          <path id="Path-61" data-name="Path" class="cls-17" d="M133.75,145.0592l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+        </g>
+        <g id="Group-25" data-name="Group">
+          <path id="Path-62" data-name="Path" class="cls-18" d="M141.25,132.0688l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+          <path id="Path-63" data-name="Path" class="cls-17" d="M148.75,136.399l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+        </g>
+        <g id="Group-26" data-name="Group">
+          <g id="Group-27" data-name="Group">
+            <path id="Path-64" data-name="Path" class="cls-18" d="M131.25,137.8423l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-65" data-name="Path" class="cls-17" d="M138.75,142.1725l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-28" data-name="Group">
+          <g id="Group-29" data-name="Group">
+            <path id="Path-66" data-name="Path" class="cls-18" d="M146.25,129.1821l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+            <path id="Path-67" data-name="Path" class="cls-17" d="M153.75,133.5122l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+          </g>
+        </g>
+        <g id="Group-30" data-name="Group">
+          <g id="Group-31" data-name="Group">
+            <path id="Path-68" data-name="Path" class="cls-18" d="M136.25,134.9556l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+            <path id="Path-69" data-name="Path" class="cls-17" d="M143.75,139.2857l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+          </g>
+        </g>
+        <g id="Group-32" data-name="Group">
+          <g id="Group-33" data-name="Group">
+            <path id="Path-70" data-name="Path" class="cls-18" d="M151.25,126.2953l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-71" data-name="Path" class="cls-17" d="M158.75,130.6255l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
         </g>
       </g>
-      <g id="Group-29">
-        <g id="Group-30">
-          <path id="Path-71" class="cls-20" d="M136.25,135l5,2.89,2.5-1.44-5-2.89Z"/>
-          <path id="Path-72" class="cls-19" d="M143.75,139.28l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-34" data-name="Group">
+        <g id="Group-35" data-name="Group">
+          <path id="Path-72" data-name="Path" class="cls-18" d="M96.25,74.3338l-5-2.8867L88.75,72.89l5,2.8868Z"/>
+        </g>
+        <g id="Group-36" data-name="Group">
+          <path id="Path-73" data-name="Path" class="cls-18" d="M81.25,82.9941l-5-2.8868-2.5,1.4434,5,2.8867Z"/>
+        </g>
+        <g id="Group-37" data-name="Group">
+          <g id="Group-38" data-name="Group">
+            <path id="Path-74" data-name="Path" class="cls-18" d="M91.25,77.2206l-5-2.8868-2.5,1.4434,5,2.8867Z"/>
+          </g>
+        </g>
+        <g id="Group-39" data-name="Group">
+          <g id="Group-40" data-name="Group">
+            <path id="Path-75" data-name="Path" class="cls-18" d="M76.25,85.8808l-5-2.8867-2.5,1.4433,5,2.8868Z"/>
+          </g>
+        </g>
+        <g id="Group-41" data-name="Group">
+          <g id="Group-42" data-name="Group">
+            <path id="Path-76" data-name="Path" class="cls-18" d="M86.25,80.1073l-5-2.8867-2.5,1.4433,5,2.8868Z"/>
+          </g>
+        </g>
+        <g id="Group-43" data-name="Group">
+          <g id="Group-44" data-name="Group">
+            <path id="Path-77" data-name="Path" class="cls-18" d="M71.25,88.7676l-5-2.8868L65,86.6025v1.4434l3.75,2.165Z"/>
+          </g>
         </g>
       </g>
-      <g id="Group-31">
-        <g id="Group-32">
-          <path id="Path-73" class="cls-20" d="M151.25,126.29l5,2.89,2.5-1.44-5-2.89Z"/>
-          <path id="Path-74" class="cls-19" d="M158.75,130.62l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-45" data-name="Group">
+        <g id="Group-46" data-name="Group">
+          <path id="Path-78" data-name="Path" class="cls-18" d="M126.25,57.0133l-5-2.8867-2.5,1.4433,5,2.8868Z"/>
+        </g>
+        <g id="Group-47" data-name="Group">
+          <g id="Group-48" data-name="Group">
+            <path id="Path-79" data-name="Path" class="cls-18" d="M136.25,51.24l-5-2.8867-2.5,1.4433,5,2.8868Z"/>
+          </g>
+        </g>
+        <g id="Group-49" data-name="Group">
+          <g id="Group-50" data-name="Group">
+            <path id="Path-80" data-name="Path" class="cls-18" d="M121.25,59.9l-5-2.8868-2.5,1.4434,5,2.8867Z"/>
+          </g>
+        </g>
+        <g id="Group-51" data-name="Group">
+          <g id="Group-52" data-name="Group">
+            <path id="Path-81" data-name="Path" class="cls-18" d="M131.25,54.1266l-5-2.8868-2.5,1.4434,5,2.8867Z"/>
+          </g>
+        </g>
+        <g id="Group-53" data-name="Group">
+          <g id="Group-54" data-name="Group">
+            <path id="Path-82" data-name="Path" class="cls-18" d="M116.25,62.7868l-5-2.8867-2.5,1.4433,5,2.8868Z"/>
+          </g>
         </g>
       </g>
-    </g>
-    <g id="Group-33">
-      <g id="Group-34">
-        <path id="Path-75" class="cls-20" d="M96.25,74.33l-5-2.89-2.5,1.45,5,2.88Z"/>
-      </g>
-      <g id="Group-35">
-        <path id="Path-76" class="cls-20" d="M81.25,83l-5-2.89-2.5,1.45,5,2.88Z"/>
-      </g>
-      <g id="Group-36">
-        <g id="Group-37">
-          <path id="Path-77" class="cls-20" d="M91.25,77.22l-5-2.89-2.5,1.44,5,2.89Z"/>
+      <g id="Group-55" data-name="Group">
+        <g id="Group-56" data-name="Group">
+          <path id="Path-83" data-name="Path" class="cls-18" d="M186.25,106.0881l5,2.8867,2.5-1.4434-5-2.8867Z"/>
+          <path id="Path-84" data-name="Path" class="cls-17" d="M193.75,110.4182l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+        </g>
+        <g id="Group-57" data-name="Group">
+          <path id="Path-85" data-name="Path" class="cls-18" d="M171.25,114.7483l5,2.8868,2.5-1.4434-5-2.8868Z"/>
+          <path id="Path-86" data-name="Path" class="cls-17" d="M178.75,119.0784l2.5-1.4433-2.5-1.4434-2.5,1.4434Z"/>
+        </g>
+        <g id="Group-58" data-name="Group">
+          <g id="Group-59" data-name="Group">
+            <path id="Path-87" data-name="Path" class="cls-18" d="M161.25,120.5218l5,2.8868,2.5-1.4434-5-2.8868Z"/>
+            <path id="Path-88" data-name="Path" class="cls-17" d="M168.75,124.8519l2.5-1.4433-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-60" data-name="Group">
+          <g id="Group-61" data-name="Group">
+            <path id="Path-89" data-name="Path" class="cls-18" d="M176.25,111.8616l5,2.8867,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-90" data-name="Path" class="cls-17" d="M183.75,116.1917l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-62" data-name="Group">
+          <g id="Group-63" data-name="Group">
+            <path id="Path-91" data-name="Path" class="cls-18" d="M166.25,117.6351l5,2.8867,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-92" data-name="Path" class="cls-17" d="M173.75,121.9652l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-64" data-name="Group">
+          <g id="Group-65" data-name="Group">
+            <path id="Path-93" data-name="Path" class="cls-18" d="M181.25,108.9748l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+            <path id="Path-94" data-name="Path" class="cls-17" d="M188.75,113.3049l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+          </g>
         </g>
       </g>
-      <g id="Group-38">
-        <g id="Group-39">
-          <path id="Path-78" class="cls-20" d="M76.25,85.88l-5-2.89-2.5,1.44,5,2.89Z"/>
+      <g id="Group-66" data-name="Group">
+        <g id="Group-67" data-name="Group">
+          <path id="Path-95" data-name="Path" class="cls-18" d="M216.25,88.7675l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+          <path id="Path-96" data-name="Path" class="cls-17" d="M223.75,93.0977l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+        </g>
+        <g id="Group-68" data-name="Group">
+          <path id="Path-97" data-name="Path" class="cls-18" d="M201.25,97.4278l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+          <path id="Path-98" data-name="Path" class="cls-17" d="M208.75,101.7579l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+        </g>
+        <g id="Group-69" data-name="Group">
+          <g id="Group-70" data-name="Group">
+            <path id="Path-99" data-name="Path" class="cls-18" d="M221.25,85.8808l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+            <path id="Path-100" data-name="Path" class="cls-17" d="M228.75,90.2109l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+          </g>
+        </g>
+        <g id="Group-71" data-name="Group">
+          <g id="Group-72" data-name="Group">
+            <path id="Path-101" data-name="Path" class="cls-18" d="M206.25,94.541l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-102" data-name="Path" class="cls-17" d="M213.75,98.8712l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-73" data-name="Group">
+          <g id="Group-74" data-name="Group">
+            <path id="Path-103" data-name="Path" class="cls-18" d="M196.25,100.3145l5,2.8868,2.5-1.4434-5-2.8867Z"/>
+            <path id="Path-104" data-name="Path" class="cls-17" d="M203.75,104.6447l2.5-1.4434-2.5-1.4434-2.5,1.4434Z"/>
+          </g>
+        </g>
+        <g id="Group-75" data-name="Group">
+          <g id="Group-76" data-name="Group">
+            <path id="Path-105" data-name="Path" class="cls-18" d="M211.25,91.6543l5,2.8867,2.5-1.4433-5-2.8868Z"/>
+            <path id="Path-106" data-name="Path" class="cls-17" d="M218.75,95.9844l2.5-1.4434-2.5-1.4433-2.5,1.4433Z"/>
+          </g>
         </g>
       </g>
-      <g id="Group-40">
-        <g id="Group-41">
-          <path id="Path-79" class="cls-20" d="M86.25,80.1l-5-2.88-2.5,1.44,5,2.89Z"/>
+      <g class="cls-3">
+        <path id="Path-107" data-name="Path" class="cls-2" d="M120,161.658,275,72.1687V66.3952L120,155.8845Z"/>
+      </g>
+      <g class="cls-3">
+        <path id="Path-108" data-name="Path" class="cls-4" d="M270,66.3952h5L120,155.8845v-2.8867Z"/>
+      </g>
+      <g class="cls-3">
+        <path id="Path-109" data-name="Path" class="cls-2" d="M5,95.2628V89.4893l115,66.3952v5.7735Z"/>
+      </g>
+      <path id="Path-110" data-name="Path" class="cls-17" d="M103.75,74.3338,95,69.282l10-5.7735,8.75,5.0518Z"/>
+      <g class="cls-3">
+        <path id="Path-111" data-name="Path" class="cls-4" d="M120,152.9978,10,89.4893H5l115,66.3952Z"/>
+      </g>
+      <g class="cls-3">
+        <path id="Path-112" data-name="Path" class="cls-2" d="M30,83.7158V77.9423L10,89.4893l5,2.8867"/>
+      </g>
+      <g class="cls-3">
+        <path id="Path-113" data-name="Path" class="cls-4" d="M5,89.4893l22.5-12.99L30,77.9423,10,89.4893Z"/>
+      </g>
+      <g id="Group-77" data-name="Group">
+        <path id="Path-114" data-name="Path" class="cls-5" d="M30.5013,98.6312l11.6658,6.7352,2.9165-1.6838L33.4178,96.9474Z"/>
+        <g id="Group-78" data-name="Group">
+          <g id="Group-79" data-name="Group">
+            <path id="Compound_Shape-3" data-name="Compound Shape" class="cls-19" d="M34.39,98.7935h0c0,.31-.4356.5613-.9721.5613s-.9722-.2515-.9722-.5613h0v-4.49H34.39v4.49Z"/>
+            <ellipse id="Ellipse-3" data-name="Ellipse" class="cls-20" cx="33.4178" cy="87.2434" rx="5.8329" ry="7.8578"/>
+          </g>
+          <g id="Group-80" data-name="Group">
+            <path id="Compound_Shape-4" data-name="Compound Shape" class="cls-21" d="M43.1393,103.8449h0c0,.31-.4356.5613-.9722.5613s-.9721-.2515-.9721-.5613h0v-4.49h1.9443v4.49Z"/>
+            <ellipse id="Ellipse-4" data-name="Ellipse" class="cls-22" cx="42.1671" cy="92.2949" rx="5.8329" ry="7.8578"/>
+          </g>
         </g>
       </g>
-      <g id="Group-42">
-        <g id="Group-43">
-          <path id="Path-80" class="cls-20" d="M71.25,88.76l-5-2.88L65,86.6V88l3.75,2.17Z"/>
-        </g>
+      <g id="Group-81" data-name="Group">
+        <path id="Path-115" data-name="Path" class="cls-18" d="M120,142.8942v-1.4434L230,77.9422h2.5Z"/>
+        <path id="Path-116" data-name="Path" class="cls-18" d="M70,112.5833H67.5L120,142.8941v-1.4433Z"/>
+        <path id="Path-117" data-name="Path" class="cls-18" d="M180,49.0747V47.6314l52.5,30.3108H230Z"/>
+        <path id="Path-118" data-name="Path" class="cls-18" d="M67.5,112.5833,92.5,98.15H95L70,112.5833Z"/>
+        <path id="Path-119" data-name="Path" class="cls-18" d="M80,89.4893H77.5l15,8.66H95Z"/>
+        <path id="Path-120" data-name="Path" class="cls-18" d="M155,63.5085V62.0651l25-14.4337v1.4433Z"/>
+        <path id="Path-121" data-name="Path" class="cls-18" d="M77.5,89.4893,140,53.4049v1.4433L80,89.4893Z"/>
+        <path id="Path-122" data-name="Path" class="cls-18" d="M155,62.0651l-15-8.66v1.4433l15,8.66Z"/>
       </g>
-    </g>
-    <g id="Group-44">
-      <g id="Group-45">
-        <path id="Path-81" class="cls-20" d="M126.25,57l-5-2.89-2.5,1.45,5,2.88Z"/>
+      <path id="Path-123" data-name="Path" class="cls-23" d="M116.25,81.5507V78.6639L107.5,67.8386v2.8868"/>
+      <g id="Group-82" data-name="Group">
+        <path id="Path-124" data-name="Path" class="cls-18" d="M157.5,50.5181V49.0747l-1.25.7217V51.24Z"/>
+        <path id="Path-125" data-name="Path" class="cls-17" d="M156.25,49.7964h0V51.24L155,50.5181Z"/>
+        <path id="Path-126" data-name="Path" class="cls-24" d="M152.5,50.5181l5-2.8868L145,40.4145l-5,2.8867Z"/>
+        <path id="Path-127" data-name="Path" class="cls-18" d="M157.5,49.0747V47.6313l-5,2.8868v1.4434Z"/>
+        <path id="Path-128" data-name="Path" class="cls-17" d="M140,43.3012l-1.25.7217,13.75,7.9386V50.5181Z"/>
+        <path id="Path-129" data-name="Path" class="cls-18" d="M153.75,52.6832V51.24l-1.25.7217v1.4433Z"/>
+        <path id="Path-130" data-name="Path" class="cls-18" d="M148.75,49.7964l-1.25-.7217v1.4434Z"/>
+        <path id="Path-131" data-name="Path" class="cls-18" d="M143.75,46.922,142.5,46.2v1.4433Z"/>
+        <path id="Path-132" data-name="Path" class="cls-17" d="M148.75,51.24l1.25.7217V50.5181l-1.25-.7217Z"/>
+        <path id="Path-133" data-name="Path" class="cls-17" d="M143.75,48.3531l1.25.7216V47.6314l-1.25-.7217Z"/>
+        <path id="Path-134" data-name="Path" class="cls-17" d="M138.75,45.4787,140,46.2V44.757l-1.25-.7217Z"/>
+        <path id="Path-135" data-name="Path" class="cls-18" d="M151.25,51.24l-1.25.7217V50.5181Z"/>
+        <path id="Path-136" data-name="Path" class="cls-18" d="M146.25,48.3531l-1.25.7216V47.6314Z"/>
+        <path id="Path-137" data-name="Path" class="cls-18" d="M141.25,45.4787,140,46.2V44.757Z"/>
+        <path id="Path-138" data-name="Path" class="cls-17" d="M152.5,53.4048l-1.25-.7216V51.24l1.25.7217Z"/>
+        <path id="Path-139" data-name="Path" class="cls-17" d="M147.5,50.5181l-1.25-.7217V48.3531l1.25.7216Z"/>
+        <path id="Path-140" data-name="Path" class="cls-17" d="M142.5,47.6437l-1.25-.7217V45.4787l1.25.7217Z"/>
+        <path id="Path-141" data-name="Path" class="cls-25" d="M152.5,49.0747V47.6313L155,46.188v1.4433Z"/>
+        <path id="Path-142" data-name="Path" class="cls-26" d="M141.25,42.58l1.25-.7217,10,5.7735v1.4434Z"/>
+        <path id="Path-143" data-name="Path" class="cls-27" d="M155,46.188l-10-5.7735-2.5,1.4433,10,5.7735Z"/>
       </g>
-      <g id="Group-46">
-        <g id="Group-47">
-          <path id="Path-82" class="cls-20" d="M136.25,51.24l-5-2.89-2.5,1.44,5,2.89Z"/>
-        </g>
+      <g id="Group-83" data-name="Group">
+        <path id="Path-144" data-name="Path" class="cls-18" d="M70,101.0363V99.5929l-1.25.7217v1.4434Z"/>
+        <path id="Path-145" data-name="Path" class="cls-17" d="M68.75,100.3146h0v1.4434l-1.25-.7217Z"/>
+        <path id="Path-146" data-name="Path" class="cls-24" d="M65,101.0363,70,98.15l-5-2.8867v5.7735Z"/>
+        <path id="Path-147" data-name="Path" class="cls-18" d="M70,99.5929V98.15l-5,2.8868V102.48Z"/>
+        <path id="Path-148" data-name="Path" class="cls-18" d="M66.25,103.2013V101.758L65,102.48v1.4433Z"/>
+        <path id="Path-149" data-name="Path" class="cls-25" d="M65,99.5929V98.15l2.5-1.4433V98.15Z"/>
+        <path id="Path-150" data-name="Path" class="cls-28" d="M67.5,96.7062,65,95.2628V98.15h0Z"/>
       </g>
-      <g id="Group-48">
-        <g id="Group-49">
-          <path id="Path-83" class="cls-20" d="M121.25,59.9l-5-2.89-2.5,1.44,5,2.89Z"/>
-        </g>
+      <g id="Group-84" data-name="Group">
+        <path id="Path-151" data-name="Path" class="cls-12" d="M32.5,62.0651l30,17.32L65,77.9423,35,60.6217Z"/>
+        <path id="Path-152" data-name="Path" class="cls-10" d="M35,63.5085V60.6217l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-50">
-        <g id="Group-51">
-          <path id="Path-84" class="cls-20" d="M131.25,54.12l-5-2.88-2.5,1.44,5,2.89Z"/>
-        </g>
+      <g id="Group-85" data-name="Group">
+        <path id="Path-153" data-name="Path" class="cls-12" d="M72.5,38.9711l30,17.3205,2.5-1.4434-30-17.32Z"/>
+        <path id="Path-154" data-name="Path" class="cls-10" d="M75,40.4145V37.5277l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-52">
-        <g id="Group-53">
-          <path id="Path-85" class="cls-20" d="M116.25,62.78l-5-2.88-2.5,1.44,5,2.89Z"/>
-        </g>
+      <g id="Group-86" data-name="Group">
+        <path id="Path-155" data-name="Path" class="cls-12" d="M52.5,50.5181l30,17.3205L85,66.3953,55,49.0747Z"/>
+        <path id="Path-156" data-name="Path" class="cls-10" d="M55,51.9615V49.0747l-2.5,1.4434Z"/>
       </g>
-    </g>
-    <g id="Group-54">
-      <g id="Group-55">
-        <path id="Path-86" class="cls-20" d="M186.25,106.08l5,2.89,2.5-1.44-5-2.89Z"/>
-        <path id="Path-87" class="cls-19" d="M193.75,110.41l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-87" data-name="Group">
+        <path id="Path-157" data-name="Path" class="cls-12" d="M92.5,27.4241l30,17.3205,2.5-1.4434L95,25.9807Z"/>
+        <path id="Path-158" data-name="Path" class="cls-10" d="M95,28.8675V25.9807l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-56">
-        <path id="Path-88" class="cls-20" d="M171.25,114.74l5,2.89,2.5-1.44-5-2.89Z"/>
-        <path id="Path-89" class="cls-19" d="M178.75,119.07l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-88" data-name="Group">
+        <path id="Path-159" data-name="Path" class="cls-12" d="M42.5,56.2916l30,17.32L75,72.1688,45,54.8482Z"/>
+        <path id="Path-160" data-name="Path" class="cls-10" d="M45,57.735V54.8482l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-57">
-        <g id="Group-58">
-          <path id="Path-90" class="cls-20" d="M161.25,120.52l5,2.88,2.5-1.44-5-2.89Z"/>
-          <path id="Path-91" class="cls-19" d="M168.75,124.85l2.5-1.45-2.5-1.44-2.5,1.44Z"/>
-        </g>
+      <g id="Group-89" data-name="Group">
+        <path id="Path-161" data-name="Path" class="cls-12" d="M82.5,33.1976l30,17.32,2.5-1.4433L85,31.7542Z"/>
+        <path id="Path-162" data-name="Path" class="cls-10" d="M85,34.641V31.7542l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-59">
-        <g id="Group-60">
-          <path id="Path-92" class="cls-20" d="M176.25,111.86l5,2.88,2.5-1.44-5-2.89Z"/>
-          <path id="Path-93" class="cls-19" d="M183.75,116.19l2.5-1.45-2.5-1.44-2.5,1.44Z"/>
-        </g>
+      <g id="Group-90" data-name="Group">
+        <path id="Path-163" data-name="Path" class="cls-12" d="M62.5,44.7446l30,17.3205L95,60.6218,65,43.3012Z"/>
+        <path id="Path-164" data-name="Path" class="cls-10" d="M65,46.188V43.3012l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-61">
-        <g id="Group-62">
-          <path id="Path-94" class="cls-20" d="M166.25,117.63l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-95" class="cls-19" d="M173.75,122l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
-        </g>
+      <g id="Group-91" data-name="Group">
+        <path id="Path-165" data-name="Path" class="cls-12" d="M102.5,21.6506l30,17.3205,2.5-1.4434L105,20.2072Z"/>
+        <path id="Path-166" data-name="Path" class="cls-10" d="M105,23.094V20.2072l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-63">
-        <g id="Group-64">
-          <path id="Path-96" class="cls-20" d="M181.25,109l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-97" class="cls-19" d="M188.75,113.3l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
-        </g>
+      <g id="Group-92" data-name="Group">
+        <path id="Path-167" data-name="Path" class="cls-12" d="M107.5,18.7639l30,17.3205L140,34.641l-30-17.32Z"/>
+        <path id="Path-168" data-name="Path" class="cls-10" d="M110,20.2072V17.3205l-2.5,1.4434Z"/>
       </g>
-    </g>
-    <g id="Group-65">
-      <g id="Group-66">
-        <path id="Path-98" class="cls-20" d="M216.25,88.76l5,2.89,2.5-1.44-5-2.89Z"/>
-        <path id="Path-99" class="cls-19" d="M223.75,93.09l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-93" data-name="Group">
+        <path id="Path-169" data-name="Path" class="cls-12" d="M117.5,12.99l30,17.3205,2.5-1.4434-30-17.32Z"/>
+        <path id="Path-170" data-name="Path" class="cls-10" d="M120,14.4337V11.547L117.5,12.99Z"/>
       </g>
-      <g id="Group-67">
-        <path id="Path-100" class="cls-20" d="M201.25,97.42l5,2.89,2.5-1.44-5-2.89Z"/>
-        <path id="Path-101" class="cls-19" d="M208.75,101.75l2.5-1.44-2.5-1.44-2.5,1.44Z"/>
+      <g id="Group-94" data-name="Group">
+        <path id="Path-171" data-name="Path" class="cls-12" d="M112.5,15.8771l30,17.3205,2.5-1.4433L115,14.4337Z"/>
+        <path id="Path-172" data-name="Path" class="cls-10" d="M115,17.3205V14.4337l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-68">
-        <g id="Group-69">
-          <path id="Path-102" class="cls-20" d="M221.25,85.88l5,2.88,2.5-1.44-5-2.89Z"/>
-          <path id="Path-103" class="cls-19" d="M228.75,90.21l2.5-1.45-2.5-1.44-2.5,1.44Z"/>
-        </g>
+      <g id="Group-95" data-name="Group">
+        <path id="Path-173" data-name="Path" class="cls-12" d="M37.5,59.1784l30,17.3205L70,75.0555,40,57.735Z"/>
+        <path id="Path-174" data-name="Path" class="cls-10" d="M40,60.6217V57.735l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-70">
-        <g id="Group-71">
-          <path id="Path-104" class="cls-20" d="M206.25,94.54l5,2.88,2.5-1.44-5-2.89Z"/>
-          <path id="Path-105" class="cls-19" d="M213.75,98.87l2.5-1.45L213.75,96l-2.5,1.44Z"/>
-        </g>
+      <g id="Group-96" data-name="Group">
+        <path id="Path-175" data-name="Path" class="cls-12" d="M77.5,36.0844l30,17.32,2.5-1.4434L80,34.641Z"/>
+        <path id="Path-176" data-name="Path" class="cls-10" d="M80,37.5277V34.641l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-72">
-        <g id="Group-73">
-          <path id="Path-106" class="cls-20" d="M196.25,100.31l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-107" class="cls-19" d="M203.75,104.64l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
-        </g>
+      <g id="Group-97" data-name="Group">
+        <path id="Path-177" data-name="Path" class="cls-12" d="M57.5,47.6314l30,17.32L90,63.5085,60,46.188Z"/>
+        <path id="Path-178" data-name="Path" class="cls-10" d="M60,49.0747V46.188l-2.5,1.4434Z"/>
       </g>
-      <g id="Group-74">
-        <g id="Group-75">
-          <path id="Path-108" class="cls-20" d="M211.25,91.65l5,2.89,2.5-1.45-5-2.88Z"/>
-          <path id="Path-109" class="cls-19" d="M218.75,96l2.5-1.44-2.5-1.45-2.5,1.45Z"/>
-        </g>
+      <g id="Group-98" data-name="Group">
+        <path id="Path-179" data-name="Path" class="cls-12" d="M97.5,24.5373l30,17.3205,2.5-1.4433-30-17.32Z"/>
+        <path id="Path-180" data-name="Path" class="cls-10" d="M100,25.9807V23.094l-2.5,1.4433Z"/>
       </g>
-    </g>
-    <g class="cls-3">
-      <path id="Path-110" class="cls-2" d="M120,161.65,275,72.17V66.39L120,155.88Z"/>
-    </g>
-    <g class="cls-3">
-      <path id="Path-111" class="cls-4" d="M270,66.39h5L120,155.88V153Z"/>
-    </g>
-    <g class="cls-3">
-      <path id="Path-112" class="cls-2" d="M5,95.26V89.49l115,66.39v5.77Z"/>
-    </g>
-    <path id="Path-113" class="cls-19" d="M103.75,74.33l-8.75-5,10-5.78,8.75,5.06Z"/>
-    <g class="cls-3">
-      <path id="Path-114" class="cls-4" d="M120,153,10,89.49H5l115,66.39Z"/>
-    </g>
-    <g class="cls-3">
-      <path id="Path-115" class="cls-2" d="M30,83.71V77.94L10,89.49l5,2.88"/>
-    </g>
-    <g class="cls-3">
-      <path id="Path-116" class="cls-4" d="M5,89.49l22.5-13L30,77.94,10,89.49Z"/>
-    </g>
-    <g id="Group-76">
-      <path id="Path-117" class="cls-6" d="M30.5,98.63l11.67,6.73,2.91-1.68L33.42,96.94Z"/>
-      <g id="Group-77">
-        <g id="Group-78">
-          <path id="Compound_Shape-3" data-name="Compound Shape-3" class="cls-21" d="M34.39,98.79h0c0,.31-.44.56-1,.56s-1-.25-1-.56h0V94.3h1.94v4.49Z"/>
-          <ellipse id="Ellipse-3" class="cls-22" cx="33.42" cy="87.24" rx="5.83" ry="7.86"/>
-        </g>
-        <g id="Group-79">
-          <path id="Compound_Shape-4" data-name="Compound Shape-4" class="cls-23" d="M43.14,103.84h0c0,.31-.44.56-1,.56s-1-.25-1-.56h0V99.35h2Z"/>
-          <ellipse id="Ellipse-4" class="cls-24" cx="42.17" cy="92.3" rx="5.83" ry="7.86"/>
-        </g>
+      <g id="Group-99" data-name="Group">
+        <path id="Path-181" data-name="Path" class="cls-12" d="M47.5,53.4049l30,17.32L80,69.282l-30-17.32Z"/>
+        <path id="Path-182" data-name="Path" class="cls-10" d="M50,54.8482V51.9615l-2.5,1.4434Z"/>
       </g>
+      <g id="Group-100" data-name="Group">
+        <path id="Path-183" data-name="Path" class="cls-12" d="M87.5,30.3109l30,17.3205L120,46.188,90,28.8675Z"/>
+        <path id="Path-184" data-name="Path" class="cls-10" d="M90,31.7542V28.8675l-2.5,1.4434Z"/>
+      </g>
+      <g id="Group-101" data-name="Group">
+        <path id="Path-185" data-name="Path" class="cls-12" d="M67.5,41.8579l30,17.3205L100,57.735,70,40.4145Z"/>
+        <path id="Path-186" data-name="Path" class="cls-10" d="M70,43.3012V40.4145l-2.5,1.4434Z"/>
+      </g>
+      <path id="Path-187" data-name="Path" class="cls-29" d="M158.75,48.3531V32.4759l8.75-5.0518V43.3012Z"/>
+      <line id="Path-188" data-name="Path" class="cls-30" x1="158.75" y1="36.806" x2="167.5" y2="31.7542"/>
+      <line id="Path-189" data-name="Path" class="cls-30" x1="162.5" y1="46.188" x2="162.5" y2="34.641"/>
+      <path id="Path-190" data-name="Path" class="cls-13" d="M168.75,26.7024V44.0229l-1.25-.7217V27.4241Z"/>
+      <path id="Path-191" data-name="Path" class="cls-1" d="M158.75,49.7964V48.3531l8.75-5.0519,1.25.7217Z"/>
     </g>
-    <g id="Group-80">
-      <path id="Path-118" class="cls-20" d="M120,142.89v-1.44L230,77.94h2.5Z"/>
-      <path id="Path-119" class="cls-20" d="M70,112.58H67.5L120,142.89v-1.44Z"/>
-      <path id="Path-120" class="cls-20" d="M180,49.07V47.63l52.5,30.31H230Z"/>
-      <path id="Path-121" class="cls-20" d="M67.5,112.58l25-14.43H95L70,112.58Z"/>
-      <path id="Path-122" class="cls-20" d="M80,89.49H77.5l15,8.66H95Z"/>
-      <path id="Path-123" class="cls-20" d="M155,63.5V62.06l25-14.43v1.44Z"/>
-      <path id="Path-124" class="cls-20" d="M77.5,89.49,140,53.4v1.44L80,89.49Z"/>
-      <path id="Path-125" class="cls-20" d="M155,62.06,140,53.4v1.44l15,8.66Z"/>
-    </g>
-    <path id="Path-126" class="cls-25" d="M116.25,81.55V78.66L107.5,67.83v2.89"/>
-    <g id="Group-81">
-      <path id="Path-127" class="cls-20" d="M157.5,50.51V49.07l-1.25.72v1.45Z"/>
-      <path id="Path-128" class="cls-19" d="M156.25,49.79h0v1.45L155,50.51Z"/>
-      <path id="Path-129" class="cls-26" d="M152.5,50.51l5-2.88L145,40.41l-5,2.89Z"/>
-      <path id="Path-130" class="cls-20" d="M157.5,49.07V47.63l-5,2.88V52Z"/>
-      <path id="Path-131" class="cls-19" d="M140,43.3l-1.25.72L152.5,52V50.51Z"/>
-      <path id="Path-132" class="cls-20" d="M153.75,52.68V51.24L152.5,52v1.4Z"/>
-      <path id="Path-133" class="cls-20" d="M148.75,49.79l-1.25-.72v1.44Z"/>
-      <path id="Path-134" class="cls-20" d="M143.75,46.92l-1.25-.72v1.44Z"/>
-      <path id="Path-135" class="cls-19" d="M148.75,51.24,150,52V50.51l-1.25-.72Z"/>
-      <path id="Path-136" class="cls-19" d="M143.75,48.35l1.25.72V47.63l-1.25-.72Z"/>
-      <path id="Path-137" class="cls-19" d="M138.75,45.47l1.25.73V44.75L138.75,44Z"/>
-      <path id="Path-138" class="cls-20" d="M151.25,51.24,150,52V50.51Z"/>
-      <path id="Path-139" class="cls-20" d="M146.25,48.35l-1.25.72V47.63Z"/>
-      <path id="Path-140" class="cls-20" d="M141.25,45.47,140,46.2V44.75Z"/>
-      <path id="Path-141" class="cls-19" d="M152.5,53.4l-1.25-.72V51.24l1.25.72Z"/>
-      <path id="Path-142" class="cls-19" d="M147.5,50.51l-1.25-.72V48.35l1.25.72Z"/>
-      <path id="Path-143" class="cls-19" d="M142.5,47.64l-1.25-.72V45.47l1.25.73Z"/>
-      <path id="Path-144" class="cls-27" d="M152.5,49.07V47.63l2.5-1.45v1.45Z"/>
-      <path id="Path-145" class="cls-28" d="M141.25,42.58l1.25-.73,10,5.78v1.44Z"/>
-      <path id="Path-146" class="cls-29" d="M155,46.18l-10-5.77-2.5,1.44,10,5.78Z"/>
-    </g>
-    <g id="Group-82">
-      <path id="Path-147" class="cls-20" d="M70,101V99.59l-1.25.72v1.44Z"/>
-      <path id="Path-148" class="cls-19" d="M68.75,100.31h0v1.44L67.5,101Z"/>
-      <path id="Path-149" class="cls-26" d="M65,101l5-2.88-5-2.89Z"/>
-      <path id="Path-150" class="cls-20" d="M70,99.59V98.15L65,101v1.45Z"/>
-      <path id="Path-151" class="cls-20" d="M66.25,103.2v-1.45l-1.25.73v1.44Z"/>
-      <path id="Path-152" class="cls-27" d="M65,99.59V98.15l2.5-1.45v1.45Z"/>
-      <path id="Path-153" class="cls-30" d="M67.5,96.7,65,95.26v2.89h0Z"/>
-    </g>
-    <g id="Group-83">
-      <path id="Path-154" class="cls-14" d="M32.5,62.06l30,17.32L65,77.94,35,60.62Z"/>
-      <path id="Path-155" class="cls-12" d="M35,63.5V60.62l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-84">
-      <path id="Path-156" class="cls-14" d="M72.5,39l30,17.32,2.5-1.45L75,37.52Z"/>
-      <path id="Path-157" class="cls-12" d="M75,40.41V37.52L72.5,39Z"/>
-    </g>
-    <g id="Group-85">
-      <path id="Path-158" class="cls-14" d="M52.5,50.51l30,17.32L85,66.39,55,49.07Z"/>
-      <path id="Path-159" class="cls-12" d="M55,52V49.07l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-86">
-      <path id="Path-160" class="cls-14" d="M92.5,27.42l30,17.32L125,43.3,95,26Z"/>
-      <path id="Path-161" class="cls-12" d="M95,28.86V26l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-87">
-      <path id="Path-162" class="cls-14" d="M42.5,56.29l30,17.32L75,72.17,45,54.84Z"/>
-      <path id="Path-163" class="cls-12" d="M45,57.73V54.84l-2.5,1.45Z"/>
-    </g>
-    <g id="Group-88">
-      <path id="Path-164" class="cls-14" d="M82.5,33.19l30,17.32,2.5-1.44L85,31.75Z"/>
-      <path id="Path-165" class="cls-12" d="M85,34.64V31.75l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-89">
-      <path id="Path-166" class="cls-14" d="M62.5,44.74l30,17.32L95,60.62,65,43.3Z"/>
-      <path id="Path-167" class="cls-12" d="M65,46.18V43.3l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-90">
-      <path id="Path-168" class="cls-14" d="M102.5,21.65,132.5,39l2.5-1.45L105,20.2Z"/>
-      <path id="Path-169" class="cls-12" d="M105,23.09V20.2l-2.5,1.45Z"/>
-    </g>
-    <g id="Group-91">
-      <path id="Path-170" class="cls-14" d="M107.5,18.76l30,17.32,2.5-1.44L110,17.32Z"/>
-      <path id="Path-171" class="cls-12" d="M110,20.2V17.32l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-92">
-      <path id="Path-172" class="cls-14" d="M117.5,13l30,17.32,2.5-1.45L120,11.54Z"/>
-      <path id="Path-173" class="cls-12" d="M120,14.43V11.54L117.5,13Z"/>
-    </g>
-    <g id="Group-93">
-      <path id="Path-174" class="cls-14" d="M112.5,15.87l30,17.32,2.5-1.44L115,14.43Z"/>
-      <path id="Path-175" class="cls-12" d="M115,17.32V14.43l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-94">
-      <path id="Path-176" class="cls-14" d="M37.5,59.17l30,17.33L70,75.05,40,57.73Z"/>
-      <path id="Path-177" class="cls-12" d="M40,60.62V57.73l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-95">
-      <path id="Path-178" class="cls-14" d="M77.5,36.08l30,17.32L110,52,80,34.64Z"/>
-      <path id="Path-179" class="cls-12" d="M80,37.52V34.64l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-96">
-      <path id="Path-180" class="cls-14" d="M57.5,47.63,87.5,65,90,63.5,60,46.18Z"/>
-      <path id="Path-181" class="cls-12" d="M60,49.07V46.18l-2.5,1.45Z"/>
-    </g>
-    <g id="Group-97">
-      <path id="Path-182" class="cls-14" d="M97.5,24.53l30,17.32,2.5-1.44L100,23.09Z"/>
-      <path id="Path-183" class="cls-12" d="M100,26V23.09l-2.5,1.44Z"/>
-    </g>
-    <g id="Group-98">
-      <path id="Path-184" class="cls-14" d="M47.5,53.4l30,17.32L80,69.28,50,52Z"/>
-      <path id="Path-185" class="cls-12" d="M50,54.84V52l-2.5,1.4Z"/>
-    </g>
-    <g id="Group-99">
-      <path id="Path-186" class="cls-14" d="M87.5,30.31l30,17.32,2.5-1.45L90,28.86Z"/>
-      <path id="Path-187" class="cls-12" d="M90,31.75V28.86l-2.5,1.45Z"/>
-    </g>
-    <g id="Group-100">
-      <path id="Path-188" class="cls-14" d="M67.5,41.85l30,17.32,2.5-1.44L70,40.41Z"/>
-      <path id="Path-189" class="cls-12" d="M70,43.3V40.41l-2.5,1.44Z"/>
-    </g>
-    <path id="Path-190" class="cls-31" d="M158.75,48.35V32.47l8.75-5V43.3Z"/>
-    <line id="Path-191" class="cls-32" x1="158.75" y1="36.8" x2="167.5" y2="31.75"/>
-    <line id="Path-192" class="cls-32" x1="162.5" y1="46.18" x2="162.5" y2="34.64"/>
-    <path id="Path-193" class="cls-15" d="M168.75,26.7V44l-1.25-.72V27.42Z"/>
-    <path id="Path-194" class="cls-1" d="M158.75,49.79V48.35l8.75-5.05,1.25.72Z"/>
   </g>
 </svg>

@@ -67,14 +67,14 @@ module.exports = {
             for (let x = 0; x < parseInt(request.params.baseNo); x++) {
                 for (let y = 0; y < parseInt(request.params.bodyNo); y++) {
                     for (let z = 0; z < parseInt(request.params.roofNo); z++) {
-                    allBases.push(imageBuilderService.generateImage({
-                        building: parseInt(request.params.building),
-                        base: x,
-                        body: y,
-                        roof: z,
-                        exteriorColorway: 0,
-                        windowColorway: 0
-                    }));
+                        allBases.push(imageBuilderService.generateImage({
+                            building: parseInt(request.params.building),
+                            base: x,
+                            body: y,
+                            roof: z,
+                            exteriorColorway: 0,
+                            windowColorway: 0
+                        }));
                     }
                 }
             }

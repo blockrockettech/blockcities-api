@@ -18,7 +18,7 @@
       }
 
       .window-R-prim {
-        fill: pink;
+        fill: #bd9664;
       }
 
       .cls-2 {
@@ -26,7 +26,7 @@
       }
 
       .window-R-light {
-        fill: purple;
+        fill: #eacb87;
       }
 
       .cls-3 {
@@ -46,7 +46,7 @@
       }
 
       .window-L-prim {
-        fill: lime;
+        fill: #4d3b24;
       }
 
       .cls-6 {
@@ -54,7 +54,7 @@
       }
 
       .window-L-light {
-        fill: cyan;
+        fill: #795a30;
       }
 
       .cls-7 {
