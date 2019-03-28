@@ -13,11 +13,11 @@
         fill: #d2d2d1;
       }
 
-      .window-L-prim {
+      .cls-4 {
         fill: #4d3b25;
       }
 
-      .window-R-prim {
+      .cls-5 {
         fill: #bd9563;
       }
 
@@ -43,8 +43,8 @@
     <path id="Cement-Top" class="cls-1" d="M120,199.18,0,129.9,190,20.2,310,89.49Z"/>
     <path id="Cement-Right" class="cls-2" d="M120,199.18V205L0,135.67V129.9Z"/>
     <path id="Cement-Left" class="cls-3" d="M310,89.49v5.77L120,205v-5.78Z"/>
-    <path id="Base-Window-Right" class="window-L-prim" d="M48.75,126.29V103.2L120,144.33v23.1Z"/>
-    <path id="Base-Window-Left" class="window-R-prim" d="M120,167.43,261.25,85.88V62.78L120,144.33Z"/>
+    <path id="Base-Window-Right" class="cls-4" d="M48.75,126.29V103.2L120,144.33v23.1Z"/>
+    <path id="Base-Window-Left" class="cls-5" d="M120,167.43,261.25,85.88V62.78L120,144.33Z"/>
     <path id="Path" class="cls-6" d="M35,89.49l-5,2.88v39l5,2.89Z"/>
     <path id="Path-2" class="cls-7" d="M273.75,48.35,280,52V91l-6.25,3.61Z"/>
     <path id="Path-3" class="cls-7" d="M248.75,67.11,252.5,65v41.77L248.75,109Z"/>

@@ -1,0 +1,43 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 352.1837">
+  <defs>
+    <style>
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+    </style>
+  </defs>
+  <title>Artboard 10</title>
+  <g id="Group">
+    <path id="anchor_0_144.338_250" class="top-dark" d="M0,69.282l160,92.3761,90-51.9615V92.376L90,0,0,51.9615Z"/>
+    <path id="Path" class="curtain-R-prim-dark" d="M155,141.4508l5,2.8868L250,92.376V300.222l-90,51.9617-5-2.8868Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M160,144.3375,0,51.9615V259.8076l160,92.3761Z"/>
+    <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M160,161.6581l90-51.9616V92.376l-90,51.9615Z"/>
+    <path id="Path-4" data-name="Path" class="curtain-R-prim-light" d="M160,196.2991l90-51.9616V127.017l-90,51.9615Z"/>
+    <path id="Path-5" data-name="Path" class="curtain-R-prim-light" d="M160,230.94l90-51.9615V161.6581L160,213.62Z"/>
+    <path id="Path-6" data-name="Path" class="curtain-R-prim-light" d="M160,265.5811,250,213.62v-17.32l-90,51.9615Z"/>
+    <path id="Path-7" data-name="Path" class="curtain-R-prim-light" d="M160,300.222l90-51.9614V230.94l-90,51.9615Z"/>
+    <path id="Path-8" data-name="Path" class="curtain-R-prim-light" d="M160,334.8632l90-51.9616v-17.32l-90,51.9615Z"/>
+    <path id="Path-9" data-name="Path" class="curtain-L-prim-light" d="M160,161.658,0,69.282v-17.32l160,92.376Z"/>
+    <path id="Path-10" data-name="Path" class="curtain-L-prim-light" d="M160,196.2991,0,103.923v-17.32l160,92.376Z"/>
+    <path id="Path-11" data-name="Path" class="curtain-L-prim-light" d="M160,230.94,0,138.564v-17.32L160,213.62Z"/>
+    <path id="Path-12" data-name="Path" class="curtain-L-prim-light" d="M160,265.5811,0,173.2051v-17.32l160,92.3759Z"/>
+    <path id="Path-13" data-name="Path" class="curtain-L-prim-light" d="M160,300.222,0,207.8461V190.5256l160,92.376Z"/>
+    <path id="Path-14" data-name="Path" class="curtain-L-prim-light" d="M160,334.8632,0,242.4871V225.1666l160,92.376Z"/>
+  </g>
+</svg>

@@ -33,7 +33,6 @@ class ImageBuilderService {
         }) {
 
         try {
-
             if (parseInt(building) === 8) {
                 return await this.generateNoRoofImage(
                     {
@@ -140,6 +139,7 @@ class ImageBuilderService {
             }
 
 
+            console.log(building, base, body, roof);
             console.log(`adjustedBodyAnchorY`, adjustedBodyAnchorY);
             console.log(`adjustedRoofHeight`, adjustedRoofHeight);
 
