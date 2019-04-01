@@ -17,8 +17,12 @@
         fill: #202020;
       }
 
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
       .window-L-prim {
-        fill: #414042;
+        fill: #4d3b25;
       }
     </style>
   </defs>
@@ -120,7 +124,7 @@
   </g>
   <g id="Group-24" data-name="Group">
     <path id="windows-R3-47" data-name="windows-R3" class="cls-1" d="M85.1,435.9l85-49.07v8.66l-13.68,7.9L85.1,444.56Z"/>
-    <path id="windows-R3-48" data-name="windows-R3" class="cls-1" d="M85.1,435.9l85-49.07v8.66l-13.68,7.9L85.1,444.56Z"/>
+    <path id="windows-R3-48" data-name="windows-R3" class="window-R-prim" d="M85.1,435.9l85-49.07v8.66l-13.68,7.9L85.1,444.56Z"/>
   </g>
   <path id="windows-L2" class="window-L-prim" d="M85.06,103.92.06,54.85.1,63.51l85,49.07Z"/>
   <path id="windows-L2-2" data-name="windows-L2" class="window-L-prim" d="M85.06,132.79.06,83.72.1,92.38l85,49.07Z"/>

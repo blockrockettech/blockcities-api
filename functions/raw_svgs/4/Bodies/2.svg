@@ -17,8 +17,12 @@
         fill: #202020;
       }
 
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
       .window-L-prim {
-        fill: #414042;
+        fill: #4d3b25;
       }
     </style>
   </defs>
@@ -118,58 +122,52 @@
     <path id="windows-R3-45" data-name="windows-R3" class="cls-1" d="M85.1,565.8l85-49.08v8.66l-13.68,7.91L85.1,574.46Z"/>
     <path id="windows-R3-46" data-name="windows-R3" class="window-R-prim" d="M85.1,565.8l85-49.08v8.66l-13.68,7.91L85.1,574.46Z"/>
   </g>
+  <path id="windows-R3-47" data-name="windows-R3" class="window-R-prim" d="M85.1,594.67l85-49.08v8.66l-13.68,7.9L85.1,603.33Z"/>
   <g id="Group-24" data-name="Group">
-    <path id="windows-R3-47" data-name="windows-R3" class="cls-1" d="M85.1,594.67l85-49.08v8.66l-13.68,7.9L85.1,603.33Z"/>
-    <path id="windows-R3-48" data-name="windows-R3" class="window-R-prim" d="M85.1,594.67l85-49.08v8.66l-13.68,7.9L85.1,603.33Z"/>
+    <path id="windows-R3-48" data-name="windows-R3" class="cls-1" d="M85.1,291.56l85-49.08v8.66l-13.68,7.9L85.1,300.22Z"/>
+    <path id="windows-R3-49" data-name="windows-R3" class="window-R-prim" d="M85.1,291.56l85-49.08v8.66l-13.68,7.9L85.1,300.22Z"/>
   </g>
   <g id="Group-25" data-name="Group">
-    <path id="windows-R3-49" data-name="windows-R3" class="cls-1" d="M85.1,291.56l85-49.08v8.66l-13.68,7.9L85.1,300.22Z"/>
-    <path id="windows-R3-50" data-name="windows-R3" class="window-R-prim" d="M85.1,291.56l85-49.08v8.66l-13.68,7.9L85.1,300.22Z"/>
+    <path id="windows-R3-50" data-name="windows-R3" class="cls-1" d="M85.1,320.42l85-49.07v8.66l-13.68,7.9L85.1,329.08Z"/>
+    <path id="windows-R3-51" data-name="windows-R3" class="window-R-prim" d="M85.1,320.42l85-49.07v8.66l-13.68,7.9L85.1,329.08Z"/>
   </g>
   <g id="Group-26" data-name="Group">
-    <path id="windows-R3-51" data-name="windows-R3" class="cls-1" d="M85.1,320.42l85-49.07v8.66l-13.68,7.9L85.1,329.08Z"/>
-    <path id="windows-R3-52" data-name="windows-R3" class="window-R-prim" d="M85.1,320.42l85-49.07v8.66l-13.68,7.9L85.1,329.08Z"/>
+    <path id="windows-R3-52" data-name="windows-R3" class="cls-1" d="M85.1,349.29l85-49.07v8.66l-13.68,7.9L85.1,357.95Z"/>
+    <path id="windows-R3-53" data-name="windows-R3" class="window-R-prim" d="M85.1,349.29l85-49.07v8.66l-13.68,7.9L85.1,357.95Z"/>
   </g>
   <g id="Group-27" data-name="Group">
-    <path id="windows-R3-53" data-name="windows-R3" class="cls-1" d="M85.1,349.29l85-49.07v8.66l-13.68,7.9L85.1,357.95Z"/>
-    <path id="windows-R3-54" data-name="windows-R3" class="window-R-prim" d="M85.1,349.29l85-49.07v8.66l-13.68,7.9L85.1,357.95Z"/>
+    <path id="windows-R3-54" data-name="windows-R3" class="cls-1" d="M85.1,378.16l85-49.07v8.66l-13.68,7.9L85.1,386.82Z"/>
+    <path id="windows-R3-55" data-name="windows-R3" class="window-R-prim" d="M85.1,378.16l85-49.07v8.66l-13.68,7.9L85.1,386.82Z"/>
   </g>
   <g id="Group-28" data-name="Group">
-    <path id="windows-R3-55" data-name="windows-R3" class="cls-1" d="M85.1,378.16l85-49.07v8.66l-13.68,7.9L85.1,386.82Z"/>
-    <path id="windows-R3-56" data-name="windows-R3" class="window-R-prim" d="M85.1,378.16l85-49.07v8.66l-13.68,7.9L85.1,386.82Z"/>
+    <path id="windows-R3-56" data-name="windows-R3" class="cls-1" d="M85.1,407.03l85-49.08v8.66l-13.68,7.9L85.1,415.69Z"/>
+    <path id="windows-R3-57" data-name="windows-R3" class="window-R-prim" d="M85.1,407.03l85-49.08v8.66l-13.68,7.9L85.1,415.69Z"/>
   </g>
   <g id="Group-29" data-name="Group">
-    <path id="windows-R3-57" data-name="windows-R3" class="cls-1" d="M85.1,407.03l85-49.08v8.66l-13.68,7.9L85.1,415.69Z"/>
-    <path id="windows-R3-58" data-name="windows-R3" class="window-R-prim" d="M85.1,407.03l85-49.08v8.66l-13.68,7.9L85.1,415.69Z"/>
+    <path id="windows-R3-58" data-name="windows-R3" class="cls-1" d="M85.1,435.89l85-49.07v8.66l-13.68,7.9L85.1,444.55Z"/>
+    <path id="windows-R3-59" data-name="windows-R3" class="window-R-prim" d="M85.1,435.89l85-49.07v8.66l-13.68,7.9L85.1,444.55Z"/>
   </g>
   <g id="Group-30" data-name="Group">
-    <path id="windows-R3-59" data-name="windows-R3" class="cls-1" d="M85.1,435.89l85-49.07v8.66l-13.68,7.9L85.1,444.55Z"/>
-    <path id="windows-R3-60" data-name="windows-R3" class="window-R-prim" d="M85.1,435.89l85-49.07v8.66l-13.68,7.9L85.1,444.55Z"/>
+    <path id="windows-R3-60" data-name="windows-R3" class="cls-1" d="M85.1,464.76l85-49.07v8.66l-13.68,7.9L85.1,473.42Z"/>
+    <path id="windows-R3-61" data-name="windows-R3" class="window-R-prim" d="M85.1,464.76l85-49.07v8.66l-13.68,7.9L85.1,473.42Z"/>
   </g>
   <g id="Group-31" data-name="Group">
-    <path id="windows-R3-61" data-name="windows-R3" class="cls-1" d="M85.1,464.76l85-49.07v8.66l-13.68,7.9L85.1,473.42Z"/>
-    <path id="windows-R3-62" data-name="windows-R3" class="window-R-prim" d="M85.1,464.76l85-49.07v8.66l-13.68,7.9L85.1,473.42Z"/>
+    <path id="windows-R3-62" data-name="windows-R3" class="cls-1" d="M85.1,493.63l85-49.08v8.67l-13.68,7.9L85.1,502.29Z"/>
+    <path id="windows-R3-63" data-name="windows-R3" class="window-R-prim" d="M85.1,493.63l85-49.08v8.67l-13.68,7.9L85.1,502.29Z"/>
   </g>
   <g id="Group-32" data-name="Group">
-    <path id="windows-R3-63" data-name="windows-R3" class="cls-1" d="M85.1,493.63l85-49.08v8.67l-13.68,7.9L85.1,502.29Z"/>
-    <path id="windows-R3-64" data-name="windows-R3" class="window-R-prim" d="M85.1,493.63l85-49.08v8.67l-13.68,7.9L85.1,502.29Z"/>
+    <path id="windows-R3-64" data-name="windows-R3" class="cls-1" d="M85.1,522.5l85-49.08v8.66l-13.68,7.9L85.1,531.16Z"/>
+    <path id="windows-R3-65" data-name="windows-R3" class="window-R-prim" d="M85.1,522.5l85-49.08v8.66l-13.68,7.9L85.1,531.16Z"/>
   </g>
   <g id="Group-33" data-name="Group">
-    <path id="windows-R3-65" data-name="windows-R3" class="cls-1" d="M85.1,522.5l85-49.08v8.66l-13.68,7.9L85.1,531.16Z"/>
-    <path id="windows-R3-66" data-name="windows-R3" class="window-R-prim" d="M85.1,522.5l85-49.08v8.66l-13.68,7.9L85.1,531.16Z"/>
+    <path id="windows-R3-66" data-name="windows-R3" class="cls-1" d="M85.1,551.36l85-49.07v8.66l-13.68,7.9L85.1,560.03Z"/>
+    <path id="windows-R3-67" data-name="windows-R3" class="window-R-prim" d="M85.1,551.36l85-49.07v8.66l-13.68,7.9L85.1,560.03Z"/>
   </g>
   <g id="Group-34" data-name="Group">
-    <path id="windows-R3-67" data-name="windows-R3" class="cls-1" d="M85.1,551.36l85-49.07v8.66l-13.68,7.9L85.1,560.03Z"/>
-    <path id="windows-R3-68" data-name="windows-R3" class="window-R-prim" d="M85.1,551.36l85-49.07v8.66l-13.68,7.9L85.1,560.03Z"/>
+    <path id="windows-R3-68" data-name="windows-R3" class="cls-1" d="M85.1,580.23l85-49.07v8.66l-13.68,7.9L85.1,588.89Z"/>
+    <path id="windows-R3-69" data-name="windows-R3" class="window-R-prim" d="M85.1,580.23l85-49.07v8.66l-13.68,7.9L85.1,588.89Z"/>
   </g>
-  <g id="Group-35" data-name="Group">
-    <path id="windows-R3-69" data-name="windows-R3" class="cls-1" d="M85.1,580.23l85-49.07v8.66l-13.68,7.9L85.1,588.89Z"/>
-    <path id="windows-R3-70" data-name="windows-R3" class="window-R-prim" d="M85.1,580.23l85-49.07v8.66l-13.68,7.9L85.1,588.89Z"/>
-  </g>
-  <g id="Group-36" data-name="Group">
-    <path id="windows-R3-71" data-name="windows-R3" class="cls-1" d="M85.1,609.1l85-49.07v8.66l-13.68,7.9L85.1,617.76Z"/>
-    <path id="windows-R3-72" data-name="windows-R3" class="cls-1" d="M85.1,609.1l85-49.07v8.66l-13.68,7.9L85.1,617.76Z"/>
-  </g>
+  <path id="windows-R3-70" data-name="windows-R3" class="window-R-prim" d="M85.1,609.1l85-49.07v8.66l-13.68,7.9L85.1,617.76Z"/>
   <path id="windows-L2" class="window-L-prim" d="M85.06,277.12l-85-49.07.04,8.66,85,49.07Z"/>
   <path id="windows-L2-2" data-name="windows-L2" class="window-L-prim" d="M85.06,262.69l-85-49.08.04,8.67,85,49.07Z"/>
   <path id="windows-L2-3" data-name="windows-L2" class="window-L-prim" d="M85.06,248.26l-85-49.08.04,8.66,85,49.08Z"/>

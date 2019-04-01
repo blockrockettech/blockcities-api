@@ -38,7 +38,7 @@ class BlockcitiesContractService {
         const token = connectToBlockCities(network);
         const tokensOfOwner = await token.tokensOfOwner(owner);
 
-        console.log(tokensOfOwner);
+        // console.log(tokensOfOwner);
 
         return tokensOfOwner;
     }
@@ -50,8 +50,6 @@ class BlockcitiesContractService {
 
         // Get token attributes
         const tokenAttrs = await token.attributes(tokenId);
-
-
 
         return {
             ...tokenAttrs

@@ -23,7 +23,7 @@ module.exports = {
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
 
             if (tokenDetails.special.toNumber() !== 0) {
-                console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+                // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
                 const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special.toNumber());
                 return response
                     .contentType('image/svg+xml')
@@ -42,7 +42,7 @@ module.exports = {
 
     async generateTestImage (request, response) {
         try {
-            console.log(request.params);
+            // console.log(request.params);
             const image = await imageBuilderService.generateImage({
                 building: parseInt(request.params.building),
                 base: parseInt(request.params.base),

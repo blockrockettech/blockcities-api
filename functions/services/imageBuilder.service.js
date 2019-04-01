@@ -138,10 +138,9 @@ class ImageBuilderService {
                 canvasHeight = canvasHeight + roofNudge;
             }
 
-
-            console.log(building, base, body, roof);
-            console.log(`adjustedBodyAnchorY`, adjustedBodyAnchorY);
-            console.log(`adjustedRoofHeight`, adjustedRoofHeight);
+            // console.log(building, base, body, roof);
+            // console.log(`adjustedBodyAnchorY`, adjustedBodyAnchorY);
+            // console.log(`adjustedRoofHeight`, adjustedRoofHeight);
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
