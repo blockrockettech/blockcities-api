@@ -81,7 +81,7 @@ class BlockcitiesContractService {
         // Build full details response
         return {
             exteriorColorway: _exteriorColorway.toNumber(),
-            windowColorway: _backgroundColorway.toNumber(),
+            backgroundColorway: _backgroundColorway.toNumber(),
             city: _city.toNumber(),
             building: _building.toNumber(),
             base: _base.toNumber(),
