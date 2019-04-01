@@ -54,8 +54,12 @@ app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response
     return require('./image').generateTestImages(request, response);
 });
 
-
+// Slightly bump the defaults to 512mb and 2min timeout
+const runtimeOpts = {
+    memory: '512MB',
+    timeoutSeconds: 240
+};
 
 // Expose Express API as a single Cloud Function:
-exports.api = functions.https.onRequest(app);
+exports.api = functions.runWith(runtimeOpts).https.onRequest(app);
 
