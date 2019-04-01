@@ -6,6 +6,8 @@ class CheerioSVGService {
         try {
             const $ = require('cheerio').load(svgXml, {xmlMode: true});
 
+            console.log(exteriorFill);
+
             _.forEach(exteriorFill.left, (v, k) => {$(`.exterior-L-${k}`).attr('style', `fill: ${v}`);});
             _.forEach(exteriorFill.right, (v, k) => $(`.exterior-R-${k}`).attr('style', `fill: ${v}`));
             _.forEach(exteriorFill.top, (v, k) => $(`.top-${k}`).attr('style', `fill: ${v}`));
