@@ -17,6 +17,7 @@ const cityNameMapper = ({special, city}) => {
         case 3:
             return "San Francisco";
         default:
+            console.error(`Unable to map city [${city}]`);
             return _.toString(city);
     }
 };
@@ -25,7 +26,7 @@ const specialNameMapper = ({special}) => {
     if (special !== 0 && specialMappings[special]) {
         return specialMappings[special].name;
     }
-    return "none";
+    return false;
 };
 
 const buildingNameMapper = ({building, special}) => {
@@ -67,7 +68,70 @@ const buildingNameMapper = ({building, special}) => {
         case 15:
             return "2 Peachtree";
         default:
+            console.error(`Unable to map building [${building}]`);
             return _.toString(building);
+    }
+};
+
+const baseNameMapper = ({base, special}) => {
+    if (special !== 0 && specialMappings[special]) {
+        return "Standard";
+    }
+
+    switch (base) {
+        case 0:
+            return "Standard";
+        case 1:
+            return "Westin Base";
+        case 2:
+            return "Parking Deck";
+        case 3:
+            return "ATT Base";
+        case 4:
+            return "Aston Base";
+        case 5:
+            return "Tree Base";
+        case 6:
+            return "Retail Base";
+        case 7:
+            return "Citigroup Base";
+        default:
+            console.error(`Unable to map base [${base}]`);
+            return _.toString(base);
+    }
+};
+
+const roofNameMapper = ({roof, special}) => {
+    if (special !== 0 && specialMappings[special]) {
+        return "Standard";
+    }
+
+    switch (roof) {
+        case 0:
+            return "Standard";
+        case 1:
+            return "432 Roof";
+        case 2:
+            return "886 6th Ave";
+        case 3:
+            return "Pool Roof";
+        case 4:
+            return "Equitable";
+        case 5:
+            return "CNA";
+        case 6:
+            return "Helipad";
+        case 7:
+            return "BlockCities Sign Roof";
+        case 8:
+            return "Vesey Roof";
+        case 9:
+            return "Aston Abr";
+        case 10:
+            return "Linkedin Roof";
+        default:
+            console.error(`Unable to map roof [${roof}]`);
+            return _.toString(roof);
     }
 };
 
@@ -77,6 +141,8 @@ const decorateMetadataName = (rawMetaData) => {
         city: cityNameMapper(rawMetaData),
         special: specialNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
+        base: baseNameMapper(rawMetaData),
+        roof: roofNameMapper(rawMetaData),
     };
 };
 
