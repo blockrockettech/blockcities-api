@@ -5,7 +5,7 @@
         fill: #59acd0;
       }
 
-      .cls-1 {
+      .curtain-L-prim-light {
         fill: #438fb0;
       }
 
@@ -25,7 +25,7 @@
   <title>Artboard 8</title>
   <g id="Group">
     <path id="Path" class="curtain-R-prim-light" d="M160,150.1111l-10-5.7738V583.1235l10,5.7734L260,531.162V92.376Z"/>
-    <path id="Path-2" data-name="Path" class="cls-1" d="M0,57.735V496.5209L160,588.897V150.111Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-light" d="M0,57.735V496.5209L160,588.897V150.111Z"/>
     <path id="anchor_0_150.111_260" class="top-dark" d="M260,98.1492,160,155.8843,0,63.5082V57.735L100,0,260,92.376Z"/>
     <path id="Path-3" data-name="Path" class="curtain-L-prim-dark" d="M160,150.1108,0,57.7347v23.094l160,92.3761Z"/>
     <path id="Path-4" data-name="Path" class="curtain-L-prim-dark" d="M160,196.2989,0,103.9229v23.094l160,92.376Z"/>

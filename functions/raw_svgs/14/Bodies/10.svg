@@ -9,7 +9,7 @@
         fill: #59acd0;
       }
 
-      .cls-1 {
+      .curtain-L-prim-light {
         fill: #438fb0;
       }
 
@@ -26,7 +26,7 @@
   <g id="Group">
     <path id="anchor_0_150.111_260" class="top-dark" d="M260,98.15l-100,57.735L0,63.5085V57.735L100,0,260,92.376Z"/>
     <path id="Path" class="curtain-R-prim-light" d="M160,150.111l-5-2.8867V447.4464l5,2.8868,100-57.735V92.376Z"/>
-    <path id="Path-2" data-name="Path" class="cls-1" d="M0,57.735V357.9571l160,92.3761V150.111Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-light" d="M0,57.735V357.9571l160,92.3761V150.111Z"/>
     <path id="Path-3" data-name="Path" class="curtain-L-prim-dark" d="M160,150.1112,0,57.7351v23.094l160,92.3761Z"/>
     <path id="Path-4" data-name="Path" class="curtain-L-prim-dark" d="M160,196.2992,0,103.9231v23.094l160,92.3761Z"/>
     <path id="Path-5" data-name="Path" class="curtain-L-prim-dark" d="M160,242.4876,0,150.1115v23.094l160,92.3761Z"/>
