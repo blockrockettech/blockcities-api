@@ -75,8 +75,7 @@ module.exports = {
                             base: x,
                             body: y,
                             roof: z,
-                            // exteriorColorway: getRandomArbitrary(21)
-                            exteriorColorway: 8,
+                            exteriorColorway: getRandomArbitrary(20)
                         }));
                     }
                 }

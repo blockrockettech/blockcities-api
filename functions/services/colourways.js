@@ -140,6 +140,23 @@ module.exports = {
                 dark: '#D9BEC0',
             }
         },
+        black: {
+            left: {
+                prim: '#000000',
+                light: '#555454',
+                dark: '#000000',
+            },
+            right: {
+                prim: '#2E2E2E',
+                light: '#959293',
+                dark: '#2E2E2E',
+            },
+            top: {
+                prim: '#666666',
+                light: '#A4A4A4',
+                dark: '#4F4F4F',
+            }
+        },
     },
     windows: {
         black: {
