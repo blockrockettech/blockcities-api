@@ -73,6 +73,14 @@ const buildingNameMapper = ({building, special}) => {
     }
 };
 
+const bodyNameMapper = ({body, special}) => {
+    if (special !== 0 && specialMappings[special]) {
+        return "Standard";
+    }
+
+    return `Variant ${body}`;
+};
+
 const baseNameMapper = ({base, special}) => {
     if (special !== 0 && specialMappings[special]) {
         return "Standard";
@@ -139,10 +147,11 @@ const decorateMetadataName = (rawMetaData) => {
     return {
         ...rawMetaData,
         city: cityNameMapper(rawMetaData),
-        special: specialNameMapper(rawMetaData),
-        building: buildingNameMapper(rawMetaData),
         base: baseNameMapper(rawMetaData),
+        body: bodyNameMapper(rawMetaData),
         roof: roofNameMapper(rawMetaData),
+        building: buildingNameMapper(rawMetaData),
+        special: specialNameMapper(rawMetaData),
     };
 };
 
