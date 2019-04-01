@@ -57,7 +57,7 @@ module.exports = {
         const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
         const metaData = await this._metadata(network, tokenId);
 
-        return response.status(200).json({...tokenDetails, ...metaData, tokenId});
+        return response.status(200).json({...tokenDetails, tokenId});
     },
 
     async lookupTokenDetailsForOwner(request, response) {

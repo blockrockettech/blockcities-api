@@ -1,3 +1,4 @@
+// Don't export bname to the public!
 module.exports = {
     0: {name: '241 Ralph McGill', bname: 'Georgia Power', city: 'Atlanta'},
     1: {name: '133 Peachtree', bname: 'GP Tower', city: 'Atlanta'},
