@@ -2,17 +2,18 @@ const _ = require('lodash');
 
 const blockcitiesContractService = require('../services/blockcities.contract.service');
 const specialMapping = require('./special-data-mapping');
+const {decorateMetadataName} = require("./metadata.decorator");
 
 module.exports = {
 
-    async tokenPointers (request, response) {
+    async tokenPointers(request, response) {
         const network = request.params.network;
         const tokenPointers = await blockcitiesContractService.tokenPointers(network);
         console.log(tokenPointers);
         return response.status(200).json(tokenPointers);
     },
 
-    async _metadata (network, tokenId) {
+    async _metadata(network, tokenId) {
 
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
@@ -23,7 +24,7 @@ module.exports = {
                 description: `${specialMapping[tokenAttrs.special].city}`,
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
                 attributes: {
-                    ...tokenAttrs
+                    ...decorateMetadataName(tokenAttrs)
                 }
             };
         }
@@ -33,12 +34,12 @@ module.exports = {
             description: `building ${tokenId}`,
             image: `${tokenBaseURI[0]}${tokenId}/image`,
             attributes: {
-                ...tokenAttrs
+                ...decorateMetadataName(tokenAttrs)
             }
         };
     },
 
-    async tokenMetadata (request, response) {
+    async tokenMetadata(request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -48,7 +49,7 @@ module.exports = {
         return response.status(200).json(metadata);
     },
 
-    async lookupTokenDetails (request, response) {
+    async lookupTokenDetails(request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -59,7 +60,7 @@ module.exports = {
         return response.status(200).json({...tokenDetails, ...metaData, tokenId});
     },
 
-    async lookupTokenDetailsForOwner (request, response) {
+    async lookupTokenDetailsForOwner(request, response) {
 
         const owner = request.params.owner;
         const network = request.params.network;
