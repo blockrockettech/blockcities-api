@@ -4,6 +4,7 @@ const {createCanvas, loadImage, Image} = require('canvas');
 const cheerioSVGService = require('./cheerioSVGService.service');
 
 const colourways = require('./colourways');
+const colourLogic = require('./colour-logic');
 
 const exteriorsKeys = Object.keys(colourways.exteriors);
 const windowsKeys = Object.keys(colourways.windows);
@@ -29,7 +30,6 @@ class ImageBuilderService {
             body,
             roof,
             exteriorColorway,
-            windowColorway
         }) {
 
         try {
@@ -40,7 +40,6 @@ class ImageBuilderService {
                         base,
                         body,
                         exteriorColorway,
-                        windowColorway,
                     }
                 );
             }
@@ -55,6 +54,10 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
+            const isCurtainBody = cheerioSVGService.isCurtainBody(rawBodySvg);
+            console.log(`CURTAIN ${building}-${body} -- ${exteriorColorway}`, !!isCurtainBody);
+            console.log(colourLogic[exteriorColorway]);
+
             const {
                 svg: processedBaseSvg,
                 anchorX: processedBaseAnchorX,
@@ -62,9 +65,9 @@ class ImageBuilderService {
                 anchorWidthPath: processedBaseAnchorWidthPath
             } = cheerioSVGService.process(
                 rawBaseSvg,
-                colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[windowColorway]],
-                colourways.curtains[curtainsKeys[windowColorway]],
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][3]],
+                colourways.curtains[colourLogic[exteriorColorway][3]],
                 colourways.concrete,
             );
             const {
@@ -74,16 +77,16 @@ class ImageBuilderService {
                 anchorWidthPath: processedBodyAnchorWidthPath
             } = cheerioSVGService.process(
                 rawBodySvg,
-                colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[windowColorway]],
-                colourways.curtains[curtainsKeys[windowColorway]],
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][2]],
+                colourways.curtains[colourLogic[exteriorColorway][2]],
                 colourways.concrete,
             );
             const {svg: processedRoofSvg} = cheerioSVGService.process(
                 rawRoofSvg,
-                colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[windowColorway]],
-                colourways.curtains[curtainsKeys[windowColorway]],
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][1]],
+                colourways.curtains[colourLogic[exteriorColorway][1]],
                 colourways.concrete,
             );
 
@@ -192,13 +195,13 @@ class ImageBuilderService {
         }
     }
 
+    // FIXME - extract common logic
     async generateNoRoofImage (
         {
             building,
             base,
             body,
-            exteriorColorway,
-            windowColorway
+            exteriorColorway
         }) {
 
         try {
@@ -218,8 +221,8 @@ class ImageBuilderService {
             } = cheerioSVGService.process(
                 rawBaseSvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[windowColorway]],
-                colourways.curtains[curtainsKeys[windowColorway]],
+                colourways.windows[windowsKeys[0]],
+                colourways.curtains[curtainsKeys[0]],
                 colourways.concrete,
             );
             const {
@@ -230,8 +233,8 @@ class ImageBuilderService {
             } = cheerioSVGService.process(
                 rawBodySvg,
                 colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[windowColorway]],
-                colourways.curtains[curtainsKeys[windowColorway]],
+                colourways.windows[windowsKeys[0]],
+                colourways.curtains[curtainsKeys[0]],
                 colourways.concrete,
             );
 

@@ -172,6 +172,16 @@ module.exports = {
                 light: '#F7F7F7',
             },
         },
+        darkgrey: {
+            left: {
+                prim: '#9A9C9F',
+                light: '#B2B4B7',
+            },
+            right: {
+                prim: '#D1D1D1',
+                light: '#F7F7F7',
+            },
+        },
         gold: {
             left: {
                 prim: '#4D3B24',
@@ -213,7 +223,17 @@ module.exports = {
                 prim_dark: '#BD9664',
                 prim_light: '#EACB87'
             },
-        }
+        },
+        darkgrey: {
+            left: {
+                prim_dark: '#000000',
+                prim_light: '#2E2E2E'
+            },
+            right: {
+                prim_dark: '#5E5E5E',
+                prim_light: '#747474'
+            },
+        },
     },
     concrete: {
         classic: {

@@ -48,8 +48,7 @@ module.exports = {
                 base: parseInt(request.params.base),
                 body: parseInt(request.params.body),
                 roof: parseInt(request.params.roof),
-                exteriorColorway: parseInt(request.params.exterior),
-                windowColorway: parseInt(request.params.windows)
+                exteriorColorway: parseInt(request.params.exterior)
             });
 
             return response
@@ -63,6 +62,10 @@ module.exports = {
     async generateTestImages (request, response) {
         try {
 
+            function getRandomArbitrary(max) {
+                return Math.floor(Math.random() * max);
+            }
+
             const allBases = [];
             for (let x = 0; x < parseInt(request.params.baseNo); x++) {
                 for (let y = 0; y < parseInt(request.params.bodyNo); y++) {
@@ -72,8 +75,8 @@ module.exports = {
                             base: x,
                             body: y,
                             roof: z,
-                            exteriorColorway: 0,
-                            windowColorway: 0
+                            // exteriorColorway: getRandomArbitrary(21)
+                            exteriorColorway: 8,
                         }));
                     }
                 }
