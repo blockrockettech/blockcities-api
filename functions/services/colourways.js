@@ -215,41 +215,57 @@ module.exports = {
         trueblue: {
             left: {
                 prim_dark: '#2A5A95',
-                prim_light: '#3D79C1'
+                prim_light: '#3D79C1',
+                prim_dark_light: '#2D5F99',
+                prim_light_dark: '#3A78C3',
             },
             right: {
                 prim_dark: '#90C2FF',
-                prim_light: '#BEDBFF'
+                prim_light: '#BEDBFF',
+                prim_dark_light: '#95C5FF',
+                prim_light_dark: '#BDDAFD',
             },
         },
         aquablue: {
             left: {
                 prim_dark: '#11424D',
-                prim_light: '#186273'
+                prim_light: '#186273',
+                prim_dark_light: '#135260',
+                prim_light_dark: '#175B6A',
             },
             right: {
                 prim_dark: '#1F788C',
-                prim_light: '#2D95AC'
+                prim_light: '#2D95AC',
+                prim_dark_light: '#26869B',
+                prim_light_dark: '#298DA4',
             },
         },
         gold: {
             left: {
                 prim_dark: '#392E20',
-                prim_light: '#795A30'
+                prim_light: '#795A30',
+                prim_dark_light: '#4D3B24',
+                prim_light_dark: '#5E4421',
             },
             right: {
                 prim_dark: '#BD9664',
-                prim_light: '#EACB87'
+                prim_light: '#EACB87',
+                prim_dark_light: '#BD9664',
+                prim_light_dark: '#CAA973',
             },
         },
         darkgrey: {
             left: {
                 prim_dark: '#000000',
-                prim_light: '#2E2E2E'
+                prim_light: '#2E2E2E',
+                prim_dark_light: '#171717',
+                prim_light_dark: '#262626',
             },
             right: {
                 prim_dark: '#5E5E5E',
-                prim_light: '#747474'
+                prim_light: '#747474',
+                prim_dark_light: '#646363',
+                prim_light_dark: '#686868',
             },
         },
     },
