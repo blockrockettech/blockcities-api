@@ -65,7 +65,7 @@ class BlockcitiesContractService {
         // Get token attributes
         const {
             _exteriorColorway,
-            _windowColorway,
+            _backgroundColorway,
             _city,
             _building,
             _base,
@@ -74,16 +74,14 @@ class BlockcitiesContractService {
             _special,
             _architect
         } = await token.attributes(tokenId);
-        
-        console.log('building', _building);
 
         // Get token URI
-        const tokenURI = await token.tokenURI(tokenId);
+        // const tokenURI = await token.tokenURI(tokenId);
 
         // Build full details response
         return {
             exteriorColorway: _exteriorColorway.toNumber(),
-            windowColorway: _windowColorway.toNumber(),
+            windowColorway: _backgroundColorway.toNumber(),
             city: _city.toNumber(),
             building: _building.toNumber(),
             base: _base.toNumber(),
