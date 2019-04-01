@@ -191,12 +191,13 @@ module.exports = {
         },
         darkgrey: {
             left: {
-                prim: '#9A9C9F',
-                light: '#B2B4B7',
+                prim: '#464646',
+                light: '#5D5D5D',
             },
             right: {
-                prim: '#D1D1D1',
-                light: '#F7F7F7',
+                prim: '#8B8B8B',
+                light: '#8B8B8B',
+
             },
         },
         gold: {
