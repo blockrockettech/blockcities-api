@@ -197,11 +197,13 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
 
 const decorateMetadataName = (rawMetaData) => {
     return {
-        ...rawMetaData,
+        // FIXME with proper mappings
+        // ...rawMetaData,
+        architect: rawMetaData.architect,
         city: cityNameMapper(rawMetaData),
-        base: baseNameMapper(rawMetaData),
+        // base: baseNameMapper(rawMetaData),
         body: bodyNameMapper(rawMetaData),
-        roof: roofNameMapper(rawMetaData),
+        // roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
         special: specialNameMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
