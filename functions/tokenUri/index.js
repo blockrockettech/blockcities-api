@@ -55,7 +55,6 @@ module.exports = {
         const network = request.params.network;
 
         const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
-        const metaData = await this._metadata(network, tokenId);
 
         return response.status(200).json({...tokenDetails, tokenId});
     },

@@ -54,9 +54,6 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-            // const isCurtainBody = cheerioSVGService.isCurtainBody(rawBodySvg);
-            // console.log(`CURTAIN ${building}-${body} -- ${exteriorColorway}`, !!isCurtainBody);
-            // console.log(colourLogic[exteriorColorway]);
 
             const {
                 svg: processedBaseSvg,
@@ -113,6 +110,10 @@ class ImageBuilderService {
                 svg: roofImage
             };
 
+            console.log(`base`, baseConfig);
+            console.log(`body`, bodyConfig);
+            console.log(`roof`, roofConfig);
+
             const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorY = bodyConfig.anchorY * (adjustedBodyHeight / bodyConfig.height);
 
@@ -121,9 +122,9 @@ class ImageBuilderService {
 
             const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
 
-            // console.log(`height`, bodyConfig.height, adjustedBodyHeight);
-            // console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
-            // console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
+            console.log(`height`, bodyConfig.height, adjustedBodyHeight);
+            console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
+            console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             let canvasHeight = baseConfig.height
