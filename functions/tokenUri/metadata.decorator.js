@@ -1,6 +1,7 @@
 const _ = require('lodash');
 
 const specialMappings = require('./special-data-mapping');
+const colorLogic = require('../services/colour-logic');
 
 const cityNameMapper = ({special, city}) => {
     if (special !== 0 && specialMappings[special]) {
@@ -75,7 +76,7 @@ const buildingNameMapper = ({building, special}) => {
 
 const bodyNameMapper = ({body, special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return "Standard";
+        return "Special";
     }
 
     return `Variant ${body}`;
@@ -83,7 +84,7 @@ const bodyNameMapper = ({body, special}) => {
 
 const baseNameMapper = ({base, special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return "Standard";
+        return "Special";
     }
 
     switch (base) {
@@ -111,7 +112,7 @@ const baseNameMapper = ({base, special}) => {
 
 const roofNameMapper = ({roof, special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return "Standard";
+        return "Special";
     }
 
     switch (roof) {
@@ -143,6 +144,57 @@ const roofNameMapper = ({roof, special}) => {
     }
 };
 
+const exteriorColorwayName = ({exteriorColorway, special}) => {
+    if (special !== 0 && specialMappings[special]) {
+        return {
+            exteriorColorway: "Special"
+        };
+    }
+
+    const colorArray = colorLogic[exteriorColorway];
+    if (colorArray) {
+        return {
+            exteriorColorway: colorArray[0],
+            roofWindowColorway: colorArray[1],
+            bodyWindowColorway: colorArray[2],
+            baseWindowColorway: colorArray[3],
+        };
+    }
+
+    console.error(`Unable to map exteriorColorway [${exteriorColorway}]`);
+    return {
+        exteriorColorway: _.toString(exteriorColorway)
+    };
+};
+
+const backgroundColorwayName = ({backgroundColorway, special}) => {
+    if (special !== 0 && specialMappings[special]) {
+        return "Special";
+    }
+
+    switch (backgroundColorway) {
+        case 0:
+            return "Yellow";
+        case 1:
+            return "Aqua";
+        case 2:
+            return "Dull Blue";
+        case 3:
+            return "Blue Blue";
+        case 4:
+            return "Pink";
+        case 5:
+            return "Orange";
+        case 6:
+            return "Bold Blue";
+        case 7:
+            return "Grey";
+        default:
+            console.error(`Unable to map backgroundColorway [${backgroundColorway}]`);
+            return _.toString(backgroundColorway);
+    }
+};
+
 const decorateMetadataName = (rawMetaData) => {
     return {
         ...rawMetaData,
@@ -152,6 +204,8 @@ const decorateMetadataName = (rawMetaData) => {
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
         special: specialNameMapper(rawMetaData),
+        backgroundColorway: backgroundColorwayName(rawMetaData),
+        ...exteriorColorwayName(rawMetaData),
     };
 };
 
