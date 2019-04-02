@@ -25,6 +25,10 @@
         fill: #73302e;
       }
 
+      .top-dark {
+        fill: #c67471;
+      }
+
       .exterior-R-prim {
         fill: #d05752;
       }
@@ -50,9 +54,9 @@
     <path id="Path-8" data-name="Path" class="top-prim" d="M10,63.5085l20,11.547,20-11.547,20,11.547,20-11.547,20,11.547,20-11.547,20,11.547,20-11.547,20,11.547,20-11.547-20-11.547,20-11.547L150,5.7735,130,17.32,110,5.7735Z"/>
     <path id="Path-9" data-name="Path" class="exterior-L-light" d="M122.5,59.1783h15v-8.66h-15l-35-20.2073v8.66Z"/>
     <path id="Path-10" data-name="Path" class="exterior-L-prim" d="M205,43.3012,150,11.547V5.7735l60,34.641Z"/>
-    <path id="Path-11" data-name="Path" class="curtain-R-prim-dark" d="M150,28.8674l12.5-7.2168,6.25,3.6084-12.5,7.2169Z"/>
-    <path id="Path-12" data-name="Path" class="curtain-R-prim-dark" d="M158.75,33.9192l12.5-7.2168,6.25,3.6084L165,37.5277Z"/>
-    <path id="Path-13" data-name="Path" class="curtain-R-prim-dark" d="M167.5,38.9711,180,31.7542l6.25,3.6085L173.75,42.58Z"/>
+    <path id="Path-11" data-name="Path" class="top-dark" d="M150,28.8674l12.5-7.2168,6.25,3.6084-12.5,7.2169Z"/>
+    <path id="Path-12" data-name="Path" class="top-dark" d="M158.75,33.9192l12.5-7.2168,6.25,3.6084L165,37.5277Z"/>
+    <path id="Path-13" data-name="Path" class="top-dark" d="M167.5,38.9711,180,31.7542l6.25,3.6085L173.75,42.58Z"/>
     <path id="Path-14" data-name="Path" class="top-light" d="M87.5,30.3108l22.5-12.99,42.5,24.5373-15,8.66h-15Z"/>
     <path id="Path-15" data-name="Path" class="exterior-R-prim" d="M152.5,50.5181v-8.66l-15,8.66v8.66Z"/>
     <path id="Path-16" data-name="Path" class="curtain-R-prim-dark" d="M30,80.829,50,69.282V259.8076l-20,11.547Z"/>
