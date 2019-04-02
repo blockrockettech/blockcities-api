@@ -143,13 +143,13 @@ module.exports = {
         black: {
             left: {
                 prim: '#000000',
-                light: '#555454',
-                dark: '#000000',
+                light: '#2A2A2A',
+                dark: '#202020',
             },
             right: {
                 prim: '#2E2E2E',
-                light: '#959293',
-                dark: '#2E2E2E',
+                light: '#484848',
+                dark: '#202020',
             },
             top: {
                 prim: '#666666',
