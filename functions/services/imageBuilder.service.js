@@ -54,7 +54,6 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
-
             const {
                 svg: processedBaseSvg,
                 anchorX: processedBaseAnchorX,
@@ -66,6 +65,7 @@ class ImageBuilderService {
                 colourways.windows[colourLogic[exteriorColorway][3]],
                 colourways.curtains[colourLogic[exteriorColorway][3]],
             );
+
             const {
                 svg: processedBodySvg,
                 anchorX: processedBodyAnchorX,
@@ -77,6 +77,7 @@ class ImageBuilderService {
                 colourways.windows[colourLogic[exteriorColorway][2]],
                 colourways.curtains[colourLogic[exteriorColorway][2]],
             );
+
             const {svg: processedRoofSvg} = cheerioSVGService.process(
                 rawRoofSvg,
                 colourways.exteriors[colourLogic[exteriorColorway][0]],
@@ -229,10 +230,11 @@ class ImageBuilderService {
                 anchorWidthPath: processedBaseAnchorWidthPath
             } = cheerioSVGService.process(
                 rawBaseSvg,
-                colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[0]],
-                colourways.curtains[curtainsKeys[0]],
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][3]],
+                colourways.curtains[colourLogic[exteriorColorway][3]],
             );
+
             const {
                 svg: processedBodySvg,
                 anchorX: processedBodyAnchorX,
@@ -240,9 +242,9 @@ class ImageBuilderService {
                 anchorWidthPath: processedBodyAnchorWidthPath
             } = cheerioSVGService.process(
                 rawBodySvg,
-                colourways.exteriors[exteriorsKeys[exteriorColorway]],
-                colourways.windows[windowsKeys[0]],
-                colourways.curtains[curtainsKeys[0]],
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][2]],
+                colourways.curtains[colourLogic[exteriorColorway][2]],
             );
 
             const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
