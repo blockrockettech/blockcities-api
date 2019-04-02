@@ -1,5 +1,6 @@
 module.exports =
 
+    //  # | Exterior | Roof Window | Body Window | Base Window |
     // 0	Red	Dark Grey	Dark Grey	Dark Grey
     //
     // 1	Dark Grey	Gold	Gold	Gold
