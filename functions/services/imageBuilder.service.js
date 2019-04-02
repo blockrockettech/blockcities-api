@@ -110,6 +110,18 @@ class ImageBuilderService {
                 svg: roofImage
             };
 
+            // check and log for dodgy anchors
+            if (
+                isNaN(baseConfig.anchorWidthPath) ||
+                isNaN(bodyConfig.anchorWidthPath) ||
+                isNaN(baseConfig.anchorX) ||
+                isNaN(baseConfig.anchorY) ||
+                isNaN(bodyConfig.anchorX) ||
+                isNaN(bodyConfig.anchorY)
+            ) {
+                console.error(`NaN detected: Buidling ${building} Base ${base} Body ${body} Roof ${roof}`);
+            }
+
             console.log(`base`, baseConfig);
             console.log(`body`, bodyConfig);
             console.log(`roof`, roofConfig);
