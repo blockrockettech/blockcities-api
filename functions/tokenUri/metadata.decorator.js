@@ -174,21 +174,21 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
 
     switch (backgroundColorway) {
         case 0:
-            return "Yellow";
+            return "yellow";
         case 1:
-            return "Aqua";
+            return "aqua";
         case 2:
-            return "Dullblue";
+            return "dullblue";
         case 3:
-            return "Blueblue";
+            return "blueblue";
         case 4:
-            return "Pink";
+            return "pink";
         case 5:
-            return "Orange";
+            return "orange";
         case 6:
-            return "Boldblue";
+            return "boldblue";
         case 7:
-            return "Grey";
+            return "grey";
         default:
             console.error(`Unable to map backgroundColorway [${backgroundColorway}]`);
             return _.toString(backgroundColorway);
