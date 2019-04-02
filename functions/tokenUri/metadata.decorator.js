@@ -178,15 +178,15 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
         case 1:
             return "Aqua";
         case 2:
-            return "Dull Blue";
+            return "Dullblue";
         case 3:
-            return "Blue Blue";
+            return "Blueblue";
         case 4:
             return "Pink";
         case 5:
             return "Orange";
         case 6:
-            return "Bold Blue";
+            return "Boldblue";
         case 7:
             return "Grey";
         default:
