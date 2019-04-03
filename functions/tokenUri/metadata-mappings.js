@@ -98,7 +98,7 @@ module.exports = {
             7: 'Glass Curtain',
             8: 'Glass Curtain',
         },
-        //FIXME
+        //FIXME wrong order
         roofs: {
             0: 'Standard',
             1: 'Pool Roof',
@@ -276,6 +276,91 @@ module.exports = {
             3:'886 6th Ave',
             4:'Helipad',
             5:'BlockCities Sign Roof',
+        }
+    },
+    12: {
+        bases: {
+            // FIXME wrong order
+            0: 'Standard',
+            1: 'Parking Deck',
+            2: 'Westin Base',
+            3: 'ATT Base',
+            4: 'Retail Base',
+            5: 'Tree Base',
+        },
+        bodies: {
+            //FIXME
+        },
+        roofs: {
+            0:'Standard',
+            1:'432 Park',
+            2:'886 6th Ave',
+            3:'Pool Roof',
+            4:'Helipad',
+            5:'BlockCities Sign Roof',
+        }
+    },
+    13: {
+        bases: {
+            // FIXME wrong order
+            0: 'Standard',
+            1: 'Parking Deck',
+            2: 'Westin Base',
+            3: 'ATT Base',
+            4: 'Retail Base',
+            5: 'Tree Base',
+        },
+        bodies: {
+            //FIXME
+        },
+        roofs: {
+           0:'Standard',
+           1:'Linkedin Roof',
+           2:'886 6th Ave',
+           3:'CNA',
+           4:'Equitable',
+           5:'Pool Roof',
+           6:'Helipad Roof',
+           7:'BlockCities Sign Roof',
+        }
+    },
+    14: {
+        bases: {
+            0: 'Standard',
+            1: 'Parking Deck',
+            2: 'Westin Base',
+            3: 'ATT Base',
+            4: 'Tree Base',
+        },
+        bodies: {
+            //FIXME
+        },
+        roofs: {
+            0:'Standard',
+            1:'Pool Roof',
+            2:'Helipad Roof',
+            3:'886 6th Ave',
+            4:'BlockCities Sign Roof',
+        }
+    },
+    15: {
+        bases: {
+            0:'Standard',
+            1:'Westin Base',
+            2:'Parking Deck',
+            3:'ATT Base',
+            4:'Aston Base',
+            5:'Tree Base',
+        },
+        bodies: {
+            //FIXME
+        },
+        roofs: {
+            0:'Standard',
+            1:'886 6th Ave',
+            2:'Pool Roof',
+            3:'Helipad Roof',
+            4:'BlockCities Sign Roof',
         }
     },
 };
