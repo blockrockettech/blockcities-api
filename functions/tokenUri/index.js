@@ -18,23 +18,25 @@ module.exports = {
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
 
+        const attrs = decorateMetadataName(tokenAttrs);
+
         if (tokenAttrs.special !== 0) {
             return {
-                name: `${specialMapping[tokenAttrs.special].name}`,
-                description: `${specialMapping[tokenAttrs.special].city}`,
+                name: `#${tokenId} ${specialMapping[tokenAttrs.special].name}`,
+                description: `${attrs.city}`,
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
                 attributes: {
-                    ...decorateMetadataName(tokenAttrs)
+                    ...attrs
                 }
             };
         }
 
         return {
-            name: `building ${tokenId}`,
-            description: `building ${tokenId}`,
+            name: `#${tokenId} ${attrs.building}`,
+            description: `${attrs.city}`,
             image: `${tokenBaseURI[0]}${tokenId}/image`,
             attributes: {
-                ...decorateMetadataName(tokenAttrs)
+                ...attrs
             }
         };
     },

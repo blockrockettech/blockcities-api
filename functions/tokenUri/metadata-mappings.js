@@ -21,7 +21,7 @@ module.exports = {
         },
         roofs: {
             0: 'Standard',
-            1: '886 6th Ave',
+            1: '885 6th Ave',
             2: 'Pool Roof',
             3: 'Equitable',
             4: 'CNA',
@@ -47,13 +47,12 @@ module.exports = {
         },
         roofs: {
             0: 'Standard',
-            1: '886 6th Ave',
+            1: '885 6th Ave',
             2: 'Pool Roof',
             3: 'Equitable',
             4: '432 Roof',
             5: 'Helipad',
             6: 'BlockCities Sign Roof',
-
         }
     },
     2: {
@@ -73,7 +72,7 @@ module.exports = {
         },
         roofs: {
             0: 'Standard',
-            1: '886 6th Ave',
+            1: '885 6th Ave',
             2: 'Pool Roof',
             3: 'CNA',
             4: '432 Roof',
@@ -98,11 +97,11 @@ module.exports = {
             7: 'Glass Curtain',
             8: 'Glass Curtain',
         },
-        //FIXME wrong order
         roofs: {
             0: 'Standard',
             1: 'Pool Roof',
             2: 'Vesey',
+            3: 'Helipad',
         }
     },
     4: {
@@ -126,7 +125,7 @@ module.exports = {
         roofs: {
             0: 'Standard',
             1: '432 Roof',
-            2: '886 6th Ave',
+            2: '885 6th Ave',
             3: 'Vesey Roof',
             4: 'CNA',
             5: 'Equitable',
@@ -161,9 +160,9 @@ module.exports = {
         },
         roofs: {
             0: 'Standard',
-            1: '886 6th Ave',
-            2: 'Helipad', //FIXME check correct
-            3: 'Pool Roof', //FIXME check correct
+            1: '885 6th Ave',
+            2: 'Pool Roof',
+            3: 'Helipad',
             4: 'BlockCities Sign Roof',
         }
     },
@@ -182,14 +181,13 @@ module.exports = {
         roofs: {
             0: 'Standard',
             1: 'Helipad',
-            2: '886 6th Ave',
+            2: '885 6th Ave',
             3: 'Pool Roof',
             4: 'BlockCities Sign Roof',
         }
     },
     7: {
         bases: {
-            // FIXME
             0: 'Standard',
             1: 'ATT Base',
             2: 'Retail Base',
@@ -206,11 +204,12 @@ module.exports = {
     },
     8: {
         bases: {
-            // FIXME
             0: 'Standard',
             1: 'Parking Deck',
-            2: 'Retail Base',
+            2: 'ATT Base',
             3: 'Aston Base',
+            4: 'Retail Base',
+            5: 'Tree Base',
         },
         bodies: {
             // FIXME
@@ -228,8 +227,7 @@ module.exports = {
             //FIXME
         },
         roofs: {
-            //FIXME
-            0:'Standard',
+            0:'Two Antenna',
             1:'One Antenna',
             2:'Helipad',
             3:'Park Lane Roof',
@@ -251,7 +249,7 @@ module.exports = {
         },
         roofs: {
             0:'Standard',
-            1:'886 6th Ave',
+            1:'885 6th Ave',
             2:'Pool Roof',
             3:'Helipad',
             4:'BlockCities Sign Roof',
@@ -273,20 +271,20 @@ module.exports = {
             0:'Standard',
             1:'Aston Abr',
             2:'Pool Roof',
-            3:'886 6th Ave',
+            3:'885 6th Ave',
             4:'Helipad',
             5:'BlockCities Sign Roof',
         }
     },
     12: {
         bases: {
-            // FIXME wrong order
             0: 'Standard',
             1: 'Parking Deck',
             2: 'Westin Base',
             3: 'ATT Base',
-            4: 'Retail Base',
-            5: 'Tree Base',
+            4: 'Aston Base',
+            5: 'Retail Base',
+            6: 'Tree Base',
         },
         bodies: {
             //FIXME
@@ -294,7 +292,7 @@ module.exports = {
         roofs: {
             0:'Standard',
             1:'432 Park',
-            2:'886 6th Ave',
+            2:'885 6th Ave',
             3:'Pool Roof',
             4:'Helipad',
             5:'BlockCities Sign Roof',
@@ -302,13 +300,13 @@ module.exports = {
     },
     13: {
         bases: {
-            // FIXME wrong order
             0: 'Standard',
             1: 'Parking Deck',
             2: 'Westin Base',
             3: 'ATT Base',
-            4: 'Retail Base',
-            5: 'Tree Base',
+            4: 'Aston Base',
+            5: 'Retail Base',
+            6: 'Tree Base',
         },
         bodies: {
             //FIXME
@@ -316,7 +314,7 @@ module.exports = {
         roofs: {
            0:'Standard',
            1:'Linkedin Roof',
-           2:'886 6th Ave',
+           2:'885 6th Ave',
            3:'CNA',
            4:'Equitable',
            5:'Pool Roof',
@@ -339,7 +337,7 @@ module.exports = {
             0:'Standard',
             1:'Pool Roof',
             2:'Helipad Roof',
-            3:'886 6th Ave',
+            3:'885 6th Ave',
             4:'BlockCities Sign Roof',
         }
     },
@@ -357,7 +355,7 @@ module.exports = {
         },
         roofs: {
             0:'Standard',
-            1:'886 6th Ave',
+            1:'885 6th Ave',
             2:'Pool Roof',
             3:'Helipad Roof',
             4:'BlockCities Sign Roof',
