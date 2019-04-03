@@ -22,8 +22,8 @@ module.exports = {
 
         if (tokenAttrs.special !== 0) {
             return {
-                name: `#${tokenId} ${specialMapping[tokenAttrs.special].name}`,
-                description: `${attrs.city}`,
+                name: `${specialMapping[tokenAttrs.special].name}`,
+                description: '#' + ('00000' + tokenId).slice(-6),
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
                 attributes: {
                     ...attrs
@@ -32,8 +32,8 @@ module.exports = {
         }
 
         return {
-            name: `#${tokenId} ${attrs.building}`,
-            description: `${attrs.city}`,
+            name: `Building ` + '#' +('00000' + tokenId).slice(-6),
+            description: '#' +('00000' + tokenId).slice(-6),
             image: `${tokenBaseURI[0]}${tokenId}/image`,
             attributes: {
                 ...attrs
