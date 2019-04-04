@@ -1,16 +1,5 @@
 const {connectToBlockCities} = require("./abi/networks");
 
-const axios = require('axios');
-
-const lookupMetadata = async (tokenUri) => {
-    const tokenMeta = await axios.get(tokenUri);
-    const meta = tokenMeta.data;
-    return {
-        tokenUri,
-        ...meta
-    };
-};
-
 class BlockcitiesContractService {
 
     async tokenBaseURI(network = 1) {
@@ -43,6 +32,7 @@ class BlockcitiesContractService {
         return tokensOfOwner;
     }
 
+    // FIXME delete if not needed
     async tokenAttributes(network = 1, tokenId) {
         console.log(`Find token attrs for [${tokenId}] on network [${network}]`);
 

@@ -30,6 +30,11 @@ app.get('/network/:network/token/:tokenId', async (request, response) => {
     return require('./tokenUri').tokenMetadata(request, response);
 });
 
+// Refresh the token metadata
+app.get('/network/:network/token/:tokenId/refresh', async (request, response) => {
+    return require('./tokenUri').refreshTokenMetaData(request, response);
+});
+
 // A more detailed lookup method for pulling back all details for a token
 app.get('/network/:network/token/:tokenId/details', async (request, response) => {
     return require('./tokenUri').lookupTokenDetails(request, response);

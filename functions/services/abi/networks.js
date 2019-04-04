@@ -60,5 +60,6 @@ const getAddressForNetwork = (network) => {
 };
 
 module.exports = {
-    connectToBlockCities
+    connectToBlockCities,
+    getAddressForNetwork
 };

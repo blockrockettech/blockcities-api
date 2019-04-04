@@ -6,13 +6,14 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
+// FIXME remove if not needed
 const exteriorsKeys = Object.keys(colourways.exteriors);
 const windowsKeys = Object.keys(colourways.windows);
 const curtainsKeys = Object.keys(colourways.curtains);
 
 class ImageBuilderService {
 
-    async loadSpecial (specialId) {
+    async loadSpecial(specialId) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
@@ -23,7 +24,7 @@ class ImageBuilderService {
         }
     }
 
-    async generateImage (
+    async generateImage(
         {
             building,
             base,
@@ -120,9 +121,10 @@ class ImageBuilderService {
                 isNaN(bodyConfig.anchorX) ||
                 isNaN(bodyConfig.anchorY)
             ) {
-                console.error(`NaN detected: Buidling ${building} Base ${base} Body ${body} Roof ${roof}`);
+                console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
+            // FIXME clean up logging
             console.log(`base`, baseConfig);
             console.log(`body`, bodyConfig);
             console.log(`roof`, roofConfig);
@@ -135,6 +137,7 @@ class ImageBuilderService {
 
             const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
 
+            // FIXME clean up logging
             console.log(`height`, bodyConfig.height, adjustedBodyHeight);
             console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
             console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
@@ -190,7 +193,7 @@ class ImageBuilderService {
             ctx.drawImage(
                 roofConfig.svg,
                 baseConfig.anchorX + adjustedBodyAnchorX,
-                0 + roofNudge,
+                0 + roofNudge, // FIXME what does this mean?
                 adjustedBodyWidthPath,
                 adjustedRoofHeight
             );
@@ -206,7 +209,7 @@ class ImageBuilderService {
     }
 
     // FIXME - extract common logic
-    async generateNoRoofImage (
+    async generateNoRoofImage(
         {
             building,
             base,
