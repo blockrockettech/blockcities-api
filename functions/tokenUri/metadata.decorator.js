@@ -4,6 +4,10 @@ const specialMappings = require('./special-data-mapping');
 const colorLogic = require('../services/colour-logic');
 const metadataMappings = require('./metadata-mappings');
 
+const classicOrSpecialMapper = (special) => {
+    return (special < 1000000) ? 'Classic' : 'Special';
+};
+
 const cityNameMapper = ({special, city}) => {
     if (special !== 0 && specialMappings[special]) {
         return specialMappings[special].city;
@@ -24,11 +28,11 @@ const cityNameMapper = ({special, city}) => {
     }
 };
 
-const specialNameMapper = ({special}) => {
+const typeMapper = ({special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return specialMappings[special].name;
+        return classicOrSpecialMapper(special);
     }
-    return false;
+    return 'Standard';
 };
 
 const buildingNameMapper = ({building, special}) => {
@@ -77,7 +81,7 @@ const buildingNameMapper = ({building, special}) => {
 
 const bodyNameMapper = ({body, special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return 'Special';
+        return classicOrSpecialMapper(special);
     }
 
     return `Variant ${body}`;
@@ -86,7 +90,7 @@ const bodyNameMapper = ({body, special}) => {
 const baseNameMapper = ({building, base, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
-            return 'Special';
+            return classicOrSpecialMapper(special);
         }
 
         return metadataMappings[building].bases[base];
@@ -99,7 +103,7 @@ const baseNameMapper = ({building, base, special}) => {
 const roofNameMapper = ({building, roof, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
-            return 'Special';
+            return classicOrSpecialMapper(special);
         }
 
         return metadataMappings[building].roofs[roof];
@@ -112,7 +116,7 @@ const roofNameMapper = ({building, roof, special}) => {
 const exteriorColorwayName = ({exteriorColorway, special}) => {
     if (special !== 0 && specialMappings[special]) {
         return {
-            exteriorColorway: 'Special'
+            exteriorColorway: classicOrSpecialMapper(special)
         };
     }
 
@@ -134,7 +138,7 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
 
 const backgroundColorwayName = ({backgroundColorway, special}) => {
     if (special !== 0 && specialMappings[special]) {
-        return 'Special';
+        return classicOrSpecialMapper(special);
     }
 
     switch (backgroundColorway) {
@@ -168,7 +172,7 @@ const decorateMetadataName = (rawMetaData) => {
         body: bodyNameMapper(rawMetaData),
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
-        special: specialNameMapper(rawMetaData),
+        type: typeMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
         ...exteriorColorwayName(rawMetaData),
     };
