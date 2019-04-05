@@ -28,11 +28,17 @@ const cityNameMapper = ({special, city}) => {
     }
 };
 
-const typeMapper = ({special}) => {
-    if (special !== 0 && specialMappings[special]) {
-        return classicOrSpecialMapper(special);
+const typeMapper = ({building, body, special}) => {
+    try {
+        if (special !== 0 && specialMappings[special]) {
+            return classicOrSpecialMapper(special);
+        }
+
+        return metadataMappings[building].bodies[body];
+    } catch (e) {
+        console.error(`Failed looking up type metadata for building ${building} body ${body} special ${special}`, e);
+        return base;
     }
-    return 'Standard';
 };
 
 const buildingNameMapper = ({building, special}) => {
@@ -77,14 +83,6 @@ const buildingNameMapper = ({building, special}) => {
             console.error(`Unable to map building [${building}]`);
             return _.toString(building);
     }
-};
-
-const bodyNameMapper = ({body, special}) => {
-    if (special !== 0 && specialMappings[special]) {
-        return classicOrSpecialMapper(special);
-    }
-
-    return `Variant ${body}`;
 };
 
 const baseNameMapper = ({building, base, special}) => {
