@@ -170,7 +170,7 @@ const decorateMetadataName = (rawMetaData) => {
         architect: rawMetaData.architect,
         city: cityNameMapper(rawMetaData),
         groundFloor: baseNameMapper(rawMetaData),
-        body: bodyNameMapper(rawMetaData),
+        body: buildingNameMapper(rawMetaData),
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
         type: typeMapper(rawMetaData),
