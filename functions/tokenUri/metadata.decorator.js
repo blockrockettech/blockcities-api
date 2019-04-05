@@ -168,10 +168,10 @@ const decorateMetadataName = (rawMetaData) => {
         architect: rawMetaData.architect,
         city: cityNameMapper(rawMetaData),
         groundFloor: baseNameMapper(rawMetaData),
-        body: buildingNameMapper(rawMetaData),
+        body: buildingNameMapper(rawMetaData), // PA requested body should be the building name
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
-        type: typeMapper(rawMetaData),
+        type: typeMapper(rawMetaData), // for example, Special, Classic, Glass Curtain, Rectangle, etc
         backgroundColorway: backgroundColorwayName(rawMetaData),
         ...exteriorColorwayName(rawMetaData),
     };
