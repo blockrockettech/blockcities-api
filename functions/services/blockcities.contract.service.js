@@ -89,6 +89,7 @@ class BlockcitiesContractService {
             roof: _roof.toNumber(),
             special: _special.toNumber(),
             architect: _architect,
+            tokenId: tokenId,
         };
     }
 

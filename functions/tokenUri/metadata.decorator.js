@@ -166,9 +166,10 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
 
 const decorateMetadataName = (rawMetaData) => {
     return {
+        tokenId: rawMetaData.tokenId,
         architect: rawMetaData.architect,
         city: cityNameMapper(rawMetaData),
-        base: baseNameMapper(rawMetaData),
+        groundFloor: baseNameMapper(rawMetaData),
         body: bodyNameMapper(rawMetaData),
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
