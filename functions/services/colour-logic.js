@@ -1,3 +1,4 @@
+// FIXME clean up and make less magic
 module.exports =
 
     //  # | Exterior | Roof Window | Body Window | Base Window |
