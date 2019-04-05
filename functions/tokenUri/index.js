@@ -3,19 +3,20 @@ const _ = require('lodash');
 const blockcitiesContractService = require('../services/blockcities.contract.service');
 const openSeaService = require('../services/openSea.service');
 const specialMapping = require('./special-data-mapping');
-const {decorateMetadataName} = require("./metadata.decorator");
+const {decorateMetadataName} = require('./metadata.decorator');
+
+const padTokenId = (tokenId) => ('00000' + tokenId).slice(-6);
 
 module.exports = {
 
-    async tokenPointers(request, response) {
+    async tokenPointers (request, response) {
         const network = request.params.network;
         const tokenPointers = await blockcitiesContractService.tokenPointers(network);
-        console.log(tokenPointers);
         return response.status(200).json(tokenPointers);
     },
 
     // FIXME Extract to metadata class/method/file
-    async _metadata(network, tokenId) {
+    async _metadata (network, tokenId) {
 
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
@@ -25,8 +26,7 @@ module.exports = {
         if (tokenAttrs.special !== 0) {
             return {
                 name: `${specialMapping[tokenAttrs.special].name}`,
-                // FIXME extra token ID function and use string interpolation
-                description: '#' + ('00000' + tokenId).slice(-6),
+                description: `#${padTokenId(tokenId)}`,
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
                 attributes: {
                     ...attrs
@@ -35,9 +35,8 @@ module.exports = {
         }
 
         return {
-            // FIXME Why is this using both + and string interpolation?
-            name: `Building ` + '#' + ('00000' + tokenId).slice(-6),
-            description: '#' + ('00000' + tokenId).slice(-6),
+            name: `Building #${padTokenId(tokenId)}`,
+            description: `#${padTokenId(tokenId)}`,
             image: `${tokenBaseURI[0]}${tokenId}/image`,
             attributes: {
                 ...attrs
@@ -45,7 +44,7 @@ module.exports = {
         };
     },
 
-    async tokenMetadata(request, response) {
+    async tokenMetadata (request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -55,7 +54,7 @@ module.exports = {
         return response.status(200).json(metadata);
     },
 
-    async lookupTokenDetails(request, response) {
+    async lookupTokenDetails (request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -65,7 +64,7 @@ module.exports = {
         return response.status(200).json({...tokenDetails, tokenId});
     },
 
-    async refreshTokenMetaData(request, response) {
+    async refreshTokenMetaData (request, response) {
         const tokenId = request.params.tokenId;
         const network = request.params.network;
 
@@ -74,7 +73,7 @@ module.exports = {
         return response.status(200).json(results);
     },
 
-    async lookupTokenDetailsForOwner(request, response) {
+    async lookupTokenDetailsForOwner (request, response) {
 
         const owner = request.params.owner;
         const network = request.params.network;

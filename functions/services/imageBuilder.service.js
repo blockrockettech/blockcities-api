@@ -6,11 +6,6 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
-// FIXME remove if not needed
-const exteriorsKeys = Object.keys(colourways.exteriors);
-const windowsKeys = Object.keys(colourways.windows);
-const curtainsKeys = Object.keys(colourways.curtains);
-
 class ImageBuilderService {
 
     async loadSpecial(specialId) {
@@ -124,10 +119,7 @@ class ImageBuilderService {
                 console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
-            // FIXME clean up logging
-            console.log(`base`, baseConfig);
-            console.log(`body`, bodyConfig);
-            console.log(`roof`, roofConfig);
+
 
             const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorY = bodyConfig.anchorY * (adjustedBodyHeight / bodyConfig.height);
@@ -137,10 +129,13 @@ class ImageBuilderService {
 
             const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
 
-            // FIXME clean up logging
-            console.log(`height`, bodyConfig.height, adjustedBodyHeight);
-            console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
-            console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
+            // Used when debuggin'
+            // console.log(`base`, baseConfig);
+            // console.log(`body`, bodyConfig);
+            // console.log(`roof`, roofConfig);
+            // console.log(`height`, bodyConfig.height, adjustedBodyHeight);
+            // console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
+            // console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             let canvasHeight = baseConfig.height
@@ -149,25 +144,18 @@ class ImageBuilderService {
                 - baseConfig.anchorY
                 - adjustedBodyAnchorY;
 
+            // roof nudge is used if the roof does not overlap the top of the body fully
             let roofNudge = 0;
             if (adjustedBodyAnchorY > adjustedRoofHeight) {
                 roofNudge = adjustedBodyAnchorY - adjustedRoofHeight;
                 canvasHeight = canvasHeight + roofNudge;
             }
 
-            // console.log(building, base, body, roof);
-            // console.log(`adjustedBodyAnchorY`, adjustedBodyAnchorY);
-            // console.log(`adjustedRoofHeight`, adjustedRoofHeight);
-
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width;
 
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
-
-            // console.log(`base config`, baseConfig);
-            // console.log(`body config`, bodyConfig);
-            // console.log(`roof config`, roofConfig);
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
@@ -180,7 +168,6 @@ class ImageBuilderService {
             );
 
             // Body
-            // console.log(`% body`, baseConfig.anchorWidthPath / bodyConfig.width);
             ctx.drawImage(
                 bodyConfig.svg,
                 baseConfig.anchorX,
@@ -193,7 +180,7 @@ class ImageBuilderService {
             ctx.drawImage(
                 roofConfig.svg,
                 baseConfig.anchorX + adjustedBodyAnchorX,
-                0 + roofNudge, // FIXME what does this mean?
+                0 + roofNudge,
                 adjustedBodyWidthPath,
                 adjustedRoofHeight
             );
@@ -280,8 +267,8 @@ class ImageBuilderService {
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
 
-            console.log(`base config`, baseConfig);
-            console.log(`body config`, bodyConfig);
+            // console.log(`base config`, baseConfig);
+            // console.log(`body config`, bodyConfig);
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
