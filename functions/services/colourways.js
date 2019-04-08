@@ -209,7 +209,17 @@ module.exports = {
                 prim: '#BD9664',
                 light: '#EACB87',
             },
-        }
+        },
+        trueblue: {
+            left: {
+                prim: '#2A5A95',
+                light: '#3D79C1',
+            },
+            right: {
+                prim: '#90C2FF',
+                light: '#BEDBFF',
+            },
+        },
     },
     curtains: {
         trueblue: {

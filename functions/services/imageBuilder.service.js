@@ -119,8 +119,6 @@ class ImageBuilderService {
                 console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
-
-
             const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorY = bodyConfig.anchorY * (adjustedBodyHeight / bodyConfig.height);
 
