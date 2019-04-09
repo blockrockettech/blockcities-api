@@ -61,7 +61,7 @@ class ImageBuilderService {
                 colourways.windows[colourLogic[exteriorColorway][3]],
                 colourways.curtains[colourLogic[exteriorColorway][3]],
             );
-            
+
             const {
                 svg: processedBodySvg,
                 anchorX: processedBodyAnchorX,

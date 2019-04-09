@@ -196,7 +196,7 @@ module.exports = {
             },
             right: {
                 prim: '#8B8B8B',
-                light: '#5D5D5D',
+                light: '#B3B3B3',
             },
         },
         gold: {
