@@ -10,7 +10,7 @@
       }
 
       .window-R-prim {
-        fill: #bd9563;
+        fill: cyan;
       }
 
       .exterior-L-prim {
@@ -18,7 +18,7 @@
       }
 
       .window-L-prim {
-        fill: #4d3b25;
+        fill: lime;
       }
     </style>
   </defs>

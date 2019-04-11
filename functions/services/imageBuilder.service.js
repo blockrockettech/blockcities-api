@@ -6,6 +6,11 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
+const backgroundColourwaySwitcher = require('./background-colours');
+
+const yPadding = 100;
+const xPadding = 350;
+
 class ImageBuilderService {
 
     async loadSpecial(specialId) {
@@ -26,6 +31,7 @@ class ImageBuilderService {
             body,
             roof,
             exteriorColorway,
+            backgroundColorway,
         }) {
 
         try {
@@ -36,6 +42,7 @@ class ImageBuilderService {
                         base,
                         body,
                         exteriorColorway,
+                        backgroundColorway,
                     }
                 );
             }
@@ -119,15 +126,14 @@ class ImageBuilderService {
                 console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
-
-
             const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorY = bodyConfig.anchorY * (adjustedBodyHeight / bodyConfig.height);
 
             const adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorX = bodyConfig.anchorX * (baseConfig.anchorWidthPath / bodyConfig.width);
 
-            const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
+            // fixes 12 - is this the solution to scale roofs?
+            const adjustedRoofHeight = roofConfig.height * (adjustedBodyWidthPath / roofConfig.width);
 
             // Used when debuggin'
             // console.log(`base`, baseConfig);
@@ -138,11 +144,13 @@ class ImageBuilderService {
             // console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
+
             let canvasHeight = baseConfig.height
                 + adjustedBodyHeight
                 + adjustedRoofHeight
                 - baseConfig.anchorY
-                - adjustedBodyAnchorY;
+                - adjustedBodyAnchorY
+                + (yPadding * 2);
 
             // roof nudge is used if the roof does not overlap the top of the body fully
             let roofNudge = 0;
@@ -152,7 +160,7 @@ class ImageBuilderService {
             }
 
             // Always assume the baseConfig if the widest part for now
-            const canvasWidth = baseConfig.width;
+            const canvasWidth = baseConfig.width + (xPadding * 2);
 
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
@@ -160,18 +168,21 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
+            ctx.fillStyle = backgroundColourwaySwitcher(backgroundColorway);
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
             // Base
             ctx.drawImage(
                 baseConfig.svg,
-                0,
-                startBaseY
+                xPadding,
+                startBaseY - yPadding
             );
 
             // Body
             ctx.drawImage(
                 bodyConfig.svg,
-                baseConfig.anchorX,
-                startBodyY - baseConfig.height + baseConfig.anchorY,
+                baseConfig.anchorX + xPadding,
+                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
                 baseConfig.anchorWidthPath,
                 adjustedBodyHeight,
             );
@@ -179,8 +190,8 @@ class ImageBuilderService {
             // Roof
             ctx.drawImage(
                 roofConfig.svg,
-                baseConfig.anchorX + adjustedBodyAnchorX,
-                0 + roofNudge,
+                baseConfig.anchorX + adjustedBodyAnchorX + xPadding,
+                0 + roofNudge + yPadding,
                 adjustedBodyWidthPath,
                 adjustedRoofHeight
             );
@@ -201,7 +212,8 @@ class ImageBuilderService {
             building,
             base,
             body,
-            exteriorColorway
+            exteriorColorway,
+            backgroundColorway,
         }) {
 
         try {
@@ -259,10 +271,11 @@ class ImageBuilderService {
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             const canvasHeight = baseConfig.height
                 + adjustedBodyHeight
-                - baseConfig.anchorY;
+                - baseConfig.anchorY
+                + (yPadding * 2);
 
             // Always assume the baseConfig if the widest part for now
-            const canvasWidth = baseConfig.width;
+            const canvasWidth = baseConfig.width + (xPadding * 2);
 
             const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
             const ctx = canvas.getContext('2d');
@@ -273,18 +286,21 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
+            ctx.fillStyle = backgroundColourwaySwitcher(backgroundColorway);
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
             // Base
             ctx.drawImage(
                 baseConfig.svg,
-                0,
-                startBaseY
+                xPadding,
+                startBaseY - yPadding
             );
 
             // Body
             ctx.drawImage(
                 bodyConfig.svg,
-                baseConfig.anchorX,
-                startBodyY - baseConfig.height + baseConfig.anchorY,
+                baseConfig.anchorX + xPadding,
+                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
                 baseConfig.anchorWidthPath,
                 adjustedBodyHeight,
             );
