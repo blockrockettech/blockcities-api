@@ -13,12 +13,10 @@ class BlockcitiesContractService {
     async tokenPointers(network = 1) {
         const token = connectToBlockCities(network);
         const totalBuildings = await token.totalBuildings();
-        const cityPointer = await token.cityPointer();
         const tokenIdPointer = await token.tokenIdPointer();
 
         return {
             totalBuildings: totalBuildings[0],
-            cityPointer: cityPointer[0],
             tokenIdPointer: tokenIdPointer[0]
         };
     }

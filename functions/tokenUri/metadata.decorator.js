@@ -28,7 +28,7 @@ const cityNameMapper = ({special, city}) => {
     }
 };
 
-const typeMapper = ({building, body, special}) => {
+const windowTypeMapper = ({building, body, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             return classicOrSpecialMapper(special);
@@ -171,7 +171,7 @@ const decorateMetadataName = (rawMetaData) => {
         body: buildingNameMapper(rawMetaData), // PA requested body should be the building name
         roof: roofNameMapper(rawMetaData),
         building: buildingNameMapper(rawMetaData),
-        type: typeMapper(rawMetaData), // for example, Special, Classic, Glass Curtain, Rectangle, etc
+        windowType: windowTypeMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
         ...exteriorColorwayName(rawMetaData),
     };
