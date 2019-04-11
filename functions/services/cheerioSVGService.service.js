@@ -39,15 +39,6 @@ class CheerioSVGService {
             console.error(e);
         }
     }
-
-    // isCurtainBody(svgXml) {
-    //     try {
-    //         const $ = require('cheerio').load(svgXml, {xmlMode: true});
-    //         return $('[class^=curtain-]').length;
-    //     } catch (e) {
-    //         console.error(e);
-    //     }
-    // }
 }
 
 module.exports = new CheerioSVGService();

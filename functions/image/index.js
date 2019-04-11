@@ -48,7 +48,8 @@ module.exports = {
                 base: parseInt(request.params.base),
                 body: parseInt(request.params.body),
                 roof: parseInt(request.params.roof),
-                exteriorColorway: parseInt(request.params.exterior)
+                exteriorColorway: parseInt(request.params.exterior),
+                backgroundColorway: 2,
             });
 
             return response
@@ -75,7 +76,8 @@ module.exports = {
                             base: x,
                             body: y,
                             roof: z,
-                            exteriorColorway: getRandomArbitrary(20)
+                            exteriorColorway: getRandomArbitrary(20),
+                            backgroundColorway: getRandomArbitrary(7),
                         }));
                     }
                 }

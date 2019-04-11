@@ -6,6 +6,8 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
+const backgroundColourwaySwitcher = require('./background-colours');
+
 class ImageBuilderService {
 
     async loadSpecial(specialId) {
@@ -26,6 +28,7 @@ class ImageBuilderService {
             body,
             roof,
             exteriorColorway,
+            backgroundColorway,
         }) {
 
         try {
@@ -125,7 +128,9 @@ class ImageBuilderService {
             const adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
             const adjustedBodyAnchorX = bodyConfig.anchorX * (baseConfig.anchorWidthPath / bodyConfig.width);
 
-            const adjustedRoofHeight = roofConfig.height * (adjustedBodyHeight / bodyConfig.height);
+            // fixes 12 - is this the solution to scale roofs?
+            const adjustedRoofHeight = roofConfig.height * (adjustedBodyWidthPath / roofConfig.width);
+
 
             // Used when debuggin'
             // console.log(`base`, baseConfig);
@@ -157,6 +162,9 @@ class ImageBuilderService {
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
+
+            ctx.fillStyle = backgroundColourwaySwitcher(backgroundColorway);
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
             // Base
             ctx.drawImage(
