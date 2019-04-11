@@ -168,7 +168,6 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
-            console.log(backgroundColorway);
             ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
             ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
