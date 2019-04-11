@@ -1,22 +1,22 @@
-module.exports = (background) => {
-    switch (background) {
+module.exports = (backgroundColorway) => {
+    switch (backgroundColorway) {
         case 0:
-            return '#FFEEBF';
+            return {hex: 'FFEEBF', name:'yellow'};
         case 1:
-            return '#D5F0F3';
+            return {hex:'D5F0F3', name:'aqua'};
         case 2:
-            return '#C4D7F3';
+            return {hex:'C4D7F3', name:'dullblue'};
         case 3:
-            return '#ACCAFF';
+            return {hex:'ACCAFF', name:'blueblue'};
         case 4:
-            return '#F4DCDC';
+            return {hex:'F4DCDC', name:'pink'};
         case 5:
-            return '#FCDBC8';
+            return {hex:'FCDBC8', name:'orange'};
         case 6:
-            return '#BEEBFF';
+            return {hex:'BEEBFF', name:'boldblue'};
         case 7:
-            return '#EBEDF0';
+            return {hex:'EBEDF0', name:'grey'};
         default:
-            return '#EBEDF0';
+            return {hex:'EBEDF0', name:'grey'};
     }
 };

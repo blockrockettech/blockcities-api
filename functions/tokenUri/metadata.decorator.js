@@ -4,6 +4,8 @@ const specialMappings = require('./special-data-mapping');
 const colorLogic = require('../services/colour-logic');
 const metadataMappings = require('./metadata-mappings');
 
+const backgroundColorwaySwitch = require('../services/background-colours');
+
 const classicOrSpecialMapper = (special) => {
     return (special < 1000000) ? 'Classic' : 'Special';
 };
@@ -139,27 +141,7 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
         return classicOrSpecialMapper(special);
     }
 
-    switch (backgroundColorway) {
-        case 0:
-            return 'yellow';
-        case 1:
-            return 'aqua';
-        case 2:
-            return 'dullblue';
-        case 3:
-            return 'blueblue';
-        case 4:
-            return 'pink';
-        case 5:
-            return 'orange';
-        case 6:
-            return 'boldblue';
-        case 7:
-            return 'grey';
-        default:
-            console.error(`Unable to map backgroundColorway [${backgroundColorway}]`);
-            return _.toString(backgroundColorway);
-    }
+    return backgroundColorwaySwitch(backgroundColorway).name;
 };
 
 const decorateMetadataName = (rawMetaData) => {
@@ -173,6 +155,7 @@ const decorateMetadataName = (rawMetaData) => {
         building: buildingNameMapper(rawMetaData),
         windowType: windowTypeMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
+        'background_color': backgroundColorwaySwitch(rawMetaData.backgroundColorway).hex,
         ...exteriorColorwayName(rawMetaData),
     };
 };

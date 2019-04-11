@@ -6,14 +6,14 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
-const backgroundColourwaySwitcher = require('./background-colours');
+const backgroundColorwaySwitch = require('./background-colours');
 
 const yPadding = 100;
 const xPadding = 350;
 
 class ImageBuilderService {
 
-    async loadSpecial(specialId) {
+    async loadSpecial (specialId) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
@@ -24,7 +24,7 @@ class ImageBuilderService {
         }
     }
 
-    async generateImage(
+    async generateImage (
         {
             building,
             base,
@@ -168,7 +168,8 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
-            ctx.fillStyle = backgroundColourwaySwitcher(backgroundColorway);
+            console.log(backgroundColorway);
+            ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
             ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
             // Base
@@ -207,7 +208,7 @@ class ImageBuilderService {
     }
 
     // FIXME - extract common logic
-    async generateNoRoofImage(
+    async generateNoRoofImage (
         {
             building,
             base,
@@ -286,7 +287,7 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
-            ctx.fillStyle = backgroundColourwaySwitcher(backgroundColorway);
+            ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
             ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
             // Base
