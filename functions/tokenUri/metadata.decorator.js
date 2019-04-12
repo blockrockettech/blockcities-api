@@ -155,7 +155,6 @@ const decorateMetadataName = (rawMetaData) => {
         building: buildingNameMapper(rawMetaData),
         windowType: windowTypeMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
-        'background_color': backgroundColorwaySwitch(rawMetaData.backgroundColorway).hex,
         ...exteriorColorwayName(rawMetaData),
     };
 };

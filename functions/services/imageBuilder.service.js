@@ -8,8 +8,8 @@ const colourLogic = require('./colour-logic');
 
 const backgroundColorwaySwitch = require('./background-colours');
 
-const yPadding = 100;
-const xPadding = 350;
+const yPadding = 0;
+const xPadding = 0;
 
 class ImageBuilderService {
 
@@ -168,8 +168,8 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
 
-            ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
-            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+            // ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
+            // ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
             // Base
             ctx.drawImage(
