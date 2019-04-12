@@ -53,7 +53,7 @@ const getNetwork = (network) => {
 const getAddressForNetwork = (network) => {
     return networkSplitter(network, {
         mainnet: '0x2f2d5aA0EfDB9Ca3C9bB789693d06BEBEa88792F',
-        ropsten: '0x524Af809670Fc0AEDa2dBD3a6b0936BdEb7d4Bc8',
+        ropsten: '0x86eD0a82dDc2EdEA8cC4Bc023eC2a4079DAB42c9',
         rinkeby: '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9',
         local: '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9'
     });
