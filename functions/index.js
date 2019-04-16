@@ -59,6 +59,13 @@ app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response
     return require('./image').generateTestImages(request, response);
 });
 
+// Used for admin app - listing out specials we current can mint
+app.get('/config/buildings/specials', async (request, response) => {
+    response
+        .status(200)
+        .json(require('./tokenUri/special-data-mapping.js'))
+});
+
 // Slightly bump the defaults to 512mb and 2min timeout
 const runtimeOpts = {
     memory: '512MB',
