@@ -17,7 +17,7 @@ void async function () {
     const {tokenIdPointer} = await blockcitiesContractService.tokenPointers(NETWORK);
     console.log(`Total tokens ${tokenIdPointer}`);
 
-    for (let i = 0; i <= tokenIdPointer; i++) {
+    for (let i = 1; i <= tokenIdPointer; i++) {
         await openSeaService.refreshTokenMetaData(NETWORK, i);
         await wait();
         console.log(`Refreshed token ID [${i}]`);
