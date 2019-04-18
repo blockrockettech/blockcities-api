@@ -17,5 +17,10 @@ module.exports = {
     1000001: {name: '375 Park Ave', bname: '375 Park Ave', city: 'New York City'},
     1000002: {name: '133 Peachtree', bname: '133 Peachtree', city: 'Atlanta'},
     1000003: {name: '200 East Randolph', bname: '200 East Randolph', city: 'Chicago'},
-    1000004: {name: '600 Montgomery', bname: '600 Montgomery', city: 'San Francisco'}
+    1000004: {name: '600 Montgomery', bname: '600 Montgomery', city: 'San Francisco'},
+
+    // NonFungible.com specials
+    1000005: {name: '1 NonFungible Tower', bname: '1 NonFungible Tower', city: 'New York City'},
+    1000006: {name: '2 NonFungible Tower', bname: '2 NonFungible Tower', city: 'San Francisco'},
+    1000007: {name: '3 NonFungible Tower', bname: '3 NonFungible Tower', city: 'Chicago'},
 };
