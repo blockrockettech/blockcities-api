@@ -13,6 +13,10 @@ module.exports = {
     10: {name: '56 Leonard', bname: '56 Leonard', city: 'New York City'},
     11: {name: '601 Lexington', bname: 'Citigroup Center', city: 'New York City'},
 
+    // FOAM scavenger
+    12: {name: '745 7th Ave', bname: '745 7th Ave', city: 'New York City'},
+
+    // token 1 - 5
     1000000: {name: 'BlockCities Genesis Building', bname: 'Genesis', city: 'Genesis'},
     1000001: {name: '375 Park Ave', bname: '375 Park Ave', city: 'New York City'},
     1000002: {name: '133 Peachtree', bname: '133 Peachtree', city: 'Atlanta'},
