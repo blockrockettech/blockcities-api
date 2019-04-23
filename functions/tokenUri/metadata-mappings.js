@@ -64,6 +64,7 @@ module.exports = {
             4: 'Aston Base',
             5: 'Retail Base',
             6: 'Tree Base',
+            7: 'Transit',
         },
         bodies: {
             0: 'Rectangle',
@@ -78,6 +79,7 @@ module.exports = {
             4: '432 Roof',
             5: 'Helipad',
             6: 'BlockCities Sign Roof',
+            7: 'Transit',
         }
     },
     3: {
@@ -143,6 +145,7 @@ module.exports = {
             4: 'Aston Base',
             5: 'Retail Base',
             6: 'Tree Base',
+            7: 'Transit',
         },
         bodies: {
             0: 'Glass Curtain',
@@ -407,6 +410,7 @@ module.exports = {
             3: 'ATT Base',
             4: 'Aston Base',
             5: 'Tree Base',
+            6: 'Transit',
         },
         bodies: {
             0: 'Rectangle',

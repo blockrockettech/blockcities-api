@@ -141,7 +141,9 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
         return classicOrSpecialMapper(special);
     }
 
-    return backgroundColorwaySwitch(backgroundColorway).name;
+    // FIXME should this call to backgroundColorwaySwitch
+
+    return backgroundColorwaySwitch(backgroundColorway, special).name;
 };
 
 const decorateMetadataName = (rawMetaData) => {

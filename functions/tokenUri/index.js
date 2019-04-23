@@ -10,14 +10,14 @@ const padTokenId = (tokenId) => ('00000' + tokenId).slice(-6);
 
 module.exports = {
 
-    async tokenPointers (request, response) {
+    async tokenPointers(request, response) {
         const network = request.params.network;
         const tokenPointers = await blockcitiesContractService.tokenPointers(network);
         return response.status(200).json(tokenPointers);
     },
 
     // FIXME Extract to metadata class/method/file
-    async _metadata (network, tokenId) {
+    async _metadata(network, tokenId) {
 
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
@@ -29,7 +29,7 @@ module.exports = {
                 name: `${specialMapping[tokenAttrs.special].name}`,
                 description: `#${padTokenId(tokenId)}`,
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
-                'background_color': backgroundColorwaySwitch(tokenAttrs.backgroundColorway).hex,
+                background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway, tokenAttrs.special).hex,
                 attributes: {
                     ...attrs
                 }
@@ -40,14 +40,14 @@ module.exports = {
             name: `Building #${padTokenId(tokenId)}`,
             description: `#${padTokenId(tokenId)}`,
             image: `${tokenBaseURI[0]}${tokenId}/image`,
-            'background_color': backgroundColorwaySwitch(tokenAttrs.backgroundColorway).hex,
+            background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway).hex,
             attributes: {
                 ...attrs
             }
         };
     },
 
-    async tokenMetadata (request, response) {
+    async tokenMetadata(request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -57,7 +57,7 @@ module.exports = {
         return response.status(200).json(metadata);
     },
 
-    async lookupTokenDetails (request, response) {
+    async lookupTokenDetails(request, response) {
 
         const tokenId = request.params.tokenId;
         const network = request.params.network;
@@ -67,7 +67,7 @@ module.exports = {
         return response.status(200).json({...tokenDetails, tokenId});
     },
 
-    async refreshTokenMetaData (request, response) {
+    async refreshTokenMetaData(request, response) {
         const tokenId = request.params.tokenId;
         const network = request.params.network;
 
@@ -76,7 +76,7 @@ module.exports = {
         return response.status(200).json(results);
     },
 
-    async lookupTokenDetailsForOwner (request, response) {
+    async lookupTokenDetailsForOwner(request, response) {
 
         const owner = request.params.owner;
         const network = request.params.network;
