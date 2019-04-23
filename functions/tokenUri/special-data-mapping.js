@@ -27,4 +27,7 @@ module.exports = {
     1000005: {name: '1 NonFungible Tower', bname: '1 NonFungible Tower', city: 'New York City'},
     1000006: {name: '2 NonFungible Tower', bname: '2 NonFungible Tower', city: 'San Francisco'},
     1000007: {name: '3 NonFungible Tower', bname: '3 NonFungible Tower', city: 'Chicago'},
+
+    // Founder building
+    1000008: {name: 'Founder Building', bname: 'Founder Building', city: 'Genesis'},
 };
