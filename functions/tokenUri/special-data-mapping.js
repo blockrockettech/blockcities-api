@@ -30,4 +30,7 @@ module.exports = {
 
     // Founder building
     1000008: {name: 'Founder Building', bname: 'Founder Building', city: 'Genesis'},
+
+    // FOAM scavenger - Nakagin
+    1000009: {name: 'Nakagin Capsule Tower', bname: 'Nakagin Capsule Tower', city: 'Tokyo'},
 };
