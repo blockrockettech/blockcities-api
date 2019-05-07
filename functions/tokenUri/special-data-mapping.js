@@ -33,4 +33,5 @@ module.exports = {
 
     // FOAM scavenger - Nakagin
     1000009: {name: 'Nakagin Capsule Tower', bname: 'Nakagin Capsule Tower', city: 'Tokyo'},
+    1000010: {name: 'Balfron Tower', bname: 'Balfron Tower', city: 'London', background_color: '#F4DCDC'},
 };
