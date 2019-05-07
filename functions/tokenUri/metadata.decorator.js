@@ -26,6 +26,8 @@ const cityNameMapper = ({special, city}) => {
             return 'San Francisco';
         case 4:
             return 'Tokyo';
+        case 5:
+            return 'London';
         default:
             console.error(`Unable to map city [${city}]`);
             return _.toString(city);
