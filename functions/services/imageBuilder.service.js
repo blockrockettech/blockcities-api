@@ -285,10 +285,7 @@ class ImageBuilderService {
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
-
-            ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
-            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-
+            
             // Base
             ctx.drawImage(
                 baseConfig.svg,

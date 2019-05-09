@@ -28,6 +28,8 @@ module.exports = (backgroundColorway, special = null) => {
             return {hex: 'BEEBFF', name: 'boldblue'};
         case 7:
             return {hex: 'EBEDF0', name: 'grey'};
+        case 8:
+            return {hex: '000000', name: 'black'};
         default:
             return {hex: 'EBEDF0', name: 'grey'};
     }
