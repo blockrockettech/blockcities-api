@@ -17,7 +17,7 @@ module.exports = {
     12: {name: '745 7th Ave', bname: '745 7th Ave', city: 'New York City'},
 
     // token 1 - 5
-    1000000: {name: 'BlockCities Genesis Building', bname: 'Genesis', city: 'Genesis'},
+    1000000: {name: 'BlockCities Genesis Building', bname: 'Genesis', city: 'Genesis', background_color: '#000000'},
     1000001: {name: '375 Park Ave', bname: '375 Park Ave', city: 'New York City'},
     1000002: {name: '133 Peachtree', bname: '133 Peachtree', city: 'Atlanta'},
     1000003: {name: '200 East Randolph', bname: '200 East Randolph', city: 'Chicago'},
