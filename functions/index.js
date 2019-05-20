@@ -66,12 +66,6 @@ app.get('/config/buildings/specials', async (request, response) => {
         .json(require('./tokenUri/special-data-mapping.js'))
 });
 
-// Slightly bump the defaults to 512mb and 2min timeout
-const runtimeOpts = {
-    memory: '512MB',
-    timeoutSeconds: 240
-};
-
 // Expose Express API as a single Cloud Function:
-exports.api = functions.runWith(runtimeOpts).https.onRequest(app);
+exports.api = functions.https.onRequest(app);
 
