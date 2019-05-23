@@ -6,6 +6,24 @@ const SPECIAL = {
     name: 'yellow'
 };
 
+const AQUA = {
+    id: 1,
+    hex: 'D5F0F3',
+    name: 'aqua'
+};
+
+const DULL_BLUE = {
+    id: 2,
+    hex: 'C4D7F3',
+    name: 'dullblue'
+};
+
+const BLUE_BLUE = {
+    id: 3,
+    hex: 'ACCAFF',
+    name: 'blueblue'
+};
+
 const PINK = {
     id: 4,
     hex: 'F4DCDC',
@@ -18,10 +36,22 @@ const ORANGE = {
     name: 'orange'
 };
 
+const BOLD_BLUE = {
+    id: 6,
+    hex: 'BEEBFF',
+    name: 'boldblue'
+};
+
 const GRAY = {
     id: 7,
     hex: 'EBEDF0',
     name: 'grey'
+};
+
+const BLACK = {
+    id: 8,
+    hex: '000000',
+    name: 'black'
 };
 
 const BEIGE = {
@@ -51,22 +81,22 @@ const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
             // Otherwise return detail yellow special background
             return SPECIAL;
 
-        case 1:
-            return {hex: 'D5F0F3', name: 'aqua'};
-        case 2:
-            return {hex: 'C4D7F3', name: 'dullblue'};
-        case 3:
-            return {hex: 'ACCAFF', name: 'blueblue'};
+        case AQUA.id:
+            return AQUA;
+        case DULL_BLUE.id:
+            return DULL_BLUE;
+        case BLUE_BLUE.id:
+            return BLUE_BLUE;
         case PINK.id:
             return PINK;
         case ORANGE.id:
             return ORANGE;
-        case 6:
-            return {hex: 'BEEBFF', name: 'boldblue'};
+        case BOLD_BLUE.id:
+            return BOLD_BLUE;
         case GRAY.id:
             return GRAY;
-        case 8:
-            return {hex: '000000', name: 'black'};
+        case BLACK.id:
+            return BLACK;
         case BEIGE.id:
             return BEIGE;
         case LIGHT_ORANGE.id:
@@ -84,6 +114,11 @@ module.exports = {
         ORANGE,
         GRAY,
         LIGHT_ORANGE,
-        BEIGE
+        BEIGE,
+        BLACK,
+        BLUE_BLUE,
+        BOLD_BLUE,
+        DULL_BLUE,
+        AQUA
     }
 };
