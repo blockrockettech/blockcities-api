@@ -31,7 +31,16 @@ module.exports = {
     // Founder building
     1000008: {name: 'Founder Building', bname: 'Founder Building', city: 'Genesis'},
 
-    // FOAM scavenger - Nakagin
+    // FOAM scavenger hunts
     1000009: {name: 'Nakagin Capsule Tower', bname: 'Nakagin Capsule Tower', city: 'Tokyo'},
     1000010: {name: 'Balfron Tower', bname: 'Balfron Tower', city: 'London', background_color: '#F4DCDC'},
+    1000011: {name: '945 Madison Ave', bname: '945 Madison Ave', city: 'New York City', background_color: '#F4EEE5'},
+    1000012: {name: '626 1st Ave', bname: '626 1st Ave', city: 'New York City', background_color: '#FCDBC8'},
+    1000013: {name: '461 Dean Apartments', bname: '461 Dean Apartments', city: 'New York City', background_color: '#EBEDF0'},
+    1000014: {name: '481 8th Ave', bname: '481 Eighth Ave', city: 'New York City', background_color: '#F9DEDE'},
+    1000015: {name: '767 5th Ave', bname: '767 5th Ave', city: 'New York City', background_color: '#F4DCDC'},
+    1000016: {name: 'FOAM Tower', bname: 'FOAM Tower', city: 'New York City', background_color: '#FBF3F0'},
+    1000017: {name: '96 Wythe Ave', bname: '96 Wythe Ave', city: 'New York City', background_color: '#F4DCDC'},
+    1000018: {name: '215 Moore', bname: '215 Moore', city: 'New York City', background_color: '#FFEEBF'},
+    
 };
