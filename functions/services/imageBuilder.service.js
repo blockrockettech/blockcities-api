@@ -6,7 +6,7 @@ const cheerioSVGService = require('./cheerioSVGService.service');
 const colourways = require('./colourways');
 const colourLogic = require('./colour-logic');
 
-const backgroundColorwaySwitch = require('./background-colours');
+const {backgroundColorwaySwitch} = require('./background-colours');
 
 const yPadding = 0;
 const xPadding = 0;
@@ -285,7 +285,7 @@ class ImageBuilderService {
 
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - adjustedBodyHeight;
-            
+
             // Base
             ctx.drawImage(
                 baseConfig.svg,

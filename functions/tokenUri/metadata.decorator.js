@@ -3,35 +3,12 @@ const _ = require('lodash');
 const specialMappings = require('./special-data-mapping');
 const colorLogic = require('../services/colour-logic');
 const metadataMappings = require('./metadata-mappings');
+const {cityNameMapper} = require('./citymapper');
 
-const backgroundColorwaySwitch = require('../services/background-colours');
+const {backgroundColorwaySwitch} = require('../services/background-colours');
 
 const classicOrSpecialMapper = (special) => {
     return (special < 1000000) ? 'Classic' : 'Special';
-};
-
-const cityNameMapper = ({special, city}) => {
-    if (special !== 0 && specialMappings[special]) {
-        return specialMappings[special].city;
-    }
-
-    switch (city) {
-        case 0:
-            return 'Atlanta';
-        case 1:
-            return 'New York City';
-        case 2:
-            return 'Chicago';
-        case 3:
-            return 'San Francisco';
-        case 4:
-            return 'Tokyo';
-        case 5:
-            return 'London';
-        default:
-            console.error(`Unable to map city [${city}]`);
-            return _.toString(city);
-    }
 };
 
 const windowTypeMapper = ({building, body, special}) => {
