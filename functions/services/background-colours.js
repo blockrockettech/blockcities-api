@@ -75,7 +75,7 @@ const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
             // N:B. code smell, define the correct ID in the special
             // Override background for NonFungible.com specials
             if (_.includes([1000005, 1000006, 1000007], special)) {
-                return {hex: 'BEEBFF', name: 'boldblue'};
+                return BOLD_BLUE;
             }
 
             // Otherwise return detail yellow special background
