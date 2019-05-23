@@ -4,7 +4,7 @@ const blockcitiesContractService = require('../services/blockcities.contract.ser
 const openSeaService = require('../services/openSea.service');
 const specialMapping = require('./special-data-mapping');
 const {decorateMetadataName} = require('./metadata.decorator');
-const backgroundColorwaySwitch = require('../services/background-colours');
+const {backgroundColorwaySwitch} = require('../services/background-colours');
 
 const padTokenId = (tokenId) => ('00000' + tokenId).slice(-6);
 

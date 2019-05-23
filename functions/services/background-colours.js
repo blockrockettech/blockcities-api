@@ -1,36 +1,124 @@
 const _ = require('lodash');
 
-module.exports = (backgroundColorway, special = null) => {
+const SPECIAL = {
+    id: 0,
+    hex: 'FFEEBF',
+    name: 'yellow'
+};
+
+const AQUA = {
+    id: 1,
+    hex: 'D5F0F3',
+    name: 'aqua'
+};
+
+const DULL_BLUE = {
+    id: 2,
+    hex: 'C4D7F3',
+    name: 'dullblue'
+};
+
+const BLUE_BLUE = {
+    id: 3,
+    hex: 'ACCAFF',
+    name: 'blueblue'
+};
+
+const PINK = {
+    id: 4,
+    hex: 'F4DCDC',
+    name: 'pink'
+};
+
+const ORANGE = {
+    id: 5,
+    hex: 'FCDBC8',
+    name: 'orange'
+};
+
+const BOLD_BLUE = {
+    id: 6,
+    hex: 'BEEBFF',
+    name: 'boldblue'
+};
+
+const GRAY = {
+    id: 7,
+    hex: 'EBEDF0',
+    name: 'grey'
+};
+
+const BLACK = {
+    id: 8,
+    hex: '000000',
+    name: 'black'
+};
+
+const BEIGE = {
+    id: 9,
+    hex: 'F4EEE5',
+    name: 'beige'
+};
+
+const LIGHT_ORANGE = {
+    id: 10,
+    hex: 'FBF3F0',
+    name: 'lightorange'
+};
+
+const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
     switch (backgroundColorway) {
 
         // All specials are zero by default
-        case 0:
+        case SPECIAL.id:
 
-            // FIXME this is a bit hacky
-            // override backgroun for NonFungible.com specials
+            // N:B. code smell, define the correct ID in the special
+            // Override background for NonFungible.com specials
             if (_.includes([1000005, 1000006, 1000007], special)) {
-                return {hex: 'BEEBFF', name: 'boldblue'};
+                return BOLD_BLUE;
             }
-            // Otherwise return detail yellow special background
-            return {hex: 'FFEEBF', name: 'yellow'};
 
-        case 1:
-            return {hex: 'D5F0F3', name: 'aqua'};
-        case 2:
-            return {hex: 'C4D7F3', name: 'dullblue'};
-        case 3:
-            return {hex: 'ACCAFF', name: 'blueblue'};
-        case 4:
-            return {hex: 'F4DCDC', name: 'pink'};
-        case 5:
-            return {hex: 'FCDBC8', name: 'orange'};
-        case 6:
-            return {hex: 'BEEBFF', name: 'boldblue'};
-        case 7:
-            return {hex: 'EBEDF0', name: 'grey'};
-        case 8:
-            return {hex: '000000', name: 'black'};
+            // Otherwise return detail yellow special background
+            return SPECIAL;
+
+        case AQUA.id:
+            return AQUA;
+        case DULL_BLUE.id:
+            return DULL_BLUE;
+        case BLUE_BLUE.id:
+            return BLUE_BLUE;
+        case PINK.id:
+            return PINK;
+        case ORANGE.id:
+            return ORANGE;
+        case BOLD_BLUE.id:
+            return BOLD_BLUE;
+        case GRAY.id:
+            return GRAY;
+        case BLACK.id:
+            return BLACK;
+        case BEIGE.id:
+            return BEIGE;
+        case LIGHT_ORANGE.id:
+            return LIGHT_ORANGE;
         default:
-            return {hex: 'EBEDF0', name: 'grey'};
+            return GRAY;
+    }
+};
+
+module.exports = {
+    backgroundColorwaySwitch,
+    config: {
+        SPECIAL,
+        PINK,
+        ORANGE,
+        GRAY,
+        LIGHT_ORANGE,
+        BEIGE,
+        BLACK,
+        BLUE_BLUE,
+        BOLD_BLUE,
+        DULL_BLUE,
+        AQUA
     }
 };
