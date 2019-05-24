@@ -219,5 +219,30 @@ module.exports = {
         background_color: backgrounConfig.SPECIAL.hex,
         background_colorId: backgrounConfig.SPECIAL.id
     },
+    1000019: {
+        name: '1 World Trade Center',
+        bname: '1 World Trade Center',
+        city: cityConfig.NYC.name,
+        cityId: cityConfig.NYC.id,
+        background_color: backgrounConfig.YELLOW.hex,
+        background_colorId: backgrounConfig.YELLOW.id
+    },
+    1000020: {
+        name: '96 Wythe Ave',
+        bname: '96 Wythe Ave',
+        city: cityConfig.NYC.name,
+        cityId: cityConfig.NYC.id,
+        background_color: backgrounConfig.LIGHT_ORANGE.hex,
+        background_colorId: backgrounConfig.LIGHT_ORANGE.id
+    },
+    1000021: {
+        name: '251 1st',
+        bname: '251 1st',
+        city: cityConfig.NYC.name,
+        cityId: cityConfig.NYC.id,
+        background_color: backgrounConfig.GRAY.hex,
+        background_colorId: backgrounConfig.GRAY.id
+    },
+
 
 };
