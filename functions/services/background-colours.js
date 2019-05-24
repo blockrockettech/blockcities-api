@@ -107,6 +107,8 @@ const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
             return BEIGE;
         case LIGHT_ORANGE.id:
             return LIGHT_ORANGE;
+        case LIGHT_YELLOW.id:
+            return LIGHT_YELLOW;
         default:
             return GRAY;
     }
