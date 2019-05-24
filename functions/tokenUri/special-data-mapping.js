@@ -224,8 +224,8 @@ module.exports = {
         bname: '1 World Trade Center',
         city: cityConfig.NYC.name,
         cityId: cityConfig.NYC.id,
-        background_color: backgrounConfig.YELLOW.hex,
-        background_colorId: backgrounConfig.YELLOW.id
+        background_color: backgrounConfig.LIGHT_YELLOW.hex,
+        background_colorId: backgrounConfig.LIGHT_YELLOW.id
     },
     1000020: {
         name: '96 Wythe Ave',

@@ -66,10 +66,10 @@ const LIGHT_ORANGE = {
     name: 'lightorange'
 };
 
-const YELLOW = {
+const LIGHT_YELLOW = {
     id: 11,
     hex: 'FFF3D8',
-    name: 'yellow'
+    name: 'lightyellow'
 };
 
 const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
@@ -126,6 +126,6 @@ module.exports = {
         BOLD_BLUE,
         DULL_BLUE,
         AQUA,
-        YELLOW,
+        LIGHT_YELLOW,
     }
 };
