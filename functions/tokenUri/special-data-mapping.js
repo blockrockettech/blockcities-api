@@ -243,6 +243,4 @@ module.exports = {
         background_color: backgrounConfig.GRAY.hex,
         background_colorId: backgrounConfig.GRAY.id
     },
-
-
 };
