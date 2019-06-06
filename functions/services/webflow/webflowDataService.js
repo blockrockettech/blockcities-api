@@ -8,7 +8,7 @@ class WebflowDataService {
     }
 
     async geSites() {
-        return this.api.api.sites({});
+        return this.api.sites({});
     }
 
     async geSite(siteId) {
@@ -56,11 +56,11 @@ class WebflowDataService {
         return this.api.createItem({
             collectionId: collectionId,
             fields: {
-                _archived: false, //Items set to archived will not be published
-                _draft: false, //Items set to draft will not be published
+                _archived: false, // Items set to archived will not be published
+                _draft: false, // Items set to draft will not be published
                 ...data
             }
-        }, {live: true});
+        }, {live: true}); // {live: true} = publishes data immediately
     }
 
     // FIXME this isnt working ... doesnt look like a way to find by field?
@@ -84,7 +84,7 @@ class WebflowDataService {
                 _draft: false, //Items set to draft will not be published
                 ...data
             }
-        }, {live: true});
+        }, {live: true}); // {live: true} = publishes data immediately
     }
 
 }
