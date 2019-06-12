@@ -101,7 +101,7 @@ void async function () {
         // console.log(`Collection removed`);
 
         const promiseArray = [];
-        for (let i = 800; i < 810; i++) {
+        for (let i = 550; i < 555; i++) {
             promiseArray.push(axios.get(`https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/${i}/details`));
         }
 
@@ -118,7 +118,7 @@ void async function () {
 
                 const res = await webflowDataService.addItemToCollection(config.collections.buildings, {
                     'token-id': b.attributes.tokenId,
-                    'image': b.image,
+                    'building-image-primary': b.image,
                     'background-color': `#${b.background_color}`,
                     'city': shortCityNameMapper(b.city),
                     'city-full-name': b.attributes.city,
