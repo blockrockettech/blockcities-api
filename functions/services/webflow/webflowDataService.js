@@ -7,15 +7,11 @@ class WebflowDataService {
         this.api = new Webflow({token: config.apiToken});
     }
 
-    async geSites() {
+    async getSites() {
         return this.api.sites({});
     }
 
-    async geSite(siteId) {
-        return this.api.site({siteId: siteId});
-    }
-
-    async getSiteCollections(siteId) {
+    async getSite(siteId) {
         return this.api.site({siteId: siteId});
     }
 
@@ -24,32 +20,48 @@ class WebflowDataService {
     }
 
     async getCollectionItems(collectionId) {
-        return this.api.collection({collectionId: collectionId});
+        const collection = await this.api.collection({collectionId: collectionId});
+        return collection.items();
+    }
+
+    async removeCollection(collectionId) {
+        const collection = await this.api.collection({collectionId: collectionId});
+        const items = await collection.items();
+
+        items.items.forEach((i) => this.api.removeItem({
+            collectionId: collectionId,
+            itemId: i._id,
+        }));
     }
 
     async upsertBuildData(collectionId, data) {
-        const {tokenId} = data;
+        try {
+            const {tokenId} = data;
 
-        const results = await this.findItemsInCollectionByTokenId(collectionId, tokenId);
-        const {items, total} = results;
-        console.log(items);
+            const items = await this.getCollectionItems(collectionId);
+            const tokens = items.items.filter((i) => i['token-id'] === tokenId);
 
-        if (total > 1) {
-            throw new Error('Something bad happened, we have multiple for the same token?');
-        }
+            if (tokens.length !== 1) {
+                throw new Error('Something bad happened, we do not have a single token');
+            }
 
-        if (total === 1) {
             // update
-            const {_id, slug} = items[0];
+            const {_id, slug} = tokens[0];
 
-            return await this.updateBuildForTokenId(collectionId, _id, {
+            console.log(_id);
+
+            const update = await this.updateBuildingForTokenId(collectionId, _id, {
                 ...data,
-                'token-id': tokenId,
-                slug: slug
             });
+
+            return update;
+
+        } catch (e) {
+            console.error(e);
         }
 
-        return this.addItemToCollection(collectionId, data);
+        //
+        // return this.addItemToCollection(collectionId, data);
     }
 
     async addItemToCollection(collectionId, data) {
@@ -63,19 +75,19 @@ class WebflowDataService {
         }, {live: true}); // {live: true} = publishes data immediately
     }
 
-    // FIXME this isnt working ... doesnt look like a way to find by field?
-    // we need to store ITEM ID in our DB for this to work correctly since
-    // https://wishlist.webflow.com/ideas/WEBFLOW-I-1449
-    async findItemsInCollectionByTokenId(collectionId, tokenId) {
-        return this.api.items({
-            collectionId: collectionId,
-        }, {
-            'token-id': tokenId,
-            'slug': tokenId
-        });
-    }
+    // // FIXME this isnt working ... doesnt look like a way to find by field?
+    // // we need to store ITEM ID in our DB for this to work correctly since
+    // // https://wishlist.webflow.com/ideas/WEBFLOW-I-1449
+    // async findItemsInCollectionByTokenId(collectionId, tokenId) {
+    //     return this.api.items({
+    //         collectionId: collectionId,
+    //     }, {
+    //         'token-id': tokenId,
+    //         'slug': tokenId
+    //     });
+    // }
 
-    async updateBuildForTokenId(collectionId, itemId, data) {
+    async updateBuildingForTokenId(collectionId, itemId, data) {
         return this.api.updateItem({
             collectionId: collectionId,
             itemId: itemId,
