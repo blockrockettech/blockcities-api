@@ -64,6 +64,25 @@ const shortCityNameMapper = (city) => {
     }
 };
 
+const heightClassMapper = (height) => {
+
+    if (height < 500) {
+        return 'Low Rise';
+    }
+    else if (height < 1000) {
+        return 'High Rise';
+    }
+    else if (height < 1500) {
+        return 'Skyscraper';
+    }
+    else if (height < 2000) {
+        return 'Super-Tall Skyscraper';
+    }
+    else {
+        'Mega-Tall Skyscraper'
+    }
+};
+
 const wait = async () => {
     return new Promise((resolve, reject) => {
         setTimeout(resolve, 2000);
@@ -109,7 +128,7 @@ void async function () {
                     'current-owner': b.owner,
                     'buildingdescription': b.description,
                     'height': dimensions.height,
-                    'height-class': 'Super-Tall',
+                    'height-class': heightClassMapper(dimensions.height),
                     'date-built': 'Jan 1, 1970',
                     'groundfloor': b.attributes.groundFloor,
                     'body': b.attributes.body,
