@@ -7,6 +7,33 @@ const {cityNameMapper} = require('./citymapper');
 
 const {backgroundColorwaySwitch} = require('../services/background-colours');
 
+const colorMapper = (color) => {
+
+    switch (color) {
+        case 'red':
+            return 'Red';
+        case 'darkgrey':
+            return 'Dark Grey';
+        case 'gold':
+            return 'Gold';
+        case 'aquablue':
+            return 'Aqua Blue';
+        case 'trueblue':
+            return 'True Blue';
+        case 'lightbeige':
+            return 'Light Beige';
+        case 'darkbrown':
+            return 'Dark Brown';
+        case 'lightgrey':
+            return 'Light Grey';
+        case 'black':
+            return 'Black';
+        default:
+            console.error(`Unable to map color [${color}]`);
+            return _.toString(color);
+    }
+};
+
 const classicOrSpecialMapper = (special) => {
     return (special < 1000000) ? 'Classic' : 'Special';
 };
@@ -104,10 +131,10 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
     const colorArray = colorLogic[exteriorColorway];
     if (colorArray) {
         return {
-            exteriorColorway: colorArray[0],
-            roofWindowColorway: colorArray[1],
-            bodyWindowColorway: colorArray[2],
-            baseWindowColorway: colorArray[3],
+            exteriorColorway: colorMapper(colorArray[0]),
+            roofWindowColorway: colorMapper(colorArray[1]),
+            bodyWindowColorway: colorMapper(colorArray[2]),
+            baseWindowColorway: colorMapper(colorArray[3]),
         };
     }
 
