@@ -25,9 +25,14 @@ class BlockcitiesContractService {
         const token = connectToBlockCities(network);
         const tokensOfOwner = await token.tokensOfOwner(owner);
 
-        // console.log(tokensOfOwner);
-
         return tokensOfOwner;
+    }
+
+    async ownerOfToken(network = 1, tokenId) {
+        const token = connectToBlockCities(network);
+        const owner = await token.ownerOf(tokenId);
+
+        return owner[0];
     }
 
     // FIXME delete if not needed
@@ -62,9 +67,6 @@ class BlockcitiesContractService {
             _special,
             _architect
         } = await token.attributes(tokenId);
-
-        // Get token URI
-        // const tokenURI = await token.tokenURI(tokenId);
 
         // Build full details response
         return {

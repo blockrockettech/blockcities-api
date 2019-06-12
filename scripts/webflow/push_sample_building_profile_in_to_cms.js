@@ -6,6 +6,64 @@ const axios = require('axios');
 
 const schema = require('./schema');
 
+const probe = require('probe-image-size');
+
+// FIXME didn't work in citymapper...figure out why...
+const Atlanta = {
+    id: 0,
+    name: 'Atlanta',
+    short: 'ATL',
+};
+
+const NYC = {
+    id: 1,
+    name: 'New York City',
+    short: 'NYC',
+};
+
+const Chicago = {
+    id: 2,
+    name: 'Chicago',
+    short: 'CHI',
+};
+
+const SanFrancisco = {
+    id: 3,
+    name: 'San Francisco',
+    short: 'SF',
+};
+
+const Tokyo = {
+    id: 4,
+    name: 'Tokyo',
+    short: 'TOK',
+};
+
+const London = {
+    id: 5,
+    name: 'London',
+    short: 'LON',
+};
+
+const shortCityNameMapper = (city) => {
+    switch (city) {
+        case Atlanta.id:
+            return Atlanta.short;
+        case NYC.id:
+            return NYC.short;
+        case Chicago.id:
+            return Chicago.short;
+        case SanFrancisco.id:
+            return SanFrancisco.short;
+        case Tokyo.id:
+            return Tokyo.short;
+        case London.id:
+            return London.short;
+        default:
+            return 'XXX';
+    }
+};
+
 const wait = async () => {
     return new Promise((resolve, reject) => {
         setTimeout(resolve, 2000);
@@ -24,8 +82,8 @@ void async function () {
         // console.log(`Collection removed`);
 
         const promiseArray = [];
-        for (let i = 1000; i < 1001; i++) {
-            promiseArray.push(axios.get(`https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/${i}`));
+        for (let i = 800; i < 810; i++) {
+            promiseArray.push(axios.get(`https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/${i}/details`));
         }
 
         const metaDataArray = await Promise.all(promiseArray);
@@ -35,20 +93,22 @@ void async function () {
         buildings.forEach(async (b) => {
             try {
 
+                const dimensions = await probe(b.image);
+
                 await wait();
 
                 const res = await webflowDataService.addItemToCollection(config.collections.buildings, {
                     'token-id': b.attributes.tokenId,
                     'image': b.image,
                     'background-color': `#${b.background_color}`,
-                    'city': 'XXX',
+                    'city': shortCityNameMapper(b.city),
                     'city-full-name': b.attributes.city,
                     'era': '0',
                     'era-class': 'Modern',
                     'architect': b.attributes.architect,
-                    'current-owner': '0x0',
+                    'current-owner': b.owner,
                     'buildingdescription': b.description,
-                    'height': 1000,
+                    'height': dimensions.height,
                     'height-class': 'Super-Tall',
                     'date-built': 'Jan 1, 1970',
                     'groundfloor': b.attributes.groundFloor,
