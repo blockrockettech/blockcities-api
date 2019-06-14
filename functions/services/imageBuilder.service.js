@@ -32,7 +32,7 @@ class ImageBuilderService {
             roof,
             exteriorColorway,
             backgroundColorway,
-        }) {
+        }, imageType = 'svg') {
 
         try {
             if (parseInt(building) === 8) {
@@ -162,7 +162,7 @@ class ImageBuilderService {
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width + (xPadding * 2);
 
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+            const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
             const ctx = canvas.getContext('2d');
 
             const startBaseY = canvasHeight - baseConfig.height;
@@ -196,7 +196,8 @@ class ImageBuilderService {
                 adjustedRoofHeight
             );
 
-            return canvas.toBuffer('image/svg+xml', {
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
                 title: `BlockCities`,
                 keywords: 'BlockCities',
                 creationDate: new Date()
