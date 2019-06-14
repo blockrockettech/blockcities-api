@@ -46,8 +46,12 @@ app.get('/network/:network/tokens/:owner/details', async (request, response) => 
 });
 
 // The image generator
+app.get('/network/:network/token/image/:tokenId.png', async (request, response) => {
+    return require('./image').generateTokenImagePng(request, response);
+});
+
 app.get('/network/:network/token/:tokenId/image', async (request, response) => {
-    return require('./image').generateTokenImage(request, response);
+    return require('./image').generateTokenImageSvg(request, response);
 });
 
 // The image tester

@@ -3,7 +3,7 @@ const blockcitiesContractService = require('../services/blockcities.contract.ser
 
 module.exports = {
 
-    async generateTokenImage (request, response) {
+    async generateTokenImageSvg (request, response) {
 
         try {
             const tokenId = request.params.tokenId;
@@ -34,6 +34,43 @@ module.exports = {
 
             return response
                 .contentType('image/svg+xml')
+                .send(image);
+        } catch (e) {
+            console.error(e);
+        }
+    },
+
+    async generateTokenImagePng (request, response) {
+
+        try {
+            const tokenId = request.params.tokenId;
+            if (!tokenId) {
+                return response.status(400).json({
+                    failure: `Token ID not provided`
+                });
+            }
+
+            const network = request.params.network;
+            if (!network) {
+                return response.status(400).json({
+                    failure: `Network not provided`
+                });
+            }
+
+            const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
+
+            if (tokenDetails.special !== 0) {
+                // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+                const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special);
+                return response
+                    .contentType('image/png')
+                    .send(specialSvg);
+            }
+
+            const image = await imageBuilderService.generateImage(tokenDetails, 'png');
+
+            return response
+                .contentType('image/png')
                 .send(image);
         } catch (e) {
             console.error(e);
