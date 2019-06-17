@@ -60,8 +60,28 @@ const cityNameMapper = ({special, city}) => {
     }
 };
 
+const shortCityNameMapper = (city) => {
+    switch (city) {
+        case Atlanta.id:
+            return Atlanta.short;
+        case NYC.id:
+            return NYC.short;
+        case Chicago.id:
+            return Chicago.short;
+        case SanFrancisco.id:
+            return SanFrancisco.short;
+        case Tokyo.id:
+            return Tokyo.short;
+        case London.id:
+            return London.short;
+        default:
+            return 'XXX';
+    }
+};
+
 module.exports = {
     cityNameMapper,
+    shortCityNameMapper,
     config: {
         Atlanta,
         NYC,
