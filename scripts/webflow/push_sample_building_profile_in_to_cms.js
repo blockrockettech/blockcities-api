@@ -34,7 +34,7 @@ void async function () {
         // console.log(`Collection removed`);
 
         const promiseArray = [];
-        for (let i = 1; i < 100; i++) {
+        for (let i = 1; i < 10; i++) {
             promiseArray.push(axios.get(`https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/${i}/details`));
         }
 
@@ -79,7 +79,7 @@ void async function () {
                     buildingId: b.building
                 });
 
-                console.log(`token ID ${b.tokenId}, buildingID ${b.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFootDescription(heightInFt)}`);
+                console.log(`token ID ${b.tokenId}, building ID ${b.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
 
                 // console.log(b.tokenId, b.building, heightInFt, heightInFootDescription(heightInFt));
 
