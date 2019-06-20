@@ -55,7 +55,7 @@ const heightInFootDescription = (footHeight) => {
 
 const heightMapper = ({standardWidth, adjustedWidth, pixelHeight, buildingId}) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor((standardWidth / adjustedWidth) * buildingRatios[buildingId] * pixelHeight);
+        return Math.floor(((standardWidth / adjustedWidth) * pixelHeight) * buildingRatios[buildingId]);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
         return pixelHeight;
