@@ -1,20 +1,37 @@
 const buildingRatios = {
+
     0: 1.054380664653,
+
     1: 0.859598853868,
+
     2: 0.628294036061,
+
     3: 1.486910994764,
+
     4: 1.412037037037,
-    5: 1.412037037037,
+
+    5: 0.551169590643,
+
     6: 0.430622009569,
+
     7: 0.434509803922,
+
     8: 0.967930029155,
-    9: 0.967930029155,
-    10: 1, // MISSING
+
+    9: 1.040939193257,
+
+    10: 0.952998379254,
+
     11: 0.676716917923,
+
     12: 0.627118644068,
+
     13: 0.355453852021,
+
     14: 0.690763052209,
+
     15: 0.952054794521,
+
 };
 
 // Low Rise	0-114.829
@@ -36,9 +53,9 @@ const heightInFootDescription = (footHeight) => {
     }
 };
 
-const heightMapper = ({pixelHeight, buildingId}) => {
+const heightMapper = ({standardWidth, adjustedWidth, pixelHeight, buildingId}) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor(buildingRatios[buildingId] * pixelHeight);
+        return Math.floor((standardWidth / adjustedWidth) * buildingRatios[buildingId] * pixelHeight);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
         return pixelHeight;

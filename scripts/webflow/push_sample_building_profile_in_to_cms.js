@@ -8,63 +8,10 @@ const schema = require('./schema');
 
 const probe = require('probe-image-size');
 
+const {shortCityNameMapper} = require('../../functions/tokenUri/citymapper');
 const {heightMapper, heightInFootDescription} = require('../../functions/tokenUri/height-mapper');
 
-// FIXME didn't work in citymapper...specialDataMappings throwing error
-const Atlanta = {
-    id: 0,
-    name: 'Atlanta',
-    short: 'ATL',
-};
-
-const NYC = {
-    id: 1,
-    name: 'New York City',
-    short: 'NYC',
-};
-
-const Chicago = {
-    id: 2,
-    name: 'Chicago',
-    short: 'CHI',
-};
-
-const SanFrancisco = {
-    id: 3,
-    name: 'San Francisco',
-    short: 'SF',
-};
-
-const Tokyo = {
-    id: 4,
-    name: 'Tokyo',
-    short: 'TOK',
-};
-
-const London = {
-    id: 5,
-    name: 'London',
-    short: 'LON',
-};
-
-const shortCityNameMapper = (city) => {
-    switch (city) {
-        case Atlanta.id:
-            return Atlanta.short;
-        case NYC.id:
-            return NYC.short;
-        case Chicago.id:
-            return Chicago.short;
-        case SanFrancisco.id:
-            return SanFrancisco.short;
-        case Tokyo.id:
-            return Tokyo.short;
-        case London.id:
-            return London.short;
-        default:
-            return 'XXX';
-    }
-};
+const imageBuilderService = require('../../functions/services/imageBuilder.service');
 
 const wait = async () => {
     return new Promise((resolve, reject) => {
@@ -102,9 +49,39 @@ void async function () {
 
                 await wait();
 
-                // console.log('.');
+                // Standard width
+                const {adjustedBodyHeight: standardBodyHeight, adjustedBodyWidth: standardBodyWidth, canvasHeight: standardCanvasHeight} = await imageBuilderService.generateImageStats({
+                    building: b.building,
+                    base: 0,
+                    body: 0,
+                    roof: 0,
+                    exteriorColorway: b.exteriorColorway,
+                    backgroundColorway: b.backgroundColorway,
+                });
 
-                console.log(b.tokenId, b.building, heightMapper({pixelHeight: dimensions.height, buildingId: b.building }), heightInFootDescription(heightMapper({pixelHeight: dimensions.height, buildingId: b.building })))
+                // Adjusted width
+                const {adjustedBodyHeight, adjustedBodyWidth, canvasHeight} = await imageBuilderService.generateImageStats({
+                    building: b.building,
+                    base: b.base,
+                    body: b.body,
+                    roof: b.roof,
+                    exteriorColorway: b.exteriorColorway,
+                    backgroundColorway: b.backgroundColorway,
+                });
+
+                // console.log(`S height ${standardBodyHeight} body ${standardBodyWidth} height ${standardCanvasHeight}`);
+                // console.log(`A height ${adjustedBodyHeight} body ${adjustedBodyWidth} height ${canvasHeight}`);
+
+                const heightInFt = heightMapper({
+                    standardWidth: standardBodyWidth,
+                    adjustedWidth: adjustedBodyWidth,
+                    pixelHeight: dimensions.height,
+                    buildingId: b.building
+                });
+
+                console.log(`token ID ${b.tokenId}, buildingID ${b.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFootDescription(heightInFt)}`);
+
+                // console.log(b.tokenId, b.building, heightInFt, heightInFootDescription(heightInFt));
 
                 // const res = await webflowDataService.addItemToCollection(config.collections.buildings, {
                 //     'token-id': b.attributes.tokenId,
