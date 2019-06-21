@@ -16,7 +16,7 @@ module.exports = {
         const tokenId = request.params.tokenId;
         const network = request.params.network;
 
-        const metadata = await blockCitiesDataService.metadata(network, tokenId);
+        const metadata = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
         return response.status(200).json(metadata);
     },
@@ -27,7 +27,7 @@ module.exports = {
         const network = request.params.network;
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const metaData = await blockCitiesDataService.metadata(network, tokenId);
+        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
         const owner = await blockCitiesDataService.ownerOfToken(network, tokenId);
 
         return response.status(200).json({...tokenDetails, ...metaData, tokenId, owner});
@@ -51,7 +51,7 @@ module.exports = {
 
         const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
             const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-            const metaData = await blockCitiesDataService.metadata(network, tokenId);
+            const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
             return {...tokenDetails, ...metaData, tokenId: tokenId};
         }));
