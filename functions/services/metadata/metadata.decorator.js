@@ -112,7 +112,7 @@ const groundFloorMapper = ({building, base, special}) => {
             groundFloorUse: buildingUse
         };
     } catch (e) {
-        console.error(`Failed looking up metadata for building ${building} base ${base} special ${special}`, e);
+        console.error(`Failed looking up GROUND metadata for building ${building} base ${base} special ${special}`, e);
         return {
             groundFloorType: base,
             groundFloorUse: base
@@ -120,7 +120,7 @@ const groundFloorMapper = ({building, base, special}) => {
     }
 };
 
-const roofTopMapper = ({building, roof, special}) => {
+const roofTopMapper = ({building, roof, body, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             const value = classicOrSpecialMapper(special);
@@ -130,13 +130,23 @@ const roofTopMapper = ({building, roof, special}) => {
             };
         }
 
-        const {buildingType, buildingUse} = metadataMappings[building].roofs[roof];
+        const found = metadataMappings[building].roofs[roof];
+        if (!found) {
+            // Trump tower does not have a roof mapping - when this happens fall back to the core mapping
+            const {coreType, coreUse} = coreMapper({building, body, special});
+            return {
+                rooftopType: coreType,
+                rooftopUse: coreUse
+            };
+        }
+
+        const {buildingType, buildingUse} = found;
         return {
             rooftopType: buildingType,
             rooftopUse: buildingUse
         };
     } catch (e) {
-        console.error(`Failed looking up metadata for building ${building} roof ${roof} special ${special}`, e);
+        console.error(`Failed looking up ROOF metadata for building ${building} roof ${roof} special ${special}`, e);
         return {
             rooftopType: roof,
             rooftopUse: roof
@@ -154,13 +164,13 @@ const coreMapper = ({building, body, special}) => {
             };
         }
 
-        const {buildingType, buildingUse} = metadataMappings[building].roofs[body];
+        const {buildingType, buildingUse} = metadataMappings[building].bodies[body];
         return {
             coreType: buildingType,
             coreUse: buildingUse
         };
     } catch (e) {
-        console.error(`Failed looking up metadata for building ${building} body ${body} special ${special}`, e);
+        console.error(`Failed looking up CORE metadata for building ${building} body ${body} special ${special}`, e);
         return {
             coreType: body,
             coreUse: body
