@@ -3,7 +3,7 @@ const blockcitiesContractService = require('../../services/blockcities.contract.
 
 module.exports = {
 
-    async generateTokenImageSvg (request, response) {
+    async generateTokenImageSvg(request, response) {
 
         try {
             const tokenId = request.params.tokenId;
@@ -40,7 +40,7 @@ module.exports = {
         }
     },
 
-    async generateTokenImagePng (request, response) {
+    async generateTokenImagePng(request, response) {
 
         try {
             const tokenId = request.params.tokenId;
@@ -61,7 +61,7 @@ module.exports = {
 
             if (tokenDetails.special !== 0) {
                 // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-                const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special);
+                const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
                 return response
                     .contentType('image/png')
                     .send(specialSvg);
@@ -77,7 +77,7 @@ module.exports = {
         }
     },
 
-    async generateTestImage (request, response) {
+    async generateTestImage(request, response) {
         try {
             // console.log(request.params);
             const image = await imageBuilderService.generateImage({
@@ -97,7 +97,7 @@ module.exports = {
         }
     },
 
-    async generateTestImages (request, response) {
+    async generateTestImages(request, response) {
         try {
 
             function getRandomArbitrary(max) {
