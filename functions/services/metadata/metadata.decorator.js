@@ -96,31 +96,75 @@ const windowTypeMapper = ({building, body, special}) => {
     }
 };
 
-const baseNameMapper = ({building, base, special}) => {
+const groundFloorMapper = ({building, base, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
-            return classicOrSpecialMapper(special);
+            const value = classicOrSpecialMapper(special);
+            return {
+                groundFloorType: value,
+                groundFloorUse: value
+            };
         }
 
         const {buildingType, buildingUse} = metadataMappings[building].bases[base];
-        return buildingType;
+        return {
+            groundFloorType: buildingType,
+            groundFloorUse: buildingUse
+        };
     } catch (e) {
         console.error(`Failed looking up metadata for building ${building} base ${base} special ${special}`, e);
-        return base;
+        return {
+            groundFloorType: base,
+            groundFloorUse: base
+        };
     }
 };
 
-const roofNameMapper = ({building, roof, special}) => {
+const roofTopMapper = ({building, roof, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
-            return classicOrSpecialMapper(special);
+            const value = classicOrSpecialMapper(special);
+            return {
+                rooftopType: value,
+                rooftopUse: value
+            };
         }
 
         const {buildingType, buildingUse} = metadataMappings[building].roofs[roof];
-        return buildingType;
+        return {
+            rooftopType: buildingType,
+            rooftopUse: buildingUse
+        };
     } catch (e) {
         console.error(`Failed looking up metadata for building ${building} roof ${roof} special ${special}`, e);
-        return roof;
+        return {
+            rooftopType: roof,
+            rooftopUse: roof
+        };
+    }
+};
+
+const coreMapper = ({building, body, special}) => {
+    try {
+        if (special !== 0 && specialMappings[special]) {
+            const value = classicOrSpecialMapper(special);
+            return {
+                coreType: value,
+                coreUse: value
+            };
+        }
+
+        const {buildingType, buildingUse} = metadataMappings[building].roofs[body];
+        return {
+            coreType: buildingType,
+            coreUse: buildingUse
+        };
+    } catch (e) {
+        console.error(`Failed looking up metadata for building ${building} body ${body} special ${special}`, e);
+        return {
+            coreType: body,
+            coreUse: body
+        };
     }
 };
 
@@ -162,12 +206,16 @@ const decorateMetadataName = (rawMetaData) => {
         tokenId: rawMetaData.tokenId,
         architect: rawMetaData.architect,
         city: cityNameMapper(rawMetaData),
-        groundFloor: baseNameMapper(rawMetaData),
-        body: buildingNameMapper(rawMetaData), // PA requested body should be the building name
-        roof: roofNameMapper(rawMetaData),
+
+        // replaced with coreMapper
+        // body: buildingNameMapper(rawMetaData), // PA requested body should be the building name
         building: buildingNameMapper(rawMetaData),
         windowType: windowTypeMapper(rawMetaData),
         backgroundColorway: backgroundColorwayName(rawMetaData),
+
+        ...groundFloorMapper(rawMetaData),
+        ...roofTopMapper(rawMetaData),
+        ...coreMapper(rawMetaData),
         ...exteriorColorwayName(rawMetaData),
     };
 };
