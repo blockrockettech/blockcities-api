@@ -1,5 +1,6 @@
 const readFilePromise = require('fs-readfile-promise');
 const {createCanvas, loadImage, Image} = require('canvas');
+const svg2img = require('svg2img');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 
@@ -13,12 +14,31 @@ const xPadding = 0;
 
 class ImageBuilderService {
 
-    async loadSpecial(specialId) {
+    async loadSpecial(specialId, imageType = 'svg') {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
-            return rawSvg;
+
+            const special = await loadImage(Buffer.from(rawSvg, 'utf8'));
+            console.log(special.width, special.height);
+
+            const canvas = createCanvas(special.width, special.height, imageType);
+            const ctx = canvas.getContext('2d');
+
+            ctx.drawImage(
+                special,
+                0,
+                0
+            );
+
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
+                title: `BlockCities special`,
+                keywords: 'BlockCities special',
+                creationDate: new Date()
+            });
+
         } catch (e) {
             console.error(e);
         }
@@ -315,13 +335,13 @@ class ImageBuilderService {
 
     // FIXME when and if we know this works then rework into one shared function
     async generateImageStats({
-            building,
-            base,
-            body,
-            roof,
-            exteriorColorway,
-            backgroundColorway,
-        }) {
+                                 building,
+                                 base,
+                                 body,
+                                 roof,
+                                 exteriorColorway,
+                                 backgroundColorway,
+                             }) {
 
         try {
             if (parseInt(building) === 8) {
