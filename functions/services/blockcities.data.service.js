@@ -10,7 +10,7 @@ const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
 const {heightMapper, heightInFootDescription} = require('./metadata/height-mapper');
 
-const config = require('./webflow/config');
+const config = require('./config');
 
 const padTokenId = (tokenId) => ('00000' + tokenId).slice(-6);
 
@@ -121,7 +121,7 @@ class BlockCitiesDataService {
 
         console.log(`token ID ${data.tokenId}, building ID ${data.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
 
-        await webflowDataService.addItemToCollection(config.collections.buildings, {
+        await webflowDataService.addItemToCollection(config.webflow.collections.buildings, {
             'token-id': data.attributes.tokenId,
             'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
             'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,

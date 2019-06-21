@@ -1,9 +1,6 @@
 const _ = require('lodash');
 const axios = require('axios');
-const {getAddressForNetwork} = require("./abi/networks");
-
-// FIXME use firebase config
-const API_KEY = "33afe84383074118ba5c4a54bf08db81";
+const {getAddressForNetwork} = require('./abi/networks');
 
 const getApi = (networkId) => {
     switch (_.toString(networkId)) {
@@ -16,6 +13,8 @@ const getApi = (networkId) => {
     }
 };
 
+const config = require('./config');
+
 class OpenSeaService {
 
     refreshTokenMetaData(network, tokenId) {
@@ -23,7 +22,7 @@ class OpenSeaService {
 
         return axios
             .get(`${getApi(network)}/asset/${address}/${tokenId}/?force_update=true`, {
-                'X-API-KEY': API_KEY
+                'X-API-KEY': config.openSea.apiToken
             })
             .then((result) => {
                 return result.data;

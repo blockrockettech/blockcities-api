@@ -1,10 +1,10 @@
 const Webflow = require('webflow-api');
-const config = require('./config');
+const config = require('../config');
 
 class WebflowDataService {
 
     constructor() {
-        this.api = new Webflow({token: config.apiToken});
+        this.api = new Webflow({token: config.webflow.apiToken});
     }
 
     async getSites() {
