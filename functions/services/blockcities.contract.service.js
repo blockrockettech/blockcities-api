@@ -1,4 +1,8 @@
-const {connectToBlockCities} = require("./abi/networks");
+const {
+    connectToBlockCities,
+    connectToBlockCitiesWebSocketWeb3,
+    web3HttpInstance
+} = require('./abi/networks');
 
 class BlockcitiesContractService {
 
@@ -81,6 +85,52 @@ class BlockcitiesContractService {
             architect: _architect,
             tokenId: tokenId,
         };
+    }
+
+    async birthEventForToken(network, tokenId) {
+        console.log(`Finding birth event for token [${tokenId}] on network [${network}]`);
+
+        const contract = connectToBlockCitiesWebSocketWeb3(network);
+        const web3Instance = web3HttpInstance(network);
+
+        return new Promise((resolve, reject) => {
+
+            const handler = function (error, events) {
+                if (!error) {
+                    // console.log(events);
+                    if (events.length !== 1) {
+                        reject(new Error(`Found multiple BuildingMinted events for token ID [${tokenId}]`));
+                    } else {
+                        const creationEvent = events[0];
+
+                        // We need to then look up block to get a valid timestamp
+                        web3Instance.eth.getBlock(creationEvent.blockNumber)
+                            .then((block) => {
+                                resolve({
+                                    blockNumber: creationEvent.blockNumber,
+                                    blockHash: creationEvent.blockHash,
+                                    transactionHash: creationEvent.transactionHash,
+                                    blockTimestamp: block.timestamp
+                                });
+                            });
+                    }
+                } else {
+                    console.log(error);
+                    reject(error);
+                }
+            };
+
+            contract.getPastEvents(
+                'BuildingMinted',
+                {
+                    filter: {
+                        _tokenId: 1
+                    },
+                    fromBlock: 7488550, toBlock: 'latest'
+                },
+                handler
+            );
+        });
     }
 
 }
