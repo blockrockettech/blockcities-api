@@ -121,7 +121,7 @@ class BlockCitiesDataService {
 
         console.log(`token ID ${data.tokenId}, building ID ${data.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
 
-        const res = await webflowDataService.addItemToCollection(config.collections.buildings, {
+        await webflowDataService.addItemToCollection(config.collections.buildings, {
             'token-id': data.attributes.tokenId,
             'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
             'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
@@ -157,8 +157,8 @@ class BlockCitiesDataService {
             'slug': data.attributes.tokenId.toString(), // slug is used to define URL
         });
 
-        console.log(`Added token [${tokenId}] to webflow - status [${res.status}]`);
-        return res;
+        console.log(`Added token [${tokenId}] to webflow `);
+        return tokenId;
     }
 }
 
