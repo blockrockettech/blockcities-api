@@ -38,19 +38,6 @@ const classicOrSpecialMapper = (special) => {
     return (special < 1000000) ? 'Classic' : 'Special';
 };
 
-const windowTypeMapper = ({building, body, special}) => {
-    try {
-        if (special !== 0 && specialMappings[special]) {
-            return classicOrSpecialMapper(special);
-        }
-
-        return metadataMappings[building].bodies[body];
-    } catch (e) {
-        console.error(`Failed looking up type metadata for building ${building} body ${body} special ${special}`, e);
-        return base;
-    }
-};
-
 const buildingNameMapper = ({building, special}) => {
     if (special !== 0 && specialMappings[special]) {
         return specialMappings[special].name;
@@ -95,13 +82,28 @@ const buildingNameMapper = ({building, special}) => {
     }
 };
 
+const windowTypeMapper = ({building, body, special}) => {
+    try {
+        if (special !== 0 && specialMappings[special]) {
+            return classicOrSpecialMapper(special);
+        }
+
+        const {buildingType, buildingUse} = metadataMappings[building].bodies[body];
+        return buildingType;
+    } catch (e) {
+        console.error(`Failed looking up type metadata for building ${building} body ${body} special ${special}`, e);
+        return base;
+    }
+};
+
 const baseNameMapper = ({building, base, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             return classicOrSpecialMapper(special);
         }
 
-        return metadataMappings[building].bases[base];
+        const {buildingType, buildingUse} = metadataMappings[building].bases[base];
+        return buildingType;
     } catch (e) {
         console.error(`Failed looking up metadata for building ${building} base ${base} special ${special}`, e);
         return base;
@@ -114,7 +116,8 @@ const roofNameMapper = ({building, roof, special}) => {
             return classicOrSpecialMapper(special);
         }
 
-        return metadataMappings[building].roofs[roof];
+        const {buildingType, buildingUse} = metadataMappings[building].roofs[roof];
+        return buildingType;
     } catch (e) {
         console.error(`Failed looking up metadata for building ${building} roof ${roof} special ${special}`, e);
         return roof;
