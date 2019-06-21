@@ -1,6 +1,3 @@
-const fs = require('fs');
-const _ = require('lodash');
-
 const blockcitiesContractService = require('../../functions/services/blockcities.contract.service');
 const openSeaService = require('../../functions/services/openSea.service');
 

@@ -1,9 +1,9 @@
-const config = require('../../functions/services/webflow/config');
+const config = require('../../functions/services/config');
 const webflowDataService = require('../../functions/services/webflow/webflowDataService');
 
 void async function () {
     try {
-        await webflowDataService.removeCollection(config.collections.buildings);
+        await webflowDataService.removeCollection(config.webflow.collections.buildings);
         console.log(`Collection removed`);
 
         process.exit();

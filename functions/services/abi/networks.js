@@ -72,5 +72,6 @@ const getAddressForNetwork = (network) => {
 module.exports = {
     connectToBlockCities,
     connectToBlockCitiesWebSocketWeb3,
-    web3HttpInstance
+    web3HttpInstance,
+    getAddressForNetwork
 };

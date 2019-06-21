@@ -6,6 +6,7 @@ Blockcites API
 * Setup local and prod envs with the correct open sea API key
     ```
     firebase functions:config:set webflow.api.key="<the secret API key>"
+    firebase functions:config:set opensea.api.key="<the secret API key>"
     ```
 * To run locally you need to 
     * `cd functions`
