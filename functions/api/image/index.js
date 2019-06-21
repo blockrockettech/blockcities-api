@@ -1,5 +1,5 @@
-const imageBuilderService = require('../services/imageBuilder.service');
-const blockcitiesContractService = require('../services/blockcities.contract.service');
+const imageBuilderService = require('../../services/imageBuilder.service');
+const blockcitiesContractService = require('../../services/blockcities.contract.service');
 
 module.exports = {
 

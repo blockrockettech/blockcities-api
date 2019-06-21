@@ -7,7 +7,7 @@ const {
     London
 } = require('./cities');
 
-const {config: backgrounConfig} = require('../services/background-colours');
+const {config: backgrounConfig} = require('./background-colours');
 
 // Don't export bname to the public!
 module.exports = {

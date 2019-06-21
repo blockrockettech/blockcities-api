@@ -16,7 +16,9 @@ module.exports =
             type: 'ImageRef',
             required: false,
             editable: true,
-            id: '74bbcf7e19fd29820388472070faece3'
+            helpText: '',
+            id: '74bbcf7e19fd29820388472070faece3',
+            validations: {}
         },
         {
             name: 'background color',
@@ -199,46 +201,6 @@ module.exports =
             validations: [Object]
         },
         {
-            name: 'ground floor - exterior color icon',
-            slug: 'ground-floor-exterior-color-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '7e7afab4b60421dc5663633524cec258',
-            validations: {}
-        },
-        {
-            name: 'ground floor - window color icon',
-            slug: 'ground-floor-window-color-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: 'e178af2a8f3780ed9383b2e65391dfc1',
-            validations: {}
-        },
-        {
-            name: 'ground floor - window type icon',
-            slug: 'ground-floor-window-type-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: 'd7651a4a4485e321a98d4554b07d2659',
-            validations: {}
-        },
-        {
-            name: 'ground floor - use icon',
-            slug: 'ground-floor-use-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '87bdf972d793707646960630360d5e4d',
-            validations: {}
-        },
-        {
             name: 'body - exterior color',
             slug: 'body-exterior-color',
             type: 'PlainText',
@@ -277,46 +239,6 @@ module.exports =
             helpText: '',
             id: 'deae8b3cd69316f9d9bc106c6b657144',
             validations: [Object]
-        },
-        {
-            name: 'body - exterior color icon',
-            slug: 'body-exterior-color-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '40557423852c2e758a6458f6b486e0d2',
-            validations: {}
-        },
-        {
-            name: 'body - window color icon',
-            slug: 'body-window-color-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '1ce93a53ee71d43334f2b9777c827c5f',
-            validations: {}
-        },
-        {
-            name: 'body - window type icon',
-            slug: 'body-window-type-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '8c5d108b10fbb4ea397257eb00713c5b',
-            validations: {}
-        },
-        {
-            name: 'body - use icon',
-            slug: 'body-use-icon',
-            type: 'ImageRef',
-            required: false,
-            editable: true,
-            helpText: '',
-            id: '1a0d842b70772287ca8d19268b9a3449',
-            validations: {}
         },
         {
             name: 'roof - exterior color',
@@ -359,43 +281,43 @@ module.exports =
             validations: [Object]
         },
         {
-            name: 'roof - exterior color icon',
-            slug: 'roof-exterior-color-icon',
-            type: 'ImageRef',
+            name: 'building image link',
+            slug: 'building-image-link',
+            type: 'Link',
             required: false,
             editable: true,
             helpText: '',
-            id: 'b48afc2582c0325389ffef2d4674c1b7',
+            id: 'c7f1f7463c25e1dd574a3f9eb72b29ca',
             validations: {}
         },
         {
-            name: 'roof - window color icon',
-            slug: 'roof-window-color-icon',
-            type: 'ImageRef',
+            name: 'original architect short',
+            slug: 'original-architect-short',
+            type: 'PlainText',
             required: false,
             editable: true,
             helpText: '',
-            id: '370beade821c7f98a715b542045b4f1d',
-            validations: {}
+            id: '0fd32c22526d2ad1e6a78f329c93f4d6',
+            validations: [Object]
         },
         {
-            name: 'roof - window type icon',
-            slug: 'roof-window-type-icon',
-            type: 'ImageRef',
+            name: 'current owner short',
+            slug: 'current-owner-short',
+            type: 'PlainText',
             required: false,
             editable: true,
             helpText: '',
-            id: '809941065e0971d6ce54c153293657d7',
-            validations: {}
+            id: 'a7666cd5b2ed257cf3d6f41a58ae894e',
+            validations: [Object]
         },
         {
-            name: 'roof - use icon',
-            slug: 'roof-use-icon',
-            type: 'ImageRef',
+            name: 'Ride Transit',
+            slug: 'ride-transit',
+            type: 'Bool',
             required: false,
             editable: true,
             helpText: '',
-            id: '9968e41b63a421ac1ef3661eb913a945',
+            id: '8628e3c897725dae7a6b3fd54f5b9038',
             validations: {}
         },
         {
@@ -482,5 +404,4 @@ module.exports =
             required: false,
             editable: false,
             id: '60725b6ac0692a35bc26d2c8df2e320a'
-        }
-    ];
+        }];

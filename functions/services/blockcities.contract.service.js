@@ -4,6 +4,8 @@ const {
     web3HttpInstance
 } = require('./abi/networks');
 
+const moment = require('moment');
+
 class BlockcitiesContractService {
 
     async tokenBaseURI(network = 1) {
@@ -110,7 +112,8 @@ class BlockcitiesContractService {
                                     blockNumber: creationEvent.blockNumber,
                                     blockHash: creationEvent.blockHash,
                                     transactionHash: creationEvent.transactionHash,
-                                    blockTimestamp: block.timestamp
+                                    blockTimestamp: block.timestamp,
+                                    blockTimestampPretty: moment.unix(block.timestamp).format('MMM Do YYYY'),
                                 });
                             });
                     }

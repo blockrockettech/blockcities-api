@@ -1,11 +1,11 @@
 const _ = require('lodash');
 
 const specialMappings = require('./special-data-mapping');
-const colorLogic = require('../services/colour-logic');
+const colorLogic = require('./colour-logic');
 const metadataMappings = require('./metadata-mappings');
 const {cityNameMapper} = require('./citymapper');
 
-const {backgroundColorwaySwitch} = require('../services/background-colours');
+const {backgroundColorwaySwitch} = require('./background-colours');
 
 const colorMapper = (color) => {
 
