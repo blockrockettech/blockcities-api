@@ -28,12 +28,15 @@ class WebflowDataService {
         const collection = await this.api.collection({collectionId: collectionId});
         const items = await collection.items();
 
-        items.items.forEach((i) => this.api.removeItem({
+        return Promise.all(items.items.map((i) => this.api.removeItem({
             collectionId: collectionId,
             itemId: i._id,
-        }));
+        })));
     }
 
+    /**
+     * @deprecated dont use until we have a mapping table
+     */
     async upsertBuildData(collectionId, data) {
         try {
             const {tokenId} = data;
@@ -60,8 +63,7 @@ class WebflowDataService {
             console.error(e);
         }
 
-        //
-        // return this.addItemToCollection(collectionId, data);
+        return this.addItemToCollection(collectionId, data);
     }
 
     async addItemToCollection(collectionId, data) {
@@ -74,18 +76,6 @@ class WebflowDataService {
             }
         }, {live: true}); // {live: true} = publishes data immediately
     }
-
-    // // FIXME this isnt working ... doesnt look like a way to find by field?
-    // // we need to store ITEM ID in our DB for this to work correctly since
-    // // https://wishlist.webflow.com/ideas/WEBFLOW-I-1449
-    // async findItemsInCollectionByTokenId(collectionId, tokenId) {
-    //     return this.api.items({
-    //         collectionId: collectionId,
-    //     }, {
-    //         'token-id': tokenId,
-    //         'slug': tokenId
-    //     });
-    // }
 
     async updateBuildingForTokenId(collectionId, itemId, data) {
         return this.api.updateItem({

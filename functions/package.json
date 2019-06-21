@@ -12,6 +12,7 @@
     "firebase-functions": "^2.1.0",
     "fs-readfile-promise": "^3.0.1",
     "lodash": "^4.17.10",
+    "moment": "^2.24.0",
     "web3": "^1.0.0-beta.37"
   },
   "private": true,

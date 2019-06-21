@@ -8,8 +8,8 @@ const schema = require('./schema');
 
 const probe = require('probe-image-size');
 
-const {shortCityNameMapper} = require('../../functions/tokenUri/citymapper');
-const {heightMapper, heightInFootDescription} = require('../../functions/tokenUri/height-mapper');
+const {shortCityNameMapper} = require('../../functions/services/metadata/citymapper');
+const {heightMapper, heightInFootDescription} = require('../../functions/services/metadata/height-mapper');
 
 const imageBuilderService = require('../../functions/services/imageBuilder.service');
 
@@ -20,6 +20,8 @@ const wait = async () => {
 };
 
 const dot = (ethAccount) => ethAccount.substr(0, 4) + '...' + ethAccount.substr(ethAccount.length - 4, ethAccount.length);
+
+// TODO dead - remove once data loaded - only keeping for info for now
 
 void async function () {
 

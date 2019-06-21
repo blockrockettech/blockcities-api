@@ -1,12 +1,4 @@
-const axios = require('axios');
-
 const blockcitiesContractService = require('../../functions/services/blockcities.contract.service');
-
-const wait = async () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(resolve, 2000);
-    });
-};
 
 void async function () {
 

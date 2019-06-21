@@ -39,6 +39,7 @@ const buildingRatios = {
 // Skyscraper 328-984
 // Super-Tall Skyscraper 984-1969
 // Mega-Tall Skyscraper	1969+
+
 const heightInFootDescription = (footHeight) => {
     if (footHeight < 115) {
         return 'Low Rise';
