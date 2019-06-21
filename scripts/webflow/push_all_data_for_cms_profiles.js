@@ -14,8 +14,8 @@ const NETWORK = 1;
 void async function () {
 
     try {
-        await webflowDataService.removeCollection(config.collections.buildings);
-        console.log(`Collection removed`);
+        // await webflowDataService.removeCollection(config.collections.buildings);
+        // console.log(`Collection removed`);
 
         const {tokenIdPointer} = await blockcitiesDataService.tokenPointers(NETWORK);
         console.log(`Total tokens ${tokenIdPointer}`);
