@@ -32,7 +32,7 @@ module.exports = {
     },
     1: {
         bases: {
-            0: {buildingType: 'Standard', buildingUse: 'Business'},
+            0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             1: {buildingType: 'Parking Deck', buildingUse: 'Business'},
             2: {buildingType: '210 Peachtree', buildingUse: 'Retail'},
             3: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
@@ -46,7 +46,7 @@ module.exports = {
             2: {buildingType: 'Rectangle', buildingUse: 'Business'},
         },
         roofs: {
-            0: {buildingType: 'Standard', buildingUse: 'Business'},
+            0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             1: {buildingType: '885 6th Ave', buildingUse: 'Business'},
             2: {buildingType: 'Pool', buildingUse: 'Attraction'},
             3: {buildingType: '100 Peachtree', buildingUse: 'Business'},
@@ -185,7 +185,7 @@ module.exports = {
             3: {buildingType: 'Vertical', buildingUse: 'Hotel'},
         },
         roofs: {
-            0: {buildingType: 'Standard', buildingUse: 'Hotel'},
+            0: {buildingType: '36 Central Park S', buildingUse: 'Hotel'},
             1: {buildingType: 'Helipad', buildingUse: 'Hotel'},
             2: {buildingType: '885 6th Ave', buildingUse: 'Hotel'},
             3: {buildingType: 'Pool', buildingUse: 'Hotel'},
@@ -232,7 +232,7 @@ module.exports = {
             7: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
         },
         roofs: {
-            // no roof on this puppy!
+            // no roof on this cat!
         }
     },
     9: {
