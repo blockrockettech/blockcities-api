@@ -1,6 +1,5 @@
 const readFilePromise = require('fs-readfile-promise');
 const {createCanvas, loadImage, Image} = require('canvas');
-const svg2img = require('svg2img');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 

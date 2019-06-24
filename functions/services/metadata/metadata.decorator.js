@@ -206,8 +206,6 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
         return classicOrSpecialMapper(special);
     }
 
-    // FIXME should this call to backgroundColorwaySwitch
-
     return backgroundColorwaySwitch(backgroundColorway, special).name;
 };
 
