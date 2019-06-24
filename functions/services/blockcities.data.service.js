@@ -47,6 +47,27 @@ class BlockCitiesDataService {
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
 
+        // FIXME this is pony...fix the whole 8 thing
+        let bodyConfig, canvasHeight;
+        if (parseInt(tokenAttrs.building) === 8) {
+            const res = await imageBuilderService.generateNoRoofImageStats(tokenAttrs);
+            bodyConfig = res.bodyConfig;
+            canvasHeight = res.canvasHeight;
+        }
+        else {
+            const res = await imageBuilderService.generateImageStats(tokenAttrs);
+            bodyConfig = res.bodyConfig;
+            canvasHeight = res.canvasHeight;
+        }
+
+        const height = heightMapper({
+            standardWidth: bodyConfig.width,
+            adjustedWidth: bodyConfig.adjustedBodyWidth,
+            pixelHeight: canvasHeight,
+            buildingId: tokenAttrs.building,
+        });
+        const heightClass = heightInFootDescription(height);
+
         const attrs = decorateMetadataName(tokenAttrs);
 
         if (tokenAttrs.special !== 0) {
@@ -56,7 +77,9 @@ class BlockCitiesDataService {
                 image: `${tokenBaseURI[0]}${tokenId}/image`,
                 background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway, tokenAttrs.special).hex,
                 attributes: {
-                    ...attrs
+                    ...attrs,
+                    height,
+                    heightClass,
                 }
             };
         }
@@ -67,7 +90,9 @@ class BlockCitiesDataService {
             image: `${tokenBaseURI[0]}${tokenId}/image`,
             background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway).hex,
             attributes: {
-                ...attrs
+                ...attrs,
+                height,
+                heightClass,
             }
         };
     }
