@@ -209,7 +209,7 @@ const backgroundColorwayName = ({backgroundColorway, special}) => {
     return backgroundColorwaySwitch(backgroundColorway, special).name;
 };
 
-const decorateMetadataName = (rawMetaData) => {
+const decorateMetadataName = (rawMetaData, standardWidth, adjustedWidth, pixelHeight) => {
     return {
         tokenId: rawMetaData.tokenId,
         architect: rawMetaData.architect,

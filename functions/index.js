@@ -67,7 +67,7 @@ app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response
 app.get('/config/buildings/specials', async (request, response) => {
     response
         .status(200)
-        .json(require('./services/metadata/special-data-mapping.js'))
+        .json(require('./services/metadata/special-data-mapping.js'));
 });
 
 // Expose Express API as a single Cloud Function:
