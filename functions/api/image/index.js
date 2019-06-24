@@ -60,11 +60,11 @@ module.exports = {
             const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
 
             if (tokenDetails.special !== 0) {
-                // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-                const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
+                console.log(`Loading special for Token ID:`, tokenDetails.special);
+                const specialPng = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
                 return response
                     .contentType('image/png')
-                    .send(specialSvg);
+                    .send(specialPng);
             }
 
             const image = await imageBuilderService.generateImage(tokenDetails, 'png');

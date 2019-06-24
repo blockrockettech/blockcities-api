@@ -18,7 +18,7 @@ class ImageBuilderService {
             const rawSvg = await readFilePromise(path, 'utf8');
 
             const special = await loadImage(Buffer.from(rawSvg, 'utf8'));
-            console.log(special.width, special.height);
+            // console.log(special.width, special.height);
 
             const canvas = createCanvas(special.width, special.height, imageType);
             const ctx = canvas.getContext('2d');
