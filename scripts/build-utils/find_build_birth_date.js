@@ -8,7 +8,6 @@ void async function () {
     console.log(`Total tokens ${tokenIdPointer}`);
 
     for (let i = 1; i <= 5; i++) {
-        // TODO get born date for building
         console.log((await blockcitiesContractService.birthEventForToken(NETWORK, i)));
     }
 
