@@ -97,6 +97,9 @@ class BlockCitiesDataService {
 
     async exportWebflowBuildProfile(network, tokenId) {
         const buildingConstructionData = await this.birthEventForToken(network, tokenId);
+
+        console.log(buildingConstructionData);
+
         const tokenDetails = await this.tokenDetails(network, tokenId);
         const metaData = await this.tokenMetadata(network, tokenId);
         const owner = await this.ownerOfToken(network, tokenId);

@@ -127,7 +127,7 @@ class BlockcitiesContractService {
                 'BuildingMinted',
                 {
                     filter: {
-                        _tokenId: 1
+                        _tokenId: tokenId
                     },
                     fromBlock: 7488550, toBlock: 'latest'
                 },
