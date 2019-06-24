@@ -181,7 +181,10 @@ const coreMapper = ({building, body, special}) => {
 const exteriorColorwayName = ({exteriorColorway, special}) => {
     if (special !== 0 && specialMappings[special]) {
         return {
-            exteriorColorway: classicOrSpecialMapper(special)
+            exteriorColorway: classicOrSpecialMapper(special),
+            roofWindowColorway: classicOrSpecialMapper(special),
+            bodyWindowColorway: classicOrSpecialMapper(special),
+            baseWindowColorway: classicOrSpecialMapper(special),
         };
     }
 
