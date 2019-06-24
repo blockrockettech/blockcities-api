@@ -31,7 +31,7 @@ class WebflowDataService {
         return Promise.all(items.items.map((i) => this.api.removeItem({
             collectionId: collectionId,
             itemId: i._id,
-        })));
+        }, {live: true})));
     }
 
     /**

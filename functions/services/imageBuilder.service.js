@@ -60,7 +60,8 @@ class ImageBuilderService {
                         body,
                         exteriorColorway,
                         backgroundColorway,
-                    }
+                    },
+                    imageType
                 );
             }
 
@@ -79,7 +80,7 @@ class ImageBuilderService {
                 backgroundColorway,
             });
 
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+            const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
             const ctx = canvas.getContext('2d');
 
             const startBaseY = canvasHeight - baseConfig.height;
@@ -110,7 +111,8 @@ class ImageBuilderService {
                 roofConfig.adjustedRoofHeight
             );
 
-            return canvas.toBuffer('image/svg+xml', {
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
                 title: `BlockCities`,
                 keywords: 'BlockCities',
                 creationDate: new Date()
@@ -127,7 +129,7 @@ class ImageBuilderService {
             body,
             exteriorColorway,
             backgroundColorway,
-        }) {
+        }, imageType = 'svg') {
 
         try {
             const {
@@ -143,7 +145,7 @@ class ImageBuilderService {
                 backgroundColorway,
             });
 
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
+            const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
             const ctx = canvas.getContext('2d');
 
             const startBaseY = canvasHeight - baseConfig.height;
@@ -165,7 +167,8 @@ class ImageBuilderService {
                 bodyConfig.adjustedBodyHeight,
             );
 
-            return canvas.toBuffer('image/svg+xml', {
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
                 title: `BlockCities`,
                 keywords: 'BlockCities',
                 creationDate: new Date()
@@ -360,6 +363,7 @@ class ImageBuilderService {
             };
 
             bodyConfig.adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyWidth = bodyConfig.width * (baseConfig.anchorWidthPath / bodyConfig.width);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             const canvasHeight = baseConfig.height

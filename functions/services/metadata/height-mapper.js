@@ -17,6 +17,25 @@ const buildingRatios = {
     15: 0.952054794521,
 };
 
+const standardWidths = {
+    0: 130,
+    1: 250,
+    2: 280,
+    3: 170,
+    4: 170,
+    5: 270,
+    6: 480,
+    7: 430,
+    8: 220,
+    9: 480,
+    10: 250,
+    11: 280,
+    12: 320,
+    13: 500,
+    14: 260,
+    15: 260,
+};
+
 // Low Rise	0-114.829
 // High Rise 115-492
 // Skyscraper 492-984
@@ -37,9 +56,9 @@ const heightInFootDescription = (footHeight) => {
     }
 };
 
-const heightMapper = ({standardWidth, adjustedWidth, pixelHeight, buildingId}) => {
+const heightMapper = ({adjustedWidth, pixelHeight, buildingId}) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor(((standardWidth / adjustedWidth) * pixelHeight) * buildingRatios[buildingId]);
+        return Math.floor(((standardWidths[buildingId] / adjustedWidth) * pixelHeight) * buildingRatios[buildingId]);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
         return pixelHeight;

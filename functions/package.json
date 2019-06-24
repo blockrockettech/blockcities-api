@@ -13,7 +13,8 @@
     "fs-readfile-promise": "^3.0.1",
     "lodash": "^4.17.10",
     "moment": "^2.24.0",
-    "web3": "^1.0.0-beta.37"
+    "web3": "^1.0.0-beta.37",
+    "webflow-api": "^0.4.1"
   },
   "private": true,
   "engines": {

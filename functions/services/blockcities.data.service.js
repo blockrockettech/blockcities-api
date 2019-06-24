@@ -1,5 +1,3 @@
-const probe = require('probe-image-size');
-
 const blockcitiesContractService = require('./blockcities.contract.service');
 const webflowDataService = require('./webflow/webflowDataService');
 const imageBuilderService = require('./imageBuilder.service');
@@ -61,7 +59,6 @@ class BlockCitiesDataService {
         }
 
         const height = heightMapper({
-            standardWidth: bodyConfig.width,
             adjustedWidth: bodyConfig.adjustedBodyWidth,
             pixelHeight: canvasHeight,
             buildingId: tokenAttrs.building,
@@ -112,39 +109,40 @@ class BlockCitiesDataService {
             owner
         };
 
-        const dimensions = await probe(data.image);
-
-        // Standard width
-        const {/*adjustedBodyHeight: standardBodyHeight, */adjustedBodyWidth: standardBodyWidth/*, canvasHeight: standardCanvasHeight*/} = await imageBuilderService.generateImageStats({
-            building: data.building,
-            base: 0,
-            body: 0,
-            roof: 0,
-            exteriorColorway: data.exteriorColorway,
-            backgroundColorway: data.backgroundColorway,
-        });
-
-        // Adjusted width
-        const {/*adjustedBodyHeight, */adjustedBodyWidth/*, canvasHeight*/} = await imageBuilderService.generateImageStats({
-            building: data.building,
-            base: data.base,
-            body: data.body,
-            roof: data.roof,
-            exteriorColorway: data.exteriorColorway,
-            backgroundColorway: data.backgroundColorway,
-        });
-
-        // console.log(`S height ${standardBodyHeight} body ${standardBodyWidth} height ${standardCanvasHeight}`);
-        // console.log(`A height ${adjustedBodyHeight} body ${adjustedBodyWidth} height ${canvasHeight}`);
+        // FIXME this is pony...fix the whole 8 thing
+        let bodyConfig, canvasHeight;
+        if (parseInt(data.building) === 8) {
+            const res = await imageBuilderService.generateNoRoofImageStats({
+                building: data.building,
+                base: data.base,
+                body: data.body,
+                roof: data.roof,
+                exteriorColorway: data.exteriorColorway,
+                backgroundColorway: data.backgroundColorway,
+            });
+            bodyConfig = res.bodyConfig;
+            canvasHeight = res.canvasHeight;
+        }
+        else {
+            const res = await imageBuilderService.generateImageStats({
+                building: data.building,
+                base: data.base,
+                body: data.body,
+                roof: data.roof,
+                exteriorColorway: data.exteriorColorway,
+                backgroundColorway: data.backgroundColorway,
+            });
+            bodyConfig = res.bodyConfig;
+            canvasHeight = res.canvasHeight;
+        }
 
         const heightInFt = heightMapper({
-            standardWidth: standardBodyWidth,
-            adjustedWidth: adjustedBodyWidth,
-            pixelHeight: dimensions.height,
-            buildingId: data.building
+            adjustedWidth: bodyConfig.adjustedBodyWidth,
+            pixelHeight: canvasHeight,
+            buildingId: data.building,
         });
 
-        console.log(`token ID ${data.tokenId}, building ID ${data.building}, Standard width ${standardBodyWidth}, Adjusted width ${adjustedBodyWidth}, Pixel height ${dimensions.height}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
+        console.log(`token ID ${data.tokenId}, building ID ${data.building}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
 
         await webflowDataService.addItemToCollection(config.webflow.collections.buildings, {
             'token-id': data.attributes.tokenId,
@@ -170,6 +168,7 @@ class BlockCitiesDataService {
             'ground-floor-window-color': data.attributes.baseWindowColorway,
             'ground-floor-window-type': data.attributes.windowType,
             'ground-floor-use': data.attributes.groundFloorUse,
+            'body-name': data.attributes.building,
             'body-exterior-color': data.attributes.exteriorColorway,
             'body-window-color': data.attributes.bodyWindowColorway,
             'body-window-type': data.attributes.windowType,
