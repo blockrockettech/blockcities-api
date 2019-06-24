@@ -81,6 +81,7 @@ class ImageBuilderService {
             });
 
             const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
+
             const ctx = canvas.getContext('2d');
 
             const startBaseY = canvasHeight - baseConfig.height;
@@ -129,6 +130,7 @@ class ImageBuilderService {
             body,
             exteriorColorway,
             backgroundColorway,
+
         }, imageType = 'svg') {
 
         try {
@@ -146,6 +148,7 @@ class ImageBuilderService {
             });
 
             const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
+
             const ctx = canvas.getContext('2d');
 
             const startBaseY = canvasHeight - baseConfig.height;

@@ -17,6 +17,7 @@ const buildingRatios = {
     15: 0.952054794521,
 };
 
+
 const standardWidths = {
     0: 130,
     1: 250,
@@ -35,6 +36,7 @@ const standardWidths = {
     14: 260,
     15: 260,
 };
+
 
 // Low Rise	0-114.829
 // High Rise 115-492

@@ -1,3 +1,4 @@
+
 const blockcitiesContractService = require('./blockcities.contract.service');
 const webflowDataService = require('./webflow/webflowDataService');
 const imageBuilderService = require('./imageBuilder.service');
@@ -181,7 +182,7 @@ class BlockCitiesDataService {
             'slug': data.attributes.tokenId.toString(), // slug is used to define URL
         });
 
-        console.log(`Added token [${tokenId}] to webflow `);
+        console.log(`Added token [${tokenId}] to webflow`);
         return tokenId;
     }
 }
