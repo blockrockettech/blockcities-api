@@ -14,7 +14,7 @@ void async function () {
         const {tokenIdPointer} = await blockcitiesDataService.tokenPointers(NETWORK);
         console.log(`Total tokens ${tokenIdPointer}`);
 
-        for (let tokenId = 500; tokenId <= 700; tokenId++) {
+        for (let tokenId = 1; tokenId <= 1000; tokenId++) {
             await blockcitiesDataService.exportWebflowBuildProfile(NETWORK, tokenId);
             await wait();
         }
