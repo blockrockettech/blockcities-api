@@ -1,9 +1,9 @@
-const imageBuilderService = require('../services/imageBuilder.service');
-const blockcitiesContractService = require('../services/blockcities.contract.service');
+const imageBuilderService = require('../../services/imageBuilder.service');
+const blockcitiesContractService = require('../../services/blockcities.contract.service');
 
 module.exports = {
 
-    async generateTokenImage (request, response) {
+    async generateTokenImageSvg(request, response) {
 
         try {
             const tokenId = request.params.tokenId;
@@ -40,7 +40,44 @@ module.exports = {
         }
     },
 
-    async generateTestImage (request, response) {
+    async generateTokenImagePng(request, response) {
+
+        try {
+            const tokenId = request.params.tokenId;
+            if (!tokenId) {
+                return response.status(400).json({
+                    failure: `Token ID not provided`
+                });
+            }
+
+            const network = request.params.network;
+            if (!network) {
+                return response.status(400).json({
+                    failure: `Network not provided`
+                });
+            }
+
+            const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
+
+            if (tokenDetails.special !== 0) {
+                console.log(`Loading special for Token ID:`, tokenDetails.special);
+                const specialPng = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
+                return response
+                    .contentType('image/png')
+                    .send(specialPng);
+            }
+
+            const image = await imageBuilderService.generateImage(tokenDetails, 'png');
+
+            return response
+                .contentType('image/png')
+                .send(image);
+        } catch (e) {
+            console.error(e);
+        }
+    },
+
+    async generateTestImage(request, response) {
         try {
             // console.log(request.params);
             const image = await imageBuilderService.generateImage({
@@ -60,7 +97,7 @@ module.exports = {
         }
     },
 
-    async generateTestImages (request, response) {
+    async generateTestImages(request, response) {
         try {
 
             function getRandomArbitrary(max) {

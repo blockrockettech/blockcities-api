@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const Eth = require('ethjs');
+const Web3 = require('web3');
 
 const {INFURA_KEY} = require('../constants');
 const {abi} = require('./blockcities.abi');
@@ -8,6 +9,15 @@ const connectToBlockCities = (network) => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
         .contract(abi)
         .at(getAddressForNetwork(network));
+};
+
+const web3HttpInstance = (network) => {
+    return new Web3(new Web3.providers.HttpProvider(getHttpProviderUri(network)));
+};
+
+const connectToBlockCitiesWebSocketWeb3 = (network) => {
+    const web3 = new Web3(new Web3.providers.WebsocketProvider(`wss://${getNetwork(network)}.infura.io/ws/v3/${INFURA_KEY}`));
+    return new web3.eth.Contract(abi, getAddressForNetwork(network));
 };
 
 function getHttpProviderUri(network) {
@@ -61,5 +71,7 @@ const getAddressForNetwork = (network) => {
 
 module.exports = {
     connectToBlockCities,
+    connectToBlockCitiesWebSocketWeb3,
+    web3HttpInstance,
     getAddressForNetwork
 };

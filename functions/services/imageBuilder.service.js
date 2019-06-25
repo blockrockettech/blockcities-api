@@ -3,28 +3,45 @@ const {createCanvas, loadImage, Image} = require('canvas');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 
-const colourways = require('./colourways');
-const colourLogic = require('./colour-logic');
-
-const {backgroundColorwaySwitch} = require('./background-colours');
+const colourways = require('./metadata/colourways');
+const colourLogic = require('./metadata/colour-logic');
 
 const yPadding = 0;
 const xPadding = 0;
 
 class ImageBuilderService {
 
-    async loadSpecial (specialId) {
+    async loadSpecial(specialId, imageType = 'svg') {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
-            return rawSvg;
+
+            const special = await loadImage(Buffer.from(rawSvg, 'utf8'));
+            // console.log(special.width, special.height);
+
+            const canvas = createCanvas(special.width, special.height, imageType);
+            const ctx = canvas.getContext('2d');
+
+            ctx.drawImage(
+                special,
+                0,
+                0
+            );
+
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
+                title: `BlockCities special`,
+                keywords: 'BlockCities special',
+                creationDate: new Date()
+            });
+
         } catch (e) {
             console.error(e);
         }
     }
 
-    async generateImage (
+    async generateImage(
         {
             building,
             base,
@@ -32,7 +49,7 @@ class ImageBuilderService {
             roof,
             exteriorColorway,
             backgroundColorway,
-        }) {
+        }, imageType = 'svg') {
 
         try {
             if (parseInt(building) === 8) {
@@ -43,10 +60,129 @@ class ImageBuilderService {
                         body,
                         exteriorColorway,
                         backgroundColorway,
-                    }
+                    },
+                    imageType
                 );
             }
 
+            const {
+                baseConfig,
+                bodyConfig,
+                roofConfig,
+                canvasHeight,
+                canvasWidth,
+            } = await this.generateImageStats({
+                building,
+                base,
+                body,
+                roof,
+                exteriorColorway,
+                backgroundColorway,
+            });
+
+            const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
+
+            const ctx = canvas.getContext('2d');
+
+            const startBaseY = canvasHeight - baseConfig.height;
+            const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
+
+            // Base
+            ctx.drawImage(
+                baseConfig.svg,
+                xPadding,
+                startBaseY - yPadding
+            );
+
+            // Body
+            ctx.drawImage(
+                bodyConfig.svg,
+                baseConfig.anchorX + xPadding,
+                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
+                baseConfig.anchorWidthPath,
+                bodyConfig.adjustedBodyHeight,
+            );
+
+            // Roof
+            ctx.drawImage(
+                roofConfig.svg,
+                baseConfig.anchorX + bodyConfig.adjustedBodyAnchorX + xPadding,
+                0 + roofConfig.roofNudge + yPadding,
+                bodyConfig.adjustedBodyWidthPath,
+                roofConfig.adjustedRoofHeight
+            );
+
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
+                title: `BlockCities`,
+                keywords: 'BlockCities',
+                creationDate: new Date()
+            });
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async generateNoRoofImage(
+        {
+            building,
+            base,
+            body,
+            exteriorColorway,
+            backgroundColorway,
+
+        }, imageType = 'svg') {
+
+        try {
+            const {
+                baseConfig,
+                bodyConfig,
+                canvasHeight,
+                canvasWidth,
+            } = await this.generateNoRoofImageStats({
+                building,
+                base,
+                body,
+                exteriorColorway,
+                backgroundColorway,
+            });
+
+            const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
+
+            const ctx = canvas.getContext('2d');
+
+            const startBaseY = canvasHeight - baseConfig.height;
+            const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
+
+            // Base
+            ctx.drawImage(
+                baseConfig.svg,
+                xPadding,
+                startBaseY - yPadding
+            );
+
+            // Body
+            ctx.drawImage(
+                bodyConfig.svg,
+                baseConfig.anchorX + xPadding,
+                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
+                baseConfig.anchorWidthPath,
+                bodyConfig.adjustedBodyHeight,
+            );
+
+            const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
+            return canvas.toBuffer(streamType, {
+                title: `BlockCities`,
+                keywords: 'BlockCities',
+                creationDate: new Date()
+            });
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async generateImageStats({building, base, body, roof, exteriorColorway, backgroundColorway}) {
+        try {
             const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
             const basePath = `${rootPath}/Bases/${base}.svg`;
@@ -126,92 +262,54 @@ class ImageBuilderService {
                 console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
-            const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
-            const adjustedBodyAnchorY = bodyConfig.anchorY * (adjustedBodyHeight / bodyConfig.height);
+            bodyConfig.adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyAnchorY = bodyConfig.anchorY * (bodyConfig.adjustedBodyHeight / bodyConfig.height);
 
-            const adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
-            const adjustedBodyAnchorX = bodyConfig.anchorX * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyWidth = bodyConfig.width * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyAnchorX = bodyConfig.anchorX * (baseConfig.anchorWidthPath / bodyConfig.width);
 
             // fixes 12 - is this the solution to scale roofs?
-            const adjustedRoofHeight = roofConfig.height * (adjustedBodyWidthPath / roofConfig.width);
-
-            // Used when debuggin'
-            // console.log(`base`, baseConfig);
-            // console.log(`body`, bodyConfig);
-            // console.log(`roof`, roofConfig);
-            // console.log(`height`, bodyConfig.height, adjustedBodyHeight);
-            // console.log(`body Y `, bodyConfig.anchorY, adjustedBodyAnchorY);
-            // console.log(`adjustedRoofHeight `, roofConfig.height, adjustedRoofHeight);
+            roofConfig.adjustedRoofHeight = roofConfig.height * (bodyConfig.adjustedBodyWidthPath / roofConfig.width);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
 
             let canvasHeight = baseConfig.height
-                + adjustedBodyHeight
-                + adjustedRoofHeight
+                + bodyConfig.adjustedBodyHeight
+                + roofConfig.adjustedRoofHeight
                 - baseConfig.anchorY
-                - adjustedBodyAnchorY
+                - bodyConfig.adjustedBodyAnchorY
                 + (yPadding * 2);
 
             // roof nudge is used if the roof does not overlap the top of the body fully
-            let roofNudge = 0;
-            if (adjustedBodyAnchorY > adjustedRoofHeight) {
-                roofNudge = adjustedBodyAnchorY - adjustedRoofHeight;
-                canvasHeight = canvasHeight + roofNudge;
+            roofConfig.roofNudge = 0;
+            if (bodyConfig.adjustedBodyAnchorY > roofConfig.adjustedRoofHeight) {
+                roofConfig.roofNudge = bodyConfig.adjustedBodyAnchorY - roofConfig.adjustedRoofHeight;
+                canvasHeight = canvasHeight + roofConfig.roofNudge;
             }
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width + (xPadding * 2);
 
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-            const ctx = canvas.getContext('2d');
+            return {
+                baseConfig,
+                bodyConfig,
+                roofConfig,
+                canvasHeight,
+                canvasWidth,
+            };
 
-            const startBaseY = canvasHeight - baseConfig.height;
-            const startBodyY = canvasHeight - adjustedBodyHeight;
-
-            // ctx.fillStyle = `#${backgroundColorwaySwitch(backgroundColorway).hex}`;
-            // ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-
-            // Base
-            ctx.drawImage(
-                baseConfig.svg,
-                xPadding,
-                startBaseY - yPadding
-            );
-
-            // Body
-            ctx.drawImage(
-                bodyConfig.svg,
-                baseConfig.anchorX + xPadding,
-                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
-                baseConfig.anchorWidthPath,
-                adjustedBodyHeight,
-            );
-
-            // Roof
-            ctx.drawImage(
-                roofConfig.svg,
-                baseConfig.anchorX + adjustedBodyAnchorX + xPadding,
-                0 + roofNudge + yPadding,
-                adjustedBodyWidthPath,
-                adjustedRoofHeight
-            );
-
-            return canvas.toBuffer('image/svg+xml', {
-                title: `BlockCities`,
-                keywords: 'BlockCities',
-                creationDate: new Date()
-            });
         } catch (e) {
             console.error(e);
         }
     }
 
-    // FIXME - extract common logic
-    async generateNoRoofImage (
+    async generateNoRoofImageStats(
         {
             building,
             base,
             body,
+            roof,
             exteriorColorway,
             backgroundColorway,
         }) {
@@ -260,53 +358,32 @@ class ImageBuilderService {
                 anchorWidthPath: parseFloat(processedBaseAnchorWidthPath),
                 svg: baseImage
             };
+
             const bodyConfig = {
                 width: bodyImage.width,
                 height: bodyImage.height,
                 svg: bodyImage
             };
 
-            const adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+            bodyConfig.adjustedBodyWidth = bodyConfig.width * (baseConfig.anchorWidthPath / bodyConfig.width);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
             const canvasHeight = baseConfig.height
-                + adjustedBodyHeight
+                + bodyConfig.adjustedBodyHeight
                 - baseConfig.anchorY
                 + (yPadding * 2);
 
             // Always assume the baseConfig if the widest part for now
             const canvasWidth = baseConfig.width + (xPadding * 2);
 
-            const canvas = createCanvas(canvasWidth, canvasHeight, 'svg');
-            const ctx = canvas.getContext('2d');
-
-            // console.log(`base config`, baseConfig);
-            // console.log(`body config`, bodyConfig);
-
-            const startBaseY = canvasHeight - baseConfig.height;
-            const startBodyY = canvasHeight - adjustedBodyHeight;
-
-            // Base
-            ctx.drawImage(
-                baseConfig.svg,
-                xPadding,
-                startBaseY - yPadding
-            );
-
-            // Body
-            ctx.drawImage(
-                bodyConfig.svg,
-                baseConfig.anchorX + xPadding,
-                startBodyY - baseConfig.height + baseConfig.anchorY - yPadding,
-                baseConfig.anchorWidthPath,
-                adjustedBodyHeight,
-            );
-
-            return canvas.toBuffer('image/svg+xml', {
-                title: `BlockCities`,
-                keywords: 'BlockCities',
-                creationDate: new Date()
-            });
+            return {
+                baseConfig,
+                bodyConfig,
+                roofConfig: {},
+                canvasHeight,
+                canvasWidth,
+            };
         } catch (e) {
             console.error(e);
         }

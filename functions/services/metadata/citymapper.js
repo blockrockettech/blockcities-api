@@ -1,34 +1,13 @@
 const specialMappings = require('./special-data-mapping');
 
-const Atlanta = {
-    id: 0,
-    name: 'Atlanta'
-};
-
-const NYC = {
-    id: 1,
-    name: 'New York City'
-};
-
-const Chicago = {
-    id: 2,
-    name: 'Chicago'
-};
-
-const SanFrancisco = {
-    id: 3,
-    name: 'San Francisco'
-};
-
-const Tokyo = {
-    id: 4,
-    name: 'Tokyo'
-};
-
-const London = {
-    id: 5,
-    name: 'London'
-};
+const {
+    Atlanta,
+    NYC,
+    Chicago,
+    SanFrancisco,
+    Tokyo,
+    London
+} = require('./cities');
 
 const cityNameMapper = ({special, city}) => {
     if (special !== 0 && specialMappings[special]) {
@@ -54,14 +33,26 @@ const cityNameMapper = ({special, city}) => {
     }
 };
 
+const shortCityNameMapper = (city) => {
+    switch (city) {
+        case Atlanta.id:
+            return Atlanta.short;
+        case NYC.id:
+            return NYC.short;
+        case Chicago.id:
+            return Chicago.short;
+        case SanFrancisco.id:
+            return SanFrancisco.short;
+        case Tokyo.id:
+            return Tokyo.short;
+        case London.id:
+            return London.short;
+        default:
+            return 'XXX';
+    }
+};
+
 module.exports = {
     cityNameMapper,
-    config: {
-        Atlanta,
-        NYC,
-        Chicago,
-        SanFrancisco,
-        Tokyo,
-        London,
-    }
+    shortCityNameMapper,
 };
