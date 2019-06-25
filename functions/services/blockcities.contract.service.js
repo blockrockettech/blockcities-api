@@ -113,7 +113,7 @@ class BlockcitiesContractService {
                                     blockHash: creationEvent.blockHash,
                                     transactionHash: creationEvent.transactionHash,
                                     blockTimestamp: block.timestamp,
-                                    blockTimestampPretty: moment.unix(block.timestamp).format('MMM Do YYYY'),
+                                    blockTimestampPretty: moment.unix(block.timestamp).format('MMM. D YYYY'),
                                 });
                             });
                     }

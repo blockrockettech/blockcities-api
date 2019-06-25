@@ -11,7 +11,7 @@ const {heightMapper, heightInFootDescription} = require('./metadata/height-mappe
 
 const config = require('./config');
 
-const padTokenId = (tokenId) => ('00000' + tokenId).slice(-6);
+const padTokenId = (tokenId) => ('000' + tokenId).slice(-4);
 
 const dot = (ethAccount) => ethAccount.substr(0, 4) + '...' + ethAccount.substr(ethAccount.length - 4, ethAccount.length);
 

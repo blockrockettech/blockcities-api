@@ -120,7 +120,7 @@ const groundFloorMapper = ({building, base, special}) => {
     }
 };
 
-const roofTopMapper = ({building, roof, body, special}) => {
+const roofTopMapper = ({building, roof, base, special}) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             const value = classicOrSpecialMapper(special);
@@ -133,10 +133,10 @@ const roofTopMapper = ({building, roof, body, special}) => {
         const found = metadataMappings[building].roofs[roof];
         if (!found) {
             // Trump tower does not have a roof mapping - when this happens fall back to the core mapping
-            const {coreType, coreUse} = coreMapper({building, body, special});
+            const {groundFloorType, groundFloorUse} = groundFloorMapper({building, base, special});
             return {
-                rooftopType: coreType,
-                rooftopUse: coreUse
+                rooftopType: groundFloorType,
+                rooftopUse: groundFloorUse
             };
         }
 
