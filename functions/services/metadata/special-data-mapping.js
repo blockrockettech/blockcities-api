@@ -16,72 +16,84 @@ module.exports = {
         bname: 'Georgia Power',
         city: Atlanta.name,
         cityId: Atlanta.id,
+        heightInFt: 500,
     },
     1: {
         name: '133 Peachtree',
         bname: 'GP Tower',
         city: Atlanta.name,
         cityId: Atlanta.id,
+        heightInFt: 500,
     },
     2: {
         name: '210 Peachtree',
         bname: 'Westin Peachtree Plaza',
         city: Atlanta.name,
         cityId: Atlanta.id,
+        heightInFt: 500,
     },
     3: {
         name: '150 North Michigan',
         bname: 'Crain Communications',
         city: Chicago.name,
         cityId: Chicago.id,
+        heightInFt: 500,
     },
     4: {
         name: '401 North Wabash',
         bname: 'Trump Tower Chicago',
         city: Chicago.name,
         cityId: Chicago.id,
+        heightInFt: 500,
     },
     5: {
         name: '233 South Wacker',
         bname: 'Willis Tower',
         city: Chicago.name,
         cityId: Chicago.id,
+        heightInFt: 500,
     },
     6: {
         name: '222 Second Street',
         bname: 'Linkedin Building',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
     7: {
         name: '600 Montgomery',
         bname: 'Transamerica Pyramid',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
     8: {
         name: 'One California',
         bname: 'US Bank',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
     9: {
         name: 'One Bryant Park',
         bname: 'BoA Tower',
         city: NYC.name,
         cityId: NYC.id,
+        heightInFt: 500,
     },
     10: {
         name: '56 Leonard',
         bname: '56 Leonard',
         city: NYC.name,
         cityId: NYC.id,
+        heightInFt: 500,
     },
     11: {
         name: '601 Lexington',
         bname: 'Citigroup Center',
         city: NYC.name,
         cityId: NYC.id,
+        heightInFt: 500,
     },
 
     // FOAM scavenger
@@ -90,6 +102,7 @@ module.exports = {
         bname: '745 7th Ave',
         city: NYC.name,
         cityId: NYC.id,
+        heightInFt: 500,
     },
 
     // token 1 - 5
@@ -97,30 +110,36 @@ module.exports = {
         name: 'BlockCities Genesis Building',
         bname: 'Genesis',
         city: 'Genesis',
-        background_color: '#000000'
+        background_color: '#000000',
+        heightInFt: 500,
     },
     1000001: {
         name: '375 Park Ave',
         bname: '375 Park Ave',
         city: NYC.name,
         cityId: NYC.id,
+        heightInFt: 500,
     },
     1000002: {
         name: '133 Peachtree',
         bname: '133 Peachtree',
-        city: 'Atlanta'
+        city: Atlanta.name,
+        cityId: Atlanta.id,
+        heightInFt: 500,
     },
     1000003: {
         name: '200 East Randolph',
         bname: '200 East Randolph',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
     1000004: {
         name: '600 Montgomery',
         bname: '600 Montgomery',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
 
     // NonFungible.com specials
@@ -128,23 +147,31 @@ module.exports = {
         name: '1 NonFungible Tower',
         bname: '1 NonFungible Tower',
         city: NYC.name,
-        cityId: NYC.id
+        cityId: NYC.id,
+        heightInFt: 500,
     },
     1000006: {
         name: '2 NonFungible Tower',
         bname: '2 NonFungible Tower',
         city: SanFrancisco.name,
         cityId: SanFrancisco.id,
+        heightInFt: 500,
     },
     1000007: {
         name: '3 NonFungible Tower',
         bname: '3 NonFungible Tower',
         city: Chicago.name,
         cityId: Chicago.id,
+        heightInFt: 500,
     },
 
     // Founder building
-    1000008: {name: 'Founder Building', bname: 'Founder Building', city: 'Genesis'},
+    1000008: {
+        name: 'Founder Building',
+        bname: 'Founder Building',
+        city: 'Genesis',
+        heightInFt: 500,
+    },
 
     // FOAM scavenger hunts
     1000009: {
@@ -153,7 +180,8 @@ module.exports = {
         city: Tokyo.name,
         cityId: Tokyo.id,
         background_color: backgrounConfig.SPECIAL.hex,
-        background_colorId: backgrounConfig.SPECIAL.id
+        background_colorId: backgrounConfig.SPECIAL.id,
+        heightInFt: 500,
     },
     1000010: {
         name: 'Balfron Tower',
@@ -161,7 +189,8 @@ module.exports = {
         city: London.name,
         cityId: London.id,
         background_color: backgrounConfig.PINK.hex,
-        background_colorId: backgrounConfig.PINK.id
+        background_colorId: backgrounConfig.PINK.id,
+        heightInFt: 500,
     },
     1000011: {
         name: '945 Madison Ave',
@@ -170,6 +199,7 @@ module.exports = {
         cityId: NYC.id,
         background_color: backgrounConfig.BEIGE.hex,
         background_colorId: backgrounConfig.BEIGE.id,
+        heightInFt: 500,
     },
     1000012: {
         name: '626 1st Ave',
@@ -178,6 +208,7 @@ module.exports = {
         cityId: NYC.id,
         background_color: backgrounConfig.ORANGE.hex,
         background_colorId: backgrounConfig.ORANGE.id,
+        heightInFt: 500,
     },
     1000013: {
         name: '461 Dean Apartments',
@@ -185,7 +216,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.GRAY.hex,
-        background_colorId: backgrounConfig.GRAY.id
+        background_colorId: backgrounConfig.GRAY.id,
+        heightInFt: 500,
     },
     1000014: {
         name: '481 8th Ave',
@@ -193,7 +225,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.PINK.hex,
-        background_colorId: backgrounConfig.PINK.id
+        background_colorId: backgrounConfig.PINK.id,
+        heightInFt: 500,
     },
     1000015: {
         name: '767 5th Ave',
@@ -201,7 +234,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.PINK.hex,
-        background_colorId: backgrounConfig.PINK.id
+        background_colorId: backgrounConfig.PINK.id,
+        heightInFt: 500,
     },
     1000016: {
         name: 'FOAM Tower',
@@ -209,7 +243,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.LIGHT_ORANGE.hex,
-        background_colorId: backgrounConfig.LIGHT_ORANGE.id
+        background_colorId: backgrounConfig.LIGHT_ORANGE.id,
+        heightInFt: 500,
     },
     1000017: {
         name: '96 Wythe Ave',
@@ -217,7 +252,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.PINK.hex,
-        background_colorId: backgrounConfig.PINK.id
+        background_colorId: backgrounConfig.PINK.id,
+        heightInFt: 500,
     },
     1000018: {
         name: '215 Moore',
@@ -225,7 +261,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.SPECIAL.hex,
-        background_colorId: backgrounConfig.SPECIAL.id
+        background_colorId: backgrounConfig.SPECIAL.id,
+        heightInFt: 500,
     },
     1000019: {
         name: '1 World Trade Center',
@@ -233,7 +270,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.LIGHT_YELLOW.hex,
-        background_colorId: backgrounConfig.LIGHT_YELLOW.id
+        background_colorId: backgrounConfig.LIGHT_YELLOW.id,
+        heightInFt: 500,
     },
     1000020: {
         name: '96 Wythe Ave',
@@ -241,7 +279,8 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.LIGHT_ORANGE.hex,
-        background_colorId: backgrounConfig.LIGHT_ORANGE.id
+        background_colorId: backgrounConfig.LIGHT_ORANGE.id,
+        heightInFt: 500,
     },
     1000021: {
         name: '251 1st',
@@ -249,6 +288,7 @@ module.exports = {
         city: NYC.name,
         cityId: NYC.id,
         background_color: backgrounConfig.GRAY.hex,
-        background_colorId: backgrounConfig.GRAY.id
+        background_colorId: backgrounConfig.GRAY.id,
+        heightInFt: 500,
     },
 };

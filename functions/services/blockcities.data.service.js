@@ -76,8 +76,8 @@ class BlockCitiesDataService {
                 background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway, tokenAttrs.special).hex,
                 attributes: {
                     ...attrs,
-                    height,
-                    heightClass,
+                    height: specialMapping[tokenAttrs.special].heightInFt, // override calculated height
+                    heightClass: heightInFootDescription(specialMapping[tokenAttrs.special].heightInFt),
                 }
             };
         }
@@ -113,40 +113,7 @@ class BlockCitiesDataService {
             owner
         };
 
-        // FIXME this is pony...fix the whole 8 thing
-        let bodyConfig, canvasHeight;
-        if (parseInt(data.building) === 8) {
-            const res = await imageBuilderService.generateNoRoofImageStats({
-                building: data.building,
-                base: data.base,
-                body: data.body,
-                roof: data.roof,
-                exteriorColorway: data.exteriorColorway,
-                backgroundColorway: data.backgroundColorway,
-            });
-            bodyConfig = res.bodyConfig;
-            canvasHeight = res.canvasHeight;
-        }
-        else {
-            const res = await imageBuilderService.generateImageStats({
-                building: data.building,
-                base: data.base,
-                body: data.body,
-                roof: data.roof,
-                exteriorColorway: data.exteriorColorway,
-                backgroundColorway: data.backgroundColorway,
-            });
-            bodyConfig = res.bodyConfig;
-            canvasHeight = res.canvasHeight;
-        }
-
-        const heightInFt = heightMapper({
-            adjustedWidth: bodyConfig.adjustedBodyWidth,
-            pixelHeight: canvasHeight,
-            buildingId: data.building,
-        });
-
-        console.log(`token ID ${data.tokenId}, building ID ${data.building}, Height ${heightInFt} (${heightInFootDescription(heightInFt)})`);
+        console.log(`token ID ${data.tokenId}, building ID ${data.building}`);
 
         await webflowDataService.addItemToCollection(config.webflow.collections.buildings, {
             'token-id': data.attributes.tokenId,
@@ -162,8 +129,8 @@ class BlockCitiesDataService {
             'current-owner': data.owner,
             'current-owner-short': dot(data.owner),
             'buildingdescription': data.description,
-            'height': heightInFt,
-            'height-class': heightInFootDescription(heightInFt),
+            'height': data.attributes.height,
+            'height-class': data.attributes.heightClass,
             'date-built': data.blockTimestampPretty,
             'groundfloor': data.attributes.groundFloorType,
             'body': data.attributes.coreType,

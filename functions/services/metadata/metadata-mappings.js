@@ -27,7 +27,7 @@ module.exports = {
             4: {buildingType: '333 S Wabash', buildingUse: 'Condo'},
             5: {buildingType: '200 Vesey', buildingUse: 'Condo'},
             6: {buildingType: 'Helipad', buildingUse: 'Condo'},
-            7: {buildingType: 'BlockCities Sign Roof', buildingUse: 'Condo'},
+            7: {buildingType: 'BlockCities Sign', buildingUse: 'Condo'},
         }
     },
     1: {
