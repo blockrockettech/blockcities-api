@@ -24,7 +24,7 @@ module.exports = {
             1: {buildingType: '885 6th Ave', buildingUse: 'Condo'},
             2: {buildingType: 'Pool', buildingUse: 'Condo'},
             3: {buildingType: '100 Peachtree', buildingUse: 'Condo'},
-            4: {buildingType: '333 South Wabash', buildingUse: 'Condo'},
+            4: {buildingType: '333 S Wabash', buildingUse: 'Condo'},
             5: {buildingType: '200 Vesey', buildingUse: 'Condo'},
             6: {buildingType: 'Helipad', buildingUse: 'Condo'},
             7: {buildingType: 'BlockCities Sign', buildingUse: 'Condo'},
@@ -32,7 +32,7 @@ module.exports = {
     },
     1: {
         bases: {
-            0: {buildingType: '333 South Wabash', buildingUse: 'Business'},
+            0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             1: {buildingType: 'Parking Deck', buildingUse: 'Business'},
             2: {buildingType: '210 Peachtree', buildingUse: 'Retail'},
             3: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
@@ -46,7 +46,7 @@ module.exports = {
             2: {buildingType: 'Rectangle', buildingUse: 'Business'},
         },
         roofs: {
-            0: {buildingType: '333 South Wabash', buildingUse: 'Business'},
+            0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             1: {buildingType: '885 6th Ave', buildingUse: 'Business'},
             2: {buildingType: 'Pool', buildingUse: 'Attraction'},
             3: {buildingType: '100 Peachtree', buildingUse: 'Business'},
@@ -75,7 +75,7 @@ module.exports = {
             0: {buildingType: 'Standard', buildingUse: 'Business'},
             1: {buildingType: '885 6th Ave', buildingUse: 'Business'},
             2: {buildingType: 'Pool', buildingUse: 'Attraction'},
-            3: {buildingType: '333 South Wabash', buildingUse: 'Business'},
+            3: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             4: {buildingType: '432 Park Place', buildingUse: 'Business'},
             5: {buildingType: 'Helipad', buildingUse: 'Business'},
             6: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
@@ -129,7 +129,7 @@ module.exports = {
             1: {buildingType: '432 Park Place', buildingUse: 'Business'},
             2: {buildingType: '885 6th Ave', buildingUse: 'Business'},
             3: {buildingType: '200 Vesey', buildingUse: 'Business'},
-            4: {buildingType: '333 South Wabash', buildingUse: 'Business'},
+            4: {buildingType: '333 S Wabash', buildingUse: 'Business'},
             5: {buildingType: '100 Peachtree', buildingUse: 'Business'},
             6: {buildingType: 'Pool', buildingUse: 'Attraction'},
             7: {buildingType: 'Helipad', buildingUse: 'Business'},
@@ -237,7 +237,7 @@ module.exports = {
     },
     9: {
         bases: {
-            0: {buildingType: '233 South Wacker', buildingUse: 'Business'},
+            0: {buildingType: '233 S Wacker', buildingUse: 'Business'},
             1: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
         },
         bodies: {
