@@ -164,8 +164,8 @@ module.exports = {
         roofs: {
             0: {buildingType: '260 Peachtree', buildingUse: 'Business'},
             1: {buildingType: '885 6th Ave', buildingUse: 'Business'},
-            2: {buildingType: 'Pool', buildingUse: 'Attraction'},
-            3: {buildingType: 'Helipad', buildingUse: 'Business'},
+            2: {buildingType: 'Helipad', buildingUse: 'Business'},
+            3: {buildingType: 'Pool', buildingUse: 'Attraction'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
         }
     },
