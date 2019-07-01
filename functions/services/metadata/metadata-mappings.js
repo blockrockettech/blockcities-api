@@ -39,6 +39,7 @@ module.exports = {
             4: {buildingType: '200 E Illinois', buildingUse: 'Business'},
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -53,6 +54,7 @@ module.exports = {
             4: {buildingType: '432 Park Place', buildingUse: 'Business'},
             5: {buildingType: 'Helipad', buildingUse: 'Business'},
             6: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
         }
     },
     2: {
@@ -65,6 +67,9 @@ module.exports = {
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
             7: {buildingType: 'Transit', buildingUse: 'Retail'},
+            8: {buildingType: 'Transit', buildingUse: 'Retail'},
+            9: {buildingType: 'Transit', buildingUse: 'Retail'},
+            10: {buildingType: 'Transit', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -80,6 +85,8 @@ module.exports = {
             5: {buildingType: 'Helipad', buildingUse: 'Business'},
             6: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             7: {buildingType: 'Transit', buildingUse: 'Business'},
+            8: {buildingType: 'Transit', buildingUse: 'Business'},
+            9: {buildingType: 'Transit', buildingUse: 'Business'},
         }
     },
     3: {
@@ -115,6 +122,10 @@ module.exports = {
             4: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            10: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
         },
         bodies: {
             0: {buildingType: 'Horizontal', buildingUse: 'Business'},
@@ -146,6 +157,9 @@ module.exports = {
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
             7: {buildingType: 'Transit', buildingUse: 'Business'},
+            8: {buildingType: 'Transit', buildingUse: 'Business'},
+            9: {buildingType: 'Transit', buildingUse: 'Business'},
+            10: {buildingType: 'Transit', buildingUse: 'Business'},
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -177,6 +191,10 @@ module.exports = {
             3: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             4: {buildingType: '675 W Peachtree', buildingUse: 'Hotel'},
             5: {buildingType: 'Tree', buildingUse: 'Retail'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Hotel'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Hotel'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Hotel'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Hotel'},
         },
         bodies: {
             0: {buildingType: 'Vertical', buildingUse: 'Hotel'},
@@ -194,9 +212,18 @@ module.exports = {
     },
     7: {
         bases: {
-            0: {buildingType: '36 Central Park S', buildingUse: 'Business'},
+            0: {buildingType: '36 Central Park S', buildingUse: 'Retail'},
             1: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
             2: {buildingType: 'Retail', buildingUse: 'Retail'},
+            3: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            4: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            5: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            10: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            11: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -220,6 +247,15 @@ module.exports = {
             3: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             4: {buildingType: 'Retail', buildingUse: 'Retail'},
             5: {buildingType: 'Tree', buildingUse: 'Retail'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            10: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            11: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            12: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            13: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            14: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -247,6 +283,16 @@ module.exports = {
             3: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             4: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             5: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            10: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            11: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            12: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            13: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            14: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            15: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: 'Two Antenna', buildingUse: 'Business'},
@@ -283,6 +329,8 @@ module.exports = {
             2: {buildingType: 'Pool', buildingUse: 'Attraction'},
             3: {buildingType: 'Helipad', buildingUse: 'Business'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            5: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
         }
     },
     11: {
@@ -293,6 +341,14 @@ module.exports = {
             3: {buildingType: '675 W Peachtree', buildingUse: 'Apartment'},
             4: {buildingType: 'Retail Base', buildingUse: 'Retail'},
             5: {buildingType: 'Tree Base', buildingUse: 'Retail'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            8: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            9: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            10: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            11: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            12: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            13: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
@@ -306,6 +362,7 @@ module.exports = {
             3: {buildingType: '885 6th Ave', buildingUse: 'Apartment'},
             4: {buildingType: 'Helipad', buildingUse: 'Apartment'},
             5: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
+            6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
         }
     },
     12: {
@@ -330,7 +387,17 @@ module.exports = {
             8: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             9: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             10: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-            11: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
+            11: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            12: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            13: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            14: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            15: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            16: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            17: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            18: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            19: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            20: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            21: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: '222 Second', buildingUse: 'Business'},
@@ -350,6 +417,7 @@ module.exports = {
             4: {buildingType: '200 E Illinois', buildingUse: 'Business'},
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
+            7: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -360,6 +428,7 @@ module.exports = {
             5: {buildingType: 'Vertical', buildingUse: 'Business'},
             6: {buildingType: 'Vertical', buildingUse: 'Business'},
             7: {buildingType: 'Vertical', buildingUse: 'Business'},
+            8: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: '650 California', buildingUse: 'Business'},
@@ -411,6 +480,8 @@ module.exports = {
             4: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             5: {buildingType: 'Tree', buildingUse: 'Retail'},
             6: {buildingType: 'Transit', buildingUse: 'Government'},
+            7: {buildingType: 'Transit', buildingUse: 'Government'},
+            8: {buildingType: 'Transit', buildingUse: 'Government'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Government'},
@@ -425,6 +496,9 @@ module.exports = {
             2: {buildingType: 'Pool', buildingUse: 'Attraction'},
             3: {buildingType: 'Helipad', buildingUse: 'Government'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Government'},
+            5: {buildingType: 'Transit', buildingUse: 'Government'},
+            6: {buildingType: 'Transit', buildingUse: 'Government'},
+            7: {buildingType: 'Transit', buildingUse: 'Government'},
         }
     },
 };
