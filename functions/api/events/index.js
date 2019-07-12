@@ -11,7 +11,7 @@ if (!eventStreamKey) {
 
 events.get('/process/:address', async (req, res, next) => {
     try {
-        console.log('Event Parser - checking for new events', req.params, req.headers);
+        console.log('Event Parser - checking for new events');
 
         if (req.query.key !== eventStreamKey) {
             console.error('Missing or invalid key');
@@ -27,7 +27,7 @@ events.get('/process/:address', async (req, res, next) => {
 
         return res
             .status(202)
-            .send(`processed [${processed}] events`);
+            .send(`processed [${processed}] events for contract [${address}]`);
 
     } catch (e) {
         return next(e);
