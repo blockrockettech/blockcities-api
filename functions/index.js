@@ -1,24 +1,18 @@
 const functions = require('firebase-functions');
 
+const admin = require('firebase-admin');
+admin.initializeApp({
+    credential: admin.credential.cert(require('./_keys/block-cities-firebase-adminsdk.json')),
+    databaseURL: "https://block-cities.firebaseio.com"
+});
+
 const cors = require('cors');
 const express = require('express');
 const app = express();
 
 app.use(cors());
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-
-// Notes:
-//  - I think we should version the tokens URI lookups to help migrations and changes
-//  - Reason as once the image generated we may want to cache it and serve this direct from the API
-//  - V2 may then be a more advanced version etc and would reduce the testing surface needed for changes
-//  - It would me that the token URI hash we set in the contract is `/v1/:tokenId`
-
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+// TODO refactor below endpoints into proper express routers and service classes
 
 // Gets all token pointers form the contract
 app.get('/network/:network/token/pointers', async (request, response) => {
@@ -54,22 +48,18 @@ app.get('/network/:network/token/:tokenId/image', async (request, response) => {
     return require('./api/image').generateTokenImageSvg(request, response);
 });
 
-// The image tester
-app.get('/building/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
-    return require('./api/image').generateTestImage(request, response);
-});
+const events = require('./api/events');
+const configs = require('./api/configs');
+const builder = require('./api/builder');
 
-app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
-    return require('./api/image').generateTestImages(request, response);
-});
-
-// Used for admin app - listing out specials we current can mint
-app.get('/config/buildings/specials', async (request, response) => {
-    response
-        .status(200)
-        .json(require('./services/metadata/special-data-mapping.js'));
-});
+app.use('/configs', configs);
+app.use('/builder', builder);
+app.use('/events', events);
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
 
+exports.scheduledFunctionPlainEnglish = functions.pubsub.schedule('every 5 minutes')
+    .onRun((context) => {
+        
+    });

@@ -791,5 +791,5 @@ const tokenABI = [
 ];
 
 module.exports = {
-    abi: tokenABI
+    blockCitiesAbi: tokenABI
 };
