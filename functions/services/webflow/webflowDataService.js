@@ -19,9 +19,8 @@ class WebflowDataService {
         return this.api.collection({collectionId: collectionId});
     }
 
-    async getCollectionItems(collectionId) {
-        const collection = await this.api.collection({collectionId: collectionId});
-        return collection.items();
+    async getCollectionItems(collectionId, limit = 100, offset = 0) {
+        return await this.api.items({collectionId: collectionId}, {limit, offset});
     }
 
     async removeCollection(collectionId) {
@@ -32,38 +31,6 @@ class WebflowDataService {
             collectionId: collectionId,
             itemId: i._id,
         }, {live: true})));
-    }
-
-    /**
-     * @deprecated dont use until we have a mapping table
-     */
-    async upsertBuildData(collectionId, data) {
-        try {
-            const {tokenId} = data;
-
-            const items = await this.getCollectionItems(collectionId);
-            const tokens = items.items.filter((i) => i['token-id'] === tokenId);
-
-            if (tokens.length !== 1) {
-                throw new Error('Something bad happened, we do not have a single token');
-            }
-
-            // update
-            const {_id, slug} = tokens[0];
-
-            console.log(_id);
-
-            const update = await this.updateBuildingForTokenId(collectionId, _id, {
-                ...data,
-            });
-
-            return update;
-
-        } catch (e) {
-            console.error(e);
-        }
-
-        return this.addItemToCollection(collectionId, data);
     }
 
     async addItemToCollection(collectionId, data) {
@@ -77,7 +44,7 @@ class WebflowDataService {
         }, {live: true}); // {live: true} = publishes data immediately
     }
 
-    async updateBuildingForTokenId(collectionId, itemId, data) {
+    async updateItemInCollection(collectionId, itemId, data) {
         return this.api.updateItem({
             collectionId: collectionId,
             itemId: itemId,

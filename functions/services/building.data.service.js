@@ -18,6 +18,21 @@ class BuildingDataService {
             });
     }
 
+    async getBuildingByTokenId(network, tokenId) {
+        return firestore
+            .collection('data')
+            .doc(getNetwork(network))
+            .collection('buildings')
+            .doc(_.toString(tokenId))
+            .get()
+            .then((doc) => {
+                if (doc.exists) {
+                    return doc.data();
+                }
+                return null;
+            });
+    }
+
 }
 
 module.exports = new BuildingDataService();

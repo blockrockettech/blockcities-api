@@ -94,19 +94,22 @@ class BlockCitiesDataService {
         };
     }
 
-    async updateBuilding(network, tokenId) {
+    async updateBuilding(network, tokenId, webflowItemId) {
         const buildingConstructionData = await this.birthEventForToken(network, tokenId);
         const tokenDetails = await this.tokenDetails(network, tokenId);
         const metaData = await this.tokenMetadata(network, tokenId);
         const owner = await this.ownerOfToken(network, tokenId);
 
-
+        // Firestore formatted data
         const data = {
             id: tokenId, // primary key of building record data
+            webflowItemId,
+            webflowCollectionId: config.webflow.collections.buildings,
+            tokenId,
+            network,
             ...tokenDetails,
             ...metaData,
             ...buildingConstructionData,
-            tokenId,
             architectShort: dot(metaData.attributes.architect),
             owner,
             ownerShort: dot(owner),
@@ -116,45 +119,42 @@ class BlockCitiesDataService {
             cityShort: shortCityNameMapper(tokenDetails.city),
         };
 
-        return buildingDataService.saveBuilding(network, data);
+        // Create Webflow CMS formatted data
+        // const webflowCmsData = this._constructWebFlowCmsData(data);
 
-        // TODO persist data to DB
-        // TODO add data to webflow
-        // TODO once saved update DB with CMS reference
+        // Load any existing building data
+        // const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+
+        // // Ensure the CMS mapping remains
+        // const hasCmsMapping = currentBuilding && currentBuilding.webflowId;
+        // if (hasCmsMapping) {
+        //     data.webflowId = currentBuilding.webflowId;
+        //     console.log(`Updating building with tokenId [${tokenId}] and to webflow CMS ID [${data.webflowId}]`);
+        //     await webflowDataService.updateItemInCollection(config.webflow.collections.buildings, data.webflowId, webflowCmsData);
+        // } else {
+        //     const cmsId = await webflowDataService.addItemToCollection(config.webflow.collections.buildings, webflowCmsData);
+        //     console.log(`Added new token to building [${tokenId}] to webflow`);
+        //     data.webflowId = cmsId;
+        // }
+
+        // Save the data in the DB
+        await buildingDataService.saveBuilding(network, data);
     }
 
-
-    // // TODO move this method
-    async exportWebflowBuildProfile(network, tokenId) {
-        const buildingConstructionData = await this.birthEventForToken(network, tokenId);
-        const tokenDetails = await this.tokenDetails(network, tokenId);
-        const metaData = await this.tokenMetadata(network, tokenId);
-        const owner = await this.ownerOfToken(network, tokenId);
-
-        // join all info into a data object
-        const data = {
-            ...tokenDetails,
-            ...metaData,
-            ...buildingConstructionData,
-            tokenId,
-            owner
-        };
-
-        console.log(`token ID ${data.tokenId}, building ID ${data.building}`);
-
-        await webflowDataService.addItemToCollection(config.webflow.collections.buildings, {
+    _constructWebFlowCmsData(data) {
+        return {
             'token-id': data.attributes.tokenId,
             'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
             'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
             'background-color': `#${data.background_color}`,
-            'city': shortCityNameMapper(data.city),
+            'city': data.cityShort,
             'city-full-name': data.attributes.city,
-            'era': '0',
-            'era-class': 'Modern',
+            'era': data.era,
+            'era-class': data.eraClass,
             'architect': data.attributes.architect,
-            'original-architect-short': dot(data.attributes.architect),
+            'original-architect-short': data.architectShort,
             'current-owner': data.owner,
-            'current-owner-short': dot(data.owner),
+            'current-owner-short': data.ownerShort,
             'buildingdescription': data.description,
             'height': data.attributes.height,
             'height-class': data.attributes.heightClass,
@@ -176,11 +176,8 @@ class BlockCitiesDataService {
             'roof-window-type': data.attributes.windowType,
             'roof-use': data.attributes.rooftopUse,
             'name': data.name,
-            'slug': data.attributes.tokenId.toString(), // slug is used to define URL
-        });
-
-        console.log(`Added token [${tokenId}] to webflow`);
-        return tokenId;
+            'slug': data.slug, // slug is used to define URL
+        };
     }
 }
 
