@@ -1,7 +1,7 @@
-
 const blockcitiesContractService = require('./blockcities.contract.service');
 const webflowDataService = require('./webflow/webflowDataService');
 const imageBuilderService = require('./imageBuilder.service');
+const buildingDataService = require('./building.data.service');
 
 const {backgroundColorwaySwitch} = require('./metadata/background-colours');
 const {decorateMetadataName} = require('./metadata/metadata.decorator');
@@ -52,8 +52,7 @@ class BlockCitiesDataService {
             const res = await imageBuilderService.generateNoRoofImageStats(tokenAttrs);
             bodyConfig = res.bodyConfig;
             canvasHeight = res.canvasHeight;
-        }
-        else {
+        } else {
             const res = await imageBuilderService.generateImageStats(tokenAttrs);
             bodyConfig = res.bodyConfig;
             canvasHeight = res.canvasHeight;
@@ -95,11 +94,39 @@ class BlockCitiesDataService {
         };
     }
 
+    async updateBuilding(network, tokenId) {
+        const buildingConstructionData = await this.birthEventForToken(network, tokenId);
+        const tokenDetails = await this.tokenDetails(network, tokenId);
+        const metaData = await this.tokenMetadata(network, tokenId);
+        const owner = await this.ownerOfToken(network, tokenId);
+
+
+        const data = {
+            id: tokenId, // primary key of building record data
+            ...tokenDetails,
+            ...metaData,
+            ...buildingConstructionData,
+            tokenId,
+            architectShort: dot(metaData.attributes.architect),
+            owner,
+            ownerShort: dot(owner),
+            slug: tokenId.toString(), // slug is used to define URL in webflow CMS
+            era: '0',
+            eraClass: 'Modern',
+            cityShort: shortCityNameMapper(tokenDetails.city),
+        };
+
+        return buildingDataService.saveBuilding(network, data);
+
+        // TODO persist data to DB
+        // TODO add data to webflow
+        // TODO once saved update DB with CMS reference
+    }
+
+
+    // // TODO move this method
     async exportWebflowBuildProfile(network, tokenId) {
         const buildingConstructionData = await this.birthEventForToken(network, tokenId);
-
-        console.log(buildingConstructionData);
-
         const tokenDetails = await this.tokenDetails(network, tokenId);
         const metaData = await this.tokenMetadata(network, tokenId);
         const owner = await this.ownerOfToken(network, tokenId);

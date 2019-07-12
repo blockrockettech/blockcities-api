@@ -5,6 +5,7 @@ admin.initializeApp({
     credential: admin.credential.cert(require('./_keys/block-cities-firebase-adminsdk.json')),
     databaseURL: 'https://block-cities.firebaseio.com'
 });
+
 const {address} = require('./services/abi/networks');
 
 const cors = require('cors');
@@ -108,7 +109,7 @@ exports.newEventTrigger =
 
                     console.log(`Incoming token ID [${tokenId}] for event [${event}] from [${from}] to [${to}]`);
 
-                    // TODO trigger data refresh
+                    await require('./services/blockcities.data.service').updateBuilding(network, tokenId);
 
                     break;
                 }
