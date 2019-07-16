@@ -290,5 +290,15 @@ module.exports = {
         background_color: backgrounConfig.GRAY.hex,
         background_colorId: backgrounConfig.GRAY.id,
         heightInFt: 130,
+    
+    },
+    1000022: {
+        name: 'New York Subway #1',
+        bname: 'New York Subway #1',
+        city: NYC.name,
+        cityId: NYC.id,
+        background_color: backgrounConfig.AQUA.hex,
+        background_colorId: backgrounConfig.AQUA.id,
+        heightInFt: 60,
     },
 };
