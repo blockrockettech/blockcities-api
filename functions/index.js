@@ -55,19 +55,19 @@ exports.api = functions.https.onRequest(app);
 /**
  * A set of cron style jobs which trigger a particular operation
  */
-exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 5 minutes')
+exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 30 seconds')
     .onRun(async (context) => {
         console.log('Running mainnet scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.mainnet);
     });
 
-exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 5 minutes')
+exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 1 minutes')
     .onRun(async (context) => {
         console.log('Running ropsten scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.ropsten);
     });
 
-exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes')
+exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 1 minutes')
     .onRun(async (context) => {
         console.log('Running rinkeby scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.rinkeby);

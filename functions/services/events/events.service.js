@@ -27,10 +27,12 @@ class EventsService {
         const lastProcessedBlock = await flow.getLastBlock();
         console.log(`Event Scrapper - last processed block [${lastProcessedBlock}] for network [${network}]`);
 
+        const MAX_BLOCKS_TO_PROCESS = 1000;
+
         // handle catching up the latest block number and limit scape to 10000 blocks at a time
-        const toBlock = lastProcessedBlock + 10000 > blockMinusConfirmations
+        const toBlock = lastProcessedBlock + MAX_BLOCKS_TO_PROCESS > blockMinusConfirmations
             ? blockMinusConfirmations
-            : lastProcessedBlock + 10000;
+            : lastProcessedBlock + MAX_BLOCKS_TO_PROCESS;
 
         const WatchingContract = provider.eth.Contract(abi, address);
 
