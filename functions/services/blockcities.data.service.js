@@ -132,18 +132,17 @@ class BlockCitiesDataService {
 
             // Create Webflow CMS formatted data
             const webflowCmsData = FirebaseToWebflowConverter.constructWebFlowCmsData(buildingData);
-            console.log(webflowCmsData);
 
             // Ensure the CMS mapping remains
             if (_.has(currentBuilding, 'webflowItemId')) {
+                console.log(`Updating existing building on CMS - token ID [${tokenId}] collection [${buildingData.webflowCollectionId}] item [${currentBuilding.webflowItemId}]`);
                 buildingData.webflowItemId = currentBuilding.webflowItemId;
-                console.log(`Updating building with tokenId [${tokenId}] and to webflow CMS ID [${buildingData.webflowItemId}]`);
-                await webflowDataService.updateItemInCollection(config.webflow.collections.buildings, buildingData.webflowItemId, webflowCmsData);
+                await webflowDataService.updateItemInCollection(buildingData.webflowCollectionId, currentBuilding.webflowItemId, webflowCmsData);
             } else {
                 console.log(`Added new building [${tokenId}] to webflow`);
                 // _cid = collection ID | _id = item Id
                 const {_cid, _id} = await webflowDataService.addItemToCollection(config.webflow.collections.buildings, webflowCmsData);
-                console.log(`Webflow CMS item added - token ID [${tokenId}] collection [${_cid}] itme ID [${_id}]`);
+                console.log(`Webflow CMS item added - token ID [${tokenId}] collection [${_cid}] item [${_id}]`);
                 buildingData.webflowItemId = _id;
                 buildingData.webflowCollectionId = _cid;
             }
