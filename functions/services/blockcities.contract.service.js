@@ -1,6 +1,7 @@
 const {
     connectToBlockCities,
     connectToBlockCitiesWebSocketWeb3,
+    getBlockCitiesNftDeploymentBlockForNetwork,
     web3HttpInstance
 } = require('./abi/networks');
 
@@ -79,6 +80,7 @@ class BlockcitiesContractService {
 
         const contract = connectToBlockCitiesWebSocketWeb3(network);
         const web3Instance = web3HttpInstance(network);
+        const deploymentBlock = getBlockCitiesNftDeploymentBlockForNetwork(network);
 
         return new Promise((resolve, reject) => {
 
@@ -114,7 +116,8 @@ class BlockcitiesContractService {
                     filter: {
                         _tokenId: tokenId
                     },
-                    fromBlock: 7488550, toBlock: 'latest'
+                    fromBlock: deploymentBlock,
+                    toBlock: 'latest'
                 },
                 handler
             );

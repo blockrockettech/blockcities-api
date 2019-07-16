@@ -92,9 +92,13 @@ const getBlockCitiesNftAddressForNetwork = (network) => {
     return networkSplitter(network, blockCitiesAddresses);
 };
 
+const getBlockCitiesNftDeploymentBlockForNetwork = (network) => {
+    const address = networkSplitter(network, blockCitiesAddresses);
+    return getContractDetailsForAddress(address).deploymentBlock;
+};
+
 /**
- * @param address
- * @return {{address: *, abi: (*[]|*), network: string}}
+ * @return {{deploymentBlock: number, address: *, abi: (*[]|*), network: string}}
  */
 const getContractDetailsForAddress = (address) => {
     switch (address) {
@@ -135,5 +139,6 @@ module.exports = {
     connectToBlockCitiesWebSocketWeb3,
     web3HttpInstance,
     web3WebSocketInstance,
-    getBlockCitiesNftAddressForNetwork
+    getBlockCitiesNftAddressForNetwork,
+    getBlockCitiesNftDeploymentBlockForNetwork,
 };
