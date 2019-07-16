@@ -7,6 +7,7 @@ admin.initializeApp({
 });
 
 const {address} = require('./services/abi/networks');
+const blockCitiesDataService = require('./services/blockcities.data.service');
 
 const cors = require('cors');
 const express = require('express');
@@ -16,47 +17,31 @@ app.use(cors());
 
 // TODO refactor below endpoints into proper express routers and service classes
 
-// Gets all token pointers form the contract
-app.get('/network/:network/token/pointers', async (request, response) => {
-    return require('./api/tokenUri').tokenPointers(request, response);
-});
-
-// Token URI looking defined in the contract
-app.get('/network/:network/token/:tokenId', async (request, response) => {
-    return require('./api/tokenUri').tokenMetadata(request, response);
-});
-
-// Refresh the token metadata
-app.get('/network/:network/token/:tokenId/refresh', async (request, response) => {
-    return require('./api/tokenUri').refreshTokenMetaData(request, response);
-});
-
-// A more detailed lookup method for pulling back all details for a token
-app.get('/network/:network/token/:tokenId/details', async (request, response) => {
-    return require('./api/tokenUri').lookupTokenDetails(request, response);
-});
-
 // A more detailed lookup method for pulling back all details for a token
 app.get('/network/:network/tokens/:owner/details', async (request, response) => {
-    return require('./api/tokenUri').lookupTokenDetailsForOwner(request, response);
-});
+    const {owner, network} = request.params.owner;
 
-// The image generator
-app.get('/network/:network/token/image/:tokenId.png', async (request, response) => {
-    return require('./api/image').generateTokenImagePng(request, response);
-});
+    const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
 
-app.get('/network/:network/token/:tokenId/image', async (request, response) => {
-    return require('./api/image').generateTokenImageSvg(request, response);
+    const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
+
+        return {...tokenDetails, ...metaData, tokenId: tokenId};
+    }));
+
+    return response.status(200).json(mappedTokens);
 });
 
 const events = require('./api/events');
 const configs = require('./api/configs');
 const builder = require('./api/builder');
+const token = require('./api/token');
 
 app.use('/configs', configs);
 app.use('/builder', builder);
 app.use('/events', events);
+app.use('/network/:network/token', token);
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
