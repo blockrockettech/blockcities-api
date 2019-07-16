@@ -1,10 +1,10 @@
 const _ = require('lodash');
 const imageBuilderService = require('../../services/imageBuilder.service');
 
-const buildings = require('express').Router({mergeParams: true});
+const builder = require('express').Router({mergeParams: true});
 
 // The image tester
-buildings.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
+builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
     try {
         // console.log(request.params);
         const image = await imageBuilderService.generateImage({
@@ -25,7 +25,7 @@ buildings.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/wi
 
 });
 
-buildings.get('/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
+builder.get('/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
     try {
 
         function getRandomArbitrary(max) {
@@ -58,4 +58,4 @@ buildings.get('/:building/:baseNo/:bodyNo/:roofNo', async (request, response) =>
     }
 });
 
-module.exports = buildings;
+module.exports = builder;

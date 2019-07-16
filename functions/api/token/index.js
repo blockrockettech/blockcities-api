@@ -1,7 +1,6 @@
 const _ = require('lodash');
 
 const imageBuilderService = require('../../services/imageBuilder.service');
-const blockcitiesContractService = require('../../services/blockcities.contract.service');
 const blockCitiesDataService = require('../../services/blockcities.data.service');
 const openSeaService = require('../../services/openSea.service');
 
@@ -61,7 +60,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
             });
         }
 
-        const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 
         if (tokenDetails.special !== 0) {
             console.log(`Loading special for Token ID:`, tokenDetails.special);
@@ -97,7 +96,7 @@ token.get('/:tokenId/image', async (request, response) => {
             });
         }
 
-        const tokenDetails = await blockcitiesContractService.tokenDetails(network, tokenId);
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());

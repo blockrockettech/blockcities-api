@@ -28,10 +28,6 @@ class BlockCitiesDataService {
         return blockcitiesContractService.tokenDetails(network, tokenId);
     }
 
-    async tokenDetails(network, tokenId) {
-        return blockcitiesContractService.tokenDetails(network, tokenId);
-    }
-
     async ownerOfToken(network, tokenId) {
         return blockcitiesContractService.ownerOfToken(network, tokenId);
     }
@@ -182,6 +178,13 @@ class BlockCitiesDataService {
         await buildingDataService.saveBuilding(network, currentBuilding);
     }
 
+    async getBuildingsForOwner(network, owner) {
+        return buildingDataService.getBuildingsForOwner(network, owner);
+    }
+
+    async getBuildingData(network, buildingId) {
+        return buildingDataService.getBuildingByTokenId(network, buildingId);
+    }
 }
 
 class FirebaseToWebflowConverter {

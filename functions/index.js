@@ -37,11 +37,17 @@ const events = require('./api/events');
 const configs = require('./api/configs');
 const builder = require('./api/builder');
 const token = require('./api/token');
+const buildings = require('./api/buildings');
 
 app.use('/configs', configs);
 app.use('/builder', builder);
 app.use('/events', events);
+
+// All methods under /token will hit the blockchain directly
 app.use('/network/:network/token', token);
+
+// All methods under /buildings will use our DB
+app.use('/network/:network/buildings', buildings);
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);

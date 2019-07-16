@@ -41,21 +41,6 @@ class BlockcitiesContractService {
         return owner[0];
     }
 
-    // FIXME delete if not needed
-    async tokenAttributes(network = 1, tokenId) {
-        console.log(`Find token attrs for [${tokenId}] on network [${network}]`);
-
-        const token = connectToBlockCities(network);
-
-        // Get token attributes
-        const tokenAttrs = await token.attributes(tokenId);
-
-        return {
-            ...tokenAttrs
-        };
-    }
-
-
     async tokenDetails(network = 1, tokenId) {
         console.log(`Find token details for [${tokenId}] on network [${network}]`);
 

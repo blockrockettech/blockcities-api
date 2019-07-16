@@ -18,6 +18,22 @@ class BuildingDataService {
             });
     }
 
+    async getBuildingsForOwner(network, owner) {
+        return firestore
+            .collection('data')
+            .doc(getNetwork(network))
+            .collection('buildings')
+            .where('owner', '==', owner)
+            .get()
+            .then((querySet) => {
+                const buildings = [];
+                querySet.forEach((doc) => {
+                    buildings.push(doc.data());
+                });
+                return buildings;
+            });
+    }
+
     async getBuildingByTokenId(network, tokenId) {
         return firestore
             .collection('data')
