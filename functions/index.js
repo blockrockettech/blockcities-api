@@ -109,7 +109,7 @@ exports.newEventTrigger =
 
                     console.log(`Incoming token ID [${tokenId}] for event [${event}] from [${from}] to [${to}]`);
 
-                    await require('./services/blockcities.data.service').updateBuilding(network, tokenId);
+                    await require('./services/blockcities.data.service').updateBuildingData(network, tokenId);
 
                     break;
                 }

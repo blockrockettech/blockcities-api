@@ -71,6 +71,16 @@ const getNetwork = (network) => {
     });
 };
 
+const isMainnet = (network) => {
+    const foundNetwork = networkSplitter(network, {
+        mainnet: 'mainnet',
+        ropsten: 'ropsten',
+        rinkeby: 'rinkeby',
+        local: 'local'
+    });
+    return 'mainnet' === foundNetwork;
+};
+
 const blockCitiesAddresses = {
     mainnet: '0x2f2d5aA0EfDB9Ca3C9bB789693d06BEBEa88792F',
     ropsten: '0x86eD0a82dDc2EdEA8cC4Bc023eC2a4079DAB42c9',
@@ -119,6 +129,7 @@ module.exports = {
         blockCities: blockCitiesAddresses
     },
     getNetwork,
+    isMainnet,
     getContractDetailsForAddress,
     connectToBlockCities,
     connectToBlockCitiesWebSocketWeb3,

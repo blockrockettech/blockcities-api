@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const blockcitiesContractService = require('./blockcities.contract.service');
 const webflowDataService = require('./webflow/webflowDataService');
 const imageBuilderService = require('./imageBuilder.service');
@@ -8,6 +10,7 @@ const {decorateMetadataName} = require('./metadata/metadata.decorator');
 const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
 const {heightMapper, heightInFootDescription} = require('./metadata/height-mapper');
+const {isMainnet} = require('./abi/networks');
 
 const config = require('./config');
 
@@ -94,18 +97,20 @@ class BlockCitiesDataService {
         };
     }
 
-    async updateBuilding(network, tokenId, webflowItemId) {
+    /**
+     * This will update all building data we store in both firebase and webflow
+     * @return {Promise<void>}
+     */
+    async updateBuildingData(network, tokenId) {
         const buildingConstructionData = await this.birthEventForToken(network, tokenId);
         const tokenDetails = await this.tokenDetails(network, tokenId);
         const metaData = await this.tokenMetadata(network, tokenId);
         const owner = await this.ownerOfToken(network, tokenId);
 
         // Firestore formatted data
-        const data = {
-            id: tokenId, // primary key of building record data
-            webflowItemId,
+        const buildingData = {
+            tokenId, // primary key of building record data
             webflowCollectionId: config.webflow.collections.buildings,
-            tokenId,
             network,
             ...tokenDetails,
             ...metaData,
@@ -119,29 +124,69 @@ class BlockCitiesDataService {
             cityShort: shortCityNameMapper(tokenDetails.city),
         };
 
-        // Create Webflow CMS formatted data
-        // const webflowCmsData = this._constructWebFlowCmsData(data);
+        // Webflow only supports mainnet
+        if (isMainnet(network)) {
 
-        // Load any existing building data
-        // const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+            // Load any existing building data
+            const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
 
-        // // Ensure the CMS mapping remains
-        // const hasCmsMapping = currentBuilding && currentBuilding.webflowId;
-        // if (hasCmsMapping) {
-        //     data.webflowId = currentBuilding.webflowId;
-        //     console.log(`Updating building with tokenId [${tokenId}] and to webflow CMS ID [${data.webflowId}]`);
-        //     await webflowDataService.updateItemInCollection(config.webflow.collections.buildings, data.webflowId, webflowCmsData);
-        // } else {
-        //     const cmsId = await webflowDataService.addItemToCollection(config.webflow.collections.buildings, webflowCmsData);
-        //     console.log(`Added new token to building [${tokenId}] to webflow`);
-        //     data.webflowId = cmsId;
-        // }
+            // Create Webflow CMS formatted data
+            const webflowCmsData = FirebaseToWebflowConverter.constructWebFlowCmsData(buildingData);
+            console.log(webflowCmsData);
+
+            // Ensure the CMS mapping remains
+            if (_.has(currentBuilding, 'webflowItemId')) {
+                buildingData.webflowItemId = currentBuilding.webflowItemId;
+                console.log(`Updating building with tokenId [${tokenId}] and to webflow CMS ID [${buildingData.webflowItemId}]`);
+                await webflowDataService.updateItemInCollection(config.webflow.collections.buildings, buildingData.webflowItemId, webflowCmsData);
+            } else {
+                console.log(`Added new building [${tokenId}] to webflow`);
+                // _cid = collection ID | _id = item Id
+                const {_cid, _id} = await webflowDataService.addItemToCollection(config.webflow.collections.buildings, webflowCmsData);
+                console.log(`Webflow CMS item added - token ID [${tokenId}] collection [${_cid}] itme ID [${_id}]`);
+                buildingData.webflowItemId = _id;
+                buildingData.webflowCollectionId = _cid;
+            }
+
+        } else {
+            console.info(`Skipping webflow update as not on mainnet`);
+        }
 
         // Save the data in the DB
-        await buildingDataService.saveBuilding(network, data);
+        await buildingDataService.saveBuilding(network, buildingData);
     }
 
-    _constructWebFlowCmsData(data) {
+    /**
+     * This allows you to set the CMS ID on the firebase data we store for each building, if one is not found then we create a simple place holder mapping object
+     * @return {Promise<void>}
+     */
+    async forceSetWebflowIdOnBuildingData(network, tokenId, webflowItemId) {
+        if (!isMainnet(network)) {
+            throw new Error('Webflow does not support non mainnet tokens');
+        }
+
+        // Load any existing building data
+        let currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+
+        // If its a new token just construct the basic info so we can save the mapping
+        if (!currentBuilding) {
+            currentBuilding = {
+                tokenId,
+                network
+            };
+        }
+        console.log(`Force updating building with tokenId [${tokenId}] and to webflow CMS ID [${webflowItemId}]`);
+        currentBuilding.webflowItemId = webflowItemId;
+        currentBuilding.webflowCollectionId = config.webflow.collections.buildings;
+
+        // Save the data in the DB
+        await buildingDataService.saveBuilding(network, currentBuilding);
+    }
+
+}
+
+class FirebaseToWebflowConverter {
+    static constructWebFlowCmsData(data) {
         return {
             'token-id': data.attributes.tokenId,
             'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,

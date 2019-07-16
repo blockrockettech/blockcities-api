@@ -11,7 +11,7 @@ class BuildingDataService {
             .collection('data')
             .doc(getNetwork(network))
             .collection('buildings')
-            .doc(_.toString(data.id))
+            .doc(_.toString(data.tokenId))
             .set(data)
             .then(ref => {
                 return ref.id;

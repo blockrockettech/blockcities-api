@@ -56,6 +56,17 @@ class WebflowDataService {
         }, {live: true}); // {live: true} = publishes data immediately
     }
 
+    async removeItemInCollection(collectionId, itemId) {
+        //const webflow = new Webflow({ token: api_token });
+        //
+        // // Promise <{}>
+        // const removed = webflow.removeItem({ collectionId: '580e63fc8c9a982ac9b8b745', itemId: '582bbba8dae4fb7a75bd30e8' })
+        //
+        // removed.then(x => console.log(x));
+
+        return this.api.removeItem({collectionId: collectionId, itemId: itemId});
+    }
+
 }
 
 module.exports = new WebflowDataService();
