@@ -55,7 +55,7 @@ exports.api = functions.https.onRequest(app);
 /**
  * A set of cron style jobs which trigger a particular operation
  */
-exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 30 seconds')
+exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 1 minutes')
     .onRun(async (context) => {
         console.log('Running mainnet scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.mainnet);
@@ -92,8 +92,7 @@ exports.newEventTrigger =
             // Handle differing events
             switch (event) {
                 // default ERC721 events
-                case 'Transfer':
-                case 'Approval': {
+                case 'Transfer': {
                     const tokenId = get(document, 'returnValues.tokenId');
                     const from = get(document, 'returnValues.from');
                     const to = get(document, 'returnValues.to');
@@ -106,3 +105,24 @@ exports.newEventTrigger =
                 }
             }
         });
+
+/**
+ * Webflow CMS task queue - rate limit of 60 API calls a minute so we use a queue to remove duplicate calls and throttle without our limits
+ */
+exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
+    .onRun(async (context) => {
+        console.log('Running webflow CMS Queue');
+
+        const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
+
+        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(60);
+
+        const updates = _.map(tokenIds, async (tokenId) => {
+            return webflowUpdateQueue.processTokenUpdate(tokenId);
+        });
+
+        await Promise.all(updates);
+
+        console.log(`Processed a total of [${tokenIds.length}]`);
+
+    });
