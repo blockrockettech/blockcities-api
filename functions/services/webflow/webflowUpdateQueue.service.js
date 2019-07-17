@@ -41,8 +41,8 @@ class WebflowUpdateQueue {
 
         const tokenIds = [];
         querySet.forEach((doc) => {
-            const items = doc.data();
-            tokenIds.push(items.tokenId);
+            const data = doc.data();
+            tokenIds.push(data.tokenId);
         });
 
         // Delete the tokens we just grabbed

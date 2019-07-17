@@ -110,13 +110,13 @@ exports.newEventTrigger =
 /**
  * Webflow CMS task queue - rate limit of 60 API calls a minute so we use a queue to remove duplicate calls and throttle without our limits
  */
-exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
+exports.webflowCmsScheduler = functions.pubsub.schedule('every 1 minutes')
     .onRun(async (context) => {
         console.log('Running webflow CMS Queue');
 
         const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
 
-        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(1);
+        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(30);
 
         const updates = _.map(tokenIds, async (tokenId) => {
             return webflowUpdateQueue.processTokenUpdate(tokenId);
