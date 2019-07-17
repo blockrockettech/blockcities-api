@@ -41,12 +41,13 @@ class WebflowUpdateQueue {
 
         const tokenIds = [];
         querySet.forEach((doc) => {
-            tokenIds.push(doc.data());
+            const items = doc.data();
+            tokenIds.push(items.tokenId);
         });
 
         // Delete the tokens we just grabbed
         const batch = firestore.batch();
-        _.forEach(tokenIds, ({tokenId}) => {
+        _.forEach(tokenIds, (tokenId) => {
             const tokenRef = firestore.collection('data').doc(getNetwork(MAINNET)).collection('webflow-cms-queue').doc(_.toString(tokenId));
             batch.delete(tokenRef);
         });
@@ -58,13 +59,18 @@ class WebflowUpdateQueue {
     async processTokenUpdate(tokenId) {
 
         // Load any existing building data
-        const currentBuilding = await buildingDataService.getBuildingByTokenId(MAINNET, tokenId);
+        let currentBuilding = await buildingDataService.getBuildingByTokenId(MAINNET, tokenId);
+        console.log(currentBuilding);
+        if (!currentBuilding) {
+            console.error(`Attempting to push CMS token for building we dont know - this shouldn't happen - token ID [${tokenId}]`);
+            return;
+        }
 
         // Create Webflow CMS formatted data
         const webflowCmsData = FirebaseToWebflowConverter.constructWebFlowCmsData(currentBuilding);
 
-        // Ensure the CMS mapping remains
-        if (_.has(currentBuilding, 'webflowItemId')) {
+        // // Ensure the CMS mapping remains
+        if (currentBuilding.webflowItemId) {
             console.log(`Updating existing building on CMS - token ID [${tokenId}] collection [${currentBuilding.webflowCollectionId}] item [${currentBuilding.webflowItemId}]`);
             await webflowDataService.updateItemInCollection(currentBuilding.webflowCollectionId, currentBuilding.webflowItemId, webflowCmsData);
         } else {
@@ -89,9 +95,9 @@ class WebflowUpdateQueue {
 class FirebaseToWebflowConverter {
     static constructWebFlowCmsData(data) {
         return {
-            'token-id': data.attributes.tokenId,
-            'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
-            'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
+            'token-id': data.tokenId,
+            'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.tokenId}.png`,
+            'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.tokenId}.png`,
             'background-color': `#${data.background_color}`,
             'city': data.cityShort,
             'city-full-name': data.attributes.city,

@@ -49,7 +49,8 @@ void async function () {
                 duplicates.push({
                     tokenId,
                     webflowItemId: item._id,
-                    webflowCollectionId: item._cid
+                    webflowCollectionId: item._cid,
+                    slug: item.slug,
                 });
             }
         });

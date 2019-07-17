@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const functions = require('firebase-functions');
 
 const admin = require('firebase-admin');
@@ -55,19 +56,19 @@ exports.api = functions.https.onRequest(app);
 /**
  * A set of cron style jobs which trigger a particular operation
  */
-exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 1 minutes')
+exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running mainnet scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.mainnet);
     });
 
-exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 1 minutes')
+exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running ropsten scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.ropsten);
     });
 
-exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 1 minutes')
+exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running rinkeby scheduler');
         await require('./services/events/events.service').processEventsForAddress(address.blockCities.rinkeby);
@@ -115,7 +116,7 @@ exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
 
         const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
 
-        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(60);
+        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(1);
 
         const updates = _.map(tokenIds, async (tokenId) => {
             return webflowUpdateQueue.processTokenUpdate(tokenId);

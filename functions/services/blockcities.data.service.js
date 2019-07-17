@@ -104,7 +104,7 @@ class BlockCitiesDataService {
         const owner = await this.ownerOfToken(network, tokenId);
 
         // Firestore formatted data
-        const buildingData = {
+        let buildingData = {
             tokenId, // primary key of building record data
             webflowCollectionId: config.webflow.collections.buildings,
             network,
@@ -122,7 +122,16 @@ class BlockCitiesDataService {
 
         // Webflow only supports mainnet
         if (isMainnet(network)) {
+            // Add to process queue
             await webflowUpdateQueue.addToQueue(tokenId);
+
+            // load existing data
+            const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+
+            // maintain webflow mapping
+            if (currentBuilding && currentBuilding.webflowItemId) {
+                buildingData.webflowItemId = currentBuilding.webflowItemId;
+            }
         }
 
         // Save the data in the DB
