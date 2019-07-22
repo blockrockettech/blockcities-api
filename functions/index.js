@@ -8,31 +8,12 @@ admin.initializeApp({
 });
 
 const {address} = require('./services/abi/networks');
-const blockCitiesDataService = require('./services/blockcities.data.service');
 
 const cors = require('cors');
 const express = require('express');
 const app = express();
 
 app.use(cors());
-
-// TODO refactor below endpoints into proper express routers and service classes
-
-// A more detailed lookup method for pulling back all details for a token
-app.get('/network/:network/tokens/:owner/details', async (request, response) => {
-    const {owner, network} = request.params.owner;
-
-    const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
-
-    const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
-        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
-
-        return {...tokenDetails, ...metaData, tokenId: tokenId};
-    }));
-
-    return response.status(200).json(mappedTokens);
-});
 
 const events = require('./api/events');
 const configs = require('./api/configs');
@@ -47,7 +28,7 @@ app.use('/events', events);
 // All methods under /token will hit the blockchain directly
 app.use('/network/:network/token', token);
 
-// All methods under /buildings will use our DB
+// All methods under /buildings will use our internal DB
 app.use('/network/:network/buildings', buildings);
 
 // Expose Express API as a single Cloud Function:

@@ -43,6 +43,22 @@ token.get('/:tokenId/details', async (request, response) => {
     return response.status(200).json({...tokenDetails, ...metaData, tokenId, owner});
 });
 
+// Getting account owned tokens
+token.get('/account/:owner/tokens', async (request, response) => {
+    const {owner, network} = request.params;
+
+    const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
+
+    const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
+
+        return {...tokenDetails, ...metaData, tokenId: tokenId};
+    }));
+
+    return response.status(200).json(mappedTokens);
+});
+
 // The image generator
 token.get('/image/:tokenId.png', async (request, response) => {
     try {
