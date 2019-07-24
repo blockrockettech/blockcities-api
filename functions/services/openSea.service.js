@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const axios = require('axios');
-const {getAddressForNetwork} = require('./abi/networks');
+const {getBlockCitiesNftAddressForNetwork} = require('./abi/networks');
 
 const getApi = (networkId) => {
     switch (_.toString(networkId)) {
@@ -18,7 +18,7 @@ const config = require('./config');
 class OpenSeaService {
 
     refreshTokenMetaData(network, tokenId) {
-        const address = getAddressForNetwork(network);
+        const address = getBlockCitiesNftAddressForNetwork(network);
 
         return axios
             .get(`${getApi(network)}/asset/${address}/${tokenId}/?force_update=true`, {

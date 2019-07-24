@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-firebase serve --only functions
+firebase serve --only functions,firestore

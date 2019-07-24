@@ -1,6 +1,7 @@
 const {
     connectToBlockCities,
     connectToBlockCitiesWebSocketWeb3,
+    getBlockCitiesNftDeploymentBlockForNetwork,
     web3HttpInstance
 } = require('./abi/networks');
 
@@ -41,21 +42,6 @@ class BlockcitiesContractService {
         return owner[0];
     }
 
-    // FIXME delete if not needed
-    async tokenAttributes(network = 1, tokenId) {
-        console.log(`Find token attrs for [${tokenId}] on network [${network}]`);
-
-        const token = connectToBlockCities(network);
-
-        // Get token attributes
-        const tokenAttrs = await token.attributes(tokenId);
-
-        return {
-            ...tokenAttrs
-        };
-    }
-
-
     async tokenDetails(network = 1, tokenId) {
         console.log(`Find token details for [${tokenId}] on network [${network}]`);
 
@@ -94,6 +80,7 @@ class BlockcitiesContractService {
 
         const contract = connectToBlockCitiesWebSocketWeb3(network);
         const web3Instance = web3HttpInstance(network);
+        const deploymentBlock = getBlockCitiesNftDeploymentBlockForNetwork(network);
 
         return new Promise((resolve, reject) => {
 
@@ -129,7 +116,8 @@ class BlockcitiesContractService {
                     filter: {
                         _tokenId: tokenId
                     },
-                    fromBlock: 7488550, toBlock: 'latest'
+                    fromBlock: deploymentBlock,
+                    toBlock: 'latest'
                 },
                 handler
             );

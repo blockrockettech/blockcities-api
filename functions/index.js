@@ -1,4 +1,13 @@
+const _ = require('lodash');
 const functions = require('firebase-functions');
+
+const admin = require('firebase-admin');
+admin.initializeApp({
+    credential: admin.credential.cert(require('./_keys/block-cities-firebase-adminsdk.json')),
+    databaseURL: 'https://block-cities.firebaseio.com'
+});
+
+const {address} = require('./services/abi/networks');
 
 const cors = require('cors');
 const express = require('express');
@@ -6,70 +15,96 @@ const app = express();
 
 app.use(cors());
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+const events = require('./api/events');
+const configs = require('./api/configs');
+const builder = require('./api/builder');
+const token = require('./api/token');
+const buildings = require('./api/buildings');
 
-// Notes:
-//  - I think we should version the tokens URI lookups to help migrations and changes
-//  - Reason as once the image generated we may want to cache it and serve this direct from the API
-//  - V2 may then be a more advanced version etc and would reduce the testing surface needed for changes
-//  - It would me that the token URI hash we set in the contract is `/v1/:tokenId`
+app.use('/configs', configs);
+app.use('/builder', builder);
+app.use('/events', events);
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+// All methods under /token will hit the blockchain directly
+app.use('/network/:network/token', token);
 
-// Gets all token pointers form the contract
-app.get('/network/:network/token/pointers', async (request, response) => {
-    return require('./api/tokenUri').tokenPointers(request, response);
-});
-
-// Token URI looking defined in the contract
-app.get('/network/:network/token/:tokenId', async (request, response) => {
-    return require('./api/tokenUri').tokenMetadata(request, response);
-});
-
-// Refresh the token metadata
-app.get('/network/:network/token/:tokenId/refresh', async (request, response) => {
-    return require('./api/tokenUri').refreshTokenMetaData(request, response);
-});
-
-// A more detailed lookup method for pulling back all details for a token
-app.get('/network/:network/token/:tokenId/details', async (request, response) => {
-    return require('./api/tokenUri').lookupTokenDetails(request, response);
-});
-
-// A more detailed lookup method for pulling back all details for a token
-app.get('/network/:network/tokens/:owner/details', async (request, response) => {
-    return require('./api/tokenUri').lookupTokenDetailsForOwner(request, response);
-});
-
-// The image generator
-app.get('/network/:network/token/image/:tokenId.png', async (request, response) => {
-    return require('./api/image').generateTokenImagePng(request, response);
-});
-
-app.get('/network/:network/token/:tokenId/image', async (request, response) => {
-    return require('./api/image').generateTokenImageSvg(request, response);
-});
-
-// The image tester
-app.get('/building/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
-    return require('./api/image').generateTestImage(request, response);
-});
-
-app.get('/buildings/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
-    return require('./api/image').generateTestImages(request, response);
-});
-
-// Used for admin app - listing out specials we current can mint
-app.get('/config/buildings/specials', async (request, response) => {
-    response
-        .status(200)
-        .json(require('./services/metadata/special-data-mapping.js'));
-});
+// All methods under /buildings will use our internal DB
+app.use('/network/:network/buildings', buildings);
 
 // Expose Express API as a single Cloud Function:
 exports.api = functions.https.onRequest(app);
 
+/**
+ * A set of cron style jobs which trigger a particular operation
+ */
+exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 5 minutes')
+    .onRun(async (context) => {
+        console.log('Running mainnet scheduler');
+        await require('./services/events/events.service').processEventsForAddress(address.blockCities.mainnet);
+    });
+
+exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 5 minutes')
+    .onRun(async (context) => {
+        console.log('Running ropsten scheduler');
+        await require('./services/events/events.service').processEventsForAddress(address.blockCities.ropsten);
+    });
+
+exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes')
+    .onRun(async (context) => {
+        console.log('Running rinkeby scheduler');
+        await require('./services/events/events.service').processEventsForAddress(address.blockCities.rinkeby);
+    });
+
+/**
+ * Triggered when a new event is added to the DB
+ */
+exports.newEventTrigger =
+    functions.firestore
+        .document('/events/{network}/data/{hash}')
+        .onWrite(async (change, context) => {
+            const get = require('lodash/get');
+
+            const {network, hash} = context.params;
+            const document = change.after.exists ? change.after.data() : null;
+
+            console.info(`Event - onWrite @ [/events/${network}/data/${hash}]`, document);
+
+            const event = get(document, 'event');
+
+            // Handle differing events
+            switch (event) {
+                // default ERC721 events
+                case 'Transfer': {
+                    const tokenId = get(document, 'returnValues.tokenId');
+                    const from = get(document, 'returnValues.from');
+                    const to = get(document, 'returnValues.to');
+
+                    console.log(`Incoming token ID [${tokenId}] for event [${event}] from [${from}] to [${to}]`);
+
+                    await require('./services/blockcities.data.service').updateBuildingData(network, tokenId);
+
+                    break;
+                }
+            }
+        });
+
+/**
+ * Webflow CMS task queue - rate limit of 60 API calls a minute so we use a queue to remove duplicate calls and throttle without our limits
+ */
+exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
+    .onRun(async (context) => {
+        console.log('Running webflow CMS Queue');
+
+        const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
+
+        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(30);
+
+        const updates = _.map(tokenIds, async (tokenId) => {
+            return webflowUpdateQueue.processTokenUpdate(tokenId);
+        });
+
+        await Promise.all(updates);
+
+        console.log(`Processed a total of [${tokenIds.length}]`);
+
+    });

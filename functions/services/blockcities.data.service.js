@@ -1,13 +1,16 @@
+const _ = require('lodash');
 
 const blockcitiesContractService = require('./blockcities.contract.service');
-const webflowDataService = require('./webflow/webflowDataService');
+const webflowUpdateQueue = require('./webflow/webflowUpdateQueue.service');
 const imageBuilderService = require('./imageBuilder.service');
+const buildingDataService = require('./building.data.service');
 
 const {backgroundColorwaySwitch} = require('./metadata/background-colours');
 const {decorateMetadataName} = require('./metadata/metadata.decorator');
 const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
 const {heightMapper, heightInFootDescription} = require('./metadata/height-mapper');
+const {isMainnet} = require('./abi/networks');
 
 const config = require('./config');
 
@@ -19,10 +22,6 @@ class BlockCitiesDataService {
 
     async tokenPointers(network) {
         return blockcitiesContractService.tokenPointers(network);
-    }
-
-    async tokenDetails(network, tokenId) {
-        return blockcitiesContractService.tokenDetails(network, tokenId);
     }
 
     async tokenDetails(network, tokenId) {
@@ -52,8 +51,7 @@ class BlockCitiesDataService {
             const res = await imageBuilderService.generateNoRoofImageStats(tokenAttrs);
             bodyConfig = res.bodyConfig;
             canvasHeight = res.canvasHeight;
-        }
-        else {
+        } else {
             const res = await imageBuilderService.generateImageStats(tokenAttrs);
             bodyConfig = res.bodyConfig;
             canvasHeight = res.canvasHeight;
@@ -95,65 +93,84 @@ class BlockCitiesDataService {
         };
     }
 
-    async exportWebflowBuildProfile(network, tokenId) {
+    /**
+     * This will update all building data we store in both firebase and webflow
+     * @return {Promise<void>}
+     */
+    async updateBuildingData(network, tokenId) {
         const buildingConstructionData = await this.birthEventForToken(network, tokenId);
-
-        console.log(buildingConstructionData);
-
         const tokenDetails = await this.tokenDetails(network, tokenId);
         const metaData = await this.tokenMetadata(network, tokenId);
         const owner = await this.ownerOfToken(network, tokenId);
 
-        // join all info into a data object
-        const data = {
+        // Firestore formatted data
+        let buildingData = {
+            tokenId, // primary key of building record data
+            webflowCollectionId: config.webflow.collections.buildings,
+            network,
             ...tokenDetails,
             ...metaData,
             ...buildingConstructionData,
-            tokenId,
-            owner
+            architectShort: dot(metaData.attributes.architect),
+            owner,
+            ownerShort: dot(owner),
+            slug: tokenId.toString(), // slug is used to define URL in webflow CMS
+            era: '0',
+            eraClass: 'Modern',
+            cityShort: shortCityNameMapper(tokenDetails.city),
         };
 
-        console.log(`token ID ${data.tokenId}, building ID ${data.building}`);
+        // Webflow only supports mainnet
+        if (isMainnet(network)) {
+            // Add to process queue
+            await webflowUpdateQueue.addToQueue(tokenId);
 
-        await webflowDataService.addItemToCollection(config.webflow.collections.buildings, {
-            'token-id': data.attributes.tokenId,
-            'building-image-primary': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
-            'building-image-link': `https://us-central1-block-cities.cloudfunctions.net/api/network/1/token/image/${data.attributes.tokenId}.png`,
-            'background-color': `#${data.background_color}`,
-            'city': shortCityNameMapper(data.city),
-            'city-full-name': data.attributes.city,
-            'era': '0',
-            'era-class': 'Modern',
-            'architect': data.attributes.architect,
-            'original-architect-short': dot(data.attributes.architect),
-            'current-owner': data.owner,
-            'current-owner-short': dot(data.owner),
-            'buildingdescription': data.description,
-            'height': data.attributes.height,
-            'height-class': data.attributes.heightClass,
-            'date-built': data.blockTimestampPretty,
-            'groundfloor': data.attributes.groundFloorType,
-            'body': data.attributes.coreType,
-            'roof': data.attributes.rooftopType,
-            'ground-floor-exterior-color': data.attributes.exteriorColorway,
-            'ground-floor-window-color': data.attributes.baseWindowColorway,
-            'ground-floor-window-type': data.attributes.windowType,
-            'ground-floor-use': data.attributes.groundFloorUse,
-            'body-name': data.attributes.building,
-            'body-exterior-color': data.attributes.exteriorColorway,
-            'body-window-color': data.attributes.bodyWindowColorway,
-            'body-window-type': data.attributes.windowType,
-            'body-use': data.attributes.coreUse,
-            'roof-exterior-color': data.attributes.exteriorColorway,
-            'roof-window-color': data.attributes.roofWindowColorway,
-            'roof-window-type': data.attributes.windowType,
-            'roof-use': data.attributes.rooftopUse,
-            'name': data.name,
-            'slug': data.attributes.tokenId.toString(), // slug is used to define URL
-        });
+            // load existing data
+            const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
 
-        console.log(`Added token [${tokenId}] to webflow`);
-        return tokenId;
+            // maintain webflow mapping
+            if (currentBuilding && currentBuilding.webflowItemId) {
+                buildingData.webflowItemId = currentBuilding.webflowItemId;
+            }
+        }
+
+        // Save the data in the DB
+        await buildingDataService.saveBuilding(network, buildingData);
+    }
+
+    /**
+     * This allows you to set the CMS ID on the firebase data we store for each building, if one is not found then we create a simple place holder mapping object
+     * @return {Promise<void>}
+     */
+    async forceSetWebflowIdOnBuildingData(network, tokenId, webflowItemId) {
+        if (!isMainnet(network)) {
+            throw new Error('Webflow does not support non mainnet tokens');
+        }
+
+        // Load any existing building data
+        let currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+
+        // If its a new token just construct the basic info so we can save the mapping
+        if (!currentBuilding) {
+            currentBuilding = {
+                tokenId,
+                network
+            };
+        }
+        console.log(`Force updating building with tokenId [${tokenId}] and to webflow CMS ID [${webflowItemId}]`);
+        currentBuilding.webflowItemId = webflowItemId;
+        currentBuilding.webflowCollectionId = config.webflow.collections.buildings;
+
+        // Save the data in the DB
+        await buildingDataService.saveBuilding(network, currentBuilding);
+    }
+
+    async getBuildingsForOwner(network, owner) {
+        return buildingDataService.getBuildingsForOwner(network, owner);
+    }
+
+    async getBuildingData(network, buildingId) {
+        return buildingDataService.getBuildingByTokenId(network, buildingId);
     }
 }
 
