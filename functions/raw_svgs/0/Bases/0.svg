@@ -43,7 +43,7 @@
     </style>
   </defs>
   <title>Artboard 13</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M90,103.92l90-51.96L90,0,0,51.96Z"/>
     <path id="body-R2" class="exterior-R-prim" d="M90.0708,75.05l65-37.52V49.07l-65,37.53Z"/>
     <path id="body-L2" class="exterior-L-prim" d="M90.0708,75.05l-65-37.52V49.07l65,37.53Z"/>

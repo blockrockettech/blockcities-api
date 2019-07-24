@@ -1,6 +1,8 @@
 const readFilePromise = require('fs-readfile-promise');
 const {createCanvas, loadImage, Image} = require('canvas');
 
+const cheerio = require('cheerio');
+
 const cheerioSVGService = require('./cheerioSVGService.service');
 
 const colourways = require('./metadata/colourways');
@@ -8,6 +10,16 @@ const colourLogic = require('./metadata/colour-logic');
 
 const yPadding = 0;
 const xPadding = 0;
+
+const getRoot = (svgXml) => {
+    const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+    return $('#root').html();
+};
+
+const getStyle = (svgXml) => {
+    const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+    return $('style').html();
+};
 
 class ImageBuilderService {
 
@@ -80,6 +92,12 @@ class ImageBuilderService {
                 backgroundColorway,
             });
 
+            console.log('base', baseConfig);
+            console.log('body', bodyConfig);
+            console.log('roof', roofConfig);
+            console.log('height', canvasHeight);
+            console.log('width', canvasWidth);
+
             const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
 
             const ctx = canvas.getContext('2d');
@@ -87,12 +105,17 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
 
+            console.log('startBaseY', startBaseY);
+            console.log('startBodyY', startBodyY);
+
             // Base
             ctx.drawImage(
                 baseConfig.svg,
                 xPadding,
                 startBaseY - yPadding
             );
+
+            console.log('BaseY', (startBaseY - yPadding));
 
             // Body
             ctx.drawImage(
@@ -103,6 +126,8 @@ class ImageBuilderService {
                 bodyConfig.adjustedBodyHeight,
             );
 
+            console.log('BodyY', (startBodyY - baseConfig.height + baseConfig.anchorY - yPadding));
+
             // Roof
             ctx.drawImage(
                 roofConfig.svg,
@@ -111,6 +136,8 @@ class ImageBuilderService {
                 bodyConfig.adjustedBodyWidthPath,
                 roofConfig.adjustedRoofHeight
             );
+
+            console.log('RoofY', (0 + roofConfig.roofNudge + yPadding));
 
             const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
             return canvas.toBuffer(streamType, {
@@ -384,6 +411,102 @@ class ImageBuilderService {
                 canvasHeight,
                 canvasWidth,
             };
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async generatePureSvg({
+                              building,
+                              base,
+                              body,
+                              roof,
+                              exteriorColorway,
+                              backgroundColorway,
+                          }) {
+
+        try {
+            const {
+                baseConfig,
+                bodyConfig,
+                roofConfig,
+                canvasHeight,
+                canvasWidth,
+            } = await this.generateImageStats({
+                building,
+                base,
+                body,
+                roof,
+                exteriorColorway,
+                backgroundColorway,
+            });
+
+            console.log('base', baseConfig);
+            console.log('body', bodyConfig);
+            console.log('roof', roofConfig);
+            // console.log('height', canvasHeight);
+            // console.log('width', canvasWidth);
+
+            const startBaseY = canvasHeight - baseConfig.height;
+            const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
+
+            // console.log('startBaseY', startBaseY);
+            // console.log('startBodyY', startBodyY);
+
+            const skeletonSvg = `
+<svg id="bc" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style></style>
+</defs>
+    <g id="building">
+        <g id="base"></g>
+        <g id="body"></g>
+        <g id="roof"></g>
+    </g>
+</svg>`;
+
+            // FIXME the processed ones should work?
+            const rootPath = `${__dirname}/../raw_svgs/${building}`;
+
+            const basePath = `${rootPath}/Bases/${base}.svg`;
+            const bodyPath = `${rootPath}/Bodies/${body}.svg`;
+            const roofPath = `${rootPath}/Roofs/${roof}.svg`;
+
+            const rawBaseSvg = await readFilePromise(basePath, 'utf8');
+            const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
+            const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
+
+            const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
+
+            // ViewBox - essentially canvas size and aspect ratio
+            $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
+
+            // BASE
+            // we scale off the base
+            $('#base').html(getRoot(rawBaseSvg));
+            $('style').html(getStyle(rawBaseSvg)); // FIXME colour this correctly inline
+            $('#base').attr('transform', `
+            translate(0, ${startBaseY}) 
+            scale(1, 1) 
+            `);
+
+            // BODY
+            $('#body').html(getRoot(rawBodySvg));
+            $('style').html(getStyle(rawBodySvg)); // FIXME colour this correctly inline
+            $('#body').attr('transform', `
+            translate(${baseConfig.anchorX}, ${(startBodyY - baseConfig.height + baseConfig.anchorY)}) 
+            scale(${bodyConfig.adjustedBodyWidthPath / bodyConfig.anchorWidthPath}, ${bodyConfig.adjustedBodyHeight / bodyConfig.height})
+            `);
+
+            // ROOF
+            $('#roof').html(getRoot(rawRoofSvg));
+            $('style').html(getStyle(rawRoofSvg)); // FIXME colour this correctly inline
+            $('#roof').attr('transform', `
+            translate(${(baseConfig.anchorX + bodyConfig.adjustedBodyAnchorX)}, ${(0 + roofConfig.roofNudge)})
+            scale(${bodyConfig.adjustedBodyWidthPath / roofConfig.width}, ${roofConfig.adjustedRoofHeight / roofConfig.height})
+            `);
+
+            return $.xml();
         } catch (e) {
             console.error(e);
         }
