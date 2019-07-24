@@ -1,8 +1,13 @@
 const _ = require('lodash');
 const Eth = require('ethjs');
 const Web3 = require('web3');
+const functions = require('firebase-functions');
 
-const {INFURA_KEY} = require('../constants');
+const INFURA_KEY = functions.config().infura.key;
+if (!INFURA_KEY) {
+    throw new Error('No Infura key found');
+}
+
 const {blockCitiesAbi} = require('./blockcities.abi');
 
 const connectToBlockCities = (network) => {
