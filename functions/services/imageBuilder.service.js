@@ -486,9 +486,9 @@ class ImageBuilderService {
             $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
 
             // FIXME ideally should be more targetted here
-            $('style').html(cheerioSVGService.getStyle(styledBaseSvg));
-            $('style').html(cheerioSVGService.getStyle(styledBodySvg));
-            $('style').html(cheerioSVGService.getStyle(styledRoofSvg));
+            $('style').html(cheerioSVGService.getStyle(styledBaseSvg, 'base'));
+            $('style').append(cheerioSVGService.getStyle(styledBodySvg, 'body'));
+            $('style').append(cheerioSVGService.getStyle(styledRoofSvg, 'roof'));
 
             // BASE
             // NB: we scale off the base

@@ -66,9 +66,16 @@ class CheerioSVGService {
         return $('#root').html();
     };
 
-    getStyle(svgXml) {
+    getStyle(svgXml, targetDiv) {
         const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
-        return $('style').html();
+
+        let processedStyle = $('style').html();
+
+        // namespace to related section of building
+        processedStyle = processedStyle.replace(/.cls-/g, `#${targetDiv} .cls-`);
+        processedStyle = processedStyle.replace(/.concrete/g, `#${targetDiv} .concrete`);
+
+        return processedStyle
     };
 }
 
