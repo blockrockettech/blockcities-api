@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 class CheerioSVGService {
 
-    process (svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
+    process(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
         try {
             const $ = cheerio.load(svgXml, {xmlMode: true});
 
@@ -41,7 +41,7 @@ class CheerioSVGService {
         }
     }
 
-    styleFill (svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
+    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
         try {
             const $ = cheerio.load(svgXml, {xmlMode: true});
 
@@ -60,6 +60,16 @@ class CheerioSVGService {
             console.error(e);
         }
     }
+
+    getRoot(svgXml) {
+        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        return $('#root').html();
+    };
+
+    getStyle(svgXml) {
+        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        return $('style').html();
+    };
 }
 
 module.exports = new CheerioSVGService();

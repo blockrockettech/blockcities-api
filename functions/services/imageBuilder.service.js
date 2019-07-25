@@ -11,16 +11,6 @@ const colourLogic = require('./metadata/colour-logic');
 const yPadding = 0;
 const xPadding = 0;
 
-const getRoot = (svgXml) => {
-    const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
-    return $('#root').html();
-};
-
-const getStyle = (svgXml) => {
-    const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
-    return $('style').html();
-};
-
 class ImageBuilderService {
 
     async loadSpecial(specialId, imageType = 'svg') {
@@ -261,7 +251,8 @@ class ImageBuilderService {
                 anchorX: parseFloat(processedBaseAnchorX),
                 anchorY: parseFloat(processedBaseAnchorY),
                 anchorWidthPath: parseFloat(processedBaseAnchorWidthPath),
-                svg: baseImage
+                svg: baseImage,
+                rawSvg: processedBaseSvg,
             };
             const bodyConfig = {
                 width: bodyImage.width,
@@ -269,12 +260,14 @@ class ImageBuilderService {
                 anchorX: parseFloat(processedBodyAnchorX),
                 anchorY: parseFloat(processedBodyAnchorY),
                 anchorWidthPath: parseFloat(processedBodyAnchorWidthPath),
-                svg: bodyImage
+                svg: bodyImage,
+                rawSvg: processedBodySvg,
             };
             const roofConfig = {
                 width: roofImage.width,
                 height: roofImage.height,
-                svg: roofImage
+                svg: roofImage,
+                rawSvg: processedRoofSvg,
             };
 
             // check and log for dodgy anchors
@@ -444,7 +437,7 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
 
-            // console.log('base', baseConfig);
+            // console.log('base', baseConfig.svg);
             // console.log('body', bodyConfig);
             // console.log('roof', roofConfig);
             // console.log('height', canvasHeight);
@@ -465,65 +458,55 @@ class ImageBuilderService {
     </g>
 </svg>`;
 
-            // FIXME the processed ones should work?
-            const rootPath = `${__dirname}/../raw_svgs/${building}`;
-
-            const basePath = `${rootPath}/Bases/${base}.svg`;
-            const bodyPath = `${rootPath}/Bodies/${body}.svg`;
-            const roofPath = `${rootPath}/Roofs/${roof}.svg`;
-
-            const rawBaseSvg = await readFilePromise(basePath, 'utf8');
-            const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
-            const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
-
             const styledBaseSvg = cheerioSVGService.styleFill(
-                rawBaseSvg,
+                baseConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway][0]],
                 colourways.windows[colourLogic[exteriorColorway][3]],
                 colourways.curtains[colourLogic[exteriorColorway][3]],
             );
 
             const styledBodySvg = cheerioSVGService.styleFill(
-                rawBodySvg,
+                bodyConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway][0]],
                 colourways.windows[colourLogic[exteriorColorway][2]],
                 colourways.curtains[colourLogic[exteriorColorway][2]],
             );
 
             const styledRoofSvg = cheerioSVGService.styleFill(
-                rawRoofSvg,
+                roofConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway][0]],
                 colourways.windows[colourLogic[exteriorColorway][1]],
                 colourways.curtains[colourLogic[exteriorColorway][1]],
             );
-            
+
+            // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
             // ViewBox - essentially canvas size and aspect ratio
             $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
 
             // FIXME ideally should be more targetted here
-            $('style').html(getStyle(rawBaseSvg));
-            $('style').html(getStyle(rawBodySvg));
-            $('style').html(getStyle(rawRoofSvg));
+            $('style').html(cheerioSVGService.getStyle(styledBaseSvg));
+            $('style').html(cheerioSVGService.getStyle(styledBodySvg));
+            $('style').html(cheerioSVGService.getStyle(styledRoofSvg));
 
             // BASE
             // NB: we scale off the base
-            $('#base').html(getRoot(styledBaseSvg));
+            $('#base').html(cheerioSVGService.getRoot(styledBaseSvg));
             $('#base').attr('transform', `
             translate(0, ${startBaseY}) 
             scale(1, 1) 
             `);
 
             // BODY
-            $('#body').html(getRoot(styledBodySvg));
+            $('#body').html(cheerioSVGService.getRoot(styledBodySvg));
             $('#body').attr('transform', `
             translate(${baseConfig.anchorX}, ${(startBodyY - baseConfig.height + baseConfig.anchorY)}) 
             scale(${bodyConfig.adjustedBodyWidthPath / bodyConfig.anchorWidthPath}, ${bodyConfig.adjustedBodyHeight / bodyConfig.height})
             `);
 
             // ROOF
-            $('#roof').html(getRoot(styledRoofSvg));
+            $('#roof').html(cheerioSVGService.getRoot(styledRoofSvg));
             $('#roof').attr('transform', `
             translate(${(baseConfig.anchorX + bodyConfig.adjustedBodyAnchorX)}, ${(0 + roofConfig.roofNudge)})
             scale(${bodyConfig.adjustedBodyWidthPath / roofConfig.width}, ${roofConfig.adjustedRoofHeight / roofConfig.height})
