@@ -39,7 +39,7 @@ const builder = require('express').Router({mergeParams: true});
 // });
 
 // The image tester
-builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows', async (request, response) => {
+builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows/svg', async (request, response) => {
     try {
         const image = await imageBuilderService.generatePureSvg({
             building: parseInt(request.params.building),
@@ -59,7 +59,7 @@ builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/wind
 
 });
 
-builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows/old', async (request, response) => {
+builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows/canvas', async (request, response) => {
     try {
         const image = await imageBuilderService.generateImage({
             building: parseInt(request.params.building),

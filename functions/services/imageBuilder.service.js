@@ -419,6 +419,23 @@ class ImageBuilderService {
                           }) {
 
         try {
+
+            const skeletonSvg = `
+<svg id="bc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style></style>
+</defs>
+    <g id="building">
+        <g id="base"></g>
+        <g id="body"></g>
+        <g id="roof"></g>
+    </g>
+</svg>`;
+
+            if (building !== 0) {
+                return skeletonSvg;
+            }
+
             const {
                 baseConfig,
                 bodyConfig,
@@ -446,17 +463,7 @@ class ImageBuilderService {
             // console.log('startBaseY', startBaseY);
             // console.log('startBodyY', startBodyY);
 
-            const skeletonSvg = `
-<svg id="bc" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <style></style>
-</defs>
-    <g id="building">
-        <g id="base"></g>
-        <g id="body"></g>
-        <g id="roof"></g>
-    </g>
-</svg>`;
+
 
             const styledBaseSvg = cheerioSVGService.styleFill(
                 baseConfig.rawSvg,
@@ -513,6 +520,18 @@ class ImageBuilderService {
             `);
 
             return $.xml();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async loadSpecialPureSvg(specialId, imageType = 'svg') {
+
+        try {
+            const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
+            const rawSvg = await readFilePromise(path, 'utf8');
+
+            return rawSvg;
         } catch (e) {
             console.error(e);
         }

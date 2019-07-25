@@ -149,4 +149,40 @@ token.get('/:tokenId/image', async (request, response) => {
     }
 });
 
+token.get('/:tokenId/image/svg', async (request, response) => {
+    try {
+        const tokenId = request.params.tokenId;
+        if (!tokenId) {
+            return response.status(400).json({
+                failure: `Token ID not provided`
+            });
+        }
+
+        const network = request.params.network;
+        if (!network) {
+            return response.status(400).json({
+                failure: `Network not provided`
+            });
+        }
+
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+
+        if (tokenDetails.special !== 0) {
+            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            return response
+                .contentType('image/svg+xml')
+                .send(specialSvg);
+        }
+
+        const image = await imageBuilderService.generatePureSvg(tokenDetails);
+
+        return response
+            .contentType('image/svg+xml')
+            .send(image);
+    } catch (e) {
+        console.error(e);
+    }
+});
+
 module.exports = token;
