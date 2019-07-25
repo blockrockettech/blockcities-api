@@ -432,10 +432,6 @@ class ImageBuilderService {
     </g>
 </svg>`;
 
-            if (building !== 0) {
-                return skeletonSvg;
-            }
-
             const {
                 baseConfig,
                 bodyConfig,
