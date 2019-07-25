@@ -82,11 +82,11 @@ class ImageBuilderService {
                 backgroundColorway,
             });
 
-            console.log('base', baseConfig);
-            console.log('body', bodyConfig);
-            console.log('roof', roofConfig);
-            console.log('height', canvasHeight);
-            console.log('width', canvasWidth);
+            // console.log('base', baseConfig);
+            // console.log('body', bodyConfig);
+            // console.log('roof', roofConfig);
+            // console.log('height', canvasHeight);
+            // console.log('width', canvasWidth);
 
             const canvas = createCanvas(canvasWidth, canvasHeight, imageType);
 
@@ -95,8 +95,8 @@ class ImageBuilderService {
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
 
-            console.log('startBaseY', startBaseY);
-            console.log('startBodyY', startBodyY);
+            // console.log('startBaseY', startBaseY);
+            // console.log('startBodyY', startBodyY);
 
             // Base
             ctx.drawImage(
@@ -105,7 +105,7 @@ class ImageBuilderService {
                 startBaseY - yPadding
             );
 
-            console.log('BaseY', (startBaseY - yPadding));
+            // console.log('BaseY', (startBaseY - yPadding));
 
             // Body
             ctx.drawImage(
@@ -116,7 +116,7 @@ class ImageBuilderService {
                 bodyConfig.adjustedBodyHeight,
             );
 
-            console.log('BodyY', (startBodyY - baseConfig.height + baseConfig.anchorY - yPadding));
+            // console.log('BodyY', (startBodyY - baseConfig.height + baseConfig.anchorY - yPadding));
 
             // Roof
             ctx.drawImage(
@@ -127,7 +127,7 @@ class ImageBuilderService {
                 roofConfig.adjustedRoofHeight
             );
 
-            console.log('RoofY', (0 + roofConfig.roofNudge + yPadding));
+            // console.log('RoofY', (0 + roofConfig.roofNudge + yPadding));
 
             const streamType = (imageType === 'svg') ? 'image/svg+xml' : 'image/png';
             return canvas.toBuffer(streamType, {
