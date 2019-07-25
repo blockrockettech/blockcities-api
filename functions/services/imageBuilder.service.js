@@ -441,14 +441,14 @@ class ImageBuilderService {
                 backgroundColorway,
             });
 
-            console.log('base', baseConfig);
-            console.log('body', bodyConfig);
-            console.log('roof', roofConfig);
-            // console.log('height', canvasHeight);
-            // console.log('width', canvasWidth);
-
             const startBaseY = canvasHeight - baseConfig.height;
             const startBodyY = canvasHeight - bodyConfig.adjustedBodyHeight;
+
+            // console.log('base', baseConfig);
+            // console.log('body', bodyConfig);
+            // console.log('roof', roofConfig);
+            // console.log('height', canvasHeight);
+            // console.log('width', canvasWidth);
 
             // console.log('startBaseY', startBaseY);
             // console.log('startBodyY', startBodyY);
@@ -476,31 +476,54 @@ class ImageBuilderService {
             const rawBodySvg = await readFilePromise(bodyPath, 'utf8');
             const rawRoofSvg = await readFilePromise(roofPath, 'utf8');
 
+            const styledBaseSvg = cheerioSVGService.styleFill(
+                rawBaseSvg,
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][3]],
+                colourways.curtains[colourLogic[exteriorColorway][3]],
+            );
+
+            const styledBodySvg = cheerioSVGService.styleFill(
+                rawBodySvg,
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][2]],
+                colourways.curtains[colourLogic[exteriorColorway][2]],
+            );
+
+            const styledRoofSvg = cheerioSVGService.styleFill(
+                rawRoofSvg,
+                colourways.exteriors[colourLogic[exteriorColorway][0]],
+                colourways.windows[colourLogic[exteriorColorway][1]],
+                colourways.curtains[colourLogic[exteriorColorway][1]],
+            );
+            
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
             // ViewBox - essentially canvas size and aspect ratio
             $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
 
+            // FIXME ideally should be more targetted here
+            $('style').html(getStyle(rawBaseSvg));
+            $('style').html(getStyle(rawBodySvg));
+            $('style').html(getStyle(rawRoofSvg));
+
             // BASE
-            // we scale off the base
-            $('#base').html(getRoot(rawBaseSvg));
-            $('style').html(getStyle(rawBaseSvg)); // FIXME colour this correctly inline
+            // NB: we scale off the base
+            $('#base').html(getRoot(styledBaseSvg));
             $('#base').attr('transform', `
             translate(0, ${startBaseY}) 
             scale(1, 1) 
             `);
 
             // BODY
-            $('#body').html(getRoot(rawBodySvg));
-            $('style').html(getStyle(rawBodySvg)); // FIXME colour this correctly inline
+            $('#body').html(getRoot(styledBodySvg));
             $('#body').attr('transform', `
             translate(${baseConfig.anchorX}, ${(startBodyY - baseConfig.height + baseConfig.anchorY)}) 
             scale(${bodyConfig.adjustedBodyWidthPath / bodyConfig.anchorWidthPath}, ${bodyConfig.adjustedBodyHeight / bodyConfig.height})
             `);
 
             // ROOF
-            $('#roof').html(getRoot(rawRoofSvg));
-            $('style').html(getStyle(rawRoofSvg)); // FIXME colour this correctly inline
+            $('#roof').html(getRoot(styledRoofSvg));
             $('#roof').attr('transform', `
             translate(${(baseConfig.anchorX + bodyConfig.adjustedBodyAnchorX)}, ${(0 + roofConfig.roofNudge)})
             scale(${bodyConfig.adjustedBodyWidthPath / roofConfig.width}, ${roofConfig.adjustedRoofHeight / roofConfig.height})
