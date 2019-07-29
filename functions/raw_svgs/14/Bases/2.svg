@@ -63,7 +63,7 @@
     </style>
   </defs>
   <title>Artboard 30</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M227.5,300.2221,0,168.875,127.5,95.2628,355,226.61Z"/>
     <path id="Path-2" data-name="Path" class="top-light" d="M330,125.5737,127.5,8.66,25,67.8387,227.5,184.7521Z"/>
     <path id="Path-3" data-name="Path" class="exterior-L-light" d="M227.5,184.7521V285.7883L24.94,168.9614,25,67.8386Z"/>
