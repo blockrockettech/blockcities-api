@@ -145,6 +145,7 @@
         fill: url(#linear-gradient-16);
       }
     </style>
+    <g id="root">
     <linearGradient id="linear-gradient" x1="29.889" y1="-167.4134" x2="30.864" y2="-167.1897" gradientTransform="matrix(3.333, 0, 0, -8.66, 216.217, -1237.22)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#332716"/>
       <stop offset="1" stop-color="#603d16"/>
@@ -420,4 +421,5 @@
     <path id="Path-227" data-name="Path" class="cls-6" d="M0,161.56v2.887L267.5,318.888v-2.887Z"/>
     <path id="Path-228" data-name="Path" class="cls-5" d="M472.5,197.644v2.887l-205,118.357v-2.887Z"/>
   </g>
+ </g>
 </svg>
