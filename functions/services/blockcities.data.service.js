@@ -45,17 +45,9 @@ class BlockCitiesDataService {
         const tokenBaseURI = await blockcitiesContractService.tokenBaseURI(network);
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
 
-        // FIXME this is pony...fix the whole 8 thing
-        let bodyConfig, canvasHeight;
-        if (parseInt(tokenAttrs.building) === 8) {
-            const res = await imageBuilderService.generateNoRoofImageStats(tokenAttrs);
-            bodyConfig = res.bodyConfig;
-            canvasHeight = res.canvasHeight;
-        } else {
-            const res = await imageBuilderService.generateImageStats(tokenAttrs);
-            bodyConfig = res.bodyConfig;
-            canvasHeight = res.canvasHeight;
-        }
+        const res = await imageBuilderService.generateImageStats(tokenAttrs);
+        const bodyConfig = res.bodyConfig;
+        const canvasHeight = res.canvasHeight;
 
         const height = heightMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,

@@ -4,6 +4,8 @@ const imageBuilderService = require('../../services/imageBuilder.service');
 const blockCitiesDataService = require('../../services/blockcities.data.service');
 const openSeaService = require('../../services/openSea.service');
 
+const { convert } = require('convert-svg-to-png');
+
 const token = require('express').Router({mergeParams: true});
 
 // Gets all token pointers form the contract
@@ -94,62 +96,29 @@ token.get('/image/:tokenId.png', async (request, response) => {
         }
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const {canvasHeight, canvasWidth} = await imageBuilderService.generateImageStats(tokenDetails);
 
         if (tokenDetails.special !== 0) {
-            console.log(`Loading special for Token ID:`, tokenDetails.special);
-            const specialPng = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
+            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialPng = await convert(specialSvg, {height: canvasHeight * 2, width: canvasWidth * 2});
             return response
                 .contentType('image/png')
                 .send(specialPng);
         }
 
-        const image = await imageBuilderService.generateImage(tokenDetails, 'png');
-
+        const image = await imageBuilderService.generatePureSvg(tokenDetails);
+        const png = await convert(image, {height: canvasHeight * 2, width: canvasWidth * 2});
         return response
             .contentType('image/png')
-            .send(image);
+            .send(png);
     } catch (e) {
         console.error(e);
     }
 });
+
 
 token.get('/:tokenId/image', async (request, response) => {
-    try {
-        const tokenId = request.params.tokenId;
-        if (!tokenId) {
-            return response.status(400).json({
-                failure: `Token ID not provided`
-            });
-        }
-
-        const network = request.params.network;
-        if (!network) {
-            return response.status(400).json({
-                failure: `Network not provided`
-            });
-        }
-
-        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-
-        if (tokenDetails.special !== 0) {
-            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special);
-            return response
-                .contentType('image/svg+xml')
-                .send(specialSvg);
-        }
-
-        const image = await imageBuilderService.generateImage(tokenDetails);
-
-        return response
-            .contentType('image/svg+xml')
-            .send(image);
-    } catch (e) {
-        console.error(e);
-    }
-});
-
-token.get('/:tokenId/image/svg', async (request, response) => {
     try {
         const tokenId = request.params.tokenId;
         if (!tokenId) {

@@ -59,24 +59,4 @@ builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/wind
 
 });
 
-builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/windows/:windows/canvas', async (request, response) => {
-    try {
-        const image = await imageBuilderService.generateImage({
-            building: parseInt(request.params.building),
-            base: parseInt(request.params.base),
-            body: parseInt(request.params.body),
-            roof: parseInt(request.params.roof),
-            exteriorColorway: parseInt(request.params.exterior),
-            backgroundColorway: 2,
-        });
-
-        return response
-            .contentType('image/svg+xml')
-            .send(image);
-    } catch (e) {
-        console.error(e);
-    }
-
-});
-
 module.exports = builder;

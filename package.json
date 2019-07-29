@@ -9,7 +9,6 @@
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
-  "dependencies": {},
   "private": true,
   "engines": {
     "node": "8"
