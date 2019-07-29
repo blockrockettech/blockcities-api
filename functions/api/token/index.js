@@ -101,14 +101,14 @@ token.get('/image/:tokenId.png', async (request, response) => {
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
-            const specialPng = await convert(specialSvg, {height: canvasHeight, width: canvasWidth});
+            const specialPng = await convert(specialSvg, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
             return response
                 .contentType('image/png')
                 .send(specialPng);
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
-        const png = await convert(image, {height: canvasHeight, width: canvasWidth});
+        const png = await convert(image, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
         return response
             .contentType('image/png')
             .send(png);
