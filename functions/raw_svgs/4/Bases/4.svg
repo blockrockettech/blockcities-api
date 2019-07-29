@@ -71,6 +71,7 @@
     </style>
   </defs>
   <title>Artboard 24</title>
+  <g id="root">
   <path id="Path" class="concrete-top" d="M180,346.41,0,242.4872l155-89.4893,180,103.923Z"/>
   <path id="Path-2" data-name="Path" class="concrete-left" d="M180,346.41v5.7734L0,248.2606v-5.7734Z"/>
   <path id="Path-3" data-name="Path" class="concrete-right" d="M335,256.9209,180,346.41v5.7734l155-89.4891Z"/>
@@ -166,4 +167,5 @@
   <path id="Path-49" data-name="Path" class="curtain-L-prim-light" d="M102.5,290.1185v-23.094l-7.5-4.33v23.094Z"/>
   <path id="Path-50" data-name="Path" class="curtain-L-prim-light" d="M132.5,307.439V284.345l-7.5-4.33v23.094Z"/>
   <path id="Path-51" data-name="Path" class="curtain-L-prim-light" d="M147.5,316.0994v-23.094l-7.5-4.33v23.094Z"/>
+  </g>
 </svg>
