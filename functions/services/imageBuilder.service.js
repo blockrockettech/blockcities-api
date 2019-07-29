@@ -453,13 +453,11 @@ class ImageBuilderService {
             // console.log('base', baseConfig.svg);
             // console.log('body', bodyConfig);
             // console.log('roof', roofConfig);
-            // console.log('height', canvasHeight);
-            // console.log('width', canvasWidth);
+            console.log('height', canvasHeight);
+            console.log('width', canvasWidth);
 
-            // console.log('startBaseY', startBaseY);
-            // console.log('startBodyY', startBodyY);
-
-
+            console.log('startBaseY', startBaseY);
+            console.log('startBodyY', startBodyY);
 
             const styledBaseSvg = cheerioSVGService.styleFill(
                 baseConfig.rawSvg,
@@ -502,6 +500,9 @@ class ImageBuilderService {
             `);
 
             // BODY
+            console.log('adjustedBodyWidthPath', bodyConfig.adjustedBodyWidthPath);
+            console.log('anchorWidthPath', bodyConfig.anchorWidthPath);
+
             $('#body').html(cheerioSVGService.getRoot(styledBodySvg));
             $('#body').attr('transform', `
             translate(${baseConfig.anchorX}, ${(startBodyY - baseConfig.height + baseConfig.anchorY)}) 
