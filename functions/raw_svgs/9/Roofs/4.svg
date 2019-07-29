@@ -102,7 +102,7 @@
     </style>
   </defs>
   <title>1Artboard 2</title>
-  <g>
+  <g id="root">
     <path id="Path" class="cls-1" d="M0,150.0465l80,46.2527,160-92.3761L160,57.6705Z"/>
     <path id="Path-2" data-name="Path" class="cls-2" d="M160,63.444l70,40.4791L80,190.5257,10,150.0465Z"/>
     <path id="Path-3" data-name="Path" class="cls-3" d="M155,60.5573v5.7735L225,106.81l5-2.8868Z"/>

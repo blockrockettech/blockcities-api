@@ -31,7 +31,7 @@
     </style>
   </defs>
   <title>Artboard 4</title>
-  <g>
+  <g id="root">
     <path id="Path" class="top-light" d="M0,470.5405l160-92.3761,80,46.188L80,516.7285Z"/>
     <path id="Path-2" data-name="Path" class="top-prim" d="M20,470.5405l140-80.8291,60,34.641L80,505.1815Z"/>
     <path id="Path-3" data-name="Path" class="exterior-R-prim" d="M160,389.7114v11.547L30,476.314l-10-5.7735Z"/>
