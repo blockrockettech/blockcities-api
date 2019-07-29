@@ -453,11 +453,11 @@ class ImageBuilderService {
             // console.log('base', baseConfig.svg);
             // console.log('body', bodyConfig);
             // console.log('roof', roofConfig);
-            console.log('height', canvasHeight);
-            console.log('width', canvasWidth);
-
-            console.log('startBaseY', startBaseY);
-            console.log('startBodyY', startBodyY);
+            // console.log('height', canvasHeight);
+            // console.log('width', canvasWidth);
+            //
+            // console.log('startBaseY', startBaseY);
+            // console.log('startBodyY', startBodyY);
 
             const styledBaseSvg = cheerioSVGService.styleFill(
                 baseConfig.rawSvg,

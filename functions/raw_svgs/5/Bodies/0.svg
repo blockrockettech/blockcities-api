@@ -1,43 +1,45 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 536.94">
-  <defs>
-    <style>
-      .curtain-L-prim-light {
-        fill: #196273;
-      }
+    <defs>
+        <style>
+            .curtain-L-prim-light {
+            fill: #196273;
+            }
 
-      .curtain-L-prim-dark {
-        fill: #11424d;
-      }
+            .curtain-L-prim-dark {
+            fill: #11424d;
+            }
 
-      .curtain-R-prim-light {
-        fill: #2b95ac;
-      }
+            .curtain-R-prim-light {
+            fill: #2b95ac;
+            }
 
-      .curtain-R-prim-dark {
-        fill: #21788c;
-      }
+            .curtain-R-prim-dark {
+            fill: #21788c;
+            }
 
-      .top-prim {
-        fill: #dd8987;
-      }
-    </style>
-  </defs>
-  <title>Artboard 15</title>
-  <path id="Path" class="curtain-L-prim-light" d="M0,92.38V473.43l110,63.51V155.88Z"/>
-  <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M10,98.15,0,92.38V473.43l10,5.77Z"/>
-  <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M110,536.94l160-92.38V63.51L110,155.88Z"/>
-  <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M110,155.88l10-5.77V531.16l-10,5.78Z"/>
-  <path id="Path-5" data-name="Path" class="curtain-R-prim-dark" d="M150,132.79l10-5.77V508.07l-10,5.77Z"/>
-  <path id="Path-6" data-name="Path" class="curtain-R-prim-dark" d="M190,109.7l10-5.78V484.97l-10,5.78Z"/>
-  <path id="Path-7" data-name="Path" class="curtain-L-prim-dark" d="M90,144.34l-10-5.78V519.62l10,5.77Z"/>
-  <path id="Path-8" data-name="Path" class="curtain-R-prim-dark" d="M230,86.6l10-5.77V461.88l-10,5.77Z"/>
-  <path id="Path-9" data-name="Path" class="curtain-L-prim-dark" d="M50,121.24l-10-5.77V496.52l10,5.77Z"/>
-  <path id="Path-10" data-name="Path" class="curtain-R-prim-dark" d="M130,144.34l10-5.78V519.62l-10,5.77Z"/>
-  <path id="Path-11" data-name="Path" class="curtain-R-prim-dark" d="M170,121.24l10-5.77V496.52l-10,5.77Z"/>
-  <path id="Path-12" data-name="Path" class="curtain-L-prim-dark" d="M110,155.88l-10-5.77V531.16l10,5.78Z"/>
-  <path id="Path-13" data-name="Path" class="curtain-R-prim-dark" d="M210,98.15l10-5.77V473.43l-10,5.77Z"/>
-  <path id="Path-14" data-name="Path" class="curtain-L-prim-dark" d="M70,132.79l-10-5.77V508.07l10,5.77Z"/>
-  <path id="Path-15" data-name="Path" class="curtain-R-prim-dark" d="M250,75.06l10-5.78V450.33l-10,5.78Z"/>
-  <path id="Path-16" data-name="Path" class="curtain-L-prim-dark" d="M30,109.7l-10-5.78V484.97l10,5.78Z"/>
-  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.38,160,0,270,63.51,110,155.88Z"/>
+            .top-prim {
+            fill: #dd8987;
+            }
+        </style>
+    </defs>
+    <title>Artboard 15</title>
+    <g id="root">
+        <path id="Path" class="curtain-L-prim-light" d="M0,92.38V473.43l110,63.51V155.88Z"/>
+        <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M10,98.15,0,92.38V473.43l10,5.77Z"/>
+        <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M110,536.94l160-92.38V63.51L110,155.88Z"/>
+        <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M110,155.88l10-5.77V531.16l-10,5.78Z"/>
+        <path id="Path-5" data-name="Path" class="curtain-R-prim-dark" d="M150,132.79l10-5.77V508.07l-10,5.77Z"/>
+        <path id="Path-6" data-name="Path" class="curtain-R-prim-dark" d="M190,109.7l10-5.78V484.97l-10,5.78Z"/>
+        <path id="Path-7" data-name="Path" class="curtain-L-prim-dark" d="M90,144.34l-10-5.78V519.62l10,5.77Z"/>
+        <path id="Path-8" data-name="Path" class="curtain-R-prim-dark" d="M230,86.6l10-5.77V461.88l-10,5.77Z"/>
+        <path id="Path-9" data-name="Path" class="curtain-L-prim-dark" d="M50,121.24l-10-5.77V496.52l10,5.77Z"/>
+        <path id="Path-10" data-name="Path" class="curtain-R-prim-dark" d="M130,144.34l10-5.78V519.62l-10,5.77Z"/>
+        <path id="Path-11" data-name="Path" class="curtain-R-prim-dark" d="M170,121.24l10-5.77V496.52l-10,5.77Z"/>
+        <path id="Path-12" data-name="Path" class="curtain-L-prim-dark" d="M110,155.88l-10-5.77V531.16l10,5.78Z"/>
+        <path id="Path-13" data-name="Path" class="curtain-R-prim-dark" d="M210,98.15l10-5.77V473.43l-10,5.77Z"/>
+        <path id="Path-14" data-name="Path" class="curtain-L-prim-dark" d="M70,132.79l-10-5.77V508.07l10,5.77Z"/>
+        <path id="Path-15" data-name="Path" class="curtain-R-prim-dark" d="M250,75.06l10-5.78V450.33l-10,5.78Z"/>
+        <path id="Path-16" data-name="Path" class="curtain-L-prim-dark" d="M30,109.7l-10-5.78V484.97l10,5.78Z"/>
+        <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.38,160,0,270,63.51,110,155.88Z"/>
+    </g>
 </svg>

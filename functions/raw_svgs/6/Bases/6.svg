@@ -177,7 +177,7 @@
     </clipPath>
   </defs>
   <title>Artboard 12</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M350,375.2777l160-92.3761L160,80.829,0,173.2051Z"/>
     <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M320,277.1282l160-92.3761v80.8291l-160,92.376Z"/>
     <path id="Path-3" data-name="Path" class="exterior-L-prim" d="M0,92.376,320,277.1282v80.829L0,173.2051Z"/>
