@@ -1,0 +1,140 @@
+<script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript">
+</script>
+<script>
+window.addEventListener('load', async () => {
+    $(".vending-machine-section-in-construction").hide();
+    $(".vending-machine-section-reveal-building").hide();
+    $(".vending-machine-section-reveal-building-intro").show();
+    try {
+        if (window.ethereum) {
+            window.web3 = new Web3(ethereum);
+            await ethereum.enable();
+        } else if (window.web3) {
+            console.log('leg');
+            window.web3 = new Web3(web3.currentProvider);
+        } else {
+            console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+        }
+
+        const provider = new ethers.providers.Web3Provider(window.web3.currentProvider);
+        const signer = provider.getSigner();
+        const networkId = 1 // LIVE
+        console.log(`network ${networkId}`);
+
+        const detectedNetworkId = window.web3.currentProvider.networkVersion;
+
+        const vendingAddress = '0x24a896E29f79bE656F0216aE45E6cd79Bb80459b';
+        const vendingAbi = [{"constant":true,"inputs":[],"name":"floorPricePerBuildingInWei","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"blockCities","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"addWhitelisted","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"lastSaleBlock","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_numberOfBuildings","type":"uint256"}],"name":"mintBatch","outputs":[{"name":"_tokenIds","type":"uint256[]"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"_numberOfBuildings","type":"uint256"}],"name":"totalPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"removeWhitelisted","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_ceilingPricePerBuildingInWei","type":"uint256"}],"name":"setCeilingPricePerBuildingInWei","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"account","type":"address"}],"name":"isWhitelisted","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"colourGenerator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_partner","type":"address"}],"name":"updatePartnerAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"platform","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"renounceWhitelistAdmin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint256"}],"name":"addCreditAmount","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalPurchasesInWei","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"mintBuilding","outputs":[{"name":"_tokenId","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_colourGenerator","type":"address"}],"name":"setColourGenerator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_techPartnerRate","type":"uint256"}],"name":"updatePartnerRate","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_addresses","type":"address[]"},{"name":"_amount","type":"uint256"}],"name":"addCreditBatch","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"}],"name":"mintBuildingTo","outputs":[{"name":"_tokenId","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_blockStep","type":"uint256"}],"name":"setBlockStep","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_floorPricePerBuildingInWei","type":"uint256"}],"name":"setFloorPricePerBuildingInWei","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"addWhitelistAdmin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"logicGenerator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"}],"name":"addCredit","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"lastSalePrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_logicGenerator","type":"address"}],"name":"setLogicGenerator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_platform","type":"address"}],"name":"updatePlatformAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_newPriceDiscountBands","type":"uint256[2]"}],"name":"setPriceDiscountBands","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_lastSaleBlock","type":"uint256"}],"name":"setLastSaleBlock","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"partnerRate","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"account","type":"address"}],"name":"isWhitelistAdmin","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"priceStepInWei","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"partner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_priceStepInWei","type":"uint256"}],"name":"setPriceStepInWei","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"blockStep","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"priceDiscountBands","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_numberOfBuildings","type":"uint256"}],"name":"mintBatchTo","outputs":[{"name":"_tokenIds","type":"uint256[]"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"renounceWhitelisted","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"ceilingPricePerBuildingInWei","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_lastSalePrice","type":"uint256"}],"name":"setLastSalePrice","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"credits","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_logicGenerator","type":"address"},{"name":"_colourGenerator","type":"address"},{"name":"_blockCities","type":"address"},{"name":"_platform","type":"address"},{"name":"_partnerAddress","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_tokenId","type":"uint256"},{"indexed":true,"name":"_architect","type":"address"}],"name":"VendingMachineTriggered","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_amount","type":"uint256"}],"name":"CreditAdded","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_priceDiscountBands","type":"uint256[2]"}],"name":"PriceDiscountBandsChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldPriceStepInWei","type":"uint256"},{"indexed":false,"name":"_newPriceStepInWei","type":"uint256"}],"name":"PriceStepInWeiChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldFloorPricePerBuildingInWei","type":"uint256"},{"indexed":false,"name":"_newFloorPricePerBuildingInWei","type":"uint256"}],"name":"FloorPricePerBuildingInWeiChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldCeilingPricePerBuildingInWei","type":"uint256"},{"indexed":false,"name":"_newCeilingPricePerBuildingInWei","type":"uint256"}],"name":"CeilingPricePerBuildingInWeiChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldBlockStep","type":"uint256"},{"indexed":false,"name":"_newBlockStep","type":"uint256"}],"name":"BlockStepChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldLastSaleBlock","type":"uint256"},{"indexed":false,"name":"_newLastSaleBlock","type":"uint256"}],"name":"LastSaleBlockChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_oldLastSalePrice","type":"uint256"},{"indexed":false,"name":"_newLastSalePrice","type":"uint256"}],"name":"LastSalePriceChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"account","type":"address"}],"name":"WhitelistedAdded","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"account","type":"address"}],"name":"WhitelistedRemoved","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"account","type":"address"}],"name":"WhitelistAdminAdded","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"account","type":"address"}],"name":"WhitelistAdminRemoved","type":"event"}];
+        const vendingContract = new ethers.Contract(
+            vendingAddress,
+            vendingAbi,
+            signer
+        );
+
+        console.log(`account`, window.web3.eth.accounts[0]);
+        const data = await $.get(`https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/account/${window.web3.eth.accounts[0]}/tokens`);
+
+        if (data) {
+            data.forEach(t => {
+                $('.your-collection-section').append(`<div class="collectible-div"><div class="collectible-wrapper" style="background-color: #${t.background_color};"><a href="https://www.blockcities.co/building/${parseInt(t.tokenId, 16)}" class="building-profile-link"><img src="${t.image}" alt="" class="nft-image"></div><div class="nft-name">${t.name}</div><div class="nft-city-name">${t.description}</div></a></div>`);
+            });
+        }
+
+        async function updatePrices() {
+            const currentPriceInWeiNow = await vendingContract.totalPrice(1);
+            const lastPriceInWeiNow = await vendingContract.lastSalePrice();
+
+            $("#vending-price-current").text(`${parseFloat(web3.fromWei(currentPriceInWeiNow.toString())).toFixed(4)}`);
+            $("#vending-price-previous").text(`${parseFloat(web3.fromWei(lastPriceInWeiNow.toString())).toFixed(4)}`);
+
+            $("[id=vending-price-current]").text(`${parseFloat(web3.fromWei(currentPriceInWeiNow.toString())).toFixed(4)}`);
+            $("[id=vending-price-previous]").text(`${parseFloat(web3.fromWei(lastPriceInWeiNow.toString())).toFixed(4)}`);
+        }
+
+        await updatePrices();
+
+        setInterval(async function() {
+            await updatePrices();
+        }, 5000);
+      
+		let num = 1;      
+        $("#build-building,#buy-1-building,#buy-3-building,#buy-5-building").click(async function bc(event) {
+            if (event.target.id !== 'build-building') {
+                num = parseInt(event.target.id.split('-')[1]);
+            }
+            
+            const currentPriceInWei = await vendingContract.totalPrice(num);
+            console.log(`current price ${num}`, currentPriceInWei);
+
+            const currentPriceInWeiOverpay = currentPriceInWei.add(ethers.utils.bigNumberify("300000000000000"));
+
+            let overrides = {
+                gasLimit: num * 700000,
+                value: currentPriceInWeiOverpay,
+            };
+
+            $(".vending-machine-section").hide();
+            $(".vending-machine-section-in-construction").show();
+
+            let tx = await vendingContract.mintBatch(num, overrides);
+            let receipt = await tx.wait(1);
+
+            $(".vending-machine-section-in-construction").hide();
+            $(".vending-machine-section-reveal-building").show();
+
+            const evs = receipt.events.pop()
+            const tokenIdBN = evs.args[0];
+            const newTokenId = tokenIdBN.toNumber();
+
+            $('#fill-building').attr("src", `https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/${newTokenId}/image`);
+			$('#fill-building-2').attr("src", `https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/${newTokenId - 1}/image`);
+            $('#fill-building-3').attr("src", `https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/${newTokenId - 2}/image`);
+     		$('#fill-building-4').attr("src", `https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/${newTokenId - 3}/image`);
+            $('#fill-building-5').attr("src", `https://us-central1-block-cities.cloudfunctions.net/api/network/${networkId}/token/${newTokenId - 4}/image`);    
+        });
+      
+      	$("#unveil-2,#unveil-3,#unveil-4,#unveil-5,#home-button,#view-in-your-collection").hide()
+        $("#unveil-1,#unveil-2,#unveil-3,#unveil-4,#unveil-5").click(async function bs(event) {
+          	console.log('NUMBER', event.target.id, num);
+          
+          	if (event.target.id === 'unveil-1' && num === 1) {
+            	$("#unveil-1").hide();
+                $("#home-button,#view-in-your-collection").show();
+            }
+          
+            if (event.target.id === 'unveil-1' && num >= 3) {
+            	$("#unveil-1").hide();
+                $("#unveil-2").show();
+            }
+          
+            if (event.target.id === 'unveil-2' && num >= 3) {
+            	$("#unveil-2").hide();
+                $("#unveil-3").show();
+            }
+          
+            if (event.target.id === 'unveil-3' && num === 3) {
+            	$("#unveil-3").hide();
+                $("#home-button,#view-in-your-collection").show();
+            }
+          
+            if (event.target.id === 'unveil-3' && num === 5) {
+            	$("#unveil-3").hide();
+                $("#unveil-4").show();
+            }
+          
+            if (event.target.id === 'unveil-4' && num === 5) {
+            	$("#unveil-4").hide();
+                $("#unveil-5").show();
+            }
+          
+            if (event.target.id === 'unveil-5' && num === 5) {
+            	$("#unveil-5").hide();
+                $("#home-button,#view-in-your-collection").show();
+            }
+        });
+    } catch (e) {
+        console.error('e', e);
+    }
+});
+</script>
+
