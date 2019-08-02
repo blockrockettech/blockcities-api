@@ -36,7 +36,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '1': {
         exterior: {
@@ -48,7 +49,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '2': {
         exterior: {
@@ -60,7 +62,8 @@ const colorLogicObj = {
             roof: 'aquablue',
             body: 'aquablue',
             base: 'aquablue'
-        }
+        },
+        concrete: 'classic',
     },
     '3': {
         exterior: {
@@ -72,7 +75,8 @@ const colorLogicObj = {
             roof: 'trueblue',
             body: 'trueblue',
             base: 'trueblue'
-        }
+        },
+        concrete: 'classic',
     },
     '4': {
         exterior: {
@@ -84,7 +88,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '5': {
         exterior: {
@@ -96,7 +101,8 @@ const colorLogicObj = {
             roof: 'aquablue',
             body: 'aquablue',
             base: 'aquablue'
-        }
+        },
+        concrete: 'classic',
     },
     '6': {
         exterior: {
@@ -108,7 +114,8 @@ const colorLogicObj = {
             roof: 'trueblue',
             body: 'trueblue',
             base: 'trueblue'
-        }
+        },
+        concrete: 'classic',
     },
     '7': {
         exterior: {
@@ -120,7 +127,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '8': {
         exterior: {
@@ -132,7 +140,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '9': {
         exterior: {
@@ -144,7 +153,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '10': {
         exterior: {
@@ -156,7 +166,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '11': {
         exterior: {
@@ -168,7 +179,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '12': {
         exterior: {
@@ -180,7 +192,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '13': {
         exterior: {
@@ -192,7 +205,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '14': {
         exterior: {
@@ -204,7 +218,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '15': {
         exterior: {
@@ -216,7 +231,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '16': {
         exterior: {
@@ -228,7 +244,8 @@ const colorLogicObj = {
             roof: 'darkgrey',
             body: 'darkgrey',
             base: 'gold'
-        }
+        },
+        concrete: 'classic',
     },
     '17': {
         exterior: {
@@ -240,7 +257,8 @@ const colorLogicObj = {
             roof: 'gold',
             body: 'gold',
             base: 'darkgrey'
-        }
+        },
+        concrete: 'classic',
     },
     '18': {
         exterior: {
@@ -252,7 +270,8 @@ const colorLogicObj = {
             roof: 'aquablue',
             body: 'aquablue',
             base: 'aquablue'
-        }
+        },
+        concrete: 'classic',
     },
     '19': {
         exterior: {
@@ -264,20 +283,9 @@ const colorLogicObj = {
             roof: 'trueblue',
             body: 'trueblue',
             base: 'trueblue'
-        }
-    },
-    '666': {
-        exterior: {
-            roof: 'red',
-            body: 'lightgrey',
-            base: 'black'
         },
-        windows: {
-            roof: 'trueblue',
-            body: 'trueblue',
-            base: 'trueblue'
-        }
-    }
+        concrete: 'classic',
+    },
 };
 
 module.exports = colorLogicObj;

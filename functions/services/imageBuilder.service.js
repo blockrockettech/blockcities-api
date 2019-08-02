@@ -181,6 +181,7 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.base],
                 colourways.windows[colourLogic[exteriorColorway].windows.base],
                 colourways.curtains[colourLogic[exteriorColorway].windows.base],
+                colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
             const styledBodySvg = cheerioSVGService.styleFill(
@@ -188,6 +189,7 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
                 colourways.windows[colourLogic[exteriorColorway].windows.body],
                 colourways.curtains[colourLogic[exteriorColorway].windows.body],
+                colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
             const styledRoofSvg = cheerioSVGService.styleFill(
@@ -195,6 +197,7 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
                 colourways.windows[colourLogic[exteriorColorway].windows.roof],
                 colourways.curtains[colourLogic[exteriorColorway].windows.roof],
+                colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
             // this is the DOM skeleton we squirt into...
