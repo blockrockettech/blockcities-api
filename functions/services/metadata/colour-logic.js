@@ -286,6 +286,19 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+    '666': {
+        exterior: {
+            roof: 'black',
+            body: 'lightbeige',
+            base: 'red'
+        },
+        windows: {
+            roof: 'trueblue',
+            body: 'trueblue',
+            base: 'trueblue'
+        },
+        concrete: 'gold',
+    },
 };
 
 module.exports = colorLogicObj;
