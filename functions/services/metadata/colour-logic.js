@@ -288,7 +288,7 @@ const colorLogicObj = {
     },
     '666': {
         exterior: {
-            roof: 'black',
+            roof: 'red',
             body: 'lightbeige',
             base: 'red'
         },
