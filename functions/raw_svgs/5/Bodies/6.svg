@@ -1,51 +1,53 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 421.46">
-  <defs>
-    <style>
-      .exterior-L-prim {
-        fill: #73302f;
-      }
+    <defs>
+        <style>
+            .exterior-L-prim {
+            fill: #73302f;
+            }
 
-      .exterior-R-prim {
-        fill: #d15752;
-      }
+            .exterior-R-prim {
+            fill: #d15752;
+            }
 
-      .top-prim {
-        fill: #dd8987;
-      }
+            .top-prim {
+            fill: #dd8987;
+            }
 
-      .window-R-prim {
-        fill: #bd9563;
-      }
+            .window-R-prim {
+            fill: #bd9563;
+            }
 
-      .window-L-prim {
-        fill: #4d3b25;
-      }
-    </style>
-  </defs>
-  <title>Artboard 26</title>
-  <path id="Path" class="exterior-L-prim" d="M0,92.37V357.95l110,63.51V155.88Z"/>
-  <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M110,421.46l160-92.37V63.51L110,155.88Z"/>
-  <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.37,160,0,270,63.51,110,155.88Z"/>
-  <path id="Path-3" data-name="Path" class="window-R-prim" d="M110,167.43,270,75.05V86.6L110,178.98Z"/>
-  <path id="Path-4" data-name="Path" class="window-R-prim" d="M110,213.62l160-92.38v11.55L110,225.16Z"/>
-  <path id="Path-5" data-name="Path" class="window-R-prim" d="M110,259.8l160-92.37v11.55L110,271.35Z"/>
-  <path id="Path-6" data-name="Path" class="window-R-prim" d="M110,305.99l160-92.37v11.54L110,317.54Z"/>
-  <path id="Path-7" data-name="Path" class="window-R-prim" d="M110,352.18,270,259.8v11.55L110,363.73Z"/>
-  <path id="Path-8" data-name="Path" class="window-R-prim" d="M110,398.37l160-92.38v11.55L110,409.92Z"/>
-  <path id="Path-9" data-name="Path" class="window-R-prim" d="M110,190.52,270,98.15v11.54L110,202.07Z"/>
-  <path id="Path-10" data-name="Path" class="window-R-prim" d="M110,236.71l160-92.38v11.55L110,248.26Z"/>
-  <path id="Path-11" data-name="Path" class="window-R-prim" d="M110,282.9l160-92.38v11.55L110,294.45Z"/>
-  <path id="Path-12" data-name="Path" class="window-R-prim" d="M110,329.09l160-92.38v11.55L110,340.63Z"/>
-  <path id="Path-13" data-name="Path" class="window-R-prim" d="M110,375.27,270,282.9v11.55L110,386.82Z"/>
-  <path id="Path-14" data-name="Path" class="window-L-prim" d="M110,178.98,0,115.47V103.92l110,63.51Z"/>
-  <path id="Path-15" data-name="Path" class="window-L-prim" d="M110,225.16,0,161.65V150.11l110,63.51Z"/>
-  <path id="Path-16" data-name="Path" class="window-L-prim" d="M110,271.35,0,207.84V196.3l110,63.5Z"/>
-  <path id="Path-17" data-name="Path" class="window-L-prim" d="M110,317.54,0,254.03V242.48l110,63.51Z"/>
-  <path id="Path-18" data-name="Path" class="window-L-prim" d="M110,363.73,0,300.22V288.67l110,63.51Z"/>
-  <path id="Path-19" data-name="Path" class="window-L-prim" d="M110,409.92,0,346.41V334.86l110,63.51Z"/>
-  <path id="Path-20" data-name="Path" class="window-L-prim" d="M110,202.07,0,138.56V127.01l110,63.51Z"/>
-  <path id="Path-21" data-name="Path" class="window-L-prim" d="M110,248.26,0,184.75V173.2l110,63.51Z"/>
-  <path id="Path-22" data-name="Path" class="window-L-prim" d="M110,294.45,0,230.94V219.39L110,282.9Z"/>
-  <path id="Path-23" data-name="Path" class="window-L-prim" d="M110,340.63,0,277.12V265.58l110,63.51Z"/>
-  <path id="Path-24" data-name="Path" class="window-L-prim" d="M110,386.82,0,323.31V311.77l110,63.5Z"/>
+            .window-L-prim {
+            fill: #4d3b25;
+            }
+        </style>
+    </defs>
+    <title>Artboard 26</title>
+    <g id="root">
+        <path id="Path" class="exterior-L-prim" d="M0,92.37V357.95l110,63.51V155.88Z"/>
+        <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M110,421.46l160-92.37V63.51L110,155.88Z"/>
+        <path id="anchor_0_155.88_270" class="top-prim" d="M0,92.37,160,0,270,63.51,110,155.88Z"/>
+        <path id="Path-3" data-name="Path" class="window-R-prim" d="M110,167.43,270,75.05V86.6L110,178.98Z"/>
+        <path id="Path-4" data-name="Path" class="window-R-prim" d="M110,213.62l160-92.38v11.55L110,225.16Z"/>
+        <path id="Path-5" data-name="Path" class="window-R-prim" d="M110,259.8l160-92.37v11.55L110,271.35Z"/>
+        <path id="Path-6" data-name="Path" class="window-R-prim" d="M110,305.99l160-92.37v11.54L110,317.54Z"/>
+        <path id="Path-7" data-name="Path" class="window-R-prim" d="M110,352.18,270,259.8v11.55L110,363.73Z"/>
+        <path id="Path-8" data-name="Path" class="window-R-prim" d="M110,398.37l160-92.38v11.55L110,409.92Z"/>
+        <path id="Path-9" data-name="Path" class="window-R-prim" d="M110,190.52,270,98.15v11.54L110,202.07Z"/>
+        <path id="Path-10" data-name="Path" class="window-R-prim" d="M110,236.71l160-92.38v11.55L110,248.26Z"/>
+        <path id="Path-11" data-name="Path" class="window-R-prim" d="M110,282.9l160-92.38v11.55L110,294.45Z"/>
+        <path id="Path-12" data-name="Path" class="window-R-prim" d="M110,329.09l160-92.38v11.55L110,340.63Z"/>
+        <path id="Path-13" data-name="Path" class="window-R-prim" d="M110,375.27,270,282.9v11.55L110,386.82Z"/>
+        <path id="Path-14" data-name="Path" class="window-L-prim" d="M110,178.98,0,115.47V103.92l110,63.51Z"/>
+        <path id="Path-15" data-name="Path" class="window-L-prim" d="M110,225.16,0,161.65V150.11l110,63.51Z"/>
+        <path id="Path-16" data-name="Path" class="window-L-prim" d="M110,271.35,0,207.84V196.3l110,63.5Z"/>
+        <path id="Path-17" data-name="Path" class="window-L-prim" d="M110,317.54,0,254.03V242.48l110,63.51Z"/>
+        <path id="Path-18" data-name="Path" class="window-L-prim" d="M110,363.73,0,300.22V288.67l110,63.51Z"/>
+        <path id="Path-19" data-name="Path" class="window-L-prim" d="M110,409.92,0,346.41V334.86l110,63.51Z"/>
+        <path id="Path-20" data-name="Path" class="window-L-prim" d="M110,202.07,0,138.56V127.01l110,63.51Z"/>
+        <path id="Path-21" data-name="Path" class="window-L-prim" d="M110,248.26,0,184.75V173.2l110,63.51Z"/>
+        <path id="Path-22" data-name="Path" class="window-L-prim" d="M110,294.45,0,230.94V219.39L110,282.9Z"/>
+        <path id="Path-23" data-name="Path" class="window-L-prim" d="M110,340.63,0,277.12V265.58l110,63.51Z"/>
+        <path id="Path-24" data-name="Path" class="window-L-prim" d="M110,386.82,0,323.31V311.77l110,63.5Z"/>
+    </g>
 </svg>

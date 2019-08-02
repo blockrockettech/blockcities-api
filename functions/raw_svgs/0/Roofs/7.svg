@@ -1,6 +1,6 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 77.401">
   <defs>
-    <style>
+    <style id="fixed">
       .cls-1 {
         fill: #e8e8e8;
       }
@@ -114,7 +114,7 @@
     </style>
   </defs>
   <title>1Artboard 15</title>
-  <g>
+  <g id="root">
     <path id="Path" class="cls-1" d="M0,39.8733,65,77.401l65-37.5277L65,2.3455Z"/>
     <path id="Path-2" data-name="Path" class="cls-2" d="M65,4.691l60.9375,35.1823L65,75.0555,4.0625,39.8733Z"/>
     <path id="Path-3" data-name="Path" class="cls-3" d="M65,4.691V7.0365l58.9062,34.01,2.0313-1.1727Z"/>

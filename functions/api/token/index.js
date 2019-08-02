@@ -4,23 +4,33 @@ const imageBuilderService = require('../../services/imageBuilder.service');
 const blockCitiesDataService = require('../../services/blockcities.data.service');
 const openSeaService = require('../../services/openSea.service');
 
+const { convert } = require('convert-svg-to-png');
+
 const token = require('express').Router({mergeParams: true});
 
 // Gets all token pointers form the contract
 token.get('/pointers', async (request, response) => {
-    const {network} = request.params;
-    const tokenPointers = await blockCitiesDataService.tokenPointers(network);
-    return response.status(200).json(tokenPointers);
+    try {
+        const {network} = request.params;
+        const tokenPointers = await blockCitiesDataService.tokenPointers(network);
+        return response.status(200).json(tokenPointers);
+    } catch (e) {
+        console.error(e);
+    }
 });
 
 // Token URI looking defined in the contract
 token.get('/:tokenId', async (request, response) => {
 
-    const {tokenId, network} = request.params;
+    try {
+        const {tokenId, network} = request.params;
 
-    const metadata = await blockCitiesDataService.tokenMetadata(network, tokenId);
+        const metadata = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
-    return response.status(200).json(metadata);
+        return response.status(200).json(metadata);
+    } catch (e) {
+        console.error(e);
+    }
 });
 
 // Refresh the open sea token metadata
@@ -34,29 +44,38 @@ token.get('/:tokenId/opensea/refresh', async (request, response) => {
 
 // A more detailed lookup method for pulling back all details for a token
 token.get('/:tokenId/details', async (request, response) => {
-    const {tokenId, network} = request.params;
+    try {
+        const {tokenId, network} = request.params;
 
-    const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-    const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
-    const owner = await blockCitiesDataService.ownerOfToken(network, tokenId);
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
+        const owner = await blockCitiesDataService.ownerOfToken(network, tokenId);
 
-    return response.status(200).json({...tokenDetails, ...metaData, tokenId, owner});
+        return response.status(200).json({...tokenDetails, ...metaData, tokenId, owner});
+
+    } catch (e) {
+        console.error(e);
+    }
 });
 
 // Getting account owned tokens
 token.get('/account/:owner/tokens', async (request, response) => {
-    const {owner, network} = request.params;
+    try {
+        const {owner, network} = request.params;
 
-    const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
+        const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
 
-    const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
-        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
+        const mappedTokens = await Promise.all(_.map(tokens[0], async (tokenId) => {
+            const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+            const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
-        return {...tokenDetails, ...metaData, tokenId: tokenId};
-    }));
+            return {...tokenDetails, ...metaData, tokenId: tokenId};
+        }));
 
-    return response.status(200).json(mappedTokens);
+        return response.status(200).json(mappedTokens);
+    } catch (e) {
+        console.error(e);
+    }
 });
 
 // The image generator
@@ -77,24 +96,27 @@ token.get('/image/:tokenId.png', async (request, response) => {
         }
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const {canvasHeight, canvasWidth} = await imageBuilderService.generateImageStats(tokenDetails);
 
         if (tokenDetails.special !== 0) {
-            console.log(`Loading special for Token ID:`, tokenDetails.special);
-            const specialPng = await imageBuilderService.loadSpecial(tokenDetails.special, 'png');
+            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialPng = await convert(specialSvg, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
             return response
                 .contentType('image/png')
                 .send(specialPng);
         }
 
-        const image = await imageBuilderService.generateImage(tokenDetails, 'png');
-
+        const image = await imageBuilderService.generatePureSvg(tokenDetails);
+        const png = await convert(image, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
         return response
             .contentType('image/png')
-            .send(image);
+            .send(png);
     } catch (e) {
         console.error(e);
     }
 });
+
 
 token.get('/:tokenId/image', async (request, response) => {
     try {
@@ -116,13 +138,13 @@ token.get('/:tokenId/image', async (request, response) => {
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecial(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
             return response
                 .contentType('image/svg+xml')
                 .send(specialSvg);
         }
 
-        const image = await imageBuilderService.generateImage(tokenDetails);
+        const image = await imageBuilderService.generatePureSvg(tokenDetails);
 
         return response
             .contentType('image/svg+xml')

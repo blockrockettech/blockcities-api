@@ -106,7 +106,7 @@
     </clipPath>
   </defs>
   <title>Artboard 23</title>
-  <g>
+  <g id="root">
     <path id="Path" class="curtain-R-prim-light" d="M320,265.5458l80-46.188V404.11l-80,46.188Z"/>
     <path id="Path-2" data-name="Path" class="top-light" d="M320,265.5246l80-46.1881-80-46.188Z"/>
     <path id="Path-3" data-name="Path" class="window-R-prim" d="M327.5,297.2507,345,287.1471v11.547l-17.5,10.1036Z"/>

@@ -1,20 +1,11 @@
 const _ = require('lodash');
+const cheerio = require('cheerio');
 
 class CheerioSVGService {
 
-    process (svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
+    process(svgXml) {
         try {
-            const $ = require('cheerio').load(svgXml, {xmlMode: true});
-
-            _.forEach(exteriorFill.left, (v, k) => {$(`.exterior-L-${k}`).attr('style', `fill: ${v}`);});
-            _.forEach(exteriorFill.right, (v, k) => $(`.exterior-R-${k}`).attr('style', `fill: ${v}`));
-            _.forEach(exteriorFill.top, (v, k) => $(`.top-${k}`).attr('style', `fill: ${v}`));
-
-            _.forEach(windowsFill.left, (v, k) => $(`.window-L-${k}`).attr('style', `fill: ${v}`));
-            _.forEach(windowsFill.right, (v, k) => $(`.window-R-${k}`).attr('style', `fill: ${v}`));
-
-            _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
-            _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+            const $ = cheerio.load(svgXml, {xmlMode: true});
 
             let anchorElement = $('[id^=anchor_]').first();
             let anchorX = undefined;
@@ -39,6 +30,43 @@ class CheerioSVGService {
             console.error(e);
         }
     }
+
+    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
+        try {
+            const $ = cheerio.load(svgXml, {xmlMode: true});
+
+            _.forEach(exteriorFill.left, (v, k) => {$(`.exterior-L-${k}`).attr('style', `fill: ${v}`);});
+            _.forEach(exteriorFill.right, (v, k) => $(`.exterior-R-${k}`).attr('style', `fill: ${v}`));
+            _.forEach(exteriorFill.top, (v, k) => $(`.top-${k}`).attr('style', `fill: ${v}`));
+
+            _.forEach(windowsFill.left, (v, k) => $(`.window-L-${k}`).attr('style', `fill: ${v}`));
+            _.forEach(windowsFill.right, (v, k) => $(`.window-R-${k}`).attr('style', `fill: ${v}`));
+
+            _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+            _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+
+            return $.xml();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    getRoot(svgXml) {
+        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        return $('#root').html();
+    };
+
+    getStyle(svgXml, targetDiv) {
+        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+
+        let processedStyle = $('style').html();
+
+        // namespace to related section of building
+        processedStyle = processedStyle.replace(/.cls-/g, `#${targetDiv} .cls-`);
+        processedStyle = processedStyle.replace(/.concrete/g, `#${targetDiv} .concrete`);
+
+        return processedStyle
+    };
 }
 
 module.exports = new CheerioSVGService();

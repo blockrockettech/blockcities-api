@@ -86,7 +86,7 @@
     </clipPath>
   </defs>
   <title>Artboard 10</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M155,251.1473,360,132.7906,205,43.3013,0,161.658Z"/>
     <path id="Path-2" data-name="Path" class="concrete-right" d="M360,135.6774,155,254.0341v-2.8867L360,132.7906Z"/>
     <path id="Path-3" data-name="Path" class="concrete-left" d="M0,161.658v2.8868l155,89.4893v-2.8868Z"/>

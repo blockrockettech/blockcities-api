@@ -43,7 +43,8 @@
     </style>
   </defs>
   <title>Artboard 3</title>
-  <g>
+  <g id="root">
+    <g id="anchor_0_1_1"></g>
     <path id="Path" class="top-light" d="M50,69.282,70,80.829,90,69.282l20,11.547,20-11.547,20,11.547,20-11.547,20,11.547,30-17.32L110,0,0,63.5085l30,17.32Z"/>
     <path id="Path-2" data-name="Path" class="curtain-R-prim-dark" d="M190,80.829V479.2007l30-17.32V63.5085Z"/>
     <path id="Path-3" data-name="Path" class="curtain-L-prim-dark" d="M30,80.829V479.2007L0,461.88V63.5085Z"/>

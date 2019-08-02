@@ -39,7 +39,7 @@
     </style>
   </defs>
   <title>Artboard 15</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M170,199.1858l110-63.5085-170-98.15L0,101.0363Z"/>
     <path id="Path-2" data-name="Path" class="window-L-prim" d="M162.5,174.6485,40,103.9231,37.5,79.3856l125,72.1688Z"/>
     <path id="Path-3" data-name="Path" class="window-R-prim" d="M177.5,174.6485l70-40.4147V114.0266l-70,40.4146Z"/>
