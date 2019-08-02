@@ -1,0 +1,95 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 513.844">
+  <defs>
+    <style>
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+    </style>
+  </defs>
+  <title>Artboard 17</title>
+  <g id="root">
+    <path id="anchor_0_132.795_230" class="top-prim" d="M0,51.966l160,92.376,70-40.415V92.376L70,0,0,40.414Z"/>
+    <path class="curtain-L-prim-dark" d="M165,129.906V510.9611l-5,2.8829L0,421.468V40.412l160,92.376Z"/>
+    <path class="curtain-R-prim-dark" d="M230,473.4291V92.378l-70,40.415V513.844Z"/>
+    <path class="curtain-L-prim-light" d="M0,40.412l5,2.887V424.35l-5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M20,51.959l5,2.887V435.897l-5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M40,63.506l5,2.887V447.444l-5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M60,75.053l5,2.887V458.991l-5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M80,86.6l5,2.887V470.538l-5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M100,98.147l5,2.887V482.085l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M220,98.147l-5,2.887V482.085l5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M120,109.694l5,2.887V493.632l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M200,109.694l-5,2.887V493.632l5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M140,121.241l5,2.887V505.1791l-5-2.8871Z"/>
+    <path class="curtain-R-prim-light" d="M180,121.241l-5,2.887V505.1791l5-2.8871Z"/>
+    <path class="curtain-L-prim-light" d="M10,46.186l5,2.887V430.124l-5-2.8869Z"/>
+    <path class="curtain-L-prim-light" d="M30,57.733l5,2.886V441.671l-5-2.8869Z"/>
+    <path class="curtain-L-prim-light" d="M50,69.28l5,2.887V453.218l-5-2.8869Z"/>
+    <path class="curtain-L-prim-light" d="M70,80.827l5,2.887V464.765l-5-2.8869Z"/>
+    <path class="curtain-L-prim-light" d="M90,92.374l5,2.887V476.312l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M230,92.374l-5,2.887V476.312l5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M110,103.921l5,2.887V487.859l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M210,103.921l-5,2.887V487.859l5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M130,115.468l5,2.887V499.406l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M190,115.468l-5,2.887V499.406l5-2.887Z"/>
+    <path class="curtain-L-prim-light" d="M150,127.015l5,2.887V510.953l-5-2.887Z"/>
+    <path class="curtain-R-prim-light" d="M170,127.015l-5,2.887V510.953l5-2.887Z"/>
+    <path class="exterior-L-prim" d="M0,375.28l160,92.376v34.641L0,409.921Z"/>
+    <path class="exterior-R-prim" d="M160,502.297l70-40.415V427.241l-70,40.415Z"/>
+    <path class="exterior-L-dark" d="M10,409.925l-5-2.887V383.944l5,2.8871Z"/>
+    <path class="exterior-L-dark" d="M50,433.019l-5-2.887V407.038l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M90,456.113l-5-2.8869V430.132l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M130,479.207l-5-2.8869v-23.094l5,2.8869Z"/>
+    <path class="exterior-L-dark" d="M30,421.472l-5-2.887V395.491l5,2.8871Z"/>
+    <path class="exterior-L-dark" d="M70,444.566l-5-2.8869V418.585l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M110,467.66l-5-2.8869v-23.094l5,2.8869Z"/>
+    <path class="exterior-L-dark" d="M150,490.754l-5-2.8869v-23.094l5,2.8869Z"/>
+    <path class="exterior-L-dark" d="M20,415.699l-5-2.887V389.718l5,2.887Z"/>
+    <path class="exterior-R-dark" d="M170,490.754l5-2.8869v-23.094l-5,2.8869Z"/>
+    <path class="exterior-R-dark" d="M190,479.207l5-2.8869v-23.094l-5,2.8869Z"/>
+    <path class="exterior-R-dark" d="M210,467.66l5-2.8869v-23.094l-5,2.8869Z"/>
+    <path class="exterior-L-dark" d="M60,438.793l-5-2.887V412.812l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M100,461.887,95,459V435.906l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M140,484.981l-5-2.887V459l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M40,427.246l-5-2.887V401.265l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M80,450.34l-5-2.887V424.359l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M120,473.434l-5-2.887V447.453l5,2.887Z"/>
+    <path class="exterior-L-dark" d="M160,496.5281l-5-2.8871V470.547l5,2.887Z"/>
+    <path class="exterior-R-dark" d="M160,496.5281l5-2.8871V470.547l-5,2.887Z"/>
+    <path class="exterior-R-dark" d="M180,484.981l5-2.887V459l-5,2.887Z"/>
+    <path class="exterior-R-dark" d="M200,473.434l5-2.887V447.453l-5,2.887Z"/>
+    <path class="exterior-R-dark" d="M220,461.887,225,459V435.906l-5,2.887Z"/>
+  </g>
+</svg>

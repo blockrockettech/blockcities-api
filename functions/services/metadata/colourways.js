@@ -282,12 +282,17 @@ module.exports = {
         classic: {
             left: '#A2A2A2',
             right: '#D1D1D1',
-            top: '#E8E8E8'
+            top: '#E8E8E8',
         },
         dark: {
             left: '#8B8B8B',
             right: '#E8E8E8',
-            top: '#A2A2A2'
+            top: '#A2A2A2',
+        },
+        gold: {
+            left: '#BD9664',
+            right: '#EACB87',
+            top: '#BD9664',
         }
     }
 };

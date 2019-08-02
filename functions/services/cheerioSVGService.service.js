@@ -31,7 +31,7 @@ class CheerioSVGService {
         }
     }
 
-    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}) {
+    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}, concreteFill = {}) {
         try {
             const $ = cheerio.load(svgXml, {xmlMode: true});
 
@@ -44,6 +44,8 @@ class CheerioSVGService {
 
             _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
             _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+
+            _.forEach(concreteFill, (v, k) => $(`.concrete-${k}`).attr('style', `fill: ${v}`));
 
             return $.xml();
         } catch (e) {
