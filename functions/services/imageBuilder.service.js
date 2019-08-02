@@ -79,18 +79,23 @@ class ImageBuilderService {
                 console.error(`NaN detected: Building ${building} Base ${base} Body ${body} Roof ${roof}`);
             }
 
+            // scales the body height based off the base
             bodyConfig.adjustedBodyHeight = bodyConfig.height * (baseConfig.anchorWidthPath / bodyConfig.width);
+
+            // scales the body anchor Y (this is the amount we drop the component to fit snugly)
             bodyConfig.adjustedBodyAnchorY = bodyConfig.anchorY * (bodyConfig.adjustedBodyHeight / bodyConfig.height);
 
+            // scales the body width path (this is the adjusted width of the "lading" space for the body (and roof))
             bodyConfig.adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
             bodyConfig.adjustedBodyWidth = bodyConfig.width * (baseConfig.anchorWidthPath / bodyConfig.width);
+
+            // scales the body anchor X (this is the amount move from left to right (common if base does not align to edge))
             bodyConfig.adjustedBodyAnchorX = bodyConfig.anchorX * (baseConfig.anchorWidthPath / bodyConfig.width);
 
             // fixes 12 - is this the solution to scale roofs?
             roofConfig.adjustedRoofHeight = roofConfig.height * (bodyConfig.adjustedBodyWidthPath / roofConfig.width);
 
             // height of the baseConfig, bodyConfig, roofConfig - minus the difference in the offset anchor from bodyConfig and height
-
             let canvasHeight = baseConfig.height
                 + bodyConfig.adjustedBodyHeight
                 + roofConfig.adjustedRoofHeight
@@ -170,6 +175,7 @@ class ImageBuilderService {
             // console.log('startBaseY', startBaseY);
             // console.log('startBodyY', startBodyY);
 
+            // colour the components
             const styledBaseSvg = cheerioSVGService.styleFill(
                 baseConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway][0]],
