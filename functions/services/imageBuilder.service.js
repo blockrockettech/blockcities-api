@@ -178,23 +178,23 @@ class ImageBuilderService {
             // colour the components
             const styledBaseSvg = cheerioSVGService.styleFill(
                 baseConfig.rawSvg,
-                colourways.exteriors[colourLogic[exteriorColorway][0]],
-                colourways.windows[colourLogic[exteriorColorway][3]],
-                colourways.curtains[colourLogic[exteriorColorway][3]],
+                colourways.exteriors[colourLogic[exteriorColorway].exterior.base],
+                colourways.windows[colourLogic[exteriorColorway].windows.base],
+                colourways.curtains[colourLogic[exteriorColorway].windows.base],
             );
 
             const styledBodySvg = cheerioSVGService.styleFill(
                 bodyConfig.rawSvg,
-                colourways.exteriors[colourLogic[exteriorColorway][0]],
-                colourways.windows[colourLogic[exteriorColorway][2]],
-                colourways.curtains[colourLogic[exteriorColorway][2]],
+                colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
+                colourways.windows[colourLogic[exteriorColorway].windows.body],
+                colourways.curtains[colourLogic[exteriorColorway].windows.body],
             );
 
             const styledRoofSvg = cheerioSVGService.styleFill(
                 roofConfig.rawSvg,
-                colourways.exteriors[colourLogic[exteriorColorway][0]],
-                colourways.windows[colourLogic[exteriorColorway][1]],
-                colourways.curtains[colourLogic[exteriorColorway][1]],
+                colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
+                colourways.windows[colourLogic[exteriorColorway].windows.roof],
+                colourways.curtains[colourLogic[exteriorColorway].windows.roof],
             );
 
             // this is the DOM skeleton we squirt into...

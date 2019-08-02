@@ -1,0 +1,73 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.1523 311.769">
+  <defs>
+    <style>
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+
+      .window-R-prim {
+        fill: #bd9664;
+      }
+
+      .window-L-prim {
+        fill: #4d3b24;
+      }
+
+      .top-prim {
+        fill: #dd8a87;
+      }
+    </style>
+  </defs>
+  <title>Artboard 12</title>
+  <g id="root">
+    <path id="anchor_0_150.111_260.152" class="top-dark" d="M.1523,98.15,0,92.376,160.1523,0l100,57.735v5.773l-160,92.377Z"/>
+    <path class="exterior-L-prim" d="M.0762,92.376V254.034l100,57.735,5-2.887V147.224l-5,2.887Z"/>
+    <path class="exterior-R-prim" d="M100.0762,150.111l160-92.376V219.393l-160,92.376Z"/>
+    <path class="exterior-L-prim" d="M200.0762,92.376l-12.6519,7.217.1519,154.441h12.5Z"/>
+    <path class="exterior-R-dark" d="M187.4243,254.034l-27.5,15.877.1519-154.441,27.5-15.877Z"/>
+    <path class="window-R-prim" d="M182.5,108.253,165,118.357v20.207l17.5-10.104Z"/>
+    <path class="window-R-prim" d="M182.5,160.215,165,170.318v20.208l17.5-10.104Z"/>
+    <path class="window-R-prim" d="M182.5,212.176,165,222.28v20.207l17.5-10.104Z"/>
+    <path class="window-R-prim" d="M182.5,134.234,165,144.338v20.207l17.5-10.104Z"/>
+    <path class="window-R-prim" d="M182.5,186.195,165,196.299v20.207l17.5-10.103Z"/>
+    <path class="window-R-prim" d="M182.5,238.157,165,248.261v20.207l17.5-10.104Z"/>
+    <path class="window-L-prim" d="M196.3262,127.739h-5v20.207h5Z"/>
+    <path class="window-L-prim" d="M196.3262,179.7h-5v20.207h5Z"/>
+    <path class="window-L-prim" d="M196.3262,205.681h-5v20.207h5Z"/>
+    <path class="window-L-prim" d="M196.3262,101.758h-5v20.207h5Z"/>
+    <path class="window-L-prim" d="M196.3262,153.719h-5v20.208h5Z"/>
+    <path class="window-L-prim" d="M196.3262,205.681h-5v20.207h5Z"/>
+    <path class="window-L-prim" d="M196.3262,231.662h-5v20.207h5Z"/>
+    <path class="top-prim" d="M160.0762,269.911l-.1519,7.217,40-23.094H187.5762Z"/>
+    <path class="window-R-prim" d="M255.1523,92.179l-50,28.868v20.207l50-28.867Z"/>
+    <path class="window-R-prim" d="M255.1523,170.318l-50,28.868v20.207l50-28.867Z"/>
+    <path class="window-R-prim" d="M255.0762,66.395l-50,28.868V115.47l50-28.867Z"/>
+    <path class="window-R-prim" d="M255.0762,144.141l-50,28.867v20.208l50-28.868Z"/>
+    <path class="window-R-prim" d="M155,202.073,105,230.94v20.207l50-28.867Z"/>
+    <path class="window-R-prim" d="M155.0762,150.111l-50,28.868v20.207l50-28.868Z"/>
+    <path class="window-R-prim" d="M155.0762,254.034l-50,28.868v20.207l50-28.868Z"/>
+    <path class="window-R-prim" d="M255.1523,118.16l-50,28.868v20.207l50-28.868Z"/>
+    <path class="window-R-prim" d="M255.1523,196.299l-50,28.868v20.207l50-28.868Z"/>
+    <path class="window-R-prim" d="M155,124.13l-50,28.868v20.207l50-28.867Z"/>
+    <path class="window-R-prim" d="M155,228.053l-50,28.868v20.207l50-28.867Z"/>
+    <path class="window-R-prim" d="M155.0762,176.092l-50,28.867v20.208l50-28.868Z"/>
+    <path class="window-L-prim" d="M5.0762,127.017l90,51.962v20.207l-90-51.962Z"/>
+    <path class="window-L-prim" d="M5.0762,178.979l90,51.961v20.207l-90-51.961Z"/>
+    <path class="window-L-prim" d="M5.0762,152.998l90,51.961v20.208l-90-51.962Z"/>
+    <path class="window-L-prim" d="M5.0762,101.036l90,51.962v20.207l-90-51.961Z"/>
+    <path class="window-L-prim" d="M5.0762,204.959l90,51.962v20.207l-90-51.961Z"/>
+    <path class="window-L-prim" d="M5.0762,230.94l90,51.962v20.207l-90-51.962Z"/>
+  </g>
+</svg>

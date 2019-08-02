@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 161.658">
+  <defs>
+    <style>
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+    </style>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="root">
+    <path class="top-light" d="M0,95.263V92.376L160,0,270,63.508v2.887L110,158.771Z"/>
+    <path class="top-prim" d="M10,92.376l100,57.735L260,63.508,160,5.773Z"/>
+    <path class="exterior-L-prim" d="M160,5.773,155,8.66V20.207l5-2.887,90,51.962,10-5.774Z"/>
+    <path class="exterior-R-prim" d="M10,92.376,160,5.773V17.32L20,98.149Z"/>
+    <path class="exterior-R-prim" d="M270,63.508,110,155.884l-5-2.886v5.773l5,2.887L270,69.282Z"/>
+    <path class="exterior-L-prim" d="M0,92.376l110,63.508v5.774L0,98.149Z"/>
+    <path class="top-dark" d="M60,98.149,80,86.602l40,23.094-20,11.547Z"/>
+    <path class="top-dark" d="M80,75.055l55-31.754,70,40.415L150,115.47Z"/>
+    <path class="top-prim" d="M100,115.47l7.5-4.33-5-2.887-7.5,4.33Z"/>
+    <path class="exterior-R-prim" d="M135,43.301v5.774L85,77.942l-5-2.887Z"/>
+    <path class="exterior-L-prim" d="M205,83.716l-5,2.886L135,49.075V43.301Z"/>
+  </g>
+</svg>
