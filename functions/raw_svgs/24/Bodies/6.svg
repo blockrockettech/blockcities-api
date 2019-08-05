@@ -1,0 +1,63 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 600.444">
+  <defs>
+    <style>
+      .curtain-R-prim-light-dark {
+        fill: #3999c1;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .curtain-R-prim-dark-light {
+        fill: #4d90ad;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+    </style>
+  </defs>
+  <title>Artboard 7</title>
+  <g id="root">
+    <path id="Path" class="curtain-R-prim-light-dark" d="M230,542.709l50-34.641-40-23.094-50,28.868Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-R-prim-light-dark" d="M280,513.842v-5.774L120,415.692,0,484.974v5.774l160,92.376Z"/>
+    <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M280,513.842l-40,23.094v-5.774l20-23.094h20Z"/>
+    <path id="Path-4" data-name="Path" class="curtain-R-prim-dark-light" d="M240,531.162l20-23.094-20-11.547Z"/>
+    <path id="Path-5" data-name="Path" class="curtain-L-prim-dark" d="M0,69.282l160,92.376,15-8.66-5,441.673-10,5.773L0,508.068Z"/>
+    <path id="Path-6" data-name="Path" class="curtain-L-prim-light" d="M0,484.974v23.094l160,92.376,5-2.886V574.464l-5,2.886Z"/>
+    <path id="Path-7" data-name="Path" class="curtain-R-prim-dark" d="M160,161.658,280,92.376v46.188l-5,2.887v46.188l-5,2.887v46.188l-5,2.886v46.188l-5,2.887v46.188l-5,2.887v46.188l-5,2.887v46.188l-5,2.886v46.189l-5,2.886v69.282l-80,46.188Z"/>
+    <path id="anchor_0_161.658_280" class="top-dark" d="M280,103.923V92.376L120,0,0,69.282V80.829l160,92.376Z"/>
+    <path id="Path-8" data-name="Path" class="curtain-L-prim-light" d="M160,161.658l10-5.773v23.094l-10,5.773L0,92.376V69.282Z"/>
+    <path id="Path-9" data-name="Path" class="curtain-L-prim-light" d="M160,254.034l10-5.773v23.094l-10,5.773L0,184.752V161.658Z"/>
+    <path id="Path-10" data-name="Path" class="curtain-L-prim-light" d="M160,392.598l10-5.773v23.094l-10,5.773L0,323.316V300.222Z"/>
+    <path id="Path-11" data-name="Path" class="curtain-L-prim-light" d="M160,438.786l10-5.773v23.094l-10,5.773L0,369.504V346.41Z"/>
+    <path id="Path-12" data-name="Path" class="curtain-L-prim-light" d="M160,207.846l10-5.773v23.094l-10,5.773L0,138.564V115.47Z"/>
+    <path id="Path-13" data-name="Path" class="curtain-L-prim-light" d="M160,346.41l10-5.773v23.094l-10,5.773L0,277.128V254.034Z"/>
+    <path id="Path-14" data-name="Path" class="curtain-L-prim-light" d="M160,300.222l10-5.773v23.094l-10,5.773L0,230.94V207.846Z"/>
+    <path id="Path-15" data-name="Path" class="curtain-R-prim-light" d="M160,300.222v23.094l105-60.622V239.6Z"/>
+    <path id="Path-16" data-name="Path" class="curtain-R-prim-light" d="M160,207.846V230.94l115-66.395V141.451Z"/>
+    <path id="Path-17" data-name="Path" class="curtain-R-prim-light" d="M160,346.41v23.094l100-57.735V288.675Z"/>
+    <path id="Path-18" data-name="Path" class="curtain-R-prim-light" d="M160,254.034v23.094L270,213.62V190.526Z"/>
+    <path id="Path-19" data-name="Path" class="curtain-R-prim-light" d="M160,392.598v23.094l95-54.848V337.75Z"/>
+    <path id="Path-20" data-name="Path" class="curtain-R-prim-light" d="M160,438.786V461.88l90-51.961V386.825Z"/>
+    <path id="Path-21" data-name="Path" class="curtain-L-prim-light" d="M0,392.598l160,92.376,10-5.773v23.094l-10,5.773L0,415.692Z"/>
+    <path id="Path-22" data-name="Path" class="curtain-L-prim-light" d="M0,438.786l160,92.376,15-8.66v23.094l-15,8.66L0,461.88Z"/>
+    <path id="Path-23" data-name="Path" class="curtain-R-prim-light" d="M280,508.068v23.094L160,600.444V577.35Z"/>
+    <path id="Path-24" data-name="Path" class="curtain-R-prim-light" d="M160,161.658v23.094L280,115.47V92.376Z"/>
+    <path id="Path-25" data-name="Path" class="curtain-R-prim-light" d="M160,484.974v23.094l85-49.075V435.899Z"/>
+    <path id="Path-26" data-name="Path" class="curtain-R-prim-light" d="M160,531.162v23.094l80-46.188V484.974Z"/>
+  </g>
+</svg>

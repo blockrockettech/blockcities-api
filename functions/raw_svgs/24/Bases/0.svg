@@ -1,0 +1,53 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 223.724">
+  <defs>
+    <style>
+      .concrete-top {
+        fill: #e8e8e8;
+      }
+
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .concrete-right {
+        fill: #d1d1d1;
+      }
+
+      .concrete-left {
+        fill: #a2a2a2;
+      }
+    </style>
+  </defs>
+  <title>Artboard 10</title>
+  <g id="root">
+    <path id="Path" class="concrete-top" d="M210,219.393l170-98.149L170,0,0,98.15Z"/>
+    <path id="Path-2" data-name="Path" class="top-prim" d="M210,178.979l130-75.056L170,5.774,40,80.829Z"/>
+    <path id="anchor_50_173.205_280" class="top-dark" d="M330,103.923,170,11.547,50,80.829l160,92.376Z"/>
+    <path id="Path-3" data-name="Path" class="exterior-L-prim" d="M40,80.829V98.15l170,98.149v-17.32Z"/>
+    <path id="Path-4" data-name="Path" class="exterior-R-prim" d="M340,103.923v17.321L210,196.299v-17.32Z"/>
+    <path id="Path-5" data-name="Path" class="top-prim" d="M205,176.092l15,8.66,25-14.433-15-8.661Z"/>
+    <path id="Path-6" data-name="Path" class="exterior-L-prim" d="M205,193.413l15,8.66V184.752l-15-8.66Z"/>
+    <path id="Path-7" data-name="Path" class="exterior-R-prim" d="M245,170.319v17.32l-25,14.434V184.752Z"/>
+    <path id="Path-8" data-name="Path" class="curtain-R-prim-dark" d="M235,187.639v-5.773l-10,5.773v5.774Z"/>
+    <path id="Path-9" data-name="Path" class="exterior-L-prim" d="M240,190.526l-5-2.887v-5.773l5-2.887Z"/>
+    <path id="Path-10" data-name="Path" class="concrete-top" d="M225,204.96V193.413l10-5.774,10,5.774Z"/>
+    <path id="Path-11" data-name="Path" class="concrete-right" d="M210,219.393v4.331l170-98.15v-4.33Z"/>
+    <path id="Path-12" data-name="Path" class="concrete-left" d="M210,219.393v4.331L0,102.48V98.15Z"/>
+  </g>
+</svg>

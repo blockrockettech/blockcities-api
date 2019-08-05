@@ -1,0 +1,57 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 571.5913">
+  <defs>
+    <style>
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .window-L-prim {
+        fill: #4d3b24;
+      }
+
+      .window-L-light {
+        fill: #795a30;
+      }
+
+      .window-R-light {
+        fill: #eacb87;
+      }
+
+      .window-R-prim {
+        fill: #bd9664;
+      }
+    </style>
+  </defs>
+  <title>Artboard 21</title>
+  <g id="root">
+    <path id="anchor_0_144.394_250" class="top-dark" d="M0,103.979V92.376L160,0l90,51.9609v11.604L90,155.9409Z"/>
+    <path id="Path" class="exterior-R-prim" d="M250,52.0181V479.2144L90,571.5913l-10-5.7739V138.62l10,5.7739Z"/>
+    <path id="Path-2" data-name="Path" class="exterior-L-prim" d="M0,92.4321V519.6294L90,571.59V144.394Z"/>
+    <path id="Path-3" data-name="Path" class="window-L-prim" d="M60,135.7329,80,147.28V557.1714L60,545.624Z"/>
+    <path id="Path-4" data-name="Path" class="window-L-light" d="M70,141.5073V551.3979L60,545.624V135.7329Z"/>
+    <path id="Path-5" data-name="Path" class="window-L-prim" d="M35,121.3l20,11.5469v409.89L35,531.19Z"/>
+    <path id="Path-6" data-name="Path" class="window-L-light" d="M45,127.0732V536.9644L35,531.19V121.3Z"/>
+    <path id="Path-7" data-name="Path" class="window-L-prim" d="M10,106.8662l20,11.5469v409.89L10,516.7563Z"/>
+    <path id="Path-8" data-name="Path" class="window-L-light" d="M20,112.6392V522.53l-10-5.774v-409.89Z"/>
+    <path id="Path-9" data-name="Path" class="window-R-light" d="M117.5,137.1772l-20,11.5469v409.89l20-11.5469Z"/>
+    <path id="Path-10" data-name="Path" class="window-R-prim" d="M107.5,142.95V552.8413l10-5.7739v-409.89Z"/>
+    <path id="Path-11" data-name="Path" class="window-R-light" d="M142.5,122.7432l-20,11.5468V544.1812l20-11.5469Z"/>
+    <path id="Path-12" data-name="Path" class="window-R-prim" d="M132.5,128.5171v409.89l10-5.7729V122.7432Z"/>
+    <path id="Path-13" data-name="Path" class="window-R-light" d="M192.5,93.876l-20,11.5473v409.89l20-11.5469Z"/>
+    <path id="Path-14" data-name="Path" class="window-R-prim" d="M182.5,99.6489V509.54l10-5.7739V93.876Z"/>
+    <path id="Path-15" data-name="Path" class="window-R-light" d="M167.5,108.3091l-20,11.5469V529.7471l20-11.5469Z"/>
+    <path id="Path-16" data-name="Path" class="window-R-prim" d="M157.5,114.083v409.89l10-5.7729V108.3091Z"/>
+    <path id="Path-17" data-name="Path" class="window-R-light" d="M217.5,79.4424l-20,11.5469v409.89l20-11.5474Z"/>
+    <path id="Path-18" data-name="Path" class="window-R-prim" d="M207.5,85.2153V495.106l10-5.774V79.4424Z"/>
+    <path id="Path-19" data-name="Path" class="window-R-light" d="M242.5,65.0083l-20,11.5469V486.4463l20-11.5474Z"/>
+    <path id="Path-20" data-name="Path" class="window-R-prim" d="M232.5,70.7822v409.89l10-5.7735V65.0083Z"/>
+  </g>
+</svg>

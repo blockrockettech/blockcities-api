@@ -1,0 +1,230 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.2057 657.4547">
+  <defs>
+    <style>
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .cls-1 {
+        fill: #e8e8e8;
+      }
+
+      .cls-2 {
+        fill: #b9b9b9;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+
+      .cls-3 {
+        fill: #c1c1c1;
+      }
+
+      .cls-4 {
+        fill: #ebebeb;
+      }
+    </style>
+  </defs>
+  <title>Artboard 9</title>
+  <g id="root">
+    <path id="Body_-_Left" data-name="Body - Left" class="curtain-L-prim-dark" d="M8.8657,555.6447l176.34,101.81,10-5.7729v-92.376l-10,5.773-185-106.81v82.3759C.2057,546.1638,4.0856,552.8858,8.8657,555.6447Z"/>
+    <path id="Body_-_Right" data-name="Body - Right" class="curtain-R-prim-dark" d="M185.2057,547.7588l70-40.415v99.6969c0,5.5191-3.8811,12.24-8.66,15l-61.34,35.414Z"/>
+    <path id="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,516.0038l185,106.81v23.0939l-176.34-101.81c-4.78-2.7589-8.66-9.4809-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-2" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M.2057,504.4568l185,106.81v23.0939l-176.34-101.81c-4.78-2.759-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-3" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,492.91l185,106.81v23.094l-176.34-101.81c-4.78-2.759-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-4" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M.2057,481.3628l185,106.81v23.094l-176.34-101.81c-4.78-2.759-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M255.2057,582.4l-70,40.4141v23.0939l61.34-35.414c4.7788-2.76,8.66-9.4809,8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-5" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,469.8158l185,106.81V599.72L8.8657,497.91c-4.78-2.759-8.66-9.4811-8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-2" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M255.2057,570.8528l-70,40.414v23.0939l61.34-35.414c4.7788-2.76,8.66-9.4809,8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-6" data-name="body-mechanicalfloor-left" class="exterior-L-prim" d="M185.2057,588.1728l5-2.887V539.0977l-5,2.8871-185-106.81v36.188c0,5.5189,3.88,12.241,8.66,15Z"/>
+    <path id="body-mechanicalfloor-right-3" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M255.2057,559.3058l-70,40.414v23.094l61.34-35.4141c4.7788-2.76,8.66-9.4809,8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-4" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M255.2057,547.7588l-70,40.414v23.094l61.34-35.414c4.7788-2.76,8.66-9.481,8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-5" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M255.2057,536.2118l-70,40.414V599.72l61.34-35.414c4.7788-2.76,8.66-9.481,8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-6" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M255.2057,495.7968l-70,40.415v51.961l61.34-35.414c4.7788-2.76,8.66-9.4811,8.66-15Z"/>
+    <path id="body-top" class="top-light" d="M185.2057,553.5318,230.45,527.41c32.98-19.0411,32.9681-49.938-.0268-68.953L104.8727,386.1,9.7248,441.2088c-5.2542,3.0429-5.25,7.978.0068,11.013Z"/>
+    <path id="body-top-inner" class="top-prim" d="M185.2057,547.7588l43.0381-24.849c28.679-16.557,28.668-43.4241-.0241-59.958l-128.347-73.965L5.2057,443.8347Z"/>
+    <path id="Body_-_Left-2" data-name="Body - Left" class="curtain-L-prim-dark" d="M.2057,436.7218v-105.47l145,83.716,10-5.7739v115.471l-10,5.773-136.34-78.716C4.0856,448.9628.2057,442.2408.2057,436.7218Z"/>
+    <path id="body-mechanicalfloor-right-7" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M155.18,530.4378l-5-2.887v-5.7731l69.9709-40.4149.0259,5.547a11.416,11.416,0,0,1-5.168,8.999Z"/>
+    <path id="Body_-_Right-2" data-name="Body - Right" class="cls-1" d="M145.2057,530.4378V426.5147l75-43.3009v93.9229c0,5.5191-3.8811,12.24-8.66,15Z"/>
+    <path id="body-mechanicalfloor-right-8" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,530.4378v-80.829l75-43.301v72.8289a15.3231,15.3231,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-9" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,518.8908v-23.094l75-43.301V467.59a15.3234,15.3234,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-10" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,507.3438V484.25l75-43.301v15.094a15.3234,15.3234,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-left-7" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,412.0808l145,83.716v23.094l-136.34-78.716c-4.78-2.7591-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-8" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M.2057,400.5338l145,83.716v23.094l-136.34-78.716c-4.78-2.7591-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-9" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,388.9868l145,83.716v23.094l-136.34-78.716c-4.78-2.7591-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-10" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M.2057,377.44l145,83.716V484.25l-136.34-78.716c-4.78-2.7591-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-11" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M.2057,365.8928l145,83.716v23.094l-136.34-78.716c-4.78-2.759-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-left-12" data-name="body-mechanicalfloor-left" class="exterior-L-prim" d="M.2057,331.2517l145,83.716,5-2.8869v46.188l-5,2.887L8.8657,382.44c-4.78-2.759-8.66-9.481-8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-11" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,495.7968v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-12" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,484.25v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-top-2" data-name="body-top" class="top-light" d="M145.2057,426.5147l-131.225-75.763c-18.6409-10.7619-18.6409-28.237,0-39l46.225-26.6879,160,98.15Z"/>
+    <path id="body-top-inner-2" data-name="body-top-inner" class="top-prim" d="M139.8727,417.8548,16.1718,346.2768c-14.331-8.292-14.324-21.746.0149-30.0251l49.019-28.3009,149.667,86.602Z"/>
+    <path id="body-mechanicalfloor-right-13" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,472.7028v-23.094l75-43.301v15.094a15.3234,15.3234,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-14" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,391.8737V368.78l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-15" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M220.2057,371.6668l-75,43.3009v46.1881l66.34-38.301c4.7788-2.76,8.66-9.4811,8.66-15Z"/>
+    <path id="body-mechanicalfloor-right-16" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,426.5147l-10-5.7739v-115.47l10,5.774,75-43.3011v107.47a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-17" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,368.78v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-18" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,414.9677v-23.094l75-43.3009v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-19" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,403.4207V380.3268l75-43.301V352.12a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-20" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,391.8737V368.78l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-21" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,380.3268v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-22" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.2057,368.78v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-right-23" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.2057,357.2328v-23.094l75-43.301v15.094a15.3232,15.3232,0,0,1-6.9279,12Z"/>
+    <path id="body-mechanicalfloor-left-13" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.2057,391.8737V374.5528l-105-60.621v9.32a15.323,15.323,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-right-24" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M144.8727,334.1388v-23.094l75-43.3011v15.0941a15.324,15.324,0,0,1-6.9289,12Z"/>
+    <path id="Body_Left" data-name="Body Left" class="cls-2" d="M145.2057,314.9508V426.5147l-96.34-55.6219c-4.78-2.759-8.66-9.481-8.66-15V254.3288Z"/>
+    <path id="body-mechanicalfloor-left-14" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.2057,426.5147v-115.47l-105-60.622v107.47a15.3233,15.3233,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-15" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.2057,414.9677V394.7608l-105-60.622v12.207a15.32,15.32,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-16" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.2057,403.4207V383.2138l-105-60.622v12.207a15.3233,15.3233,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-17" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.2057,391.8737V371.6668l-105-60.622v12.2069a15.3215,15.3215,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-18" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.2057,380.3268V360.12l-105-60.622v12.2069a15.323,15.323,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-19" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.2057,368.78v-20.207l-105-60.622v12.2069a15.3215,15.3215,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-20" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.2057,357.2328v-20.207l-105-60.622v12.2069a15.3232,15.3232,0,0,0,6.928,12Z"/>
+    <path id="body-mechanicalfloor-left-21" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.2057,334.1388v-20.207l-105-60.622v12.207a15.3235,15.3235,0,0,0,6.928,12Z"/>
+    <path id="Path" class="exterior-R-dark" d="M150.2057,429.4018l5-2.8871v23.0941l-5,2.887Z"/>
+    <path id="Path-2" data-name="Path" class="exterior-R-dark" d="M190.1508,556.4188l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-3" data-name="Path" class="exterior-L-dark" d="M140.1848,429.4018l-5-2.8871v23.0941l5,2.887Z"/>
+    <path id="Path-4" data-name="Path" class="exterior-L-dark" d="M180.4286,556.4188l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-5" data-name="Path" class="exterior-L-dark" d="M100.2057,510.2307l-5-2.8869v23.094l5,2.887Z"/>
+    <path id="Path-6" data-name="Path" class="exterior-L-dark" d="M120.1848,417.8548l-5-2.8871v23.0941l5,2.887Z"/>
+    <path id="Path-7" data-name="Path" class="exterior-L-dark" d="M160.4286,544.8718l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-8" data-name="Path" class="exterior-L-dark" d="M80.2057,498.6837l-5-2.8869v23.094l5,2.8869Z"/>
+    <path id="Path-9" data-name="Path" class="exterior-L-dark" d="M100.24,406.3078l-5-2.8871v23.094l5,2.8871Z"/>
+    <path id="Path-10" data-name="Path" class="exterior-L-dark" d="M140.4838,533.3248l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-11" data-name="Path" class="exterior-L-dark" d="M60.2607,487.1367l-5-2.8869v23.094l5,2.8869Z"/>
+    <path id="Path-12" data-name="Path" class="exterior-L-dark" d="M70.1848,388.9868l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-13" data-name="Path" class="exterior-L-dark" d="M110.4286,516.0038l-5-2.886v23.094l5,2.8859Z"/>
+    <path id="Path-14" data-name="Path" class="exterior-L-dark" d="M30.2057,469.8158l-5-2.8871v23.0951l5,2.886Z"/>
+    <path id="Path-15" data-name="Path" class="exterior-L-dark" d="M40.2607,371.6668l-5-2.887v23.0939l5,2.8871Z"/>
+    <path id="Path-16" data-name="Path" class="exterior-R-dark" d="M170.2057,417.8548l5-2.8871v23.0941l-5,2.887Z"/>
+    <path id="Path-17" data-name="Path" class="exterior-R-dark" d="M210.1508,544.8718l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-18" data-name="Path" class="exterior-R-dark" d="M190.2057,406.3078l5-2.8871v23.094l-5,2.8871Z"/>
+    <path id="Path-19" data-name="Path" class="exterior-R-dark" d="M230.1508,533.3248l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-20" data-name="Path" class="exterior-R-dark" d="M160.2607,423.6278l5-2.887v23.095l-5,2.886Z"/>
+    <path id="Path-21" data-name="Path" class="exterior-R-dark" d="M200.2057,550.6447l5-2.8869v23.095l-5,2.886Z"/>
+    <path id="Path-22" data-name="Path" class="exterior-L-dark" d="M130.13,423.6278l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-23" data-name="Path" class="exterior-L-dark" d="M170.3737,550.6447l-5-2.8859v23.094l5,2.886Z"/>
+    <path id="Path-24" data-name="Path" class="exterior-L-dark" d="M90.1508,504.4568l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-25" data-name="Path" class="exterior-L-dark" d="M110.13,412.0808l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-26" data-name="Path" class="exterior-L-dark" d="M150.3737,539.0977l-5-2.8859v23.094l5,2.8859Z"/>
+    <path id="Path-27" data-name="Path" class="exterior-L-dark" d="M70.1508,492.91l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-28" data-name="Path" class="exterior-L-dark" d="M80.0759,394.7608l-5-2.8871v23.094l5,2.8871Z"/>
+    <path id="Path-29" data-name="Path" class="exterior-L-dark" d="M120.3188,521.7777l-5-2.8869v23.094l5,2.887Z"/>
+    <path id="Path-30" data-name="Path" class="exterior-L-dark" d="M40.0956,475.59l-5-2.887v23.094l5,2.8869Z"/>
+    <path id="Path-31" data-name="Path" class="exterior-L-dark" d="M10.0956,458.2688l-5-2.8871v23.0951l5,2.886Z"/>
+    <path id="Path-32" data-name="Path" class="exterior-L-dark" d="M50.1308,377.44l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-33" data-name="Path" class="exterior-L-dark" d="M20.2057,360.12l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-34" data-name="Path" class="exterior-L-dark" d="M10.2057,354.3458l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-35" data-name="Path" class="exterior-L-dark" d="M90.1848,400.5338l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-36" data-name="Path" class="exterior-L-dark" d="M130.4286,527.5508l-5-2.886v23.094l5,2.8859Z"/>
+    <path id="Path-37" data-name="Path" class="exterior-L-dark" d="M50.2057,481.3628l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-38" data-name="Path" class="exterior-L-dark" d="M20.2057,464.0428l-5-2.887V484.25l5,2.8869Z"/>
+    <path id="body-mechanicalfloor-right-25" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M145.2057,345.6858l-5-2.887V296.6107l80-46.1879v41.962c0,5.519-3.8811,12.24-8.66,15Z"/>
+    <path id="body-mechanicalfloor-left-22" data-name="body-mechanicalfloor-left" class="exterior-L-prim" d="M145.2057,345.6858v-46.188l-105-60.622v36.188c0,5.519,3.88,12.241,8.66,15Z"/>
+    <path id="body-mechanicalfloor-left-23" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.24,311.2858l9.9451-5.773.0209-102.302-10,5.774-59.979-34.699.012,96.3589a11.4933,11.4933,0,0,0,5.197,9Z"/>
+    <path id="body-top-3" data-name="body-top" class="top-light" d="M145.2057,311.2858l-91.225-52.668c-18.6409-10.763-18.6409-28.238,0-39l46.225-26.688,45,25.98Z"/>
+    <path id="body-mechanicalfloor-right-26" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M150.1848,308.4l-4.9451,2.8861-.0549-105.525,74.966-43.301.052,99.525a11.4772,11.4772,0,0,1-5.1941,8.999Z"/>
+    <path id="body-top-inner-3" data-name="body-top-inner" class="top-prim" d="M145.2057,305.5128l-88.7871-51.569c-14.3178-8.316-14.2949-21.78.0511-30.046l51.236-29.525,37.5,24.537Z"/>
+    <path id="body-mechanicalfloor-left-24" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.2057,311.2858v-17.32l-60-34.641v11.32a11.4889,11.4889,0,0,0,5.1961,9Z"/>
+    <path id="body-mechanicalfloor-left-25" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.24,299.7388v-17.32l-60-34.6411v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-left-26" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.24,288.1917v-17.32l-60-34.6411v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-right-27" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.24,299.7388V276.6447l74.966-43.3009v17.094a11.4926,11.4926,0,0,1-5.196,9.001Z"/>
+    <path id="body-mechanicalfloor-right-28" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.24,288.1917v-23.094l74.966-43.3009v17.094a11.4926,11.4926,0,0,1-5.196,9.001Z"/>
+    <path id="body-mechanicalfloor-left-27" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.24,276.6447v-17.32l-60-34.641v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-left-28" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.24,265.0977v-17.32l-60-34.6409v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-right-29" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.24,276.6447V253.5508l75.134-43.301-.124,17.094a11.6033,11.6033,0,0,1-5.24,9.001Z"/>
+    <path id="Path-39" data-name="Path" class="exterior-R-prim" d="M55.2057,230.4568l35-20.207v-5.773l-35,20.207q-9.5537,6.2111-10,14.434-.375,6.911,10,14.433Q38.8307,240.7788,55.2057,230.4568Z"/>
+    <path id="body-mechanicalfloor-right-30" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.24,265.0977V242.0038l74.966-43.301v17.094a11.4924,11.4924,0,0,1-5.196,9.001Z"/>
+    <path id="body-mechanicalfloor-left-29" data-name="body-mechanicalfloor-left" class="curtain-L-prim-light" d="M145.24,253.5508v-17.32l-60-34.6409v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-left-30" data-name="body-mechanicalfloor-left" class="curtain-L-prim-dark" d="M145.24,242.0038v-17.32l-60-34.641v11.32a11.49,11.49,0,0,0,5.196,9Z"/>
+    <path id="body-mechanicalfloor-right-31" data-name="body-mechanicalfloor-right" class="curtain-R-prim-light" d="M145.24,253.5508v-23.094l74.966-43.301V204.25a11.4924,11.4924,0,0,1-5.196,9.001Z"/>
+    <path id="body-mechanicalfloor-right-32" data-name="body-mechanicalfloor-right" class="curtain-R-prim-dark" d="M145.24,242.0038V218.91l74.966-43.301v17.094a11.4924,11.4924,0,0,1-5.196,9.001Z"/>
+    <path id="Path-40" data-name="Path" class="exterior-R-dark" d="M150.2057,313.9318l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-41" data-name="Path" class="exterior-L-dark" d="M140.2607,313.9318l-5-2.887v23.094l5,2.887Z"/>
+    <path id="body-mechanicalfloor-left-31" data-name="body-mechanicalfloor-left" class="exterior-L-prim" d="M145.3578,230.4568l4.9449-2.886v-46.188l-64.231-37.086c-.478-.276-.8679-.052-.87.5l-.1621,40.961c-.0219,5.519,3.845,12.234,8.63,14.984Z"/>
+    <path id="body-mechanicalfloor-right-33" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M145.3578,230.4568v-46.188l74.9659-43.301v36.188c0,5.519-3.88,12.241-8.659,15.002Z"/>
+    <path id="body-top-4" data-name="body-top" class="top-light" d="M145.3578,195.8158l55.035-31.785c23.4179-13.525,22.9379-34.611-1.0711-47.058l-30.7449-15.938c-11.27-5.842-29.352-5.445-40.354.887l-21.728,12.504c-28.2231,16.242-28.2419,42.647-.041,58.929Z"/>
+    <path id="body-top-inner-4" data-name="body-top-inner" class="exterior-R-prim" d="M145.3578,190.0428l44.742-25.941c23.396-13.565,22.843-34.575-1.2351-46.889l-20.564-10.517c-11.301-5.78-29.4009-5.318-40.393,1.031l-20.1189,11.62c-23.418,13.526-23.4161,35.486.0039,49.008Z"/>
+    <path id="body-top-inner-5" data-name="body-top-inner" class="top-prim" d="M145.3578,190.0428l61.0779-35.159c11.958-6.884,11.668-17.524-.6479-23.745l-37.156-18.771c-11.3311-5.724-29.4632-5.232-40.4661,1.097l-17.8879,10.289c-23.4422,13.484-23.1531,34.859.646,47.704Z"/>
+    <path id="body-mechanicalfloor-left-32" data-name="body-mechanicalfloor-left" class="exterior-L-prim" d="M140.3237,117.8738v30.641a7.7037,7.7037,0,0,0,3.456,6.014l31.231,18.193,5.313-2.886,5,2.886,5-2.886v-28.868l-5,2.887Z"/>
+    <path id="body-mechanicalfloor-right-34" data-name="body-mechanicalfloor-right" class="exterior-R-prim" d="M185.3237,175.6088l26.34-15.207c4.78-2.76,8.66-9.481,8.66-15v-33.301l-35,20.207Z"/>
+    <path id="body-top-5" data-name="body-top" class="top-light" d="M147.6447,107.8738,173.2,93.12c6.6912-3.864,17.7771-4.28,24.74-.93l5.031,2.42c23.375,11.247,24.115,30.907,1.65,43.877l-19.2971,11.141-37.679-21.754C138.0847,122.3548,138.0847,113.3928,147.6447,107.8738Z"/>
+    <path id="body-top-inner-6" data-name="body-top-inner" class="exterior-R-prim" d="M148.9838,112.8738l27.68-15.981c4.78-2.759,12.728-3.121,17.739-.807l6.4231,2.967c19.04,8.795,19.7519,24.448,1.5888,34.934l-17.091,9.868-36.34-20.981C144.2048,120.1148,144.2048,115.6338,148.9838,112.8738Z"/>
+    <path id="body-top-inner-7" data-name="body-top-inner" class="top-prim" d="M148.7878,118.7608l27.876-16.094c4.78-2.76,12.748-3.165,17.7829-.904l5.773,2.593c16.615,7.461,17.2981,20.911,1.5251,30.018l-16.4211,9.481-36.5359-21.094C146.8757,121.6568,146.8757,119.8648,148.7878,118.7608Z"/>
+    <ellipse id="Ellipse" class="cls-3" cx="184.7326" cy="119.6113" rx="3.6694" ry="2.1185"/>
+    <rect id="Rectangle" class="cls-3" x="181.0634" y="77.2416" width="7.3386" height="42.3697"/>
+    <ellipse id="Ellipse-2" data-name="Ellipse" class="cls-4" cx="184.7326" cy="77.2416" rx="3.6694" ry="2.1185"/>
+    <ellipse id="Ellipse-3" data-name="Ellipse" class="cls-3" cx="184.7326" cy="76.9993" rx="1.8347" ry="1.0592"/>
+    <rect id="Rectangle-2" data-name="Rectangle" class="cls-3" x="182.8981" y="1.0593" width="3.6692" height="75.9401"/>
+    <ellipse id="Ellipse-4" data-name="Ellipse" class="cls-4" cx="184.7326" cy="1.0592" rx="1.8347" ry="1.0592"/>
+    <path id="Path-42" data-name="Path" class="exterior-R-dark" d="M150.3027,198.7028l5-2.887V218.91l-5,2.887Z"/>
+    <path id="Path-43" data-name="Path" class="exterior-L-dark" d="M140.3027,198.7028l-5-2.887V218.91l5,2.887Z"/>
+    <path id="Path-44" data-name="Path" class="exterior-R-dark" d="M170.3578,187.1558l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-45" data-name="Path" class="exterior-L-dark" d="M120.2827,187.1558l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-46" data-name="Path" class="exterior-R-dark" d="M190.3027,175.6088l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-47" data-name="Path" class="exterior-L-dark" d="M100.3027,175.6088l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-48" data-name="Path" class="exterior-R-dark" d="M160.3027,192.93l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-49" data-name="Path" class="exterior-L-dark" d="M130.3027,192.93l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-50" data-name="Path" class="exterior-R-dark" d="M180.3578,181.3828l5-2.887V201.59l-5,2.887Z"/>
+    <path id="Path-51" data-name="Path" class="exterior-L-dark" d="M110.3027,181.3828l-5-2.887V201.59l5,2.887Z"/>
+    <path id="Path-52" data-name="Path" class="exterior-R-dark" d="M200.3027,169.8358l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-53" data-name="Path" class="exterior-R-dark" d="M210.3027,164.0618l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-54" data-name="Path" class="exterior-R-dark" d="M170.2057,302.3848l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-55" data-name="Path" class="exterior-L-dark" d="M120.2607,302.3848l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-56" data-name="Path" class="exterior-R-dark" d="M190.1508,290.8378l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-57" data-name="Path" class="exterior-L-dark" d="M100.3159,290.8378l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-58" data-name="Path" class="exterior-L-dark" d="M70.2607,273.5168l-5-2.887v23.094l5,2.8869Z"/>
+    <path id="Path-59" data-name="Path" class="exterior-R-dark" d="M210.2057,279.2907c.094-.0029,5.0311-2.94,5-2.8869v18.094a9.5774,9.5774,0,0,1-4.33,7.5l-.67.387Z"/>
+    <path id="Path-60" data-name="Path" class="exterior-R-dark" d="M160.2607,308.1577l5-2.8869v23.094l-5,2.8869Z"/>
+    <path id="Path-61" data-name="Path" class="exterior-L-dark" d="M130.2057,308.1577l-5-2.8869v23.094l5,2.8869Z"/>
+    <path id="Path-62" data-name="Path" class="exterior-R-dark" d="M180.2607,296.6107l5-2.8869v23.094l-5,2.8869Z"/>
+    <path id="Path-63" data-name="Path" class="exterior-L-dark" d="M110.2057,296.6107l-5-2.8869v23.094l5,2.8869Z"/>
+    <path id="Path-64" data-name="Path" class="exterior-L-dark" d="M80.1508,279.2907l-5-2.8869v23.094l5,2.887Z"/>
+    <path id="Path-65" data-name="Path" class="exterior-L-dark" d="M50.2057,261.97l-5-2.887v23.094l5,2.887Z"/>
+    <path id="Path-66" data-name="Path" class="exterior-R-dark" d="M200.2057,285.0638l5-2.887v23.094l-5,2.8869Z"/>
+    <path id="Path-67" data-name="Path" class="exterior-L-dark" d="M90.2607,285.0638l-5-2.887v23.094l5,2.8869Z"/>
+    <path id="Path-68" data-name="Path" class="exterior-L-dark" d="M60.2057,267.7437l-5-2.8869v23.094l5,2.887Z"/>
+    <path id="Path-69" data-name="Path" class="exterior-L-dark" d="M60.1308,383.2138l-5-2.887v23.0939l5,2.8871Z"/>
+    <path id="Path-70" data-name="Path" class="exterior-L-dark" d="M30.2057,365.8928l-5-2.887v23.095l5,2.886Z"/>
+    <path id="Path-71" data-name="Path" class="exterior-R-dark" d="M180.2607,412.0808l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-72" data-name="Path" class="exterior-R-dark" d="M220.2057,539.0977l5-2.8869v23.094l-5,2.8869Z"/>
+    <path id="Path-73" data-name="Path" class="exterior-R-dark" d="M200.2607,400.5338l5-2.887v23.094l-5,2.887Z"/>
+    <path id="Path-74" data-name="Path" class="exterior-R-dark" d="M240.2057,527.5508l5-2.887v23.095l-5,2.8859Z"/>
+    <path id="Path-75" data-name="Path" class="exterior-R-dark" d="M210.2057,394.7608l5-2.8871v19.094a7.66,7.66,0,0,1-3.4641,6l-1.5359.8871Z"/>
+    <path id="Path-76" data-name="Path" class="exterior-L-prim" d="M230.2057,469.8158c.0621-.028-9.1779-5.384-10-5.773v-5.774q10.0622,5.7689,9.949,5.94c26.6131,16.704,25.4881,41.204.051,57.5689Q265.5177,492.9128,230.2057,469.8158Z"/>
+    <path id="Path-77" data-name="Path" class="exterior-R-prim" d="M15.2057,322.5918l25-14.4341v-5.7729l-25,14.433q-9.5536,6.2111-10,14.4339-.375,6.9111,10,14.4341Q-1.1694,332.9127,15.2057,322.5918Z"/>
+  </g>
+</svg>

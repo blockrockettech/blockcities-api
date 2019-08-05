@@ -33,3 +33,5 @@ firebase-debug.log
 /functions/.runtimeconfig.json
 /functions/_keys/
 /firestore-debug.log
+/scripts/build-utils/output/
+/scripts/build-utils/output.zip

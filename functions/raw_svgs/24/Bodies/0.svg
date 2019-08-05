@@ -1,0 +1,44 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 323.316">
+  <defs>
+    <style>
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+    </style>
+  </defs>
+  <title>Artboard 4</title>
+  <g id="root">
+    <path id="Path" class="top-light" d="M280,242.487V230.94L120,138.564,0,207.846v11.547l160,86.603Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M0,69.282l160,92.376,15-8.66V314.656l-15,8.66L0,230.94Z"/>
+    <path id="Path-3" data-name="Path" class="curtain-L-prim-light" d="M0,207.846V230.94l160,92.376,10-5.773V294.449l-10,5.773Z"/>
+    <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M160,161.658,280,92.376v46.188l-5,2.887v46.188l-5,2.887v63.508L160,317.543Z"/>
+    <path id="anchor_0_161.658_280" class="top-dark" d="M280,103.923V92.376L120,0,0,69.282V80.829l160,92.376Z"/>
+    <path id="Path-5" data-name="Path" class="curtain-R-prim-light" d="M160,161.658l-10-5.773v23.094l10,5.773L280,115.47V92.376Z"/>
+    <path id="Path-6" data-name="Path" class="curtain-L-prim-light" d="M160,161.658v23.094L0,92.376V69.282Z"/>
+    <path id="Path-7" data-name="Path" class="curtain-L-prim-light" d="M160,254.034l10-5.773v23.094l-10,5.773L0,184.752V161.658Z"/>
+    <path id="Path-8" data-name="Path" class="curtain-L-prim-light" d="M160,207.846l10-5.773v23.094l-10,5.773L0,138.564V115.47Z"/>
+    <path id="Path-9" data-name="Path" class="curtain-R-prim-light" d="M160,207.846V230.94l115-66.395V141.451Z"/>
+    <path id="Path-10" data-name="Path" class="curtain-R-prim-light" d="M160,254.034v23.094L270,213.62V190.526Z"/>
+    <path id="Path-11" data-name="Path" class="curtain-R-prim-light" d="M280,230.94v23.094L160,323.316V300.222Z"/>
+  </g>
+</svg>

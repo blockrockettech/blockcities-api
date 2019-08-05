@@ -1,0 +1,41 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 352.2119">
+  <defs>
+    <style>
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+    </style>
+  </defs>
+  <title>Artboard 41</title>
+  <g id="root">
+    <path id="anchor_0_144.394_250" class="top-dark" d="M0,103.98V92.376L160,0l90,51.9609v11.604L90,155.9409Z"/>
+    <path id="Path" class="curtain-R-prim-dark" d="M250,51.9609v207.86L90,352.197l-10-5.7729V138.564l10,5.7729Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-dark" d="M0,92.376v207.86L90,352.197v-207.86Z"/>
+    <path id="Path-3" data-name="Path" class="curtain-R-prim-light" d="M250,98.17,90,190.532v23.094l160-92.3621Z"/>
+    <path id="Path-4" data-name="Path" class="curtain-L-prim-light" d="M0,138.571l90,51.9749V213.64L0,161.665Z"/>
+    <path id="Path-5" data-name="Path" class="curtain-R-prim-light" d="M250,190.5459,90,282.908v23.094L250,213.64Z"/>
+    <path id="Path-6" data-name="Path" class="curtain-L-prim-light" d="M0,230.947l90,51.9749v23.094L0,254.041Z"/>
+    <path id="Path-7" data-name="Path" class="curtain-R-prim-light" d="M250,144.365,90,236.7271V259.821l160-92.362Z"/>
+    <path id="Path-8" data-name="Path" class="curtain-L-prim-light" d="M0,184.7659,90,236.741v23.0949L0,207.86Z"/>
+    <path id="Path-9" data-name="Path" class="curtain-R-prim-light" d="M250,52.0181,90,144.38v23.094L250,75.1121Z"/>
+    <path id="Path-10" data-name="Path" class="curtain-L-prim-light" d="M0,92.418l90,51.976v23.094L0,115.512Z"/>
+    <path id="Path-11" data-name="Path" class="curtain-R-prim-light" d="M250,236.7419,90,329.103v23.094l160-92.3611Z"/>
+    <path id="Path-12" data-name="Path" class="curtain-L-prim-light" d="M0,277.1418l90,51.9761v23.094L0,300.2361Z"/>
+  </g>
+</svg>
