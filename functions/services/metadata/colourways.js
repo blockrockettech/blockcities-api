@@ -157,6 +157,92 @@ module.exports = {
                 dark: '#4F4F4F',
             }
         },
+        goldenbeige: {
+            left: {
+                prim: '#C6AB89',
+                light: '#DBBC96',
+                dark: '#AE9474',
+            },
+            right: {
+                prim: '#FBD8AA',
+                light: '#FFE2BD',
+                dark: '#ECCB9F',
+            },
+            top: {
+                prim: '#F9E8D2',
+                light: '#FFF4DD',
+                dark: '#EEDDC6',
+            } 
+        },
+        blush: {
+            left: {
+                prim: '#9B7D74',
+                light: '#AE8C81',
+                dark: '#86675E',
+            },
+            right: {
+                prim: '#DDB7AC',
+                light: '#ECC5BB',
+                dark: '#CEA59A',
+            },
+            top: {
+                prim: '#ECCDC4',
+                light: '#FDE2DA',
+                dark: '#E1C1B9',
+            } 
+        },
+        dijon: {
+            left: {
+                prim: '#A4805D',
+                light: '#BB946D',
+                dark: '#916E4B',
+            },
+            right: {
+                prim: '#D9B592',
+                light: '#E6C3A1',
+                dark: '#C8A17A',
+            },
+            top: {
+                prim: '#F2D6BC',
+                light: '#FFE4CA',
+                dark: '#EACEB4',
+            } 
+        },
+        coolblue: {
+            left: {
+                prim: '#83878E',
+                light: '#93979F',
+                dark: '#767A82',
+            },
+            right: {
+                prim: '#C5C8CC',
+                light: '#D4D6D9',
+                dark: '#B3B6BB',
+            },
+            top: {
+                prim: '#D5D5DB',
+                light: '#ECECF0',
+                dark: '#CDCDD2',
+            } 
+        },
+        limestone: {
+            left: {
+                prim: '#D7B6A7',
+                light: '#EACCBF',
+                dark: '#C3A495',
+            },
+            right: {
+                prim: '#F4DDC6',
+                light: '#FDEAD7',
+                dark: '#E8CCB1',
+            },
+            top: {
+                prim: '#F2E3D5',
+                light: '#FFF3E8',
+                dark: '#E6D6C7',
+            } 
+        },
+    
     },
     windows: {
         black: {
@@ -219,6 +305,16 @@ module.exports = {
                 light: '#BEDBFF',
             },
         },
+        boldblue: {
+            left: {
+                prim: '#37719D',
+                light: '#478CC1',
+            },
+            right: {
+                prim: '#6EC0FF',
+                light: '#53A7E8',
+            },
+        },
     },
     curtains: {
         trueblue: {
@@ -277,6 +373,51 @@ module.exports = {
                 prim_light_dark: '#686868',
             },
         },
+        bluegrey: {
+            left: {
+                prim_dark: '#576271',
+                prim_light: '#808C9D',
+                prim_dark_light: '#647184',
+                prim_light_dark: '#798495',
+            },
+            right: {
+                prim_dark: '#C5CEDB',
+                prim_light: '#E2E7EE',
+                prim_dark_light: '#CFD9E6',
+                prim_light_dark: '#D8DEE8',
+            },
+        },
+        turquoise: {
+            left: {
+                prim_dark: '#203640',
+                prim_light: '#276782',
+                prim_dark_light: '#284855',
+                prim_light_dark: '#1D5973',
+            },
+            right: {
+                prim_dark: '#2E5464',
+                prim_light: '#3C99C1',
+                prim_dark_light: '#34667B',
+                prim_light_dark: '#3187AC',
+            },
+        },
+        navy: {
+            left: {
+                prim_dark: '#253968',
+                prim_light: '#2D498A',
+                prim_dark_light: '#2C4379',
+                prim_light_dark: '#223C7B',
+            },
+            right: {
+                prim_dark: '#4869AE',
+                prim_light: '#709DFF',
+                prim_dark_light: '#709DFF',
+                prim_light_dark: '#5C83D7',
+            },
+        },
+     
+     
+     
     },
     concrete: {
         classic: {
@@ -289,10 +430,15 @@ module.exports = {
             right: '#E8E8E8',
             top: '#A2A2A2',
         },
-        gold: {
-            left: '#BD9664',
-            right: '#EACB87',
-            top: '#BD9664',
+        brownstone: {
+            left: '#555454',
+            right: '#959293',
+            top: '#D0C9CB',
+        },
+        limestone: {
+            left: '#C3A495',
+            right: '#F4DDC6',
+            top: '#FFF3E8',
         }
     }
 };
