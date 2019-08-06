@@ -63,6 +63,7 @@
     </style>
   </defs>
   <title>Artboard 6</title>
+  <g id="root" >
   <path id="Path" class="concrete-top" d="M127.5,300.2221,355,168.875,227.5,95.2628,0,226.61Z"/>
   <path id="Path-2" data-name="Path" class="top-light" d="M25,125.5737,227.5,8.66,330,67.8387,127.5,184.7521Z"/>
   <path id="Path-3" data-name="Path" class="exterior-R-prim" d="M127.5,184.7521V285.7883L330.06,168.9614,330,67.8386Z"/>
@@ -136,5 +137,6 @@
   <path id="Path-71" data-name="Path" class="exterior-L-light" d="M80,125.5738v5.7735l10,5.7735v-5.7735Z"/>
   <g id="Group">
     <path id="anchor_106.843_130.264_205.973" class="top-light" d="M106.843,84.37,233.7163,11.4823l79.0994,45.8948L185.9424,130.2645Z"/>
+  </g>
   </g>
 </svg>
