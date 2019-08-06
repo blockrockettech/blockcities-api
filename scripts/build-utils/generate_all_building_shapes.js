@@ -4,13 +4,16 @@ const imageBuilderService = require('../../functions/services/imageBuilder.servi
 
 void async function () {
 
-    const buildingRange = _.range(0, 29);
+    const buildingRange = _.range(24, 25);
 
     let total = 0;
 
     if (!fs.existsSync(__dirname + `/output/`)) {
         fs.mkdirSync(__dirname + `/output/`);
     }
+
+    const failures = [];
+    const promises = [];
 
     _.forEach(buildingRange, (buildId) => {
 
@@ -36,18 +39,23 @@ void async function () {
 
                     total++;
 
-                    imageBuilderService.generatePureSvg({
-                        building: buildId,
-                        base: base,
-                        body: body,
-                        roof: roof,
-                        exteriorColorway: 0,
-                        backgroundColorway: 0,
-                    })
+                    promises.push(imageBuilderService
+                        .generatePureSvg({
+                            building: buildId,
+                            base: base,
+                            body: body,
+                            roof: roof,
+                            exteriorColorway: 0,
+                            backgroundColorway: 0,
+                        })
                         .then((image) => {
-                            console.log(`Creating - build [${buildId}] base [${base}] body [${body}] roof [${roof}]`);
+                            console.log(`Creating - building [${buildId}] base [${base}] body [${body}] roof [${roof}]`);
                             fs.writeFileSync(__dirname + `/output/${buildId}/${base} - ${body} - ${roof}.svg`, image);
-                        });
+                        })
+                        .catch((error) => {
+                            console.log('failure', error);
+                            failures.push(`Failed to generate - building [${buildId}] base [${base}] body [${body}] roof [${roof}]`);
+                        }));
                 }
             }
         }
@@ -55,5 +63,11 @@ void async function () {
     });
 
     console.log(`Attempting to generate [${total}] buildings`);
+
+    await Promise.all(promises);
+
+    _.forEach(failures, (failure) => {
+        console.log(failure);
+    });
 
 }();

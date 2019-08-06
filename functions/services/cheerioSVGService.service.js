@@ -55,7 +55,11 @@ class CheerioSVGService {
 
     getRoot(svgXml) {
         const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
-        return $('#root').html();
+        const root = $('#root').html();
+        if (!root) {
+            console.error('ERROR - Failed to get root');
+        }
+        return root;
     };
 
     getStyle(svgXml, targetDiv) {

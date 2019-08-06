@@ -171,7 +171,7 @@ class ImageBuilderService {
             // console.log('roof', roofConfig);
             // console.log('height', canvasHeight);
             // console.log('width', canvasWidth);
-            //
+
             // console.log('startBaseY', startBaseY);
             // console.log('startBodyY', startBodyY);
 
@@ -236,6 +236,7 @@ class ImageBuilderService {
             return $.xml();
         } catch (e) {
             console.error(e);
+            throw new Error(e);
         }
     }
 
