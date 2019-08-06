@@ -1,10 +1,6 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 285 191.969">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 191.969">
   <defs>
     <style>
-      .cls-1 {
-        fill: none;
-      }
-
       .concrete-top {
         fill: #e8e8e8;
       }
@@ -21,11 +17,7 @@
         fill: #bd9664;
       }
 
-      .cls-2 {
-        clip-path: url(#clip-path);
-      }
-
-      .window-R-light {
+      .cls-1 {
         fill: #eacb87;
       }
 
@@ -33,11 +25,7 @@
         fill: #4d3b24;
       }
 
-      .cls-3 {
-        clip-path: url(#clip-path-2);
-      }
-
-      .window-L-light {
+      .cls-2 {
         fill: #795a30;
       }
 
@@ -57,12 +45,6 @@
         fill: #dd8a87;
       }
     </style>
-    <clipPath id="clip-path">
-      <polygon class="cls-1" points="237.5 73.612 225 111.14 142.5 158.771 142.5 128.46 237.5 73.612"/>
-    </clipPath>
-    <clipPath id="clip-path-2">
-      <polygon class="cls-1" points="47.5 73.612 60 111.14 142.5 158.771 142.5 128.46 47.5 73.612"/>
-    </clipPath>
   </defs>
   <title>Artboard 73</title>
   <g id="root">
@@ -70,14 +52,14 @@
     <path class="concrete-left" d="M142.5,189.082v2.887L0,109.696v-2.887Z"/>
     <path class="concrete-right" d="M142.5,191.969,285,109.696v-2.887L142.5,189.082Z"/>
     <path class="window-R-prim" d="M237.5,73.612,225,111.14l-82.5,47.631V128.46Z"/>
-    <g class="cls-2">
-      <path class="window-R-light" d="M147.5,135.677l105-60.622v5.774l-105,60.621Z"/>
-      <path class="window-R-light" d="M147.5,124.13l105-60.622v5.774l-105,60.621Z"/>
+    <g>
+      <polygon class="cls-1" points="233.334 86.121 147.5 135.677 147.5 141.45 230.952 93.269 233.334 86.121"/>
+      <polygon class="cls-1" points="147.5 129.903 235.714 78.973 237.5 73.612 147.5 125.573 147.5 129.903"/>
     </g>
     <path class="window-L-prim" d="M47.5,73.612,60,111.14l82.5,47.631V128.46Z"/>
-    <g class="cls-3">
-      <path class="window-L-light" d="M137.5,135.677,32.5,75.055v5.774l105,60.621Z"/>
-      <path class="window-L-light" d="M137.5,124.13,32.5,63.508v5.774l105,60.621Z"/>
+    <g>
+      <polygon class="cls-2" points="54.048 93.269 137.5 141.45 137.5 135.677 51.667 86.121 54.048 93.269"/>
+      <polygon class="cls-2" points="47.5 73.612 49.286 78.973 137.5 129.903 137.5 125.573 47.5 73.612"/>
     </g>
     <path class="exterior-L-prim" d="M240,121.243V75.055l-7.5-4.33V119.8l5,2.887Z"/>
     <path class="exterior-R-prim" d="M45,121.243V66.395l7.5,4.33V119.8l-5,2.887Z"/>
