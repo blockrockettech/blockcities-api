@@ -4,7 +4,7 @@ const imageBuilderService = require('../../functions/services/imageBuilder.servi
 
 void async function () {
 
-    const buildingRange = _.range(24, 25);
+    const buildingRange = _.range(1, 29);
 
     let total = 0;
 
