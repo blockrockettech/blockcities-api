@@ -24,8 +24,11 @@ void async function () {
         // console.log(roofs);
 
         for (let base in bases) {
+            // console.log('base', base);
             for (let body in bodies) {
+                // console.log('body', body);
                 for (let roof in roofs) {
+                    // console.log('body', body);
 
                     if (!fs.existsSync(__dirname + `/output/${buildId}`)) {
                         fs.mkdirSync(__dirname + `/output/${buildId}`);
