@@ -1,0 +1,95 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 287.232">
+  <defs>
+    <style>
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+    </style>
+  </defs>
+  <title>Artboard 72</title>
+  <g id="root">
+    <path class="top-prim" d="M42.5,11.547v5.774l30,17.32,20-17.32L62.5,0Z"/>
+    <path class="exterior-L-prim" d="M42.5,11.547V150.111l25-124.13Z"/>
+    <path class="exterior-L-prim" d="M75,27.424V21.651L50,12.99Z"/>
+    <path class="top-prim" d="M65,4.33l25,8.66L75,21.651,50,12.99Z"/>
+    <path id="anchor_65_44.744__70" data-name="anchor_65_44.744 _70" class="top-dark" d="M65,30.311l35,20.207,35-20.207V24.537L100,4.33,65,24.537Z"/>
+    <polygon class="curtain-R-prim-dark" points="100 287.232 92.5 282.902 95 41.858 100 44.745 135 24.537 200 229.497 100 287.232"/>
+    <polygon class="curtain-L-prim-dark" points="100 287.232 100 44.745 65 24.537 0 229.497 100 287.232"/>
+    <polygon class="curtain-R-prim-light" points="100 223.723 100 229.497 184.524 180.697 182.976 175.817 100 223.723"/>
+    <polygon class="curtain-R-prim-light" points="100 131.347 100 137.121 159.762 102.617 158.214 97.737 100 131.347"/>
+    <polygon class="curtain-R-prim-light" points="100 200.629 100 206.403 178.333 161.177 176.786 156.297 100 200.629"/>
+    <polygon class="curtain-R-prim-light" points="100 108.253 100 114.027 153.572 83.097 152.024 78.217 100 108.253"/>
+    <polygon class="curtain-R-prim-light" points="100 269.911 100 275.685 196.905 219.736 195.357 214.857 100 269.911"/>
+    <polygon class="curtain-R-prim-light" points="100 177.535 100 183.309 172.143 141.657 170.595 136.777 100 177.535"/>
+    <polygon class="curtain-R-prim-light" points="100 85.159 100 90.933 147.381 63.577 145.833 58.697 100 85.159"/>
+    <polygon class="curtain-R-prim-light" points="100 246.817 100 252.591 190.714 200.217 189.167 195.337 100 246.817"/>
+    <polygon class="curtain-R-prim-light" points="100 154.441 100 160.215 165.952 122.137 164.405 117.257 100 154.441"/>
+    <polygon class="curtain-R-prim-light" points="100 62.065 100 67.839 141.191 44.057 139.643 39.177 100 62.065"/>
+    <polygon class="curtain-R-prim-light" points="100 212.176 100 217.95 181.428 170.937 179.881 166.057 100 212.176"/>
+    <polygon class="curtain-R-prim-light" points="100 119.8 100 125.574 156.667 92.857 155.119 87.977 100 119.8"/>
+    <polygon class="curtain-R-prim-light" points="100 281.458 100 287.232 200 229.496 198.452 224.617 100 281.458"/>
+    <polygon class="curtain-R-prim-light" points="100 189.082 100 194.856 175.238 151.417 173.69 146.537 100 189.082"/>
+    <polygon class="curtain-R-prim-light" points="100 96.706 100 102.48 150.476 73.337 148.929 68.457 100 96.706"/>
+    <polygon class="curtain-R-prim-light" points="100 258.364 100 264.138 193.809 209.977 192.262 205.097 100 258.364"/>
+    <polygon class="curtain-R-prim-light" points="100 165.988 100 171.762 169.048 131.897 167.5 127.017 100 165.988"/>
+    <polygon class="curtain-R-prim-light" points="100 73.612 100 79.386 144.286 53.817 142.738 48.937 100 73.612"/>
+    <polygon class="curtain-R-prim-light" points="100 235.27 100 241.044 187.619 190.457 186.071 185.577 100 235.27"/>
+    <polygon class="curtain-R-prim-light" points="100 142.894 100 148.668 162.857 112.377 161.31 107.497 100 142.894"/>
+    <polygon class="curtain-R-prim-light" points="100 50.518 100 56.292 138.095 34.297 136.548 29.417 100 50.518"/>
+    <path class="top-prim" d="M107.5,49.075l2.5,7.217,27.5,15.877,20-11.547V54.848l-30-17.32Z"/>
+    <path class="exterior-L-prim" d="M137.5,66.395l5-2.886V251.147l-5,2.887-30-204.959Z"/>
+    <path class="exterior-R-prim" d="M137.5,254.034l20-11.547V54.848l-20,11.547Z"/>
+    <path class="exterior-L-prim" d="M135,62.065,110,38.971v8.66Z"/>
+    <path class="top-prim" d="M125,30.311l25,23.094-15,8.66L110,38.971Z"/>
+    <path class="curtain-L-prim-dark" d="M100,287.232V44.745L65,24.537,0,229.497Z"/>
+    <polygon class="curtain-L-prim-light" points="15.476 180.697 100 229.497 100 223.723 17.024 175.817 15.476 180.697"/>
+    <polygon class="curtain-L-prim-light" points="40.238 102.617 100 137.121 100 131.347 41.786 97.737 40.238 102.617"/>
+    <polygon class="curtain-L-prim-light" points="21.667 161.177 100 206.403 100 200.629 23.214 156.297 21.667 161.177"/>
+    <polygon class="curtain-L-prim-light" points="46.428 83.097 100 114.027 100 108.253 47.976 78.217 46.428 83.097"/>
+    <polygon class="curtain-L-prim-light" points="3.095 219.736 100 275.685 100 269.911 4.643 214.857 3.095 219.736"/>
+    <polygon class="curtain-L-prim-light" points="27.857 141.657 100 183.309 100 177.535 29.405 136.777 27.857 141.657"/>
+    <polygon class="curtain-L-prim-light" points="52.619 63.577 100 90.933 100 85.159 54.167 58.697 52.619 63.577"/>
+    <polygon class="curtain-L-prim-light" points="9.286 200.217 100 252.591 100 246.817 10.833 195.337 9.286 200.217"/>
+    <polygon class="curtain-L-prim-light" points="34.048 122.137 100 160.215 100 154.441 35.595 117.257 34.048 122.137"/>
+    <polygon class="curtain-L-prim-light" points="58.809 44.057 100 67.839 100 62.065 60.357 39.177 58.809 44.057"/>
+    <polygon class="curtain-L-prim-light" points="18.572 170.937 100 217.95 100 212.176 20.119 166.057 18.572 170.937"/>
+    <polygon class="curtain-L-prim-light" points="43.333 92.857 100 125.574 100 119.8 44.881 87.977 43.333 92.857"/>
+    <polygon class="curtain-L-prim-light" points="0 229.496 100 287.232 100 281.458 1.548 224.617 0 229.496"/>
+    <polygon class="curtain-L-prim-light" points="24.762 151.417 100 194.856 100 189.082 26.31 146.537 24.762 151.417"/>
+    <polygon class="curtain-L-prim-light" points="49.524 73.337 100 102.48 100 96.706 51.071 68.457 49.524 73.337"/>
+    <polygon class="curtain-L-prim-light" points="6.191 209.977 100 264.138 100 258.364 7.738 205.097 6.191 209.977"/>
+    <polygon class="curtain-L-prim-light" points="30.952 131.897 100 171.762 100 165.988 32.5 127.017 30.952 131.897"/>
+    <polygon class="curtain-L-prim-light" points="55.714 53.817 100 79.386 100 73.612 57.262 48.937 55.714 53.817"/>
+    <polygon class="curtain-L-prim-light" points="12.381 190.457 100 241.044 100 235.27 13.929 185.577 12.381 190.457"/>
+    <polygon class="curtain-L-prim-light" points="37.143 112.377 100 148.668 100 142.894 38.69 107.497 37.143 112.377"/>
+    <polygon class="curtain-L-prim-light" points="61.905 34.297 100 56.292 100 50.518 63.452 29.417 61.905 34.297"/>
+  </g>
+</svg>

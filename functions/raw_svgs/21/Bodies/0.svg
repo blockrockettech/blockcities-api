@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 422.909">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 414.249">
   <defs>
     <style>
-      .cls-1 {
-        fill: none;
-      }
-
       .top-prim {
         fill: #dd8a87;
       }
@@ -21,20 +17,12 @@
         fill: #d05752;
       }
 
-      .cls-2 {
-        clip-path: url(#clip-path);
-      }
-
       .window-R-prim {
         fill: #bd9664;
       }
 
       .window-R-light {
         fill: #eacb87;
-      }
-
-      .cls-3 {
-        clip-path: url(#clip-path-2);
       }
 
       .window-L-prim {
@@ -45,674 +33,698 @@
         fill: #795a30;
       }
     </style>
-    <clipPath id="clip-path">
-      <polygon class="cls-1" points="105 291.562 105 54.848 130 40.414 195 239.6 105 291.562"/>
-    </clipPath>
-    <clipPath id="clip-path-2">
-      <polygon class="cls-1" points="95 291.562 95 54.848 70 40.414 5 239.6 95 291.562"/>
-    </clipPath>
   </defs>
-  <title>root (12)</title>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1">
-      <g id="root">
-        <path class="top-prim" d="M42.5,24.537v5.774l30,17.32,25-14.434L62.5,12.99Z"/>
-        <path class="top-prim" d="M65,17.32l25,8.66L75,34.641,50,25.98Z"/>
-        <path class="exterior-L-prim" d="M75,40.414V34.641L50,25.98Z"/>
-        <path class="top-dark" d="M65,43.301l35,20.207,35-20.207V37.527L100,17.32,65,37.527Z"/>
-        <path class="exterior-L-prim" d="M42.5,24.537V163.101l25-124.13Z"/>
-        <path class="exterior-R-prim" d="M100,300.222l-10-5.774V51.961l10,5.774,35-20.208,65,204.96Z"/>
-        <path class="exterior-L-prim" d="M100,300.222V57.735L65,37.527,0,242.487Z"/>
-        <g class="cls-2">
-          <path class="window-R-prim" d="M200,357.957v5.773L97.5,422.909v-5.774Z"/>
-          <path class="window-R-prim" d="M200,311.769v5.773L97.5,376.721v-5.774Z"/>
-          <path class="window-R-prim" d="M200,265.581v5.773L97.5,330.533v-5.774Z"/>
-          <path class="window-R-prim" d="M200,219.393v5.773L97.5,284.345v-5.774Z"/>
-          <path class="window-R-prim" d="M200,173.205v5.773L97.5,238.157v-5.774Z"/>
-          <path class="window-R-prim" d="M200,127.017v5.773L97.5,191.969v-5.774Z"/>
-          <path class="window-R-prim" d="M200,80.829v5.773L97.5,145.78v-5.773Z"/>
-          <path class="window-R-prim" d="M200,34.641v5.773L97.5,99.592V93.819Z"/>
-          <path class="window-R-prim" d="M200,334.863v5.773L97.5,399.815v-5.774Z"/>
-          <path class="window-R-prim" d="M200,288.675v5.773L97.5,353.627v-5.774Z"/>
-          <path class="window-R-prim" d="M200,242.487v5.773L97.5,307.439v-5.774Z"/>
-          <path class="window-R-prim" d="M200,196.299v5.773L97.5,261.251v-5.774Z"/>
-          <path class="window-R-prim" d="M200,150.111v5.773L97.5,215.063v-5.774Z"/>
-          <path class="window-R-prim" d="M200,103.923v5.773L97.5,168.874v-5.773Z"/>
-          <path class="window-R-prim" d="M200,57.735v5.773L97.5,122.686v-5.773Z"/>
-          <path class="window-R-prim" d="M200,11.547V17.32L97.5,76.498V70.725Z"/>
-          <path class="window-R-prim" d="M200,346.41v5.773L97.5,411.362v-5.774Z"/>
-          <path class="window-R-prim" d="M200,300.222v5.773L97.5,365.174V359.4Z"/>
-          <path class="window-R-prim" d="M200,254.034v5.773L97.5,318.986v-5.774Z"/>
-          <path class="window-R-prim" d="M200,207.846v5.773L97.5,272.798v-5.774Z"/>
-          <path class="window-R-prim" d="M200,161.658v5.773L97.5,226.61v-5.774Z"/>
-          <path class="window-R-prim" d="M200,115.47v5.773L97.5,180.421v-5.773Z"/>
-          <path class="window-R-prim" d="M200,69.282v5.773L97.5,134.233V128.46Z"/>
-          <path class="window-R-prim" d="M200,23.094v5.773L97.5,88.045V82.272Z"/>
-          <path class="window-R-prim" d="M200,323.316v5.773L97.5,388.268v-5.774Z"/>
-          <path class="window-R-prim" d="M200,277.128v5.773L97.5,342.08v-5.774Z"/>
-          <path class="window-R-prim" d="M200,230.94v5.773L97.5,295.892v-5.774Z"/>
-          <path class="window-R-prim" d="M200,184.752v5.773L97.5,249.704V243.93Z"/>
-          <path class="window-R-prim" d="M200,138.564v5.773L97.5,203.516v-5.774Z"/>
-          <path class="window-R-prim" d="M200,92.376v5.773L97.5,157.327v-5.773Z"/>
-          <path class="window-R-prim" d="M200,46.188v5.773L97.5,111.139v-5.773Z"/>
-          <path class="window-R-prim" d="M200,0V5.773L97.5,64.951V59.178Z"/>
-          <path class="window-R-light" d="M105,412.805l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,401.258l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,389.711l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,378.164l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,366.617l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,407.031l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,395.484l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,383.937l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,372.39l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,389.711l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,378.164l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,366.617l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,355.07l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,343.523l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,383.937l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,372.39l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,360.843l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,349.296l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,366.617l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,355.07l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,343.523l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,331.976l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,320.429l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,360.843l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,349.296l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,337.749l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,326.202l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,343.523l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,331.976l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,320.429l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,308.882l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,297.335l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,337.749l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,326.202l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,314.655l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,303.108l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,320.429l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,308.882l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,297.335l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,285.788l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,274.241l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,314.655l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,303.108l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,291.561l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,280.014l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,297.335l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,285.788l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,274.241l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,262.694l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,251.147l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,291.561l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,280.014l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,268.467l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,256.92l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,274.241l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,262.694l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,251.147l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,239.6l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,228.053l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,268.467l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,256.92l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,245.373l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,233.826l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,251.147l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,239.6l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,228.053l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,216.506l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,204.959l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,245.373l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,233.826l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,222.279l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,210.732l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,228.053l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,216.506l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,204.959l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,193.412l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,181.865l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,222.279l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,210.732l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,199.185l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,187.638l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,204.959l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,193.412l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,181.865l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,170.318l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,158.771l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,199.185l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,187.638l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,176.091l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,164.544l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,181.865l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,170.318l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,158.771l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,147.224l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,135.677l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,176.091l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,164.544l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,152.997l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,141.45l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,158.771l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,147.224l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,135.677l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,124.13l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,112.583l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,152.997l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,141.45l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,129.903l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,118.356l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,135.677l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,124.13l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,112.583l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,101.036l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,89.489l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,129.903l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,118.356l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,106.809l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,95.262l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,112.583l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,101.036l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,89.489l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,77.942l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,66.395l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,106.809l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,95.262l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,83.715l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,72.168l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,89.489l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,77.942l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,66.395l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,54.848l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,43.301l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,83.715l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,72.168l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,60.621l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,49.074l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,66.395l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,54.848l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,43.301l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,31.754l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,20.207l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,60.621l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,49.074l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,37.527l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,25.98l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,401.258l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,389.711l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,378.164l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,366.617l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,355.07l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,395.484l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,383.937l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,372.39l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,360.843l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,378.164l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,366.617l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,355.07l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,343.523l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,331.976l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,372.39l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,360.843l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,349.296l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,337.749l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,355.07l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,343.523l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,331.976l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,320.429l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,308.882l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,349.296l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,337.749l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,326.202l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,314.655l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,331.976l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,320.429l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,308.882l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,297.335l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,285.788l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,326.202l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,314.655l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,303.108l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,291.561l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,308.882l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,297.335l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,285.788l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,274.241l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,262.694l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,303.108l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,291.561l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,280.014l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,268.467l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,285.788l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,274.241l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,262.694l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,251.147l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,239.6l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,280.014l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,268.467l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,256.92l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,245.373l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,262.694l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,251.147l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,239.6l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,228.053l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,216.506l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,256.92l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,245.373l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,233.826l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,222.279l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,239.6l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,228.053l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,216.506l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,204.959l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,193.412l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,233.826l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,222.279l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,210.732l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,199.185l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,216.506l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,204.959l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,193.412l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,181.865l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,170.318l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,210.732l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,199.185l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,187.638l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,176.091l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,193.412l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,181.865l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,170.318l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,158.771l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,147.224l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,187.638l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,176.091l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,164.544l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,152.997l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,170.318l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,158.771l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,147.224l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,135.677l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,124.13l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,164.544l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,152.997l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,141.45l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,129.903l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,147.224l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,135.677l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,124.13l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,112.583l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,101.036l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,141.45l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,129.903l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,118.356l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,106.809l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,124.13l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,112.583l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,101.036l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,89.489l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,77.942l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,118.356l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,106.809l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,95.262l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,83.715l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,101.036l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,89.489l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,77.942l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,66.395l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,54.848l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,95.262l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,83.715l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,72.168l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,60.621l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,77.942l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,66.395l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,54.848l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,43.301l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,31.754l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,72.168l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,60.621l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,49.074l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,37.527l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M105,54.848l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M125,43.301l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M145,31.754l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M165,20.207l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M185,8.66l5-2.887v5.774l-5,2.886Z"/>
-          <path class="window-R-light" d="M115,49.074l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M135,37.527l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M155,25.98l5-2.886v5.773l-5,2.887Z"/>
-          <path class="window-R-light" d="M175,14.433l5-2.886V17.32l-5,2.887Z"/>
-        </g>
-        <path class="top-prim" d="M107.5,62.065l2.5,7.217,27.5,15.877,20-11.547V67.838l-30-17.32Z"/>
-        <path class="exterior-L-prim" d="M137.5,79.385l5-2.886V264.137l-5,2.887-30-204.959Z"/>
-        <path class="exterior-R-prim" d="M137.5,267.024l20-11.547V67.838l-20,11.547Z"/>
-        <path class="exterior-L-prim" d="M135,75.055,110,51.961v8.66Z"/>
-        <path class="top-prim" d="M125,43.301l25,23.094-15,8.66L110,51.961Z"/>
-        <g class="cls-3">
-          <path class="window-L-prim" d="M0,357.957v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,311.769v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,265.581v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,219.393v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,173.205v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,127.017v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,80.829v5.773L102.5,145.78v-5.773Z"/>
-          <path class="window-L-prim" d="M0,34.641v5.773L102.5,99.592V93.819Z"/>
-          <path class="window-L-prim" d="M0,334.863v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,288.675v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,242.487v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,196.299v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,150.111v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,103.923v5.773l102.5,59.178v-5.773Z"/>
-          <path class="window-L-prim" d="M0,57.735v5.773l102.5,59.178v-5.773Z"/>
-          <path class="window-L-prim" d="M0,11.547V17.32L102.5,76.498V70.725Z"/>
-          <path class="window-L-prim" d="M0,346.41v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,300.222v5.773l102.5,59.179V359.4Z"/>
-          <path class="window-L-prim" d="M0,254.034v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,207.846v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,161.658v5.773L102.5,226.61v-5.774Z"/>
-          <path class="window-L-prim" d="M0,115.47v5.773l102.5,59.178v-5.773Z"/>
-          <path class="window-L-prim" d="M0,69.282v5.773l102.5,59.178V128.46Z"/>
-          <path class="window-L-prim" d="M0,23.094v5.773L102.5,88.045V82.272Z"/>
-          <path class="window-L-prim" d="M0,323.316v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,277.128v5.773L102.5,342.08v-5.774Z"/>
-          <path class="window-L-prim" d="M0,230.94v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,184.752v5.773l102.5,59.179V243.93Z"/>
-          <path class="window-L-prim" d="M0,138.564v5.773l102.5,59.179v-5.774Z"/>
-          <path class="window-L-prim" d="M0,92.376v5.773l102.5,59.178v-5.773Z"/>
-          <path class="window-L-prim" d="M0,46.188v5.773l102.5,59.178v-5.773Z"/>
-          <path class="window-L-prim" d="M0,0V5.773L102.5,64.951V59.178Z"/>
-          <path class="window-L-light" d="M95,412.805l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,401.258l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,389.711l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,378.164l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,366.617l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,407.031l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,395.484l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,383.937l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,372.39l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,366.617l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,355.07l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,343.523l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,331.976l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,320.429l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,360.843l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,349.296l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,337.749l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,326.202l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,320.429l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,308.882l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,297.335l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,285.788l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,274.241l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,314.655l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,303.108l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,291.561l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,280.014l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,274.241l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,262.694l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,251.147l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,239.6l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,228.053l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,268.467l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,256.92l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,245.373l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,233.826l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,228.053l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,216.506l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,204.959l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,193.412l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,181.865l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,222.279l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,210.732l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,199.185l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,187.638l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,181.865l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,170.318l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,158.771l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,147.224l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,135.677l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,176.091l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,164.544l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,152.997l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,141.45l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,135.677l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,124.13l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,112.583l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,101.036l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,89.489l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,129.903l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,118.356l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,106.809l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,95.262l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,89.489l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,77.942l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,66.395l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,54.848l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,43.301l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,83.715l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,72.168l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,60.621l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,49.074l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,401.258l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,389.711l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,378.164l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,366.617l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,355.07l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,395.484l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,383.937l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,372.39l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,360.843l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,355.07l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,343.523l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,331.976l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,320.429l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,308.882l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,349.296l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,337.749l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,326.202l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,314.655l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,308.882l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,297.335l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,285.788l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,274.241l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,262.694l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,303.108l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,291.561l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,280.014l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,268.467l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,262.694l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,251.147l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,239.6l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,228.053l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,216.506l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,256.92l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,245.373l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,233.826l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,222.279l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,216.506l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,204.959l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,193.412l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,181.865l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,170.318l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,210.732l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,199.185l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,187.638l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,176.091l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,170.318l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,158.771l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,147.224l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,135.677l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,124.13l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,164.544l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,152.997l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,141.45l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,129.903l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,124.13l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,112.583l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,101.036l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,89.489l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,77.942l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,118.356l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,106.809l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,95.262l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,83.715l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,77.942l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,66.395l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,54.848l-5-2.887v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M35,43.301l-5-2.887v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M15,31.754l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,72.168l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,60.621l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,49.074l-5-2.887v5.774l5,2.887Z"/>
-          <path class="window-L-light" d="M25,37.527,20,34.64v5.774l5,2.887Z"/>
-          <path class="window-L-light" d="M95,389.711l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,378.164l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,366.617l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,355.07l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,343.523l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,383.937l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,372.39l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,360.843l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,349.296l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,343.523l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,331.976l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,320.429l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,308.882l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,297.335l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,337.749l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,326.202l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,314.655l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,303.108l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,297.335l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,285.788l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,274.241l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,262.694l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,251.147l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,291.561l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,280.014l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,268.467l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,256.92l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,251.147l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,239.6l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,228.053l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,216.506l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,204.959l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,245.373l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,233.826l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,222.279l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,210.732l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,204.959l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,193.412l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,181.865l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,170.318l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,158.771l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,199.185l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,187.638l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,176.091l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,164.544l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,158.771l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,147.224l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,135.677l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,124.13l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,112.583l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,152.997l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,141.45l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,129.903l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,118.356l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,112.583l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,101.036l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,89.489l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,77.942l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,66.395l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,106.809l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,95.262l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,83.715l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,72.168l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,66.395l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,54.848l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,43.301l-5-2.887v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M35,31.754l-5-2.887V34.64l5,2.887Z"/>
-          <path class="window-L-light" d="M15,20.207,10,17.32v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M85,60.621l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,49.074l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,37.527,40,34.64v5.774l5,2.887Z"/>
-          <path class="window-L-light" d="M25,25.98l-5-2.887v5.774l5,2.887Z"/>
-          <path class="window-L-light" d="M95,378.164l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,366.617l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,355.07l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,343.523l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,331.976l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,372.39l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,360.843l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,349.296l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,337.749l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,331.976l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,320.429l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,308.882l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,297.335l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,285.788l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,326.202l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,314.655l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,303.108l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,291.561l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,285.788l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,274.241l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,262.694l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,251.147l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,239.6l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,280.014l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,268.467l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,256.92l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,245.373l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,239.6l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,228.053l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,216.506l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,204.959l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,193.412l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,233.826l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,222.279l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,210.732l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,199.185l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,193.412l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,181.865l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,170.318l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,158.771l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,147.224l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,187.638l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,176.091l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,164.544l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,152.997l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,147.224l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,135.677l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,124.13l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,112.583l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,101.036l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,141.45l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,129.903l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,118.356l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,106.809l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,101.036l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,89.489l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,77.942l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,66.395l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,54.848l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,95.262l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,83.715l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,72.168l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,60.621l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M95,54.848l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M75,43.301l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M55,31.754l-5-2.887v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M35,20.207,30,17.32v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M15,8.66,10,5.773v5.774l5,2.886Z"/>
-          <path class="window-L-light" d="M85,49.074l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M65,37.527l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M45,25.98l-5-2.886v5.773l5,2.887Z"/>
-          <path class="window-L-light" d="M25,14.433l-5-2.886V17.32l5,2.887Z"/>
-        </g>
-      </g>
-    </g>
+  <title>Artboard 60</title>
+  <g id="root">
+    <path class="top-prim" d="M42.5,11.547v5.774l30,17.32,25-14.434L62.5,0Z"/>
+    <path class="exterior-L-prim" d="M42.5,11.547V150.111l25-124.13Z"/>
+    <path class="exterior-L-prim" d="M75,27.424v-8.66L57.5,8.66,50,12.99Z"/>
+    <path class="top-prim" d="M65,4.33l25,8.66L75,21.651,50,12.99Z"/>
+    <path id="anchor_65_44.744__70" data-name="anchor_65_44.744 _70" class="top-dark" d="M65,30.311l35,20.207,35-20.207V24.537L100,4.33,65,24.537Z"/>
+    <path class="exterior-R-prim" d="M100,414.249l-5-2.887V41.858l5,2.887,35-20.208,65,331.977Z"/>
+    <path class="exterior-L-prim" d="M100,414.249V44.745L65,24.537,0,356.514Z"/>
+    <polygon class="window-R-prim" points="195 353.627 193.968 348.449 190 350.74 190 356.514 195 353.627"/>
+    <path class="window-R-prim" d="M130,385.3812v5.7737l15-8.66V376.721Zm5,2.887V382.495l5-2.887v5.773Z"/>
+    <polygon class="window-R-prim" points="175 365.174 175 359.401 180 356.514 180 362.287 176.475 364.322 185 359.4 185 353.627 170 362.287 170 368.061 175 365.174"/>
+    <path class="window-R-prim" d="M165,370.9474v-5.7732l-15,8.66v5.7735Zm-5-2.8863v5.773l-5,2.8869v-5.7729Z"/>
+    <path class="window-R-prim" d="M126.1168,387.6231,110,396.9283v5.7737l-1.81,1.0449L125,394.0416v-5.7734ZM120,396.9281l-5,2.8869v-5.7729l5-2.8872Z"/>
+    <polygon class="window-R-prim" points="105 399.815 105 399.815 107.386 398.438 105 399.815"/>
+    <path class="window-R-prim" d="M109.303,356.9164,125,347.8536V342.08l.0961-.0554L110,350.74v5.7737ZM115,347.8541l5-2.8872V350.74l-5,2.887Z"/>
+    <path class="window-R-prim" d="M165,324.7594v-5.7732l-15,8.66V333.42Zm-5-2.8863v5.773l-5,2.887V324.76Z"/>
+    <polygon class="window-R-prim" points="175 318.986 175 313.213 180 310.326 180 316.099 176.855 317.915 185 313.213 185 307.439 170 316.099 170 321.873 175 318.986"/>
+    <path class="window-R-prim" d="M145,336.3067v-5.7736l-15,8.66v5.7737Zm-5-2.8867v5.773l-5,2.8869V336.307Z"/>
+    <polygon class="window-R-prim" points="105 353.627 105 353.627 106.699 352.646 105 353.627"/>
+    <path class="window-R-prim" d="M109.2623,310.7521l20.101-11.6055L125,301.6651v-5.7732l.0961-.0554L110,304.5523v5.7737ZM115,301.6661l5-2.8872v5.7732l-5,2.887Z"/>
+    <polygon class="window-R-prim" points="105 307.439 105 307.439 106.699 306.458 105 307.439"/>
+    <polygon class="window-R-prim" points="148.558 288.064 145 290.118 145 284.345 138.5 288.098 140 287.232 140 293.005 135 295.892 135 290.119 130 293.005 130 298.779 148.558 288.064"/>
+    <polygon class="window-R-prim" points="167.753 276.982 165 278.571 165 272.798 159 276.262 160 275.685 160 281.458 155 284.345 155 278.572 150 281.458 150 287.232 167.753 276.982"/>
+    <polygon class="window-R-prim" points="178.492 270.782 178.492 270.782 177.362 271.434 178.492 270.782"/>
+    <polygon class="window-R-prim" points="175 272.798 175 267.025 170 269.911 170 275.685 175 272.798"/>
+    <polygon class="window-R-prim" points="170.238 229.359 170 228.164 170 229.497 170.238 229.359"/>
+    <polygon class="window-R-prim" points="167.753 230.794 165 232.383 165 226.61 158.755 230.216 160 229.497 160 235.27 155 238.157 155 232.384 150 235.27 150 241.044 167.753 230.794"/>
+    <polygon class="window-R-prim" points="129.363 252.959 125 255.477 125 249.704 125.359 249.497 117.918 253.793 120 252.591 120 258.364 115 261.251 115 255.477 110 258.364 110 264.138 105 267.024 105 267.025 129.363 252.959"/>
+    <polygon class="window-R-prim" points="105 261.251 105 261.251 106.436 260.422 105 261.251"/>
+    <polygon class="window-R-prim" points="148.558 241.876 145 243.93 145 238.157 138.337 242.004 140 241.044 140 246.817 135 249.704 135 243.931 130 246.817 130 252.591 148.558 241.876"/>
+    <polygon class="window-R-prim" points="161.984 187.937 160.952 182.759 159.089 183.835 160 183.309 160 189.082 155 191.969 155 186.196 150 189.082 150 194.856 161.984 187.937"/>
+    <path class="window-R-prim" d="M148.8539,195.5174,145,197.742v-5.7729l-15,8.66v5.7737ZM140,194.8561v5.7729l-5,2.887v-5.773Z"/>
+    <polygon class="window-R-prim" points="105 215.063 105 215.063 106.436 214.234 105 215.063"/>
+    <path class="window-R-prim" d="M108.19,218.995,125,209.29V203.516l.3589-.2073L110,212.1761v5.774ZM115,209.29l5-2.8872v5.773l-5,2.8872Z"/>
+    <polygon class="window-R-prim" points="129.483 160.513 125 163.101 125 157.328 125.096 157.273 118 161.369 120 160.215 120 165.988 115 168.875 115 163.101 110 165.988 110 171.762 105 174.648 105 174.649 129.483 160.513"/>
+    <polygon class="window-R-prim" points="153.73 146.514 152.698 141.337 150 142.894 150 148.668 153.73 146.514"/>
+    <polygon class="window-R-prim" points="148.75 149.39 145 151.554 145 145.781 138.5 149.534 140 148.668 140 154.441 135 157.328 135 151.555 130 154.441 130 160.215 148.75 149.39"/>
+    <polygon class="window-R-prim" points="105 168.875 105 168.875 106.699 167.894 105 168.875"/>
+    <polygon class="window-R-prim" points="105 122.687 105 122.687 106.699 121.706 105 122.687"/>
+    <polygon class="window-R-prim" points="129.363 114.395 125 116.913 125 111.14 125.096 111.085 118 115.181 120 114.027 120 119.8 115 122.687 115 116.913 110 119.8 110 125.574 105 128.46 105 128.461 129.363 114.395"/>
+    <polygon class="window-R-prim" points="145.476 105.092 145.476 105.091 145 105.366 145 102.702 144.445 99.914 138.5 103.346 140 102.48 140 108.253 135 111.14 135 105.367 130 108.253 130 114.027 145.476 105.092"/>
+    <polygon class="window-R-prim" points="129.363 68.207 125 70.725 125 64.952 125.359 64.745 117.918 69.041 120 67.839 120 73.612 115 76.499 115 70.725 110 73.612 110 79.386 105 82.272 105 82.273 129.363 68.207"/>
+    <polygon class="window-R-prim" points="105 76.499 105 76.499 106.436 75.67 105 76.499"/>
+    <polygon class="window-R-prim" points="137.222 63.669 137.222 63.669 135 64.952 135 59.179 130 62.065 130 67.839 137.222 63.669"/>
+    <path class="window-R-prim" d="M125.0961,365.1185,110,373.8341v5.7739l-.697.4024L125,370.9479v-5.774ZM120,373.8341l-5,2.8869v-5.7729l5-2.887Z"/>
+    <polygon class="window-R-prim" points="170 339.193 170 344.967 175 342.08 175 336.307 180 333.42 180 339.193 176.855 341.009 185 336.306 185 330.533 170 339.193"/>
+    <polygon class="window-R-prim" points="105 376.721 105 376.721 107.386 375.343 105 376.721"/>
+    <path class="window-R-prim" d="M150,350.74v5.7735l15-8.66V342.08Zm5,2.8868v-5.773l5-2.8872V350.74Z"/>
+    <path class="window-R-prim" d="M130,362.2872v5.7737l15-8.66v-5.7734Zm5,2.8867V359.401l5-2.887v5.773Z"/>
+    <polygon class="window-R-prim" points="190 328.535 190 333.42 190.873 332.916 190 328.535"/>
+    <path class="window-R-prim" d="M109.303,333.8224,125,324.76v-5.774l.0961-.0554L110,327.6461V333.42ZM115,324.76l5-2.887v5.773l-5,2.887Z"/>
+    <path class="window-R-prim" d="M145,313.2125v-5.7734l-15,8.66v5.7737Zm-5-2.8865v5.773l-5,2.8869V313.213Z"/>
+    <path class="window-R-prim" d="M165,301.6656v-5.7734l-15,8.66v5.7735Zm-5-2.8867v5.7732l-5,2.887v-5.773Z"/>
+    <polygon class="window-R-prim" points="175 295.892 175 290.119 180 287.232 180 293.005 176.855 294.821 182.619 291.493 181.587 286.316 170 293.005 170 298.779 175 295.892"/>
+    <polygon class="window-R-prim" points="105 330.533 105 330.533 106.699 329.552 105 330.533"/>
+    <polygon class="window-R-prim" points="129.363 276.053 125 278.571 125 272.798 125.076 272.754 118 276.839 120 275.685 120 281.458 115 284.345 115 278.571 110 281.458 110 287.232 105 290.118 105 290.119 129.363 276.053"/>
+    <polygon class="window-R-prim" points="105 284.345 105 284.345 106.699 283.364 105 284.345"/>
+    <polygon class="window-R-prim" points="148.558 264.97 145 267.024 145 261.251 138.5 265.004 140 264.138 140 269.911 135 272.798 135 267.025 130 269.911 130 275.685 148.558 264.97"/>
+    <polygon class="window-R-prim" points="167.753 253.888 165 255.477 165 249.704 159 253.168 160 252.591 160 258.364 155 261.251 155 255.478 150 258.364 150 264.138 167.753 253.888"/>
+    <polygon class="window-R-prim" points="174.365 250.07 173.333 244.893 170 246.817 170 252.591 174.365 250.07"/>
+    <polygon class="window-R-prim" points="148.854 218.611 145 220.836 145 215.063 138.633 218.739 140 217.95 140 223.723 135 226.61 135 220.837 130 223.723 130 229.497 148.854 218.611"/>
+    <polygon class="window-R-prim" points="105 238.157 105 238.157 106.436 237.328 105 238.157"/>
+    <polygon class="window-R-prim" points="129.363 229.865 125 232.383 125 226.61 125.359 226.403 117.918 230.699 120 229.497 120 235.27 115 238.157 115 232.383 110 235.27 110 241.044 105 243.93 105 243.931 129.363 229.865"/>
+    <polygon class="window-R-prim" points="166.111 208.648 166.111 208.648 165 209.289 165 203.516 159.089 206.929 160 206.403 160 212.176 155 215.063 155 209.29 150 212.176 150 217.95 166.111 208.648"/>
+    <polygon class="window-R-prim" points="105 191.969 105 191.969 107.386 190.591 105 191.969"/>
+    <polygon class="window-R-prim" points="148.942 172.373 145 174.648 145 168.875 138.5 172.628 140 171.762 140 177.535 135 180.422 135 174.649 130 177.535 130 183.309 148.942 172.373"/>
+    <polygon class="window-R-prim" points="129.726 183.467 125 186.195 125 180.422 125.096 180.366 117.821 184.567 120 183.309 120 189.082 115 191.969 115 186.195 110 189.082 110 194.856 105 197.742 105 197.743 129.726 183.467"/>
+    <polygon class="window-R-prim" points="157.857 167.225 157.857 167.225 155 168.875 155 163.102 150 165.988 150 171.762 157.857 167.225"/>
+    <polygon class="window-R-prim" points="105 145.781 105 145.781 106.699 144.8 105 145.781"/>
+    <polygon class="window-R-prim" points="129.483 137.419 125 140.007 125 134.234 125.096 134.178 118 138.275 120 137.121 120 142.894 115 145.781 115 140.007 110 142.894 110 148.668 105 151.554 105 151.555 129.483 137.419"/>
+    <polygon class="window-R-prim" points="148.75 126.296 145 128.46 145 122.687 138.5 126.44 140 125.574 140 131.347 135 134.234 135 128.461 130 131.347 130 137.121 148.75 126.296"/>
+    <polygon class="window-R-prim" points="105 99.593 105 99.593 106.699 98.612 105 99.593"/>
+    <polygon class="window-R-prim" points="141.349 84.38 140.318 79.202 138.5 80.252 140 79.386 140 85.159 135 88.046 135 82.273 130 85.159 130 90.933 141.349 84.38"/>
+    <polygon class="window-R-prim" points="129.363 91.3 125 93.819 125 88.046 125.076 88.002 118 92.088 120 90.933 120 96.706 115 99.593 115 93.819 110 96.706 110 102.48 105 105.366 105 105.367 129.363 91.3"/>
+    <polygon class="window-R-prim" points="133.095 42.958 132.064 37.78 130 38.971 130 44.745 133.095 42.958"/>
+    <polygon class="window-R-prim" points="105 53.405 105 53.405 106.436 52.576 105 53.405"/>
+    <polygon class="window-R-prim" points="129.363 45.112 125 47.631 125 41.858 125.359 41.651 117.918 45.947 120 44.745 120 50.518 115 53.405 115 47.631 110 50.518 110 56.292 105 59.178 105 59.179 129.363 45.112"/>
+    <path class="window-R-prim" d="M150,362.2872v5.7737l15-8.66v-5.7734Zm5,2.8867V359.401l5-2.887v5.773Z"/>
+    <polygon class="window-R-prim" points="170 350.74 170 356.514 175 353.627 175 347.854 180 344.967 180 350.74 176.475 352.775 185 347.853 185 342.08 170 350.74"/>
+    <path class="window-R-prim" d="M126.1168,376.0763,110,385.3812v5.7737L108.19,392.2,125,382.4947V376.721ZM120,385.381l-5,2.8872V382.495l5-2.887Z"/>
+    <polygon class="window-R-prim" points="105 388.268 105 388.268 107.386 386.89 105 388.268"/>
+    <polygon class="window-R-prim" points="192.936 343.271 191.905 338.094 190 339.193 190 344.967 192.936 343.271"/>
+    <path class="window-R-prim" d="M130,373.8343v5.7737l15-8.66v-5.7737Zm5,2.8867v-5.7729l5-2.887v5.773Z"/>
+    <path class="window-R-prim" d="M145,324.76v-5.7737l-15,8.66V333.42Zm-5-2.8865v5.773l-5,2.887V324.76Z"/>
+    <path class="window-R-prim" d="M165,313.2125v-5.7734l-15,8.66v5.7737Zm-5-2.8865v5.773l-5,2.8869V313.213Z"/>
+    <polygon class="window-R-prim" points="105 342.08 105 342.08 106.699 341.099 105 342.08"/>
+    <path class="window-R-prim" d="M109.303,345.37,125,336.3067v-5.7736l.0961-.0557L110,339.1932v5.7737ZM115,336.307l5-2.887v5.773l-5,2.8869Z"/>
+    <polygon class="window-R-prim" points="175 307.439 175 301.666 180 298.779 180 304.552 176.855 306.368 184.683 301.849 183.651 296.671 170 304.552 170 310.326 175 307.439"/>
+    <polygon class="window-R-prim" points="175 261.251 175 255.478 170 258.364 170 264.138 175 261.251"/>
+    <polygon class="window-R-prim" points="105 295.892 105 295.892 106.699 294.911 105 295.892"/>
+    <polygon class="window-R-prim" points="148.558 276.517 145 278.571 145 272.798 138.5 276.551 140 275.685 140 281.458 135 284.345 135 278.572 130 281.458 130 287.232 148.558 276.517"/>
+    <polygon class="window-R-prim" points="167.753 265.435 165 267.024 165 261.251 159 264.715 160 264.138 160 269.911 155 272.798 155 267.025 150 269.911 150 275.685 167.753 265.435"/>
+    <polygon class="window-R-prim" points="129.363 287.599 125 290.118 125 284.345 125.096 284.289 118 288.386 120 287.232 120 293.005 115 295.892 115 290.119 110 293.005 110 298.779 105 301.665 105 301.666 129.363 287.599"/>
+    <polygon class="window-R-prim" points="129.363 241.411 125 243.93 125 238.157 125.359 237.95 117.918 242.246 120 241.044 120 246.817 115 249.704 115 243.931 110 246.817 110 252.591 105 255.477 105 255.478 129.363 241.411"/>
+    <polygon class="window-R-prim" points="148.558 230.329 145 232.383 145 226.61 138.337 230.457 140 229.497 140 235.27 135 238.157 135 232.383 130 235.27 130 241.044 148.558 230.329"/>
+    <polygon class="window-R-prim" points="105 249.704 105 249.704 106.436 248.875 105 249.704"/>
+    <polygon class="window-R-prim" points="167.982 219.115 165 220.836 165 215.063 159.089 218.476 160 217.95 160 223.723 155 226.61 155 220.837 150 223.723 150 229.497 167.982 219.115"/>
+    <polygon class="window-R-prim" points="105 203.516 105 203.516 106.436 202.687 105 203.516"/>
+    <path class="window-R-prim" d="M108.19,207.4479l21.536-12.4339L125,197.742v-5.7729l.3589-.2073L110,200.6292v5.7737ZM115,197.743l5-2.8869v5.7729l-5,2.887Z"/>
+    <polygon class="window-R-prim" points="148.854 183.971 145 186.195 145 180.422 138.633 184.098 140 183.309 140 189.082 135 191.969 135 186.195 130 189.082 130 194.856 148.854 183.971"/>
+    <polygon class="window-R-prim" points="159.921 177.581 159.921 177.581 155 180.422 155 174.649 150 177.535 150 183.309 159.921 177.581"/>
+    <polygon class="window-R-prim" points="148.75 137.842 145 140.007 145 134.234 138.5 137.987 140 137.121 140 142.894 135 145.781 135 140.007 130 142.894 130 148.668 148.75 137.842"/>
+    <polygon class="window-R-prim" points="129.483 148.966 125 151.554 125 145.781 125.096 145.725 118 149.822 120 148.668 120 154.441 115 157.328 115 151.554 110 154.441 110 160.215 105 163.101 105 163.102 129.483 148.966"/>
+    <polygon class="window-R-prim" points="105 157.328 105 157.328 106.699 156.347 105 157.328"/>
+    <polygon class="window-R-prim" points="151.667 136.159 150.635 130.981 150 131.347 150 137.121 151.667 136.159"/>
+    <polygon class="window-R-prim" points="129.363 102.848 125 105.366 125 99.593 125.096 99.537 118 103.634 120 102.48 120 108.253 115 111.14 115 105.366 110 108.253 110 114.027 105 116.913 105 116.914 129.363 102.848"/>
+    <polygon class="window-R-prim" points="105 111.14 105 111.14 106.699 110.159 105 111.14"/>
+    <polygon class="window-R-prim" points="143.413 94.736 142.381 89.558 138.5 91.799 140 90.933 140 96.706 135 99.593 135 93.819 130 96.706 130 102.48 143.413 94.736"/>
+    <polygon class="window-R-prim" points="129.363 56.66 125 59.178 125 53.405 125.359 53.198 117.918 57.494 120 56.292 120 62.065 115 64.952 115 59.178 110 62.065 110 67.839 105 70.725 105 70.726 129.363 56.66"/>
+    <polygon class="window-R-prim" points="105 64.952 105 64.952 106.436 64.123 105 64.952"/>
+    <polygon class="window-R-prim" points="135.159 53.314 135.159 53.313 135 53.405 135 52.516 134.127 48.136 130 50.518 130 56.292 135.159 53.314"/>
+    <path class="window-R-prim" d="M109.303,368.4635,125,359.4007v-5.7736l.0961-.0557L110,362.2872v5.7739ZM115,359.401l5-2.887v5.773l-5,2.8869Z"/>
+    <path class="window-R-prim" d="M165,336.3065v-5.7734l-15,8.66v5.7734Zm-5-2.8865v5.773l-5,2.8869V336.307Z"/>
+    <path class="window-R-prim" d="M145,347.8536V342.08l-15,8.66v5.7737Zm-5-2.8867V350.74l-5,2.887v-5.773Z"/>
+    <polygon class="window-R-prim" points="105 365.174 105 365.174 106.699 364.193 105 365.174"/>
+    <polygon class="window-R-prim" points="175 330.533 175 324.76 180 321.873 180 327.646 176.855 329.462 185 324.759 185 318.986 170 327.646 170 333.42 175 330.533"/>
+    <polygon class="window-R-prim" points="175 284.345 175 278.572 179.524 275.96 179.524 275.96 170 281.458 170 287.232 175 284.345"/>
+    <polygon class="window-R-prim" points="105 318.986 105 318.986 106.699 318.005 105 318.986"/>
+    <polygon class="window-R-prim" points="178.156 282.523 180.556 281.137 180 278.349 180 281.458 178.156 282.523"/>
+    <path class="window-R-prim" d="M165,290.1185v-5.7734l-15,8.66v5.7734Zm-5-2.8865v5.773l-5,2.8869V290.119Z"/>
+    <path class="window-R-prim" d="M109.4479,322.1917,125,313.2127v-5.7736l.0961-.0557L110,316.0992v5.7739ZM115,313.213l5-2.887v5.773l-5,2.8869Z"/>
+    <path class="window-R-prim" d="M145,301.6656v-5.7734l-15,8.66v5.7735Zm-5-2.8867v5.7732l-5,2.887v-5.773Z"/>
+    <polygon class="window-R-prim" points="105 272.798 105 272.798 106.436 271.969 105 272.798"/>
+    <polygon class="window-R-prim" points="129.363 264.505 125 267.024 125 261.251 125.359 261.044 117.918 265.339 120 264.138 120 269.911 115 272.798 115 267.025 110 269.911 110 275.685 105 278.571 105 278.572 129.363 264.505"/>
+    <polygon class="window-R-prim" points="167.753 242.341 165 243.93 165 238.157 158.755 241.763 160 241.044 160 246.817 155 249.704 155 243.931 150 246.817 150 252.591 167.753 242.341"/>
+    <polygon class="window-R-prim" points="148.558 253.423 145 255.477 145 249.704 138.337 253.551 140 252.591 140 258.364 135 261.251 135 255.478 130 258.364 130 264.138 148.558 253.423"/>
+    <polygon class="window-R-prim" points="172.302 239.715 171.27 234.537 170 235.27 170 241.044 172.302 239.715"/>
+    <polygon class="window-R-prim" points="148.854 207.065 145 209.289 145 203.516 138.633 207.192 140 206.403 140 212.176 135 215.063 135 209.29 130 212.176 130 217.95 148.854 207.065"/>
+    <polygon class="window-R-prim" points="129.726 218.108 125 220.836 125 215.063 125.359 214.856 118.178 219.002 120 217.95 120 223.723 115 226.61 115 220.837 110 223.723 110 229.497 105 232.383 105 232.384 129.726 218.108"/>
+    <polygon class="window-R-prim" points="105 226.61 105 226.61 106.436 225.781 105 226.61"/>
+    <polygon class="window-R-prim" points="164.048 198.292 163.016 193.115 159.089 195.382 160 194.856 160 200.629 155 203.516 155 197.743 150 200.629 150 206.403 164.048 198.292"/>
+    <polygon class="window-R-prim" points="105 180.422 105 180.422 106.699 179.441 105 180.422"/>
+    <polygon class="window-R-prim" points="148.942 160.826 145 163.101 145 157.328 138.5 161.081 140 160.215 140 165.988 135 168.875 135 163.102 130 165.988 130 171.762 148.942 160.826"/>
+    <polygon class="window-R-prim" points="129.747 171.908 125 174.648 125 168.875 125.096 168.819 118 172.916 120 171.762 120 177.535 115 180.422 115 174.649 110 177.535 110 183.309 105 186.195 105 186.196 129.747 171.908"/>
+    <polygon class="window-R-prim" points="155.794 156.87 155.794 156.87 155 157.328 155 152.887 154.762 151.692 150 154.441 150 160.215 155.794 156.87"/>
+    <polygon class="window-R-prim" points="147.54 115.447 147.54 115.447 145 116.913 145 111.14 138.5 114.893 140 114.027 140 119.8 135 122.687 135 116.914 130 119.8 130 125.574 147.54 115.447"/>
+    <polygon class="window-R-prim" points="105 134.234 105 134.234 106.699 133.253 105 134.234"/>
+    <polygon class="window-R-prim" points="129.363 125.942 125 128.46 125 122.687 125.096 122.631 118 126.728 120 125.574 120 131.347 115 134.234 115 128.461 110 131.347 110 137.121 105 140.007 105 140.008 129.363 125.942"/>
+    <polygon class="window-R-prim" points="129.363 79.754 125 82.272 125 76.499 125.359 76.292 117.918 80.588 120 79.386 120 85.159 115 88.046 115 82.273 110 85.159 110 90.933 105 93.819 105 93.82 129.363 79.754"/>
+    <polygon class="window-R-prim" points="105 88.046 105 88.046 106.436 87.217 105 88.046"/>
+    <polygon class="window-R-prim" points="139.286 74.025 139.286 74.025 135 76.499 135 70.725 130 73.612 130 79.386 139.286 74.025"/>
+    <polygon class="window-R-prim" points="125 30.311 125.359 30.104 118.178 34.25 120 33.198 120 38.971 115 41.858 115 36.085 110.907 38.447 110 38.971 110 44.745 105 47.631 105 47.632 129.726 33.356 125 36.084 125 30.311"/>
+    <polygon class="window-R-prim" points="131.032 32.602 130 27.424 130 27.424 130 33.198 131.032 32.602"/>
+    <polygon class="window-R-light" points="110 396.928 110 396.928 107.386 398.438 105 399.815 105 405.589 108.19 403.747 110 402.702 110 396.928"/>
+    <polygon class="window-R-light" points="130 385.381 126.117 387.623 125 388.268 125 394.042 125 394.042 127.5 392.598 130 391.155 130 391.155 130 385.381 130 385.381"/>
+    <polygon class="window-R-light" points="150 373.834 150 373.834 145 376.721 145 376.721 145 382.495 145 382.495 150 379.608 150 379.608 150 373.834"/>
+    <polygon class="window-R-light" points="165 370.948 170 368.061 170 368.061 170 362.287 170 362.287 165 365.174 165 365.174 165 370.947 165 370.948"/>
+    <polygon class="window-R-light" points="185 359.4 190 356.514 190 356.514 190 350.74 190 350.74 185 353.627 185 353.627 185 359.4 185 359.4"/>
+    <polygon class="window-R-light" points="115 399.815 120 396.928 120 391.155 115 394.042 115 399.815"/>
+    <polygon class="window-R-light" points="135 382.495 135 388.268 140 385.381 140 379.608 135 382.495"/>
+    <polygon class="window-R-light" points="160 373.834 160 368.061 155 370.948 155 376.721 160 373.834"/>
+    <polygon class="window-R-light" points="180 356.514 175 359.401 175 365.174 175 365.174 176.475 364.322 180 362.287 180 356.514"/>
+    <polygon class="window-R-light" points="110 373.834 110 373.834 107.386 375.343 105 376.721 105 382.495 109.303 380.01 110 379.608 110 373.834"/>
+    <polygon class="window-R-light" points="130 362.287 125.096 365.119 125 365.174 125 370.948 125 370.948 130 368.061 130 368.061 130 362.287 130 362.287"/>
+    <polygon class="window-R-light" points="150 350.74 145 353.627 145 353.627 145 359.4 145 359.401 150 356.514 150 356.514 150 350.74 150 350.74"/>
+    <polygon class="window-R-light" points="170 339.193 165 342.08 165 342.08 165 347.854 165 347.854 170 344.967 170 344.967 170 339.193 170 339.193"/>
+    <polygon class="window-R-light" points="189.841 327.738 185 330.533 185 330.533 185 336.306 185 336.307 190 333.42 190 333.42 190 328.535 189.841 327.738"/>
+    <polygon class="window-R-light" points="115 376.721 120 373.834 120 368.061 115 370.948 115 376.721"/>
+    <polygon class="window-R-light" points="135 359.401 135 365.174 140 362.287 140 356.514 135 359.401"/>
+    <polygon class="window-R-light" points="155 347.854 155 353.627 160 350.74 160 344.967 155 347.854"/>
+    <polygon class="window-R-light" points="180 333.42 175 336.307 175 342.08 175 342.08 176.855 341.009 180 339.193 180 333.42"/>
+    <polygon class="window-R-light" points="110 356.514 110 350.74 110 350.74 106.699 352.646 105 353.627 105 359.401 109.303 356.916 110 356.514"/>
+    <polygon class="window-R-light" points="125 347.854 125 347.854 130 344.967 130 344.967 130 339.193 130 339.193 125.096 342.025 125 342.08 125 347.854"/>
+    <polygon class="window-R-light" points="145 336.307 150 333.42 150 333.42 150 327.646 150 327.646 145 330.533 145 330.533 145 336.307 145 336.307"/>
+    <polygon class="window-R-light" points="165 324.76 170 321.873 170 321.873 170 316.099 170 316.099 165 318.986 165 318.986 165 324.759 165 324.76"/>
+    <polygon class="window-R-light" points="185 313.213 186.746 312.205 185.714 307.026 185 307.439 185 307.439 185 313.213 185 313.213"/>
+    <polygon class="window-R-light" points="120 344.967 115 347.854 115 353.627 120 350.74 120 344.967"/>
+    <polygon class="window-R-light" points="140 339.193 140 333.42 135 336.307 135 342.08 140 339.193"/>
+    <polygon class="window-R-light" points="160 327.646 160 321.873 155 324.76 155 330.533 160 327.646"/>
+    <polygon class="window-R-light" points="180 310.326 175 313.213 175 318.986 175 318.986 176.855 317.915 180 316.099 180 310.326"/>
+    <polygon class="window-R-light" points="110 333.42 110 327.646 110 327.646 106.699 329.552 105 330.533 105 336.307 109.303 333.822 110 333.42"/>
+    <polygon class="window-R-light" points="125 324.76 125 324.76 130 321.873 130 321.873 130 316.099 130 316.099 125.096 318.931 125 318.986 125 324.76"/>
+    <polygon class="window-R-light" points="145 313.213 150 310.326 150 310.326 150 304.552 150 304.552 145 307.439 145 307.439 145 313.213 145 313.213"/>
+    <polygon class="window-R-light" points="165 301.666 170 298.779 170 298.779 170 293.005 170 293.005 165 295.892 165 295.892 165 301.666 165 301.666"/>
+    <polygon class="window-R-light" points="120 321.873 115 324.76 115 330.533 120 327.646 120 321.873"/>
+    <polygon class="window-R-light" points="140 316.099 140 310.326 135 313.213 135 318.986 140 316.099"/>
+    <polygon class="window-R-light" points="160 304.552 160 298.779 155 301.666 155 307.439 160 304.552"/>
+    <polygon class="window-R-light" points="180 287.232 175 290.119 175 295.892 175 295.892 176.855 294.821 180 293.005 180 287.232"/>
+    <polygon class="window-R-light" points="110 310.326 110 304.552 110 304.552 106.699 306.458 105 307.439 105 313.213 109.262 310.752 110 310.326"/>
+    <polygon class="window-R-light" points="125 301.665 129.363 299.147 130 298.779 130 298.779 130 293.005 130 293.005 125.096 295.837 125 295.892 125 301.665"/>
+    <polygon class="window-R-light" points="148.558 288.064 150 287.232 150 287.232 150 281.458 150 281.458 145 284.345 145 284.345 145 290.118 148.558 288.064"/>
+    <polygon class="window-R-light" points="167.753 276.982 170 275.685 170 275.685 170 269.911 170 269.911 165 272.798 165 272.798 165 278.571 167.753 276.982"/>
+    <polygon class="window-R-light" points="120 298.779 115 301.666 115 307.439 120 304.552 120 298.779"/>
+    <polygon class="window-R-light" points="140 293.005 140 287.232 138.5 288.098 135 290.118 135 290.119 135 295.892 140 293.005"/>
+    <polygon class="window-R-light" points="160 281.458 160 275.685 159 276.262 155 278.571 155 278.572 155 284.345 160 281.458"/>
+    <polygon class="window-R-light" points="175 272.798 177.362 271.434 178.492 270.782 177.46 265.604 175 267.024 175 267.025 175 272.798 175 272.798"/>
+    <polygon class="window-R-light" points="110 281.458 110 281.458 106.699 283.364 105 284.345 105 290.118 110 287.232 110 281.458"/>
+    <polygon class="window-R-light" points="125 278.571 129.363 276.053 130 275.685 130 275.685 130 269.911 130 269.911 125.076 272.754 125 272.798 125 278.571"/>
+    <polygon class="window-R-light" points="148.558 264.97 150 264.138 150 264.138 150 258.364 150 258.364 145 261.251 145 261.251 145 267.024 148.558 264.97"/>
+    <polygon class="window-R-light" points="167.753 253.888 170 252.591 170 252.591 170 246.817 170 246.817 165 249.704 165 249.704 165 255.477 167.753 253.888"/>
+    <polygon class="window-R-light" points="120 281.458 120 275.685 118 276.839 115 278.571 115 278.571 115 284.345 120 281.458"/>
+    <polygon class="window-R-light" points="140 269.911 140 264.138 138.5 265.004 135 267.024 135 267.025 135 272.798 140 269.911"/>
+    <polygon class="window-R-light" points="160 258.364 160 252.591 159 253.168 155 255.477 155 255.478 155 261.251 160 258.364"/>
+    <polygon class="window-R-light" points="110 258.364 110 258.364 106.436 260.422 105 261.251 105 267.024 110 264.138 110 258.364"/>
+    <polygon class="window-R-light" points="125 255.477 129.363 252.959 130 252.591 130 252.591 130 246.817 130 246.817 125.359 249.497 125 249.704 125 255.477"/>
+    <polygon class="window-R-light" points="148.558 241.876 150 241.044 150 241.044 150 235.27 150 235.27 145 238.157 145 238.157 145 243.93 148.558 241.876"/>
+    <polygon class="window-R-light" points="167.753 230.794 170 229.497 170 229.497 170 228.164 169.206 224.181 165 226.61 165 226.61 165 232.383 167.753 230.794"/>
+    <polygon class="window-R-light" points="120 258.364 120 252.591 117.918 253.793 115 255.477 115 255.477 115 261.251 120 258.364"/>
+    <polygon class="window-R-light" points="140 246.817 140 241.044 138.337 242.004 135 243.93 135 243.931 135 249.704 140 246.817"/>
+    <polygon class="window-R-light" points="160 235.27 160 229.497 158.755 230.216 155 232.383 155 232.384 155 238.157 160 235.27"/>
+    <polygon class="window-R-light" points="110 235.27 110 235.27 106.436 237.328 105 238.157 105 243.93 110 241.044 110 235.27"/>
+    <polygon class="window-R-light" points="125 232.383 129.363 229.865 130 229.497 130 229.497 130 223.723 130 223.723 125.359 226.403 125 226.61 125 232.383"/>
+    <polygon class="window-R-light" points="148.854 218.611 150 217.95 150 217.95 150 212.176 150 212.176 145 215.063 145 215.063 145 220.836 148.854 218.611"/>
+    <polygon class="window-R-light" points="166.111 208.648 165.079 203.47 165 203.516 165 203.516 165 209.289 166.111 208.648"/>
+    <polygon class="window-R-light" points="120 235.27 120 229.497 117.918 230.699 115 232.383 115 232.383 115 238.157 120 235.27"/>
+    <polygon class="window-R-light" points="140 223.723 140 217.95 138.633 218.739 135 220.836 135 220.837 135 226.61 140 223.723"/>
+    <polygon class="window-R-light" points="160 212.176 160 206.403 159.089 206.929 155 209.289 155 209.29 155 215.063 160 212.176"/>
+    <polygon class="window-R-light" points="110 217.95 110 212.176 110 212.176 106.436 214.234 105 215.063 105 220.837 108.19 218.995 110 217.95"/>
+    <polygon class="window-R-light" points="125 209.29 125 209.29 130 206.403 130 206.403 130 200.629 130 200.629 125.359 203.309 125 203.516 125 209.29"/>
+    <polygon class="window-R-light" points="148.854 195.517 150 194.856 150 194.856 150 189.082 150 189.082 145 191.969 145 191.969 145 197.742 148.854 195.517"/>
+    <polygon class="window-R-light" points="120 206.403 115 209.29 115 215.063 120 212.176 120 206.403"/>
+    <polygon class="window-R-light" points="140 200.629 140 194.856 135 197.743 135 203.516 140 200.629"/>
+    <polygon class="window-R-light" points="160 189.082 160 183.309 159.089 183.835 155 186.195 155 186.196 155 191.969 160 189.082"/>
+    <polygon class="window-R-light" points="110 189.082 110 189.082 107.386 190.591 105 191.969 105 197.742 110 194.856 110 189.082"/>
+    <polygon class="window-R-light" points="125 186.195 129.726 183.467 130 183.309 130 183.309 130 177.535 130 177.535 125.096 180.366 125 180.422 125 186.195"/>
+    <polygon class="window-R-light" points="148.942 172.373 150 171.762 150 171.762 150 165.988 150 165.988 145 168.875 145 168.875 145 174.648 148.942 172.373"/>
+    <polygon class="window-R-light" points="120 189.082 120 183.309 117.821 184.567 115 186.195 115 186.195 115 191.969 120 189.082"/>
+    <polygon class="window-R-light" points="140 177.535 140 171.762 138.5 172.628 135 174.648 135 174.649 135 180.422 140 177.535"/>
+    <polygon class="window-R-light" points="157.857 167.225 156.825 162.047 155 163.101 155 163.102 155 168.875 157.857 167.225"/>
+    <polygon class="window-R-light" points="110 165.988 110 165.988 106.699 167.894 105 168.875 105 174.648 110 171.762 110 165.988"/>
+    <polygon class="window-R-light" points="125 163.101 129.483 160.513 130 160.215 130 160.215 130 154.441 130 154.441 125.096 157.273 125 157.328 125 163.101"/>
+    <polygon class="window-R-light" points="148.75 149.39 150 148.668 150 148.668 150 142.894 150 142.894 145 145.781 145 145.781 145 151.554 148.75 149.39"/>
+    <polygon class="window-R-light" points="120 165.988 120 160.215 118 161.369 115 163.101 115 163.101 115 168.875 120 165.988"/>
+    <polygon class="window-R-light" points="140 154.441 140 148.668 138.5 149.534 135 151.554 135 151.555 135 157.328 140 154.441"/>
+    <polygon class="window-R-light" points="110 142.894 110 142.894 106.699 144.8 105 145.781 105 151.554 110 148.668 110 142.894"/>
+    <polygon class="window-R-light" points="125 140.007 129.483 137.419 130 137.121 130 137.121 130 131.347 130 131.347 125.096 134.178 125 134.234 125 140.007"/>
+    <polygon class="window-R-light" points="148.75 126.296 149.603 125.803 148.571 120.625 145 122.687 145 122.687 145 128.46 148.75 126.296"/>
+    <polygon class="window-R-light" points="120 142.894 120 137.121 118 138.275 115 140.007 115 140.007 115 145.781 120 142.894"/>
+    <polygon class="window-R-light" points="140 131.347 140 125.574 138.5 126.44 135 128.46 135 128.461 135 134.234 140 131.347"/>
+    <polygon class="window-R-light" points="110 119.8 110 119.8 106.699 121.706 105 122.687 105 128.46 110 125.574 110 119.8"/>
+    <polygon class="window-R-light" points="125 116.913 129.363 114.395 130 114.027 130 114.027 130 108.253 130 108.253 125.096 111.085 125 111.14 125 116.913"/>
+    <polygon class="window-R-light" points="145.476 105.091 145 102.702 145 105.366 145.476 105.091"/>
+    <polygon class="window-R-light" points="120 119.8 120 114.027 118 115.181 115 116.913 115 116.913 115 122.687 120 119.8"/>
+    <polygon class="window-R-light" points="140 108.253 140 102.48 138.5 103.346 135 105.366 135 105.367 135 111.14 140 108.253"/>
+    <polygon class="window-R-light" points="110 96.706 110 96.706 106.699 98.612 105 99.593 105 105.366 110 102.48 110 96.706"/>
+    <polygon class="window-R-light" points="125 93.819 129.363 91.3 130 90.933 130 90.933 130 85.159 130 85.159 125.076 88.002 125 88.046 125 93.819"/>
+    <polygon class="window-R-light" points="120 96.706 120 90.933 118 92.088 115 93.819 115 93.819 115 99.593 120 96.706"/>
+    <polygon class="window-R-light" points="140 85.159 140 79.386 138.5 80.252 135 82.272 135 82.273 135 88.046 140 85.159"/>
+    <polygon class="window-R-light" points="110 73.612 110 73.612 106.436 75.67 105 76.499 105 82.272 110 79.386 110 73.612"/>
+    <polygon class="window-R-light" points="125 70.725 129.363 68.207 130 67.839 130 67.839 130 62.065 130 62.065 125.359 64.745 125 64.952 125 70.725"/>
+    <polygon class="window-R-light" points="120 73.612 120 67.839 117.918 69.041 115 70.725 115 70.725 115 76.499 120 73.612"/>
+    <polygon class="window-R-light" points="137.222 63.669 136.19 58.491 135 59.178 135 59.179 135 64.952 137.222 63.669"/>
+    <polygon class="window-R-light" points="110 50.518 110 50.518 106.436 52.576 105 53.405 105 59.178 110 56.292 110 50.518"/>
+    <polygon class="window-R-light" points="125 47.631 129.363 45.112 130 44.745 130 44.745 130 38.971 130 38.971 125.359 41.651 125 41.858 125 47.631"/>
+    <polygon class="window-R-light" points="120 50.518 120 44.745 117.918 45.947 115 47.631 115 47.631 115 53.405 120 50.518"/>
+    <polygon class="window-R-light" points="110 385.381 110 385.381 107.386 386.89 105 388.268 105 394.042 108.19 392.2 110 391.155 110 385.381"/>
+    <polygon class="window-R-light" points="130 373.834 126.117 376.076 125 376.721 125 382.495 125 382.495 130 379.608 130 379.608 130 373.834 130 373.834"/>
+    <polygon class="window-R-light" points="150 362.287 145 365.174 145 365.174 145 370.948 145 370.948 150 368.061 150 368.061 150 362.287 150 362.287"/>
+    <polygon class="window-R-light" points="170 350.74 165 353.627 165 353.627 165 359.4 165 359.401 170 356.514 170 356.514 170 350.74 170 350.74"/>
+    <polygon class="window-R-light" points="190 344.967 190 344.967 190 339.193 190 339.193 185 342.08 185 342.08 185 347.853 185 347.854 190 344.967"/>
+    <polygon class="window-R-light" points="115 388.268 120 385.381 120 379.608 115 382.495 115 388.268"/>
+    <polygon class="window-R-light" points="135 370.948 135 376.721 140 373.834 140 368.061 135 370.948"/>
+    <polygon class="window-R-light" points="155 359.401 155 365.174 160 362.287 160 356.514 155 359.401"/>
+    <polygon class="window-R-light" points="180 344.967 175 347.854 175 353.627 175 353.627 176.475 352.775 180 350.74 180 344.967"/>
+    <polygon class="window-R-light" points="110 368.061 110 362.287 110 362.287 106.699 364.193 105 365.174 105 370.948 109.303 368.463 110 368.061"/>
+    <polygon class="window-R-light" points="125 359.401 125 359.401 130 356.514 130 356.514 130 350.74 130 350.74 125.096 353.571 125 353.627 125 359.401"/>
+    <polygon class="window-R-light" points="145 347.854 150 344.967 150 344.967 150 339.193 150 339.193 145 342.08 145 342.08 145 347.854 145 347.854"/>
+    <polygon class="window-R-light" points="165 336.307 170 333.42 170 333.42 170 327.646 170 327.646 165 330.533 165 330.533 165 336.306 165 336.307"/>
+    <polygon class="window-R-light" points="185 324.76 188.81 322.56 187.778 317.382 185 318.986 185 318.986 185 324.759 185 324.76"/>
+    <polygon class="window-R-light" points="120 356.514 115 359.401 115 365.174 120 362.287 120 356.514"/>
+    <polygon class="window-R-light" points="140 350.74 140 344.967 135 347.854 135 353.627 140 350.74"/>
+    <polygon class="window-R-light" points="160 339.193 160 333.42 155 336.307 155 342.08 160 339.193"/>
+    <polygon class="window-R-light" points="180 321.873 175 324.76 175 330.533 175 330.533 176.855 329.462 180 327.646 180 321.873"/>
+    <polygon class="window-R-light" points="110 344.967 110 339.193 110 339.193 106.699 341.099 105 342.08 105 347.854 109.303 345.369 110 344.967"/>
+    <polygon class="window-R-light" points="125 336.307 125 336.307 130 333.42 130 333.42 130 327.646 130 327.646 125.096 330.477 125 330.533 125 336.307"/>
+    <polygon class="window-R-light" points="145 324.76 150 321.873 150 321.873 150 316.099 150 316.099 145 318.986 145 318.986 145 324.76 145 324.76"/>
+    <polygon class="window-R-light" points="165 313.213 170 310.326 170 310.326 170 304.552 170 304.552 165 307.439 165 307.439 165 313.213 165 313.213"/>
+    <polygon class="window-R-light" points="120 333.42 115 336.307 115 342.08 120 339.193 120 333.42"/>
+    <polygon class="window-R-light" points="140 327.646 140 321.873 135 324.76 135 330.533 140 327.646"/>
+    <polygon class="window-R-light" points="160 316.099 160 310.326 155 313.213 155 318.986 160 316.099"/>
+    <polygon class="window-R-light" points="180 298.779 175 301.666 175 307.439 175 307.439 176.855 306.368 180 304.552 180 298.779"/>
+    <polygon class="window-R-light" points="110 321.873 110 316.099 110 316.099 106.699 318.005 105 318.986 105 324.76 109.448 322.192 110 321.873"/>
+    <polygon class="window-R-light" points="125 313.213 125 313.213 130 310.326 130 310.326 130 304.552 130 304.552 125.096 307.383 125 307.439 125 313.213"/>
+    <polygon class="window-R-light" points="145 301.666 150 298.779 150 298.779 150 293.005 150 293.005 145 295.892 145 295.892 145 301.666 145 301.666"/>
+    <polygon class="window-R-light" points="165 290.119 170 287.232 170 287.232 170 281.458 170 281.458 165 284.345 165 284.345 165 290.119 165 290.119"/>
+    <polygon class="window-R-light" points="120 310.326 115 313.213 115 318.986 120 316.099 120 310.326"/>
+    <polygon class="window-R-light" points="140 304.552 140 298.779 135 301.666 135 307.439 140 304.552"/>
+    <polygon class="window-R-light" points="160 293.005 160 287.232 155 290.119 155 295.892 160 293.005"/>
+    <polygon class="window-R-light" points="175 284.345 175 284.345 178.156 282.523 180 281.458 180 278.349 179.524 275.96 175 278.572 175 284.345"/>
+    <polygon class="window-R-light" points="110 293.005 110 293.005 106.699 294.911 105 295.892 105 301.665 110 298.779 110 293.005"/>
+    <polygon class="window-R-light" points="125 290.118 129.363 287.599 130 287.232 130 287.232 130 281.458 130 281.458 125.096 284.289 125 284.345 125 290.118"/>
+    <polygon class="window-R-light" points="148.558 276.517 150 275.685 150 275.685 150 269.911 150 269.911 145 272.798 145 272.798 145 278.571 148.558 276.517"/>
+    <polygon class="window-R-light" points="167.753 265.435 170 264.138 170 264.138 170 258.364 170 258.364 165 261.251 165 261.251 165 267.024 167.753 265.435"/>
+    <polygon class="window-R-light" points="120 293.005 120 287.232 118 288.386 115 290.118 115 290.119 115 295.892 120 293.005"/>
+    <polygon class="window-R-light" points="140 281.458 140 275.685 138.5 276.551 135 278.571 135 278.572 135 284.345 140 281.458"/>
+    <polygon class="window-R-light" points="160 269.911 160 264.138 159 264.715 155 267.024 155 267.025 155 272.798 160 269.911"/>
+    <polygon class="window-R-light" points="175 261.251 176.429 260.426 175.397 255.248 175 255.477 175 255.478 175 261.251 175 261.251"/>
+    <polygon class="window-R-light" points="110 269.911 110 269.911 106.436 271.969 105 272.798 105 278.571 110 275.685 110 269.911"/>
+    <polygon class="window-R-light" points="125 267.024 129.363 264.505 130 264.138 130 264.138 130 258.364 130 258.364 125.359 261.044 125 261.251 125 267.024"/>
+    <polygon class="window-R-light" points="148.558 253.423 150 252.591 150 252.591 150 246.817 150 246.817 145 249.704 145 249.704 145 255.477 148.558 253.423"/>
+    <polygon class="window-R-light" points="167.753 242.341 170 241.044 170 241.044 170 235.27 170 235.27 165 238.157 165 238.157 165 243.93 167.753 242.341"/>
+    <polygon class="window-R-light" points="120 269.911 120 264.138 117.918 265.339 115 267.024 115 267.025 115 272.798 120 269.911"/>
+    <polygon class="window-R-light" points="140 258.364 140 252.591 138.337 253.551 135 255.477 135 255.478 135 261.251 140 258.364"/>
+    <polygon class="window-R-light" points="160 246.817 160 241.044 158.755 241.763 155 243.93 155 243.931 155 249.704 160 246.817"/>
+    <polygon class="window-R-light" points="110 246.817 110 246.817 106.436 248.875 105 249.704 105 255.477 110 252.591 110 246.817"/>
+    <polygon class="window-R-light" points="125 243.93 129.363 241.411 130 241.044 130 241.044 130 235.27 130 235.27 125.359 237.95 125 238.157 125 243.93"/>
+    <polygon class="window-R-light" points="148.558 230.329 150 229.497 150 229.497 150 223.723 150 223.723 145 226.61 145 226.61 145 232.383 148.558 230.329"/>
+    <polygon class="window-R-light" points="167.982 219.115 168.175 219.004 167.143 213.826 165 215.063 165 215.063 165 220.836 167.982 219.115"/>
+    <polygon class="window-R-light" points="120 246.817 120 241.044 117.918 242.246 115 243.93 115 243.931 115 249.704 120 246.817"/>
+    <polygon class="window-R-light" points="140 235.27 140 229.497 138.337 230.457 135 232.383 135 232.383 135 238.157 140 235.27"/>
+    <polygon class="window-R-light" points="160 223.723 160 217.95 159.089 218.476 155 220.836 155 220.837 155 226.61 160 223.723"/>
+    <polygon class="window-R-light" points="110 223.723 110 223.723 106.436 225.781 105 226.61 105 232.383 110 229.497 110 223.723"/>
+    <polygon class="window-R-light" points="125 220.836 129.726 218.108 130 217.95 130 217.95 130 212.176 130 212.176 125.359 214.856 125 215.063 125 220.836"/>
+    <polygon class="window-R-light" points="148.854 207.065 150 206.403 150 206.403 150 200.629 150 200.629 145 203.516 145 203.516 145 209.289 148.854 207.065"/>
+    <polygon class="window-R-light" points="120 223.723 120 217.95 118.178 219.002 115 220.836 115 220.837 115 226.61 120 223.723"/>
+    <polygon class="window-R-light" points="140 212.176 140 206.403 138.633 207.192 135 209.289 135 209.29 135 215.063 140 212.176"/>
+    <polygon class="window-R-light" points="160 200.629 160 194.856 159.089 195.382 155 197.742 155 197.743 155 203.516 160 200.629"/>
+    <polygon class="window-R-light" points="110 206.403 110 200.629 110 200.629 106.436 202.687 105 203.516 105 209.29 108.19 207.448 110 206.403"/>
+    <polygon class="window-R-light" points="125 197.742 129.726 195.014 130 194.856 130 194.856 130 189.082 130 189.082 125.359 191.762 125 191.969 125 197.742"/>
+    <polygon class="window-R-light" points="148.854 183.971 150 183.309 150 183.309 150 177.535 150 177.535 145 180.422 145 180.422 145 186.195 148.854 183.971"/>
+    <polygon class="window-R-light" points="120 194.856 115 197.743 115 203.516 120 200.629 120 194.856"/>
+    <polygon class="window-R-light" points="140 189.082 140 183.309 138.633 184.098 135 186.195 135 186.195 135 191.969 140 189.082"/>
+    <polygon class="window-R-light" points="159.921 177.581 158.889 172.403 155 174.648 155 174.649 155 180.422 159.921 177.581"/>
+    <polygon class="window-R-light" points="110 177.535 110 177.535 106.699 179.441 105 180.422 105 186.195 110 183.309 110 177.535"/>
+    <polygon class="window-R-light" points="125 174.648 129.747 171.908 130 171.762 130 171.762 130 165.988 130 165.988 125.096 168.819 125 168.875 125 174.648"/>
+    <polygon class="window-R-light" points="148.942 160.826 150 160.215 150 160.215 150 154.441 150 154.441 145 157.328 145 157.328 145 163.101 148.942 160.826"/>
+    <polygon class="window-R-light" points="120 177.535 120 171.762 118 172.916 115 174.648 115 174.649 115 180.422 120 177.535"/>
+    <polygon class="window-R-light" points="140 165.988 140 160.215 138.5 161.081 135 163.101 135 163.102 135 168.875 140 165.988"/>
+    <polygon class="window-R-light" points="155.794 156.87 155 152.887 155 157.328 155.794 156.87"/>
+    <polygon class="window-R-light" points="110 154.441 110 154.441 106.699 156.347 105 157.328 105 163.101 110 160.215 110 154.441"/>
+    <polygon class="window-R-light" points="125 151.554 129.483 148.966 130 148.668 130 148.668 130 142.894 130 142.894 125.096 145.725 125 145.781 125 151.554"/>
+    <polygon class="window-R-light" points="148.75 137.842 150 137.121 150 137.121 150 131.347 150 131.347 145 134.234 145 134.234 145 140.007 148.75 137.842"/>
+    <polygon class="window-R-light" points="120 154.441 120 148.668 118 149.822 115 151.554 115 151.554 115 157.328 120 154.441"/>
+    <polygon class="window-R-light" points="140 142.894 140 137.121 138.5 137.987 135 140.007 135 140.007 135 145.781 140 142.894"/>
+    <polygon class="window-R-light" points="110 131.347 110 131.347 106.699 133.253 105 134.234 105 140.007 110 137.121 110 131.347"/>
+    <polygon class="window-R-light" points="125 128.46 129.363 125.942 130 125.574 130 125.574 130 119.8 130 119.8 125.096 122.631 125 122.687 125 128.46"/>
+    <polygon class="window-R-light" points="147.54 115.447 146.508 110.269 145 111.14 145 111.14 145 116.913 147.54 115.447"/>
+    <polygon class="window-R-light" points="120 131.347 120 125.574 118 126.728 115 128.46 115 128.461 115 134.234 120 131.347"/>
+    <polygon class="window-R-light" points="140 119.8 140 114.027 138.5 114.893 135 116.913 135 116.914 135 122.687 140 119.8"/>
+    <polygon class="window-R-light" points="110 108.253 110 108.253 106.699 110.159 105 111.14 105 116.913 110 114.027 110 108.253"/>
+    <polygon class="window-R-light" points="125 105.366 129.363 102.848 130 102.48 130 102.48 130 96.706 130 96.706 125.096 99.537 125 99.593 125 105.366"/>
+    <polygon class="window-R-light" points="120 108.253 120 102.48 118 103.634 115 105.366 115 105.366 115 111.14 120 108.253"/>
+    <polygon class="window-R-light" points="140 96.706 140 90.933 138.5 91.799 135 93.819 135 93.819 135 99.593 140 96.706"/>
+    <polygon class="window-R-light" points="110 85.159 110 85.159 106.436 87.217 105 88.046 105 93.819 110 90.933 110 85.159"/>
+    <polygon class="window-R-light" points="125 82.272 129.363 79.754 130 79.386 130 79.386 130 73.612 130 73.612 125.359 76.292 125 76.499 125 82.272"/>
+    <polygon class="window-R-light" points="120 85.159 120 79.386 117.918 80.588 115 82.272 115 82.273 115 88.046 120 85.159"/>
+    <polygon class="window-R-light" points="139.286 74.025 138.254 68.847 135 70.725 135 70.725 135 76.499 139.286 74.025"/>
+    <polygon class="window-R-light" points="110 62.065 110 62.065 106.436 64.123 105 64.952 105 70.725 110 67.839 110 62.065"/>
+    <polygon class="window-R-light" points="125 59.178 129.363 56.66 130 56.292 130 56.292 130 50.518 130 50.518 125.359 53.198 125 53.405 125 59.178"/>
+    <polygon class="window-R-light" points="120 62.065 120 56.292 117.918 57.494 115 59.178 115 59.178 115 64.952 120 62.065"/>
+    <polygon class="window-R-light" points="135.159 53.313 135 52.516 135 53.405 135.159 53.313"/>
+    <polygon class="window-R-light" points="110 38.971 105 41.858 105 47.631 110 44.745 110 38.971"/>
+    <polygon class="window-R-light" points="125.359 30.104 125 30.311 125 36.084 129.726 33.356 130 33.198 130 33.198 130 27.424 130 27.424 125.359 30.104"/>
+    <polygon class="window-R-light" points="120 38.971 120 33.198 118.178 34.25 117.5 34.641 115 36.084 115 36.085 115 41.858 120 38.971"/>
+    <path class="top-prim" d="M107.5,49.075l2.5,7.217,27.5,15.877,20-11.547V54.848l-30-17.32Z"/>
+    <path class="exterior-L-prim" d="M137.5,66.395l5-2.886V251.147l-5,2.887-30-204.959Z"/>
+    <path class="exterior-R-prim" d="M137.5,254.034l20-11.547V54.848l-20,11.547Z"/>
+    <path class="exterior-L-prim" d="M135,62.065l5-2.887L115,36.084l-5,2.887v8.66Z"/>
+    <path class="top-prim" d="M125,30.311l25,23.094-15,8.66L110,38.971Z"/>
+    <path class="window-L-prim" d="M35,365.1742v5.7732l15,8.66v-5.7735Zm5,8.66v-5.773l5,2.887v5.7729Z"/>
+    <path class="window-L-prim" d="M90,402.702v-5.7737l-16.1168-9.3052L75,388.2682v5.7734l16.81,9.7053Zm-5-2.887-5-2.8869v-5.7732l5,2.8872Z"/>
+    <polygon class="window-L-prim" points="6.032 348.449 5 353.627 10 356.514 10 350.74 6.032 348.449"/>
+    <polygon class="window-L-prim" points="15 353.627 15 359.4 23.525 364.322 20 362.287 20 356.514 25 359.401 25 365.174 30 368.061 30 362.287 15 353.627"/>
+    <polygon class="window-L-prim" points="95 399.815 92.614 398.438 95 399.815 95 399.815"/>
+    <path class="window-L-prim" d="M55,376.721v5.7737l15,8.66v-5.7737Zm5,8.66v-5.773l5,2.887v5.7732Z"/>
+    <polygon class="window-L-prim" points="45 324.76 45 330.533 40 327.646 40 321.873 41 322.45 35 318.986 35 324.759 31.983 323.018 50 333.42 50 327.646 45 324.76"/>
+    <path class="window-L-prim" d="M55,330.5331v5.7729l-3.75-2.1645L70,344.9669v-5.7737Zm5,8.66V333.42l5,2.887V342.08Z"/>
+    <polygon class="window-L-prim" points="25 313.213 25 318.986 30 321.873 30 316.099 25 313.213"/>
+    <polygon class="window-L-prim" points="20 310.326 20.5 310.615 15 307.439 15 313.213 23.145 317.915 20 316.099 20 310.326"/>
+    <path class="window-L-prim" d="M90,350.74l-15.0961-8.7158L75,342.08v5.7737l15.697,9.0628L90,356.514Zm-5,2.8868-5-2.887v-5.7732l5,2.8872Z"/>
+    <polygon class="window-L-prim" points="93.301 352.646 95 353.627 95 353.627 93.301 352.646"/>
+    <polygon class="window-L-prim" points="65 290.119 65 295.892 60 293.005 60 287.232 61.5 288.098 55 284.345 55 290.118 51.442 288.064 70 298.779 70 293.005 65 290.119"/>
+    <polygon class="window-L-prim" points="45 278.572 45 284.345 40 281.458 40 275.685 41 276.262 35 272.798 35 278.571 32.247 276.982 50 287.232 50 281.458 45 278.572"/>
+    <polygon class="window-L-prim" points="93.301 306.458 95 307.439 95 307.439 93.301 306.458"/>
+    <polygon class="window-L-prim" points="25 267.025 25 272.798 30 275.685 30 269.911 25 267.025"/>
+    <polygon class="window-L-prim" points="90 304.552 85 301.665 85 307.439 80 304.552 80 298.779 82 299.933 74.904 295.837 75 295.892 75 301.665 70.637 299.147 95 313.213 95 313.212 90 310.326 90 304.552"/>
+    <polygon class="window-L-prim" points="21.508 270.782 22.638 271.434 21.508 270.782 21.508 270.782"/>
+    <polygon class="window-L-prim" points="29.762 229.359 30 229.497 30 228.164 29.762 229.359"/>
+    <polygon class="window-L-prim" points="93.564 260.422 95 261.251 95 261.251 93.564 260.422"/>
+    <polygon class="window-L-prim" points="45 232.384 45 238.157 40 235.27 40 229.497 41.245 230.216 35 226.61 35 232.383 32.247 230.794 50 241.044 50 235.27 45 232.384"/>
+    <polygon class="window-L-prim" points="65 243.931 65 249.704 60 246.817 60 241.044 61.663 242.004 55 238.157 55 243.93 51.442 241.876 70 252.591 70 246.817 65 243.931"/>
+    <polygon class="window-L-prim" points="90 258.364 85 255.477 85 261.251 80 258.364 80 252.591 82.082 253.793 74.641 249.497 75 249.704 75 255.477 70.637 252.959 95 267.025 95 267.024 90 264.138 90 258.364"/>
+    <polygon class="window-L-prim" points="90 212.176 85 209.289 85 215.063 80 212.176 80 206.403 81.822 207.455 74.641 203.309 75 203.516 75 209.289 70.274 206.561 95 220.837 95 220.836 90 217.95 90 212.176"/>
+    <polygon class="window-L-prim" points="45 186.196 45 191.969 40 189.082 40 183.309 40.911 183.835 39.048 182.759 38.016 187.937 50 194.856 50 189.082 45 186.196"/>
+    <polygon class="window-L-prim" points="65 197.743 65 203.516 60 200.629 60 194.856 61.367 195.645 55 191.969 55 197.742 51.146 195.517 70 206.403 70 200.629 65 197.743"/>
+    <polygon class="window-L-prim" points="93.564 214.234 95 215.063 95 215.063 93.564 214.234"/>
+    <polygon class="window-L-prim" points="65 151.555 65 157.328 60 154.441 60 148.668 61.5 149.534 55 145.781 55 151.554 51.25 149.39 70 160.215 70 154.441 65 151.555"/>
+    <polygon class="window-L-prim" points="47.302 141.337 46.27 146.514 50 148.668 50 142.894 47.302 141.337"/>
+    <polygon class="window-L-prim" points="90 165.988 85 163.101 85 168.875 80 165.988 80 160.215 82 161.369 74.904 157.273 75 157.328 75 163.101 70.517 160.513 95 174.649 95 174.648 90 171.762 90 165.988"/>
+    <polygon class="window-L-prim" points="93.301 167.894 95 168.875 95 168.875 93.301 167.894"/>
+    <polygon class="window-L-prim" points="93.301 121.706 95 122.687 95 122.687 93.301 121.706"/>
+    <polygon class="window-L-prim" points="65 105.367 65 111.14 60 108.253 60 102.48 61.5 103.346 55.555 99.914 55 102.702 55 105.366 54.524 105.091 54.524 105.092 70 114.027 70 108.253 65 105.367"/>
+    <polygon class="window-L-prim" points="90 119.8 85 116.913 85 122.687 80 119.8 80 114.027 82 115.181 74.904 111.085 75 111.14 75 116.913 70.637 114.395 95 128.461 95 128.46 90 125.574 90 119.8"/>
+    <polygon class="window-L-prim" points="90 73.612 85 70.725 85 76.499 80 73.612 80 67.839 82.082 69.041 74.641 64.745 75 64.952 75 70.725 70.637 68.207 95 82.273 95 82.272 90 79.386 90 73.612"/>
+    <polygon class="window-L-prim" points="65 59.179 65 64.952 62.778 63.669 62.778 63.669 70 67.839 70 62.065 65 59.179"/>
+    <polygon class="window-L-prim" points="93.564 75.67 95 76.499 95 76.499 93.564 75.67"/>
+    <polygon class="window-L-prim" points="20 333.42 20.5 333.709 15 330.533 15 336.306 23.145 341.009 20 339.193 20 333.42"/>
+    <polygon class="window-L-prim" points="92.614 375.343 95 376.721 95 376.721 92.614 375.343"/>
+    <polygon class="window-L-prim" points="9.127 332.916 10 333.42 10 328.535 9.127 332.916"/>
+    <polygon class="window-L-prim" points="25 336.307 25 342.08 30 344.967 30 339.193 25 336.307"/>
+    <path class="window-L-prim" d="M55,353.6271V359.4l-3.75-2.1645L70,368.0609v-5.7737Zm5,8.66v-5.773l5,2.887v5.7729Z"/>
+    <polygon class="window-L-prim" points="45 347.854 45 353.627 40 350.74 40 344.967 41 345.544 35 342.08 35 347.853 31.983 346.112 50 356.514 50 350.74 45 347.854"/>
+    <path class="window-L-prim" d="M90,373.8341l-15.0961-8.7156.0961.0554v5.774L90.697,380.01,90,379.608Zm-5,2.8869-5-2.8869v-5.773l5,2.887Z"/>
+    <polygon class="window-L-prim" points="65 313.213 65 318.986 60 316.099 60 310.326 61.5 311.192 55 307.439 55 313.212 51.25 311.047 70 321.873 70 316.099 65 313.213"/>
+    <polygon class="window-L-prim" points="93.301 329.552 95 330.533 95 330.533 93.301 329.552"/>
+    <polygon class="window-L-prim" points="20 287.232 20.5 287.521 18.413 286.316 17.381 291.493 23.145 294.821 20 293.005 20 287.232"/>
+    <polygon class="window-L-prim" points="45 301.666 45 307.439 40 304.552 40 298.779 41 299.356 35 295.892 35 301.665 31.983 299.924 50 310.326 50 304.552 45 301.666"/>
+    <polygon class="window-L-prim" points="90 327.646 85 324.759 85 330.533 80 327.646 80 321.873 82 323.027 74.904 318.931 75 318.986 75 324.759 70.517 322.171 95 336.307 95 336.306 90 333.42 90 327.646"/>
+    <polygon class="window-L-prim" points="25 290.119 25 295.892 30 298.779 30 293.005 25 290.119"/>
+    <polygon class="window-L-prim" points="93.301 283.364 95 284.345 95 284.345 93.301 283.364"/>
+    <polygon class="window-L-prim" points="45 255.478 45 261.251 40 258.364 40 252.591 41 253.168 35 249.704 35 255.477 32.247 253.888 50 264.138 50 258.364 45 255.478"/>
+    <polygon class="window-L-prim" points="90 281.458 85 278.571 85 284.345 80 281.458 80 275.685 82 276.839 74.924 272.754 75 272.798 75 278.571 70.637 276.053 95 290.119 95 290.118 90 287.232 90 281.458"/>
+    <polygon class="window-L-prim" points="26.667 244.893 25.635 250.07 30 252.591 30 246.817 26.667 244.893"/>
+    <polygon class="window-L-prim" points="65 267.025 65 272.798 60 269.911 60 264.138 61.5 265.004 55 261.251 55 267.024 51.442 264.97 70 275.685 70 269.911 65 267.025"/>
+    <polygon class="window-L-prim" points="65 220.837 65 226.61 60 223.723 60 217.95 61.367 218.739 55 215.063 55 220.836 51.146 218.611 70 229.497 70 223.723 65 220.837"/>
+    <polygon class="window-L-prim" points="45 209.29 45 215.063 40 212.176 40 206.403 40.911 206.929 35 203.516 35 209.289 33.889 208.648 33.889 208.648 50 217.95 50 212.176 45 209.29"/>
+    <polygon class="window-L-prim" points="90 235.27 85 232.383 85 238.157 80 235.27 80 229.497 82.082 230.699 74.641 226.403 75 226.61 75 232.383 70.637 229.865 95 243.931 95 243.93 90 241.044 90 235.27"/>
+    <polygon class="window-L-prim" points="93.564 237.328 95 238.157 95 238.157 93.564 237.328"/>
+    <polygon class="window-L-prim" points="45 163.102 45 168.875 42.143 167.225 42.143 167.225 50 171.762 50 165.988 45 163.102"/>
+    <polygon class="window-L-prim" points="90 189.082 85 186.195 85 191.969 80 189.082 80 183.309 82.179 184.567 74.904 180.366 75 180.422 75 186.195 70.274 183.467 95 197.743 95 197.742 90 194.856 90 189.082"/>
+    <polygon class="window-L-prim" points="65 174.649 65 180.422 60 177.535 60 171.762 61.5 172.628 55 168.875 55 174.648 51.058 172.373 70 183.309 70 177.535 65 174.649"/>
+    <polygon class="window-L-prim" points="92.614 190.591 95 191.969 95 191.969 92.614 190.591"/>
+    <polygon class="window-L-prim" points="90 142.894 85 140.007 85 145.781 80 142.894 80 137.121 82 138.275 74.904 134.178 75 134.234 75 140.007 70.517 137.419 95 151.555 95 151.554 90 148.668 90 142.894"/>
+    <polygon class="window-L-prim" points="93.301 144.8 95 145.781 95 145.781 93.301 144.8"/>
+    <polygon class="window-L-prim" points="65 128.461 65 134.234 60 131.347 60 125.574 61.5 126.44 55 122.687 55 128.46 51.25 126.296 70 137.121 70 131.347 65 128.461"/>
+    <polygon class="window-L-prim" points="93.301 98.612 95 99.593 95 99.593 93.301 98.612"/>
+    <polygon class="window-L-prim" points="90 96.706 85 93.819 85 99.593 80 96.706 80 90.933 82 92.088 74.924 88.002 75 88.046 75 93.819 70.637 91.3 95 105.367 95 105.366 90 102.48 90 96.706"/>
+    <polygon class="window-L-prim" points="65 82.273 65 88.046 60 85.159 60 79.386 61.5 80.252 59.682 79.202 58.651 84.38 70 90.933 70 85.159 65 82.273"/>
+    <polygon class="window-L-prim" points="93.564 52.576 95 53.405 95 53.405 93.564 52.576"/>
+    <polygon class="window-L-prim" points="90 50.518 85 47.631 85 53.405 80 50.518 80 44.745 82.082 45.947 74.641 41.651 75 41.858 75 47.631 70.637 45.112 95 59.179 95 59.178 90 56.292 90 50.518"/>
+    <polygon class="window-L-prim" points="67.936 37.78 66.905 42.958 70 44.745 70 38.971 67.936 37.78"/>
+    <path class="window-L-prim" d="M90,385.3812l-16.1168-9.3049L75,376.721v5.7737L91.81,392.2,90,391.1549Zm-5,2.887-5-2.8872v-5.773l5,2.887Z"/>
+    <polygon class="window-L-prim" points="92.614 386.89 95 388.268 95 388.268 92.614 386.89"/>
+    <path class="window-L-prim" d="M35,353.6271V359.4l-3.1367-1.81L50,368.0609v-5.7737Zm5,8.66v-5.773l5,2.887v5.7729Z"/>
+    <polygon class="window-L-prim" points="20 344.967 20.5 345.255 15 342.08 15 347.853 23.525 352.775 20 350.74 20 344.967"/>
+    <polygon class="window-L-prim" points="25 347.854 25 353.627 30 356.514 30 350.74 25 347.854"/>
+    <polygon class="window-L-prim" points="8.095 338.094 7.064 343.271 10 344.967 10 339.193 8.095 338.094"/>
+    <path class="window-L-prim" d="M55,365.1739v5.7737l15,8.66v-5.7737Zm5,8.66v-5.773l5,2.887v5.7729Z"/>
+    <polygon class="window-L-prim" points="93.301 341.099 95 342.08 95 342.08 93.301 341.099"/>
+    <polygon class="window-L-prim" points="90 339.193 85 336.306 85 342.08 80 339.193 80 333.42 82 334.574 74.904 330.477 75 330.533 75 336.306 70.517 333.718 95 347.854 95 347.853 90 344.967 90 339.193"/>
+    <polygon class="window-L-prim" points="25 301.666 25 307.439 30 310.326 30 304.552 25 301.666"/>
+    <polygon class="window-L-prim" points="45 313.213 45 318.986 40 316.099 40 310.326 41 310.903 35 307.439 35 313.212 31.983 311.471 50 321.873 50 316.099 45 313.213"/>
+    <polygon class="window-L-prim" points="65 324.76 65 330.533 60 327.646 60 321.873 61.5 322.739 55 318.986 55 324.759 51.25 322.595 70 333.42 70 327.646 65 324.76"/>
+    <polygon class="window-L-prim" points="20 298.779 20.5 299.067 16.349 296.671 15.317 301.849 23.145 306.368 20 304.552 20 298.779"/>
+    <polygon class="window-L-prim" points="93.301 294.911 95 295.892 95 295.892 93.301 294.911"/>
+    <polygon class="window-L-prim" points="45 267.025 45 272.798 40 269.911 40 264.138 41 264.715 35 261.251 35 267.024 32.247 265.435 50 275.685 50 269.911 45 267.025"/>
+    <polygon class="window-L-prim" points="90 293.005 85 290.119 85 295.892 80 293.005 80 287.232 82 288.386 74.904 284.289 75 284.345 75 290.118 70.637 287.599 95 301.666 95 301.665 90 298.779 90 293.005"/>
+    <polygon class="window-L-prim" points="65 278.572 65 284.345 60 281.458 60 275.685 61.5 276.551 55 272.798 55 278.571 51.442 276.517 70 287.232 70 281.458 65 278.572"/>
+    <polygon class="window-L-prim" points="25 255.478 25 261.251 30 264.138 30 258.364 25 255.478"/>
+    <polygon class="window-L-prim" points="65 232.383 65 238.157 60 235.27 60 229.497 61.663 230.457 55 226.61 55 232.383 51.442 230.329 70 241.044 70 235.27 65 232.383"/>
+    <polygon class="window-L-prim" points="90 246.817 85 243.931 85 249.704 80 246.817 80 241.044 82.082 242.246 74.641 237.95 75 238.157 75 243.93 70.637 241.411 95 255.478 95 255.477 90 252.591 90 246.817"/>
+    <polygon class="window-L-prim" points="93.564 248.875 95 249.704 95 249.704 93.564 248.875"/>
+    <polygon class="window-L-prim" points="45 220.837 45 226.61 40 223.723 40 217.95 40.911 218.476 35 215.063 35 220.836 32.018 219.115 50 229.497 50 223.723 45 220.837"/>
+    <polygon class="window-L-prim" points="65 186.195 65 191.969 60 189.082 60 183.309 61.367 184.098 55 180.422 55 186.195 51.146 183.971 70 194.856 70 189.082 65 186.195"/>
+    <polygon class="window-L-prim" points="90 200.629 85 197.743 85 203.516 80 200.629 80 194.856 81.822 195.908 74.641 191.762 75 191.969 75 197.742 70.274 195.014 95 209.29 95 209.289 90 206.403 90 200.629"/>
+    <polygon class="window-L-prim" points="45 174.649 45 180.422 40.079 177.581 40.079 177.581 50 183.309 50 177.535 45 174.649"/>
+    <polygon class="window-L-prim" points="93.564 202.687 95 203.516 95 203.516 93.564 202.687"/>
+    <polygon class="window-L-prim" points="90 154.441 85 151.554 85 157.328 80 154.441 80 148.668 82 149.822 74.904 145.725 75 145.781 75 151.554 70.517 148.966 95 163.102 95 163.101 90 160.215 90 154.441"/>
+    <polygon class="window-L-prim" points="49.365 130.981 48.333 136.159 50 137.121 50 131.347 49.365 130.981"/>
+    <polygon class="window-L-prim" points="93.301 156.347 95 157.328 95 157.328 93.301 156.347"/>
+    <polygon class="window-L-prim" points="65 140.007 65 145.781 60 142.894 60 137.121 61.5 137.987 55 134.234 55 140.007 51.25 137.842 70 148.668 70 142.894 65 140.007"/>
+    <polygon class="window-L-prim" points="65 93.819 65 99.593 60 96.706 60 90.933 61.5 91.799 57.619 89.558 56.587 94.736 70 102.48 70 96.706 65 93.819"/>
+    <polygon class="window-L-prim" points="90 108.253 85 105.366 85 111.14 80 108.253 80 102.48 82 103.634 74.904 99.537 75 99.593 75 105.366 70.637 102.848 95 116.914 95 116.913 90 114.027 90 108.253"/>
+    <polygon class="window-L-prim" points="93.301 110.159 95 111.14 95 111.14 93.301 110.159"/>
+    <polygon class="window-L-prim" points="65.873 48.136 65 52.516 65 53.405 64.841 53.313 64.841 53.314 70 56.292 70 50.518 65.873 48.136"/>
+    <polygon class="window-L-prim" points="93.564 64.123 95 64.952 95 64.952 93.564 64.123"/>
+    <polygon class="window-L-prim" points="90 62.065 85 59.178 85 64.952 80 62.065 80 56.292 82.082 57.494 74.641 53.198 75 53.405 75 59.178 70.637 56.66 95 70.726 95 70.725 90 67.839 90 62.065"/>
+    <path class="window-L-prim" d="M35,330.5331v5.7734l15,8.66v-5.7734Zm5,8.66V333.42l5,2.887V342.08Z"/>
+    <path class="window-L-prim" d="M55,342.08v5.7734l15,8.66V350.74Zm5,8.66v-5.7732l5,2.8872v5.773Z"/>
+    <polygon class="window-L-prim" points="15 318.986 15 324.759 23.145 329.462 20 327.646 20 321.873 25 324.76 25 330.533 30 333.42 30 327.646 15 318.986"/>
+    <polygon class="window-L-prim" points="93.301 364.193 95 365.174 95 365.174 93.301 364.193"/>
+    <path class="window-L-prim" d="M90,362.2872l-15.0961-8.7158.0961.0557v5.7736l15.697,9.0628L90,368.0611Zm-5,2.8867-5-2.8869v-5.773l5,2.887Z"/>
+    <polygon class="window-L-prim" points="20 278.349 19.444 281.137 21.844 282.523 20 281.458 20 278.349"/>
+    <polygon class="window-L-prim" points="45 290.119 45 295.892 40 293.005 40 287.232 41 287.809 35 284.345 35 290.118 32.247 288.529 50 298.779 50 293.005 45 290.119"/>
+    <polygon class="window-L-prim" points="20.476 275.96 20.476 275.96 20.5 275.974 20.476 275.96"/>
+    <polygon class="window-L-prim" points="93.301 318.005 95 318.986 95 318.986 93.301 318.005"/>
+    <path class="window-L-prim" d="M90,316.0992l-15.0961-8.7158.0961.0557v5.7736l15.5521,8.979L90,321.8731Zm-5,2.8867-5-2.8869v-5.773l5,2.887Z"/>
+    <polygon class="window-L-prim" points="25 278.572 25 284.345 30 287.232 30 281.458 25 278.572"/>
+    <path class="window-L-prim" d="M55,295.8922v5.7729l-3.558-2.0537L70,310.3258v-5.7735Zm5,8.66v-5.7732l5,2.8872v5.773Z"/>
+    <polygon class="window-L-prim" points="90 269.911 85 267.025 85 272.798 80 269.911 80 264.138 82.082 265.339 74.641 261.044 75 261.251 75 267.024 70.637 264.505 95 278.572 95 278.571 90 275.685 90 269.911"/>
+    <polygon class="window-L-prim" points="93.564 271.969 95 272.798 95 272.798 93.564 271.969"/>
+    <polygon class="window-L-prim" points="28.73 234.537 27.698 239.715 30 241.044 30 235.27 28.73 234.537"/>
+    <polygon class="window-L-prim" points="45 243.931 45 249.704 40 246.817 40 241.044 41.245 241.763 35 238.157 35 243.93 32.247 242.341 50 252.591 50 246.817 45 243.931"/>
+    <polygon class="window-L-prim" points="65 255.478 65 261.251 60 258.364 60 252.591 61.663 253.551 55 249.704 55 255.477 51.442 253.423 70 264.138 70 258.364 65 255.478"/>
+    <polygon class="window-L-prim" points="65 209.29 65 215.063 60 212.176 60 206.403 61.367 207.192 55 203.516 55 209.289 51.146 207.065 70 217.95 70 212.176 65 209.29"/>
+    <polygon class="window-L-prim" points="45 197.743 45 203.516 40 200.629 40 194.856 40.911 195.382 36.984 193.115 35.952 198.292 50 206.403 50 200.629 45 197.743"/>
+    <polygon class="window-L-prim" points="93.564 225.781 95 226.61 95 226.61 93.564 225.781"/>
+    <polygon class="window-L-prim" points="90 223.723 85 220.837 85 226.61 80 223.723 80 217.95 81.822 219.002 74.641 214.856 75 215.063 75 220.836 70.274 218.108 95 232.384 95 232.383 90 229.497 90 223.723"/>
+    <polygon class="window-L-prim" points="90 177.535 85 174.649 85 180.422 80 177.535 80 171.762 82 172.916 74.904 168.819 75 168.875 75 174.648 70.253 171.908 95 186.196 95 186.195 90 183.309 90 177.535"/>
+    <polygon class="window-L-prim" points="93.301 179.441 95 180.422 95 180.422 93.301 179.441"/>
+    <polygon class="window-L-prim" points="65 163.102 65 168.875 60 165.988 60 160.215 61.5 161.081 55 157.328 55 163.101 51.058 160.826 70 171.762 70 165.988 65 163.102"/>
+    <polygon class="window-L-prim" points="45.238 151.692 45 152.887 45 157.328 44.206 156.87 44.206 156.87 50 160.215 50 154.441 45.238 151.692"/>
+    <polygon class="window-L-prim" points="90 131.347 85 128.461 85 134.234 80 131.347 80 125.574 82 126.728 74.904 122.631 75 122.687 75 128.46 70.637 125.942 95 140.008 95 140.007 90 137.121 90 131.347"/>
+    <polygon class="window-L-prim" points="93.301 133.253 95 134.234 95 134.234 93.301 133.253"/>
+    <polygon class="window-L-prim" points="65 116.914 65 122.687 60 119.8 60 114.027 61.5 114.893 55 111.14 55 116.913 52.46 115.447 52.46 115.447 70 125.574 70 119.8 65 116.914"/>
+    <polygon class="window-L-prim" points="90 85.159 85 82.273 85 88.046 80 85.159 80 79.386 82.082 80.588 74.641 76.292 75 76.499 75 82.272 70.637 79.754 95 93.82 95 93.819 90 90.933 90 85.159"/>
+    <polygon class="window-L-prim" points="93.564 87.217 95 88.046 95 88.046 93.564 87.217"/>
+    <polygon class="window-L-prim" points="65 70.725 65 76.499 60.714 74.025 60.714 74.025 70 79.386 70 73.612 65 70.725"/>
+    <polygon class="window-L-prim" points="75 30.311 75 36.084 70.274 33.356 95 47.632 95 47.631 90 44.745 90 38.971 89.093 38.447 85 36.085 85 41.858 80 38.971 80 33.198 81.822 34.25 74.641 30.104 75 30.311"/>
+    <polygon class="window-L-prim" points="70 27.424 68.968 32.602 70 33.198 70 27.424 70 27.424"/>
+    <polygon class="window-L-light" points="91.81 403.747 95 405.589 95 399.815 92.614 398.438 90 396.928 90 396.928 90 402.702 91.81 403.747"/>
+    <polygon class="window-L-light" points="73.883 387.623 70 385.381 70 385.381 70 391.155 70 391.155 72.5 392.598 75 394.042 75 394.042 75 388.268 73.883 387.623"/>
+    <polygon class="window-L-light" points="55 376.721 50 373.834 50 373.834 50 379.608 50 379.608 55 382.495 55 382.495 55 376.721 55 376.721"/>
+    <polygon class="window-L-light" points="35 365.174 30 362.287 30 362.287 30 368.061 30 368.061 35 370.948 35 370.947 35 365.174 35 365.174"/>
+    <polygon class="window-L-light" points="15 353.627 10 350.74 10 350.74 10 356.514 10 356.514 15 359.4 15 359.4 15 353.627 15 353.627"/>
+    <polygon class="window-L-light" points="80 396.928 85 399.815 85 394.042 80 391.155 80 396.928"/>
+    <polygon class="window-L-light" points="60 379.608 60 385.381 65 388.268 65 382.495 60 379.608"/>
+    <polygon class="window-L-light" points="40 368.061 40 373.834 45 376.721 45 370.948 40 368.061"/>
+    <polygon class="window-L-light" points="20 356.514 20 362.287 23.525 364.322 25 365.174 25 365.174 25 359.401 20 356.514"/>
+    <polygon class="window-L-light" points="90 350.74 90 350.74 90 356.514 90.697 356.916 95 359.401 95 353.627 93.301 352.646 90 350.74"/>
+    <polygon class="window-L-light" points="74.904 342.025 70 339.193 70 339.193 70 344.967 70 344.967 75 347.854 75 347.854 75 342.08 74.904 342.025"/>
+    <polygon class="window-L-light" points="55 330.533 55 330.533 50 327.646 50 327.646 50 333.42 50 333.42 51.25 334.141 55 336.306 55 330.533"/>
+    <polygon class="window-L-light" points="35 318.986 35 318.986 30 316.099 30 316.099 30 321.873 30 321.873 31.983 323.018 35 324.759 35 318.986"/>
+    <polygon class="window-L-light" points="15 307.439 14.286 307.026 13.254 312.205 15 313.213 15 313.213 15 307.439 15 307.439"/>
+    <polygon class="window-L-light" points="80 350.74 85 353.627 85 347.854 80 344.967 80 350.74"/>
+    <polygon class="window-L-light" points="60 333.42 60 339.193 65 342.08 65 336.307 60 333.42"/>
+    <polygon class="window-L-light" points="40 327.646 45 330.533 45 324.76 45 324.759 41 322.45 40 321.873 40 327.646"/>
+    <polygon class="window-L-light" points="25 313.212 20.5 310.615 20 310.326 20 316.099 23.145 317.915 25 318.986 25 318.986 25 313.213 25 313.212"/>
+    <polygon class="window-L-light" points="90 304.552 90 304.552 90 310.326 95 313.212 95 307.439 93.301 306.458 90 304.552"/>
+    <polygon class="window-L-light" points="75 295.892 74.904 295.837 70 293.005 70 293.005 70 298.779 70 298.779 70.637 299.147 75 301.665 75 295.892"/>
+    <polygon class="window-L-light" points="55 284.345 55 284.345 50 281.458 50 281.458 50 287.232 50 287.232 51.442 288.064 55 290.118 55 284.345"/>
+    <polygon class="window-L-light" points="35 272.798 35 272.798 30 269.911 30 269.911 30 275.685 30 275.685 32.247 276.982 35 278.571 35 272.798"/>
+    <polygon class="window-L-light" points="80 304.552 85 307.439 85 301.665 85 301.665 82 299.933 80 298.779 80 304.552"/>
+    <polygon class="window-L-light" points="60 293.005 65 295.892 65 290.119 65 290.118 61.5 288.098 60 287.232 60 293.005"/>
+    <polygon class="window-L-light" points="40 281.458 45 284.345 45 278.572 45 278.571 41 276.262 40 275.685 40 281.458"/>
+    <polygon class="window-L-light" points="25 267.024 22.54 265.604 21.508 270.782 22.638 271.434 25 272.798 25 272.798 25 267.025 25 267.024"/>
+    <polygon class="window-L-light" points="90 258.364 90 258.364 90 264.138 95 267.024 95 261.251 93.564 260.422 90 258.364"/>
+    <polygon class="window-L-light" points="75 249.704 74.641 249.497 70 246.817 70 246.817 70 252.591 70 252.591 70.637 252.959 75 255.477 75 249.704"/>
+    <polygon class="window-L-light" points="55 238.157 55 238.157 50 235.27 50 235.27 50 241.044 50 241.044 51.442 241.876 55 243.93 55 238.157"/>
+    <polygon class="window-L-light" points="35 226.61 35 226.61 30.794 224.181 30 228.164 30 229.497 30 229.497 32.247 230.794 35 232.383 35 226.61"/>
+    <polygon class="window-L-light" points="80 258.364 85 261.251 85 255.477 85 255.477 82.082 253.793 80 252.591 80 258.364"/>
+    <polygon class="window-L-light" points="60 246.817 65 249.704 65 243.931 65 243.93 61.663 242.004 60 241.044 60 246.817"/>
+    <polygon class="window-L-light" points="40 235.27 45 238.157 45 232.384 45 232.383 41.245 230.216 40 229.497 40 235.27"/>
+    <polygon class="window-L-light" points="90 212.176 90 212.176 90 217.95 95 220.836 95 215.063 93.564 214.234 90 212.176"/>
+    <polygon class="window-L-light" points="75 203.516 74.641 203.309 70 200.629 70 200.629 70 206.403 70 206.403 70.274 206.561 75 209.289 75 203.516"/>
+    <polygon class="window-L-light" points="55 191.969 55 191.969 50 189.082 50 189.082 50 194.856 50 194.856 51.146 195.517 55 197.742 55 191.969"/>
+    <polygon class="window-L-light" points="80 212.176 85 215.063 85 209.289 85 209.289 81.822 207.455 80 206.403 80 212.176"/>
+    <polygon class="window-L-light" points="60 200.629 65 203.516 65 197.743 65 197.742 61.367 195.645 60 194.856 60 200.629"/>
+    <polygon class="window-L-light" points="40 189.082 45 191.969 45 186.196 45 186.195 40.911 183.835 40 183.309 40 189.082"/>
+    <polygon class="window-L-light" points="90 165.988 90 165.988 90 171.762 95 174.648 95 168.875 93.301 167.894 90 165.988"/>
+    <polygon class="window-L-light" points="75 157.328 74.904 157.273 70 154.441 70 154.441 70 160.215 70 160.215 70.517 160.513 75 163.101 75 157.328"/>
+    <polygon class="window-L-light" points="55 145.781 55 145.781 50 142.894 50 142.894 50 148.668 50 148.668 51.25 149.39 55 151.554 55 145.781"/>
+    <polygon class="window-L-light" points="80 165.988 85 168.875 85 163.101 85 163.101 82 161.369 80 160.215 80 165.988"/>
+    <polygon class="window-L-light" points="60 154.441 65 157.328 65 151.555 65 151.554 61.5 149.534 60 148.668 60 154.441"/>
+    <polygon class="window-L-light" points="90 119.8 90 119.8 90 125.574 95 128.46 95 122.687 93.301 121.706 90 119.8"/>
+    <polygon class="window-L-light" points="75 111.14 74.904 111.085 70 108.253 70 108.253 70 114.027 70 114.027 70.637 114.395 75 116.913 75 111.14"/>
+    <polygon class="window-L-light" points="55 102.702 54.524 105.091 55 105.366 55 102.702"/>
+    <polygon class="window-L-light" points="80 119.8 85 122.687 85 116.913 85 116.913 82 115.181 80 114.027 80 119.8"/>
+    <polygon class="window-L-light" points="60 108.253 65 111.14 65 105.367 65 105.366 61.5 103.346 60 102.48 60 108.253"/>
+    <polygon class="window-L-light" points="90 73.612 90 73.612 90 79.386 95 82.272 95 76.499 93.564 75.67 90 73.612"/>
+    <polygon class="window-L-light" points="75 64.952 74.641 64.745 70 62.065 70 62.065 70 67.839 70 67.839 70.637 68.207 75 70.725 75 64.952"/>
+    <polygon class="window-L-light" points="80 73.612 85 76.499 85 70.725 85 70.725 82.082 69.041 80 67.839 80 73.612"/>
+    <polygon class="window-L-light" points="65 59.179 65 59.178 63.81 58.491 62.778 63.669 65 64.952 65 59.179"/>
+    <polygon class="window-L-light" points="90 385.381 90 385.381 90 391.155 91.81 392.2 95 394.042 95 388.268 92.614 386.89 90 385.381"/>
+    <polygon class="window-L-light" points="73.883 376.076 70 373.834 70 373.834 70 379.608 70 379.608 75 382.495 75 382.495 75 376.721 73.883 376.076"/>
+    <polygon class="window-L-light" points="55 365.174 50 362.287 50 362.287 50 368.061 50 368.061 55 370.948 55 370.948 55 365.174 55 365.174"/>
+    <polygon class="window-L-light" points="35 353.627 35 353.627 30 350.74 30 350.74 30 356.514 30 356.514 31.863 357.589 35 359.4 35 353.627"/>
+    <polygon class="window-L-light" points="15 342.08 10 339.193 10 339.193 10 344.967 10 344.967 15 347.854 15 347.853 15 342.08 15 342.08"/>
+    <polygon class="window-L-light" points="80 385.381 85 388.268 85 382.495 80 379.608 80 385.381"/>
+    <polygon class="window-L-light" points="60 368.061 60 373.834 65 376.721 65 370.948 60 368.061"/>
+    <polygon class="window-L-light" points="40 356.514 40 362.287 45 365.174 45 359.401 40 356.514"/>
+    <polygon class="window-L-light" points="25 347.853 20.5 345.255 20 344.967 20 350.74 23.525 352.775 25 353.627 25 353.627 25 347.854 25 347.853"/>
+    <polygon class="window-L-light" points="90 339.193 90 339.193 90 344.967 95 347.853 95 342.08 93.301 341.099 90 339.193"/>
+    <polygon class="window-L-light" points="75 330.533 74.904 330.477 70 327.646 70 327.646 70 333.42 70 333.42 70.517 333.718 75 336.306 75 330.533"/>
+    <polygon class="window-L-light" points="55 318.986 55 318.986 50 316.099 50 316.099 50 321.873 50 321.873 51.25 322.595 55 324.759 55 318.986"/>
+    <polygon class="window-L-light" points="35 307.439 35 307.439 30 304.552 30 304.552 30 310.326 30 310.326 31.983 311.471 35 313.212 35 307.439"/>
+    <polygon class="window-L-light" points="80 339.193 85 342.08 85 336.306 85 336.306 82 334.574 80 333.42 80 339.193"/>
+    <polygon class="window-L-light" points="60 327.646 65 330.533 65 324.76 65 324.759 61.5 322.739 60 321.873 60 327.646"/>
+    <polygon class="window-L-light" points="40 316.099 45 318.986 45 313.213 45 313.212 41 310.903 40 310.326 40 316.099"/>
+    <polygon class="window-L-light" points="25 301.665 20.5 299.067 20 298.779 20 304.552 23.145 306.368 25 307.439 25 307.439 25 301.666 25 301.665"/>
+    <polygon class="window-L-light" points="90 293.005 90 293.005 90 298.779 95 301.665 95 295.892 93.301 294.911 90 293.005"/>
+    <polygon class="window-L-light" points="75 284.345 74.904 284.289 70 281.458 70 281.458 70 287.232 70 287.232 70.637 287.599 75 290.118 75 284.345"/>
+    <polygon class="window-L-light" points="55 272.798 55 272.798 50 269.911 50 269.911 50 275.685 50 275.685 51.442 276.517 55 278.571 55 272.798"/>
+    <polygon class="window-L-light" points="35 261.251 35 261.251 30 258.364 30 258.364 30 264.138 30 264.138 32.247 265.435 35 267.024 35 261.251"/>
+    <polygon class="window-L-light" points="80 293.005 85 295.892 85 290.119 85 290.118 82 288.386 80 287.232 80 293.005"/>
+    <polygon class="window-L-light" points="60 281.458 65 284.345 65 278.572 65 278.571 61.5 276.551 60 275.685 60 281.458"/>
+    <polygon class="window-L-light" points="40 269.911 45 272.798 45 267.025 45 267.024 41 264.715 40 264.138 40 269.911"/>
+    <polygon class="window-L-light" points="25 255.477 24.603 255.248 23.571 260.426 25 261.251 25 261.251 25 255.478 25 255.477"/>
+    <polygon class="window-L-light" points="90 246.817 90 246.817 90 252.591 95 255.477 95 249.704 93.564 248.875 90 246.817"/>
+    <polygon class="window-L-light" points="75 238.157 74.641 237.95 70 235.27 70 235.27 70 241.044 70 241.044 70.637 241.411 75 243.93 75 238.157"/>
+    <polygon class="window-L-light" points="55 226.61 55 226.61 50 223.723 50 223.723 50 229.497 50 229.497 51.442 230.329 55 232.383 55 226.61"/>
+    <polygon class="window-L-light" points="35 215.063 35 215.063 32.857 213.826 31.825 219.004 32.018 219.115 35 220.836 35 215.063"/>
+    <polygon class="window-L-light" points="80 246.817 85 249.704 85 243.931 85 243.93 82.082 242.246 80 241.044 80 246.817"/>
+    <polygon class="window-L-light" points="60 235.27 65 238.157 65 232.383 65 232.383 61.663 230.457 60 229.497 60 235.27"/>
+    <polygon class="window-L-light" points="40 223.723 45 226.61 45 220.837 45 220.836 40.911 218.476 40 217.95 40 223.723"/>
+    <polygon class="window-L-light" points="90 200.629 90 200.629 90 206.403 95 209.289 95 203.516 93.564 202.687 90 200.629"/>
+    <polygon class="window-L-light" points="75 191.969 74.641 191.762 70 189.082 70 189.082 70 194.856 70 194.856 70.274 195.014 75 197.742 75 191.969"/>
+    <polygon class="window-L-light" points="55 180.422 55 180.422 50 177.535 50 177.535 50 183.309 50 183.309 51.146 183.971 55 186.195 55 180.422"/>
+    <polygon class="window-L-light" points="80 200.629 85 203.516 85 197.743 85 197.742 81.822 195.908 80 194.856 80 200.629"/>
+    <polygon class="window-L-light" points="60 189.082 65 191.969 65 186.195 65 186.195 61.367 184.098 60 183.309 60 189.082"/>
+    <polygon class="window-L-light" points="45 174.649 45 174.648 41.111 172.403 40.079 177.581 45 180.422 45 174.649"/>
+    <polygon class="window-L-light" points="90 154.441 90 154.441 90 160.215 95 163.101 95 157.328 93.301 156.347 90 154.441"/>
+    <polygon class="window-L-light" points="75 145.781 74.904 145.725 70 142.894 70 142.894 70 148.668 70 148.668 70.517 148.966 75 151.554 75 145.781"/>
+    <polygon class="window-L-light" points="55 134.234 55 134.234 50 131.347 50 131.347 50 137.121 50 137.121 51.25 137.842 55 140.007 55 134.234"/>
+    <polygon class="window-L-light" points="80 154.441 85 157.328 85 151.554 85 151.554 82 149.822 80 148.668 80 154.441"/>
+    <polygon class="window-L-light" points="60 142.894 65 145.781 65 140.007 65 140.007 61.5 137.987 60 137.121 60 142.894"/>
+    <polygon class="window-L-light" points="90 108.253 90 108.253 90 114.027 95 116.913 95 111.14 93.301 110.159 90 108.253"/>
+    <polygon class="window-L-light" points="75 99.593 74.904 99.537 70 96.706 70 96.706 70 102.48 70 102.48 70.637 102.848 75 105.366 75 99.593"/>
+    <polygon class="window-L-light" points="80 108.253 85 111.14 85 105.366 85 105.366 82 103.634 80 102.48 80 108.253"/>
+    <polygon class="window-L-light" points="60 96.706 65 99.593 65 93.819 65 93.819 61.5 91.799 60 90.933 60 96.706"/>
+    <polygon class="window-L-light" points="90 62.065 90 62.065 90 67.839 95 70.725 95 64.952 93.564 64.123 90 62.065"/>
+    <polygon class="window-L-light" points="75 53.405 74.641 53.198 70 50.518 70 50.518 70 56.292 70 56.292 70.637 56.66 75 59.178 75 53.405"/>
+    <polygon class="window-L-light" points="80 62.065 85 64.952 85 59.178 85 59.178 82.082 57.494 80 56.292 80 62.065"/>
+    <polygon class="window-L-light" points="65 52.516 64.841 53.313 65 53.405 65 52.516"/>
+    <polygon class="window-L-light" points="90 373.834 90 373.834 90 379.608 90.697 380.01 95 382.495 95 376.721 92.614 375.343 90 373.834"/>
+    <polygon class="window-L-light" points="74.904 365.119 70 362.287 70 362.287 70 368.061 70 368.061 75 370.948 75 370.948 75 365.174 74.904 365.119"/>
+    <polygon class="window-L-light" points="55 353.627 55 353.627 50 350.74 50 350.74 50 356.514 50 356.514 51.25 357.235 55 359.4 55 353.627"/>
+    <polygon class="window-L-light" points="35 342.08 35 342.08 30 339.193 30 339.193 30 344.967 30 344.967 31.983 346.112 35 347.853 35 342.08"/>
+    <polygon class="window-L-light" points="15 330.533 10.159 327.738 10 328.535 10 333.42 10 333.42 15 336.307 15 336.306 15 330.533 15 330.533"/>
+    <polygon class="window-L-light" points="80 373.834 85 376.721 85 370.948 80 368.061 80 373.834"/>
+    <polygon class="window-L-light" points="60 356.514 60 362.287 65 365.174 65 359.401 60 356.514"/>
+    <polygon class="window-L-light" points="40 350.74 45 353.627 45 347.854 45 347.853 41 345.544 40 344.967 40 350.74"/>
+    <polygon class="window-L-light" points="25 336.306 20.5 333.709 20 333.42 20 339.193 23.145 341.009 25 342.08 25 342.08 25 336.307 25 336.306"/>
+    <polygon class="window-L-light" points="90 327.646 90 327.646 90 333.42 95 336.306 95 330.533 93.301 329.552 90 327.646"/>
+    <polygon class="window-L-light" points="75 318.986 74.904 318.931 70 316.099 70 316.099 70 321.873 70 321.873 70.517 322.171 75 324.759 75 318.986"/>
+    <polygon class="window-L-light" points="55 307.439 55 307.439 50 304.552 50 304.552 50 310.326 50 310.326 51.25 311.047 55 313.212 55 307.439"/>
+    <polygon class="window-L-light" points="35 295.892 35 295.892 30 293.005 30 293.005 30 298.779 30 298.779 31.983 299.924 35 301.665 35 295.892"/>
+    <polygon class="window-L-light" points="80 327.646 85 330.533 85 324.759 85 324.759 82 323.027 80 321.873 80 327.646"/>
+    <polygon class="window-L-light" points="60 316.099 65 318.986 65 313.213 65 313.212 61.5 311.192 60 310.326 60 316.099"/>
+    <polygon class="window-L-light" points="40 304.552 45 307.439 45 301.666 45 301.665 41 299.356 40 298.779 40 304.552"/>
+    <polygon class="window-L-light" points="25 290.118 20.5 287.521 20 287.232 20 293.005 23.145 294.821 25 295.892 25 295.892 25 290.119 25 290.118"/>
+    <polygon class="window-L-light" points="90 281.458 90 281.458 90 287.232 95 290.118 95 284.345 93.301 283.364 90 281.458"/>
+    <polygon class="window-L-light" points="75 272.798 74.924 272.754 70 269.911 70 269.911 70 275.685 70 275.685 70.637 276.053 75 278.571 75 272.798"/>
+    <polygon class="window-L-light" points="55 261.251 55 261.251 50 258.364 50 258.364 50 264.138 50 264.138 51.442 264.97 55 267.024 55 261.251"/>
+    <polygon class="window-L-light" points="35 249.704 35 249.704 30 246.817 30 246.817 30 252.591 30 252.591 32.247 253.888 35 255.477 35 249.704"/>
+    <polygon class="window-L-light" points="80 281.458 85 284.345 85 278.571 85 278.571 82 276.839 80 275.685 80 281.458"/>
+    <polygon class="window-L-light" points="60 269.911 65 272.798 65 267.025 65 267.024 61.5 265.004 60 264.138 60 269.911"/>
+    <polygon class="window-L-light" points="40 258.364 45 261.251 45 255.478 45 255.477 41 253.168 40 252.591 40 258.364"/>
+    <polygon class="window-L-light" points="90 235.27 90 235.27 90 241.044 95 243.93 95 238.157 93.564 237.328 90 235.27"/>
+    <polygon class="window-L-light" points="75 226.61 74.641 226.403 70 223.723 70 223.723 70 229.497 70 229.497 70.637 229.865 75 232.383 75 226.61"/>
+    <polygon class="window-L-light" points="55 215.063 55 215.063 50 212.176 50 212.176 50 217.95 50 217.95 51.146 218.611 55 220.836 55 215.063"/>
+    <polygon class="window-L-light" points="35 203.516 35 203.516 34.921 203.47 33.889 208.648 35 209.289 35 203.516"/>
+    <polygon class="window-L-light" points="80 235.27 85 238.157 85 232.383 85 232.383 82.082 230.699 80 229.497 80 235.27"/>
+    <polygon class="window-L-light" points="60 223.723 65 226.61 65 220.837 65 220.836 61.367 218.739 60 217.95 60 223.723"/>
+    <polygon class="window-L-light" points="40 212.176 45 215.063 45 209.29 45 209.289 40.911 206.929 40 206.403 40 212.176"/>
+    <polygon class="window-L-light" points="90 189.082 90 189.082 90 194.856 95 197.742 95 191.969 92.614 190.591 90 189.082"/>
+    <polygon class="window-L-light" points="75 180.422 74.904 180.366 70 177.535 70 177.535 70 183.309 70 183.309 70.274 183.467 75 186.195 75 180.422"/>
+    <polygon class="window-L-light" points="55 168.875 55 168.875 50 165.988 50 165.988 50 171.762 50 171.762 51.058 172.373 55 174.648 55 168.875"/>
+    <polygon class="window-L-light" points="80 189.082 85 191.969 85 186.195 85 186.195 82.179 184.567 80 183.309 80 189.082"/>
+    <polygon class="window-L-light" points="60 177.535 65 180.422 65 174.649 65 174.648 61.5 172.628 60 171.762 60 177.535"/>
+    <polygon class="window-L-light" points="45 163.102 45 163.101 43.175 162.047 42.143 167.225 45 168.875 45 163.102"/>
+    <polygon class="window-L-light" points="90 142.894 90 142.894 90 148.668 95 151.554 95 145.781 93.301 144.8 90 142.894"/>
+    <polygon class="window-L-light" points="75 134.234 74.904 134.178 70 131.347 70 131.347 70 137.121 70 137.121 70.517 137.419 75 140.007 75 134.234"/>
+    <polygon class="window-L-light" points="55 122.687 55 122.687 51.429 120.625 50.397 125.803 51.25 126.296 55 128.46 55 122.687"/>
+    <polygon class="window-L-light" points="80 142.894 85 145.781 85 140.007 85 140.007 82 138.275 80 137.121 80 142.894"/>
+    <polygon class="window-L-light" points="60 131.347 65 134.234 65 128.461 65 128.46 61.5 126.44 60 125.574 60 131.347"/>
+    <polygon class="window-L-light" points="90 96.706 90 96.706 90 102.48 95 105.366 95 99.593 93.301 98.612 90 96.706"/>
+    <polygon class="window-L-light" points="75 88.046 74.924 88.002 70 85.159 70 85.159 70 90.933 70 90.933 70.637 91.3 75 93.819 75 88.046"/>
+    <polygon class="window-L-light" points="80 96.706 85 99.593 85 93.819 85 93.819 82 92.088 80 90.933 80 96.706"/>
+    <polygon class="window-L-light" points="60 85.159 65 88.046 65 82.273 65 82.272 61.5 80.252 60 79.386 60 85.159"/>
+    <polygon class="window-L-light" points="90 50.518 90 50.518 90 56.292 95 59.178 95 53.405 93.564 52.576 90 50.518"/>
+    <polygon class="window-L-light" points="75 41.858 74.641 41.651 70 38.971 70 38.971 70 44.745 70 44.745 70.637 45.112 75 47.631 75 41.858"/>
+    <polygon class="window-L-light" points="80 50.518 85 53.405 85 47.631 85 47.631 82.082 45.947 80 44.745 80 50.518"/>
+    <polygon class="window-L-light" points="90 362.287 90 362.287 90 368.061 90.697 368.463 95 370.948 95 365.174 93.301 364.193 90 362.287"/>
+    <polygon class="window-L-light" points="74.904 353.571 70 350.74 70 350.74 70 356.514 70 356.514 75 359.401 75 359.401 75 353.627 74.904 353.571"/>
+    <polygon class="window-L-light" points="55 342.08 50 339.193 50 339.193 50 344.967 50 344.967 55 347.854 55 347.854 55 342.08 55 342.08"/>
+    <polygon class="window-L-light" points="35 330.533 30 327.646 30 327.646 30 333.42 30 333.42 35 336.307 35 336.306 35 330.533 35 330.533"/>
+    <polygon class="window-L-light" points="15 318.986 12.222 317.382 11.19 322.56 15 324.76 15 324.759 15 318.986 15 318.986"/>
+    <polygon class="window-L-light" points="80 362.287 85 365.174 85 359.401 80 356.514 80 362.287"/>
+    <polygon class="window-L-light" points="60 344.967 60 350.74 65 353.627 65 347.854 60 344.967"/>
+    <polygon class="window-L-light" points="40 333.42 40 339.193 45 342.08 45 336.307 40 333.42"/>
+    <polygon class="window-L-light" points="20 321.873 20 327.646 23.145 329.462 25 330.533 25 330.533 25 324.76 20 321.873"/>
+    <polygon class="window-L-light" points="90 316.099 90 316.099 90 321.873 90.552 322.192 95 324.76 95 318.986 93.301 318.005 90 316.099"/>
+    <polygon class="window-L-light" points="74.904 307.383 70 304.552 70 304.552 70 310.326 70 310.326 75 313.213 75 313.213 75 307.439 74.904 307.383"/>
+    <polygon class="window-L-light" points="55 295.892 55 295.892 50 293.005 50 293.005 50 298.779 50 298.779 51.442 299.611 55 301.665 55 295.892"/>
+    <polygon class="window-L-light" points="35 284.345 35 284.345 30 281.458 30 281.458 30 287.232 30 287.232 32.247 288.529 35 290.118 35 284.345"/>
+    <polygon class="window-L-light" points="80 316.099 85 318.986 85 313.213 80 310.326 80 316.099"/>
+    <polygon class="window-L-light" points="60 298.779 60 304.552 65 307.439 65 301.666 60 298.779"/>
+    <polygon class="window-L-light" points="40 293.005 45 295.892 45 290.119 45 290.118 41 287.809 40 287.232 40 293.005"/>
+    <polygon class="window-L-light" points="25 278.571 20.5 275.974 20.476 275.96 20 278.349 20 281.458 21.844 282.523 25 284.345 25 284.345 25 278.572 25 278.571"/>
+    <polygon class="window-L-light" points="90 269.911 90 269.911 90 275.685 95 278.571 95 272.798 93.564 271.969 90 269.911"/>
+    <polygon class="window-L-light" points="75 261.251 74.641 261.044 70 258.364 70 258.364 70 264.138 70 264.138 70.637 264.505 75 267.024 75 261.251"/>
+    <polygon class="window-L-light" points="55 249.704 55 249.704 50 246.817 50 246.817 50 252.591 50 252.591 51.442 253.423 55 255.477 55 249.704"/>
+    <polygon class="window-L-light" points="35 238.157 35 238.157 30 235.27 30 235.27 30 241.044 30 241.044 32.247 242.341 35 243.93 35 238.157"/>
+    <polygon class="window-L-light" points="80 269.911 85 272.798 85 267.025 85 267.024 82.082 265.339 80 264.138 80 269.911"/>
+    <polygon class="window-L-light" points="60 258.364 65 261.251 65 255.478 65 255.477 61.663 253.551 60 252.591 60 258.364"/>
+    <polygon class="window-L-light" points="40 246.817 45 249.704 45 243.931 45 243.93 41.245 241.763 40 241.044 40 246.817"/>
+    <polygon class="window-L-light" points="90 223.723 90 223.723 90 229.497 95 232.383 95 226.61 93.564 225.781 90 223.723"/>
+    <polygon class="window-L-light" points="75 215.063 74.641 214.856 70 212.176 70 212.176 70 217.95 70 217.95 70.274 218.108 75 220.836 75 215.063"/>
+    <polygon class="window-L-light" points="55 203.516 55 203.516 50 200.629 50 200.629 50 206.403 50 206.403 51.146 207.065 55 209.289 55 203.516"/>
+    <polygon class="window-L-light" points="80 223.723 85 226.61 85 220.837 85 220.836 81.822 219.002 80 217.95 80 223.723"/>
+    <polygon class="window-L-light" points="60 212.176 65 215.063 65 209.29 65 209.289 61.367 207.192 60 206.403 60 212.176"/>
+    <polygon class="window-L-light" points="40 200.629 45 203.516 45 197.743 45 197.742 40.911 195.382 40 194.856 40 200.629"/>
+    <polygon class="window-L-light" points="90 177.535 90 177.535 90 183.309 95 186.195 95 180.422 93.301 179.441 90 177.535"/>
+    <polygon class="window-L-light" points="75 168.875 74.904 168.819 70 165.988 70 165.988 70 171.762 70 171.762 70.253 171.908 75 174.648 75 168.875"/>
+    <polygon class="window-L-light" points="55 157.328 55 157.328 50 154.441 50 154.441 50 160.215 50 160.215 51.058 160.826 55 163.101 55 157.328"/>
+    <polygon class="window-L-light" points="80 177.535 85 180.422 85 174.649 85 174.648 82 172.916 80 171.762 80 177.535"/>
+    <polygon class="window-L-light" points="60 165.988 65 168.875 65 163.102 65 163.101 61.5 161.081 60 160.215 60 165.988"/>
+    <polygon class="window-L-light" points="45 152.887 44.206 156.87 45 157.328 45 152.887"/>
+    <polygon class="window-L-light" points="90 131.347 90 131.347 90 137.121 95 140.007 95 134.234 93.301 133.253 90 131.347"/>
+    <polygon class="window-L-light" points="75 122.687 74.904 122.631 70 119.8 70 119.8 70 125.574 70 125.574 70.637 125.942 75 128.46 75 122.687"/>
+    <polygon class="window-L-light" points="55 111.14 55 111.14 53.492 110.269 52.46 115.447 55 116.913 55 111.14"/>
+    <polygon class="window-L-light" points="80 131.347 85 134.234 85 128.461 85 128.46 82 126.728 80 125.574 80 131.347"/>
+    <polygon class="window-L-light" points="60 119.8 65 122.687 65 116.914 65 116.913 61.5 114.893 60 114.027 60 119.8"/>
+    <polygon class="window-L-light" points="90 85.159 90 85.159 90 90.933 95 93.819 95 88.046 93.564 87.217 90 85.159"/>
+    <polygon class="window-L-light" points="75 76.499 74.641 76.292 70 73.612 70 73.612 70 79.386 70 79.386 70.637 79.754 75 82.272 75 76.499"/>
+    <polygon class="window-L-light" points="80 85.159 85 88.046 85 82.273 85 82.272 82.082 80.588 80 79.386 80 85.159"/>
+    <polygon class="window-L-light" points="65 70.725 65 70.725 61.746 68.847 60.714 74.025 65 76.499 65 70.725"/>
+    <polygon class="window-L-light" points="95 47.631 95 41.858 90 38.971 90 44.745 95 47.631"/>
+    <polygon class="window-L-light" points="75 30.311 74.641 30.104 70 27.424 70 27.424 70 33.198 70 33.198 70.274 33.356 75 36.084 75 30.311"/>
+    <polygon class="window-L-light" points="80 38.971 85 41.858 85 36.085 85 36.084 82.5 34.641 81.822 34.25 80 33.198 80 38.971"/>
   </g>
 </svg>
