@@ -104,6 +104,102 @@ module.exports = {
         cityId: NYC.id,
         heightInFt: 575,
     },
+    
+    13: {
+        name: '180 N Stetson',
+        bname: '180 N Stetson',
+        city:  Chicago.name,
+        cityId:  Chicago.id,
+        heightInFt:  994,
+    },
+    
+    14: {
+        name: '303 Peachtree',
+        bname: '303 Peachtree',
+        city:  Atlanta.name,
+        cityId:  Atlanta.id,
+        heightInFt:  902,
+    },
+    
+    15: {
+        name: '555 W Madison',
+        bname: '555 W Madison',
+        city:  Chicago.name,
+        cityId:  Chicago.id,
+        heightInFt:  461,
+    },
+    
+    16: {
+        name: '864 Spring',
+        bname: '864 Spring',
+        city:  Atlanta.name,
+        cityId:  Atlanta.name,
+        heightInFt:  500,
+    },
+    
+    17: {
+        name: '1585 Broadway',
+        bname: '1585 Broadway',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt:  685,
+    },
+    
+    18: {
+        name: '333 Bush',
+        bname: '333 Bush',
+        city: SanFrancisco.name,
+        cityId:  SanFrancisco.id,
+        heightInFt:  495,
+    },
+    
+    19: {
+        name: '200 Vesey',
+        bname: '200 Vesey',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt:  739,
+    },
+    
+    20: {
+        name: '180 Maiden Lane',
+        bname: '180 Maiden Lane',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt: 554,
+    },
+    
+    21: {
+        name: 'Lil Teddy',
+        bname: 'Lil Teddy',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt:  100,
+    },
+    
+    22: {
+        name: 'Uh Oh Asher',
+        bname: 'Uh Oh Asher',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt:  350,
+    },
+    
+    23: {
+        name: 'Big Cheese Tower',
+        bname: 'Big Cheese Tower',
+        city:  NYC.name,
+        cityId:  NYC.id,
+        heightInFt:  300,
+    },
+    
+    24: {
+        name: 'Big Mold Tower',
+        bname: 'Big Mold Toweer',
+        city:  NYC.name,
+        cityId: NYC.id,
+        heightInFt:  300,
+    },
 
     // token 1 - 5
     1000000: {
