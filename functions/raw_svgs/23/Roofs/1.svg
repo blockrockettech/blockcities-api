@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 115.47">
+  <defs>
+    <style>
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .top-prim {
+        fill: #dd8a87;
+      }
+
+      .exterior-R-light {
+        fill: #df5d58;
+      }
+
+      .exterior-L-light {
+        fill: #8a3a37;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+    </style>
+  </defs>
+  <title>Artboard 30</title>
+  <g>
+    <path class="top-light" d="M200,57.735,100,0,0,57.735,100,115.47Z"/>
+    <path class="top-prim" d="M10,57.735,100,5.774l90,51.961-90,51.962Z"/>
+    <path class="exterior-R-light" d="M100,5.774V17.321L20,63.509,10,57.735Z"/>
+    <path class="exterior-L-light" d="M190,57.735l-10,5.774L100,17.321V5.774Z"/>
+    <path class="curtain-R-prim-light" d="M65,89.49l10-5.774,30,17.321L95,106.81Z"/>
+    <path class="curtain-R-prim-light" d="M30,69.282l10-5.773,30,17.32L60,86.603Z"/>
+    <path class="exterior-L-light" d="M75,83.716V89.49l25,14.433,5-2.886Z"/>
+    <path class="exterior-L-light" d="M40,63.509v5.773L65,83.716l5-2.887Z"/>
+    <path class="exterior-R-light" d="M65,89.49l10-5.774V89.49l-5,2.886Z"/>
+    <path class="exterior-R-light" d="M30,69.283l10-5.774v5.773l-5,2.887Z"/>
+  </g>
+</svg>
