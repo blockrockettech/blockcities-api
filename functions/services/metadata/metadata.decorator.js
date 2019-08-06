@@ -215,12 +215,15 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
     }
 
     const colorArray = colorLogic[exteriorColorway];
+    // console.log('exteriorColorway', exteriorColorway);
+    // console.log('colorArray', colorArray);
     if (colorArray) {
         return {
-            exteriorColorway: colorMapper(colorArray[0]),
-            roofWindowColorway: colorMapper(colorArray[1]),
-            bodyWindowColorway: colorMapper(colorArray[2]),
-            baseWindowColorway: colorMapper(colorArray[3]),
+            // FIXME this isnt valid .. may cause issues (fixing last minute bug on live)
+            exteriorColorway: colorMapper(colorArray.exterior.body),
+            roofWindowColorway: colorMapper(colorArray.windows.roof),
+            bodyWindowColorway: colorMapper(colorArray.windows.body),
+            baseWindowColorway: colorMapper(colorArray.windows.base),
         };
     }
 
