@@ -76,6 +76,32 @@ const buildingNameMapper = ({building, special}) => {
             return '375 Park Ave';
         case 15:
             return '2 Peachtree';
+        case 16:
+            return '181 W Madison';
+        case 17:
+            return '855 6th Ave';
+        case 18:
+            return '745 7th Ave';
+        case 19:
+            return '446 E Ontario';
+        case 20:
+            return '101 Marietta';
+        case 21:
+            return '600 Montgomery';
+        case 22:
+            return '1201 Peachtree';
+        case 23:
+            return '1175 Peachtree';
+        case 24:
+            return '241 Ralph McGill';
+        case 25:
+            return '1585 Broadway';
+        case 26:
+            return '23 East 22nd';
+        case 27:
+            return '401 N Wabash';
+        case 28:
+            return '845 United Nations Plaza';
         default:
             console.error(`Unable to map building [${building}]`);
             return _.toString(building);
