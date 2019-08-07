@@ -1,8 +1,8 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 435.9">
   <defs>
     <style>
-      .top-light {
-        fill: #ffc8c6;
+      .concrete-top {
+        fill: #e8e8e8;
       }
 
       .top-dark {
@@ -33,6 +33,10 @@
         fill: #3e809c;
       }
 
+      .top-light {
+        fill: #ffc8c6;
+      }
+
       .cls-1 {
         fill: #6ecfff;
       }
@@ -49,18 +53,18 @@
         fill: #d0ecfb;
       }
 
-      .top-prim {
-        fill: #dd8a87;
+      .concrete-right {
+        fill: #d1d1d1;
       }
 
-      .cls-3 {
-        fill: #b2b2b2;
+      .concrete-left {
+        fill: #a2a2a2;
       }
     </style>
   </defs>
   <title>Artboard 2</title>
   <g id="root">
-    <path class="top-light" d="M0,280.015,270,435.9,570,262.694v-5.773L300,101.036,0,274.241Z"/>
+    <path class="concrete-top" d="M0,280.015,270,435.9,570,262.694v-5.773L300,101.036,0,274.241Z"/>
     <path id="anchor_30_297.336_515" class="top-dark" d="M30,161.658v-2.887L305,0,545,138.564v2.887L270,300.222Z"/>
     <path class="exterior-R-prim" d="M545,242.4871,270,401.259V372.391L545,213.62Z"/>
     <path class="exterior-L-prim" d="M345,369.504l-10,5.774-10-5.774V334.863h20Z"/>
@@ -205,7 +209,7 @@
     <path class="curtain-L-prim-dark" d="M127.5,318.986l7.5,4.33v-17.32l-7.5-4.33Z"/>
     <path class="curtain-L-prim-dark" d="M55,277.1281l7.5,4.33v-17.32l-7.5-4.33Z"/>
     <path class="curtain-L-prim-dark" d="M70,285.788l7.5,4.33v-17.32l-7.5-4.33Z"/>
-    <path class="top-prim" d="M270,430.126V435.9L570,262.694v-5.773Z"/>
-    <path class="cls-3" d="M270,430.126V435.9L0,280.015v-5.7731Z"/>
+    <path class="concrete-right" d="M270,430.126V435.9L570,262.694v-5.773Z"/>
+    <path class="concrete-left" d="M270,430.126V435.9L0,280.015v-5.7731Z"/>
   </g>
 </svg>
