@@ -34,6 +34,12 @@ const London = {
     short: 'LON',
 };
 
+const Manchester = {
+    id: 6,
+    name: 'Manchester',
+    short: 'MAN',
+};
+
 module.exports = {
     Atlanta,
     NYC,
