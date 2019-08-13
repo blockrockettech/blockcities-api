@@ -558,7 +558,7 @@ const colorLogicObj = {
             base: 'navy'
         },
         concrete: 'classic',
-    
+
     },
     '41': {
         exterior: {
@@ -650,7 +650,7 @@ const colorLogicObj = {
             base: 'navy'
         },
         concrete: 'limestone',
-   
+
     },
     '48': {
         exterior: {
@@ -690,7 +690,7 @@ const colorLogicObj = {
             base: 'bluegrey'
         },
         concrete: 'classic',
-   
+
     },
     '51': {
         exterior: {
@@ -704,7 +704,7 @@ const colorLogicObj = {
             base: 'navy'
         },
         concrete: 'classic',
-    
+
     },
     '52': {
         exterior: {
@@ -731,7 +731,7 @@ const colorLogicObj = {
             base: 'bluegrey'
         },
         concrete: 'classic',
-    
+    },
     '54': {
         exterior: {
             roof: 'lightbeige',
