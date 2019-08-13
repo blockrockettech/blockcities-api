@@ -28,7 +28,6 @@ const buildingRatios = {
     28: 1.62057137,
 };
 
-
 // this it the standard width of the x-anchor on base 0
 // anchor_145_187.652_230 << last number in the anchor in the SVG XML
 const standardWidths = {
@@ -60,7 +59,6 @@ const standardWidths = {
     26: 180,
     28: 250,
 };
-
 
 // Low Rise	0-114.829
 // High Rise 115-492
