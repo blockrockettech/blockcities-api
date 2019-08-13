@@ -5,7 +5,7 @@ const {
     SanFrancisco,
     Tokyo,
     London,
-    Manchester
+    Manchester,
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
@@ -105,7 +105,7 @@ module.exports = {
         cityId: NYC.id,
         heightInFt: 575,
     },
-    
+
     13: {
         name: '180 N Stetson',
         bname: '180 N Stetson',
@@ -113,7 +113,7 @@ module.exports = {
         cityId:  Chicago.id,
         heightInFt:  994,
     },
-    
+
     14: {
         name: '303 Peachtree',
         bname: '303 Peachtree',
@@ -121,7 +121,7 @@ module.exports = {
         cityId:  Atlanta.id,
         heightInFt:  902,
     },
-    
+
     15: {
         name: '555 W Madison',
         bname: '555 W Madison',
@@ -129,7 +129,7 @@ module.exports = {
         cityId:  Chicago.id,
         heightInFt:  461,
     },
-    
+
     16: {
         name: '864 Spring',
         bname: '864 Spring',
@@ -137,7 +137,7 @@ module.exports = {
         cityId:  Atlanta.name,
         heightInFt:  500,
     },
-    
+
     17: {
         name: '1585 Broadway',
         bname: '1585 Broadway',
@@ -145,7 +145,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt:  685,
     },
-    
+
     18: {
         name: '333 Bush',
         bname: '333 Bush',
@@ -153,7 +153,7 @@ module.exports = {
         cityId:  SanFrancisco.id,
         heightInFt:  495,
     },
-    
+
     19: {
         name: '200 Vesey',
         bname: '200 Vesey',
@@ -161,7 +161,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt:  739,
     },
-    
+
     20: {
         name: '180 Maiden Lane',
         bname: '180 Maiden Lane',
@@ -169,7 +169,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt: 554,
     },
-    
+
     21: {
         name: 'Lil Teddy',
         bname: 'Lil Teddy',
@@ -177,7 +177,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt:  100,
     },
-    
+
     22: {
         name: 'Uh Oh Asher',
         bname: 'Uh Oh Asher',
@@ -185,7 +185,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt:  350,
     },
-    
+
     23: {
         name: 'Big Cheese Tower',
         bname: 'Big Cheese Tower',
@@ -193,7 +193,7 @@ module.exports = {
         cityId:  NYC.id,
         heightInFt:  300,
     },
-    
+
     24: {
         name: 'Big Mold Tower',
         bname: 'Big Mold Toweer',
@@ -201,7 +201,7 @@ module.exports = {
         cityId: NYC.id,
         heightInFt:  300,
     },
-    
+
     25: {
         name: 'OpenSea Tower',
         bname: 'OpenSea Tower',
@@ -209,15 +209,15 @@ module.exports = {
         cityId: NYC.id,
         heightInFt:  363,
     },
-    
+
     26: {
         name: 'KnownOrigin Tower',
         bname: 'KnownOrigin Tower',
-        city:  MAN.name,
-        cityId: MAN.id,
+        city:  Manchester.name,
+        cityId: Manchester.id,
         heightInFt:  518,
     },
-    
+
     27: {
         name: '4 NonFungible Tower',
         bname: '4 NonFungible Tower',
@@ -225,7 +225,7 @@ module.exports = {
         cityId: NYC.id,
         heightInFt:  1200,
     },
-    
+
     28: {
         name: 'FOAM Tall Tower',
         bname: 'FOAM Tall Tower',
@@ -233,7 +233,7 @@ module.exports = {
         cityId: NYC.id,
         heightInFt:  240,
     },
-    
+
     29: {
         name: 'BoxSwap HQ',
         bname: 'BoxSwap HQ',
@@ -427,7 +427,7 @@ module.exports = {
         background_color: backgrounConfig.GRAY.hex,
         background_colorId: backgrounConfig.GRAY.id,
         heightInFt: 130,
-    
+
     },
     1000022: {
         name: 'New York Subway #1',
