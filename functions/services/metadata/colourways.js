@@ -142,9 +142,9 @@ module.exports = {
         },
         black: {
             left: {
-                prim: '#000000',
+                prim: '#202020',
                 light: '#2A2A2A',
-                dark: '#202020',
+                dark: '#000000',
             },
             right: {
                 prim: '#2E2E2E',
@@ -208,7 +208,7 @@ module.exports = {
                 dark: '#EACEB4',
             } 
         },
-        coolblue: {
+        coolgrey: {
             left: {
                 prim: '#83878E',
                 light: '#93979F',
@@ -313,6 +313,36 @@ module.exports = {
             right: {
                 prim: '#6EC0FF',
                 light: '#53A7E8',
+            },
+        },
+        bluegrey: {
+            left: {
+                prim: '#576271',
+                light: '#808C9D',
+            },
+            right: {
+                prim: '#C5CEDB',
+                light: '#E2E7EE',
+            },
+        },
+        turquoise: {
+            left: {
+                prim: '#203640',
+                light: '#276782',
+            },
+            right: {
+                prim: '#2E5464',
+                light: '#3C99C1',
+            },
+        },
+        navy: {
+            left: {
+                prim: '#253968',
+                light: '#2D498A',
+            },
+            right: {
+                prim: '#4869AE',
+                light: '#709DFF',
             },
         },
     },
