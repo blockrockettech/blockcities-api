@@ -4,7 +4,8 @@ const {
     Chicago,
     SanFrancisco,
     Tokyo,
-    London
+    London,
+    Manchester
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
@@ -199,6 +200,46 @@ module.exports = {
         city:  NYC.name,
         cityId: NYC.id,
         heightInFt:  300,
+    },
+    
+    25: {
+        name: 'OpenSea Tower',
+        bname: 'OpenSea Tower',
+        city:  NYC.name,
+        cityId: NYC.id,
+        heightInFt:  363,
+    },
+    
+    26: {
+        name: 'KnownOrigin Tower',
+        bname: 'KnownOrigin Tower',
+        city:  MAN.name,
+        cityId: MAN.id,
+        heightInFt:  518,
+    },
+    
+    27: {
+        name: '4 NonFungible Tower',
+        bname: '4 NonFungible Tower',
+        city:  NYC.name,
+        cityId: NYC.id,
+        heightInFt:  1200,
+    },
+    
+    28: {
+        name: 'FOAM Tall Tower',
+        bname: 'FOAM Tall Tower',
+        city:  NYC.name,
+        cityId: NYC.id,
+        heightInFt:  240,
+    },
+    
+    29: {
+        name: 'BoxSwap HQ',
+        bname: 'BoxSwap HQ',
+        city:  NYC.name,
+        cityId: NYC.id,
+        heightInFt:  240,
     },
 
     // token 1 - 5
