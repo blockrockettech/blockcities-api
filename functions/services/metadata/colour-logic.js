@@ -286,6 +286,539 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+    '20': {
+        exterior: {
+            roof: 'red',
+            body: 'red',
+            base: 'red'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '21': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'aquablue',
+            body: 'aquablue',
+            base: 'aquablue'
+        },
+        concrete: 'classic',
+    },
+    '22': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'trueblue',
+            body: 'trueblue',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '23': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '24': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '25': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '26': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        concrete: 'classic',
+    },
+    '27': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '28': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '29': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'lightgrey'
+        },
+        concrete: 'classic',
+    },
+    '30': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '31': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'lightgrey'
+        },
+        concrete: 'classic',
+    },
+    '32': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '33': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '34': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        concrete: 'classic',
+    },
+    '35': {
+        exterior: {
+            roof: 'dijon',
+            body: 'dijon',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '36': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '37': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '38': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'aquablue',
+            body: 'aquablue',
+            base: 'aquablue'
+        },
+        concrete: 'classic',
+    },
+    '39': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'trueblue',
+            body: 'trueblue',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '40': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'navy'
+        },
+        concrete: 'classic',
+    },
+    '41': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '42': {
+        exterior: {
+            roof: 'coolgrey',
+            body: 'coolgrey',
+            base: 'coolgrey'
+        },
+        windows: {
+            roof: 'turqoise',
+            body: 'turquoise',
+            base: 'turquoise'
+        },
+        concrete: 'classic',
+    },
+    '43': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'gold',
+            body: 'gold',
+            base: 'gold'
+        },
+        concrete: 'limestone',
+    },
+    '44': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'aquablue',
+            body: 'aquablue',
+            base: 'aquablue'
+        },
+        concrete: 'limestone',
+    },
+    '45': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'trueblue',
+            body: 'trueblue',
+            base: 'trueblue'
+        },
+        concrete: 'limestone',
+    },
+    '46': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'limestone',
+    },
+    '47': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'gold'
+        },
+        concrete: 'limestone',
+    },
+    '48': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'navy'
+        },
+        concrete: 'limestone',
+    },
+    '49': {
+        exterior: {
+            roof: 'limestone',
+            body: 'limestone',
+            base: 'limestone'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'trueblue'
+        },
+        concrete: 'limestone',
+    },
+    '50': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'navy'
+        },
+        concrete: 'classic',
+    },
+    '51': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '52': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'turqoise',
+            body: 'turqoise',
+            base: 'turqoise'
+        },
+        concrete: 'classic',
+    },
+    '53': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'bluegrey',
+            body: 'bluegrey',
+            base: 'bluegrey'
+        },
+        concrete: 'classic',
+    },
+    '54': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'boldblue',
+            body: 'boldblue',
+            base: 'navy'
+        },
+        concrete: 'classic',
+    },
+    '55': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'navy'
+        },
+        concrete: 'classic',
+    },
+    '56': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'navy',
+            body: 'navy',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '57': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'turqoise',
+            body: 'turqoise',
+            base: 'turqoise'
+        },
+        concrete: 'classic',
+    },
+    '58': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'bluegrey',
+            body: 'bluegrey',
+            base: 'bluegrey'
+        },
+        concrete: 'classic',
+    },
+    '59': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'boldblue',
+            body: 'boldblue',
+            base: 'navy'
+        },
+        concrete: 'classic',
+    },
+    '60': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
+            roof: 'turqoise',
+            body: 'turqoise',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
     '666': {
         exterior: {
             roof: 'red',
