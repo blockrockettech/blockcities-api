@@ -47,4 +47,5 @@ module.exports = {
     SanFrancisco,
     Tokyo,
     London,
+    Manchester,
 };
