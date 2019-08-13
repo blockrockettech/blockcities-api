@@ -301,8 +301,8 @@ module.exports = {
                 light: '#3D79C1',
             },
             right: {
-                prim: '#90C2FF',
-                light: '#BEDBFF',
+                prim: '#95C5FF',
+                light: '#BDDAFD',
             },
         },
         boldblue: {
@@ -390,6 +390,20 @@ module.exports = {
             },
         },
         darkgrey: {
+            left: {
+                prim_dark: '#000000',
+                prim_light: '#2E2E2E',
+                prim_dark_light: '#171717',
+                prim_light_dark: '#262626',
+            },
+            right: {
+                prim_dark: '#5E5E5E',
+                prim_light: '#747474',
+                prim_dark_light: '#646363',
+                prim_light_dark: '#686868',
+            },
+        },
+        black: {
             left: {
                 prim_dark: '#000000',
                 prim_light: '#2E2E2E',
