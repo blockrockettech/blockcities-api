@@ -71,7 +71,12 @@ class CheerioSVGService {
         processedStyle = processedStyle.replace(/.cls-/g, `#${targetDiv} .cls-`);
         processedStyle = processedStyle.replace(/.concrete/g, `#${targetDiv} .concrete`);
 
-        return processedStyle
+        return processedStyle;
+    };
+
+    getLinearGradients(svgXml, targetDiv) {
+        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        return $('linearGradient');
     };
 }
 

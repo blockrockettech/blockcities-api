@@ -140,7 +140,7 @@ class ImageBuilderService {
 <svg id="bc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <style></style>
-</defs>
+    </defs>
     <g id="building">
         <g id="base"></g>
         <g id="body"></g>
@@ -210,6 +210,10 @@ class ImageBuilderService {
             $('style').html(cheerioSVGService.getStyle(styledBaseSvg, 'base'));
             $('style').append(cheerioSVGService.getStyle(styledBodySvg, 'body'));
             $('style').append(cheerioSVGService.getStyle(styledRoofSvg, 'roof'));
+
+            // Gradients - used for trees
+            $('defs').append(cheerioSVGService.getLinearGradients(styledBaseSvg));
+            $('defs').append(cheerioSVGService.getLinearGradients(styledRoofSvg));
 
             // BASE
             // NB: we scale off the base
