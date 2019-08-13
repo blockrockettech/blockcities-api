@@ -558,6 +558,7 @@ const colorLogicObj = {
             base: 'navy'
         },
         concrete: 'classic',
+    
     },
     '41': {
         exterior: {
@@ -566,26 +567,13 @@ const colorLogicObj = {
             base: 'coolgrey'
         },
         windows: {
-            roof: 'navy',
-            body: 'navy',
-            base: 'trueblue'
-        },
-        concrete: 'classic',
-    },
-    '42': {
-        exterior: {
-            roof: 'coolgrey',
-            body: 'coolgrey',
-            base: 'coolgrey'
-        },
-        windows: {
-            roof: 'turqoise',
+            roof: 'turquoise',
             body: 'turquoise',
             base: 'turquoise'
         },
         concrete: 'classic',
     },
-    '43': {
+    '42': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -598,7 +586,7 @@ const colorLogicObj = {
         },
         concrete: 'limestone',
     },
-    '44': {
+    '43': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -611,7 +599,7 @@ const colorLogicObj = {
         },
         concrete: 'limestone',
     },
-    '45': {
+    '44': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -624,7 +612,7 @@ const colorLogicObj = {
         },
         concrete: 'limestone',
     },
-    '46': {
+    '45': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -637,7 +625,7 @@ const colorLogicObj = {
         },
         concrete: 'limestone',
     },
-    '47': {
+    '46': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -650,7 +638,7 @@ const colorLogicObj = {
         },
         concrete: 'limestone',
     },
-    '48': {
+    '47': {
         exterior: {
             roof: 'limestone',
             body: 'limestone',
@@ -662,19 +650,33 @@ const colorLogicObj = {
             base: 'navy'
         },
         concrete: 'limestone',
+   
     },
-    '49': {
+    '48': {
         exterior: {
-            roof: 'limestone',
-            body: 'limestone',
-            base: 'limestone'
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
         },
         windows: {
             roof: 'navy',
             body: 'navy',
-            base: 'trueblue'
+            base: 'navy'
         },
-        concrete: 'limestone',
+        concrete: 'classic',
+    },
+    '49': {
+        exterior: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        windows: {
+            roof: 'turquoise',
+            body: 'turquoise',
+            base: 'turquoise'
+        },
+        concrete: 'classic',
     },
     '50': {
         exterior: {
@@ -683,43 +685,45 @@ const colorLogicObj = {
             base: 'lightgrey'
         },
         windows: {
+            roof: 'bluegrey',
+            body: 'bluegrey',
+            base: 'bluegrey'
+        },
+        concrete: 'classic',
+   
+    },
+    '51': {
+        exterior: {
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
+        },
+        windows: {
             roof: 'navy',
             body: 'navy',
             base: 'navy'
         },
         concrete: 'classic',
-    },
-    '51': {
-        exterior: {
-            roof: 'lightgrey',
-            body: 'lightgrey',
-            base: 'lightgrey'
-        },
-        windows: {
-            roof: 'navy',
-            body: 'navy',
-            base: 'trueblue'
-        },
-        concrete: 'classic',
+    
     },
     '52': {
         exterior: {
-            roof: 'lightgrey',
-            body: 'lightgrey',
-            base: 'lightgrey'
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
         },
         windows: {
-            roof: 'turqoise',
-            body: 'turqoise',
-            base: 'turqoise'
+            roof: 'turquoise',
+            body: 'turquoise',
+            base: 'turquoise'
         },
         concrete: 'classic',
     },
     '53': {
         exterior: {
-            roof: 'lightgrey',
-            body: 'lightgrey',
-            base: 'lightgrey'
+            roof: 'lightbeige',
+            body: 'lightbeige',
+            base: 'lightbeige'
         },
         windows: {
             roof: 'bluegrey',
@@ -727,94 +731,16 @@ const colorLogicObj = {
             base: 'bluegrey'
         },
         concrete: 'classic',
-    },
+    
     '54': {
         exterior: {
-            roof: 'lightgrey',
-            body: 'lightgrey',
-            base: 'lightgrey'
-        },
-        windows: {
-            roof: 'boldblue',
-            body: 'boldblue',
-            base: 'navy'
-        },
-        concrete: 'classic',
-    },
-    '55': {
-        exterior: {
             roof: 'lightbeige',
             body: 'lightbeige',
             base: 'lightbeige'
         },
         windows: {
-            roof: 'navy',
-            body: 'navy',
-            base: 'navy'
-        },
-        concrete: 'classic',
-    },
-    '56': {
-        exterior: {
-            roof: 'lightbeige',
-            body: 'lightbeige',
-            base: 'lightbeige'
-        },
-        windows: {
-            roof: 'navy',
-            body: 'navy',
-            base: 'trueblue'
-        },
-        concrete: 'classic',
-    },
-    '57': {
-        exterior: {
-            roof: 'lightbeige',
-            body: 'lightbeige',
-            base: 'lightbeige'
-        },
-        windows: {
-            roof: 'turqoise',
-            body: 'turqoise',
-            base: 'turqoise'
-        },
-        concrete: 'classic',
-    },
-    '58': {
-        exterior: {
-            roof: 'lightbeige',
-            body: 'lightbeige',
-            base: 'lightbeige'
-        },
-        windows: {
-            roof: 'bluegrey',
-            body: 'bluegrey',
-            base: 'bluegrey'
-        },
-        concrete: 'classic',
-    },
-    '59': {
-        exterior: {
-            roof: 'lightbeige',
-            body: 'lightbeige',
-            base: 'lightbeige'
-        },
-        windows: {
-            roof: 'boldblue',
-            body: 'boldblue',
-            base: 'navy'
-        },
-        concrete: 'classic',
-    },
-    '60': {
-        exterior: {
-            roof: 'lightbeige',
-            body: 'lightbeige',
-            base: 'lightbeige'
-        },
-        windows: {
-            roof: 'turqoise',
-            body: 'turqoise',
+            roof: 'turquoise',
+            body: 'turquoise',
             base: 'darkgrey'
         },
         concrete: 'classic',
