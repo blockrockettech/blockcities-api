@@ -4,7 +4,7 @@ const imageBuilderService = require('../../services/imageBuilder.service');
 const blockCitiesDataService = require('../../services/blockcities.data.service');
 const openSeaService = require('../../services/openSea.service');
 
-const { convert } = require('convert-svg-to-png');
+const {convert} = require('convert-svg-to-png');
 
 const token = require('express').Router({mergeParams: true});
 
@@ -101,14 +101,22 @@ token.get('/image/:tokenId.png', async (request, response) => {
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
-            const specialPng = await convert(specialSvg, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
+            const specialPng = await convert(specialSvg, {
+                height: canvasHeight,
+                width: canvasWidth,
+                puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+            });
             return response
                 .contentType('image/png')
                 .send(specialPng);
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
-        const png = await convert(image, {height: canvasHeight, width: canvasWidth, puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}});
+        const png = await convert(image, {
+            height: canvasHeight,
+            width: canvasWidth,
+            puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+        });
         return response
             .contentType('image/png')
             .send(png);
@@ -116,7 +124,6 @@ token.get('/image/:tokenId.png', async (request, response) => {
         console.error(e);
     }
 });
-
 
 token.get('/:tokenId/image', async (request, response) => {
     try {
@@ -134,21 +141,25 @@ token.get('/:tokenId/image', async (request, response) => {
             });
         }
 
+        // cache for 1 week
+        // TIP: use PURGE to clear via postman if needed
+        response
+            .contentType('image/svg+xml')
+            .set('Cache-Control', 'public, max-age=86400');
+
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
-            return response
-                .contentType('image/svg+xml')
-                .send(specialSvg);
+
+
+            return response.send(specialSvg);
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
 
-        return response
-            .contentType('image/svg+xml')
-            .send(image);
+        return response.send(image);
     } catch (e) {
         console.error(e);
     }
