@@ -6,7 +6,8 @@ const {
     Chicago,
     SanFrancisco,
     Tokyo,
-    London
+    London,
+    Manchester
 } = require('./cities');
 
 const cityNameMapper = ({special, city}) => {
@@ -27,6 +28,8 @@ const cityNameMapper = ({special, city}) => {
             return Tokyo.name;
         case London.id:
             return London.name;
+        case Manchester.id:
+            return Manchester.name;
         default:
             console.error(`Unable to map city [${city}]`);
             return _.toString(city);
@@ -47,6 +50,8 @@ const shortCityNameMapper = (city) => {
             return Tokyo.short;
         case London.id:
             return London.short;
+        case Manchester.id:
+            return Manchester.short;
         default:
             return 'XXX';
     }
