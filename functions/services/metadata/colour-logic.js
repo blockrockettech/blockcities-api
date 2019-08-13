@@ -286,6 +286,539 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+    '20': {
+        exterior: {
+            roof: 'red',
+            body: 'red',
+            base: 'red'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '21': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'aquablue',
+            body: 'aquablue',
+            base: 'aquablue'
+        },
+        concrete: 'classic',
+    },
+    '22': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'trueblue',
+            body: 'trueblue',
+            base: 'trueblue'
+        },
+        concrete: 'classic',
+    },
+    '23': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'goldenbeige'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '24': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+    '25': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '26': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'lightgrey',
+            body: 'lightgrey',
+            base: 'lightgrey'
+        },
+        concrete: 'classic',
+    },
+    '27': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'darkgrey'
+        },
+        concrete: 'classic',
+    },
+    '28': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '29': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '30': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '31': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '32': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '33': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '34': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '35': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '36': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '37': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '38': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '39': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '40': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '41': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '42': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '43': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '44': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '45': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '46': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '47': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '48': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '49': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '50': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '51': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '52': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '53': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '54': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '55': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '56': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '57': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '58': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '59': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
+    '60': {
+        exterior: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        windows: {
+            roof: '',
+            body: '',
+            base: ''
+        },
+        concrete: 'classic',
+    },
     '666': {
         exterior: {
             roof: 'red',
