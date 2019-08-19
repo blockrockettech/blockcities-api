@@ -40,9 +40,9 @@ const Manchester = {
     short: 'MAN',
 };
 
-const Marbleworld = {
+const MarbleCity = {
     id: 7,
-    name: 'Marbleworld',
+    name: 'MarbleCity',
     short: 'MBL',
 };
 
