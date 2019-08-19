@@ -55,6 +55,7 @@ module.exports = {
             5: {buildingType: 'Helipad', buildingUse: 'Business'},
             6: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            8: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
         }
     },
     2: {
@@ -87,6 +88,17 @@ module.exports = {
             7: {buildingType: 'Transit', buildingUse: 'Business'},
             8: {buildingType: 'Transit', buildingUse: 'Business'},
             9: {buildingType: 'Transit', buildingUse: 'Business'},
+            10: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            11: {buildingType: 'Soccer Field', buildingUse: 'Attraction'},
+            12: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            13: {buildingType: 'Basketball Court', buildingUse: 'Attraction'},
+            14: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            15: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            16: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            17: {buildingType: 'Basketball Court', buildingUse: 'Attraction'},
+            18: {buildingType: 'Basketball Court', buildingUse: 'Attraction'},
+            19: {buildingType: 'Solar Panel', buildingUse: 'Business'},
+            20: {buildingType: 'Movie', buildingUse: 'Attraction'},
         }
     },
     3: {
@@ -800,7 +812,7 @@ module.exports = {
             12: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             13: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             14: {buildingType: 'Tennis', buildingUse: 'Attraction'},
-            15: {buildingType: 'BlockCitis Sign', buildingUse: 'Business'},
+            15: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             
         }
     },
