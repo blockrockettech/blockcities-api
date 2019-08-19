@@ -54,4 +54,5 @@ module.exports = {
     Tokyo,
     London,
     Manchester,
+    MarbleCity,
 };

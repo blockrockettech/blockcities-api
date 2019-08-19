@@ -731,7 +731,7 @@ const colorLogicObj = {
             base: 'bluegrey'
         },
         concrete: 'classic',
-    
+    },
     '54': {
         exterior: {
             roof: 'lightbeige',

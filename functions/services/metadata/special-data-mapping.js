@@ -6,6 +6,7 @@ const {
     Tokyo,
     London,
     Manchester,
+    MarbleCity
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
