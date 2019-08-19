@@ -7,6 +7,8 @@ module.exports = {
             3: {buildingType: '675 W Peachtree', buildingUse: 'Condo'},
             4: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             5: {buildingType: 'Tree', buildingUse: 'Retail'},
+            6: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            7: {buildingType: 'Street Retail', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Condo'},
@@ -28,6 +30,13 @@ module.exports = {
             5: {buildingType: '200 Vesey', buildingUse: 'Condo'},
             6: {buildingType: 'Helipad', buildingUse: 'Condo'},
             7: {buildingType: 'BlockCities Sign', buildingUse: 'Condo'},
+            8: {buildingType: 'Helipad', buildingUse: 'Condo'},
+            9: {buildingType: 'Mega Helipad', buildingUse: 'Condo'},
+            10: {buildingType: 'BlockCities Sign', buildingUse: 'Condo'},
+            11: {buildingType: 'Smile', buildingUse: 'Condo'},
+            12: {buildingType: 'Heart Eyes', buildingUse: 'Condo'},
+            13: {buildingType: 'Angry', buildingUse: 'Condo'},
+            14: {buildingType: 'Pool', buildingUse: 'Condo'},
         }
     },
     1: {
@@ -157,6 +166,7 @@ module.exports = {
             6: {buildingType: 'Pool', buildingUse: 'Attraction'},
             7: {buildingType: 'Helipad', buildingUse: 'Business'},
             8: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            9: {buildingType: 'Helipad', buildingUse: 'Business'},
         }
     },
     5: {
@@ -193,6 +203,7 @@ module.exports = {
             2: {buildingType: 'Helipad', buildingUse: 'Business'},
             3: {buildingType: 'Pool', buildingUse: 'Attraction'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            5: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
         }
     },
     6: {
@@ -213,6 +224,8 @@ module.exports = {
             1: {buildingType: 'Vertical', buildingUse: 'Hotel'},
             2: {buildingType: 'Vertical', buildingUse: 'Hotel'},
             3: {buildingType: 'Vertical', buildingUse: 'Hotel'},
+            4: {buildingType: 'Vertical', buildingUse: 'Hotel'},
+            5: {buildingType: 'Vertical', buildingUse: 'Hotel'},
         },
         roofs: {
             0: {buildingType: '36 Central Park S', buildingUse: 'Hotel'},
@@ -243,6 +256,7 @@ module.exports = {
             2: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             3: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             4: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
+            5: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: '885 6th Ave', buildingUse: 'Business'},
@@ -268,6 +282,8 @@ module.exports = {
             12: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
             13: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
             14: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Retail'},
+            15: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            16: {buildingType: 'Street Retail', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -375,6 +391,14 @@ module.exports = {
             4: {buildingType: 'Helipad', buildingUse: 'Apartment'},
             5: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             6: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Apartment'},
+            7: {buildingType: 'Soccer Field', buildingUse: 'Apartment'},
+            8: {buildingType: 'Basketball Court', buildingUse: 'Apartment'},
+            9: {buildingType: 'Tennis Court', buildingUse: 'Apartment'},
+            10: {buildingType: 'Tennis Court', buildingUse: 'Apartment'},
+            11: {buildingType: 'Basketball Court', buildingUse: 'Apartment'},
+            12: {buildingType: 'Tennis Court', buildingUse: 'Apartment'},
+            13: {buildingType: 'Tennis Court', buildingUse: 'Apartment'},
+            14: {buildingType: 'Tennis Court', buildingUse: 'Apartment'},
         }
     },
     12: {
@@ -418,6 +442,10 @@ module.exports = {
             3: {buildingType: 'Pool', buildingUse: 'Attraction'},
             4: {buildingType: 'Helipad', buildingUse: 'Business'},
             5: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            6: {buildingType: 'Helipad', buildingUse: 'Business'},
+            7: {buildingType: 'Smile Heart Eyes', buildingUse: 'Business'},
+            8: {buildingType: 'Smile', buildingUse: 'Business'},
+            9: {buildingType: 'Angry', buildingUse: 'Business'},
         }
     },
     13: {
@@ -430,6 +458,8 @@ module.exports = {
             5: {buildingType: 'Retail', buildingUse: 'Retail'},
             6: {buildingType: 'Tree', buildingUse: 'Retail'},
             7: {buildingType: 'BlockCities Rapid Transit', buildingUse: 'Business'},
+            8: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            9: {buildingType: 'Street Retail', buildingUse: 'Retail'},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -451,6 +481,12 @@ module.exports = {
             5: {buildingType: 'Pool', buildingUse: 'Attraction'},
             6: {buildingType: 'Helipad', buildingUse: 'Business'},
             7: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            8: {buildingType: 'Helipad', buildingUse: 'Business'},
+            9: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            10: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            11: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            12: {buildingType: 'Tennis Court', buildingUse: 'Attraction'},
+            13: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
         }
     },
     14: {
