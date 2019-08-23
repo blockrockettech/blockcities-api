@@ -40,6 +40,12 @@ const Manchester = {
     short: 'MAN',
 };
 
+const MarbleCity = {
+    id: 7,
+    name: 'MarbleCity',
+    short: 'MBL',
+};
+
 module.exports = {
     Atlanta,
     NYC,
@@ -48,4 +54,5 @@ module.exports = {
     Tokyo,
     London,
     Manchester,
+    MarbleCity,
 };
