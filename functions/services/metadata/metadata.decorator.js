@@ -26,6 +26,22 @@ const colorMapper = (color) => {
             return 'Dark Brown';
         case 'lightgrey':
             return 'Light Grey';
+        case 'navy':
+            return 'Navy';
+        case 'blush':
+            return 'Blush';
+        case 'bluegrey':
+            return 'Blue Grey';
+        case 'dijon':
+            return 'Dijon';
+        case 'limestone':
+            return 'Limestone';
+        case 'turquoise':
+            return 'Turquoise';
+        case 'goldenbeige':
+            return 'Golden Beige';
+        case 'coolgrey':
+            return 'Cool Grey';
         case 'black':
             return 'Black';
         default:

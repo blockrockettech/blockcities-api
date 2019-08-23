@@ -753,7 +753,7 @@ const colorLogicObj = {
         },
         windows: {
             roof: 'trueblue',
-            body: 'trueblue',
+            body: 'darkgrey',
             base: 'trueblue'
         },
         concrete: 'gold',
