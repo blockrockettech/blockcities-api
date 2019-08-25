@@ -6,7 +6,8 @@ const {
     Tokyo,
     London,
     Manchester,
-    MarbleCity
+    MarbleCity,
+    Dessau
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
@@ -467,5 +468,14 @@ module.exports = {
         background_color: backgrounConfig.PINK.hex,
         background_colorId: backgrounConfig.PINK.id,
         heightInFt: 1388,
+    },
+    1000028: {
+        name: 'Bauhaus Dessau',
+        bname: 'Bauhaus Dessau',
+        city: Dessau.name,
+        cityId: Dessau.id,
+        background_color: backgrounConfig.PINK.hex,
+        background_colorId: backgrounConfig.PINK.id,
+        heightInFt: 60,
     },
 };
