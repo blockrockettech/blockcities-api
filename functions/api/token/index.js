@@ -102,8 +102,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
             const specialPng = await convert(specialSvg, {
-                height: canvasHeight,
-                width: canvasWidth,
+                height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
             });
             return response
@@ -113,8 +112,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
         const png = await convert(image, {
-            height: canvasHeight,
-            width: canvasWidth,
+            height: canvasHeight * 2,
             puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
         });
         return response

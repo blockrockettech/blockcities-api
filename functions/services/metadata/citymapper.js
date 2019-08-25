@@ -9,7 +9,7 @@ const {
     London,
     Manchester,
     MarbleCity,
-    Dessau
+    Dessau,
 } = require('./cities');
 
 const cityNameMapper = ({special, city}) => {

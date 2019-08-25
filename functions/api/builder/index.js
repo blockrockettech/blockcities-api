@@ -3,7 +3,6 @@ const imageBuilderService = require('../../services/imageBuilder.service');
 
 const builder = require('express').Router({mergeParams: true});
 
-
 // builder.get('/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
 //
 //     try {
@@ -53,6 +52,20 @@ builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/svg'
         return response
             .contentType('image/svg+xml')
             .send(image);
+    } catch (e) {
+        console.error(e);
+    }
+
+});
+
+// The special image tester
+builder.get('/special/:specialId/svg', async (request, response) => {
+    try {
+        const specialSvg = await imageBuilderService.loadSpecialPureSvg(parseInt(request.params.specialId));
+
+        return response
+            .contentType('image/svg+xml')
+            .send(specialSvg);
     } catch (e) {
         console.error(e);
     }
