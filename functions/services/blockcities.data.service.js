@@ -75,7 +75,7 @@ class BlockCitiesDataService {
         return {
             name: `Building #${padTokenId(tokenId)}`,
             description: `#${padTokenId(tokenId)}`,
-            image: `${tokenBaseURI[0]}${tokenId}/image`,
+            image: `${tokenBaseURI[0]}image/${tokenId}.png`,
             background_color: backgroundColorwaySwitch(tokenAttrs.backgroundColorway).hex,
             attributes: {
                 ...attrs,
