@@ -228,6 +228,15 @@ module.exports = {
         cityId: NYC.id,
         heightInFt:  240,
     },
+    30: {
+        name: 'BlockCities Times Building',
+        bname: 'BlockCities Times Building',
+        city: NYC.name,
+        cityId: NYC.id,
+        background_color: backgrounConfig.GRAY.hex,
+        background_colorId: backgrounConfig.GRAY.id,
+        heightInFt: 1046,
+    },
 
     // token 1 - 5
     1000000: {
