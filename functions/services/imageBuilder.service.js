@@ -146,7 +146,8 @@ class ImageBuilderService {
         <g id="body"></g>
         <g id="roof"></g>
     </g>
-</svg>`;
+</svg>
+`;
 
             const {
                 baseConfig,
@@ -206,14 +207,23 @@ class ImageBuilderService {
             // ViewBox - essentially canvas size and aspect ratio
             $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
 
-            // FIXME ideally should be more targetted here
             $('style').html(cheerioSVGService.getStyle(styledBaseSvg, 'base'));
             $('style').append(cheerioSVGService.getStyle(styledBodySvg, 'body'));
             $('style').append(cheerioSVGService.getStyle(styledRoofSvg, 'roof'));
 
             // Gradients - used for trees
-            $('defs').append(cheerioSVGService.getLinearGradients(styledBaseSvg));
-            $('defs').append(cheerioSVGService.getLinearGradients(styledRoofSvg));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledBaseSvg, 'linearGradient'));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledRoofSvg, 'linearGradient'));
+
+            // Masks - used for something I don't understand ;)
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledBaseSvg, 'mask'));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledBodySvg, 'mask'));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledRoofSvg, 'mask'));
+
+            // ClipPaths -  used for something I don't understand ;)
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledBaseSvg, 'clipPath'));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledBodySvg, 'clipPath'));
+            $('defs').append(cheerioSVGService.getAdditionlDefs(styledRoofSvg, 'clipPath'));
 
             // BASE
             // NB: we scale off the base

@@ -96,7 +96,11 @@ token.get('/image/:tokenId.png', async (request, response) => {
         }
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const {canvasHeight, canvasWidth} = await imageBuilderService.generateImageStats(tokenDetails);
+        const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
+
+        response
+            .contentType('image/png')
+            .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
@@ -105,9 +109,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
                 height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
             });
-            return response
-                .contentType('image/png')
-                .send(specialPng);
+            return response.send(specialPng);
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
@@ -115,9 +117,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
             height: canvasHeight * 2,
             puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
         });
-        return response
-            .contentType('image/png')
-            .send(png);
+        return response.send(png);
     } catch (e) {
         console.error(e);
     }
@@ -143,14 +143,13 @@ token.get('/:tokenId/image', async (request, response) => {
         // TIP: use PURGE to clear via postman if needed
         response
             .contentType('image/svg+xml')
-            .set('Cache-Control', 'public, max-age=86400');
+            .set('Cache-Control', 'public, max-age=864000');
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
-
 
             return response.send(specialSvg);
         }
