@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 187.639">
-    <defs>
-        <style>
-            .exterior-R-prim {
-            fill: #d05752;
-            }
+  <defs>
+    <style>
+      .exterior-R-prim {
+        fill: #d05752;
+      }
 
-            .exterior-L-prim {
-            fill: #73302e;
-            }
+      .exterior-L-prim {
+        fill: #73302e;
+      }
 
-            .exterior-R-dark {
-            fill: #a64c49;
-            }
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
 
-            .exterior-L-dark {
-            fill: #512220;
-            }
+      .exterior-L-dark {
+        fill: #512220;
+      }
 
-            .top-prim {
-            fill: #dd8a87;
-            }
-        </style>
-    </defs>
-    <title>root (27)</title>
-    <g id="root">
-        <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-                <path class="exterior-R-prim" d="M35,5.774l5-2.887L70,167.432,35,187.639Z"/>
-                <path class="exterior-L-prim" d="M0,167.432l35,20.207V5.774L30,2.887Z"/>
-                <path class="exterior-R-dark" d="M40,178.979l25-14.434L40,37.528Z"/>
-                <path class="exterior-L-dark" d="M30,178.979,5,164.545,30,37.528Z"/>
-                <path class="exterior-L-prim" d="M65,164.545l-7.5-4.33L40,69.282V37.528Z"/>
-                <path class="exterior-R-prim" d="M5,164.545l7.5-4.33L30,69.282V37.528Z"/>
-                <path class="top-prim" d="M57.5,160.215,40,170.318v8.661l25-14.434Z"/>
-                <path class="top-prim" d="M12.5,160.215,30,170.318v8.661L5,164.545Z"/>
-                <path class="top-prim" d="M30,2.887,35,0l5,2.887L35,5.774Z"/>
-            </g>
-        </g>
+      .top-prim {
+        fill: #dd8a87;
+      }
+    </style>
+  </defs>
+  <title>root (27)</title>
+  <g id="root" data-name="Layer 2">
+    <g id="root" data-name="Layer 1">
+      <g id="root">
+        <path class="exterior-R-prim" d="M35,5.774l5-2.887L70,167.432,35,187.639Z"/>
+        <path class="exterior-L-prim" d="M0,167.432l35,20.207V5.774L30,2.887Z"/>
+        <path class="exterior-R-dark" d="M40,178.979l25-14.434L40,37.528Z"/>
+        <path class="exterior-L-dark" d="M30,178.979,5,164.545,30,37.528Z"/>
+        <path class="exterior-L-prim" d="M65,164.545l-7.5-4.33L40,69.282V37.528Z"/>
+        <path class="exterior-R-prim" d="M5,164.545l7.5-4.33L30,69.282V37.528Z"/>
+        <path class="top-prim" d="M57.5,160.215,40,170.318v8.661l25-14.434Z"/>
+        <path class="top-prim" d="M12.5,160.215,30,170.318v8.661L5,164.545Z"/>
+        <path class="top-prim" d="M30,2.887,35,0l5,2.887L35,5.774Z"/>
+      </g>
     </g>
+  </g>
 </svg>
