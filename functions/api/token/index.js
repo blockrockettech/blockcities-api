@@ -5,6 +5,7 @@ const blockCitiesDataService = require('../../services/blockcities.data.service'
 const openSeaService = require('../../services/openSea.service');
 
 const {convert} = require('convert-svg-to-png');
+const {backgroundColorwaySwitch} = require('../../services/metadata/background-colours');
 
 const token = require('express').Router({mergeParams: true});
 
@@ -82,18 +83,7 @@ token.get('/account/:owner/tokens', async (request, response) => {
 token.get('/image/:tokenId.png', async (request, response) => {
     try {
         const tokenId = request.params.tokenId;
-        if (!tokenId) {
-            return response.status(400).json({
-                failure: `Token ID not provided`
-            });
-        }
-
         const network = request.params.network;
-        if (!network) {
-            return response.status(400).json({
-                failure: `Network not provided`
-            });
-        }
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
         const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
@@ -126,18 +116,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
 token.get('/:tokenId/image', async (request, response) => {
     try {
         const tokenId = request.params.tokenId;
-        if (!tokenId) {
-            return response.status(400).json({
-                failure: `Token ID not provided`
-            });
-        }
-
         const network = request.params.network;
-        if (!network) {
-            return response.status(400).json({
-                failure: `Network not provided`
-            });
-        }
 
         // cache for 1 week
         // TIP: use PURGE to clear via postman if needed
@@ -155,6 +134,70 @@ token.get('/:tokenId/image', async (request, response) => {
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
+
+        return response.send(image);
+    } catch (e) {
+        console.error(e);
+    }
+});
+
+// The image generator
+token.get('/image-bg/:tokenId.png', async (request, response) => {
+    try {
+        const tokenId = request.params.tokenId;
+        const network = request.params.network;
+
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
+
+        response
+            .contentType('image/png');
+            // .set('Cache-Control', 'public, max-age=864000');
+
+        if (tokenDetails.special !== 0) {
+            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialPng = await convert(specialSvg, {
+                height: canvasHeight * 2,
+                puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+            });
+            return response.send(specialPng);
+        }
+
+        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
+        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, true);
+        const png = await convert(image, {
+            height: canvasHeight * 2,
+            puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+        });
+        return response.send(png);
+    } catch (e) {
+        console.error(e);
+    }
+});
+
+token.get('/:tokenId/image-bg', async (request, response) => {
+    try {
+        const tokenId = request.params.tokenId;
+        const network = request.params.network;
+
+        // cache for 1 week
+        // TIP: use PURGE to clear via postman if needed
+        response
+            .contentType('image/svg+xml');
+            // .set('Cache-Control', 'public, max-age=864000');
+
+        const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+
+        if (tokenDetails.special !== 0) {
+            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+
+            return response.send(specialSvg);
+        }
+
+        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
+        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, true);
 
         return response.send(image);
     } catch (e) {

@@ -132,7 +132,10 @@ class ImageBuilderService {
                               roof,
                               exteriorColorway,
                               backgroundColorway,
-                          }) {
+                          },
+                          viewportBackground = null,
+                          square = false,
+    ) {
 
         try {
 
@@ -204,8 +207,23 @@ class ImageBuilderService {
             // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
-            // ViewBox - essentially canvas size and aspect ratio
-            $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
+            if (square) {
+                // place the building in a square viewport and adjust to the middle(ish)
+                // required for custom images for MarbleCards, for example
+                const boxEdge = canvasHeight > canvasWidth ? canvasHeight : canvasWidth;
+                $('#bc').attr('viewBox', `-${(boxEdge / 4)} 0 ${boxEdge} ${boxEdge}`);
+            }
+            else {
+                // ViewBox - essentially canvas size and aspect ratio
+                // this will fit exactly to the image
+                $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
+            }
+
+            // this is add a background colour (rather than transparent)
+            // required for custom images for MarbleCards, for example
+            if (viewportBackground) {
+                $('#bc').attr('style', `background: #${viewportBackground}`);
+            }
 
             $('style').html(cheerioSVGService.getStyle(styledBaseSvg, 'base'));
             $('style').append(cheerioSVGService.getStyle(styledBodySvg, 'body'));
@@ -254,7 +272,7 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, imageType = 'svg') {
+    async loadSpecialPureSvg(specialId, viewportBackground = null) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
