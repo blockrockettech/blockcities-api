@@ -108,6 +108,7 @@ module.exports = {
             18: {buildingType: 'Basketball Court', buildingUse: 'Attraction'},
             19: {buildingType: 'Solar Panel', buildingUse: 'Business'},
             20: {buildingType: 'Movie', buildingUse: 'Attraction'},
+            21: {buildingType: 'Bump Bikes', buildingUse: 'Business'},
         }
     },
     3: {
@@ -547,6 +548,7 @@ module.exports = {
             5: {buildingType: 'Transit', buildingUse: 'Government'},
             6: {buildingType: 'Transit', buildingUse: 'Government'},
             7: {buildingType: 'Transit', buildingUse: 'Government'},
+            8: {buildingType: 'Big Cheese', buildingUse: 'Attraction'},
         }
     },
     16: {
@@ -743,29 +745,45 @@ module.exports = {
     },
     21: {
         bases: {
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
+            0: {buildingType: '600 Montgomery', buildingUse: 'Business'},
+            1: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            2: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            3: {buildingType: '222 Second', buildingUse: 'Business'},
+            4: {buildingType: '233 S Wacker', buildingUse: 'Business'},
+           
         },
         bodies: {
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
+            0: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            1: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            2: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            3: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            4: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            5: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            6: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            7: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            8: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            9: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            10: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            11: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            12: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            13: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            14: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            15: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            16: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            17: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            18: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            19: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            20: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            21: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            22: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            23: {buildingType: 'Rectangle', buildingUse: 'Business'}, 
         },
         roofs: {
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
-            0: {buildingType: '', buildingUse: ''},
+            0: {buildingType: '600 Montgomery', buildingUse: 'Business'},
+            0: {buildingType: 'Pool', buildingUse: 'Attraction'},
+            0: {buildingType: 'Helipad', buildingUse: 'Business'},
+            0: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            0: {buildingType: 'Helipad', buildingUse: 'Business'},
         }
     },
     22: {
@@ -849,6 +867,7 @@ module.exports = {
             13: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             14: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             15: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            16: {buildingType: 'Big Cheese', buildingUse: 'Attraction'},
             
         }
     },
@@ -943,7 +962,8 @@ module.exports = {
             5: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             6: {buildingType: 'Pool', buildingUse: 'Apartment'},
             7: {buildingType: 'Helipad', buildingUse: 'Apartment'},
-            0: {buildingType: 'Helipad', buildingUse: 'Apartment'},
+            8: {buildingType: 'Helipad', buildingUse: 'Apartment'},
+            9: {buildingType: 'Big Cheese', buildingUse: 'Apartment'},
         }
     },
     27: {
