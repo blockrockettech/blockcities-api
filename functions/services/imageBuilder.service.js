@@ -134,7 +134,7 @@ class ImageBuilderService {
                               backgroundColorway,
                           },
                           viewportBackground = null,
-                          square = false,
+                          pad = 0,
     ) {
 
         try {
@@ -207,17 +207,8 @@ class ImageBuilderService {
             // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
-            if (square) {
-                // place the building in a square viewport and adjust to the middle(ish)
-                // required for custom images for MarbleCards, for example
-                const boxEdge = canvasHeight > canvasWidth ? canvasHeight : canvasWidth;
-                $('#bc').attr('viewBox', `-${(boxEdge / 4)} 0 ${boxEdge} ${boxEdge}`);
-            }
-            else {
-                // ViewBox - essentially canvas size and aspect ratio
-                // this will fit exactly to the image
-                $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
-            }
+            const boxEdge = canvasHeight > canvasWidth ? canvasHeight : canvasWidth;
+            $('#bc').attr('viewBox', `-${pad} -${pad} ${canvasWidth + (pad * 2)} ${canvasHeight + (pad * 2)}`);
 
             // this is add a background colour (rather than transparent)
             // required for custom images for MarbleCards, for example
@@ -272,7 +263,7 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null, square = false) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, pad = 0) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;

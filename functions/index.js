@@ -31,8 +31,12 @@ app.use('/network/:network/token', token);
 // All methods under /buildings will use our internal DB
 app.use('/network/:network/buildings', buildings);
 
+const runtimeOpts = {
+    memory: '1GB'
+};
+
 // Expose Express API as a single Cloud Function:
-exports.api = functions.https.onRequest(app);
+exports.api = functions.runWith(runtimeOpts).https.onRequest(app);
 
 /**
  * A set of cron style jobs which trigger a particular operation
