@@ -272,11 +272,18 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, square = false) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
+
+            if (viewportBackground) {
+                const $ = cheerio.load(rawSvg, {xmlMode: true, normalizeWhitespace: true,});
+                $('svg').attr('style', `background: #${viewportBackground}`);
+
+                return $.xml();
+            }
 
             return rawSvg;
         } catch (e) {

@@ -154,9 +154,11 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
             .contentType('image/png');
             // .set('Cache-Control', 'public, max-age=864000');
 
+        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
+
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
@@ -164,7 +166,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
             return response.send(specialPng);
         }
 
-        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
+
         const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, true);
         const png = await convert(image, {
             height: canvasHeight * 2,
@@ -188,15 +190,15 @@ token.get('/:tokenId/image-bg', async (request, response) => {
             // .set('Cache-Control', 'public, max-age=864000');
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
+        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
 
             return response.send(specialSvg);
         }
 
-        const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
         const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, true);
 
         return response.send(image);
