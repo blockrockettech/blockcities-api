@@ -202,6 +202,7 @@ module.exports = {
             7: {buildingType: 'Helipad', buildingUse: 'Business'},
             8: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             9: {buildingType: 'Helipad', buildingUse: 'Business'},
+            10: {buildingType: 'Ozzy', buildingUse: 'Business'},
         }
     },
     5: {
