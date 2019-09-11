@@ -20,6 +20,9 @@ module.exports = {
             6: {buildingType: 'Glass Curtain', buildingUse: 'Condo'},
             7: {buildingType: 'Glass Curtain', buildingUse: 'Condo'},
             8: {buildingType: 'Glass Curtain', buildingUse: 'Condo'},
+            9: {buildingType: 'Skeleton', buildingUse: 'Condo'},
+            10: {buildingType: 'Skeleton', buildingUse: 'Condo'},
+            11: {buildingType: 'Skeleton', buildingUse: 'Condo'},
         },
         roofs: {
             0: {buildingType: '432 Park Place', buildingUse: 'Condo'},
@@ -37,6 +40,7 @@ module.exports = {
             12: {buildingType: 'Heart Eyes', buildingUse: 'Condo'},
             13: {buildingType: 'Angry', buildingUse: 'Condo'},
             14: {buildingType: 'Pool', buildingUse: 'Condo'},
+            15: {buildingType: 'Monsters, LLC', buildingUse: 'Condo'},
         }
     },
     1: {
@@ -54,6 +58,9 @@ module.exports = {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
             1: {buildingType: 'Rectangle', buildingUse: 'Business'},
             2: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            3: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            4: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            5: {buildingType: 'Skeleton', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
@@ -85,6 +92,28 @@ module.exports = {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
             1: {buildingType: 'Rectangle', buildingUse: 'Business'},
             2: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            3: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            4: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            5: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            6: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            7: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            8: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            9: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            10: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            11: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            12: {buildingType: 'Rectangle', buildingUse: 'Business'},
+            13: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            14: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            15: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            16: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            17: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            18: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            19: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            20: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            21: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            22: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            23: {buildingType: 'Skeleton', buildingUse: 'Business'},
+            24: {buildingType: 'Skeleton', buildingUse: 'Business'},    
         },
         roofs: {
             0: {buildingType: 'Standard', buildingUse: 'Business'},
@@ -109,6 +138,11 @@ module.exports = {
             19: {buildingType: 'Solar Panel', buildingUse: 'Business'},
             20: {buildingType: 'Movie', buildingUse: 'Attraction'},
             21: {buildingType: 'Bump Bikes', buildingUse: 'Business'},
+            22: {buildingType: 'Zed', buildingUse: 'Business'},
+            23: {buildingType: 'Squeeky', buildingUse: 'Business'},
+            24: {buildingType: 'Zoomer', buildingUse: 'Business'},
+            25: {buildingType: 'Fritz', buildingUse: 'Business'},
+            26: {buildingType: 'Gubby', buildingUse: 'Business'},
         }
     },
     3: {
@@ -168,6 +202,7 @@ module.exports = {
             7: {buildingType: 'Helipad', buildingUse: 'Business'},
             8: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             9: {buildingType: 'Helipad', buildingUse: 'Business'},
+            10: {buildingType: 'Ozzy', buildingUse: 'Business'},
         }
     },
     5: {
@@ -1053,6 +1088,7 @@ module.exports = {
             3: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             5: {buildingType: 'NYC', buildingUse: 'Apartment'},
+            5: {buildingType: 'Zoomer', buildingUse: 'Apartment'},
         }
     },
 };
