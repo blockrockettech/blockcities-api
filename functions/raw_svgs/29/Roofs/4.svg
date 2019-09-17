@@ -114,6 +114,7 @@
     </style>
   </defs>
   <title>1Artboard 7</title>
+  <g id="root">
   <path id="Path" class="cls-1" d="M0,98.15l160,92.376L320,98.15,160,5.7735Z"/>
   <path id="Path-2" data-name="Path" class="cls-2" d="M160,11.547,310,98.15,160,184.7521,10,98.15Z"/>
   <path id="Path-3" data-name="Path" class="cls-3" d="M160,11.547v5.7735l145,83.7159,5-2.8868Z"/>
@@ -480,5 +481,6 @@
   </g>
   <g class="cls-26">
     <path id="Path-123" data-name="Path" class="cls-27" d="M62.5,11.5471v80.829l85,49.0748V60.6218Z"/>
+  </g>
   </g>
 </svg>
