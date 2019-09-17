@@ -118,6 +118,8 @@ const buildingNameMapper = ({building, special}) => {
             return '401 N Wabash';
         case 28:
             return '845 United Nations Plaza';
+        case 29:
+            return '1 Parking Deck Way';
         default:
             console.error(`Unable to map building [${building}]`);
             return _.toString(building);
