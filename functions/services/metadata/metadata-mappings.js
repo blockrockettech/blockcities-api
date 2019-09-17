@@ -1091,4 +1091,52 @@ module.exports = {
             5: {buildingType: 'Zoomer', buildingUse: 'Apartment'},
         }
     },
+    29: {
+        bases: {
+            0: {buildingType: '1 Parking Deck Way', buildingUse: 'Business'},
+            1: {buildingType: '1175 Peachtree', buildingUse: 'Retail'},
+            2: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
+            3: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            4: {buildingType: 'Street Retail', buildingUse: 'Retail'},
+            
+            
+        },
+        bodies: {
+            0: {buildingType: 'No Window', buildingUse: 'Business'},
+            1: {buildingType: 'No Window', buildingUse: 'Business'},
+            2: {buildingType: 'No Window', buildingUse: 'Business'},
+            3: {buildingType: 'No Window', buildingUse: 'Business'},
+            4: {buildingType: 'No Window', buildingUse: 'Business'},
+            5: {buildingType: 'No Window', buildingUse: 'Business'},
+            6: {buildingType: 'No Window', buildingUse: 'Business'},
+            7: {buildingType: 'No Window', buildingUse: 'Business'},
+            8: {buildingType: 'No Window', buildingUse: 'Business'},
+            9: {buildingType: 'No Window', buildingUse: 'Business'},
+            10: {buildingType: 'No Window', buildingUse: 'Business'},
+            11: {buildingType: 'No Window', buildingUse: 'Business'},
+            12: {buildingType: 'No Window', buildingUse: 'Business'},
+            13: {buildingType: 'No Window', buildingUse: 'Business'},
+            14: {buildingType: 'No Window', buildingUse: 'Business'},
+          
+           
+        },
+        roofs: {
+            0: {buildingType: '1 Parking Deck Way', buildingUse: 'Business'},
+            1: {buildingType: '333 S Wabash', buildingUse: 'Business'},
+            2: {buildingType: 'Pool', buildingUse: 'Business'},
+            3: {buildingType: 'Helipad', buildingUse: 'Business'},
+            4: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            5: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            6: {buildingType: 'Helipad', buildingUse: 'Business'},
+            7: {buildingType: 'Tennis', buildingUse: 'Business'},
+            8: {buildingType: 'Tennis', buildingUse: 'Business'},
+            9: {buildingType: 'Tennis', buildingUse: 'Business'},
+            10: {buildingType: 'Tennis', buildingUse: 'Business'},
+            11: {buildingType: 'Soccer', buildingUse: 'Business'},
+            12: {buildingType: 'Basketball', buildingUse: 'Business'},
+            13: {buildingType: 'Basketball', buildingUse: 'Business'},
+            14: {buildingType: 'Basketball', buildingUse: 'Business'},
+            
+        }
+    },
 };
