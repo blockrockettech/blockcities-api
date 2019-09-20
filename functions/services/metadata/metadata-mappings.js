@@ -113,7 +113,7 @@ module.exports = {
             21: {buildingType: 'Skeleton', buildingUse: 'Business'},
             22: {buildingType: 'Skeleton', buildingUse: 'Business'},
             23: {buildingType: 'Skeleton', buildingUse: 'Business'},
-            24: {buildingType: 'Skeleton', buildingUse: 'Business'},    
+            24: {buildingType: 'Skeleton', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: 'Standard', buildingUse: 'Business'},
@@ -623,7 +623,7 @@ module.exports = {
             25: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             26: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             27: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-            
+
         },
         roofs: {
             0: {buildingType: '181 W Madison', buildingUse: 'Business'},
@@ -639,7 +639,7 @@ module.exports = {
     17: {
         bases: {
             0: {buildingType: '855 6th Ave', buildingUse: 'Retail'},
-           
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -670,11 +670,11 @@ module.exports = {
             25: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             26: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             27: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-            
+
         },
         roofs: {
             0: {buildingType: '855 6th Ave', buildingUse: 'Attraction'},
-            
+
         }
     },
     18: {
@@ -683,7 +683,7 @@ module.exports = {
             1: {buildingType: 'Bump Bikes', buildingUse: 'Retail'},
             2: {buildingType: 'Bump Bikes', buildingUse: 'Retail'},
             3: {buildingType: 'Bump Bikes', buildingUse: 'Retail'},
-    
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -702,13 +702,13 @@ module.exports = {
             13: {buildingType: 'Bump Bikes', buildingUse: 'Business'},
             14: {buildingType: 'Bump Bikes', buildingUse: 'Business'},
             15: {buildingType: 'Bump Bikes', buildingUse: 'Business'},
-            
+
         },
         roofs: {
             0: {buildingType: '745 7th Ave', buildingUse: 'Business'},
             1: {buildingType: '745 7th Ave', buildingUse: 'Business'},
             2: {buildingType: '745 7th Ave', buildingUse: 'Business'},
-            
+
         }
     },
     19: {
@@ -717,7 +717,7 @@ module.exports = {
             1: {buildingType: '210 Peachtree', buildingUse: 'Retail'},
             2: {buildingType: 'Parking Deck', buildingUse: 'Apartment'},
             3: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Apartment'},
@@ -741,7 +741,7 @@ module.exports = {
             18: {buildingType: 'Horizontal', buildingUse: 'Apartment'},
             19: {buildingType: 'Horizontal', buildingUse: 'Apartment'},
             20: {buildingType: 'Horizontal', buildingUse: 'Apartment'},
-         
+
         },
         roofs: {
             0: {buildingType: '446 E Ontario', buildingUse: 'Apartment'},
@@ -755,7 +755,7 @@ module.exports = {
             0: {buildingType: '101 Marietta', buildingUse: 'Business'},
             1: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             2: {buildingType: 'Tree', buildingUse: 'Business'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -785,7 +785,7 @@ module.exports = {
             2: {buildingType: 'Street Retail', buildingUse: 'Retail'},
             3: {buildingType: '222 Second', buildingUse: 'Business'},
             4: {buildingType: '233 S Wacker', buildingUse: 'Business'},
-           
+
         },
         bodies: {
             0: {buildingType: 'Horizontal', buildingUse: 'Business'},
@@ -811,14 +811,14 @@ module.exports = {
             20: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             21: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             22: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-            23: {buildingType: 'Glass Curtain', buildingUse: 'Business'}, 
+            23: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
         },
         roofs: {
             0: {buildingType: '600 Montgomery', buildingUse: 'Business'},
-            0: {buildingType: 'Pool', buildingUse: 'Attraction'},
-            0: {buildingType: 'Helipad', buildingUse: 'Business'},
-            0: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
-            0: {buildingType: 'Helipad', buildingUse: 'Business'},
+            1: {buildingType: 'Pool', buildingUse: 'Attraction'},
+            2: {buildingType: 'Helipad', buildingUse: 'Business'},
+            3: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
+            4: {buildingType: 'Helipad', buildingUse: 'Business'},
         }
     },
     22: {
@@ -826,7 +826,7 @@ module.exports = {
             0: {buildingType: '1201 Peachtree', buildingUse: 'Business'},
             1: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             2: {buildingType: 'Tree', buildingUse: 'Business'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -843,7 +843,7 @@ module.exports = {
             11: {buildingType: 'Horizontal', buildingUse: 'Business'},
             12: {buildingType: 'Horizontal', buildingUse: 'Business'},
             13: {buildingType: 'Horizontal', buildingUse: 'Business'},
-           
+
         },
         roofs: {
             0: {buildingType: '1201 Peachtree', buildingUse: 'Business'},
@@ -859,7 +859,7 @@ module.exports = {
             0: {buildingType: '1175 Peachtree', buildingUse: 'Business'},
             1: {buildingType: 'Street Retail', buildingUse: 'Retail'},
             2: {buildingType: 'Street Retail', buildingUse: 'Retail'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
@@ -882,8 +882,7 @@ module.exports = {
             17: {buildingType: 'Horizontal', buildingUse: 'Business'},
             18: {buildingType: 'Horizontal', buildingUse: 'Business'},
             19: {buildingType: 'Horizontal', buildingUse: 'Business'},
-          
-          
+
         },
         roofs: {
             0: {buildingType: '1175 Peachtree', buildingUse: 'Business'},
@@ -903,7 +902,7 @@ module.exports = {
             14: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             15: {buildingType: 'BlockCities Sign', buildingUse: 'Business'},
             16: {buildingType: 'Big Cheese', buildingUse: 'Attraction'},
-            
+
         }
     },
     24: {
@@ -912,7 +911,7 @@ module.exports = {
             1: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
             2: {buildingType: 'Retail', buildingUse: 'Retail'},
             3: {buildingType: 'Tree', buildingUse: 'Business'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -923,7 +922,7 @@ module.exports = {
             5: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             6: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             7: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-            
+
         },
         roofs: {
             0: {buildingType: '241 Ralph McGill', buildingUse: 'Business'},
@@ -939,13 +938,12 @@ module.exports = {
             10: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             11: {buildingType: 'Tennis', buildingUse: 'Attraction'},
             12: {buildingType: 'Tennis', buildingUse: 'Attraction'},
-         
         }
     },
     25: {
         bases: {
             0: {buildingType: '1585 Broadway', buildingUse: 'Retail'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
@@ -960,7 +958,7 @@ module.exports = {
             9: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             10: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
             11: {buildingType: 'Glass Curtain', buildingUse: 'Business'},
-           
+
         },
         roofs: {
             0: {buildingType: '1585 Broadway', buildingUse: 'Business'},
@@ -976,7 +974,7 @@ module.exports = {
             2: {buildingType: 'Parking Deck', buildingUse: 'Apartment'},
             3: {buildingType: 'Street Retail', buildingUse: 'Retail'},
             4: {buildingType: 'Street Retail', buildingUse: 'Retail'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
@@ -986,7 +984,7 @@ module.exports = {
             4: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
             5: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
             6: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
-           
+
         },
         roofs: {
             0: {buildingType: 'One Madison Lane', buildingUse: 'Apartment'},
@@ -1033,7 +1031,7 @@ module.exports = {
             0: {buildingType: '845 United Nations ', buildingUse: 'Apartment'},
             1: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             2: {buildingType: 'Tree', buildingUse: 'Apartment'},
-            
+
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Apartment'},
@@ -1078,8 +1076,7 @@ module.exports = {
             39: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
             40: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
             41: {buildingType: 'Glass Curtain', buildingUse: 'Apartment'},
-            
-           
+
         },
         roofs: {
             0: {buildingType: '845 United Nations ', buildingUse: 'Apartment'},
@@ -1088,7 +1085,7 @@ module.exports = {
             3: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             4: {buildingType: 'BlockCities Sign', buildingUse: 'Apartment'},
             5: {buildingType: 'NYC', buildingUse: 'Apartment'},
-            5: {buildingType: 'Zoomer', buildingUse: 'Apartment'},
+            6: {buildingType: 'Zoomer', buildingUse: 'Apartment'},
         }
     },
     29: {
@@ -1098,8 +1095,7 @@ module.exports = {
             2: {buildingType: '200 E Illinois', buildingUse: 'Apartment'},
             3: {buildingType: 'Street Retail', buildingUse: 'Retail'},
             4: {buildingType: 'Street Retail', buildingUse: 'Retail'},
-            
-            
+
         },
         bodies: {
             0: {buildingType: 'No Window', buildingUse: 'Business'},
@@ -1117,8 +1113,6 @@ module.exports = {
             12: {buildingType: 'No Window', buildingUse: 'Business'},
             13: {buildingType: 'No Window', buildingUse: 'Business'},
             14: {buildingType: 'No Window', buildingUse: 'Business'},
-          
-           
         },
         roofs: {
             0: {buildingType: '1 Parking Deck Way', buildingUse: 'Business'},
@@ -1136,7 +1130,6 @@ module.exports = {
             12: {buildingType: 'Basketball', buildingUse: 'Business'},
             13: {buildingType: 'Basketball', buildingUse: 'Business'},
             14: {buildingType: 'Basketball', buildingUse: 'Business'},
-            
         }
     },
 };
