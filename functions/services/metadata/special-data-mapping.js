@@ -487,4 +487,12 @@ module.exports = {
         background_colorId: backgrounConfig.PINK.id,
         heightInFt: 60,
     },
+    1000029: {
+        name: '2000 BlockCities Way',
+        bname: '2000 BlockCities Way',
+        city: 'Genesis',
+        background_color: backgrounConfig.LIGHT_ORANGE.hex,
+        background_colorId: backgrounConfig.LIGHT_ORANGE.id,
+        heightInFt: 456,
+    },
 };
