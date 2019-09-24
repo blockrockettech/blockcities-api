@@ -89,7 +89,7 @@ const isMainnet = (network) => {
 const blockCitiesAddresses = {
     mainnet: '0x2f2d5aA0EfDB9Ca3C9bB789693d06BEBEa88792F',
     ropsten: '0x86eD0a82dDc2EdEA8cC4Bc023eC2a4079DAB42c9',
-    rinkeby: '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9',
+    rinkeby: '0x74b8D7E2b681d1C4f13bd8722937A722bCc7A4F3',
     local: '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9'
 };
 
@@ -121,7 +121,7 @@ const getContractDetailsForAddress = (address) => {
                 deploymentBlock: 5372025,
                 address
             };
-        case '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9':
+        case '0x74b8D7E2b681d1C4f13bd8722937A722bCc7A4F3':
             return {
                 network: 'rinkeby',
                 abi: blockCitiesAbi,
