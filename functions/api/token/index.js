@@ -93,7 +93,6 @@ token.get('/image/:tokenId.png', async (request, response) => {
             .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
-            // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
