@@ -132,7 +132,10 @@ class ImageBuilderService {
                               roof,
                               exteriorColorway,
                               backgroundColorway,
-                          }) {
+                          },
+                          viewportBackground = null,
+                          pad = 0,
+    ) {
 
         try {
 
@@ -204,8 +207,14 @@ class ImageBuilderService {
             // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
-            // ViewBox - essentially canvas size and aspect ratio
-            $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
+            const boxEdge = canvasHeight > canvasWidth ? canvasHeight : canvasWidth;
+            $('#bc').attr('viewBox', `-${pad} -${pad} ${canvasWidth + (pad * 2)} ${canvasHeight + (pad * 2)}`);
+
+            // this is add a background colour (rather than transparent)
+            // required for custom images for MarbleCards, for example
+            if (viewportBackground) {
+                $('#bc').attr('style', `background: #${viewportBackground}`);
+            }
 
             $('style').html(cheerioSVGService.getStyle(styledBaseSvg, 'base'));
             $('style').append(cheerioSVGService.getStyle(styledBodySvg, 'body'));
@@ -254,11 +263,18 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, imageType = 'svg') {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, pad = 0) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
+
+            if (viewportBackground) {
+                const $ = cheerio.load(rawSvg, {xmlMode: true, normalizeWhitespace: true,});
+                $('svg').attr('style', `background: #${viewportBackground}`);
+
+                return $.xml();
+            }
 
             return rawSvg;
         } catch (e) {
