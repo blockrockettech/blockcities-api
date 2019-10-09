@@ -318,7 +318,7 @@
     </style>
   </defs>
   <title>Artboard 18</title>
-  <g>
+  <g id="root">
     <path id="Path" class="concrete-top" d="M0,277.128,335,470.541,490,305.996,220,150.111Z"/>
     <path id="Path-2" data-name="Path" class="exterior-R-prim" d="M45,256.921l-5,2.887v23.094l5-2.887Z"/>
     <path id="Path-3" data-name="Path" class="curtain-L-prim-dark" d="M50,259.808v11.5469L300,415.693V404.146Z"/>
