@@ -9,6 +9,8 @@ const {backgroundColorwaySwitch} = require('../../services/metadata/background-c
 
 const token = require('express').Router({mergeParams: true});
 
+const PAD_DEFAULT = 300;
+
 // Gets all token pointers form the contract
 token.get('/pointers', async (request, response) => {
     try {
@@ -156,7 +158,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, 200);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, PAD_DEFAULT);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
@@ -164,7 +166,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
             return response.send(specialPng);
         }
 
-        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, 200);
+        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, PAD_DEFAULT);
         const png = await convert(image, {
             height: canvasHeight * 2,
             puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
@@ -190,12 +192,12 @@ token.get('/:tokenId/image-bg', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, 200);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, PAD_DEFAULT);
 
             return response.send(specialSvg);
         }
 
-        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, 200);
+        const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, PAD_DEFAULT);
 
         return response.send(image);
     } catch (e) {
