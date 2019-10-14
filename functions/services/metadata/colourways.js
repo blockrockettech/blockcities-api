@@ -241,6 +241,24 @@ module.exports = {
                 light: '#FFF3E8',
                 dark: '#E6D6C7',
             } 
+         },
+         carbon: {
+            left: {
+                prim: '#1E1F22',
+                light: '#27282C',
+                dark: '#141517',
+            },
+            right: {
+                prim: '#2E2F31',
+                light: '#353638',
+                dark: '#262729',
+            },
+            top: {
+                prim: '#5B5C5E',
+                light: '#9FA2A6',
+                dark: '#4C4D4F',
+            } 
+         
         },
     
     },
@@ -343,6 +361,16 @@ module.exports = {
             right: {
                 prim: '#4869AE',
                 light: '#709DFF',
+            },
+        },
+        lightcarbon: {
+            left: {
+                prim: '#484A4D',
+                light: '#56585C',
+            },
+            right: {
+                prim: '#676A6E',
+                light: '#7A7D82',
             },
         },
     },
@@ -457,6 +485,20 @@ module.exports = {
                 prim_light: '#709DFF',
                 prim_dark_light: '#709DFF',
                 prim_light_dark: '#5C83D7',
+            },
+        },
+        lightcarbon: {
+            left: {
+                prim_dark: '#484A4D',
+                prim_light: '#6B6E73',
+                prim_dark_light: '#56585C',
+                prim_light_dark: '#5F6266',
+            },
+            right: {
+                prim_dark: '#676A6E',
+                prim_light: '#95989E',
+                prim_dark_light: '#7A7D82',
+                prim_light_dark: '#868A8F',
             },
         },
      
