@@ -219,7 +219,7 @@
     </clipPath>
   </defs>
   <title>Artboard 22</title>
-  <g>
+  <g id="root">
     <path id="anchor_0_277.128_480" class="top-prim" d="M.048,92.3761,160.048,0l320,184.7521-160,92.3761Z"/>
     <path id="Path" class="exterior-R-prim" d="M320,277.1282l160-92.3761V583.1238L320,675.5Z"/>
     <path id="Path-2" data-name="Path" class="exterior-L-prim" d="M0,92.3761,320,277.1282V675.5L0,490.7478Z"/>
