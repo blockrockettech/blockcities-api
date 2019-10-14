@@ -207,8 +207,10 @@ class ImageBuilderService {
             // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
-            const boxEdge = canvasHeight > canvasWidth ? canvasHeight : canvasWidth;
-            $('#bc').attr('viewBox', `-${pad} -${pad} ${canvasWidth + (pad * 2)} ${canvasHeight + (pad * 2)}`);
+            const ratio = canvasWidth / canvasHeight;
+            const padRatio = pad * ratio;
+            const widthNudge = 200;
+            $('#bc').attr('viewBox', `-${padRatio + widthNudge} -${padRatio} ${canvasWidth + ((padRatio + widthNudge) * 2)} ${canvasHeight + (padRatio * 2)}`);
 
             // this is add a background colour (rather than transparent)
             // required for custom images for MarbleCards, for example

@@ -9,7 +9,7 @@ const {backgroundColorwaySwitch} = require('../../services/metadata/background-c
 
 const token = require('express').Router({mergeParams: true});
 
-const PAD_DEFAULT = 600;
+const PAD_DEFAULT = 300;
 
 // Gets all token pointers form the contract
 token.get('/pointers', async (request, response) => {
