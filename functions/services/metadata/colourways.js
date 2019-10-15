@@ -489,16 +489,16 @@ module.exports = {
         },
         lightcarbon: {
             left: {
-                prim_dark: '#484A4D',
-                prim_light: '#6B6E73',
-                prim_dark_light: '#56585C',
-                prim_light_dark: '#5F6266',
+                prim_dark: '#141517',
+                prim_light: '#36383D',
+                prim_dark_light: '#26282B',
+                prim_light_dark: '#2F3136',
             },
             right: {
-                prim_dark: '#676A6E',
-                prim_light: '#95989E',
-                prim_dark_light: '#7A7D82',
-                prim_light_dark: '#868A8F',
+                prim_dark: '#3E4042',
+                prim_light: '#5B5D61',
+                prim_dark_light: '#4A4C4F',
+                prim_light_dark: '#56585C',
             },
         },
      
