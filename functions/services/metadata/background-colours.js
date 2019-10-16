@@ -115,6 +115,8 @@ const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
             return LIGHT_ORANGE;
         case LIGHT_YELLOW.id:
             return LIGHT_YELLOW;
+        case CARBON.id:
+            return CARBON;
         default:
             return GRAY;
     }
@@ -135,5 +137,6 @@ module.exports = {
         DULL_BLUE,
         AQUA,
         LIGHT_YELLOW,
+        CARBON,
     }
 };
