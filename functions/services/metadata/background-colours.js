@@ -72,6 +72,12 @@ const LIGHT_YELLOW = {
     name: 'lightyellow'
 };
 
+const CARBON = {
+    id: 12,
+    hex: '2E3031',
+    name: 'carbon'
+};
+
 const backgroundColorwaySwitch = (backgroundColorway, special = null) => {
     switch (backgroundColorway) {
 
