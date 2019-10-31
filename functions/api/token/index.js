@@ -2,6 +2,7 @@ const _ = require('lodash');
 
 const imageBuilderService = require('../../services/imageBuilder.service');
 const blockCitiesDataService = require('../../services/blockcities.data.service');
+const foamContractService = require('../../services/foam.contract.service');
 const openSeaService = require('../../services/openSea.service');
 
 const {convert} = require('convert-svg-to-png');
@@ -76,6 +77,19 @@ token.get('/account/:owner/tokens', async (request, response) => {
         }));
 
         return response.status(200).json(mappedTokens);
+    } catch (e) {
+        console.error(e);
+    }
+});
+
+// Getting account owned tokens (created in FOAM)
+token.get('/foam/:owner/tokens', async (request, response) => {
+    try {
+        const {owner, network} = request.params;
+
+        const tokens = await foamContractService.tokensOfOwner(network, owner);
+
+        return response.status(200).json(tokens);
     } catch (e) {
         console.error(e);
     }
@@ -158,7 +172,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, PAD_DEFAULT);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
@@ -192,7 +206,7 @@ token.get('/:tokenId/image-bg', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, PAD_DEFAULT);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground);
 
             return response.send(specialSvg);
         }

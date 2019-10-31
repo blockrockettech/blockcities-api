@@ -9,11 +9,18 @@ if (!INFURA_KEY) {
 }
 
 const {blockCitiesAbi} = require('./blockcities.abi');
+const foamAbi = require('./foam.abi');
 
 const connectToBlockCities = (network) => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
         .contract(blockCitiesAbi)
         .at(getBlockCitiesNftAddressForNetwork(network));
+};
+
+const connectToFoamMainnet = () => {
+    return new Eth(new Eth.HttpProvider(getHttpProviderUri(1)))
+        .contract(foamAbi)
+        .at('0x01eD068115ba99b94c65c7791D4Ac5Dee1253835');
 };
 
 const web3HttpInstance = (network) => {
@@ -146,4 +153,5 @@ module.exports = {
     web3WebSocketInstance,
     getBlockCitiesNftAddressForNetwork,
     getBlockCitiesNftDeploymentBlockForNetwork,
+    connectToFoamMainnet,
 };

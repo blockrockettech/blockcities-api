@@ -44,6 +44,10 @@ const colorMapper = (color) => {
             return 'Cool Grey';
         case 'black':
             return 'Black';
+        case 'carbon':
+            return 'Carbon';
+        case 'lightcarbon':
+            return 'Light Carbon';
         default:
             console.error(`Unable to map color [${color}]`);
             return _.toString(color);

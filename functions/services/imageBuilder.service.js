@@ -207,10 +207,16 @@ class ImageBuilderService {
             // this is the DOM skeleton we squirt into...
             const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
 
-            const ratio = canvasWidth / canvasHeight;
-            const padRatio = pad * ratio;
-            const widthNudge = 200;
-            $('#bc').attr('viewBox', `-${padRatio + widthNudge} -${padRatio} ${canvasWidth + ((padRatio + widthNudge) * 2)} ${canvasHeight + (padRatio * 2)}`);
+            // hacky padding so only use if explicitly specified
+            if (pad > 0) {
+                const ratio = canvasWidth / canvasHeight;
+                const padRatio = pad * ratio;
+                const widthNudge = 200;
+                $('#bc').attr('viewBox', `-${padRatio + widthNudge} -${padRatio} ${canvasWidth + ((padRatio + widthNudge) * 2)} ${canvasHeight + (padRatio * 2)}`);
+            }
+            else {
+                $('#bc').attr('viewBox', `0 0 ${canvasWidth} ${canvasHeight}`);
+            }
 
             // this is add a background colour (rather than transparent)
             // required for custom images for MarbleCards, for example
@@ -265,7 +271,7 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null, pad = 0) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null) {
 
         try {
             const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
