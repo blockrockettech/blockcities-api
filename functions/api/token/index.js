@@ -172,7 +172,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
@@ -206,7 +206,7 @@ token.get('/:tokenId/image-bg', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
 
             return response.send(specialSvg);
         }

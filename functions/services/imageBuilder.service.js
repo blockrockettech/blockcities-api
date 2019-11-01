@@ -271,10 +271,11 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, padding = false) {
 
         try {
-            const path = `${__dirname}/../raw_svgs/specials/${specialId}.svg`;
+            const paddingDir = padding ? 'padding' : 'nopadding';
+            const path = `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
 
             if (viewportBackground) {

@@ -1,0 +1,771 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 842.9319">
+  <defs>
+    <style>
+      .concrete-top {
+        fill: #e8e8e8;
+      }
+
+      .concrete-left {
+        fill: #a2a2a2;
+      }
+
+      .cls-1 {
+        fill: #112539;
+      }
+
+      .cls-2 {
+        fill: #d1d1d1;
+      }
+
+      .cls-3 {
+        fill: #c4e0fd;
+      }
+
+      .cls-4 {
+        fill: #2e5680;
+      }
+
+      .cls-5 {
+        fill: #1d3753;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #4874a4;
+      }
+
+      .cls-8 {
+        stroke: #000;
+        stroke-linecap: square;
+        stroke-miterlimit: 3;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+
+      .cls-10 {
+        fill: #9bbfe6;
+      }
+    </style>
+  </defs>
+  <title>Artboard 8</title>
+  <g>
+    <path class="concrete-top" d="M145,837.1579l145-83.716-145-83.716L0,753.4419Z"/>
+    <path class="concrete-left" d="M0,759.2159v-5.774l145,83.716v5.774Z"/>
+    <path class="cls-1" d="M55,733.2349V207.8459l-25-14.434v525.389Z"/>
+    <path class="concrete-top" d="M210,158.7709l25-14.433,25,14.433-25,14.434Z"/>
+    <path class="cls-2" d="M235,173.2049v-17.32l25-14.434v17.32Z"/>
+    <path class="concrete-left" d="M235,173.2049v-17.32l-25-14.434v17.32Z"/>
+    <path class="concrete-top" d="M240,164.5449v-5.774l15-8.66v5.774Z"/>
+    <path class="concrete-top" d="M215,155.8849v-5.774l15,8.66v5.774Z"/>
+    <path class="concrete-top" d="M235,155.8849v-5.774l15-8.66h10Z"/>
+    <path class="concrete-top" d="M235,150.1109l-15-8.66H210l25,14.434Z"/>
+    <path class="concrete-top" d="M235,127.0169v5.774l-15,8.66H210Z"/>
+    <path class="concrete-top" d="M260,141.4509l-25-14.434v5.774l15,8.66Z"/>
+    <path class="concrete-left" d="M255,155.8849l-5-2.887,5-2.887Z"/>
+    <path class="cls-2" d="M215,155.8849l5-2.887-5-2.887Z"/>
+    <path class="concrete-left" d="M235,144.3379l5,2.886,10-5.773-15-8.66Z"/>
+    <path class="cls-2" d="M230,147.2239l5-2.886v-11.547l-15,8.66Z"/>
+    <path class="cls-3" d="M80,106.81,60,95.2629l20-11.547,20,11.547Z"/>
+    <path class="cls-4" d="M210,135.6769V106.81l20-11.547V124.13Z"/>
+    <path class="cls-5" d="M80,135.6769V106.81L60,95.2629V124.13Z"/>
+    <path class="cls-6" d="M210,135.6769V106.81l-20-11.547V124.13Z"/>
+    <path class="cls-3" d="M210,106.81l20-11.547-20-11.547Z"/>
+    <path class="cls-6" d="M215,207.8459v-23.094l-20-11.547v23.094Z"/>
+    <path class="cls-4" d="M210,181.8649v-51.961l20-11.547v51.961Z"/>
+    <path class="concrete-top" d="M30,158.7709l25-14.433,25,14.433-25,14.434Z"/>
+    <path class="cls-4" d="M80,181.8649v-51.961l20-11.547v51.961Z"/>
+    <path class="cls-7" d="M80,147.2239l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M80,181.8649l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M110,210.7329v-57.735l-25-14.434v57.735Z"/>
+    <path class="cls-1" d="M105,219.3929l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-2" d="M55,173.2049v-17.32l25-14.434v17.32Z"/>
+    <path class="concrete-left" d="M55,173.2049v-17.32l-25-14.434v17.32Z"/>
+    <path class="concrete-top" d="M35,155.8849v-5.774l15,8.66v5.774Z"/>
+    <path class="concrete-top" d="M55,155.8849v-5.774l15-8.66H80Z"/>
+    <path class="concrete-top" d="M55,150.1109l-15-8.66H30l25,14.434Z"/>
+    <path class="concrete-top" d="M55,127.0169v5.774l-15,8.66H30Z"/>
+    <path class="concrete-top" d="M80,141.4509l-25-14.434v5.774l15,8.66Z"/>
+    <path class="cls-8" d="M75,155.8849l-5-2.887,5-2.887Z"/>
+    <path class="cls-2" d="M35,155.8849l5-2.887-5-2.887Z"/>
+    <path class="concrete-left" d="M55,144.3379l5,2.886,10-5.773-15-8.66Z"/>
+    <path class="cls-2" d="M50,147.2239l5-2.886v-11.547l-15,8.66Z"/>
+    <path class="cls-5" d="M210,181.8649v-51.961l-20-11.547v51.961Z"/>
+    <path class="cls-5" d="M80,181.8649v-51.961l-20-11.547v51.961Z"/>
+    <path class="cls-4" d="M180,210.7329v-57.735l25-14.434v57.735Z"/>
+    <path class="cls-3" d="M115,155.8849l-30-17.321,15-8.66,30,17.32Z"/>
+    <path class="cls-5" d="M125,207.8459v-51.961l-20-11.547v51.961Z"/>
+    <path class="cls-4" d="M190,118.3569V83.7159l20-11.547V106.81Z"/>
+    <path class="cls-5" d="M190,118.3569V83.7159l-20-11.547V106.81Z"/>
+    <path class="cls-4" d="M165,144.3379v-34.641l25-14.434v34.641Z"/>
+    <path class="cls-4" d="M125,213.62v-57.735l20-11.547v57.735Z"/>
+    <path class="concrete-top" d="M185,300.2219l5,2.887,25-14.434-5-2.887Z"/>
+    <path class="cls-3" d="M175,155.8849l30-17.321-15-8.66-30,17.32Z"/>
+    <path class="cls-6" d="M125,86.6029V51.9619l20-11.547v34.641Z"/>
+    <path class="cls-4" d="M165,207.8459v-51.961l20-11.547v51.961Z"/>
+    <path class="cls-7" d="M165,207.8459l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M185,202.0729l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-4" d="M165,86.6029V51.9619l10-5.774v34.641Z"/>
+    <path class="cls-4" d="M100,118.3569V83.7159l20-11.547V106.81Z"/>
+    <path class="cls-5" d="M125,144.3379v-34.641l-25-14.434v34.641Z"/>
+    <path class="cls-6" d="M165,86.6029V51.9619l-20-11.547v34.641Z"/>
+    <path class="cls-5" d="M125,86.6029V51.9619l-10-5.774v34.641Z"/>
+    <path class="cls-5" d="M165,213.62v-57.735l-20-11.547v57.735Z"/>
+    <path class="cls-5" d="M100,118.3569V83.7159L80,72.1689V106.81Z"/>
+    <path class="cls-3" d="M100,83.7159l20-11.547-20-11.547L80,72.1689Z"/>
+    <path class="cls-5" d="M135,103.9229V69.2819l-20-11.547v34.641Z"/>
+    <path class="cls-4" d="M135,103.9229V69.2819l10-5.773V98.15Z"/>
+    <path class="cls-3" d="M190,83.7159l20-11.547-20-11.547-20,11.547Z"/>
+    <path class="cls-4" d="M145,63.5089V28.8679l20-11.547v34.641Z"/>
+    <path class="cls-4" d="M155,103.9229V69.2819l20-11.547v34.641Z"/>
+    <path class="cls-5" d="M145,63.5089V28.8679l-20-11.547v34.641Z"/>
+    <path class="cls-5" d="M155,103.9229V69.2819l-10-5.773V98.15Z"/>
+    <path class="cls-3" d="M165,109.6969l25-14.434-15-8.66-25,14.433Z"/>
+    <path class="cls-3" d="M125,109.6969l-25-14.434,15-8.66,25,14.433Z"/>
+    <path class="cls-4" d="M145,144.3379v-34.641L165,98.15v34.641Z"/>
+    <path class="cls-5" d="M145,144.3379v-34.641L125,98.15v34.641Z"/>
+    <path class="cls-4" d="M190,378.1649v-57.736l25-14.433v57.735Z"/>
+    <path class="cls-3" d="M105,63.5089l10-5.774v11.547Z"/>
+    <path class="cls-3" d="M175,69.2819l10-5.773-10-5.774Z"/>
+    <path class="cls-4" d="M165,461.88V248.2609l25-14.434v213.62Z"/>
+    <path class="cls-4" d="M215,433.0129v-213.62l20-11.547v213.62Z"/>
+    <path class="cls-4" d="M175,640.8589V479.2009l20-11.547v161.658Z"/>
+    <path class="concrete-top" d="M170,458.9939l5,2.886,20-11.547-5-2.886Z"/>
+    <path class="concrete-top" d="M175,640.8589l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="concrete-top" d="M220,614.8779l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="cls-3" d="M210,129.9039l20-11.547L210,106.81l-20,11.547Z"/>
+    <path class="concrete-top" d="M215,433.0129l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="cls-4" d="M170,245.3739v-34.641l20-11.547v34.641Z"/>
+    <path class="cls-5" d="M120,245.3739v-34.641l-20-11.547v34.641Z"/>
+    <path class="cls-4" d="M180,764.9889V661.0659l20-11.547v103.923Z"/>
+    <path class="cls-4" d="M215,219.3929v-34.641l20-11.547v34.641Z"/>
+    <path class="cls-5" d="M75,219.3929v-34.641l-20-11.547v34.641Z"/>
+    <path class="concrete-top" d="M190,378.1649l5,2.886,25-14.433-5-2.887Z"/>
+    <path class="concrete-top" d="M195,531.1619l5,2.887,25-14.434-5-2.886Z"/>
+    <path class="cls-4" d="M235,207.8459v-34.641l25-14.434v34.641Z"/>
+    <path class="cls-1" d="M55,207.8459v-34.641l-25-14.434v34.641Z"/>
+    <path class="cls-4" d="M235,733.2349V207.8459l25-14.434v525.389Z"/>
+    <path class="cls-4" d="M145,259.8079v-34.641l25-14.434v34.641Z"/>
+    <path class="cls-1" d="M145,259.8079v-34.641l-25-14.434v34.641Z"/>
+    <path class="cls-4" d="M145,785.1959V259.8079l25-14.434v525.389Z"/>
+    <path class="cls-4" d="M220,614.8779V435.9l20-11.547v178.978Z"/>
+    <path class="concrete-top" d="M220,614.8779l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="cls-5" d="M180,747.6689l-12.5-7.217v-86.603l12.5,7.217Z"/>
+    <path class="concrete-top" d="M195,531.1619l5,2.887,25-14.434-5-2.886Z"/>
+    <path class="cls-7" d="M237.5,708.6969l20-11.547V679.83l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,708.6969l-20-11.547V679.83l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,674.0569l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,674.0569l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,639.4149l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,639.4149l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-4" d="M225,739.0079V635.0849l20-11.547v103.923Z"/>
+    <path class="cls-4" d="M210,285.7879v-69.282l-20,11.547v69.282Z"/>
+    <path class="cls-4" d="M195,531.1619v-132.79l25-14.434v132.791Z"/>
+    <path class="cls-4" d="M200,753.4419V551.37l25-14.434v202.072Z"/>
+    <path class="cls-5" d="M200,632.1989l-5-2.887v-80.829l5,2.887Z"/>
+    <path class="cls-5" d="M175,479.2009l-5-2.887-1,174.937,5,2.887Z"/>
+    <path class="cls-5" d="M195,450.3329l-5-2.886v-51.962l5,2.887Z"/>
+    <line class="cls-9" x1="215" y1="288.6749" x2="210" y2="285.7879"/>
+    <path class="cls-2" d="M215,202.0729l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-2" d="M175,479.2009l20-11.547v-17.321L175,461.88Z"/>
+    <path class="cls-2" d="M180,661.0659l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-2" d="M225,635.0849l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="concrete-top" d="M180,464.7669l10-5.773v5.773l-10,5.774Z"/>
+    <path class="concrete-top" d="M185,646.6319l10-5.773v5.773l-10,5.774Z"/>
+    <path class="concrete-top" d="M230,620.6519l10-5.774v5.774l-10,5.773Z"/>
+    <path class="concrete-left" d="M190,464.7669l-5-2.887,5-2.886Z"/>
+    <path class="concrete-left" d="M195,646.6319l-5-2.886,5-2.887Z"/>
+    <path class="concrete-left" d="M240,620.6519l-5-2.887,5-2.887Z"/>
+    <path class="cls-10" d="M165,103.9229l15-8.66-5-2.887L165,98.15Z"/>
+    <path class="cls-10" d="M125,103.9229l-15-8.66,5-2.887,10,5.774Z"/>
+    <path class="cls-10" d="M105,144.3379l-10-5.774,5-2.887,10,5.774Z"/>
+    <path class="cls-10" d="M80,101.0359l-10-5.773,10-5.774Z"/>
+    <path class="concrete-left" d="M195,398.3719v-17.321l-5-2.886v17.32Z"/>
+    <path class="cls-10" d="M210,101.0359l10-5.773-10-5.774Z"/>
+    <path class="concrete-left" d="M175,479.2009V461.88l-5-2.886v17.32Z"/>
+    <path class="concrete-left" d="M180,661.0659v-17.32l-11-6.351,1,17.898Z"/>
+    <path class="cls-5" d="M215,213.62v-11.547l-5-2.887v11.547Z"/>
+    <path class="cls-5" d="M75,213.62v-11.547l5-2.887v11.547Z"/>
+    <path class="cls-10" d="M185,144.3379l10-5.774-5-2.887-10,5.774Z"/>
+    <path class="cls-3" d="M165,155.8849l20-11.547-20-11.547-20,11.547Z"/>
+    <path class="cls-10" d="M100,77.9419l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="cls-2" d="M145,779.4229l25-14.434V808.29l-25,14.434Z"/>
+    <path class="cls-2" d="M180,764.9889l20-11.547V790.97l-20,11.547Z"/>
+    <path class="cls-3" d="M80,129.9039l20-11.547L80,106.81l-20,11.547Z"/>
+    <path class="cls-2" d="M225,739.0079l20-11.547v37.528l-20,11.547Z"/>
+    <path class="cls-2" d="M200,753.4419l25-14.434v37.528L200,790.97Z"/>
+    <path class="cls-2" d="M245,721.6879l15-8.66v43.301l-15,8.66Z"/>
+    <path class="concrete-left" d="M180,764.9889l-10-5.773v-20.208l10,5.774Z"/>
+    <path class="concrete-left" d="M180,802.5169l-10-5.774v-37.527l10,5.773Z"/>
+    <path class="concrete-left" d="M210,216.5059v-17.32l5,2.887v17.32Z"/>
+    <path class="cls-2" d="M80,216.5059v-17.32l-5,2.887v17.32Z"/>
+    <path class="concrete-left" d="M210,285.7879v-69.282l5,2.887v69.282Z"/>
+    <path class="cls-10" d="M190,77.9419l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="concrete-left" d="M190,395.4849l5,2.887v51.961l-5-2.886Z"/>
+    <path class="concrete-left" d="M175,658.1789v83.716l5,2.887v-83.716Z"/>
+    <path class="concrete-left" d="M170,476.3139l5,2.887v178.978l-5-2.886Z"/>
+    <path class="cls-4" d="M185,773.6489l10-5.773v25.981l-10,5.773Z"/>
+    <path class="cls-4" d="M230,747.6689l10-5.774v25.981l-10,5.773Z"/>
+    <path class="cls-4" d="M245,741.8949l7.5-4.33v20.207l-7.5,4.33Z"/>
+    <path class="cls-4" d="M152.5,795.3l10-5.773v20.207l-10,5.773Z"/>
+    <path class="cls-4" d="M205,754.8859l15-8.661v33.198l-15,8.66Z"/>
+    <path class="concrete-left" d="M192.5,792.4129l2.5,1.444v-25.981l-2.5,1.443Z"/>
+    <path class="concrete-left" d="M237.5,766.4329l2.5,1.443v-25.981l-2.5,1.444Z"/>
+    <path class="concrete-left" d="M250,756.3289l2.5,1.443v-20.207l-2.5,1.443Z"/>
+    <path class="concrete-left" d="M160,808.29l2.5,1.444v-20.207L160,790.97Z"/>
+    <path class="concrete-left" d="M217.5,777.98l2.5,1.443v-33.198l-2.5,1.444Z"/>
+    <path class="concrete-top" d="M185,799.63l10-5.773-2.5-1.444-7.5,4.33Z"/>
+    <path class="concrete-top" d="M230,773.6489l10-5.773-2.5-1.443-7.5,4.33Z"/>
+    <path class="concrete-top" d="M245,762.1019l7.5-4.33-2.5-1.443-5,2.887Z"/>
+    <path class="concrete-top" d="M152.5,815.5069l10-5.773L160,808.29l-7.5,4.331Z"/>
+    <path class="concrete-top" d="M205,785.1959l12.5-7.216,2.5,1.443-15,8.66Z"/>
+    <path class="concrete-left" d="M200,753.4419l1.25-.722v37.528l-1.25.722Z"/>
+    <path class="concrete-left" d="M225,739.0079l1.25-.721v37.528l-1.25.721Z"/>
+    <path class="concrete-left" d="M245,721.6879l1.25-.722v5.774l-1.25.721Z"/>
+    <path class="concrete-left" d="M245,727.4609l1.25-.721v37.528l-1.25.721Z"/>
+    <path class="cls-6" d="M217.5,770.7629v-23.094l1.25-.722v24.537Z"/>
+    <path class="cls-6" d="M237.5,766.4329v-23.094l1.25-.722v24.537Z"/>
+    <path class="cls-6" d="M192.5,792.4129v-23.094l1.25-.721v24.537Z"/>
+    <path class="cls-6" d="M160,808.29V790.97l1.25-.722v18.764Z"/>
+    <path class="cls-6" d="M250,756.3289v-17.321l1.25-.721v18.764Z"/>
+    <path class="cls-6" d="M218.75,771.4839,205,779.4229V777.98l12.5-7.217Z"/>
+    <path class="concrete-top" d="M216.25,748.39l1.25-.721v23.094l-1.25-.722Z"/>
+    <path class="concrete-top" d="M236.25,744.06l1.25-.721v23.094l-1.25-.722Z"/>
+    <path class="concrete-top" d="M191.25,770.0409l1.25-.722v23.094l-1.25-.721Z"/>
+    <path class="concrete-top" d="M158.75,791.6919l1.25-.722v17.32l-1.25-.721Z"/>
+    <path class="concrete-top" d="M248.75,739.73l1.25-.722v17.321l-1.25-.722Z"/>
+    <path class="concrete-top" d="M212.5,750.5549l1.25-.721v23.094l-1.25-.722Z"/>
+    <path class="concrete-top" d="M208.75,752.72l1.25-.721v23.094l-1.25-.722Z"/>
+    <path class="concrete-top" d="M205,754.8859l1.25-.722v23.094l-1.25-.722Z"/>
+    <path class="concrete-top" d="M205,776.5359l11.25-6.495,1.25.722L205,777.98Z"/>
+    <path class="concrete-top" d="M205,770.7629l11.25-6.495,1.25.721-12.5,7.217Z"/>
+    <path class="concrete-top" d="M205,764.9889l11.25-6.495,1.25.722-12.5,7.217Z"/>
+    <path class="concrete-top" d="M205,759.2159l11.25-6.496,1.25.722-12.5,7.217Z"/>
+    <path class="cls-6" d="M215,749.1119v24.537l-1.25.722v-24.537Z"/>
+    <path class="cls-6" d="M210,775.0929v-23.094l1.25-.722v24.538Z"/>
+    <path class="cls-6" d="M207.5,753.4419V777.98l-1.25.721v-24.537Z"/>
+    <path class="cls-6" d="M205,756.3289l13.75-7.939v-1.443L205,754.8859Z"/>
+    <path class="cls-6" d="M205,762.1019l13.75-7.938V752.72L205,760.6589Z"/>
+    <path class="cls-6" d="M205,773.6489l13.75-7.938v-1.444L205,772.2059Z"/>
+    <path class="cls-6" d="M205,767.8759l13.75-7.939v-1.443L205,766.4329Z"/>
+    <path class="concrete-top" d="M236.25,765.7109l-6.25,3.608v1.444l7.5-4.33Z"/>
+    <path class="concrete-top" d="M191.25,791.6919,185,795.3v1.443l7.5-4.33Z"/>
+    <path class="concrete-top" d="M158.75,807.5689l-6.25,3.608v1.444l7.5-4.331Z"/>
+    <path class="concrete-top" d="M248.75,755.6069l-2.5,1.444v1.443l3.75-2.165Z"/>
+    <path class="concrete-top" d="M158.75,801.7949l-6.25,3.609v1.443l7.5-4.33Z"/>
+    <path class="concrete-top" d="M248.75,749.8339l-2.5,1.443v1.444l3.75-2.166Z"/>
+    <path class="concrete-top" d="M158.75,796.0219l-6.25,3.608v1.444l7.5-4.331Z"/>
+    <path class="cls-10" d="M210,124.13l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="concrete-top" d="M248.75,744.06l-2.5,1.444v1.443l3.75-2.165Z"/>
+    <path class="concrete-top" d="M236.25,759.9369l-6.25,3.609v1.443l7.5-4.33Z"/>
+    <path class="concrete-top" d="M191.25,785.9179l-6.25,3.609v1.443l7.5-4.33Z"/>
+    <path class="concrete-top" d="M236.25,754.1639l-6.25,3.608v1.444l7.5-4.33Z"/>
+    <path class="concrete-top" d="M191.25,780.1449l-6.25,3.608v1.443l7.5-4.33Z"/>
+    <path class="concrete-top" d="M231.875,746.5859l1.25-.722v23.094l-1.25-.721Z"/>
+    <path class="concrete-top" d="M186.875,772.9279l1.25-.722V795.3l-1.25-.722Z"/>
+    <path class="concrete-top" d="M236.25,748.39l-6.25,3.609v1.443l7.5-4.33Z"/>
+    <path class="cls-6" d="M155,811.1769v-17.32l1.25-.722v18.764Z"/>
+    <path class="concrete-top" d="M191.25,774.3709,185,777.98v1.443l7.5-4.33Z"/>
+    <path class="cls-6" d="M230,772.2059l8.75-5.052-1.25-.721-7.5,4.33Z"/>
+    <path class="cls-6" d="M185,798.1869l8.75-5.052-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M152.5,814.0639l8.75-5.052L160,808.29l-7.5,4.331Z"/>
+    <path class="cls-6" d="M246.25,759.9369l5-2.886-1.25-.722-3.75,2.165Z"/>
+    <path class="cls-6" d="M152.5,808.29l8.75-5.051-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M246.25,754.1639l5-2.887-1.25-.722-3.75,2.166Z"/>
+    <path class="cls-6" d="M152.5,802.5169l8.75-5.052-1.25-.722-7.5,4.331Z"/>
+    <path class="cls-6" d="M246.25,748.39l5-2.886-1.25-.722-3.75,2.165Z"/>
+    <path class="cls-6" d="M152.5,796.7429l8.75-5.051L160,790.97l-7.5,4.33Z"/>
+    <path class="cls-6" d="M246.25,742.6169l5-2.887-1.25-.722-3.75,2.166Z"/>
+    <path class="cls-6" d="M230,766.4329l8.75-5.052-1.25-.722-7.5,4.33Z"/>
+    <path class="concrete-top" d="M153.75,794.5779l1.25-.721v17.32l-1.25-.721Z"/>
+    <path class="cls-6" d="M185,792.4129l8.75-5.051-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M230,760.6589l8.75-5.052-1.25-.721-7.5,4.33Z"/>
+    <path class="cls-6" d="M185,786.64l8.75-5.052-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M230,754.8859l8.75-5.052-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M185,780.8659l8.75-5.052-1.25-.721-7.5,4.33Z"/>
+    <path class="cls-6" d="M230,749.1119l8.75-5.052-1.25-.722-7.5,4.331Z"/>
+    <path class="cls-6" d="M185,775.0929l8.75-5.052-1.25-.722-7.5,4.33Z"/>
+    <path class="cls-6" d="M234.375,745.1429V769.68l-1.25.722v-24.538Z"/>
+    <path class="cls-6" d="M189.375,771.4839v23.538l-1.25.721v-23.537Z"/>
+    <path class="concrete-top" d="M105,300.2219l-5,2.887-25-14.434,5-2.887Z"/>
+    <path class="cls-1" d="M100,378.1649v-57.736l-25-14.433v57.735Z"/>
+    <path class="cls-1" d="M125,461.88V248.2609l-25-14.434v213.62Z"/>
+    <path class="cls-1" d="M75,433.0129v-213.62l-20-11.547v213.62Z"/>
+    <path class="cls-1" d="M115,640.8589V479.2009l-20-11.547v161.658Z"/>
+    <path class="concrete-top" d="M120,458.9939l-5,2.886-20-11.547,5-2.886Z"/>
+    <path class="concrete-top" d="M115,640.8589l-5,2.887-20-11.547,5-2.887Z"/>
+    <path class="concrete-top" d="M70,614.8779l-5,2.887-20-11.547,5-2.887Z"/>
+    <path class="concrete-top" d="M75,433.0129,70,435.9l-20-11.547,5-2.887Z"/>
+    <path class="cls-1" d="M110,764.9889V661.0659l-20-11.547v103.923Z"/>
+    <path class="concrete-top" d="M95,531.1619l-5,2.887-25-14.434,5-2.886Z"/>
+    <path class="concrete-left" d="M100,320.4289v-17.32l-25-14.434v17.321Z"/>
+    <path class="cls-1" d="M145,785.1959V259.8079l-25-14.434v525.389Z"/>
+    <path class="cls-1" d="M70,614.8779V435.9l-20-11.547v178.978Z"/>
+    <path class="concrete-top" d="M70,614.8779l-5,2.887-20-11.547,5-2.887Z"/>
+    <path class="cls-5" d="M110,747.6689l12.5-7.217v-86.603l-12.5,7.217Z"/>
+    <path class="cls-1" d="M65,739.0079V635.0849l-20-11.547v103.923Z"/>
+    <path class="cls-1" d="M80,285.7879v-69.282l20,11.547v69.282Z"/>
+    <path class="cls-1" d="M95,531.1619v-132.79l-25-14.434v132.791Z"/>
+    <path class="cls-1" d="M90,753.4419V551.37l-25-14.434v202.072Z"/>
+    <path class="cls-5" d="M90,632.1989l5-2.887v-80.829l-5,2.887Z"/>
+    <path class="cls-5" d="M115,479.2009l5-2.887,1,174.937-5,2.887Z"/>
+    <path class="cls-5" d="M95,450.3329l5-2.886v-51.962l-5,2.887Z"/>
+    <path class="concrete-top" d="M95,305.9959l-15-8.661v5.774l15,8.66Z"/>
+    <path class="concrete-left" d="M115,479.2009l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="concrete-left" d="M110,661.0659l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="concrete-left" d="M65,635.0849l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-10" d="M165,150.1109l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="concrete-top" d="M110,464.7669l-10-5.773v5.773l10,5.774Z"/>
+    <path class="concrete-top" d="M105,646.6319l-10-5.773v5.773l10,5.774Z"/>
+    <path class="concrete-top" d="M60,620.6519l-10-5.774v5.774l10,5.773Z"/>
+    <path class="cls-2" d="M100,464.7669l5-2.887-5-2.886Z"/>
+    <path class="cls-2" d="M95,646.6319l5-2.886-5-2.887Z"/>
+    <path class="cls-2" d="M50,620.6519l5-2.887-5-2.887Z"/>
+    <path class="cls-2" d="M80,303.1089l5-2.887-5-2.887Z"/>
+    <path class="cls-2" d="M95,398.3719v-17.321l5-2.886v17.32Z"/>
+    <path class="cls-2" d="M115,479.2009V461.88l5-2.886v17.32Z"/>
+    <path class="cls-2" d="M110,661.0659v-17.32l12.5-7.217v17.32Z"/>
+    <path class="concrete-left" d="M145,779.4229l-25-14.434V808.29l25,14.434Z"/>
+    <path class="concrete-left" d="M110,764.9889l-20-11.547V790.97l20,11.547Z"/>
+    <path class="concrete-left" d="M65,739.0079l-20-11.547v37.528l20,11.547Z"/>
+    <path class="concrete-left" d="M90,753.4419l-25-14.434v37.528L90,790.97Z"/>
+    <path class="concrete-left" d="M45,718.8009l-15-8.66v46.188l15,8.66Z"/>
+    <path class="cls-2" d="M110,764.9889l10-5.773v-20.208l-10,5.774Z"/>
+    <path class="cls-2" d="M110,802.5169l10-5.774v-37.527l-10,5.773Z"/>
+    <path class="cls-2" d="M80,285.7879v-69.282l-5,2.887v69.282Z"/>
+    <path class="cls-2" d="M100,395.4849l-5,2.887v51.961l5-2.886Z"/>
+    <path class="cls-2" d="M115,658.1789v86.603l-5,2.887v-86.603Z"/>
+    <path class="cls-2" d="M120,476.3139l-5,2.887v178.978l5-2.886Z"/>
+    <path class="cls-4" d="M105,773.6489l-10-5.773v25.981l10,5.773Z"/>
+    <path class="cls-4" d="M60,747.6689l-10-5.774v25.981l10,5.773Z"/>
+    <path class="cls-4" d="M45,741.8949l-7.5-4.33v20.207l7.5,4.33Z"/>
+    <path class="cls-4" d="M137.5,795.3l-10-5.773v20.207l10,5.773Z"/>
+    <path class="cls-4" d="M85,754.8859l-15-8.661v33.198l15,8.66Z"/>
+    <path class="cls-2" d="M97.5,792.4129l-2.5,1.444v-25.981l2.5,1.443Z"/>
+    <path class="cls-2" d="M52.5,766.4329l-2.5,1.443v-25.981l2.5,1.444Z"/>
+    <path class="cls-2" d="M40,756.3289l-2.5,1.443v-20.207l2.5,1.443Z"/>
+    <path class="cls-2" d="M130,808.29l-2.5,1.444v-20.207l2.5,1.443Z"/>
+    <path class="cls-2" d="M72.5,777.98l-2.5,1.443v-33.198l2.5,1.444Z"/>
+    <path class="concrete-top" d="M105,799.63l-10-5.773,2.5-1.444,7.5,4.33Z"/>
+    <path class="concrete-top" d="M60,773.6489l-10-5.773,2.5-1.443,7.5,4.33Z"/>
+    <path class="concrete-top" d="M45,762.1019l-7.5-4.33,2.5-1.443,5,2.887Z"/>
+    <path class="concrete-top" d="M137.5,815.5069l-10-5.773,2.5-1.444,7.5,4.331Z"/>
+    <path class="concrete-top" d="M85,785.1959,72.5,777.98l-2.5,1.443,15,8.66Z"/>
+    <path class="cls-10" d="M80,124.13l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="cls-2" d="M90,721.6879l-1.25-.722V752.72l1.25.722Z"/>
+    <path class="cls-2" d="M65,739.0079l-1.25-.721v37.528l1.25.721Z"/>
+    <path class="cls-2" d="M45,718.8009l-1.25-.722v8.661l1.25.721Z"/>
+    <path class="cls-2" d="M45,727.4609l-1.25-.721v37.528l1.25.721Z"/>
+    <path class="cls-6" d="M72.5,770.7629v-23.094l-1.25-.722v24.537Z"/>
+    <path class="cls-6" d="M52.5,766.4329v-23.094l-1.25-.722v24.537Z"/>
+    <path class="cls-6" d="M97.5,792.4129v-23.094l-1.25-.721v24.537Z"/>
+    <path class="cls-6" d="M130,808.29V790.97l-1.25-.722v18.764Z"/>
+    <path class="cls-6" d="M40,756.3289v-17.321l-1.25-.721v18.764Z"/>
+    <path class="cls-6" d="M71.25,771.4839,85,779.4229V777.98l-12.5-7.217Z"/>
+    <path class="concrete-top" d="M73.75,748.39l-1.25-.721v23.094l1.25-.722Z"/>
+    <path class="concrete-top" d="M53.75,744.06l-1.25-.721v23.094l1.25-.722Z"/>
+    <path class="concrete-top" d="M98.75,770.0409l-1.25-.722v23.094l1.25-.721Z"/>
+    <path class="concrete-top" d="M131.25,791.6919,130,790.97v17.32l1.25-.721Z"/>
+    <path class="concrete-top" d="M41.25,739.73l-1.25-.722v17.321l1.25-.722Z"/>
+    <path class="concrete-top" d="M77.5,750.5549l-1.25-.721v23.094l1.25-.722Z"/>
+    <path class="concrete-top" d="M81.25,752.72l-1.25-.721v23.094l1.25-.722Z"/>
+    <path class="concrete-top" d="M85,754.8859l-1.25-.722v23.094l1.25-.722Z"/>
+    <path class="concrete-top" d="M85,776.5359l-11.25-6.495-1.25.722L85,777.98Z"/>
+    <path class="concrete-top" d="M85,770.7629l-11.25-6.495-1.25.721,12.5,7.217Z"/>
+    <path class="concrete-top" d="M85,764.9889l-11.25-6.495-1.25.722,12.5,7.217Z"/>
+    <path class="concrete-top" d="M85,759.2159,73.75,752.72l-1.25.722,12.5,7.217Z"/>
+    <path class="cls-6" d="M75,749.1119v24.537l1.25.722v-24.537Z"/>
+    <path class="cls-6" d="M80,775.0929v-23.094l-1.25-.722v24.538Z"/>
+    <path class="cls-6" d="M82.5,753.4419V777.98l1.25.721v-24.537Z"/>
+    <path class="cls-6" d="M85,756.3289,71.25,748.39v-1.443L85,754.8859Z"/>
+    <path class="cls-6" d="M85,762.1019l-13.75-7.938V752.72L85,760.6589Z"/>
+    <path class="cls-6" d="M85,773.6489l-13.75-7.938v-1.444L85,772.2059Z"/>
+    <path class="cls-6" d="M85,767.8759l-13.75-7.939v-1.443L85,766.4329Z"/>
+    <path class="concrete-top" d="M53.75,765.7109l6.25,3.608v1.444l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M98.75,791.6919,105,795.3v1.443l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M131.25,807.5689l6.25,3.608v1.444L130,808.29Z"/>
+    <path class="concrete-top" d="M41.25,755.6069l2.5,1.444v1.443L40,756.3289Z"/>
+    <path class="concrete-top" d="M131.25,801.7949l6.25,3.609v1.443l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M41.25,749.8339l2.5,1.443v1.444L40,750.5549Z"/>
+    <path class="concrete-top" d="M131.25,796.0219l6.25,3.608v1.444l-7.5-4.331Z"/>
+    <path class="concrete-top" d="M41.25,744.06l2.5,1.444v1.443L40,744.7819Z"/>
+    <path class="concrete-top" d="M53.75,759.9369l6.25,3.609v1.443l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M98.75,785.9179l6.25,3.609v1.443l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M53.75,754.1639l6.25,3.608v1.444l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M98.75,780.1449l6.25,3.608v1.443l-7.5-4.33Z"/>
+    <path class="concrete-top" d="M58.125,746.5859l-1.25-.722v23.094l1.25-.721Z"/>
+    <path class="concrete-top" d="M103.125,772.9279l-1.25-.722V795.3l1.25-.722Z"/>
+    <path class="concrete-top" d="M53.75,748.39l6.25,3.609v1.443l-7.5-4.33Z"/>
+    <path class="cls-6" d="M135,811.1769v-17.32l-1.25-.722v18.764Z"/>
+    <path class="concrete-top" d="M98.75,774.3709,105,777.98v1.443l-7.5-4.33Z"/>
+    <path class="cls-6" d="M60,772.2059l-8.75-5.052,1.25-.721,7.5,4.33Z"/>
+    <path class="cls-6" d="M105,798.1869l-8.75-5.052,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M137.5,814.0639l-8.75-5.052,1.25-.722,7.5,4.331Z"/>
+    <path class="cls-6" d="M43.75,759.9369l-5-2.886,1.25-.722,3.75,2.165Z"/>
+    <path class="cls-6" d="M137.5,808.29l-8.75-5.051,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M43.75,754.1639l-5-2.887,1.25-.722,3.75,2.166Z"/>
+    <path class="cls-6" d="M137.5,802.5169l-8.75-5.052,1.25-.722,7.5,4.331Z"/>
+    <path class="cls-6" d="M43.75,748.39l-5-2.886,1.25-.722,3.75,2.165Z"/>
+    <path class="cls-6" d="M137.5,796.7429l-8.75-5.051,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M43.75,742.6169l-5-2.887,1.25-.722,3.75,2.166Z"/>
+    <path class="cls-6" d="M60,766.4329l-8.75-5.052,1.25-.722,7.5,4.33Z"/>
+    <path class="concrete-top" d="M136.25,794.5779l-1.25-.721v17.32l1.25-.721Z"/>
+    <path class="cls-6" d="M105,792.4129l-8.75-5.051,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M60,760.6589l-8.75-5.052,1.25-.721,7.5,4.33Z"/>
+    <path class="cls-6" d="M105,786.64l-8.75-5.052,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M60,754.8859l-8.75-5.052,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M105,780.8659l-8.75-5.052,1.25-.721,7.5,4.33Z"/>
+    <path class="cls-6" d="M60,749.1119l-8.75-5.052,1.25-.722,7.5,4.331Z"/>
+    <path class="cls-6" d="M105,775.0929l-8.75-5.052,1.25-.722,7.5,4.33Z"/>
+    <path class="cls-6" d="M55.625,745.1429V769.68l1.25.722v-24.538Z"/>
+    <path class="cls-6" d="M100.625,771.4839v23.538l1.25.721v-23.537Z"/>
+    <path class="cls-3" d="M135,69.2819l10-5.773-20-11.547-10,5.773Z"/>
+    <path class="cls-3" d="M155,69.2819l20-11.547-10-5.773-20,11.547Z"/>
+    <path class="cls-10" d="M135,63.5089l-10-5.774,5-2.887,10,5.774Z"/>
+    <path class="cls-10" d="M155,63.5089l10-5.774-5-2.887-10,5.774Z"/>
+    <path class="cls-3" d="M145,28.8679l20-11.547L145,5.7739l-20,11.547Z"/>
+    <path class="cls-10" d="M145,23.0939l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="cls-3" d="M165,51.9619l10-5.774-10-5.773Z"/>
+    <path class="cls-3" d="M125,51.9619V40.4149l-10,5.773Z"/>
+    <g>
+      <ellipse class="concrete-top" cx="145" cy="15.8771" rx="7.5" ry="4.3301"/>
+      <rect class="concrete-top" x="137.5" y="7.9219" width="15" height="7.955"/>
+      <ellipse class="cls-6" cx="145" cy="7.922" rx="7.5" ry="4.3301"/>
+    </g>
+    <g>
+      <ellipse class="concrete-top" cx="145" cy="5.4126" rx="5.625" ry="3.2476"/>
+      <rect class="concrete-top" x="139.375" y="3.2479" width="11.25" height="2.165"/>
+      <ellipse class="cls-6" cx="145" cy="3.2476" rx="5.625" ry="3.2476"/>
+    </g>
+    <path class="concrete-top" d="M120,210.7329l25-14.434,25,14.434-25,14.434Z"/>
+    <path class="concrete-top" d="M180,210.7329l5,2.887,25-14.434-5-2.887Z"/>
+    <path class="concrete-top" d="M110,210.7329l-5,2.887-25-14.434,5-2.887Z"/>
+    <path class="concrete-top" d="M165,207.8459l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="cls-2" d="M190,228.0529v-17.32l20-11.547v17.32Z"/>
+    <path class="concrete-left" d="M100,228.0529v-17.32l-20-11.547v17.32Z"/>
+    <path class="concrete-top" d="M195,213.62l10-5.774v5.774l-10,5.773Z"/>
+    <path class="concrete-top" d="M95,213.62l-10-5.774v5.774l10,5.773Z"/>
+    <path class="cls-2" d="M170,228.0529l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="concrete-top" d="M175,213.62l10-5.774v5.774l-10,5.773Z"/>
+    <path class="concrete-left" d="M185,213.62l-5-2.887,5-2.887Z"/>
+    <path class="concrete-left" d="M205,213.62l-5-2.887,5-2.887Z"/>
+    <path class="cls-2" d="M85,213.62l5-2.887-5-2.887Z"/>
+    <path class="concrete-top" d="M125,207.8459l-5,2.887-20-11.547,5-2.887Z"/>
+    <path class="concrete-left" d="M120,228.0529l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="concrete-top" d="M115,213.62l-10-5.774v5.774l10,5.773Z"/>
+    <path class="cls-2" d="M105,213.62l5-2.887-5-2.887Z"/>
+    <g>
+      <path class="cls-2" d="M145,225.1669v-17.321l25-14.434v17.321Z"/>
+      <path class="concrete-left" d="M145,225.1669v-17.321l-25-14.434v17.321Z"/>
+      <path class="concrete-top" d="M125,207.8459v-5.773l15,8.66v5.773Z"/>
+      <path class="concrete-top" d="M145,207.8459v-5.773l15-8.661h10Z"/>
+      <path class="concrete-top" d="M145,202.0729l-15-8.661H120l25,14.434Z"/>
+      <path class="concrete-top" d="M145,178.9789v5.773l-15,8.66H120Z"/>
+      <path class="concrete-top" d="M170,193.4119l-25-14.433v5.773l15,8.66Z"/>
+      <path class="concrete-top" d="M150,216.5059v-5.773l15-8.66v5.773Z"/>
+      <path class="concrete-left" d="M165,207.8459l-5-2.887,5-2.886Z"/>
+      <path class="cls-2" d="M125,207.8459l5-2.887-5-2.886Z"/>
+      <path class="concrete-left" d="M145,196.2989l5,2.887,10-5.774-15-8.66Z"/>
+      <path class="cls-2" d="M140,199.1859l5-2.887v-11.547l-15,8.66Z"/>
+    </g>
+    <path class="concrete-top" d="M210,181.8649l5,2.887,20-11.547-5-2.887Z"/>
+    <path class="concrete-left" d="M75,202.0729l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="concrete-top" d="M220,187.6389l10-5.774v5.774l-10,5.773Z"/>
+    <path class="concrete-top" d="M70,187.6389l-10-5.774v5.774l10,5.773Z"/>
+    <path class="concrete-left" d="M215,202.0729l-10-5.774v-17.32l10,5.773Z"/>
+    <path class="cls-2" d="M75,202.0729l10-5.774v-17.32l-10,5.773Z"/>
+    <path class="concrete-top" d="M210,187.6389l-5-2.887v5.774l5,2.886Z"/>
+    <path class="concrete-top" d="M80,187.6389l5-2.887v5.774l-5,2.886Z"/>
+    <path class="concrete-left" d="M230,187.6389l-5-2.887,5-2.887Z"/>
+    <path class="cls-2" d="M60,187.6389l5-2.887-5-2.887Z"/>
+    <path class="concrete-top" d="M80,181.8649l-5,2.887-20-11.547,5-2.887Z"/>
+    <path class="cls-2" d="M145,842.9319l145-83.716v-5.774l-145,83.716Z"/>
+    <path class="cls-7" d="M145,46.1879l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M145,127.0169l20-11.547V98.15l-20,11.547Z"/>
+    <path class="cls-7" d="M155,86.6029l20-11.547V57.7349l-20,11.547Z"/>
+    <path class="cls-7" d="M135,86.6029l10-5.774v-17.32l-10,5.773Z"/>
+    <path class="cls-7" d="M190,101.0359l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M210,147.2239l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M210,181.8649l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-1" d="M145,63.5089l-20-11.547V34.6409l20,11.547Z"/>
+    <path class="cls-1" d="M145,144.3379l-20-11.547V115.47l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,223.7229l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,223.7229l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-1" d="M80,164.5449l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-1" d="M155,92.3759l-10-5.773v-5.774l10,5.774Z"/>
+    <path class="cls-1" d="M135,98.15l-20-11.547V75.0559l20,11.547Z"/>
+    <path class="cls-1" d="M125,144.3379l-25-14.434v-17.321l25,14.434Z"/>
+    <path class="cls-1" d="M100,118.3569,80,106.81V89.4889l20,11.547Z"/>
+    <path class="cls-1" d="M65,115.47l-5-2.887v5.774Z"/>
+    <path class="cls-1" d="M210,164.5449l-5-2.887v-17.32l5,2.886Z"/>
+    <path class="cls-3" d="M145,109.6969,165,98.15l-20-11.547L125,98.15Z"/>
+    <path class="cls-10" d="M145,103.9229l10-5.773-10-5.774L135,98.15Z"/>
+    <path class="cls-7" d="M237.5,396.9279l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,396.9279l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-3" d="M125,155.8849l20-11.547-20-11.547-20,11.547Z"/>
+    <path class="cls-10" d="M125,150.1109l10-5.773-10-5.774-10,5.774Z"/>
+    <path class="cls-7" d="M125,173.2049l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M237.5,500.8509l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,500.8509l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M165,173.2049l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-7" d="M237.5,604.7749l20-11.548v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,604.7749l-20-11.548v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M185,167.4319l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-7" d="M237.5,362.2869l20-11.547V333.42l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,362.2869l-20-11.547V333.42l20,11.547Z"/>
+    <path class="cls-7" d="M165,127.0169l25-14.434v-17.32l-25,14.434Z"/>
+    <path class="cls-7" d="M225,115.47l5-2.887v-17.32L210,106.81Z"/>
+    <path class="cls-1" d="M125,190.5259l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,293.0049l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,293.0049l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-1" d="M105,184.7519l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-1" d="M165,190.5259l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,466.21l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,466.21l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,275.6849l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,275.6849l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,570.1329l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,570.1329l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,246.8169l20-11.547V217.95l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,246.8169l-20-11.547V217.95l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,217.95l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,217.95l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M187.5,246.8169l20-11.547V217.95l-20,11.547Z"/>
+    <path class="cls-5" d="M102.5,246.8169l-20-11.547V217.95l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,189.0819l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,189.0819l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M187.5,339.1929l30-17.32v-17.321l-30,17.321Z"/>
+    <path class="cls-5" d="M102.5,339.1929l-30-17.32v-17.321l30,17.321Z"/>
+    <path class="cls-7" d="M237.5,327.6459l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,327.6459l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M197.5,414.2489l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M92.5,414.2489l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M177.5,495.0779l20-11.547V466.21l-20,11.547Z"/>
+    <path class="cls-5" d="M112.5,495.0779l-20-11.547V466.21l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,471.9839l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,471.9839l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,258.3639l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,258.3639l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M197.5,483.5309l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M92.5,483.5309l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M177.5,564.36l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M112.5,564.36l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M222.5,538.3789l15-8.66v-17.321l-15,8.661Z"/>
+    <path class="cls-5" d="M67.5,538.3789l-15-8.66v-17.321l15,8.661Z"/>
+    <path class="cls-7" d="M177.5,633.6419l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M112.5,633.6419l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M222.5,607.6609l15-8.66V581.68l-15,8.661Z"/>
+    <path class="cls-5" d="M67.5,607.6609l-15-8.66V581.68l15,8.661Z"/>
+    <path class="cls-7" d="M147.5,448.89l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,448.89l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,420.0219l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,420.0219l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,391.1549l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,391.1549l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,454.6629l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,454.6629l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,425.7959l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,425.7959l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,552.8129l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,552.8129l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M202.5,567.2469l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M87.5,567.2469,67.5,555.7v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M182.5,676.9429l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M107.5,676.9429l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M222.5,653.8489l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M67.5,653.8489l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,656.7359l20-11.547v-17.321l-20,11.548Z"/>
+    <path class="cls-5" d="M142.5,656.7359l-20-11.547v-17.321l20,11.548Z"/>
+    <path class="cls-7" d="M202.5,671.17l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M87.5,671.17l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,431.5689l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,431.5689l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,414.2489l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,414.2489l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M237.5,535.4919l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M52.5,535.4919l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,385.3809l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,385.3809l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,356.5139l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,356.5139l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,760.6589l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,760.6589l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,344.9669l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,344.9669l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,316.0989l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,316.0989l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,287.2319l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,287.2319l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,518.1719l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,518.1719l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,622.0949l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,622.0949l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M202.5,636.5289l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M87.5,636.5289l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M182.5,746.2249l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M107.5,746.2249l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M222.5,723.1309l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M67.5,723.1309l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,726.0179l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,726.0179l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,241.0439l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,241.0439l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,379.6079l20-11.547V350.74l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,379.6079l-20-11.547V350.74l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,350.74l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,350.74l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,321.8729l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,321.8729l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,310.3259l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,310.3259l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M167.5,281.4579l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M122.5,281.4579l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M217.5,252.5909l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,252.5909l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M187.5,281.4579l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M102.5,281.4579l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M187.5,373.8339l30-17.32v-17.321l-30,17.321Z"/>
+    <path class="cls-5" d="M102.5,373.8339l-30-17.32v-17.321l30,17.321Z"/>
+    <path class="cls-7" d="M197.5,448.89l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M92.5,448.89l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M177.5,529.7189l20-11.547v-17.32l-20,11.546Z"/>
+    <path class="cls-5" d="M112.5,529.7189l-20-11.547v-17.32l20,11.546Z"/>
+    <path class="cls-7" d="M217.5,506.6249l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M72.5,506.6249l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M197.5,518.1719l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M92.5,518.1719l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M177.5,599.0009l20-11.547v-17.32l-20,11.546Z"/>
+    <path class="cls-5" d="M112.5,599.0009l-20-11.547v-17.32l20,11.546Z"/>
+    <path class="cls-7" d="M222.5,573.02l15-8.66v-17.321l-15,8.661Z"/>
+    <path class="cls-5" d="M67.5,573.02l-15-8.66v-17.321l15,8.661Z"/>
+    <path class="cls-7" d="M147.5,483.5309l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,483.5309l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,587.4539l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,587.4539l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M202.5,601.8879l20-11.547V573.02l-20,11.547Z"/>
+    <path class="cls-5" d="M87.5,601.8879l-20-11.547V573.02l20,11.547Z"/>
+    <path class="cls-7" d="M182.5,711.5839l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M107.5,711.5839l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M222.5,688.49l20-11.547v-17.32l-20,11.547Z"/>
+    <path class="cls-5" d="M67.5,688.49l-20-11.547v-17.32l20,11.547Z"/>
+    <path class="cls-7" d="M147.5,691.3769l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M142.5,691.3769l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-7" d="M202.5,705.8109l20-11.547v-17.321l-20,11.547Z"/>
+    <path class="cls-5" d="M87.5,705.8109l-20-11.547v-17.321l20,11.547Z"/>
+    <path class="cls-2" d="M165,213.62l5-2.887v34.641l-5,2.887Z"/>
+    <path class="cls-2" d="M150,256.9209V222.28l-5,2.887v34.641Z"/>
+    <path class="cls-2" d="M165,248.2609l5-2.887v525.389l-5,2.886Z"/>
+    <path class="cls-2" d="M150,256.9209l-5,2.887v525.388l5-2.886Z"/>
+    <path class="cls-2" d="M190,233.8269l-5,2.887v213.619l5-2.886Z"/>
+    <path class="cls-2" d="M185,236.7139l5-2.887v-17.321l-5,2.887Z"/>
+    <path class="cls-2" d="M205,219.3929l5-2.887v69.282l-5,2.887Z"/>
+    <path class="cls-2" d="M200,395.4849l-5,2.887v132.79l5-2.886Z"/>
+    <path class="cls-2" d="M220,383.9379l-5,2.887v132.79l5-2.886Z"/>
+    <path class="cls-2" d="M180,476.3139l-5,2.887v161.658l5-2.887Z"/>
+    <path class="concrete-left" d="M200,551.37v-17.321l-5-2.887v17.321Z"/>
+    <path class="concrete-left" d="M195,548.4829v80.829l5,2.887V551.37h0Z"/>
+    <path class="cls-2" d="M255,196.2989l5-2.887v522.502l-5,2.887Z"/>
+    <path class="cls-2" d="M235,207.8459l5-2.887v219.394l-5-2.887Z"/>
+    <path class="cls-2" d="M255,196.2989v-34.641l5-2.887v34.641Z"/>
+    <path class="cls-2" d="M235,207.8459v-34.641l5-2.887v34.641Z"/>
+    <path class="cls-2" d="M220,453.22l20-11.547v-17.32L220,435.9Z"/>
+    <path class="concrete-top" d="M225,438.7859l10-5.773v5.773l-10,5.774Z"/>
+    <path class="concrete-left" d="M235,438.7859l-5-2.886,5-2.887Z"/>
+    <path class="cls-2" d="M240,441.6729l-5,2.887v161.658l5-2.887Z"/>
+    <path class="concrete-top" d="M220,430.1259V435.9l20-11.547-5-2.887Z"/>
+    <path class="cls-2" d="M190,320.4289v-17.32l25-14.434v17.321Z"/>
+    <path class="concrete-top" d="M195,305.9959l15-8.661v5.774l-15,8.66Z"/>
+    <path class="concrete-left" d="M210,303.1089l-5-2.887,5-2.887Z"/>
+    <path class="cls-2" d="M215,219.3929l5-2.887v150.112l-5-2.887Z"/>
+    <path class="cls-2" d="M195,398.3719v-17.321l25-14.433v17.32Z"/>
+    <path class="concrete-top" d="M200,383.9379l15-8.66v5.773l-15,8.661Z"/>
+    <path class="concrete-left" d="M215,381.0509l-5-2.886,5-2.887Z"/>
+    <path class="cls-2" d="M220,216.5059v-17.32l-5,2.887v17.32Z"/>
+    <path class="cls-2" d="M200,551.37v-17.321l25-14.434v17.321Z"/>
+    <path class="concrete-top" d="M205,536.9359l15-8.66v5.773l-15,8.66Z"/>
+    <path class="concrete-left" d="M220,534.0489l-5-2.887,5-2.886Z"/>
+    <path class="cls-2" d="M225,718.8009V536.9359l-5,2.887v181.865Z"/>
+    <path class="cls-2" d="M205,730.3479V548.4829l-5,2.887v182.587Z"/>
+    <path class="cls-2" d="M180,744.7819l20-11.547v20.207l-20,11.547Z"/>
+    <path class="cls-2" d="M185,744.7819l-5,2.887v-86.603l5-2.887Z"/>
+    <g>
+      <path class="cls-2" d="M190,746.2249l2.5-1.443v8.66l-2.5,1.444Z"/>
+      <path class="concrete-left" d="M187.5,753.4419l2.5,1.444v-8.661l-2.5-1.443Z"/>
+      <path class="concrete-top" d="M190,746.2249l2.5-1.443-2.5-1.443-2.5,1.443Z"/>
+    </g>
+    <path class="cls-2" d="M200,721.6879l25-14.434v31.754l-25,14.434Z"/>
+    <path class="concrete-left" d="M200,721.6879l1.25-.722V752.72l-1.25.722Z"/>
+    <g>
+      <path class="cls-2" d="M212.5,721.6879l2.5-1.443v8.66l-2.5,1.443Z"/>
+      <path class="concrete-left" d="M210,728.9049l2.5,1.443v-8.66l-2.5-1.443Z"/>
+      <path class="concrete-top" d="M212.5,721.6879l2.5-1.443-2.5-1.444-2.5,1.444Z"/>
+    </g>
+    <path class="cls-2" d="M225,718.8009l20-11.547v20.207l-20,11.547Z"/>
+    <path class="concrete-left" d="M225,718.8009l1.25-.722v20.208l-1.25.721Z"/>
+    <g>
+      <path class="cls-2" d="M235,720.2449l2.5-1.444v8.66l-2.5,1.444Z"/>
+      <path class="concrete-left" d="M232.5,727.4609l2.5,1.444v-8.66l-2.5-1.444Z"/>
+      <path class="concrete-top" d="M235,720.2449l2.5-1.444-2.5-1.443-2.5,1.443Z"/>
+    </g>
+    <path class="cls-2" d="M245,710.1409l-5,2.887v-86.603l5-2.887Z"/>
+    <path class="concrete-left" d="M140,256.9209V222.28l5,2.887v34.641Z"/>
+    <path class="concrete-left" d="M35,196.2989v-34.641l-5-2.887v34.641Z"/>
+    <path class="concrete-left" d="M50,204.9589v-34.641l5,2.887v34.641Z"/>
+    <path class="concrete-left" d="M70,216.5059v-17.32l5,2.887v17.32Z"/>
+    <path class="concrete-left" d="M35,196.2989l-5-2.887v525.389l5,2.887Z"/>
+    <path class="concrete-left" d="M55,207.8459l-5-2.887v219.394l5-2.887Z"/>
+    <path class="concrete-left" d="M75,219.3929l-5-2.887v150.112l5-2.887Z"/>
+    <path class="concrete-left" d="M105,236.7139l-5-2.887v213.62l5,2.886Z"/>
+    <path class="concrete-left" d="M85,219.3929l-5-2.887v69.282l5,2.887Z"/>
+    <path class="concrete-left" d="M125,213.62l-5-2.887v34.641l5,2.887Z"/>
+    <path class="concrete-left" d="M125,248.2609l-5-2.887v525.389l5,2.886Z"/>
+    <path class="concrete-left" d="M105,236.7139l-5-2.887v-17.321l5,2.887Z"/>
+    <path class="concrete-left" d="M70,453.22l-20-11.547v-17.32L70,435.9Z"/>
+    <path class="concrete-top" d="M65,438.7859l-10-5.773v5.773l10,5.774Z"/>
+    <path class="cls-2" d="M55,438.7859l5-2.886-5-2.887Z"/>
+    <path class="concrete-left" d="M90,395.4849l5,2.887v132.79l-5-2.886Z"/>
+    <path class="concrete-left" d="M70,383.9379l5,2.887v132.79l-5-2.886Z"/>
+    <path class="concrete-left" d="M50,441.6729l5,2.887v161.658l-5-2.887Z"/>
+    <path class="concrete-top" d="M100,378.1649l-5,2.886-25-14.433,5-2.887Z"/>
+    <path class="concrete-left" d="M95,398.3719v-17.321l-25-14.433v17.32Z"/>
+    <path class="concrete-top" d="M90,383.9379l-15-8.66v5.773l15,8.661Z"/>
+    <path class="cls-2" d="M75,381.0509l5-2.886-5-2.887Z"/>
+    <path class="concrete-top" d="M70,430.1259V435.9l-20-11.547,5-2.887Z"/>
+    <path class="concrete-left" d="M110,476.3139l5,2.887v161.658l-5-2.887Z"/>
+    <path class="concrete-left" d="M85,733.2349V548.4829l5,2.887v184.752Z"/>
+    <path class="concrete-left" d="M65,718.8009V536.9359l5,2.887v178.978Z"/>
+    <path class="concrete-top" d="M95,531.1619l-5,2.887-25-14.434,5-2.886Z"/>
+    <path class="concrete-left" d="M90,551.37v-17.321l-25-14.434v17.321Z"/>
+    <path class="concrete-top" d="M85,536.9359l-15-8.66v5.773l15,8.66Z"/>
+    <path class="cls-2" d="M70,534.0489l5-2.887-5-2.886Z"/>
+    <path class="cls-2" d="M90,551.37v-17.321l5-2.887v17.321Z"/>
+    <path class="cls-2" d="M95,548.4829v80.829l-5,2.887V551.37h0Z"/>
+    <path class="concrete-left" d="M105,744.7819l5,2.887v-86.603l-5-2.887Z"/>
+    <path class="concrete-left" d="M45,710.1409l5,2.887v-86.603l-5-2.887Z"/>
+    <path class="concrete-left" d="M145,259.8079l-5-2.887V782.31l5,2.886Z"/>
+    <path class="concrete-left" d="M90,721.6879l-25-14.434v31.754l25,14.434Z"/>
+    <g>
+      <path class="concrete-left" d="M77.5,721.6879l-2.5-1.443v8.66l2.5,1.443Z"/>
+      <path class="cls-2" d="M80,728.9049l-2.5,1.443v-8.66l2.5-1.443Z"/>
+      <path class="concrete-top" d="M77.5,721.6879l-2.5-1.443,2.5-1.444,2.5,1.444Z"/>
+    </g>
+    <path class="concrete-left" d="M65,718.8009l-20-11.547v20.207l20,11.547Z"/>
+    <path class="cls-2" d="M65,718.8009l-1.25-.722v20.208l1.25.721Z"/>
+    <g>
+      <path class="concrete-left" d="M55,720.2449l-2.5-1.444v8.66l2.5,1.444Z"/>
+      <path class="cls-2" d="M57.5,727.4609l-2.5,1.444v-8.66l2.5-1.444Z"/>
+      <path class="concrete-top" d="M55,720.2449l-2.5-1.444,2.5-1.443,2.5,1.443Z"/>
+    </g>
+    <path class="concrete-left" d="M110,744.7819l-20-11.547v20.207l20,11.547Z"/>
+    <g>
+      <path class="concrete-left" d="M100,746.2249l-2.5-1.443v8.66l2.5,1.444Z"/>
+      <path class="cls-2" d="M102.5,753.4419l-2.5,1.444v-8.661l2.5-1.443Z"/>
+      <path class="concrete-top" d="M100,746.2249l-2.5-1.443,2.5-1.443,2.5,1.443Z"/>
+    </g>
+    <path class="cls-2" d="M90,721.6879l-1.25-.722v69.282l1.25.722Z"/>
+  </g>
+</svg>
