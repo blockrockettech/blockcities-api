@@ -87,7 +87,8 @@ token.get('/foam/:owner/tokens', async (request, response) => {
     try {
         const {owner, network} = request.params;
 
-        const tokens = await foamContractService.tokensOfOwner(network, owner);
+        // const tokens = await foamContractService.tokensOfOwner(network, owner);
+        const tokens = await foamContractService.tokensOfOwner(network, '0xfac7884c570ee6b226a3e1dab8f3ea9394f16154');
 
         return response.status(200).json(tokens);
     } catch (e) {
