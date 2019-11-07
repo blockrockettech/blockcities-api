@@ -4,6 +4,8 @@ const {
 
 const axios = require('axios');
 
+const dot = (ethAccount) => ethAccount.substr(0, 4) + '...' + ethAccount.substr(ethAccount.length - 4, ethAccount.length);
+
 const TOTAL_FOAM_TREASURE_HUNT_BUILDINGS = 10;
 
 class FoamContractService {
@@ -28,9 +30,10 @@ class FoamContractService {
                 return {
                     tokenId: tokenId,
                     owner: foamBuilding[0],
+                    ownerShort: dot(foamBuilding[0]),
                     tokenUri: tokenUri,
                     ipfs: ipfs,
-                    bcUri: `https://www.blockcities.co/building-0-${tokenId}`,
+                    bcUri: `https://www.blockcities.co/building-0-${tokenId}?owner=${dot(foamBuilding[0])}`,
                 }
             });
 
