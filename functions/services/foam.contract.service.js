@@ -19,18 +19,18 @@ class FoamContractService {
         let ownerArray = await Promise.all(ownerPromises);
 
         let myFoamBuildings = ownerArray.filter(foamBuilding => owner.toLowerCase() === foamBuilding[0].toLowerCase());
+
         if (myFoamBuildings.length > 0) {
             myFoamBuildings = myFoamBuildings.map(async (foamBuilding, index) => {
-
-                const tokenUri = (await token.tokenURI((index + 1)))[0];
-                console.log(tokenUri);
+                const tokenId = index + 1;
+                const tokenUri = (await token.tokenURI(tokenId))[0];
                 const ipfs = (await axios.get(tokenUri)).data;
-                console.log(ipfs);
                 return {
-                    tokenId: (index + 1),
+                    tokenId: tokenId,
                     owner: foamBuilding[0],
                     tokenUri: tokenUri,
                     ipfs: ipfs,
+                    bcUri: `https://www.blockcities.co/building-0-${tokenId}`,
                 }
             });
 
