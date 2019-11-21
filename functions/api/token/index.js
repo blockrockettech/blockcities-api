@@ -94,7 +94,10 @@ token.get('/account/:address/architected/:from', async (request, response) => {
         }
 
         const buildings = await blockCitiesDataService.getArchitectedBuildingsForAddress(network, address, from);
-        return response.status(200).json(buildings);
+        return response.status(200).json({
+            count: buildings.length,
+            buildings
+        });
     } catch (e) {
         console.error(e);
     }
