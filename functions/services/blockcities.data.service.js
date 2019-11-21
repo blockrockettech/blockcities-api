@@ -161,6 +161,10 @@ class BlockCitiesDataService {
         return buildingDataService.getBuildingsForOwner(network, owner);
     }
 
+    async getArchitectedBuildingsForAddress(network, address, fromTimestamp) {
+        return buildingDataService.getArchitectedBuildingsForAddress(network, address, fromTimestamp);
+    }
+
     async getBuildingData(network, buildingId) {
         return buildingDataService.getBuildingByTokenId(network, buildingId);
     }
