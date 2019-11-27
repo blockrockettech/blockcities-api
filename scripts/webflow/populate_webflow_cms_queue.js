@@ -16,7 +16,7 @@ void async function () {
         const {tokenIdPointer} = await blockcitiesContractService.tokenPointers(NETWORK);
         console.log(`Total tokens ${tokenIdPointer}`);
 
-        for (let i = 1450; i <= tokenIdPointer; i++) {
+        for (let i = 2126; i <= tokenIdPointer; i++) {
             console.log(`Refreshed token ID [${i}]`);
             // This will force update the DB
             // Adding to CMS update queue which will push to CMS once complete
