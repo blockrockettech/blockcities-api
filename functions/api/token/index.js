@@ -82,6 +82,27 @@ token.get('/account/:owner/tokens', async (request, response) => {
     }
 });
 
+// Getting architected buildings for an account from a given timestamp
+token.get('/account/:address/architected/:from', async (request, response) => {
+    try {
+        const {address, network, from} = request.params;
+        if (!from) {
+            return response.status(500)
+                .json({
+                    msg: 'Please supply a from timestamp'
+                });
+        }
+
+        const buildings = await blockCitiesDataService.getArchitectedBuildingsForAddress(network, address, from);
+        return response.status(200).json({
+            count: buildings.length,
+            buildings
+        });
+    } catch (e) {
+        console.error(e);
+    }
+});
+
 // Getting account owned tokens (created in FOAM)
 token.get('/foam/:owner/tokens', async (request, response) => {
     try {

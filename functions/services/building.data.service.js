@@ -34,6 +34,24 @@ class BuildingDataService {
             });
     }
 
+    async getArchitectedBuildingsForAddress(network, address, fromTimestamp) {
+        return firestore
+            .collection('data')
+            .doc(getNetwork(network))
+            .collection('buildings')
+            .where('architect', '==', address)
+            .get()
+            .then(resultSet => {
+                let buildings = [];
+                if(!resultSet.empty) {
+                    buildings = resultSet.docs
+                        .map(doc => doc.data())
+                        .filter(doc => doc.blockTimestamp >= fromTimestamp);
+                }
+                return buildings;
+            });
+    }
+
     async getBuildingByTokenId(network, tokenId) {
         return firestore
             .collection('data')
