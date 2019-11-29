@@ -4,7 +4,8 @@ const functions = require('firebase-functions');
 const LIVE_SITE_ID = '5ca25aa53ef88d7811fa6a49';
 
 //building
-const BUILD_PROFILES_COLLECTION_ID = '5cf917a298b9ff812bfc64d1';
+// const BUILD_PROFILES_COLLECTION_ID = '5cf917a298b9ff812bfc64d1';
+const BUILD_PROFILES_COLLECTION_ID = '5dcdad2aeb1a33420578f821';
 
 const webFlowApiKey = functions.config().webflow.api.key;
 if (!webFlowApiKey) {

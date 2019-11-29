@@ -17,8 +17,7 @@ module.exports =
             required: false,
             editable: true,
             helpText: '',
-            id: '74bbcf7e19fd29820388472070faece3',
-            validations: {}
+            id: '74bbcf7e19fd29820388472070faece3'
         },
         {
             name: 'background color',
@@ -27,8 +26,7 @@ module.exports =
             required: false,
             editable: true,
             helpText: '',
-            id: '0bd073e9265732de81cbf922ac19b7c8',
-            validations: {}
+            id: '0bd073e9265732de81cbf922ac19b7c8'
         },
         {
             name: 'city - 3 letter',
@@ -287,8 +285,7 @@ module.exports =
             required: false,
             editable: true,
             helpText: '',
-            id: 'c7f1f7463c25e1dd574a3f9eb72b29ca',
-            validations: {}
+            id: 'c7f1f7463c25e1dd574a3f9eb72b29ca'
         },
         {
             name: 'original architect short',
@@ -317,8 +314,25 @@ module.exports =
             required: false,
             editable: true,
             helpText: '',
-            id: '8628e3c897725dae7a6b3fd54f5b9038',
-            validations: {}
+            id: '8628e3c897725dae7a6b3fd54f5b9038'
+        },
+        {
+            name: 'body name',
+            slug: 'body-name',
+            type: 'PlainText',
+            required: false,
+            editable: true,
+            helpText: '',
+            id: '04649e4911d6a6834080f1ef0ebd3ebe',
+            validations: [Object]
+        },
+        {
+            name: 'Scavenger Hunt',
+            slug: 'scavenger-hunt-2',
+            type: 'Bool',
+            required: false,
+            editable: true,
+            id: 'e3d3496574c59160060c450fc441f4ec'
         },
         {
             name: 'building name',

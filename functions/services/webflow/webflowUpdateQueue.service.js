@@ -127,6 +127,7 @@ class FirebaseToWebflowConverter {
             'roof-window-color': data.attributes.roofWindowColorway,
             'roof-window-type': data.attributes.windowType,
             'roof-use': data.attributes.rooftopUse,
+            'scavenger-hunt-2': false,
             'name': data.name,
             'slug': data.slug, // slug is used to define URL
         };
