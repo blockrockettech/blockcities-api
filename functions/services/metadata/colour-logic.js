@@ -757,6 +757,19 @@ const colorLogicObj = {
             base: 'lightcarbon'
         },
         concrete: 'dark',
+     },
+     '56': {
+        exterior: {
+            roof: 'red',
+            body: 'red',
+            base: 'red'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        concrete: 'classic',
     },
     '666': {
         exterior: {
