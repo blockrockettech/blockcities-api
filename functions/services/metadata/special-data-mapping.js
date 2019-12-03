@@ -7,7 +7,9 @@ const {
     London,
     Manchester,
     MarbleCity,
-    Dessau
+    Dessau,
+    Paris,
+    Stuttgart,
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
@@ -525,7 +527,8 @@ module.exports = {
     1000033: {
         name: 'Porscheplatz 1',
         bname: 'Porscheplatz 1',
-        city: 'Stuttgart',
+        city: Stuttgart.name,
+        cityId: Stuttgart.id,
         background_color: backgrounConfig.GRAY.hex,
         background_colorId: backgrounConfig.GRAY.id,
         heightInFt: 91,

@@ -50,13 +50,25 @@ const Dessau = {
     id: 8,
     name: 'Dessau',
     short: 'DES',
-};   
+};
 
 const GenesisCity = {
     id: 9,
     name: 'Genesis City',
     short: 'GEN',
-};   
+};
+
+const Paris = {
+    id: 10,
+    name: 'Paris',
+    short: 'PAR',
+};
+
+const Stuttgart = {
+    id: 11,
+    name: 'Stuttgart',
+    short: 'STU',
+};
 
 module.exports = {
     Atlanta,
@@ -69,4 +81,6 @@ module.exports = {
     MarbleCity,
     Dessau,
     GenesisCity,
+    Paris,
+    Stuttgart,
 };
