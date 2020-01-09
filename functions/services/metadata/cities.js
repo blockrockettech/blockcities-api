@@ -70,6 +70,18 @@ const Stuttgart = {
     short: 'STU',
 };
 
+const Vyborg = {
+    id: 12,
+    name: 'Vyborg',
+    short: 'VYB',
+};
+
+const Reykjavík = {
+    id: 13,
+    name: 'Reykjavík',
+    short: 'RVK',
+};
+
 module.exports = {
     Atlanta,
     NYC,
