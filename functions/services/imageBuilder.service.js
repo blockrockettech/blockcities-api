@@ -85,7 +85,7 @@ class ImageBuilderService {
             // scales the body anchor Y (this is the amount we drop the component to fit snugly)
             bodyConfig.adjustedBodyAnchorY = bodyConfig.anchorY * (bodyConfig.adjustedBodyHeight / bodyConfig.height);
 
-            // scales the body width path (this is the adjusted width of the "lading" space for the body (and roof))
+            // scales the body width path (this is the adjusted width of the "landing" space for the body (and roof))
             bodyConfig.adjustedBodyWidthPath = bodyConfig.anchorWidthPath * (baseConfig.anchorWidthPath / bodyConfig.width);
             bodyConfig.adjustedBodyWidth = bodyConfig.width * (baseConfig.anchorWidthPath / bodyConfig.width);
 

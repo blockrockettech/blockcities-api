@@ -9,7 +9,7 @@ const {backgroundColorwaySwitch} = require('./metadata/background-colours');
 const {decorateMetadataName} = require('./metadata/metadata.decorator');
 const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
-const {heightMapper, heightInFootDescription} = require('./metadata/height-mapper');
+const {ratioMapper, heightInFootDescription} = require('./metadata/ratio-mapper');
 const {isMainnet} = require('./abi/networks');
 
 const config = require('./config');
@@ -49,12 +49,22 @@ class BlockCitiesDataService {
         const bodyConfig = res.bodyConfig;
         const canvasHeight = res.canvasHeight;
 
-        const height = heightMapper({
+        const height = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
-            pixelHeight: canvasHeight,
+            pixels: canvasHeight,
             buildingId: tokenAttrs.building,
         });
         const heightClass = heightInFootDescription(height);
+
+        // push width through the "ratio mapper"
+        const gridSizeInFoot = 100; // 100 ft grid
+        const width = ratioMapper({
+            adjustedWidth: bodyConfig.adjustedBodyWidth,
+            pixels: bodyConfig.adjustedBodyWidth,
+            buildingId: tokenAttrs.building,
+        });
+
+        const grid = Math.ceil(width / gridSizeInFoot);
 
         const attrs = decorateMetadataName(tokenAttrs);
 
@@ -81,6 +91,8 @@ class BlockCitiesDataService {
                 ...attrs,
                 height,
                 heightClass,
+                width,
+                grid: `${grid}x${grid}`,
             }
         };
     }

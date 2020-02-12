@@ -80,16 +80,16 @@ const heightInFootDescription = (footHeight) => {
     }
 };
 
-const heightMapper = ({adjustedWidth, pixelHeight, buildingId}) => {
+const ratioMapper = ({adjustedWidth, pixels, buildingId}) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor(((standardWidths[buildingId] / adjustedWidth) * pixelHeight) * buildingRatios[buildingId]);
+        return Math.floor(((standardWidths[buildingId] / adjustedWidth) * pixels) * buildingRatios[buildingId]);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
-        return pixelHeight;
+        return pixels;
     }
 };
 
 module.exports = {
-    heightMapper,
+    ratioMapper,
     heightInFootDescription,
 };
