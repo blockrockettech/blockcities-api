@@ -11,6 +11,7 @@ const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
 const {ratioMapper, heightInFootDescription} = require('./metadata/ratio-mapper');
 const {isMainnet} = require('./abi/networks');
+const metadataMappings = require('./metadata/metadata-mappings');
 
 const config = require('./config');
 
@@ -64,7 +65,16 @@ class BlockCitiesDataService {
             buildingId: tokenAttrs.building,
         });
 
-        const grid = Math.ceil(width / gridSizeInFoot);
+        let {left, right} = metadataMappings[tokenAttrs.building].bases[tokenAttrs.base];
+        if (!left || !right) {
+            left = 1;
+            right = 1;
+        }
+        console.log(`LEFT ${(width * (left / right))} RIGHT ${(width  * (right / left))}`);
+        const leftGrid = Math.ceil((width * (left / right)) / gridSizeInFoot);
+        const rightGrid = Math.ceil((width  * (right / left)) / gridSizeInFoot);
+
+
 
         const attrs = decorateMetadataName(tokenAttrs);
 
@@ -92,7 +102,7 @@ class BlockCitiesDataService {
                 height,
                 heightClass,
                 width,
-                grid: `${grid}x${grid}`,
+                grid: `${leftGrid}x${rightGrid}`,
             }
         };
     }

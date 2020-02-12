@@ -57,14 +57,14 @@ module.exports = {
     },
     1: {
         bases: {
-            0: {buildingType: '333 S Wabash', buildingUse: 'Business'},
-            1: {buildingType: 'Parking Deck', buildingUse: 'Business'},
-            2: {buildingType: '210 Peachtree', buildingUse: 'Retail'},
-            3: {buildingType: '675 W Peachtree', buildingUse: 'Business'},
-            4: {buildingType: '200 E Illinois', buildingUse: 'Business'},
-            5: {buildingType: 'Retail', buildingUse: 'Retail'},
-            6: {buildingType: 'Tree', buildingUse: 'Retail'},
-            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business'},
+            0: {buildingType: '333 S Wabash', buildingUse: 'Business', left: 219, right: 319},
+            1: {buildingType: 'Parking Deck', buildingUse: 'Business', left: 219, right: 319},
+            2: {buildingType: '210 Peachtree', buildingUse: 'Retail', left: 190, right: 375},
+            3: {buildingType: '675 W Peachtree', buildingUse: 'Business', left: 219, right: 319},
+            4: {buildingType: '200 E Illinois', buildingUse: 'Business', left: 219, right: 319},
+            5: {buildingType: 'Retail', buildingUse: 'Retail', left: 1, right: 1},
+            6: {buildingType: 'Tree', buildingUse: 'Retail', left: 282, right: 302},
+            7: {buildingType: 'BlockCities Transit Authority', buildingUse: 'Business', left: 1, right: 1},
         },
         bodies: {
             0: {buildingType: 'Rectangle', buildingUse: 'Business'},
