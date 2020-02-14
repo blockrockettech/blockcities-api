@@ -73,9 +73,7 @@ class BlockCitiesDataService {
         console.log(`LEFT ${(width * (left / right))} RIGHT ${(width  * (right / left))}`);
         const leftGrid = Math.ceil((width * (left / right)) / gridSizeInFoot);
         const rightGrid = Math.ceil((width  * (right / left)) / gridSizeInFoot);
-
-
-
+        
         const attrs = decorateMetadataName(tokenAttrs);
 
         if (tokenAttrs.special !== 0) {
