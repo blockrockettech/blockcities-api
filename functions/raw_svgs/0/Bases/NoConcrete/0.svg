@@ -1,0 +1,57 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 86.6">
+  <defs>
+    <style>
+      .exterior-R-prim {
+        fill: #d15752;
+      }
+
+      .exterior-L-prim {
+        fill: #73302f;
+      }
+
+      .window-R-prim {
+        fill: #bd9563;
+      }
+
+      .window-L-prim {
+        fill: #4d3b25;
+      }
+
+      .window-R-light {
+        fill: #ebcb87;
+      }
+
+      .window-L-light {
+        fill: #795b30;
+      }
+
+      .top-prim {
+        fill: #dd8987;
+      }
+    </style>
+  </defs>
+  <title>Artboard 15</title>
+  <g id="root">
+    <path id="body-R2" class="exterior-R-prim" d="M65,75.05l65-37.52V49.07L65,86.6Z"/>
+    <path id="body-L2" class="exterior-L-prim" d="M65,75.05,0,37.53V49.07L65,86.6Z"/>
+    <path id="Path" class="window-R-prim" d="M70,72.17l10-5.78V77.94L70,83.71Z"/>
+    <path id="Path-2" data-name="Path" class="window-R-prim" d="M85,63.51l10-5.78V69.28L85,75.05Z"/>
+    <path id="Path-3" data-name="Path" class="window-R-prim" d="M100,54.85l10-5.78V60.62l-10,5.77Z"/>
+    <path id="Path-4" data-name="Path" class="window-R-prim" d="M115,46.19l10-5.78V51.96l-10,5.77Z"/>
+    <g id="windows-L2">
+      <path id="Path-5" data-name="Path" class="window-L-prim" d="M60,72.17,50,66.39V77.94l10,5.77Z"/>
+      <path id="Path-6" data-name="Path" class="window-L-prim" d="M45,63.51,35,57.73V69.28l10,5.77Z"/>
+      <path id="Path-7" data-name="Path" class="window-L-prim" d="M30,54.85,20,49.07V60.62l10,5.77Z"/>
+      <path id="Path-8" data-name="Path" class="window-L-prim" d="M15,46.19,5,40.41V51.96l10,5.77Z"/>
+    </g>
+    <path id="windows-R4" class="window-R-light" d="M100,54.85l5-2.89V63.51l-5,2.88Z"/>
+    <path id="windows-R4-2" data-name="windows-R4" class="window-R-light" d="M115,46.19l5-2.89V54.85l-5,2.88Z"/>
+    <path id="windows-R4-3" data-name="windows-R4" class="window-R-light" d="M85,63.51l5-2.89V72.17l-5,2.88Z"/>
+    <path id="windows-R4-4" data-name="windows-R4" class="window-R-light" d="M70,72.17l5-2.89V80.83l-5,2.88Z"/>
+    <path id="windows-L3" class="window-L-light" d="M30,54.85l-5-2.89V63.51l5,2.88Z"/>
+    <path id="windows-L3-2" data-name="windows-L3" class="window-L-light" d="M15,46.19,10,43.3V54.85l5,2.88Z"/>
+    <path id="windows-L3-3" data-name="windows-L3" class="window-L-light" d="M45,63.51l-5-2.89V72.17l5,2.88Z"/>
+    <path id="windows-L3-4" data-name="windows-L3" class="window-L-light" d="M60,72.17l-5-2.89V80.83l5,2.88Z"/>
+    <path id="anchor_0_75.05_130" class="top-prim" d="M0,37.53,65,0l65,37.53L65,75.05Z"/>
+  </g>
+</svg>
