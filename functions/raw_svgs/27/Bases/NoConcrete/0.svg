@@ -1,0 +1,85 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 203.7324">
+  <defs>
+    <style>
+      .curtain-L-prim-dark {
+        fill: #2f5565;
+      }
+
+      .curtain-L-prim-light {
+        fill: #438fb0;
+      }
+
+      .curtain-R-prim-dark {
+        fill: #3e809c;
+      }
+
+      .curtain-R-prim-light {
+        fill: #59acd0;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+
+      .exterior-L-light {
+        fill: #8a3a37;
+      }
+
+      .exterior-R-light {
+        fill: #df5d58;
+      }
+
+      .top-dark {
+        fill: #c67471;
+      }
+    </style>
+  </defs>
+  <title>Artboard 18</title>
+  <g id="root">
+    <path id="Path" class="curtain-L-prim-dark" d="M20,103.9231V46.187l155,89.49,5-2.887v57.735l-5,2.8871Z"/>
+    <path id="Path-2" data-name="Path" class="curtain-L-prim-light" d="M20,92.3761V80.828l155,89.49v11.547Z"/>
+    <path id="Path-3" data-name="Path" class="curtain-L-prim-light" d="M20,69.2821V57.7351L175,147.224v11.547Z"/>
+    <path id="Path-4" data-name="Path" class="curtain-R-prim-dark" d="M175,193.4121l45-25.9811V115.47l-45,25.98Z"/>
+    <path id="Path-5" data-name="Path" class="curtain-R-prim-light" d="M175,181.865l45-25.981V144.337l-45,25.981Z"/>
+    <path id="Path-6" data-name="Path" class="curtain-R-prim-light" d="M175,158.771l45-25.981V121.243l-45,25.981Z"/>
+    <path id="Path-7" data-name="Path" class="exterior-L-prim" d="M15,46.188V57.7351l160,92.376v-11.547Z"/>
+    <path id="Path-8" data-name="Path" class="exterior-R-prim" d="M175,150.1111l50-28.8681V109.696l-50,28.8681C175,137.28,175.01,137.29,175,150.1111Z"/>
+    <path id="Path-9" data-name="Path" class="exterior-L-dark" d="M17.5,56.291l155,89.489v-5.7729l-155-89.489Z"/>
+    <path id="Path-10" data-name="Path" class="exterior-R-dark" d="M177.5,145.78l45-25.98v-5.774l-45,25.9811Z"/>
+    <ellipse id="Ellipse" class="exterior-L-light" cx="9.3307" cy="115.2379" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle" class="exterior-L-light" x="5.6614" y="38.249" width="7.3386" height="76.9889"/>
+    <ellipse id="Ellipse-2" data-name="Ellipse" class="exterior-L-light" cx="31.045" cy="127.5774" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-2" data-name="Rectangle" class="exterior-L-light" x="27.3756" y="49.0743" width="7.3386" height="78.5031"/>
+    <ellipse id="Ellipse-3" data-name="Ellipse" class="exterior-L-light" cx="52.7592" cy="139.9167" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-3" data-name="Rectangle" class="exterior-L-light" x="49.0899" y="62.7865" width="7.3386" height="77.1302"/>
+    <ellipse id="Ellipse-4" data-name="Ellipse" class="exterior-L-light" cx="74.4735" cy="152.2562" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-4" data-name="Rectangle" class="exterior-L-light" x="70.8042" y="76.4984" width="7.3386" height="75.7577"/>
+    <ellipse id="Ellipse-5" data-name="Ellipse" class="exterior-L-light" cx="96.1878" cy="164.5956" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-5" data-name="Rectangle" class="exterior-L-light" x="92.5185" y="87.3239" width="7.3386" height="77.2719"/>
+    <ellipse id="Ellipse-6" data-name="Ellipse" class="exterior-L-light" cx="117.9021" cy="176.9351" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-6" data-name="Rectangle" class="exterior-L-light" x="114.2328" y="101.7576" width="7.3386" height="75.1775"/>
+    <ellipse id="Ellipse-7" data-name="Ellipse" class="exterior-L-light" cx="139.6164" cy="189.2745" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-7" data-name="Rectangle" class="exterior-L-light" x="135.9471" y="114.0262" width="7.3386" height="75.2483"/>
+    <ellipse id="Ellipse-8" data-name="Ellipse" class="exterior-L-light" cx="161.3307" cy="201.6139" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-8" data-name="Rectangle" class="exterior-L-light" x="157.6614" y="126.2949" width="7.3386" height="75.319"/>
+    <ellipse id="Ellipse-9" data-name="Ellipse" class="exterior-R-light" cx="231.2615" cy="175.8521" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-9" data-name="Rectangle" class="exterior-R-light" x="227.5922" y="102.4792" width="7.3386" height="73.3728"/>
+    <ellipse id="Ellipse-10" data-name="Ellipse" class="exterior-R-light" cx="208.7385" cy="188.733" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-10" data-name="Rectangle" class="exterior-R-light" x="205.0692" y="116.1914" width="7.3386" height="72.5417"/>
+    <ellipse id="Ellipse-11" data-name="Ellipse" class="exterior-R-light" cx="186.2155" cy="201.6139" rx="3.6693" ry="2.1185"/>
+    <rect id="Rectangle-11" data-name="Rectangle" class="exterior-R-light" x="182.5461" y="128.4601" width="7.3386" height="73.1539"/>
+    <path id="anchor_0_138.564_240" class="top-dark" d="M240,101.036,65,0,0,37.5271l175,101.037Z"/>
+  </g>
+</svg>
