@@ -10,6 +10,8 @@ const {
     Dessau,
     Paris,
     Stuttgart,
+    Vyborg,
+    Reykjavík,
 } = require('./cities');
 
 const {config: backgrounConfig} = require('./background-colours');
