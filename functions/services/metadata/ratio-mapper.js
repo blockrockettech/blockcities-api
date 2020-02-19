@@ -21,7 +21,7 @@ const buildingRatios = {
     19: 1.092206908,
     20: 1.063739029,
     22: 0.817693326,
-    23: 2.426279567,
+    23: 0.636015061809,
     24: 0.796499678,
     25: 0.778371057,
     26: 1.045259747,
@@ -92,4 +92,6 @@ const ratioMapper = ({adjustedWidth, pixels, buildingId}) => {
 module.exports = {
     ratioMapper,
     heightInFootDescription,
+    buildingRatios,
+    standardWidths,
 };

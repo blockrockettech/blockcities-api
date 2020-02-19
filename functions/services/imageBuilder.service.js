@@ -10,11 +10,11 @@ const colourLogic = require('./metadata/colour-logic');
 
 class ImageBuilderService {
 
-    async generateImageStats({building, base, body, roof, exteriorColorway, backgroundColorway}) {
+    async generateImageStats({building, base, body, roof, exteriorColorway, backgroundColorway, zeroConcrete = false}) {
         try {
             const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
-            const basePath = `${rootPath}/Bases/${base}.svg`;
+            const basePath = zeroConcrete ? `${rootPath}/Bases/NoConcrete/${base}.svg` : `${rootPath}/Bases/${base}.svg`;
             const bodyPath = `${rootPath}/Bodies/${body}.svg`;
             const roofPath = `${rootPath}/Roofs/${roof}.svg`;
 
@@ -135,8 +135,8 @@ class ImageBuilderService {
                           },
                           viewportBackground = null,
                           pad = 0,
+                          zeroConcrete = false,
     ) {
-
         try {
 
             const skeletonSvg = `
@@ -165,6 +165,7 @@ class ImageBuilderService {
                 roof,
                 exteriorColorway,
                 backgroundColorway,
+                zeroConcrete,
             });
 
             const startBaseY = canvasHeight - baseConfig.height;
