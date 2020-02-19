@@ -47,10 +47,16 @@ class BlockCitiesDataService {
         const tokenAttrs = await blockcitiesContractService.tokenDetails(network, tokenId);
 
         const res = await imageBuilderService.generateImageStats(tokenAttrs);
+        const baseConfig = res.baseConfig;
         const bodyConfig = res.bodyConfig;
         const canvasHeight = res.canvasHeight;
 
         const height = ratioMapper({
+            adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
+            pixels: canvasHeight,
+            buildingId: tokenAttrs.building,
+        });
+        const yHeight = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
             pixels: canvasHeight,
             buildingId: tokenAttrs.building,
@@ -58,22 +64,18 @@ class BlockCitiesDataService {
         const heightClass = heightInFootDescription(height);
 
         // push width through the "ratio mapper"
-        const gridSizeInFoot = 100; // 100 ft grid
         const width = ratioMapper({
+            adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
+            pixels: bodyConfig.adjustedBodyWidth,
+            buildingId: tokenAttrs.building,
+        });
+
+        const xWidth = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
             pixels: bodyConfig.adjustedBodyWidth,
             buildingId: tokenAttrs.building,
         });
 
-        let {left, right} = metadataMappings[tokenAttrs.building].bases[tokenAttrs.base];
-        if (!left || !right) {
-            left = 1;
-            right = 1;
-        }
-        console.log(`LEFT ${(width * (left / right))} RIGHT ${(width  * (right / left))}`);
-        const leftGrid = Math.ceil((width * (left / right)) / gridSizeInFoot);
-        const rightGrid = Math.ceil((width  * (right / left)) / gridSizeInFoot);
-        
         const attrs = decorateMetadataName(tokenAttrs);
 
         if (tokenAttrs.special !== 0) {
@@ -98,9 +100,11 @@ class BlockCitiesDataService {
             attributes: {
                 ...attrs,
                 height,
+                yHeight,
                 heightClass,
                 width,
-                grid: `${leftGrid}x${rightGrid}`,
+                xWidth,
+                awp: baseConfig.anchorWidthPath,
             }
         };
     }
