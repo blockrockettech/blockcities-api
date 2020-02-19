@@ -95,4 +95,6 @@ module.exports = {
     GenesisCity,
     Paris,
     Stuttgart,
+    Vyborg,
+    Reykjavík
 };
