@@ -250,8 +250,8 @@ token.get('/image-zero-concrete/:tokenId.png', async (request, response) => {
         const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
 
         response
-            .contentType('image/png')
-            .set('Cache-Control', 'public, max-age=864000');
+            .contentType('image/png');
+            // .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
@@ -281,8 +281,8 @@ token.get('/:tokenId/image-zero-concrete', async (request, response) => {
         // cache for 1 week
         // TIP: use PURGE to clear via postman if needed
         response
-            .contentType('image/svg+xml')
-            .set('Cache-Control', 'public, max-age=864000');
+            .contentType('image/svg+xml');
+            // .set('Cache-Control', 'public, max-age=864000');
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 

@@ -9,7 +9,7 @@ const {backgroundColorwaySwitch} = require('./metadata/background-colours');
 const {decorateMetadataName} = require('./metadata/metadata.decorator');
 const specialMapping = require('./metadata/special-data-mapping');
 const {shortCityNameMapper} = require('./metadata/citymapper');
-const {ratioMapper, heightInFootDescription} = require('./metadata/ratio-mapper');
+const {ratioMapper, heightInFootDescription, buildingRatios, standardWidths} = require('./metadata/ratio-mapper');
 const {isMainnet} = require('./abi/networks');
 const metadataMappings = require('./metadata/metadata-mappings');
 
@@ -50,6 +50,7 @@ class BlockCitiesDataService {
         const baseConfig = res.baseConfig;
         const bodyConfig = res.bodyConfig;
         const canvasHeight = res.canvasHeight;
+        const canvasWidth = res.canvasWidth;
 
         const height = ratioMapper({
             adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
@@ -100,12 +101,17 @@ class BlockCitiesDataService {
             attributes: {
                 ...attrs,
                 height,
-                yHeight,
                 heightClass,
                 width,
-                xWidth,
-                awp: baseConfig.anchorWidthPath,
-            }
+            },
+            yHeight,
+            xWidth,
+            awp: baseConfig.anchorWidthPath,
+            adw: bodyConfig.adjustedBodyWidth,
+            canvasHeightInPx: canvasHeight,
+            canvasWidthInPx: canvasWidth,
+            ratio: buildingRatios[tokenAttrs.building],
+            standardWidth: standardWidths[tokenAttrs.building],
         };
     }
 
