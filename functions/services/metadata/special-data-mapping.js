@@ -533,4 +533,22 @@ module.exports = {
         background_colorId: backgrounConfig.GRAY.id,
         heightInFt: 91,
     },
+    1000034: {
+        name: 'Vyborg Library',
+        bname: 'Vyborg Library',
+        city: Vyborg.name,
+        cityId: Vyborg.id,
+        background_color: backgrounConfig.GRAY.hex,
+        background_colorId: backgrounConfig.GRAY.id,
+        heightInFt: 24,
+    },
+    1000035: {
+        name: 'Hallgrimskirkja',
+        bname: 'Hallgrimskirkja',
+        city: Reykjavík.name,
+        cityId: Reykjavík.id,
+        background_color: backgrounConfig.LIGHT_YELLOW.hex,
+        background_colorId: backgrounConfig.LIGHT_YELLOW.id,
+        heightInFt: 244,
+    },
 };
