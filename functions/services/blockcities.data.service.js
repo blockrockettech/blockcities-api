@@ -5,12 +5,12 @@ const webflowUpdateQueue = require('./webflow/webflowUpdateQueue.service');
 const imageBuilderService = require('./imageBuilder.service');
 const buildingDataService = require('./building.data.service');
 
-const {backgroundColorwaySwitch} = require('./metadata/background-colours');
-const {decorateMetadataName} = require('./metadata/metadata.decorator');
+const { backgroundColorwaySwitch } = require('./metadata/background-colours');
+const { decorateMetadataName } = require('./metadata/metadata.decorator');
 const specialMapping = require('./metadata/special-data-mapping');
-const {shortCityNameMapper} = require('./metadata/citymapper');
-const {ratioMapper, heightInFootDescription, buildingRatios, standardWidths} = require('./metadata/ratio-mapper');
-const {isMainnet} = require('./abi/networks');
+const { shortCityNameMapper } = require('./metadata/citymapper');
+const { ratioMapper, heightInFootDescription, buildingRatios, standardWidths } = require('./metadata/ratio-mapper');
+const { isMainnet } = require('./abi/networks');
 const metadataMappings = require('./metadata/metadata-mappings');
 
 const config = require('./config');
@@ -56,11 +56,13 @@ class BlockCitiesDataService {
             adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
             pixels: canvasHeight,
             buildingId: tokenAttrs.building,
+            body: tokenAttrs.body
         });
         const yHeight = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
             pixels: canvasHeight,
             buildingId: tokenAttrs.building,
+            body: tokenAttrs.body
         });
         const heightClass = heightInFootDescription(height);
 
@@ -69,12 +71,14 @@ class BlockCitiesDataService {
             adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
             pixels: bodyConfig.adjustedBodyWidth,
             buildingId: tokenAttrs.building,
+            body: tokenAttrs.body
         });
 
         const xWidth = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
             pixels: bodyConfig.adjustedBodyWidth,
             buildingId: tokenAttrs.building,
+            body: tokenAttrs.body
         });
 
         const attrs = decorateMetadataName(tokenAttrs);

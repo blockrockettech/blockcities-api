@@ -80,9 +80,25 @@ const heightInFootDescription = (footHeight) => {
     }
 };
 
-const ratioMapper = ({adjustedWidth, pixels, buildingId}) => {
+const getStandardWidth = (buildingId, body) => {
+
+    const specialBodies = [1, 2, 11, 12, 17, 18];
+
+    if (specialBodies.indexOf(body) > -1) {
+
+        if (body === 18 && buildingId !== 9) {
+            return standardWidths[buildingId];
+        }
+
+        return 320;
+    } else {
+        return standardWidths[buildingId];
+    }
+};
+
+const ratioMapper = ({ adjustedWidth, pixels, buildingId, body }) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor(((standardWidths[buildingId] / adjustedWidth) * pixels) * buildingRatios[buildingId]);
+        return Math.floor(((getStandardWidth(buildingId, body) / adjustedWidth) * pixels) * buildingRatios[buildingId]);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
         return pixels;
