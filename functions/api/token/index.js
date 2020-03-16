@@ -5,17 +5,17 @@ const blockCitiesDataService = require('../../services/blockcities.data.service'
 const foamContractService = require('../../services/foam.contract.service');
 const openSeaService = require('../../services/openSea.service');
 
-const {convert} = require('convert-svg-to-png');
-const {backgroundColorwaySwitch} = require('../../services/metadata/background-colours');
+const { convert } = require('convert-svg-to-png');
+const { backgroundColorwaySwitch } = require('../../services/metadata/background-colours');
 
-const token = require('express').Router({mergeParams: true});
+const token = require('express').Router({ mergeParams: true });
 
 const PAD_DEFAULT = 300;
 
 // Gets all token pointers form the contract
 token.get('/pointers', async (request, response) => {
     try {
-        const {network} = request.params;
+        const { network } = request.params;
         const tokenPointers = await blockCitiesDataService.tokenPointers(network);
         return response.status(200).json(tokenPointers);
     } catch (e) {
@@ -27,11 +27,14 @@ token.get('/pointers', async (request, response) => {
 token.get('/:tokenId', async (request, response) => {
 
     try {
-        const {tokenId, network} = request.params;
+        const { tokenId, network } = request.params;
 
         const metadata = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
-        return response.status(200).json(metadata);
+        return response
+            .status(200)
+            .set('Cache-Control', 'public, max-age=864000')
+            .json(metadata);
     } catch (e) {
         console.error(e);
     }
@@ -39,7 +42,7 @@ token.get('/:tokenId', async (request, response) => {
 
 // Refresh the open sea token metadata
 token.get('/:tokenId/opensea/refresh', async (request, response) => {
-    const {tokenId, network} = request.params;
+    const { tokenId, network } = request.params;
 
     const results = await openSeaService.refreshTokenMetaData(network, tokenId);
 
@@ -49,13 +52,13 @@ token.get('/:tokenId/opensea/refresh', async (request, response) => {
 // A more detailed lookup method for pulling back all details for a token
 token.get('/:tokenId/details', async (request, response) => {
     try {
-        const {tokenId, network} = request.params;
+        const { tokenId, network } = request.params;
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
         const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
         const owner = await blockCitiesDataService.ownerOfToken(network, tokenId);
 
-        return response.status(200).json({...tokenDetails, ...metaData, tokenId, owner});
+        return response.status(200).json({ ...tokenDetails, ...metaData, tokenId, owner });
 
     } catch (e) {
         console.error(e);
@@ -65,7 +68,7 @@ token.get('/:tokenId/details', async (request, response) => {
 // Getting account owned tokens
 token.get('/account/:owner/tokens', async (request, response) => {
     try {
-        const {owner, network} = request.params;
+        const { owner, network } = request.params;
 
         const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
 
@@ -73,7 +76,7 @@ token.get('/account/:owner/tokens', async (request, response) => {
             const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
             const metaData = await blockCitiesDataService.tokenMetadata(network, tokenId);
 
-            return {...tokenDetails, ...metaData, tokenId: tokenId};
+            return { ...tokenDetails, ...metaData, tokenId: tokenId };
         }));
 
         return response.status(200).json(mappedTokens);
@@ -85,7 +88,7 @@ token.get('/account/:owner/tokens', async (request, response) => {
 // Getting architected buildings for an account from a given timestamp
 token.get('/account/:address/architected/:from', async (request, response) => {
     try {
-        const {address, network, from} = request.params;
+        const { address, network, from } = request.params;
         if (!from) {
             return response.status(500)
                 .json({
@@ -106,7 +109,7 @@ token.get('/account/:address/architected/:from', async (request, response) => {
 // Getting account owned tokens (created in FOAM)
 token.get('/foam/:owner/tokens', async (request, response) => {
     try {
-        const {owner, network} = request.params;
+        const { owner, network } = request.params;
 
         const tokens = await foamContractService.tokensOfOwner(network, owner);
 
@@ -123,7 +126,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
         const network = request.params.network;
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
+        const { canvasHeight } = await imageBuilderService.generateImageStats(tokenDetails);
 
         response
             .contentType('image/png')
@@ -133,7 +136,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
-                puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+                puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
             });
             return response.send(specialPng);
         }
@@ -141,7 +144,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
         const image = await imageBuilderService.generatePureSvg(tokenDetails);
         const png = await convert(image, {
             height: canvasHeight * 2,
-            puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+            puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
         });
         return response.send(png);
     } catch (e) {
@@ -184,7 +187,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const network = request.params.network;
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
+        const { canvasHeight } = await imageBuilderService.generateImageStats(tokenDetails);
 
         response
             .contentType('image/png')
@@ -196,7 +199,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
-                puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+                puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
             });
             return response.send(specialPng);
         }
@@ -204,7 +207,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const image = await imageBuilderService.generatePureSvg(tokenDetails, viewportBackground, PAD_DEFAULT);
         const png = await convert(image, {
             height: canvasHeight * 2,
-            puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+            puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
         });
         return response.send(png);
     } catch (e) {
@@ -247,17 +250,17 @@ token.get('/image-zero-concrete/:tokenId.png', async (request, response) => {
         const network = request.params.network;
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
-        const {canvasHeight} = await imageBuilderService.generateImageStats(tokenDetails);
+        const { canvasHeight } = await imageBuilderService.generateImageStats(tokenDetails);
 
         response
-            .contentType('image/png');
-            // .set('Cache-Control', 'public, max-age=864000');
+            .contentType('image/png')
+            .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
             const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
-                puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+                puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
             });
             return response.send(specialPng);
         }
@@ -265,7 +268,7 @@ token.get('/image-zero-concrete/:tokenId.png', async (request, response) => {
         const image = await imageBuilderService.generatePureSvg(tokenDetails, null, 0, true);
         const png = await convert(image, {
             height: canvasHeight * 2,
-            puppeteer: {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+            puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
         });
         return response.send(png);
     } catch (e) {
@@ -282,7 +285,7 @@ token.get('/:tokenId/image-zero-concrete', async (request, response) => {
         // TIP: use PURGE to clear via postman if needed
         response
             .contentType('image/svg+xml');
-            // .set('Cache-Control', 'public, max-age=864000');
+        // .set('Cache-Control', 'public, max-age=864000');
 
         const tokenDetails = await blockCitiesDataService.tokenDetails(network, tokenId);
 
