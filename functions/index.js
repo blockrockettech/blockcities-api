@@ -7,7 +7,7 @@ admin.initializeApp({
     databaseURL: 'https://block-cities.firebaseio.com'
 });
 
-const {address} = require('./services/abi/networks');
+const { address } = require('./services/abi/networks');
 
 const cors = require('cors');
 const express = require('express');
@@ -32,7 +32,7 @@ app.use('/network/:network/token', token);
 app.use('/network/:network/buildings', buildings);
 
 const runtimeOpts = {
-    memory: '1GB'
+    memory: '2GB'
 };
 
 // Expose Express API as a single Cloud Function:
@@ -68,7 +68,7 @@ exports.newEventTrigger =
         .onWrite(async (change, context) => {
             const get = require('lodash/get');
 
-            const {network, hash} = context.params;
+            const { network, hash } = context.params;
             const document = change.after.exists ? change.after.data() : null;
 
             console.info(`Event - onWrite @ [/events/${network}/data/${hash}]`, document);
