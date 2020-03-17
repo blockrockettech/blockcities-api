@@ -133,7 +133,7 @@ token.get('/image/:tokenId.png', async (request, response) => {
             .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, false);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
@@ -167,7 +167,7 @@ token.get('/:tokenId/image', async (request, response) => {
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, false);
 
             return response.send(specialSvg);
         }
@@ -196,7 +196,7 @@ token.get('/image-bg/:tokenId.png', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true, false);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
@@ -230,7 +230,7 @@ token.get('/:tokenId/image-bg', async (request, response) => {
         const viewportBackground = backgroundColorwaySwitch(tokenDetails.backgroundColorway).hex;
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, viewportBackground, true, false);
 
             return response.send(specialSvg);
         }
@@ -257,7 +257,7 @@ token.get('/image-zero-concrete/:tokenId.png', async (request, response) => {
             .set('Cache-Control', 'public, max-age=864000');
 
         if (tokenDetails.special !== 0) {
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, true);
             const specialPng = await convert(specialSvg, {
                 height: canvasHeight * 2,
                 puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
@@ -291,7 +291,7 @@ token.get('/:tokenId/image-zero-concrete', async (request, response) => {
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special);
+            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, true);
 
             return response.send(specialSvg);
         }

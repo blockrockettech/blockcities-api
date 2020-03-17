@@ -1,5 +1,5 @@
 const readFilePromise = require('fs-readfile-promise');
-const {loadImage} = require('canvas');
+const { loadImage } = require('canvas');
 
 const cheerio = require('cheerio');
 
@@ -10,7 +10,7 @@ const colourLogic = require('./metadata/colour-logic');
 
 class ImageBuilderService {
 
-    async generateImageStats({building, base, body, roof, exteriorColorway, backgroundColorway, zeroConcrete = false}) {
+    async generateImageStats({ building, base, body, roof, exteriorColorway, backgroundColorway, zeroConcrete = false }) {
         try {
             const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
@@ -36,7 +36,7 @@ class ImageBuilderService {
                 anchorWidthPath: processedBodyAnchorWidthPath
             } = cheerioSVGService.process(rawBodySvg);
 
-            const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg);
+            const { svg: processedRoofSvg } = cheerioSVGService.process(rawRoofSvg);
 
             const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
             const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
@@ -126,16 +126,16 @@ class ImageBuilderService {
     }
 
     async generatePureSvg({
-                              building,
-                              base,
-                              body,
-                              roof,
-                              exteriorColorway,
-                              backgroundColorway,
-                          },
-                          viewportBackground = null,
-                          pad = 0,
-                          zeroConcrete = false,
+        building,
+        base,
+        body,
+        roof,
+        exteriorColorway,
+        backgroundColorway,
+    },
+        viewportBackground = null,
+        pad = 0,
+        zeroConcrete = false,
     ) {
         try {
 
@@ -206,7 +206,7 @@ class ImageBuilderService {
             );
 
             // this is the DOM skeleton we squirt into...
-            const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
+            const $ = cheerio.load(skeletonSvg, { xmlMode: true, normalizeWhitespace: true, });
 
             // hacky padding so only use if explicitly specified
             if (pad > 0) {
@@ -272,15 +272,16 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null, padding = false) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, padding = false, zeroConcrete = false) {
 
         try {
             const paddingDir = padding ? 'padding' : 'nopadding';
-            const path = `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
+            //const path = `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
+            const path = zeroConcrete ? `${__dirname}/../raw_svgs/specials/NoConcrete/${specialId}.svg` : `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
 
             if (viewportBackground) {
-                const $ = cheerio.load(rawSvg, {xmlMode: true, normalizeWhitespace: true,});
+                const $ = cheerio.load(rawSvg, { xmlMode: true, normalizeWhitespace: true, });
                 $('svg').attr('style', `background: #${viewportBackground}`);
 
                 return $.xml();
