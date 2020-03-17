@@ -92,8 +92,7 @@ class BlockCitiesDataService {
                 attributes: {
                     ...attrs,
                     height: specialMapping[tokenAttrs.special].heightInFt, // override calculated height
-                    heightpx: specialMapping[tokenAttrs.special].heightInPx,
-                    widthpx: specialMapping[tokenAttrs.special].widthInPx,
+                    width: specialMapping[tokenAttrs.special].widthInFt, // manually calculated width
                     heightClass: heightInFootDescription(specialMapping[tokenAttrs.special].heightInFt),
                 }
             };
