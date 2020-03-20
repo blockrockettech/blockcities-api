@@ -11,7 +11,7 @@ class EventsService {
 
     async processEventsForAddress(address) {
 
-        const {abi, network, deploymentBlock} = getContractDetailsForAddress(address);
+        const { abi, network, deploymentBlock } = getContractDetailsForAddress(address);
 
         const provider = web3WebSocketInstance(network);
 
@@ -34,7 +34,7 @@ class EventsService {
             ? blockMinusConfirmations
             : lastProcessedBlock + MAX_BLOCKS_TO_PROCESS;
 
-        const WatchingContract = provider.eth.Contract(abi, address);
+        const WatchingContract = new provider.eth.Contract(abi, address);
 
         // Get the next set of events
         const events = await WatchingContract.getPastEvents('allEvents', {
@@ -55,7 +55,7 @@ class EventsService {
         await Promise.all(promises);
 
         // Update block pointer
-        await flow.updateLastBlockProcessed({lastBlock: toBlock});
+        await flow.updateLastBlockProcessed({ lastBlock: toBlock });
 
         // Success!
         return promises.length
