@@ -163,6 +163,8 @@ class BlockCitiesDataService {
 
         // Save the data in the DB
         await buildingDataService.saveBuilding(network, buildingData);
+
+        return buildingData;
     }
 
     /**

@@ -40,6 +40,15 @@ token.get('/:tokenId', async (request, response) => {
     }
 });
 
+// Refresh the database token metadata
+token.get('/:tokenId/database/refresh', async (request, response) => {
+    const { tokenId, network } = request.params;
+
+    const results = await blockCitiesDataService.updateBuildingData(network, tokenId);
+
+    return response.status(200).json(results);
+});
+
 // Refresh the open sea token metadata
 token.get('/:tokenId/opensea/refresh', async (request, response) => {
     const { tokenId, network } = request.params;
@@ -80,6 +89,20 @@ token.get('/account/:owner/tokens', async (request, response) => {
         }));
 
         return response.status(200).json(mappedTokens);
+    } catch (e) {
+        console.error(e);
+    }
+});
+
+// Getting account owned tokens id only
+token.get('/account/:owner/tokens-id', async (request, response) => {
+    try {
+        const { owner, network } = request.params;
+
+        const tokens = await blockCitiesDataService.tokensOfOwner(network, owner);
+        const ids = tokens[0].map((token) => token.words[0]);
+
+        return response.status(200).json(ids);
     } catch (e) {
         console.error(e);
     }

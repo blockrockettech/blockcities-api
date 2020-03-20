@@ -20,7 +20,7 @@ void async function () {
     //     console.log(`Update build data for ID [${i}]`);
     // }
 
-    for (let i = 2259; i < 2300; i++) {
+    for (let i = 2535; i <= 2560; i++) {
         await blockcitiesDataService.updateBuildingData(NETWORK, i);
         console.log(`Update build data for ID [${i}]`);
     }
