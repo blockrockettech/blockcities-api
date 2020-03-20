@@ -148,18 +148,18 @@ class BlockCitiesDataService {
         };
 
         // Webflow only supports mainnet
-        if (isMainnet(network)) {
-            // Add to process queue
-            await webflowUpdateQueue.addToQueue(tokenId);
+        // if (isMainnet(network)) {
+        //     // Add to process queue
+        //     await webflowUpdateQueue.addToQueue(tokenId);
 
-            // load existing data
-            const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
+        //     // load existing data
+        //     const currentBuilding = await buildingDataService.getBuildingByTokenId(network, tokenId);
 
-            // maintain webflow mapping
-            if (currentBuilding && currentBuilding.webflowItemId) {
-                buildingData.webflowItemId = currentBuilding.webflowItemId;
-            }
-        }
+        //     // maintain webflow mapping
+        //     if (currentBuilding && currentBuilding.webflowItemId) {
+        //         buildingData.webflowItemId = currentBuilding.webflowItemId;
+        //     }
+        // }
 
         // Save the data in the DB
         await buildingDataService.saveBuilding(network, buildingData);
