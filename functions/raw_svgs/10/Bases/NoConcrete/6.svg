@@ -33,11 +33,11 @@
         fill: #1e1d1c;
       }
 
-      .window-L-prim-2 {
+      .window-L-prim {
         fill: #4d3b24;
       }
 
-      .window-R-prim-2 {
+      .window-R-prim {
         fill: #bd9664;
       }
 
@@ -49,11 +49,11 @@
         fill: #5d5d5d;
       }
 
-      .exterior-R-prim-2 {
+      .exterior-R-prim {
         fill: #d05752;
       }
 
-      .exterior-L-prim-2 {
+      .exterior-L-prim {
         fill: #73302e;
       }
 
@@ -73,7 +73,7 @@
         fill: #159b64;
       }
 
-      .top-dark-2 {
+      .top-dark {
         fill: #c67471;
       }
 
