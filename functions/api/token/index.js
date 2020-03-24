@@ -190,9 +190,9 @@ token.get('/:tokenId/image', async (request, response) => {
 
         if (tokenDetails.special !== 0) {
             // console.log(`Loading special for Token ID:`, tokenDetails.special.toNumber());
-            const specialSvg = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, false);
+            const image = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, false);
 
-            return response.send(specialSvg);
+            return response.send(image);
         }
 
         const image = await imageBuilderService.generatePureSvg(tokenDetails);

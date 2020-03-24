@@ -2,6 +2,7 @@ const readFilePromise = require('fs-readfile-promise');
 const { loadImage } = require('canvas');
 
 const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 
@@ -290,6 +291,176 @@ class ImageBuilderService {
             return rawSvg;
         } catch (e) {
             console.error(e);
+        }
+    }
+
+    async calculateSvgSidesRatio(svg) {
+        try {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+
+            await page.setContent(svg);
+
+            const value = await page.evaluate(() => {
+                const el = document.querySelector('svg');
+
+                if (!el) {
+                    return null;
+                }
+
+                const paths = el.querySelectorAll('path');
+
+                // --- get building width
+                const buildingEl = el.querySelector("g");
+                const buildingBounding = buildingEl.getBoundingClientRect();
+
+                // --- find building center X coord
+                const bottomParts = [];
+                const bottomPaths = [];
+
+                const epsilonBottom = 1;
+                for (const path of paths) {
+
+                    const bounding = path.getBoundingClientRect();
+
+                    if (Math.abs(bounding.bottom - buildingBounding.bottom) <= epsilonBottom) {
+                        bottomParts.push(bounding);
+                        bottomPaths.push(path);
+                    }
+                }
+
+                let buildingCenterX = 0;
+                if (bottomParts.length === 2) {
+                    if (bottomParts[0].right < bottomParts[1].right) {
+                        buildingCenterX = bottomParts[0].right;
+                    } else {
+                        buildingCenterX = bottomParts[1].right;
+                    }
+                } else {
+                    buildingCenterX = buildingBounding.width / 2 + buildingBounding.left;
+                }
+
+                // --- find largest paths for both sides
+                const epsilonNonSides = buildingBounding.width * 0.25;
+                const getSide = (bounding) => {
+
+                    if (Math.abs(bounding.width - buildingBounding.width) <= epsilonNonSides) return;
+
+                    return bounding.right <= buildingCenterX ? 'left' : 'right';
+                };
+
+                const roundNumber = function (x, base) {
+                    // base can be 1e2, 1e3 etc
+                    return Math.round(x * base) / base;
+                };
+
+                const findPaths = (sideToCheck, checkProperty) => {
+
+                    ratio[sideToCheck] = {
+                        maxWidth: 0,
+                        maxHeight: 0,
+                        bottom: 0,
+                        ratio: 0,
+                        id: undefined,
+                        classes: undefined
+                    };
+
+                    if (checkProperty === 'bottom' && bottomPaths.length === 2) {
+
+                        // --- get correct path from the calc above
+                        let path;
+                        if (bottomParts[0].right < bottomParts[1].right) {
+                            path = sideToCheck === 'left' ? bottomPaths[0] : bottomPaths[1];
+                        } else {
+                            path = sideToCheck === 'left' ? bottomPaths[1] : bottomPaths[0];
+                        }
+
+                        const bounding = path.getBoundingClientRect();
+                        const side = sideToCheck;
+
+                        ratio[side].maxWidth = bounding.width;
+                        ratio[side].maxHeight = roundNumber(bounding.height, 1e3);
+                        ratio[side].bottom = roundNumber(bounding.bottom, 1e3);
+
+                        ratio[side].id = path.id;
+                        ratio[side].classes = path.classList.toString();
+                        ratio[side].method = checkProperty;
+
+                        return;
+                    }
+
+                    for (const path of paths) {
+
+                        const bounding = path.getBoundingClientRect();
+                        const side = getSide(bounding);
+
+                        if (!side || side !== sideToCheck) continue;
+
+                        if ((checkProperty === 'bottom' && bounding.bottom > ratio[side].bottom) ||
+                            (checkProperty === 'width' && bounding.width > ratio[side].maxWidth) ||
+                            (checkProperty === 'height' && bounding.height > ratio[side].maxHeight)
+                        ) {
+                            ratio[side].maxWidth = bounding.width;
+                            ratio[side].maxHeight = roundNumber(bounding.height, 1e3);
+                            ratio[side].bottom = roundNumber(bounding.bottom, 1e3);
+
+                            ratio[side].id = path.id;
+                            ratio[side].classes = path.classList.toString();
+                            ratio[side].method = checkProperty;
+                        }
+                    }
+                }
+
+                const calcRatio = (useBuildingWidth) => {
+                    let totalWidth = useBuildingWidth ? buildingBounding.width : ratio.left.maxWidth + ratio.right.maxWidth;
+                    ratio.left.ratio = roundNumber(ratio.left.maxWidth / totalWidth, 1e3);
+                    ratio.right.ratio = roundNumber(ratio.right.maxWidth / totalWidth, 1e3);
+
+                    ratio.left.maxWidth = roundNumber(ratio.left.maxWidth, 1e3);
+                    ratio.right.maxWidth = roundNumber(ratio.left.maxWidth, 1e3);
+                };
+
+                // height not working
+                // 2500
+
+                ratio = {};
+                findPaths('left', 'bottom');
+                findPaths('right', 'bottom');
+                calcRatio(true);
+
+                if (ratio.left && ratio.right) {
+
+                    if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
+                        ratio = {};
+                        findPaths('left', 'width');
+                        findPaths('right', 'width');
+                        calcRatio(true);
+                    }
+                }
+
+                if (ratio.left && ratio.right) {
+                    if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
+                        ratio = {};
+                        findPaths('left', 'height');
+                        findPaths('right', 'height');
+                        calcRatio(false);
+                    }
+                }
+
+                if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
+                    return;
+                } else {
+                    return ratio;
+                }
+            });
+
+            await browser.close();
+
+            return value;
+        } catch (error) {
+            console.log(error);
+
+            return;
         }
     }
 }
