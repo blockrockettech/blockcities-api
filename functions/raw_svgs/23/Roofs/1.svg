@@ -23,7 +23,7 @@
     </style>
   </defs>
   <title>Artboard 30</title>
-  <g>
+  <g id="root">
     <path class="top-light" d="M200,57.735,100,0,0,57.735,100,115.47Z"/>
     <path class="top-prim" d="M10,57.735,100,5.774l90,51.961-90,51.962Z"/>
     <path class="exterior-R-light" d="M100,5.774V17.321L20,63.509,10,57.735Z"/>
