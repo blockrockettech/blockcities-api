@@ -139,10 +139,10 @@ class BlockCitiesDataService {
         if (tokenDetails.special !== 0) {
             svgWithBase = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, false);
             svgWithoutBase = await imageBuilderService.loadSpecialPureSvg(tokenDetails.special, null, false, true);
+        } else {
+            svgWithBase = await imageBuilderService.generatePureSvg(tokenDetails);
+            svgWithoutBase = await imageBuilderService.generatePureSvg(tokenDetails, null, false, true);
         }
-
-        svgWithBase = await imageBuilderService.generatePureSvg(tokenDetails);
-        svgWithoutBase = await imageBuilderService.generatePureSvg(tokenDetails, null, false, true);
 
         if (svgWithBase) sides = await imageBuilderService.calculateSvgSidesRatio(svgWithBase);
 

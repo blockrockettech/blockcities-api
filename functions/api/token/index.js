@@ -44,7 +44,7 @@ token.get('/:tokenId', async (request, response) => {
 token.get('/:tokenId/database/refresh', async (request, response) => {
     const { tokenId, network } = request.params;
 
-    const results = await blockCitiesDataService.updateBuildingData(network, tokenId);
+    const results = await blockCitiesDataService.updateBuildingData(network, tokenId, response);
 
     return response.status(200).json(results);
 });

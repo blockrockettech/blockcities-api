@@ -4,6 +4,7 @@ const admin = require('firebase-admin');
 
 let db;
 let firestore;
+let storage;
 
 module.exports = {
     database: () => {
@@ -31,8 +32,22 @@ module.exports = {
             ? overriddenAdmin.firestore()
             : admin.firestore();
 
-        const settings = {timestampsInSnapshots: true};
+        const settings = { timestampsInSnapshots: true };
         firestore.settings(settings);
         return firestore;
+    },
+    storage: (overriddenAdmin = false) => {
+        if (storage) {
+            return storage;
+        }
+        if (!overriddenAdmin && !admin) {
+            throw new Error('Service not setup...!');
+        }
+
+        // When invoking from a script (see ./scripts/) we need to bootstrap firebase earlier
+        storage = overriddenAdmin
+            ? overriddenAdmin.storage()
+            : admin.storage();
+        return storage;
     }
 };

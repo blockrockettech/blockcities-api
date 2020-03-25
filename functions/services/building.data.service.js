@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
 const firestore = require('./firebase.service').firestore();
-const admin = require("firebase-admin");
+const storage = require('./firebase.service').storage();
 
 const { getNetwork } = require('./abi/networks');
 
@@ -70,7 +70,7 @@ class BuildingDataService {
 
     saveImageToStorage(buffer, path, mimetype) {
         return new Promise(resolve => {
-            const bucket = admin.storage().bucket();
+            const bucket = storage.bucket();
             const file = bucket.file(path);
 
             const stream = file.createWriteStream({
