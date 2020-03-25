@@ -1,5 +1,7 @@
 const _ = require('lodash');
 
+const fs = require("fs");
+
 const blockcitiesContractService = require('./blockcities.contract.service');
 const webflowUpdateQueue = require('./webflow/webflowUpdateQueue.service');
 const imageBuilderService = require('./imageBuilder.service');
@@ -154,7 +156,7 @@ class BlockCitiesDataService {
                 puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
             });
 
-            imageStore = await buildingDataService.saveImageToStorage(png, `buildings/base/${tokenId}.png`, 'image/png');
+            imageStore = await buildingDataService.saveImageToStorage(png, `building/base/${tokenId}.png`, 'image/png');
         }
 
         if (svgWithoutBase) {
@@ -163,7 +165,7 @@ class BlockCitiesDataService {
                 puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
             });
 
-            imageZeroBaseStore = await buildingDataService.saveImageToStorage(png, `buildings/zeroBase/${tokenId}.png`, 'image/png');
+            imageZeroBaseStore = await buildingDataService.saveImageToStorage(png, `building/zeroBase/${tokenId}.png`, 'image/png');
         }
 
         // Firestore formatted data
