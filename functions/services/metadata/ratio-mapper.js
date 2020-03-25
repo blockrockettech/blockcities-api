@@ -28,6 +28,7 @@ const buildingRatios = {
     26: 0.457720721915,
     27: 0,
     28: 0.760443613452,
+    29: 0.328648269667,
 };
 
 // this it the standard width of the x-anchor on base 0
