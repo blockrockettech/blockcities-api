@@ -361,8 +361,8 @@ class ImageBuilderService {
                         maxHeight: 0,
                         bottom: 0,
                         ratio: 0,
-                        id: undefined,
-                        classes: undefined
+                        id: null,
+                        classes: null
                     };
 
                     if (checkProperty === 'bottom' && bottomPaths.length === 2) {

@@ -4,7 +4,9 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp({
     credential: admin.credential.cert(require('./_keys/block-cities-firebase-adminsdk.json')),
-    databaseURL: 'https://block-cities.firebaseio.com'
+    databaseURL: 'https://block-cities.firebaseio.com',
+    storageBucket: "block-cities.appspot.com"
+
 });
 
 const { address } = require('./services/abi/networks');
