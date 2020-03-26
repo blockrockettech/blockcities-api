@@ -311,7 +311,7 @@ class ImageBuilderService {
                 const paths = el.querySelectorAll('path');
 
                 // --- get building width
-                const buildingEl = el.querySelector("g");
+                const buildingEl = el.querySelector(":scope > g");
                 const buildingBounding = buildingEl.getBoundingClientRect();
 
                 // --- find building center X coord
@@ -417,7 +417,7 @@ class ImageBuilderService {
                     ratio.right.ratio = roundNumber(ratio.right.maxWidth / totalWidth, 1e3);
 
                     ratio.left.maxWidth = roundNumber(ratio.left.maxWidth, 1e3);
-                    ratio.right.maxWidth = roundNumber(ratio.left.maxWidth, 1e3);
+                    ratio.right.maxWidth = roundNumber(ratio.right.maxWidth, 1e3);
                 };
 
                 // height not working
@@ -428,29 +428,38 @@ class ImageBuilderService {
                 findPaths('right', 'bottom');
                 calcRatio(true);
 
-                if (ratio.left && ratio.right) {
+                // check if we got an almost === 1 ratio from bases
+                // 2901
+                const epsilonRatio = 0.1;
+                const checkRatio = () => {
+                    if (!ratio.left || !ratio.right) return false;
 
-                    if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
-                        ratio = {};
-                        findPaths('left', 'width');
-                        findPaths('right', 'width');
-                        calcRatio(true);
-                    }
+                    return Math.abs(1 - (ratio.left.ratio + ratio.right.ratio)) <= epsilonRatio;
                 }
 
-                if (ratio.left && ratio.right) {
-                    if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
+                if (checkRatio() === true) {
+                    return ratio;
+                } else {
+
+                    ratio = {};
+                    findPaths('left', 'width');
+                    findPaths('right', 'width');
+                    calcRatio(true);
+
+                    if (checkRatio() === true) {
+                        return ratio;
+                    } else {
                         ratio = {};
                         findPaths('left', 'height');
                         findPaths('right', 'height');
                         calcRatio(false);
-                    }
-                }
 
-                if ((ratio.left.ratio + ratio.right.ratio) !== 1) {
-                    return;
-                } else {
-                    return ratio;
+                        if (checkRatio() === true) {
+                            return ratio;
+                        } else {
+                            return;
+                        }
+                    }
                 }
             });
 
