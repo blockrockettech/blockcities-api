@@ -7,15 +7,17 @@ let firestore;
 let storage;
 
 module.exports = {
-    database: () => {
+    database: (overriddenAdmin = false) => {
         if (db) {
             // console.log("using cached DB instance");
             return db;
         }
-        if (!admin) {
+        if (!overriddenAdmin && !admin) {
             throw new Error('Service not setup...!');
         }
-        db = admin.database();
+        db = overriddenAdmin
+            ? overriddenAdmin.database()
+            : admin.database();
         return db;
     },
     firestore: (overriddenAdmin = false) => {

@@ -56,11 +56,13 @@ const standardWidths = {
     19: 260,
     20: 270,
     22: 270,
+    21: 200,
     23: 220,
     24: 280,
     25: 310,
     26: 180,
     28: 250,
+    29: 320
 };
 
 // Low Rise	0-114.829
@@ -87,12 +89,7 @@ const getStandardWidth = (buildingId, body) => {
 
     const specialBodies = [1, 2, 11, 12, 17, 18];
 
-    if (specialBodies.indexOf(body) > -1) {
-
-        if (body === 18 && buildingId !== 9) {
-            return standardWidths[buildingId];
-        }
-
+    if (buildingId === 9 && specialBodies.indexOf(body) > -1) {
         return 320;
     } else {
         return standardWidths[buildingId];

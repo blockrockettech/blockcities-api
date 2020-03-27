@@ -73,14 +73,14 @@ class BlockCitiesDataService {
         // push width through the "ratio mapper"
         const width = ratioMapper({
             adjustedWidth: baseConfig.anchorWidthPath, // switched from bodyConfig.adjustedBodyWidth (see github issues)
-            pixels: bodyConfig.adjustedBodyWidth,
+            pixels: canvasWidth,
             buildingId: tokenAttrs.building,
             body: tokenAttrs.body
         });
 
         const xWidth = ratioMapper({
             adjustedWidth: bodyConfig.adjustedBodyWidth,
-            pixels: bodyConfig.adjustedBodyWidth,
+            pixels: canvasWidth,
             buildingId: tokenAttrs.building,
             body: tokenAttrs.body
         });
