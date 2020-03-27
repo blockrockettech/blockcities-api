@@ -18,22 +18,24 @@ void async function () {
     const { tokenIdPointer } = await blockcitiesDataService.tokenPointers(NETWORK);
     console.log(`Total tokens ${tokenIdPointer}`);
 
-    // for (let i = 2784; i <= tokenIdPointer; i++) {
-    //     await blockcitiesDataService.updateBuildingData(NETWORK, i);
-    //     console.log(`Update build data for ID [${i}]`);
-    // }
-
-    // New failed
-    // 1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888
-
-    // const ids = [1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888]
-
-    const ids = [1002, 1717, 1868, 1897];
-
-    for (const i of ids) {
+    for (let i = 1; i <= tokenIdPointer; i++) {
         await blockcitiesDataService.updateBuildingData(NETWORK, i);
         console.log(`Update build data for ID [${i}]`);
     }
+
+    // New failed
+    // const ids = [1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888]
+
+    // for fixing the sizing issue
+    // const ids = [1002, 1717, 1868, 1897];
+
+    // first 10
+    //const ids = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109];
+
+    // for (const i of ids) {
+    //     await blockcitiesDataService.updateBuildingData(NETWORK, i);
+    //     console.log(`Update build data for ID [${i}]`);
+    // }
 
     process.exit();
 
