@@ -1,5 +1,6 @@
 const _ = require('lodash');
 
+const database = require('./firebase.service').database();
 const firestore = require('./firebase.service').firestore();
 const storage = require('./firebase.service').storage();
 
@@ -92,6 +93,29 @@ class BuildingDataService {
 
             stream.end(buffer);
         });
+    }
+
+    async checkBetaKeyIsValid(betaKey) {
+        const keys = await database.ref(`betaKeys`).once('value').then(snapshot => snapshot.val());
+
+        if (keys[betaKey] && keys[betaKey].activated !== true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    async consumeBetaKey(betaKey, userID) {
+        const valid = await this.checkBetaKeyIsValid(betaKey);
+
+        if (valid) {
+            await database.ref(`betaKeys/${betaKey}/activated`).set(true);
+            await database.ref(`betaKeys/${betaKey}/userID`).set(userID);
+
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

@@ -17,7 +17,12 @@ void async function () {
     const { tokenIdPointer } = await blockcitiesDataService.tokenPointers(NETWORK);
     console.log(`Total tokens ${tokenIdPointer}`);
 
-    for (let i = 1; i <= 200; i++) {
+    const ids = [1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888]
+
+    for (let i = 2784; i <= tokenIdPointer; i++) {
+
+        if (ids.indexOf(i) > -1) continue;
+
         await blockcitiesDataService.updateBuildingData(NETWORK, i);
         console.log(`Update build data for ID [${i}]`);
     }
@@ -25,7 +30,7 @@ void async function () {
     // New failed
     // 1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888
 
-    // const ids = [2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888]
+    // const ids = [1965, 1978, 1995, 2184, 2193, 2256, 2325, 2437, 2482, 2486, 2526, 2534, 2587, 2653, 2656, 2789, 2791, 2797, 2817, 2836, 2888]
 
     // for (const i of ids) {
     //     await blockcitiesDataService.updateBuildingData(NETWORK, i);
