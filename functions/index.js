@@ -34,7 +34,8 @@ app.use('/network/:network/token', token);
 app.use('/network/:network/buildings', buildings);
 
 const runtimeOpts = {
-    memory: '2GB'
+    memory: '2GB',
+    timeoutSeconds: 60
 };
 
 // Expose Express API as a single Cloud Function:
