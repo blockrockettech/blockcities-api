@@ -109,6 +109,7 @@
     </clipPath>
   </defs>
   <title>Artboard 19</title>
+  <g id="root">
   <path class="crown-top" d="M203.75,205.689l-80-46.188L0,230.948l80,46.188Z"/>
   <path class="crown-top" d="M122.5,83.724v-4.33L80,54.856,37.5,79.3939v4.33L80,108.261Z"/>
   <path class="top-light" d="M80,268.476l107.5-62.065-65-37.5281L15,230.948Z"/>
@@ -209,4 +210,5 @@
   <path class="window-R-prim" d="M108.75,207.1329l5-2.8869v15.8769l-5,2.8871Z"/>
   <path class="window-R-prim" d="M108.75,182.595l5-2.887v15.8779l-5,2.886Z"/>
   <path class="window-R-prim" d="M108.75,231.67l5-2.8869v14.4339l-5,2.8871Z"/>
+  </g>
 </svg>

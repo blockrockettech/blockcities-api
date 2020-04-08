@@ -59,6 +59,7 @@
     </style>
   </defs>
   <title>Artboard 32</title>
+  <g id="root">
   <path class="exterior-L-light" d="M10,326.203V167.206L230,294.223V453.22Z"/>
   <path class="exterior-R-light" d="M490,303.109V144.112L230,294.223V453.22Z"/>
   <path class="crown-R" d="M230,300.222,500,144.338V132.791L230,287.998Z"/>
@@ -478,4 +479,5 @@
   <path id="anchor_10_282.902_480" class="crown-top" d="M490,132.791,230,282.902,10,155.885,270,5.774Z"/>
   <path class="crown-L-dark" d="M210,380.993l20,11.547v2.887l-20-11.548Z"/>
   <path class="crown-top" d="M210,381.051l5-2.886v2.886l15,8.661v2.886Z"/>
+  </g>
 </svg>

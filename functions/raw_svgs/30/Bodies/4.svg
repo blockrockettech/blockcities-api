@@ -91,7 +91,7 @@
     </style>
   </defs>
   <title>Artboard 21</title>
-  <g>
+  <g id="root">
     <path class="crown-top" d="M490,669.004,270,541.987,10,692.098,230,819.1149Z"/>
     <path class="top-light" d="M30,692.098l200,115.47L470,669.004,270,553.534Z"/>
     <path class="exterior-L-prim" d="M10,1052.942V692.098L230,819.1149v360.844Z"/>

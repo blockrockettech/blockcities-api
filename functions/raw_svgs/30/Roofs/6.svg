@@ -91,6 +91,7 @@
     </style>
   </defs>
   <title>Artboard 20</title>
+  <g id="root">
   <path class="crown-top" d="M203.75,306.718l-80-46.188L0,331.9771,80,378.165Z"/>
   <path class="top-light" d="M80,369.505,187.5,307.44l-65-37.5281L15,331.9771Z"/>
   <path class="exterior-R-prim" d="M15,331.9771,122.5,269.912v8.66l-100,57.735Z"/>
@@ -176,5 +177,6 @@
     <path class="slope-L" d="M81.562,1.985,81.25,54.127,80,54.849l-2.5-1.444V1.444L80,2.887Z"/>
     <path class="slope-R" d="M86.25,81.551,80,85.16V56.292l6.25-3.608Z"/>
     <path class="slope-R" d="M82.5,53.405,80,54.849V2.887l2.5-1.443Z"/>
+  </g>
   </g>
 </svg>
