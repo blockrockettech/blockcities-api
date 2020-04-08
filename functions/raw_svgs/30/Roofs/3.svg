@@ -1,0 +1,108 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 203.75 167.432">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .slope-top {
+        fill: #fff1d8;
+      }
+
+      .crown-top {
+        fill: #e5f7e3;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .slope-L {
+        fill: #c3af8a;
+      }
+
+      .slope-R {
+        fill: #eed9b3;
+      }
+
+      .slope-top-dark {
+        fill: #f0e1c6;
+      }
+
+      .slope-R-dark {
+        fill: #dfcaa3;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .slope-L-dark {
+        fill: #ae9a76;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <polygon class="cls-1" points="85 62.065 130 36.085 191.25 85.881 85 147.224 85 62.065"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <polygon class="cls-1" points="75 62.065 68.75 58.457 13.75 111.862 75 147.224 75 62.065"/>
+    </clipPath>
+  </defs>
+  <title>Artboard 18</title>
+  <g id="root">
+    <g>
+      <path class="slope-top" d="M67.5,51.9619,80,59.179l51.25-29.59-12.5-7.2171Z"/>
+      <path class="crown-top" d="M203.75,95.985l-80-46.188L0,121.244l80,46.188Z"/>
+      <path class="exterior-L-prim" d="M10,115.47v5.774l70,40.414,2.5-1.443v-5.7741L80,155.885Z"/>
+      <path class="exterior-R-prim" d="M193.75,90.2109V95.985L80,161.658v-5.773Z"/>
+      <path class="slope-L" d="M80,155.885l3.75-2.165V57.0129L80,59.179,67.5,51.9619,5,112.583Z"/>
+      <path class="slope-R" d="M80,155.885V59.179l51.25-29.59,67.5,57.735Z"/>
+      <path class="slope-top-dark" d="M72.5,51.9619l46.25-26.703,7.5,4.33L80,56.292Z"/>
+      <path class="slope-L" d="M118.75,25.2589V28.146l5,2.887,2.5-1.444Z"/>
+      <path class="slope-R" d="M72.5,51.9619l46.25-26.703V28.146L75,53.405Z"/>
+      <path class="slope-R-dark" d="M85,62.0649l45-25.98,61.25,49.796L85,147.224Z"/>
+      <g class="cls-2">
+        <path class="slope-L" d="M130,36.085l61.25,49.796L185,85.1589l-61.25-49.796Z"/>
+      </g>
+      <path class="slope-top" d="M85,147.224v-4.33l100-57.735,6.25.7221Z"/>
+      <path class="slope-L-dark" d="M75,62.0649,68.75,58.457l-55,53.4049L75,147.224Z"/>
+      <g class="cls-3">
+        <path class="slope-R" d="M13.75,111.8619,20,111.14,75,57.735l-6.25.722Z"/>
+      </g>
+      <path class="slope-top" d="M75,147.224v-4.33l-55-31.76-6.25.7221Z"/>
+    </g>
+    <path class="exterior-R-prim" d="M97.5,60.6219l15-8.66V12.99l-15,8.661Z"/>
+    <path class="exterior-L-prim" d="M82.5,43.301l1.25-.721,12.5,7.217V55.57l1.25,5.052V21.651l-15-8.661Z"/>
+    <path class="top-light" d="M97.5,0,78.75,10.825,97.5,21.651l18.75-10.826Z"/>
+    <path class="exterior-R-dark" d="M116.25,10.825,97.5,21.651l-3.75-2.165v4.33L97.5,25.981l18.75-10.825Z"/>
+    <path class="exterior-L-dark" d="M78.75,10.825v4.331L97.5,25.981v-4.33Z"/>
+    <path class="exterior-R-prim" d="M97.5,17.3209l11.25-6.4959L97.5,4.33,86.25,10.825Z"/>
+    <path class="exterior-L-prim" d="M97.5,4.33V17.3209l11.25-6.4959Z"/>
+    <path class="exterior-R-dark" d="M108.75,23.8159l-7.5,4.33V52.683l7.5-4.33Z"/>
+    <path class="exterior-L-dark" d="M86.25,23.8159l7.5,4.33V48.353l-7.5-4.33Z"/>
+    <path class="exterior-R-prim" d="M88.75,45.4659l-2.5,1.444V23.8159l2.5,1.443Z"/>
+    <path class="exterior-L-prim" d="M108.75,54.127l-2.5-4.33V25.2589l2.5-1.443Z"/>
+    <path class="slope-R" d="M86.25,44.0229V46.91L75,53.405l-2.5-1.4431Z"/>
+    <path class="slope-R-dark" d="M101.25,52.683l5-2.886,2.5,4.33-7.5,4.33Z"/>
+  </g>
+</svg>

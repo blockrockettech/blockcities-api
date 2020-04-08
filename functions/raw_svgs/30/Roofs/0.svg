@@ -1,0 +1,68 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.75 128.46">
+  <defs>
+    <style>
+      .crown-top {
+        fill: #e5f7e3;
+      }
+
+      .top-light {
+        fill: #ffc8c6;
+      }
+
+      .crown-R {
+        fill: #bfd7bd;
+      }
+
+      .crown-L {
+        fill: #8fa88c;
+      }
+
+      .exterior-R-prim {
+        fill: #d05752;
+      }
+
+      .exterior-L-prim {
+        fill: #73302e;
+      }
+
+      .window-R-prim {
+        fill: #bd9664;
+      }
+
+      .window-L-prim {
+        fill: #4d3b24;
+      }
+
+      .exterior-R-dark {
+        fill: #a64c49;
+      }
+
+      .exterior-L-dark {
+        fill: #512220;
+      }
+    </style>
+  </defs>
+  <title>Artboard 14</title>
+  <g id="root">
+    <path class="crown-top" d="M203.75,57.0129l-80-46.1879L0,82.272,80,128.46Z"/>
+    <path class="top-light" d="M80,119.8,187.5,57.735l-65-37.528L15,82.272Z"/>
+    <path class="crown-R" d="M15,82.272,122.5,20.207v8.66l-100,57.735Z"/>
+    <path class="crown-L" d="M187.5,57.735l-7.5,4.33-57.5-33.198v-8.66Z"/>
+    <path class="crown-top" d="M170,31.754v-4.33L122.5,0l-90,51.9609v4.33L80,83.715Z"/>
+    <path class="crown-R" d="M76.25,77.22V88.767L80,90.932l90-51.9611V27.424L80,79.385Z"/>
+    <path class="crown-L" d="M32.5,51.9609v11.547L80,90.932V79.385Z"/>
+    <path class="exterior-R-prim" d="M165,41.8569,80,90.932l-3.75-2.165v20.207L80,111.1389l85-49.074Z"/>
+    <path class="exterior-L-prim" d="M37.5,66.395,80,90.932v20.2069L37.5,86.6019Z"/>
+    <path class="top-light" d="M122.5,8.66,155,27.424,80,70.725,47.5,51.9609Z"/>
+    <path class="crown-L" d="M122.5,8.66v8.66l25,14.4341,7.5-4.33Z"/>
+    <path class="crown-R" d="M47.5,51.9609l75-43.301v8.66L55,56.291Z"/>
+    <path class="window-R-prim" d="M97.5,86.6019l7.5-4.33v8.66l-7.5,4.33Z"/>
+    <path class="window-R-prim" d="M112.5,77.942l7.5-4.33v8.66l-7.5,4.33Z"/>
+    <path class="window-R-prim" d="M127.5,69.282l7.5-4.3311v8.661l-7.5,4.33Z"/>
+    <path class="window-R-prim" d="M142.5,60.621l7.5-4.33v8.66l-7.5,4.3311Z"/>
+    <path class="window-L-prim" d="M70,90.932l-7.5-4.33v8.66L70,99.593Z"/>
+    <path class="window-L-prim" d="M55,82.272l-7.5-4.33v8.66l7.5,4.33Z"/>
+    <path class="exterior-R-dark" d="M77.5,109.6959V106.809l2.5,1.4439L165,59.178v2.8869l-85,49.074Z"/>
+    <path class="exterior-L-dark" d="M37.5,83.715,80,108.2529v2.886L37.5,86.6019Z"/>
+  </g>
+</svg>
