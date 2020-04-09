@@ -1,7 +1,8 @@
 const readFilePromise = require('fs-readfile-promise');
-const {loadImage} = require('canvas');
+const { loadImage } = require('canvas');
 
 const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 
 const cheerioSVGService = require('./cheerioSVGService.service');
 
@@ -10,7 +11,7 @@ const colourLogic = require('./metadata/colour-logic');
 
 class ImageBuilderService {
 
-    async generateImageStats({building, base, body, roof, exteriorColorway, backgroundColorway, zeroConcrete = false}) {
+    async generateImageStats({ building, base, body, roof, exteriorColorway, backgroundColorway, zeroConcrete = false }) {
         try {
             const rootPath = `${__dirname}/../raw_svgs/${building}`;
 
@@ -36,7 +37,7 @@ class ImageBuilderService {
                 anchorWidthPath: processedBodyAnchorWidthPath
             } = cheerioSVGService.process(rawBodySvg);
 
-            const {svg: processedRoofSvg} = cheerioSVGService.process(rawRoofSvg);
+            const { svg: processedRoofSvg } = cheerioSVGService.process(rawRoofSvg);
 
             const baseImage = await loadImage(Buffer.from(processedBaseSvg, 'utf8'));
             const bodyImage = await loadImage(Buffer.from(processedBodySvg, 'utf8'));
@@ -126,16 +127,16 @@ class ImageBuilderService {
     }
 
     async generatePureSvg({
-                              building,
-                              base,
-                              body,
-                              roof,
-                              exteriorColorway,
-                              backgroundColorway,
-                          },
-                          viewportBackground = null,
-                          pad = 0,
-                          zeroConcrete = false,
+        building,
+        base,
+        body,
+        roof,
+        exteriorColorway,
+        backgroundColorway,
+    },
+        viewportBackground = null,
+        pad = 0,
+        zeroConcrete = false,
     ) {
         try {
 
@@ -206,7 +207,7 @@ class ImageBuilderService {
             );
 
             // this is the DOM skeleton we squirt into...
-            const $ = cheerio.load(skeletonSvg, {xmlMode: true, normalizeWhitespace: true,});
+            const $ = cheerio.load(skeletonSvg, { xmlMode: true, normalizeWhitespace: true, });
 
             // hacky padding so only use if explicitly specified
             if (pad > 0) {
@@ -272,15 +273,16 @@ class ImageBuilderService {
         }
     }
 
-    async loadSpecialPureSvg(specialId, viewportBackground = null, padding = false) {
+    async loadSpecialPureSvg(specialId, viewportBackground = null, padding = false, zeroConcrete = false) {
 
         try {
             const paddingDir = padding ? 'padding' : 'nopadding';
-            const path = `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
+            //const path = `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
+            const path = zeroConcrete ? `${__dirname}/../raw_svgs/specials/NoConcrete/${specialId}.svg` : `${__dirname}/../raw_svgs/specials/${paddingDir}/${specialId}.svg`;
             const rawSvg = await readFilePromise(path, 'utf8');
 
             if (viewportBackground) {
-                const $ = cheerio.load(rawSvg, {xmlMode: true, normalizeWhitespace: true,});
+                const $ = cheerio.load(rawSvg, { xmlMode: true, normalizeWhitespace: true, });
                 $('svg').attr('style', `background: #${viewportBackground}`);
 
                 return $.xml();
@@ -289,6 +291,185 @@ class ImageBuilderService {
             return rawSvg;
         } catch (e) {
             console.error(e);
+        }
+    }
+
+    async calculateSvgSidesRatio(svg) {
+        try {
+            const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+            const page = await browser.newPage();
+
+            await page.setContent(svg);
+
+            const value = await page.evaluate(() => {
+                const el = document.querySelector('svg');
+
+                if (!el) {
+                    return null;
+                }
+
+                const paths = el.querySelectorAll('path');
+
+                // --- get building width
+                const buildingEl = el.querySelector(":scope > g");
+                const buildingBounding = buildingEl.getBoundingClientRect();
+
+                // --- find building center X coord
+                const bottomParts = [];
+                const bottomPaths = [];
+
+                const epsilonBottom = 1;
+                for (const path of paths) {
+
+                    const bounding = path.getBoundingClientRect();
+
+                    if (Math.abs(bounding.bottom - buildingBounding.bottom) <= epsilonBottom) {
+                        bottomParts.push(bounding);
+                        bottomPaths.push(path);
+                    }
+                }
+
+                let buildingCenterX = 0;
+                if (bottomParts.length === 2) {
+                    if (bottomParts[0].right < bottomParts[1].right) {
+                        buildingCenterX = bottomParts[0].right;
+                    } else {
+                        buildingCenterX = bottomParts[1].right;
+                    }
+                } else {
+                    buildingCenterX = buildingBounding.width / 2 + buildingBounding.left;
+                }
+
+                // --- find largest paths for both sides
+                const epsilonNonSides = buildingBounding.width * 0.25;
+                const getSide = (bounding) => {
+
+                    if (Math.abs(bounding.width - buildingBounding.width) <= epsilonNonSides) return;
+
+                    return bounding.right <= buildingCenterX ? 'left' : 'right';
+                };
+
+                const roundNumber = function (x, base) {
+                    // base can be 1e2, 1e3 etc
+                    return Math.round(x * base) / base;
+                };
+
+                const findPaths = (sideToCheck, checkProperty) => {
+
+                    ratio[sideToCheck] = {
+                        maxWidth: 0,
+                        maxHeight: 0,
+                        bottom: 0,
+                        ratio: 0,
+                        id: null,
+                        classes: null
+                    };
+
+                    if (checkProperty === 'bottom' && bottomPaths.length === 2) {
+
+                        // --- get correct path from the calc above
+                        let path;
+                        if (bottomParts[0].right < bottomParts[1].right) {
+                            path = sideToCheck === 'left' ? bottomPaths[0] : bottomPaths[1];
+                        } else {
+                            path = sideToCheck === 'left' ? bottomPaths[1] : bottomPaths[0];
+                        }
+
+                        const bounding = path.getBoundingClientRect();
+                        const side = sideToCheck;
+
+                        ratio[side].maxWidth = bounding.width;
+                        ratio[side].maxHeight = roundNumber(bounding.height, 1e3);
+                        ratio[side].bottom = roundNumber(bounding.bottom, 1e3);
+
+                        ratio[side].id = path.id;
+                        ratio[side].classes = path.classList.toString();
+                        ratio[side].method = checkProperty;
+
+                        return;
+                    }
+
+                    for (const path of paths) {
+
+                        const bounding = path.getBoundingClientRect();
+                        const side = getSide(bounding);
+
+                        if (!side || side !== sideToCheck) continue;
+
+                        if ((checkProperty === 'bottom' && bounding.bottom > ratio[side].bottom) ||
+                            (checkProperty === 'width' && bounding.width > ratio[side].maxWidth) ||
+                            (checkProperty === 'height' && bounding.height > ratio[side].maxHeight)
+                        ) {
+                            ratio[side].maxWidth = bounding.width;
+                            ratio[side].maxHeight = roundNumber(bounding.height, 1e3);
+                            ratio[side].bottom = roundNumber(bounding.bottom, 1e3);
+
+                            ratio[side].id = path.id;
+                            ratio[side].classes = path.classList.toString();
+                            ratio[side].method = checkProperty;
+                        }
+                    }
+                }
+
+                const calcRatio = (useBuildingWidth) => {
+                    let totalWidth = useBuildingWidth ? buildingBounding.width : ratio.left.maxWidth + ratio.right.maxWidth;
+                    ratio.left.ratio = roundNumber(ratio.left.maxWidth / totalWidth, 1e3);
+                    ratio.right.ratio = roundNumber(ratio.right.maxWidth / totalWidth, 1e3);
+
+                    ratio.left.maxWidth = roundNumber(ratio.left.maxWidth, 1e3);
+                    ratio.right.maxWidth = roundNumber(ratio.right.maxWidth, 1e3);
+                };
+
+                // height not working
+                // 2500
+
+                ratio = {};
+                findPaths('left', 'bottom');
+                findPaths('right', 'bottom');
+                calcRatio(true);
+
+                // check if we got an almost === 1 ratio from bases
+                // 2901
+                const epsilonRatio = 0.1;
+                const checkRatio = () => {
+                    if (!ratio.left || !ratio.right) return false;
+
+                    return Math.abs(1 - (ratio.left.ratio + ratio.right.ratio)) <= epsilonRatio;
+                }
+
+                if (checkRatio() === true) {
+                    return ratio;
+                } else {
+
+                    ratio = {};
+                    findPaths('left', 'width');
+                    findPaths('right', 'width');
+                    calcRatio(true);
+
+                    if (checkRatio() === true) {
+                        return ratio;
+                    } else {
+                        ratio = {};
+                        findPaths('left', 'height');
+                        findPaths('right', 'height');
+                        calcRatio(false);
+
+                        if (checkRatio() === true) {
+                            return ratio;
+                        } else {
+                            return;
+                        }
+                    }
+                }
+            });
+
+            await browser.close();
+
+            return value;
+        } catch (error) {
+            console.log(error);
+
+            return;
         }
     }
 }
