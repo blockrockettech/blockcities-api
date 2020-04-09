@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const imageBuilderService = require('../../services/imageBuilder.service');
+const blockcitiesContractService = require('../../services/blockcities.contract.service');
 
 const builder = require('express').Router({mergeParams: true});
 
@@ -46,7 +47,7 @@ builder.get('/:building/base/:base/body/:body/roof/:roof/exterior/:exterior/svg'
             body: parseInt(request.params.body),
             roof: parseInt(request.params.roof),
             exteriorColorway: parseInt(request.params.exterior),
-            backgroundColorway: 2,
+            backgroundColorway: 0,
         });
 
         return response
@@ -69,7 +70,20 @@ builder.get('/special/:specialId/svg', async (request, response) => {
     } catch (e) {
         console.error(e);
     }
+});
 
+builder.get('/network/:network/validator/current', async (request, response) => {
+    try {
+        const network = request.params.network;
+
+        const res = await blockcitiesContractService.validatorRotation(network);
+
+        return response
+            .contentType('application/json')
+            .send(res);
+    } catch (e) {
+        console.error(e);
+    }
 });
 
 module.exports = builder;

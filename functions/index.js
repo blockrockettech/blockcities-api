@@ -7,7 +7,7 @@ admin.initializeApp({
     databaseURL: 'https://block-cities.firebaseio.com'
 });
 
-const {address} = require('./services/abi/networks');
+const contracts =  require('blockcities-contract-artifacts').contracts;
 
 const cors = require('cors');
 const express = require('express');
@@ -44,19 +44,19 @@ exports.api = functions.runWith(runtimeOpts).https.onRequest(app);
 exports.blockCitiesMainnetScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running mainnet scheduler');
-        await require('./services/events/events.service').processEventsForAddress(address.blockCities.mainnet);
+        await require('./services/events/events.service').processEventsForAddress(contracts.addresses.BlockCities(1).address);
     });
 
 exports.blockCitiesRopstenScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running ropsten scheduler');
-        await require('./services/events/events.service').processEventsForAddress(address.blockCities.ropsten);
+        await require('./services/events/events.service').processEventsForAddress(contracts.addresses.BlockCities(3).address);
     });
 
 exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes')
     .onRun(async (context) => {
         console.log('Running rinkeby scheduler');
-        await require('./services/events/events.service').processEventsForAddress(address.blockCities.rinkeby);
+        await require('./services/events/events.service').processEventsForAddress(contracts.addresses.BlockCities(4).address);
     });
 
 /**

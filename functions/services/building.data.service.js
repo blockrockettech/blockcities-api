@@ -2,14 +2,14 @@ const _ = require('lodash');
 
 const firestore = require('./firebase.service').firestore();
 
-const {getNetwork} = require('./abi/networks');
+const tools =  require('blockcities-contract-artifacts').tools;
 
 class BuildingDataService {
 
     async saveBuilding(network, data) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .doc(_.toString(data.tokenId))
             .set(data)
@@ -21,7 +21,7 @@ class BuildingDataService {
     async getBuildingsForOwner(network, owner) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .where('owner', '==', owner)
             .get()
@@ -37,7 +37,7 @@ class BuildingDataService {
     async getArchitectedBuildingsForAddress(network, address, fromTimestamp) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .where('architect', '==', address)
             .get()
@@ -55,7 +55,7 @@ class BuildingDataService {
     async getBuildingByTokenId(network, tokenId) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .doc(_.toString(tokenId))
             .get()
