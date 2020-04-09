@@ -63,6 +63,7 @@
     </style>
   </defs>
   <title>Artboard 44</title>
+  <g id="root">
   <g>
     <path id="windows-L1" class="curtain-R-prim-dark" d="M360,259.8208V155.8978L440.0176,109.71v103.923Z"/>
     <path id="Path" class="curtain-R-prim-light" d="M359.9824,190.5388,440,144.3507V127.03l-80,46.1837Z"/>
@@ -303,5 +304,6 @@
     <path id="Path-222" data-name="Path" class="exterior-L-dark" d="M317.5,293.0107l2.5,1.4434v5.7735l-2.5-1.4434Z"/>
     <path id="Path-223" data-name="Path" class="exterior-L-dark" d="M362.4823,267.03l2.5,1.4435v5.7735l-2.5-1.4435Z"/>
     <path id="Path-224" data-name="Path" class="exterior-L-dark" d="M375,259.8153l2.5,1.4434v5.7735l-2.5-1.4434Z"/>
+  </g>
   </g>
 </svg>

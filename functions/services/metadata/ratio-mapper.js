@@ -20,12 +20,15 @@ const buildingRatios = {
     18: 0.510469054478,
     19: 0.667502020072,
     20: 0.750067408019,
+    21: 1.402220209396,
     22: 0.653220504337,
     23: 0.661154249033,
     24: 0.608700962928,
     25: 0.735023493926,
     26: 0.457720721915,
+    27: 0,
     28: 0.760443613452,
+    29: 0.328648269667,
 };
 
 // this it the standard width of the x-anchor on base 0
@@ -53,11 +56,13 @@ const standardWidths = {
     19: 260,
     20: 270,
     22: 270,
+    21: 200,
     23: 220,
     24: 280,
     25: 310,
     26: 180,
     28: 250,
+    29: 320,
 };
 
 // Low Rise	0-114.829
@@ -80,9 +85,20 @@ const heightInFootDescription = (footHeight) => {
     }
 };
 
-const ratioMapper = ({adjustedWidth, pixels, buildingId}) => {
+const getStandardWidth = (buildingId, body) => {
+
+    const specialBodies = [1, 2, 11, 12, 17, 18];
+
+    if (buildingId === 9 && specialBodies.indexOf(body) > -1) {
+        return 320;
+    } else {
+        return standardWidths[buildingId];
+    }
+};
+
+const ratioMapper = ({ adjustedWidth, pixels, buildingId, body }) => {
     if (buildingRatios[buildingId]) {
-        return Math.floor(((standardWidths[buildingId] / adjustedWidth) * pixels) * buildingRatios[buildingId]);
+        return Math.floor(((getStandardWidth(buildingId, body) / adjustedWidth) * pixels) * buildingRatios[buildingId]);
     } else {
         console.error(`Unable to map building ratio [${buildingId}]`);
         return pixels;

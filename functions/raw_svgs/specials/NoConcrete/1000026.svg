@@ -1,0 +1,926 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 568.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ececf0;
+      }
+
+      .cls-2 {
+        fill: #d5d5db;
+      }
+
+      .cls-3 {
+        fill: #83878e;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-12 {
+        fill: #c5c5cc;
+      }
+
+      .cls-13 {
+        fill: #c5c8cc;
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-15 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-17 {
+        fill: url(#linear-gradient-12);
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient-13);
+      }
+
+      .cls-19 {
+        fill: url(#linear-gradient-14);
+      }
+
+      .cls-20 {
+        fill: url(#linear-gradient-15);
+      }
+
+      .cls-21 {
+        fill: url(#linear-gradient-16);
+      }
+
+      .cls-22 {
+        fill: url(#linear-gradient-17);
+      }
+
+      .cls-23 {
+        fill: url(#linear-gradient-18);
+      }
+
+      .cls-24 {
+        fill: url(#linear-gradient-19);
+      }
+
+      .cls-25 {
+        fill: url(#linear-gradient-20);
+      }
+
+      .cls-26 {
+        fill: url(#linear-gradient-21);
+      }
+
+      .cls-27 {
+        fill: url(#linear-gradient-22);
+      }
+
+      .cls-28 {
+        fill: url(#linear-gradient-23);
+      }
+
+      .cls-29 {
+        fill: url(#linear-gradient-24);
+      }
+
+      .cls-30 {
+        fill: url(#linear-gradient-25);
+      }
+
+      .cls-31 {
+        fill: url(#linear-gradient-26);
+      }
+
+      .cls-32 {
+        fill: url(#linear-gradient-27);
+      }
+
+      .cls-33 {
+        fill: url(#linear-gradient-28);
+      }
+
+      .cls-34 {
+        fill: url(#linear-gradient-29);
+      }
+
+      .cls-35 {
+        fill: url(#linear-gradient-30);
+      }
+
+      .cls-36 {
+        fill: url(#linear-gradient-31);
+      }
+
+      .cls-37 {
+        fill: url(#linear-gradient-32);
+      }
+
+      .cls-38 {
+        opacity: 0.65;
+      }
+
+      .cls-39, .cls-41 {
+        fill: #fff;
+      }
+
+      .cls-40 {
+        opacity: 0.13;
+      }
+
+      .cls-41 {
+        fill-opacity: 0.13;
+      }
+
+      .cls-42 {
+        fill: url(#linear-gradient-33);
+      }
+
+      .cls-43 {
+        fill: url(#linear-gradient-34);
+      }
+
+      .cls-44 {
+        fill: url(#linear-gradient-35);
+      }
+
+      .cls-45 {
+        fill: url(#linear-gradient-36);
+      }
+
+      .cls-46 {
+        fill: url(#linear-gradient-37);
+      }
+
+      .cls-47 {
+        fill: url(#linear-gradient-38);
+      }
+
+      .cls-48 {
+        fill: url(#linear-gradient-39);
+      }
+
+      .cls-49 {
+        fill: url(#linear-gradient-40);
+      }
+
+      .cls-50 {
+        fill: url(#linear-gradient-41);
+      }
+
+      .cls-51 {
+        fill: url(#linear-gradient-42);
+      }
+
+      .cls-52 {
+        fill: url(#linear-gradient-43);
+      }
+
+      .cls-53 {
+        fill: url(#linear-gradient-44);
+      }
+
+      .cls-54 {
+        fill: url(#linear-gradient-45);
+      }
+
+      .cls-55 {
+        fill: url(#linear-gradient-46);
+      }
+
+      .cls-56 {
+        fill: url(#linear-gradient-47);
+      }
+
+      .cls-57 {
+        fill: url(#linear-gradient-48);
+      }
+
+      .cls-58 {
+        fill: url(#linear-gradient-49);
+      }
+
+      .cls-59 {
+        fill: url(#linear-gradient-50);
+      }
+
+      .cls-60 {
+        fill: url(#linear-gradient-51);
+      }
+
+      .cls-61 {
+        fill: url(#linear-gradient-52);
+      }
+
+      .cls-62 {
+        fill: #e8e8e8;
+      }
+
+      .cls-63 {
+        fill: #e57dff;
+      }
+
+      .cls-64 {
+        fill: #8e4cef;
+      }
+
+      .cls-65 {
+        fill: #f9f9f9;
+      }
+
+      .cls-66 {
+        fill: #5d5d5d;
+      }
+
+      .cls-67 {
+        fill: #464646;
+      }
+
+      .cls-68 {
+        fill: #b9b9b9;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2124.3374" y1="-2876.7239" x2="2123.3374" y2="-2876.7239" gradientTransform="matrix(105, 0, 0, -216.506, -222765.4297, -622659.1294)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.4913" stop-color="#fcdeff"/>
+      <stop offset="1" stop-color="#bfdcff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2123.3374" y1="-2876.7239" x2="2124.3374" y2="-2876.7239" gradientTransform="matrix(105, 0, 0, -216.506, -222870.4297, -622659.1294)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3174" stop-color="#ad82ff"/>
+      <stop offset="0.8826" stop-color="#4885d0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="2129.7855" y1="-2886.3861" x2="2130.7855" y2="-2886.3861" gradientTransform="matrix(160, 0, 0, -144.338, -340765.6797, -416153.3923)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="2129.7855" y1="-2890.3399" x2="2130.7855" y2="-2890.3399" gradientTransform="matrix(160, 0, 0, -127.017, -340765.6797, -366617.0949)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3087" stop-color="#c8acfd"/>
+      <stop offset="0.8783" stop-color="#72a6e6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="2129.7855" y1="-2872.188" x2="2130.7855" y2="-2872.188" gradientTransform="matrix(160, 0, 0, -282.902, -340765.6797, -812207.142)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-6" x1="2130.6389" y1="-2886.0326" x2="2129.9319" y2="-2886.7399" gradientTransform="matrix(160, 0, 0, -144.338, -340605.6797, -416153.3923)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="2129.7855" y1="-2890.3391" x2="2130.7855" y2="-2890.3391" gradientTransform="matrix(160, 0, 0, -127.017, -340605.6797, -366617.0949)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="2127.9448" y1="-2873.1528" x2="2126.9448" y2="-2873.1528" gradientTransform="matrix(130, 0, 0, -265.581, -276342.8203, -762705.5131)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-9" x1="2123.3783" y1="-2911.1008" x2="2124.4052" y2="-2911.0547" gradientTransform="matrix(105, 0, 0, -77.942, -222765.4297, -226795.8674)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8fd"/>
+      <stop offset="0.687" stop-color="#e57dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="2160.8953" y1="-2911.1009" x2="2161.9221" y2="-2911.0545" gradientTransform="translate(227074.6211 -226795.8674) rotate(180) scale(105 77.942)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e4977"/>
+      <stop offset="0.6739" stop-color="#9b4dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="2123.3784" y1="-2911.1011" x2="2124.4052" y2="-2911.0549" gradientTransform="matrix(105, 0, 0, -77.942, -222765.4297, -226726.5862)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-12" x1="2160.8954" y1="-2911.101" x2="2161.9221" y2="-2911.0549" gradientTransform="translate(227074.6211 -226726.5862) rotate(180) scale(105 77.942)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-13" x1="2123.3783" y1="-2911.1004" x2="2124.4052" y2="-2911.054" gradientTransform="matrix(105, 0, 0, -77.942, -222765.4297, -226761.2268)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-14" x1="2160.8953" y1="-2911.1003" x2="2161.9221" y2="-2911.0541" gradientTransform="translate(227074.6211 -226761.2268) rotate(180) scale(105 77.942)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-15" x1="2123.3783" y1="-2911.1004" x2="2124.4052" y2="-2911.0545" gradientTransform="matrix(105, 0, 0, -77.942, -222765.4297, -226691.9455)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-16" x1="2160.8953" y1="-2911.1005" x2="2161.9221" y2="-2911.0544" gradientTransform="translate(227074.6211 -226691.9455) rotate(180) scale(105 77.942)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-17" x1="2123.3784" y1="-2911.1013" x2="2124.4052" y2="-2911.0552" gradientTransform="matrix(105, 0, 0, -77.942, -222765.4297, -226657.3049)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-18" x1="2160.8954" y1="-2911.1012" x2="2161.9221" y2="-2911.0553" gradientTransform="translate(227074.6211 -226657.3049) rotate(180) scale(105 77.942)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-19" x1="2126.9857" y1="-2902.712" x2="2128.0125" y2="-2902.6658" gradientTransform="matrix(130, 0, 0, -92.376, -276342.8203, -267859.1153)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-20" x1="2154.447" y1="-2895.5601" x2="2155.4739" y2="-2895.5142" gradientTransform="translate(344864.875 -317360.7565) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-21" x1="2126.9857" y1="-2902.7123" x2="2128.0125" y2="-2902.6659" gradientTransform="matrix(130, 0, 0, -92.376, -276342.8203, -267789.8341)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-22" x1="2154.447" y1="-2895.5604" x2="2155.4739" y2="-2895.5143" gradientTransform="translate(344864.875 -317291.4753) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-23" x1="2126.9857" y1="-2902.7124" x2="2128.0125" y2="-2902.6663" gradientTransform="matrix(130, 0, 0, -92.376, -276342.8203, -267720.5528)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-24" x1="2154.447" y1="-2895.5606" x2="2155.4739" y2="-2895.5144" gradientTransform="translate(344864.875 -317222.194) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-25" x1="2126.9857" y1="-2902.7128" x2="2128.0126" y2="-2902.6667" gradientTransform="matrix(130, 0, 0, -92.376, -276342.8203, -267824.4903)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-26" x1="2154.4471" y1="-2895.5609" x2="2155.4739" y2="-2895.5148" gradientTransform="translate(344864.875 -317326.1315) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-27" x1="2126.9857" y1="-2902.713" x2="2128.0126" y2="-2902.6669" gradientTransform="matrix(130, 0, 0, -92.376, -276342.8203, -267755.2091)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-28" x1="2154.4471" y1="-2895.5611" x2="2155.4739" y2="-2895.5149" gradientTransform="translate(344864.875 -317256.8503) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-29" x1="2129.8267" y1="-2895.5613" x2="2130.8534" y2="-2895.5151" gradientTransform="matrix(160, 0, 0, -109.697, -340605.6797, -317187.569)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-30" x1="2129.8266" y1="-2895.5608" x2="2130.8534" y2="-2895.5146" gradientTransform="matrix(160, 0, 0, -109.697, -340605.6797, -317152.9128)" xlink:href="#linear-gradient-9"/>
+    <linearGradient id="linear-gradient-31" x1="2154.4471" y1="-2895.5613" x2="2155.4739" y2="-2895.5151" gradientTransform="translate(344864.875 -317187.569) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-32" x1="2154.447" y1="-2895.5606" x2="2155.4739" y2="-2895.5147" gradientTransform="translate(344864.875 -317152.9128) rotate(180) scale(160 109.697)" xlink:href="#linear-gradient-10"/>
+    <linearGradient id="linear-gradient-33" x1="2405.2289" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18170.3123 -115005.0196) rotate(180) scale(7.5 38.971)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#495e82"/>
+      <stop offset="0.6826" stop-color="#ac6cff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-34" x1="2405.2289" y1="-2965.2209" x2="2405.1827" y2="-2964.1943" gradientTransform="translate(18110.3123 -115039.6603) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-35" x1="2405.2288" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18065.3123 -115065.6446) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-36" x1="2405.2288" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18140.3123 -115022.34) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-37" x1="2405.229" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18080.3123 -115056.9806) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-38" x1="2405.2289" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18155.3123 -115013.6837) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-39" x1="2405.2289" y1="-2965.2209" x2="2405.1827" y2="-2964.1943" gradientTransform="translate(18185.3123 -114996.3634) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-40" x1="2405.2289" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18095.3123 -115048.3243) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-41" x1="2405.2289" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18050.3123 -115074.3009) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-42" x1="2405.2289" y1="-2965.2209" x2="2405.1828" y2="-2964.1943" gradientTransform="translate(18125.3123 -115031.004) rotate(180) scale(7.5 38.971)" xlink:href="#linear-gradient-33"/>
+    <linearGradient id="linear-gradient-43" x1="1880.0033" y1="-2965.2204" x2="1879.9571" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13911.1206, -115005.0196)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c3deff"/>
+      <stop offset="0.687" stop-color="#f1baff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-44" x1="1880.0032" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13851.1206, -115039.6603)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-45" x1="1880.0033" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13791.1206, -115074.3009)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-46" x1="1880.0033" y1="-2965.2204" x2="1879.9571" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13881.1206, -115022.34)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-47" x1="1880.0034" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13821.1206, -115056.9806)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-48" x1="1880.0033" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13896.1206, -115013.6837)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-49" x1="1880.0032" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13926.1206, -114996.3634)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-50" x1="1880.0033" y1="-2965.2204" x2="1879.9571" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13836.1206, -115048.3243)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-51" x1="1880.0033" y1="-2965.2204" x2="1879.9572" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13866.1206, -115031.004)" xlink:href="#linear-gradient-43"/>
+    <linearGradient id="linear-gradient-52" x1="1880.0033" y1="-2965.2204" x2="1879.9571" y2="-2964.1938" gradientTransform="matrix(7.5, 0, 0, -38.971, -13806.1206, -115065.6446)" xlink:href="#linear-gradient-43"/>
+  </defs>
+  <title>Artboard 64</title>
+  <g id="Group">
+    <path id="Path-2" class="cls-1" d="M0,389.7l160-92.4,160,92.4L160,482.1Z"/>
+    <path id="Path-3" class="cls-1" d="M290,216.5,130,124.1,0,199.2l160,92.4Z"/>
+    <path id="Path-4" class="cls-2" d="M287.5,402.6l22.5-13-22.5-13Z"/>
+    <path id="Path-5" class="cls-3" d="M305,392.5,285,381v-5.8l25,14.4Z"/>
+    <path id="Path-6" class="cls-1" d="M290,60.6,185,0,80,60.6l105,60.6Z"/>
+    <path id="Path-7" class="cls-2" d="M180,274.2l-20,11.5L10,199.1l70-40.4,150,86.6Z"/>
+    <path id="Path-8" class="cls-4" d="M185,121.2,290,60.6V216.5L185,277.1Z"/>
+    <path id="Path-9" class="cls-5" d="M80,60.6l105,60.6V277.1L80,216.5Z"/>
+    <path id="Path-10" class="cls-6" d="M0,441.6,160,534V482L0,389.6Z"/>
+    <path id="Path-11" class="cls-7" d="M0,476.3l160,92.4V534.1L0,441.7Z"/>
+    <path id="Path-12" class="cls-8" d="M0,389.7l160,92.4V291.5L0,199.1Z"/>
+    <path id="Path-13" class="cls-9" d="M160,534l160-92.4v-52L160,482Z"/>
+    <path id="Path-14" class="cls-10" d="M160,568.6l160-92.4V441.6L160,534Z"/>
+    <path id="Path-15" class="cls-11" d="M160,482l130-75.1V216.5L160,291.6Z"/>
+    <path id="Path-16" class="cls-2" d="M90,60.6,185,5.8l95,54.8-95,54.8Z"/>
+    <path id="Path-17" class="cls-12" d="M120,60.6l65-37.5,65,37.5L185,98.1Z"/>
+    <path id="Path-18" class="cls-3" d="M185,11.5V5.7l95,54.8-5,2.9Z"/>
+    <path id="Path-19" class="cls-13" d="M90,60.6,185,5.8v5.8l-90,52Z"/>
+    <path id="Path-20" class="cls-3" d="M185,34.6l55,31.8,10-5.8L185,23.1Z"/>
+    <path id="Path-21" class="cls-13" d="M120,60.6l65-37.5V34.6L130,66.4Z"/>
+    <path id="Path-22" class="cls-13" d="M80,164.5,15,202l-5-2.9,70-40.4Z"/>
+    <path id="Path-23" class="cls-14" d="M185,138.5,290,77.9V60.6L185,121.2Z"/>
+    <path id="Path-24" class="cls-15" d="M185,138.5,80,77.9V60.6l105,60.6Z"/>
+    <path id="Path-25" class="cls-16" d="M185,207.8l105-60.6V129.9L185,190.5Z"/>
+    <path id="Path-26" class="cls-17" d="M185,207.8,80,147.2V129.9l105,60.6Z"/>
+    <path id="Path-27" class="cls-18" d="M185,173.1l105-60.6V95.2L185,155.8Z"/>
+    <path id="Path-28" class="cls-19" d="M185,173.1,80,112.5V95.2l105,60.6Z"/>
+    <path id="Path-29" class="cls-20" d="M185,242.4l105-60.6V164.5L185,225.1Z"/>
+    <path id="Path-30" class="cls-21" d="M185,242.4,80,181.8V164.5l105,60.6Z"/>
+    <path id="Path-31" class="cls-22" d="M185,277.1l105-60.6V199.2L185,259.8Z"/>
+    <path id="Path-32" class="cls-23" d="M185,277.1,80,216.5V199.2l105,60.6Z"/>
+    <path id="Path-33" class="cls-24" d="M160,326.1,290,251V233.7L160,308.8Z"/>
+    <path id="Path-34" class="cls-25" d="M160,326.1,0,233.7V216.4l160,92.4Z"/>
+    <path id="Path-35" class="cls-26" d="M160,395.4l130-75.1V303L160,378.1Z"/>
+    <path id="Path-36" class="cls-27" d="M160,395.4,0,303V285.7l160,92.4Z"/>
+    <path id="Path-37" class="cls-28" d="M160,464.7l130-75.1V372.3L160,447.4Z"/>
+    <path id="Path-38" class="cls-29" d="M160,464.7,0,372.3V355l160,92.4Z"/>
+    <path id="Path-39" class="cls-30" d="M160,360.8l130-75.1V268.4L160,343.5Z"/>
+    <path id="Path-40" class="cls-31" d="M160,360.8,0,268.4V251.1l160,92.4Z"/>
+    <path id="Path-41" class="cls-32" d="M160,430.1,290,355V337.7L160,412.8Z"/>
+    <path id="Path-42" class="cls-33" d="M160,430.1,0,337.7V320.4l160,92.4Z"/>
+    <path id="Path-43" class="cls-34" d="M160,499.4,320,407V389.7L160,482.1Z"/>
+    <path id="Path-44" class="cls-35" d="M160,534l160-92.4V424.3L160,516.7Z"/>
+    <path id="Path-45" class="cls-36" d="M160,499.4,0,407V389.7l160,92.4Z"/>
+    <path id="Path-46" class="cls-37" d="M160,534,0,441.6V424.3l160,92.4Z"/>
+    <g id="Group-2">
+      <g class="cls-38">
+        <path id="Path-47" class="cls-39" d="M185,155.8l7.5-4.3V134.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-48" class="cls-39" d="M245,121.2l7.5-4.3V99.6l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-49" class="cls-39" d="M215,138.5l7.5-4.3V116.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-50" class="cls-39" d="M275,103.9l7.5-4.3V82.3L275,86.6Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-51" class="cls-39" d="M200,147.2l7.5-4.3V125.6l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-52" class="cls-39" d="M260,112.5l7.5-4.3V90.9L260,95.2Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-53" class="cls-39" d="M230,129.8l7.5-4.3V108.2l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-3">
+      <g class="cls-38">
+        <path id="Path-54" class="cls-39" d="M185,225.1l7.5-4.3V203.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-55" class="cls-39" d="M245,190.5l7.5-4.3V168.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-56" class="cls-39" d="M215,207.8l7.5-4.3V186.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-57" class="cls-39" d="M275,173.1l7.5-4.3V151.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-58" class="cls-39" d="M200,216.5l7.5-4.3V194.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-59" class="cls-39" d="M260,181.8l7.5-4.3V160.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-60" class="cls-39" d="M230,199.1l7.5-4.3V177.5l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-4">
+      <g class="cls-38">
+        <path id="Path-61" class="cls-39" d="M185,190.5l7.5-4.3V168.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-62" class="cls-39" d="M245,155.8l7.5-4.3V134.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-63" class="cls-39" d="M215,173.1l7.5-4.3V151.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-64" class="cls-39" d="M275,138.5l7.5-4.3V116.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-65" class="cls-39" d="M200,181.8l7.5-4.3V160.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-66" class="cls-39" d="M260,147.2l7.5-4.3V125.6l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-67" class="cls-39" d="M230,164.5l7.5-4.3V142.9l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-5">
+      <g class="cls-38">
+        <path id="Path-68" class="cls-39" d="M185,259.8l7.5-4.3V238.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-69" class="cls-39" d="M245,225.1l7.5-4.3V203.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-70" class="cls-39" d="M215,242.4l7.5-4.3V220.8l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-71" class="cls-39" d="M275,207.8l7.5-4.3V186.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-72" class="cls-39" d="M200,251.1l7.5-4.3V229.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-73" class="cls-39" d="M260,216.5l7.5-4.3V194.9l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-74" class="cls-39" d="M230,233.8l7.5-4.3V212.2l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-6">
+      <g class="cls-40">
+        <path id="Path-75" class="cls-39" d="M185,155.8l-7.5-4.3V134.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-76" class="cls-39" d="M125,121.2l-7.5-4.3V99.6l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-77" class="cls-39" d="M155,138.5l-7.5-4.3V116.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-78" class="cls-39" d="M95,103.9l-7.5-4.3V82.3L95,86.6Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-79" class="cls-39" d="M170,147.2l-7.5-4.3V125.6l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-80" class="cls-39" d="M110,112.5l-7.5-4.3V90.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-81" class="cls-39" d="M140,129.8l-7.5-4.3V108.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-82" class="cls-39" d="M185,225.1l-7.5-4.3V203.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-83" class="cls-39" d="M125,190.5l-7.5-4.3V168.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-84" class="cls-39" d="M155,207.8l-7.5-4.3V186.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-85" class="cls-39" d="M95,173.1l-7.5-4.3V151.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-86" class="cls-39" d="M170,216.5l-7.5-4.3V194.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-87" class="cls-39" d="M110,181.8l-7.5-4.3V160.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-88" class="cls-39" d="M140,199.1l-7.5-4.3V177.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-89" class="cls-39" d="M185,190.5l-7.5-4.3V168.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-90" class="cls-39" d="M125,155.8l-7.5-4.3V134.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-91" class="cls-39" d="M155,173.1l-7.5-4.3V151.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-92" class="cls-39" d="M95,138.5l-7.5-4.3V116.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-93" class="cls-39" d="M170,181.8l-7.5-4.3V160.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-94" class="cls-39" d="M110,147.2l-7.5-4.3V125.6l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-95" class="cls-39" d="M140,164.5l-7.5-4.3V142.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-96" class="cls-39" d="M185,259.8l-7.5-4.3V238.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-97" class="cls-39" d="M125,225.1l-7.5-4.3V203.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-98" class="cls-39" d="M155,242.4l-7.5-4.3V220.8l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-99" class="cls-39" d="M95,207.8l-7.5-4.3V186.2l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-100" class="cls-39" d="M170,251.1l-7.5-4.3V229.5l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-101" class="cls-39" d="M110,216.5l-7.5-4.3V194.9l7.5,4.3Z"/>
+      </g>
+      <g class="cls-40">
+        <path id="Path-102" class="cls-39" d="M140,233.8l-7.5-4.3V212.2l7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-7">
+      <g class="cls-38">
+        <path id="Path-103" class="cls-39" d="M185,294.4l7.5-4.3V272.7L185,277Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-104" class="cls-39" d="M245,259.8l7.5-4.3V238.2l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-105" class="cls-39" d="M215,277.1l7.5-4.3V255.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-106" class="cls-39" d="M275,242.4l7.5-4.3V220.8l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-107" class="cls-39" d="M200,285.7l7.5-4.3V264.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-108" class="cls-39" d="M170,303.1l7.5-4.3V281.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-109" class="cls-39" d="M260,251.1l7.5-4.3V229.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-110" class="cls-39" d="M230,268.4l7.5-4.3V246.8l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-8">
+      <path id="Path-111" class="cls-41" d="M135,294.4l-7.5-4.3V272.7L135,277Z"/>
+      <path id="Path-112" class="cls-41" d="M75,259.8l-7.5-4.3V238.2l7.5,4.3Z"/>
+      <path id="Path-113" class="cls-41" d="M30,233.8l-7.5-4.3V212.2l7.5,4.3Z"/>
+      <path id="Path-114" class="cls-41" d="M105,277.1l-7.5-4.3V255.5l7.5,4.3Z"/>
+      <path id="Path-115" class="cls-41" d="M45,242.4l-7.5-4.3V220.8l7.5,4.3Z"/>
+      <path id="Path-116" class="cls-41" d="M120,285.7l-7.5-4.3V264.1l7.5,4.3Z"/>
+      <path id="Path-117" class="cls-41" d="M150,303.1l-7.5-4.3V281.5l7.5,4.3Z"/>
+      <path id="Path-118" class="cls-41" d="M60,251.1l-7.5-4.3V229.5l7.5,4.3Z"/>
+      <path id="Path-119" class="cls-41" d="M15,225.1l-7.5-4.3V203.5l7.5,4.3Z"/>
+      <path id="Path-120" class="cls-41" d="M90,268.4l-7.5-4.3V246.8l7.5,4.3Z"/>
+    </g>
+    <g id="Group-9">
+      <path id="Path-121" class="cls-41" d="M135,363.7l-7.5-4.3V342.1l7.5,4.3Z"/>
+      <path id="Path-122" class="cls-41" d="M75,329l-7.5-4.3V307.4l7.5,4.3Z"/>
+      <path id="Path-123" class="cls-41" d="M30,303.1l-7.5-4.3V281.5l7.5,4.3Z"/>
+      <path id="Path-124" class="cls-41" d="M105,346.4l-7.5-4.3V324.7L105,329Z"/>
+      <path id="Path-125" class="cls-41" d="M45,311.7l-7.5-4.3V290.1l7.5,4.3Z"/>
+      <path id="Path-126" class="cls-41" d="M120,355l-7.5-4.3V333.4l7.5,4.3Z"/>
+      <path id="Path-127" class="cls-41" d="M150,372.3l-7.5-4.3V350.7L150,355Z"/>
+      <path id="Path-128" class="cls-41" d="M60,320.4l-7.5-4.3V298.7L60,303Z"/>
+      <path id="Path-129" class="cls-41" d="M15,294.4l-7.5-4.3V272.7L15,277Z"/>
+      <path id="Path-130" class="cls-41" d="M90,337.7l-7.5-4.3V316.1l7.5,4.3Z"/>
+    </g>
+    <g id="Group-10">
+      <path id="Path-131" class="cls-41" d="M135,433l-7.5-4.3V411.4l7.5,4.3Z"/>
+      <path id="Path-132" class="cls-41" d="M75,398.3,67.5,394V376.7L75,381Z"/>
+      <path id="Path-133" class="cls-41" d="M30,372.3,22.5,368V350.7L30,355Z"/>
+      <path id="Path-134" class="cls-41" d="M105,415.6l-7.5-4.3V394l7.5,4.3Z"/>
+      <path id="Path-135" class="cls-41" d="M45,381l-7.5-4.3V359.4l7.5,4.3Z"/>
+      <path id="Path-136" class="cls-41" d="M120,424.3l-7.5-4.3V402.7L120,407Z"/>
+      <path id="Path-137" class="cls-41" d="M150,441.6l-7.5-4.3V420l7.5,4.3Z"/>
+      <path id="Path-138" class="cls-41" d="M60,389.7l-7.5-4.3V368.1l7.5,4.3Z"/>
+      <path id="Path-139" class="cls-41" d="M15,363.7l-7.5-4.3V342.1l7.5,4.3Z"/>
+      <path id="Path-140" class="cls-41" d="M90,407l-7.5-4.3V385.4l7.5,4.3Z"/>
+    </g>
+    <g id="Group-11">
+      <path id="Path-141" class="cls-41" d="M135,502.2l-7.5-4.3V480.6l7.5,4.3Z"/>
+      <path id="Path-142" class="cls-41" d="M75,467.6l-7.5-4.3V446l7.5,4.3Z"/>
+      <path id="Path-143" class="cls-41" d="M30,441.6l-7.5-4.3V420l7.5,4.3Z"/>
+      <path id="Path-144" class="cls-41" d="M105,484.9l-7.5-4.3V463.3l7.5,4.3Z"/>
+      <path id="Path-145" class="cls-41" d="M45,450.3,37.5,446V428.7L45,433Z"/>
+      <path id="Path-146" class="cls-41" d="M120,493.6l-7.5-4.3V472l7.5,4.3Z"/>
+      <path id="Path-147" class="cls-41" d="M150,510.9l-7.5-4.3V489.3l7.5,4.3Z"/>
+      <path id="Path-148" class="cls-41" d="M60,458.9l-7.5-4.3V437.3l7.5,4.3Z"/>
+      <path id="Path-149" class="cls-41" d="M15,433l-7.5-4.3V411.4l7.5,4.3Z"/>
+      <path id="Path-150" class="cls-41" d="M90,476.3,82.5,472V454.7L90,459Z"/>
+    </g>
+    <g id="Group-12">
+      <path id="Path-151" class="cls-41" d="M135,329l-7.5-4.3V307.4l7.5,4.3Z"/>
+      <path id="Path-152" class="cls-41" d="M75,294.4l-7.5-4.3V272.7L75,277Z"/>
+      <path id="Path-153" class="cls-41" d="M30,268.4l-7.5-4.3V246.8l7.5,4.3Z"/>
+      <path id="Path-154" class="cls-41" d="M105,311.7l-7.5-4.3V290.1l7.5,4.3Z"/>
+      <path id="Path-155" class="cls-41" d="M45,277.1l-7.5-4.3V255.5l7.5,4.3Z"/>
+      <path id="Path-156" class="cls-41" d="M120,320.4l-7.5-4.3V298.7L120,303Z"/>
+      <path id="Path-157" class="cls-41" d="M150,337.7l-7.5-4.3V316.1l7.5,4.3Z"/>
+      <path id="Path-158" class="cls-41" d="M60,285.7l-7.5-4.3V264.1l7.5,4.3Z"/>
+      <path id="Path-159" class="cls-41" d="M15,259.8l-7.5-4.3V238.2l7.5,4.3Z"/>
+      <path id="Path-160" class="cls-41" d="M90,303.1l-7.5-4.3V281.5l7.5,4.3Z"/>
+    </g>
+    <g id="Group-13">
+      <path id="Path-161" class="cls-41" d="M135,398.3l-7.5-4.3V376.7L135,381Z"/>
+      <path id="Path-162" class="cls-41" d="M75,363.7l-7.5-4.3V342.1l7.5,4.3Z"/>
+      <path id="Path-163" class="cls-41" d="M30,337.7l-7.5-4.3V316.1l7.5,4.3Z"/>
+      <path id="Path-164" class="cls-41" d="M105,381l-7.5-4.3V359.4l7.5,4.3Z"/>
+      <path id="Path-165" class="cls-41" d="M45,346.4l-7.5-4.3V324.7L45,329Z"/>
+      <path id="Path-166" class="cls-41" d="M120,389.7l-7.5-4.3V368.1l7.5,4.3Z"/>
+      <path id="Path-167" class="cls-41" d="M150,407l-7.5-4.3V385.4l7.5,4.3Z"/>
+      <path id="Path-168" class="cls-41" d="M60,355l-7.5-4.3V333.4l7.5,4.3Z"/>
+      <path id="Path-169" class="cls-41" d="M15,329l-7.5-4.3V307.4l7.5,4.3Z"/>
+      <path id="Path-170" class="cls-41" d="M90,372.3,82.5,368V350.7L90,355Z"/>
+    </g>
+    <g id="Group-14">
+      <path id="Path-171" class="cls-41" d="M135,467.6l-7.5-4.3V446l7.5,4.3Z"/>
+      <path id="Path-172" class="cls-41" d="M75,433l-7.5-4.3V411.4l7.5,4.3Z"/>
+      <path id="Path-173" class="cls-41" d="M30,407l-7.5-4.3V385.4l7.5,4.3Z"/>
+      <path id="Path-174" class="cls-41" d="M105,450.3,97.5,446V428.7L105,433Z"/>
+      <path id="Path-175" class="cls-41" d="M45,415.6l-7.5-4.3V394l7.5,4.3Z"/>
+      <path id="Path-176" class="cls-41" d="M120,458.9l-7.5-4.3V437.3l7.5,4.3Z"/>
+      <path id="Path-177" class="cls-41" d="M150,476.3l-7.5-4.3V454.7L150,459Z"/>
+      <path id="Path-178" class="cls-41" d="M60,424.3,52.5,420V402.7L60,407Z"/>
+      <path id="Path-179" class="cls-41" d="M15,398.3,7.5,394V376.7L15,381Z"/>
+      <path id="Path-180" class="cls-41" d="M90,441.6l-7.5-4.3V420l7.5,4.3Z"/>
+    </g>
+    <g id="Group-15">
+      <path id="Path-181" class="cls-42" d="M135,554.2l-7.5-4.3V515.3l7.5,4.3Z"/>
+      <path id="Path-182" class="cls-43" d="M75,519.6l-7.5-4.3V480.7L75,485Z"/>
+      <path id="Path-183" class="cls-44" d="M30,493.6l-7.5-4.3V454.7L30,459Z"/>
+      <path id="Path-184" class="cls-45" d="M105,536.9l-7.5-4.3V498l7.5,4.3Z"/>
+      <path id="Path-185" class="cls-46" d="M45,502.2l-7.5-4.3V463.3l7.5,4.3Z"/>
+      <path id="Path-186" class="cls-47" d="M120,545.5l-7.5-4.3V506.6l7.5,4.3Z"/>
+      <path id="Path-187" class="cls-48" d="M150,562.9l-7.5-4.3V524l7.5,4.3Z"/>
+      <path id="Path-188" class="cls-49" d="M60,510.9l-7.5-4.3V472l7.5,4.3Z"/>
+      <path id="Path-189" class="cls-50" d="M15,484.9l-7.5-4.3V446l7.5,4.3Z"/>
+      <path id="Path-190" class="cls-51" d="M90,528.2l-7.5-4.3V489.3l7.5,4.3Z"/>
+    </g>
+    <g id="Group-16">
+      <g class="cls-38">
+        <path id="Path-191" class="cls-39" d="M185,363.7l7.5-4.3V342.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-192" class="cls-39" d="M245,329l7.5-4.3V307.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-193" class="cls-39" d="M215,346.4l7.5-4.3V324.7L215,329Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-194" class="cls-39" d="M275,311.7l7.5-4.3V290.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-195" class="cls-39" d="M200,355l7.5-4.3V333.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-196" class="cls-39" d="M170,372.3l7.5-4.3V350.7L170,355Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-197" class="cls-39" d="M260,320.4l7.5-4.3V298.7L260,303Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-198" class="cls-39" d="M230,337.7l7.5-4.3V316.1l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-17">
+      <g class="cls-38">
+        <path id="Path-199" class="cls-39" d="M185,433l7.5-4.3V411.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-200" class="cls-39" d="M245,398.3l7.5-4.3V376.7L245,381Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-201" class="cls-39" d="M215,415.6l7.5-4.3V394l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-202" class="cls-39" d="M275,381l7.5-4.3V359.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-203" class="cls-39" d="M200,424.3l7.5-4.3V402.7L200,407Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-204" class="cls-39" d="M170,441.6l7.5-4.3V420l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-205" class="cls-39" d="M260,389.7l7.5-4.3V368.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-206" class="cls-39" d="M230,407l7.5-4.3V385.4l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-18">
+      <g class="cls-38">
+        <path id="Path-207" class="cls-39" d="M185,329l7.5-4.3V307.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-208" class="cls-39" d="M245,294.4l7.5-4.3V272.7L245,277Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-209" class="cls-39" d="M215,311.7l7.5-4.3V290.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-210" class="cls-39" d="M275,277.1l7.5-4.3V255.5l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-211" class="cls-39" d="M200,320.4l7.5-4.3V298.7L200,303Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-212" class="cls-39" d="M170,337.7l7.5-4.3V316.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-213" class="cls-39" d="M260,285.7l7.5-4.3V264.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-214" class="cls-39" d="M230,303.1l7.5-4.3V281.5l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-19">
+      <g class="cls-38">
+        <path id="Path-215" class="cls-39" d="M185,398.3l7.5-4.3V376.7L185,381Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-216" class="cls-39" d="M245,363.7l7.5-4.3V342.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-217" class="cls-39" d="M215,381l7.5-4.3V359.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-218" class="cls-39" d="M275,346.4l7.5-4.3V324.7L275,329Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-219" class="cls-39" d="M200,389.7l7.5-4.3V368.1l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-220" class="cls-39" d="M170,407l7.5-4.3V385.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-221" class="cls-39" d="M260,355l7.5-4.3V333.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-222" class="cls-39" d="M230,372.3l7.5-4.3V350.7L230,355Z"/>
+      </g>
+    </g>
+    <g id="Group-20">
+      <g class="cls-38">
+        <path id="Path-223" class="cls-39" d="M185,467.6l7.5-4.3V446l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-224" class="cls-39" d="M245,433l7.5-4.3V411.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-225" class="cls-39" d="M215,450.3l7.5-4.3V428.7L215,433Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-226" class="cls-39" d="M275,415.6l7.5-4.3V394l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-227" class="cls-39" d="M200,458.9l7.5-4.3V437.3l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-228" class="cls-39" d="M170,476.3l7.5-4.3V454.7L170,459Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-229" class="cls-39" d="M260,424.3l7.5-4.3V402.7L260,407Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-230" class="cls-39" d="M230,441.6l7.5-4.3V420l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-21">
+      <g class="cls-38">
+        <path id="Path-231" class="cls-39" d="M185,502.2l7.5-4.3V480.6l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-232" class="cls-39" d="M245,467.6l7.5-4.3V446l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-233" class="cls-39" d="M305,433l7.5-4.3V411.4l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-234" class="cls-39" d="M215,484.9l7.5-4.3V463.3l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-235" class="cls-39" d="M275,450.3l7.5-4.3V428.7L275,433Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-236" class="cls-39" d="M200,493.6l7.5-4.3V472l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-237" class="cls-39" d="M170,510.9l7.5-4.3V489.3l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-238" class="cls-39" d="M260,458.9l7.5-4.3V437.3l-7.5,4.3Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-239" class="cls-39" d="M230,476.3l7.5-4.3V454.7L230,459Z"/>
+      </g>
+      <g class="cls-38">
+        <path id="Path-240" class="cls-39" d="M290,441.6l7.5-4.3V420l-7.5,4.3Z"/>
+      </g>
+    </g>
+    <g id="Group-22">
+      <path id="Path-241" class="cls-52" d="M185,554.2l7.5-4.3V515.3l-7.5,4.3Z"/>
+      <path id="Path-242" class="cls-53" d="M245,519.6l7.5-4.3V480.7L245,485Z"/>
+      <path id="Path-243" class="cls-54" d="M305,484.9l7.5-4.3V446l-7.5,4.3Z"/>
+      <path id="Path-244" class="cls-55" d="M215,536.9l7.5-4.3V498l-7.5,4.3Z"/>
+      <path id="Path-245" class="cls-56" d="M275,502.2l7.5-4.3V463.3l-7.5,4.3Z"/>
+      <path id="Path-246" class="cls-57" d="M200,545.5l7.5-4.3V506.6l-7.5,4.3Z"/>
+      <path id="Path-247" class="cls-58" d="M170,562.9l7.5-4.3V524l-7.5,4.3Z"/>
+      <path id="Path-248" class="cls-59" d="M260,510.9l7.5-4.3V472l-7.5,4.3Z"/>
+      <path id="Path-249" class="cls-60" d="M230,528.2l7.5-4.3V489.3l-7.5,4.3Z"/>
+      <path id="Path-250" class="cls-61" d="M290,493.6l7.5-4.3V454.7L290,459Z"/>
+    </g>
+    <path id="Path-251" class="cls-62" d="M170,564.3v-7.2l20-11.5,6.2,3.6Z"/>
+    <path id="Path-252" class="cls-62" d="M265,509.5v-7.2l20-11.5,6.2,3.6Z"/>
+    <path id="Path-253" class="cls-62" d="M150,564.3v-7.2l-20-11.5-6.2,3.6Z"/>
+    <path id="Path-254" class="cls-62" d="M55,509.5v-7.2L35,490.8l-6.2,3.6Z"/>
+    <path id="Path-255" class="cls-63" d="M195,548.4l-5-2.9V516.7l5-2.9Z"/>
+    <path id="Path-256" class="cls-63" d="M290,493.6l-5-2.9V461.8l5-2.9Z"/>
+    <path id="Path-257" class="cls-64" d="M125,548.4l5-2.9V516.7l-5-2.9Z"/>
+    <path id="Path-258" class="cls-64" d="M30,493.6l5-2.9V461.8l-5-2.9Z"/>
+    <g id="Group-23">
+      <path id="Path-261" class="cls-65" d="M152.4,57.1l12.3,7.1,32.9-19-12.3-7.1Z"/>
+      <path id="Path-262" class="cls-66" d="M164.7,64.2V78.4l-12.3-7.1V57.1Z"/>
+      <path id="Path-263" class="cls-62" d="M197.6,45.2V59.4l-32.9,19V64.2Z"/>
+      <path id="Path-264" class="cls-67" d="M166.8,65.4l8.2-4.7v9.5l-8.2,4.7Z"/>
+      <path id="Path-265" class="cls-67" d="M177,59.4l8.2-4.7v9.5L177,68.9Z"/>
+      <path id="Path-266" class="cls-67" d="M187.3,53.5l8.2-4.7v9.5L187.3,63Z"/>
+      <g id="Group-24">
+        <ellipse id="Ellipse" class="cls-68" cx="164.4" cy="56.6" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle" class="cls-68" x="160" y="54.4" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-2" class="cls-39" cx="164.4" cy="54.4" rx="4.4" ry="2.5"/>
+      </g>
+      <g id="Group-25">
+        <ellipse id="Ellipse-3" class="cls-68" cx="175.1" cy="50.7" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle-2" class="cls-68" x="170.7001" y="48.4" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-4" class="cls-39" cx="175.1" cy="48.4" rx="4.4" ry="2.5"/>
+      </g>
+      <g id="Group-26">
+        <ellipse id="Ellipse-5" class="cls-68" cx="185.8" cy="44.7" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle-3" class="cls-68" x="181.4" y="42.5" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-6" class="cls-39" cx="185.8" cy="42.5" rx="4.4" ry="2.5"/>
+      </g>
+    </g>
+    <g id="Group-27">
+      <path id="Path-267" class="cls-65" d="M172.2,69l12.3,7.1,32.9-19L205.1,50Z"/>
+      <path id="Path-268" class="cls-66" d="M184.6,76.1V90.3l-12.3-7.1V69Z"/>
+      <path id="Path-269" class="cls-62" d="M217.5,57.1V71.3l-32.9,19V76.1Z"/>
+      <path id="Path-270" class="cls-67" d="M186.6,77.3l8.2-4.7v9.5l-8.2,4.7Z"/>
+      <path id="Path-271" class="cls-67" d="M196.9,71.4l8.2-4.7v9.5l-8.2,4.7Z"/>
+      <path id="Path-272" class="cls-67" d="M207.2,65.4l8.2-4.7v9.5l-8.2,4.7Z"/>
+      <g id="Group-28">
+        <ellipse id="Ellipse-7" class="cls-68" cx="184.3" cy="68.5" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle-4" class="cls-68" x="179.9" y="66.3" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-8" class="cls-39" cx="184.3" cy="66.3" rx="4.4" ry="2.5"/>
+      </g>
+      <g id="Group-29">
+        <ellipse id="Ellipse-9" class="cls-68" cx="195" cy="62.6" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle-5" class="cls-68" x="190.6" y="60.4" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-10" class="cls-39" cx="195" cy="60.4" rx="4.4" ry="2.5"/>
+      </g>
+      <g id="Group-30">
+        <ellipse id="Ellipse-11" class="cls-68" cx="205.7001" cy="56.6" rx="4.4" ry="2.5"/>
+        <rect id="Rectangle-6" class="cls-68" x="201.2001" y="54.4" width="8.8" height="2.2"/>
+        <ellipse id="Ellipse-12" class="cls-39" cx="205.7001" cy="54.4" rx="4.4" ry="2.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

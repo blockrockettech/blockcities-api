@@ -4,10 +4,12 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp({
     credential: admin.credential.cert(require('./_keys/block-cities-firebase-adminsdk.json')),
-    databaseURL: 'https://block-cities.firebaseio.com'
+    databaseURL: 'https://block-cities.firebaseio.com',
+    storageBucket: "block-cities.appspot.com"
+
 });
 
-const {address} = require('./services/abi/networks');
+const { address } = require('./services/abi/networks');
 
 const cors = require('cors');
 const express = require('express');
@@ -32,7 +34,8 @@ app.use('/network/:network/token', token);
 app.use('/network/:network/buildings', buildings);
 
 const runtimeOpts = {
-    memory: '1GB'
+    memory: '2GB',
+    timeoutSeconds: 60
 };
 
 // Expose Express API as a single Cloud Function:
@@ -68,7 +71,7 @@ exports.newEventTrigger =
         .onWrite(async (change, context) => {
             const get = require('lodash/get');
 
-            const {network, hash} = context.params;
+            const { network, hash } = context.params;
             const document = change.after.exists ? change.after.data() : null;
 
             console.info(`Event - onWrite @ [/events/${network}/data/${hash}]`, document);
@@ -95,20 +98,20 @@ exports.newEventTrigger =
 /**
  * Webflow CMS task queue - rate limit of 60 API calls a minute so we use a queue to remove duplicate calls and throttle without our limits
  */
-exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
-    .onRun(async (context) => {
-        console.log('Running webflow CMS Queue');
+// exports.webflowCmsScheduler = functions.pubsub.schedule('every 2 minutes')
+//     .onRun(async (context) => {
+//         console.log('Running webflow CMS Queue');
 
-        const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
+//         const webflowUpdateQueue = require('./services/webflow/webflowUpdateQueue.service');
 
-        const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(30);
+//         const tokenIds = await webflowUpdateQueue.getNextBatchToUpdate(30);
 
-        const updates = _.map(tokenIds, async (tokenId) => {
-            return webflowUpdateQueue.processTokenUpdate(tokenId);
-        });
+//         const updates = _.map(tokenIds, async (tokenId) => {
+//             return webflowUpdateQueue.processTokenUpdate(tokenId);
+//         });
 
-        await Promise.all(updates);
+//         await Promise.all(updates);
 
-        console.log(`Processed a total of [${tokenIds.length}]`);
+//         console.log(`Processed a total of [${tokenIds.length}]`);
 
-    });
+//     });
