@@ -5,11 +5,11 @@
         fill: none;
       }
 
-      .crown-top {
+      .crown-top-prim {
         fill: #e5f7e3;
       }
 
-      .slope-top {
+      .slope-top-prim {
         fill: #fff1d8;
       }
 
@@ -21,11 +21,11 @@
         fill: #d05752;
       }
 
-      .slope-L {
+      .slope-L-prim {
         fill: #c3af8a;
       }
 
-      .slope-R {
+      .slope-R-prim {
         fill: #eed9b3;
       }
 
@@ -53,19 +53,19 @@
         fill: #dd8a87;
       }
 
-      .crown-R {
+      .crown-R-prim {
         fill: #bfd7bd;
       }
 
-      .crown-L {
+      .crown-L-prim {
         fill: #8fa88c;
       }
 
-      .slope-top-dark {
+      .slope-top-prim-dark {
         fill: #f0e1c6;
       }
 
-      .slope-R-dark {
+      .slope-R-prim-dark {
         fill: #dfcaa3;
       }
 
@@ -73,7 +73,7 @@
         clip-path: url(#clip-path);
       }
 
-      .slope-L-dark {
+      .slope-L-prim-dark {
         fill: #ae9a76;
       }
 
@@ -81,11 +81,11 @@
         clip-path: url(#clip-path-2);
       }
 
-      .crown-R-dark {
+      .crown-R-prim-dark {
         fill: #a6c6a4;
       }
 
-      .crown-L-dark {
+      .crown-L-prim-dark {
         fill: #6e806c;
       }
 
@@ -106,12 +106,12 @@
   </defs>
   <title>Artboard 17</title>
   <g id="root">
-    <path class="crown-top" d="M203.75,111.14l-80-46.188L0,136.3989l80,46.188Z"/>
-    <path class="slope-top" d="M15,116.192v2.887l65,37.5279L188.75,93.82V90.933l-65-37.528Z"/>
+    <path class="crown-top-prim" d="M203.75,111.14l-80-46.188L0,136.3989l80,46.188Z"/>
+    <path class="slope-top-prim" d="M15,116.192v2.887l65,37.5279L188.75,93.82V90.933l-65-37.528Z"/>
     <path class="exterior-L-prim" d="M10,130.626v5.7729L80,176.814l3.75-2.1651V168.875L80,171.04Z"/>
     <path class="exterior-R-prim" d="M193.75,105.3669V111.14L80,176.814V171.04Z"/>
-    <path class="slope-L" d="M80,171.04l3.75-2.1649v-17.32L80,153.72,15,116.192,5,127.739Z"/>
-    <path class="slope-R" d="M80,171.04V153.72L188.75,90.933l10,11.547Z"/>
+    <path class="slope-L-prim" d="M80,171.04l3.75-2.1649v-17.32L80,153.72,15,116.192,5,127.739Z"/>
+    <path class="slope-R-prim" d="M80,171.04V153.72L188.75,90.933l10,11.547Z"/>
     <path class="cls-2" d="M25,116.192l98.75-57.013,55,31.754L80,147.9459Z"/>
     <path class="cls-3" d="M123.75,59.179l-5,2.8859V79.386l5-2.887,40,23.094,15-8.66Z"/>
     <path class="cls-4" d="M25,116.192l98.75-57.013v17.32L40,124.8519Z"/>
@@ -126,28 +126,28 @@
     <path class="exterior-L-prim" d="M163.75,99.593l-2.5-1.443V79.386l2.5-1.443Z"/>
     <path class="exterior-R-prim" d="M42.5,123.4089l-2.5,1.443v-21.65l2.5,1.443Z"/>
     <g>
-      <path class="crown-top" d="M188.75,66.396v-4.33L166.25,49.075l7.5,10.104,5,2.8869L80,119.079,25,87.325l5-2.887L41.25,72.1689,15,87.325v4.33l65,37.527Z"/>
-      <path class="crown-R" d="M76.25,122.687v5.7739L80,130.626,188.75,67.839V62.0659L80,124.8519Z"/>
-      <path class="crown-L" d="M15,87.325v5.773l65,37.528v-5.7741Z"/>
-      <path class="slope-top" d="M67.5,29.589,80,36.806,131.25,7.2169,118.75,0Z"/>
-      <path class="slope-L" d="M80,119.079l3.75-2.1651V34.641L80,36.806,67.5,29.59,25,87.325Z"/>
-      <path class="slope-R" d="M80,119.079V36.806L131.25,7.2169l47.5,54.848Z"/>
-      <path class="slope-top-dark" d="M72.5,29.589,118.75,2.887l7.5,4.33L80,33.92Z"/>
-      <path class="slope-L" d="M118.75,2.887V5.7739l5,2.8871,2.5-1.4441Z"/>
-      <path class="slope-R" d="M72.5,29.589,118.75,2.887V5.7739L75,31.033Z"/>
-      <path class="slope-R-dark" d="M85,39.693l45-25.9811,41.25,46.91L85,110.4189Z"/>
+      <path class="crown-top-prim" d="M188.75,66.396v-4.33L166.25,49.075l7.5,10.104,5,2.8869L80,119.079,25,87.325l5-2.887L41.25,72.1689,15,87.325v4.33l65,37.527Z"/>
+      <path class="crown-R-prim" d="M76.25,122.687v5.7739L80,130.626,188.75,67.839V62.0659L80,124.8519Z"/>
+      <path class="crown-L-prim" d="M15,87.325v5.773l65,37.528v-5.7741Z"/>
+      <path class="slope-top-prim" d="M67.5,29.589,80,36.806,131.25,7.2169,118.75,0Z"/>
+      <path class="slope-L-prim" d="M80,119.079l3.75-2.1651V34.641L80,36.806,67.5,29.59,25,87.325Z"/>
+      <path class="slope-R-prim" d="M80,119.079V36.806L131.25,7.2169l47.5,54.848Z"/>
+      <path class="slope-top-prim-dark" d="M72.5,29.589,118.75,2.887l7.5,4.33L80,33.92Z"/>
+      <path class="slope-L-prim" d="M118.75,2.887V5.7739l5,2.8871,2.5-1.4441Z"/>
+      <path class="slope-R-prim" d="M72.5,29.589,118.75,2.887V5.7739L75,31.033Z"/>
+      <path class="slope-R-prim-dark" d="M85,39.693l45-25.9811,41.25,46.91L85,110.4189Z"/>
       <g class="cls-5">
-        <path class="slope-L" d="M130,13.7119l41.25,46.91L165,59.9,123.75,12.991Z"/>
+        <path class="slope-L-prim" d="M130,13.7119l41.25,46.91L165,59.9,123.75,12.991Z"/>
       </g>
-      <path class="slope-L-dark" d="M75,39.693l-6.25-3.608L31.25,85.1589,75,110.4189Z"/>
+      <path class="slope-L-prim-dark" d="M75,39.693l-6.25-3.608L31.25,85.1589,75,110.4189Z"/>
       <g class="cls-6">
-        <path class="slope-R" d="M31.25,85.1589l6.25-.7209L75,35.3629l-6.25.7221Z"/>
+        <path class="slope-R-prim" d="M31.25,85.1589l6.25-.7209L75,35.3629l-6.25.7221Z"/>
       </g>
-      <path class="crown-R-dark" d="M183.75,70.726l-2.5,5.773L80,134.9559l-2.5-1.443V129.182l2.5,1.444Z"/>
-      <path class="crown-L-dark" d="M20,95.985l2.5,5.7729L80,134.9559v-4.33Z"/>
+      <path class="crown-R-prim-dark" d="M183.75,70.726l-2.5,5.773L80,134.9559l-2.5-1.443V129.182l2.5,1.444Z"/>
+      <path class="crown-L-prim-dark" d="M20,95.985l2.5,5.7729L80,134.9559v-4.33Z"/>
     </g>
-    <path class="slope-top" d="M171.25,60.6219,165,59.9,85,106.088v4.33Z"/>
-    <path class="slope-top" d="M37.5,84.438l-6.25.7209L75,110.418v-4.33Z"/>
+    <path class="slope-top-prim" d="M171.25,60.6219,165,59.9,85,106.088v4.33Z"/>
+    <path class="slope-top-prim" d="M37.5,84.438l-6.25.7209L75,110.418v-4.33Z"/>
     <path class="window-R-prim" d="M103.75,124.131l5-2.887v7.2169l-5,2.886Z"/>
     <path class="window-L-prim" d="M62.5,127.739l-5-2.8871v7.2171l5,2.8869Z"/>
     <path class="window-R-prim" d="M115,117.635l5-2.886v7.2169l-5,2.886Z"/>

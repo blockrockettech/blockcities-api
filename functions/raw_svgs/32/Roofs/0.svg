@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 144.337">
   <defs>
     <style>
-      .crown-top {
+      .crown-top-prim {
         fill: #e5f7e3;
       }
 
@@ -17,25 +17,25 @@
         fill: #8a3a37;
       }
 
-      .crown-L {
+      .crown-L-prim {
         fill: #8fa88c;
       }
 
-      .crown-R {
+      .crown-R-prim {
         fill: #bfd7bd;
       }
     </style>
   </defs>
   <title>Artboard 2</title>
   <g id="root">
-    <path class="crown-top" d="M0,66.395V63.508L110,0l80,46.188v2.887L80,112.583Z"/>
+    <path class="crown-top-prim" d="M0,66.395V63.508L110,0l80,46.188v2.887L80,112.583Z"/>
     <path class="top-light" d="M10,63.508l70,40.415L180,46.188,110,5.773Z"/>
     <path class="exterior-R-light" d="M10,63.508l15,8.661,85-49.075V5.773Z"/>
     <path class="exterior-L-light" d="M110,5.773l70,40.415-15,8.66L110,23.094Z"/>
     <path class="exterior-L-light" d="M0,98.149l80,46.188,5-2.886V112.583l-5,2.887L0,69.282Z"/>
-    <path class="crown-L" d="M0,63.508l80,46.188,5-2.886v5.773l-5,2.887L0,69.282Z"/>
+    <path class="crown-L-prim" d="M0,63.508l80,46.188,5-2.886v5.773l-5,2.887L0,69.282Z"/>
     <path class="exterior-R-light" d="M80,144.337,190,80.829V51.961L80,115.47Z"/>
-    <path class="crown-R" d="M190,46.188v5.773L80,115.47v-5.774Z"/>
+    <path class="crown-R-prim" d="M190,46.188v5.773L80,115.47v-5.774Z"/>
     <path class="exterior-R-light" d="M20,109.696l2.5-1.443V82.272L20,80.829Z"/>
     <path class="exterior-R-light" d="M45,124.13l2.5-1.443V96.706L45,95.263Z"/>
     <path class="exterior-R-light" d="M70,138.564l2.5-1.443V111.14L70,109.696Z"/>
