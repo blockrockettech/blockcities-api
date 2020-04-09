@@ -138,10 +138,10 @@ class BlockcitiesContractService {
             const buildingRoofMappingsArray = await contract.buildingRoofMappingsArray(building);
 
             return {
-                building: building,
-                base: buildingBaseMappingsArray['0'].map(val => val.toString()),
-                body: buildingBodyMappingsArray['0'].map(val => val.toString()),
-                roof: buildingRoofMappingsArray['0'].map(val => val.toString()),
+                'building': building,
+                'base': buildingBaseMappingsArray['0'].map(val => val.toString()),
+                'body': buildingBodyMappingsArray['0'].map(val => val.toString()),
+                'roof': buildingRoofMappingsArray['0'].map(val => val.toString()),
             }
         });
 
