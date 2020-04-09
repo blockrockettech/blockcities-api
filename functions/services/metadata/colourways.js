@@ -262,6 +262,249 @@ module.exports = {
         },
     
     },
+
+    exteriors: {
+        red: {
+            left: {
+                prim: '#73302E',
+                light: '#8A3A37',
+                dark: '#512220',
+            },
+            right: {
+                prim: '#D05752',
+                light: '#DF5D58',
+                dark: '#A64C49',
+            },
+            top: {
+                prim: '#DD8A87',
+                light: '#FFC8C6',
+                dark: '#C67471',
+            }
+        },
+        darkgrey: {
+            left: {
+                prim: '#2E2E2E',
+                light: '#535353',
+                dark: '#191919',
+            },
+            right: {
+                prim: '#5D5D5D',
+                light: '#828282',
+                dark: '#444444',
+            },
+            top: {
+                prim: '#B9B9B9',
+                light: '#E8E8E8',
+                dark: '#A2A2A2',
+            }
+        },
+        lightbeige: {
+            left: {
+                prim: '#B0A59B',
+                light: '#C8BBB0',
+                dark: '#938A82',
+            },
+            right: {
+                prim: '#F7F2EF',
+                light: '#FBF8F6',
+                dark: '#DBD7D4',
+            },
+            top: {
+                prim: '#FFFCFA',
+                light: '#FFFFFF',
+                dark: '#FDF9F6',
+            }
+        },
+        darkbrown: {
+            left: {
+                prim: '#1E1C1B',
+                light: '#282321',
+                dark: '#151313',
+            },
+            right: {
+                prim: '#151313',
+                light: '#776D68',
+                dark: '#282321',
+            },
+            top: {
+                prim: '#BBAAA2',
+                light: '#F4E6E0',
+                dark: '#9B8C85',
+            }
+        },
+        lightgrey: {
+            left: {
+                prim: '#A2A2A2',
+                light: '#B7B7B7',
+                dark: '#979797',
+            },
+            right: {
+                prim: '#E8E8E8',
+                light: '#F0F0F0',
+                dark: '#DFDFDF',
+            },
+            top: {
+                prim: '#F2F2F2',
+                light: '#FFFFFF',
+                dark: '#E8E8E8',
+            }
+        },
+        brickred: {
+            left: {
+                prim: '#665456',
+                light: '#8E7275',
+                dark: '#3B3435',
+            },
+            right: {
+                prim: '#A28185',
+                light: '#AA8387',
+                dark: '#665456',
+            },
+            top: {
+                prim: '#D1D1D1',
+                light: '#E8E8E8',
+                dark: '#BFBFBF',
+            }
+        },
+        lightbrickred: {
+            left: {
+                prim: '#8E7275',
+                light: '#AA8387',
+                dark: '#483E3F',
+            },
+            right: {
+                prim: '#AA8387',
+                light: '#E8B7BB',
+                dark: '#775C5F',
+            },
+            top: {
+                prim: '#E8CFD1',
+                light: '#F0D7D9',
+                dark: '#D9BEC0',
+            }
+        },
+        black: {
+            left: {
+                prim: '#202020',
+                light: '#2A2A2A',
+                dark: '#000000',
+            },
+            right: {
+                prim: '#2E2E2E',
+                light: '#484848',
+                dark: '#202020',
+            },
+            top: {
+                prim: '#666666',
+                light: '#A4A4A4',
+                dark: '#4F4F4F',
+            }
+        },
+        goldenbeige: {
+            left: {
+                prim: '#C6AB89',
+                light: '#DBBC96',
+                dark: '#AE9474',
+            },
+            right: {
+                prim: '#FBD8AA',
+                light: '#FFE2BD',
+                dark: '#ECCB9F',
+            },
+            top: {
+                prim: '#F9E8D2',
+                light: '#FFF4DD',
+                dark: '#EEDDC6',
+            } 
+        },
+        blush: {
+            left: {
+                prim: '#9B7D74',
+                light: '#AE8C81',
+                dark: '#86675E',
+            },
+            right: {
+                prim: '#DDB7AC',
+                light: '#ECC5BB',
+                dark: '#CEA59A',
+            },
+            top: {
+                prim: '#ECCDC4',
+                light: '#FDE2DA',
+                dark: '#E1C1B9',
+            } 
+        },
+        dijon: {
+            left: {
+                prim: '#A4805D',
+                light: '#BB946D',
+                dark: '#916E4B',
+            },
+            right: {
+                prim: '#D9B592',
+                light: '#E6C3A1',
+                dark: '#C8A17A',
+            },
+            top: {
+                prim: '#F2D6BC',
+                light: '#FFE4CA',
+                dark: '#EACEB4',
+            } 
+        },
+        coolgrey: {
+            left: {
+                prim: '#83878E',
+                light: '#93979F',
+                dark: '#767A82',
+            },
+            right: {
+                prim: '#C5C8CC',
+                light: '#D4D6D9',
+                dark: '#B3B6BB',
+            },
+            top: {
+                prim: '#D5D5DB',
+                light: '#ECECF0',
+                dark: '#CDCDD2',
+            } 
+        },
+        limestone: {
+            left: {
+                prim: '#D7B6A7',
+                light: '#EACCBF',
+                dark: '#C3A495',
+            },
+            right: {
+                prim: '#F4DDC6',
+                light: '#FDEAD7',
+                dark: '#E8CCB1',
+            },
+            top: {
+                prim: '#F2E3D5',
+                light: '#FFF3E8',
+                dark: '#E6D6C7',
+            } 
+         },
+         carbon: {
+            left: {
+                prim: '#1E1F22',
+                light: '#27282C',
+                dark: '#141517',
+            },
+            right: {
+                prim: '#2E2F31',
+                light: '#353638',
+                dark: '#262729',
+            },
+            top: {
+                prim: '#5B5C5E',
+                light: '#9FA2A6',
+                dark: '#4C4D4F',
+            } 
+         
+        },
+    
+    },
     windows: {
         black: {
             left: {

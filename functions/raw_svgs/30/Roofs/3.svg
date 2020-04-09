@@ -33,7 +33,7 @@
         fill: #f0e1c6;
       }
 
-      .slope-R-prim-dark {
+      .slope-R-dark {
         fill: #dfcaa3;
       }
 
@@ -41,7 +41,7 @@
         clip-path: url(#clip-path);
       }
 
-      .slope-L-prim-dark {
+      .slope-L-dark {
         fill: #ae9a76;
       }
 
@@ -80,12 +80,12 @@
       <path class="slope-top-prim-dark" d="M72.5,51.9619l46.25-26.703,7.5,4.33L80,56.292Z"/>
       <path class="slope-L-prim" d="M118.75,25.2589V28.146l5,2.887,2.5-1.444Z"/>
       <path class="slope-R-prim" d="M72.5,51.9619l46.25-26.703V28.146L75,53.405Z"/>
-      <path class="slope-R-prim-dark" d="M85,62.0649l45-25.98,61.25,49.796L85,147.224Z"/>
+      <path class="slope-R-dark" d="M85,62.0649l45-25.98,61.25,49.796L85,147.224Z"/>
       <g class="cls-2">
         <path class="slope-L-prim" d="M130,36.085l61.25,49.796L185,85.1589l-61.25-49.796Z"/>
       </g>
       <path class="slope-top-prim" d="M85,147.224v-4.33l100-57.735,6.25.7221Z"/>
-      <path class="slope-L-prim-dark" d="M75,62.0649,68.75,58.457l-55,53.4049L75,147.224Z"/>
+      <path class="slope-L-dark" d="M75,62.0649,68.75,58.457l-55,53.4049L75,147.224Z"/>
       <g class="cls-3">
         <path class="slope-R-prim" d="M13.75,111.8619,20,111.14,75,57.735l-6.25.722Z"/>
       </g>
@@ -103,6 +103,6 @@
     <path class="exterior-R-prim" d="M88.75,45.4659l-2.5,1.444V23.8159l2.5,1.443Z"/>
     <path class="exterior-L-prim" d="M108.75,54.127l-2.5-4.33V25.2589l2.5-1.443Z"/>
     <path class="slope-R-prim" d="M86.25,44.0229V46.91L75,53.405l-2.5-1.4431Z"/>
-    <path class="slope-R-prim-dark" d="M101.25,52.683l5-2.886,2.5,4.33-7.5,4.33Z"/>
+    <path class="slope-R-dark" d="M101.25,52.683l5-2.886,2.5,4.33-7.5,4.33Z"/>
   </g>
 </svg>
