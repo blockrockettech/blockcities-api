@@ -187,6 +187,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.base],
                 colourways.windows[colourLogic[exteriorColorway].windows.base],
                 colourways.curtains[colourLogic[exteriorColorway].windows.base],
+                colourways.slope[colourLogic[exteriorColorway].slope.base],
+                colourways.crown[colourLogic[exteriorColorway].crown.base],
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -195,6 +197,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
                 colourways.windows[colourLogic[exteriorColorway].windows.body],
                 colourways.curtains[colourLogic[exteriorColorway].windows.body],
+                colourways.slope[colourLogic[exteriorColorway].slope.body],
+                colourways.crown[colourLogic[exteriorColorway].crown.body],
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -203,6 +207,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
                 colourways.windows[colourLogic[exteriorColorway].windows.roof],
                 colourways.curtains[colourLogic[exteriorColorway].windows.roof],
+                colourways.slope[colourLogic[exteriorColorway].slope.roof],
+                colourways.crown[colourLogic[exteriorColorway].crown.roof],
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
