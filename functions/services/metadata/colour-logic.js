@@ -771,6 +771,82 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+
+    // Brownstone Collection
+
+    '57': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'goldenoat'
+        },
+        concrete: 'classic',
+    },
+
+    '58': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'ink',
+            body: 'ink',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: 'ink',
+            body: 'ink',
+            base: 'goldenoat'
+        },
+        concrete: 'classic',
+    },
+
+    '59': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'agedcopper',
+            body: 'agedcopper',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: 'agedcopper',
+            body: 'agedcopper',
+            base: 'goldenoat'
+        },
+        concrete: 'classic',
+    },
+
+
     '666': {
         exterior: {
             roof: 'red',
