@@ -5,7 +5,7 @@ class CheerioSVGService {
 
     process(svgXml) {
         try {
-            const $ = cheerio.load(svgXml, {xmlMode: true});
+            const $ = cheerio.load(svgXml, { xmlMode: true });
 
             let anchorElement = $('[id^=anchor_]').first();
             let anchorX = undefined;
@@ -31,11 +31,11 @@ class CheerioSVGService {
         }
     }
 
-    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}, concreteFill = {}) {
+    styleFill(svgXml, exteriorFill = {}, windowsFill = {}, curtainsFill = {}, slopeFill = {}, crownFill = {}, concreteFill = {}) {
         try {
-            const $ = cheerio.load(svgXml, {xmlMode: true});
+            const $ = cheerio.load(svgXml, { xmlMode: true });
 
-            _.forEach(exteriorFill.left, (v, k) => {$(`.exterior-L-${k}`).attr('style', `fill: ${v}`);});
+            _.forEach(exteriorFill.left, (v, k) => { $(`.exterior-L-${k}`).attr('style', `fill: ${v}`); });
             _.forEach(exteriorFill.right, (v, k) => $(`.exterior-R-${k}`).attr('style', `fill: ${v}`));
             _.forEach(exteriorFill.top, (v, k) => $(`.top-${k}`).attr('style', `fill: ${v}`));
 
@@ -44,6 +44,21 @@ class CheerioSVGService {
 
             _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
             _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+
+            _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+            _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+
+            if (slopeFill) {
+                _.forEach(slopeFill.left, (v, k) => $(`.slope-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+                _.forEach(slopeFill.right, (v, k) => $(`.slope-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+                _.forEach(slopeFill.top, (v, k) => $(`.slope-top-${k}`).attr('style', `fill: ${v}`));
+            }
+
+            if (crownFill) {
+                _.forEach(crownFill.left, (v, k) => $(`.crown-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+                _.forEach(crownFill.right, (v, k) => $(`.crown-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
+                _.forEach(crownFill.top, (v, k) => $(`.crown-top-${k}`).attr('style', `fill: ${v}`));
+            }
 
             _.forEach(concreteFill, (v, k) => $(`.concrete-${k}`).attr('style', `fill: ${v}`));
 
@@ -54,7 +69,7 @@ class CheerioSVGService {
     }
 
     getRoot(svgXml) {
-        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        const $ = cheerio.load(svgXml, { xmlMode: true, normalizeWhitespace: true, });
         const root = $('#root').html();
         if (!root) {
             console.error('ERROR - Failed to get root');
@@ -63,7 +78,7 @@ class CheerioSVGService {
     };
 
     getStyle(svgXml, targetDiv) {
-        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        const $ = cheerio.load(svgXml, { xmlMode: true, normalizeWhitespace: true, });
 
         let processedStyle = $('style').html();
 
@@ -75,7 +90,7 @@ class CheerioSVGService {
     };
 
     getAdditionlDefs(svgXml, element) {
-        const $ = cheerio.load(svgXml, {xmlMode: true, normalizeWhitespace: true,});
+        const $ = cheerio.load(svgXml, { xmlMode: true, normalizeWhitespace: true, });
         return $(element);
     };
 }

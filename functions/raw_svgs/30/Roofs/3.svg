@@ -29,7 +29,7 @@
         fill: #eed9b3;
       }
 
-      .slope-top-prim-dark {
+      .slope-top-dark {
         fill: #f0e1c6;
       }
 
@@ -77,7 +77,7 @@
       <path class="exterior-R-prim" d="M193.75,90.2109V95.985L80,161.658v-5.773Z"/>
       <path class="slope-L-prim" d="M80,155.885l3.75-2.165V57.0129L80,59.179,67.5,51.9619,5,112.583Z"/>
       <path class="slope-R-prim" d="M80,155.885V59.179l51.25-29.59,67.5,57.735Z"/>
-      <path class="slope-top-prim-dark" d="M72.5,51.9619l46.25-26.703,7.5,4.33L80,56.292Z"/>
+      <path class="slope-top-dark" d="M72.5,51.9619l46.25-26.703,7.5,4.33L80,56.292Z"/>
       <path class="slope-L-prim" d="M118.75,25.2589V28.146l5,2.887,2.5-1.444Z"/>
       <path class="slope-R-prim" d="M72.5,51.9619l46.25-26.703V28.146L75,53.405Z"/>
       <path class="slope-R-dark" d="M85,62.0649l45-25.98,61.25,49.796L85,147.224Z"/>

@@ -187,6 +187,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.base],
                 colourways.windows[colourLogic[exteriorColorway].windows.base],
                 colourways.curtains[colourLogic[exteriorColorway].windows.base],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -195,6 +197,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
                 colourways.windows[colourLogic[exteriorColorway].windows.body],
                 colourways.curtains[colourLogic[exteriorColorway].windows.body],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -203,6 +207,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
                 colourways.windows[colourLogic[exteriorColorway].windows.roof],
                 colourways.curtains[colourLogic[exteriorColorway].windows.roof],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
