@@ -258,10 +258,230 @@ module.exports = {
                 light: '#9FA2A6',
                 dark: '#4C4D4F',
             } 
-         
         },
-    
+
+        beige: {
+            left: {
+                prim: '#75624D',
+                light: '#847463',
+                dark: '#463624',
+            },
+            right: {
+                prim: '#957F69',
+                light: '#AC9882',
+                dark: '#7B6651',
+            },
+            top: {
+                prim: '#E6DCD4',
+                light: '#F0E6DE',
+                dark: '#CAB7A5',
+            } 
+        },
+
+        oat: {
+            left: {
+                prim: '#D0CCC3',
+                light: '#E1DCD1',
+                dark: '#BFBBB1',
+            },
+            right: {
+                prim: '#E3DFD6',
+                light: '#F6F4EE',
+                dark: '#DBD6CB',
+            },
+            top: {
+                prim: '#DFD8C9',
+                light: '#EAE4D8',
+                dark: '#CCC3AF',
+            } 
+        },
+
+        goldenoat: {
+            left: {
+                prim: '#A2977E',
+                light: '#B9AC8F',
+                dark: '#776D57',
+            },
+            right: {
+                prim: '#C3BBA8',
+                light: '#D7CEB9',
+                dark: '#A49779',
+            },
+            top: {
+                prim: '#DFD8C9',
+                light: '#EAE4D8',
+                dark: '#CCC3AF',
+            } 
+        },
     },
+
+    slope: {
+        oak: {
+            left: {
+                prim: '#513E2C',
+                dark: '#312316',
+            },
+            right: {
+                prim: '#755F49',
+                dark: '#53402E',
+            },
+            top: {
+                prim: '#CAB7A5',
+                dark: '#B39B85'
+            }
+        },
+
+        beige: {
+            left: {
+                prim: '#75624D',
+                dark: '#7B6651',
+            },
+            right: {
+                prim: '#957F69',
+                dark: '#7B6651',
+            },
+            top: {
+                prim: '#E6DCD4',
+                dark: '#CAB7A5'
+            }
+        },
+
+        agedcopper: {
+            left: {
+                prim: '#8FA88C',
+                dark: '#6E806C',
+            },
+            right: {
+                prim: '#BFD7BD',
+                dark: '#A6C6A4',
+            },
+            top: {
+                prim: '#E5F7E3',
+                dark: '#CADFC8'
+            }
+        },
+
+        goldenoat: {
+            left: {
+                prim: '#A2977E',
+                light: '#B9AC8F',
+                dark: '#776D57',
+            },
+            right: {
+                prim: '#C3BBA8',
+                light: '#D7CEB9',
+                dark: '#A49779',
+            },
+            top: {
+                prim: '#DFD8C9',
+                light: '#EAE4D8',
+                dark: '#CCC3AF',
+            } 
+        },
+
+        ink: {
+            left: {
+                prim: '#464646',
+                light: '#535353',
+                dark: '#2E2E2E',
+            },
+            right: {
+                prim: '#5D5D5D',
+                light: '#666666',
+                dark: '#464646',
+            },
+            top: {
+                prim: '#8B8B8B',
+                light: '#A8A8A8',
+                dark: '#777777',
+            } 
+        },
+    },
+
+    crown: {
+        oak: {
+            left: {
+                prim: '#513E2C',
+                dark: '#312316',
+            },
+            right: {
+                prim: '#755F49',
+                dark: '#53402E',
+            },
+            top: {
+                prim: '#CAB7A5',
+                dark: '#B39B85'
+            }
+        },
+
+        beige: {
+            left: {
+                prim: '#75624D',
+                dark: '#7B6651',
+            },
+            right: {
+                prim: '#957F69',
+                dark: '#7B6651',
+            },
+            top: {
+                prim: '#E6DCD4',
+                dark: '#CAB7A5'
+            }
+        },
+
+        agedcopper: {
+            left: {
+                prim: '#8FA88C',
+                dark: '#6E806C',
+            },
+            right: {
+                prim: '#BFD7BD',
+                dark: '#A6C6A4',
+            },
+            top: {
+                prim: '#E5F7E3',
+                dark: '#CADFC8'
+            }
+        },
+
+        goldenoat: {
+            left: {
+                prim: '#A2977E',
+                light: '#B9AC8F',
+                dark: '#776D57',
+            },
+            right: {
+                prim: '#C3BBA8',
+                light: '#D7CEB9',
+                dark: '#A49779',
+            },
+            top: {
+                prim: '#DFD8C9',
+                light: '#EAE4D8',
+                dark: '#CCC3AF',
+            } 
+        },
+
+        ink: {
+            left: {
+                prim: '#464646',
+                light: '#535353',
+                dark: '#2E2E2E',
+            },
+            right: {
+                prim: '#5D5D5D',
+                light: '#666666',
+                dark: '#464646',
+            },
+            top: {
+                prim: '#8B8B8B',
+                light: '#A8A8A8',
+                dark: '#777777',
+            } 
+        },
+    },
+        
+
     windows: {
         black: {
             left: {

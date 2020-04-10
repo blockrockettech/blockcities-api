@@ -5,15 +5,15 @@
         fill: #fff;
       }
 
-      .slope-top {
+      .slope-top-prim {
         fill: #fff1d8;
       }
 
-      .slope-R {
+      .slope-R-prim {
         fill: #eed9b3;
       }
 
-      .slope-L {
+      .slope-L-prim {
         fill: #c3af8a;
       }
 
@@ -119,7 +119,7 @@
         fill: #0f895d;
       }
 
-      .slope-top-dark {
+      .slope-top-prim-dark {
         fill: #f0e1c6;
       }
     </style>
@@ -137,9 +137,9 @@
   <title>Artboard 10</title>
   <g id="root">
     <g>
-      <path class="slope-top" d="M0,69.282V80.829l120,69.282L240,80.829V69.282L120,0Z"/>
-      <path class="slope-R" d="M110,132.791v11.547l10,5.773L240,80.829V69.282L120,138.564Z"/>
-      <path class="slope-L" d="M120,150.111,0,80.829V69.282l120,69.282Z"/>
+      <path class="slope-top-prim" d="M0,69.282V80.829l120,69.282L240,80.829V69.282L120,0Z"/>
+      <path class="slope-R-prim" d="M110,132.791v11.547l10,5.773L240,80.829V69.282L120,138.564Z"/>
+      <path class="slope-L-prim" d="M120,150.111,0,80.829V69.282l120,69.282Z"/>
       <path class="exterior-L-light" d="M0,75.056l120,69.282,10-5.774v51.962l-10,5.773L0,127.017Z"/>
       <path class="exterior-R-light" d="M240,75.056,120,144.338v51.961l120-69.282Z"/>
       <g>
@@ -187,8 +187,8 @@
       <path class="cls-11" d="M120,127.017,220,69.282,120,11.547,20,69.282Z"/>
       <path class="exterior-L-light" d="M120,17.321l-5,2.887v5.773l5-2.887,90,51.962,5-2.887Z"/>
       <path class="exterior-R-light" d="M25,72.169l95-54.848v5.773L30,75.056Z"/>
-      <path class="slope-L" d="M115,14.434l5-2.887L220,69.282l-5,2.887L120,17.321l-5,2.887Z"/>
-      <path class="slope-R" d="M25,72.169l-5-2.887L120,11.547v5.774Z"/>
+      <path class="slope-L-prim" d="M115,14.434l5-2.887L220,69.282l-5,2.887L120,17.321l-5,2.887Z"/>
+      <path class="slope-R-prim" d="M25,72.169l-5-2.887L120,11.547v5.774Z"/>
       <path class="cls-12" d="M90,95.263l5-2.887-7.5-4.33-5,2.887Z"/>
       <path class="cls-12" d="M105,86.603l5-2.887-7.5-4.33-5,2.887Z"/>
       <path class="cls-12" d="M120,77.943l5-2.887-7.5-4.33-5,2.887Z"/>
@@ -209,7 +209,7 @@
       <path class="cls-13" d="M137.5,53.405l2.5,4.33-5,2.887-2.5-4.33Z"/>
       <path class="exterior-L-light" d="M40,46.188l10,5.774V63.509L75,77.943V49.075L40,28.868Z"/>
       <path class="exterior-R-light" d="M75,77.943V49.075l35-20.207V57.735Z"/>
-      <path class="slope-L" d="M40,28.868,75,49.075v5.774L40,34.641Z"/>
+      <path class="slope-L-prim" d="M40,28.868,75,49.075v5.774L40,34.641Z"/>
       <path class="exterior-L-light" d="M105,60.622l-5-2.887V46.188l5-2.886Z"/>
       <path class="cls-11" d="M80,80.829V69.282l20-11.547,10,5.774Z"/>
       <path class="window-R-prim" d="M100,46.188,80,57.735V69.282l20-11.547Z"/>
@@ -241,11 +241,11 @@
       <path class="cls-21" d="M127.5,25.981,125,27.425l82.5,47.631,2.5-1.443Z"/>
       <path class="cls-21" d="M42.5,66.396,45,67.839,32.5,75.056,30,73.613Z"/>
       <path class="cls-21" d="M112.5,25.981l2.5,1.444-12.5,7.216L100,33.198Z"/>
-      <path class="slope-top" d="M40,28.868,75,8.661l35,20.207L75,49.075Z"/>
-      <path class="slope-R" d="M110,28.868,75,49.075v5.774l35-20.208Z"/>
-      <path class="slope-top-dark" d="M50,28.868,75,43.302l25-14.434L75,14.434Z"/>
-      <path class="slope-L" d="M75,14.434v5.774L95,31.755l5-2.887Z"/>
-      <path class="slope-R" d="M50,28.868,75,14.434v5.774L55,31.755Z"/>
+      <path class="slope-top-prim" d="M40,28.868,75,8.661l35,20.207L75,49.075Z"/>
+      <path class="slope-R-prim" d="M110,28.868,75,49.075v5.774l35-20.208Z"/>
+      <path class="slope-top-prim-dark" d="M50,28.868,75,43.302l25-14.434L75,14.434Z"/>
+      <path class="slope-L-prim" d="M75,14.434v5.774L95,31.755l5-2.887Z"/>
+      <path class="slope-R-prim" d="M50,28.868,75,14.434v5.774L55,31.755Z"/>
     </g>
   </g>
 </svg>

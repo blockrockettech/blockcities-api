@@ -5,15 +5,15 @@
         fill: #fff;
       }
 
-      .slope-top {
+      .slope-top-prim {
         fill: #fff1d8;
       }
 
-      .slope-R {
+      .slope-R-prim {
         fill: #eed9b3;
       }
 
-      .slope-L {
+      .slope-L-prim {
         fill: #c3af8a;
       }
 
@@ -92,9 +92,9 @@
   </defs>
   <title>Artboard 8</title>
   <g id="root">
-    <path class="slope-top" d="M0,69.282V80.829l120,69.282L240,80.829V69.282L120,0Z"/>
-    <path class="slope-R" d="M110,132.79v11.547l10,5.774L240,80.829V69.282L120,138.564Z"/>
-    <path class="slope-L" d="M120,150.111,0,80.829V69.282l120,69.282Z"/>
+    <path class="slope-top-prim" d="M0,69.282V80.829l120,69.282L240,80.829V69.282L120,0Z"/>
+    <path class="slope-R-prim" d="M110,132.79v11.547l10,5.774L240,80.829V69.282L120,138.564Z"/>
+    <path class="slope-L-prim" d="M120,150.111,0,80.829V69.282l120,69.282Z"/>
     <path class="exterior-L-light" d="M0,75.055l120,69.282,10-5.773v51.961l-10,5.774L0,127.017Z"/>
     <path class="exterior-R-light" d="M240,75.055,120,144.337v51.962l120-69.282Z"/>
     <g>
@@ -142,7 +142,7 @@
     <path class="top-prim" d="M120,127.017,220,69.282,120,11.547,20,69.282Z"/>
     <path class="exterior-L-light" d="M120,17.32l-5,2.887V43.301l5-2.887,75,43.301,20-11.547Z"/>
     <path class="exterior-R-light" d="M25,72.168,120,17.32V40.414L45,83.715Z"/>
-    <path class="slope-L" d="M115,14.433l5-2.886L220,69.282l-5,2.886L120,17.32l-5,2.887Z"/>
-    <path class="slope-R" d="M25,72.168l-5-2.886L120,11.547V17.32Z"/>
+    <path class="slope-L-prim" d="M115,14.433l5-2.886L220,69.282l-5,2.886L120,17.32l-5,2.887Z"/>
+    <path class="slope-R-prim" d="M25,72.168l-5-2.886L120,11.547V17.32Z"/>
   </g>
 </svg>

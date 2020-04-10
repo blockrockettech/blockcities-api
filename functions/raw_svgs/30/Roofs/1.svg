@@ -1,11 +1,11 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.75 129.1819">
   <defs>
     <style>
-      .crown-top {
+      .crown-top-prim {
         fill: #e5f7e3;
       }
 
-      .slope-top {
+      .slope-top-prim {
         fill: #fff1d8;
       }
 
@@ -17,11 +17,11 @@
         fill: #d05752;
       }
 
-      .slope-L {
+      .slope-L-prim {
         fill: #c3af8a;
       }
 
-      .slope-R {
+      .slope-R-prim {
         fill: #eed9b3;
       }
 
@@ -37,12 +37,12 @@
   <title>Artboard 16</title>
   <g id="root">
     <g>
-      <path class="crown-top" d="M203.75,57.735l-80-46.188L0,82.9939l80,46.188Z"/>
-      <path class="slope-top" d="M15,62.787v2.887l65,37.5279,108.75-62.787V37.528L123.75,0Z"/>
+      <path class="crown-top-prim" d="M203.75,57.735l-80-46.188L0,82.9939l80,46.188Z"/>
+      <path class="slope-top-prim" d="M15,62.787v2.887l65,37.5279,108.75-62.787V37.528L123.75,0Z"/>
       <path class="exterior-L-prim" d="M10,77.2209v5.773l70,40.415,2.5-1.4439v-5.7731l-2.5,1.443Z"/>
       <path class="exterior-R-prim" d="M193.75,51.9619V57.735L80,123.4089v-5.774Z"/>
-      <path class="slope-L" d="M80,117.6349l3.75-2.1649V98.15L80,100.3149,15,62.787,5,74.334Z"/>
-      <path class="slope-R" d="M80,117.6349v-17.32L188.75,37.528l10,11.547Z"/>
+      <path class="slope-L-prim" d="M80,117.6349l3.75-2.1649V98.15L80,100.3149,15,62.787,5,74.334Z"/>
+      <path class="slope-R-prim" d="M80,117.6349v-17.32L188.75,37.528l10,11.547Z"/>
       <path class="top-light" d="M25,62.787,123.75,5.7739l55,31.7541L80,94.5409Z"/>
       <path class="exterior-L-prim" d="M123.75,5.7739l-5,2.886V25.981l5-2.887,40,23.094,15-8.66Z"/>
       <path class="exterior-R-prim" d="M25,62.787,123.75,5.7739v17.32L40,71.4469Z"/>

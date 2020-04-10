@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 181.866">
   <defs>
     <style>
-      .crown-top {
+      .crown-top-prim {
         fill: #e5f7e3;
       }
 
@@ -17,11 +17,11 @@
         fill: #8a3a37;
       }
 
-      .crown-L {
+      .crown-L-prim {
         fill: #8fa88c;
       }
 
-      .crown-R {
+      .crown-R-prim {
         fill: #bfd7bd;
       }
 
@@ -40,14 +40,14 @@
   </defs>
   <title>Artboard 3</title>
   <g id="root">
-    <path class="crown-top" d="M0,103.923v-2.886L110,37.528l80,46.188v2.887L80,150.111Z"/>
+    <path class="crown-top-prim" d="M0,103.923v-2.886L110,37.528l80,46.188v2.887L80,150.111Z"/>
     <path class="top-light" d="M10,101.037l70,40.414L180,83.716,110,43.302Z"/>
     <path class="exterior-R-light" d="M10,101.037l15,8.66,85-49.075V43.302Z"/>
     <path class="exterior-L-light" d="M110,43.302l70,40.414-15,8.66L110,60.622Z"/>
     <path class="exterior-L-light" d="M0,135.678l80,46.188,5-2.887V150.111l-5,2.887L0,106.81Z"/>
-    <path class="crown-L" d="M0,101.037l80,46.188,5-2.887v5.773l-5,2.887L0,106.81Z"/>
+    <path class="crown-L-prim" d="M0,101.037l80,46.188,5-2.887v5.773l-5,2.887L0,106.81Z"/>
     <path class="exterior-R-light" d="M80,181.866l110-63.509V89.49L80,152.998Z"/>
-    <path class="crown-R" d="M190,83.716V89.49L80,152.998v-5.773Z"/>
+    <path class="crown-R-prim" d="M190,83.716V89.49L80,152.998v-5.773Z"/>
     <path class="exterior-R-light" d="M20,147.225l2.5-1.444v-25.98L20,118.357Z"/>
     <path class="exterior-R-light" d="M45,161.658l2.5-1.443V134.234L45,132.791Z"/>
     <path class="exterior-R-light" d="M70,176.092l2.5-1.443V148.668L70,147.225Z"/>
@@ -78,12 +78,12 @@
     <path class="top-light" d="M102.5,168.875v-2.886l2.5,1.443Z"/>
     <path class="exterior-L-light" d="M85,60.622v77.942l-5,2.887L25,109.697V31.755L80,63.509Z"/>
     <path class="exterior-R-light" d="M80,141.451l55-31.754V31.755L80,63.509Z"/>
-    <path class="crown-top" d="M25,34.641V31.755L80,0l55,31.755v2.886L80,66.396Z"/>
+    <path class="crown-top-prim" d="M25,34.641V31.755L80,0l55,31.755v2.886L80,66.396Z"/>
     <path class="top-light" d="M35,31.755l45,25.98,45-25.98L80,5.774Z"/>
     <path class="exterior-R-light" d="M35,31.755l15,8.66L80,23.094V5.774Z"/>
     <path class="exterior-L-light" d="M80,5.774l45,25.981-15,8.66L80,23.094Z"/>
-    <path class="crown-L" d="M25,31.755,80,63.509l5-2.887v5.774l-5,2.886L25,37.528Z"/>
-    <path class="crown-R" d="M135,31.755v5.773L80,69.282V63.509Z"/>
+    <path class="crown-L-prim" d="M25,31.755,80,63.509l5-2.887v5.774l-5,2.886L25,37.528Z"/>
+    <path class="crown-R-prim" d="M135,31.755v5.773L80,69.282V63.509Z"/>
     <path class="exterior-R-light" d="M45,77.943l2.5-1.444V50.518L45,49.075Z"/>
     <path class="exterior-L-light" d="M115,77.943l-2.5-1.444V50.518l2.5-1.443Z"/>
     <path class="exterior-R-light" d="M70,92.376l2.5-1.443V64.952L70,63.509Z"/>
