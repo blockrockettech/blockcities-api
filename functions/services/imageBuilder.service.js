@@ -187,8 +187,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.base],
                 colourways.windows[colourLogic[exteriorColorway].windows.base],
                 colourways.curtains[colourLogic[exteriorColorway].windows.base],
-                colourways.slope[colourLogic[exteriorColorway].slope.base],
-                colourways.crown[colourLogic[exteriorColorway].crown.base],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -197,8 +197,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
                 colourways.windows[colourLogic[exteriorColorway].windows.body],
                 colourways.curtains[colourLogic[exteriorColorway].windows.body],
-                colourways.slope[colourLogic[exteriorColorway].slope.body],
-                colourways.crown[colourLogic[exteriorColorway].crown.body],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
@@ -207,8 +207,8 @@ class ImageBuilderService {
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
                 colourways.windows[colourLogic[exteriorColorway].windows.roof],
                 colourways.curtains[colourLogic[exteriorColorway].windows.roof],
-                colourways.slope[colourLogic[exteriorColorway].slope.roof],
-                colourways.crown[colourLogic[exteriorColorway].crown.roof],
+                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.base] : null,
+                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.base] : null,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
