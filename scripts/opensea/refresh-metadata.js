@@ -8,7 +8,6 @@ const wait = async () => {
 };
 
 void async function () {
-
     const NETWORK = 1;
 
     const {tokenIdPointer} = await blockcitiesContractService.tokenPointers(NETWORK);

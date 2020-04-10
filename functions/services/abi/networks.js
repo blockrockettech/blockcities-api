@@ -8,19 +8,33 @@ if (!INFURA_KEY) {
     throw new Error('No Infura key found');
 }
 
-const {blockCitiesAbi} = require('./blockcities.abi');
+const contracts =  require('blockcities-contract-artifacts').contracts;
+const tools =  require('blockcities-contract-artifacts').tools;
+
 const foamAbi = require('./foam.abi');
 
 const connectToBlockCities = (network) => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
-        .contract(blockCitiesAbi)
-        .at(getBlockCitiesNftAddressForNetwork(network));
+        .contract(contracts.addresses.BlockCities(network).abi)
+        .at(contracts.addresses.BlockCities(network).address);
 };
 
 const connectToFoamMainnet = () => {
     return new Eth(new Eth.HttpProvider(getHttpProviderUri(1)))
         .contract(foamAbi)
         .at('0x01eD068115ba99b94c65c7791D4Ac5Dee1253835');
+};
+
+const connectToLimitedVendingMachine = (network) => {
+    return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
+        .contract(contracts.addresses.LimitedVendingMachine(network).abi)
+        .at(contracts.addresses.LimitedVendingMachine(network).address);
+};
+
+const connectToCityBuildingValidator = (network) => {
+    return new Eth(new Eth.HttpProvider(getHttpProviderUri(network)))
+        .contract(contracts.addresses.CityBuildingValidator(network).abi)
+        .at(contracts.addresses.CityBuildingValidator(network).address);
 };
 
 const web3HttpInstance = (network) => {
@@ -32,59 +46,27 @@ const web3WebSocketInstance = (network) => {
 };
 
 const connectToBlockCitiesWebSocketWeb3 = (network) => {
-    const web3 = new Web3(new Web3.providers.WebsocketProvider(`wss://${getNetwork(network)}.infura.io/ws/v3/${INFURA_KEY}`));
-    return new web3.eth.Contract(blockCitiesAbi, getBlockCitiesNftAddressForNetwork(network));
+    const web3 = new Web3(new Web3.providers.WebsocketProvider(`wss://${tools.getNetworkName(network)}.infura.io/ws/v3/${INFURA_KEY}`));
+    return new web3.eth.Contract(contracts.addresses.BlockCities(network).abi, getBlockCitiesNftAddressForNetwork(network));
 };
 
 function getHttpProviderUri(network) {
     if (_.toNumber(network) === 5777) {
-        return 'http://127.0.0.1:7545'; // a.k.a. truffle
+        return 'http://127.0.0.1:7545'; // a.k.a. ganache
     }
-    return `https://${getNetwork(network)}.infura.io/v3/${INFURA_KEY}`;
+    return `https://${tools.getNetworkName(network)}.infura.io/v3/${INFURA_KEY}`;
 }
 
 function getWebSocketProviderUri(network) {
     if (_.toNumber(network) === 5777) {
-        return 'http://127.0.0.1:7545'; // a.k.a. truffle
+        return 'http://127.0.0.1:7545'; // a.k.a. ganache
     }
-    return `wss://${getNetwork(network)}.infura.io/ws/v3/${INFURA_KEY}`;
+    return `wss://${tools.getNetworkName(network)}.infura.io/ws/v3/${INFURA_KEY}`;
 }
 
-const networkSplitter = (network, {ropsten, rinkeby, mainnet, local}) => {
-    switch (network) {
-        case 1:
-        case '1':
-        case 'mainnet':
-            return mainnet;
-        case 3:
-        case '3':
-        case 'ropsten':
-            return ropsten;
-        case 4:
-        case '4':
-        case 'rinkeby':
-            return rinkeby;
-        case 5777:
-        case '5777':
-        case 'local':
-            // This may change if a clean deploy
-            return local;
-        default:
-            throw new Error(`Unknown network ID ${network}`);
-    }
-};
-
-const getNetwork = (network) => {
-    return networkSplitter(network, {
-        mainnet: 'mainnet',
-        ropsten: 'ropsten',
-        rinkeby: 'rinkeby',
-        local: 'local'
-    });
-};
-
 const isMainnet = (network) => {
-    const foundNetwork = networkSplitter(network, {
+
+    const foundNetwork = tools.networkSplitter(network, {
         mainnet: 'mainnet',
         ropsten: 'ropsten',
         rinkeby: 'rinkeby',
@@ -93,19 +75,12 @@ const isMainnet = (network) => {
     return 'mainnet' === foundNetwork;
 };
 
-const blockCitiesAddresses = {
-    mainnet: '0x2f2d5aA0EfDB9Ca3C9bB789693d06BEBEa88792F',
-    ropsten: '0x86eD0a82dDc2EdEA8cC4Bc023eC2a4079DAB42c9',
-    rinkeby: '0x74b8D7E2b681d1C4f13bd8722937A722bCc7A4F3',
-    local: '0x70D0C5f857C0C57190566d45AaF53234b65B8bE9'
-};
-
 const getBlockCitiesNftAddressForNetwork = (network) => {
-    return networkSplitter(network, blockCitiesAddresses);
+    return contracts.addresses.BlockCities(network).address;
 };
 
 const getBlockCitiesNftDeploymentBlockForNetwork = (network) => {
-    const address = networkSplitter(network, blockCitiesAddresses);
+    const address = contracts.addresses.BlockCities(network).address;
     return getContractDetailsForAddress(address).deploymentBlock;
 };
 
@@ -114,24 +89,24 @@ const getBlockCitiesNftDeploymentBlockForNetwork = (network) => {
  */
 const getContractDetailsForAddress = (address) => {
     switch (address) {
-        case '0x2f2d5aA0EfDB9Ca3C9bB789693d06BEBEa88792F':
+        case contracts.addresses.BlockCities(1).address:
             return {
                 network: 'mainnet',
-                abi: blockCitiesAbi,
+                abi: contracts.addresses.BlockCities(1).abi,
                 deploymentBlock: 7488550,
                 address
             };
-        case '0x86eD0a82dDc2EdEA8cC4Bc023eC2a4079DAB42c9':
+        case contracts.addresses.BlockCities(3).address:
             return {
                 network: 'ropsten',
-                abi: blockCitiesAbi,
+                abi: contracts.addresses.BlockCities(3).abi,
                 deploymentBlock: 5372025,
                 address
             };
-        case '0x74b8D7E2b681d1C4f13bd8722937A722bCc7A4F3':
+        case contracts.addresses.BlockCities(4).address:
             return {
                 network: 'rinkeby',
-                abi: blockCitiesAbi,
+                abi: contracts.addresses.BlockCities(4).abi,
                 deploymentBlock: 4134483,
                 address
             };
@@ -141,10 +116,6 @@ const getContractDetailsForAddress = (address) => {
 };
 
 module.exports = {
-    address: {
-        blockCities: blockCitiesAddresses
-    },
-    getNetwork,
     isMainnet,
     getContractDetailsForAddress,
     connectToBlockCities,
@@ -154,4 +125,6 @@ module.exports = {
     getBlockCitiesNftAddressForNetwork,
     getBlockCitiesNftDeploymentBlockForNetwork,
     connectToFoamMainnet,
+    connectToLimitedVendingMachine,
+    connectToCityBuildingValidator,
 };

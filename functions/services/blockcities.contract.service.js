@@ -1,6 +1,7 @@
 const {
     connectToBlockCities,
     connectToBlockCitiesWebSocketWeb3,
+    connectToCityBuildingValidator,
     getBlockCitiesNftDeploymentBlockForNetwork,
     web3HttpInstance
 } = require('./abi/networks');
@@ -124,6 +125,28 @@ class BlockcitiesContractService {
         });
     }
 
+    async validatorRotation(network) {
+        console.log(`Finding rotation on network [${network}]`);
+
+        const contract = connectToCityBuildingValidator(network);
+        const buildingMappingsArray = await contract.buildingMappingsArray();
+
+        const promises = buildingMappingsArray[0].map(async (building) => {
+
+            const buildingBaseMappingsArray = await contract.buildingBaseMappingsArray(building);
+            const buildingBodyMappingsArray = await contract.buildingBodyMappingsArray(building);
+            const buildingRoofMappingsArray = await contract.buildingRoofMappingsArray(building);
+
+            return {
+                'building': building,
+                'base': buildingBaseMappingsArray['0'].map(val => val.toString()),
+                'body': buildingBodyMappingsArray['0'].map(val => val.toString()),
+                'roof': buildingRoofMappingsArray['0'].map(val => val.toString()),
+            }
+        });
+
+        return Promise.all(promises);
+    }
 }
 
 

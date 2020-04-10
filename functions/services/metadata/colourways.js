@@ -501,9 +501,6 @@ module.exports = {
                 prim_light_dark: '#56585C',
             },
         },
-     
-     
-     
     },
     concrete: {
         classic: {

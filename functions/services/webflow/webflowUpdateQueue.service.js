@@ -5,7 +5,7 @@ const webflowDataService = require('./webflowDataService');
 
 const firestore = require('../firebase.service').firestore();
 
-const {getNetwork} = require('../abi/networks');
+const tools =  require('blockcities-contract-artifacts').tools;
 
 const MAINNET = 1;
 
@@ -16,7 +16,7 @@ class WebflowUpdateQueue {
 
         return firestore
             .collection('data')
-            .doc(getNetwork(MAINNET))
+            .doc(tools.getNetworkName(MAINNET))
             .collection('webflow-cms-queue')
             .doc(_.toString(tokenId))
             .set({
@@ -33,7 +33,7 @@ class WebflowUpdateQueue {
         // Get the next token batch
         const querySet = await firestore
             .collection('data')
-            .doc(getNetwork(MAINNET))
+            .doc(tools.getNetworkName(MAINNET))
             .collection('webflow-cms-queue')
             .orderBy('created', 'asc')
             .limit(limit)
@@ -48,7 +48,7 @@ class WebflowUpdateQueue {
         // Delete the tokens we just grabbed
         const batch = firestore.batch();
         _.forEach(tokenIds, (tokenId) => {
-            const tokenRef = firestore.collection('data').doc(getNetwork(MAINNET)).collection('webflow-cms-queue').doc(_.toString(tokenId));
+            const tokenRef = firestore.collection('data').doc(tools.getNetworkName(MAINNET)).collection('webflow-cms-queue').doc(_.toString(tokenId));
             batch.delete(tokenRef);
         });
         await batch.commit();

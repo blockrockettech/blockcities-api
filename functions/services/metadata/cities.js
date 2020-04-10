@@ -96,5 +96,5 @@ module.exports = {
     Paris,
     Stuttgart,
     Vyborg,
-    Reykjavík
+    Reykjavík,
 };

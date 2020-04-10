@@ -4,14 +4,14 @@ const database = require('./firebase.service').database();
 const firestore = require('./firebase.service').firestore();
 const storage = require('./firebase.service').storage();
 
-const { getNetwork } = require('./abi/networks');
+const tools =  require('blockcities-contract-artifacts').tools;
 
 class BuildingDataService {
 
     async saveBuilding(network, data) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .doc(_.toString(data.tokenId))
             .set(data)
@@ -23,7 +23,7 @@ class BuildingDataService {
     async getBuildingsForOwner(network, owner) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .where('owner', '==', owner)
             .get()
@@ -39,7 +39,7 @@ class BuildingDataService {
     async getArchitectedBuildingsForAddress(network, address, fromTimestamp) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .where('architect', '==', address)
             .get()
@@ -57,7 +57,7 @@ class BuildingDataService {
     async getBuildingByTokenId(network, tokenId) {
         return firestore
             .collection('data')
-            .doc(getNetwork(network))
+            .doc(tools.getNetworkName(network))
             .collection('buildings')
             .doc(_.toString(tokenId))
             .get()
@@ -79,7 +79,7 @@ class BuildingDataService {
                     contentType: mimetype,
                     // Enable long-lived HTTP caching headers
                     // Use only if the contents of the file will never change
-                    // (If the contents will change, use cacheControl: 'no-cache')                
+                    // (If the contents will change, use cacheControl: 'no-cache')
                     //cacheControl: 'public, max-age=31536000'
                 },
                 resumable: false
