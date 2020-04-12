@@ -3,12 +3,9 @@ const Eth = require('ethjs');
 const Web3 = require('web3');
 const functions = require('firebase-functions');
 
-const INFURA_KEY = functions.config().infura.key;
-if (!INFURA_KEY) {
-    throw new Error('No Infura key found');
-}
+const INFURA_KEY = '';
 
-const {blockCitiesAbi} = require('./blockcities.abi');
+const { blockCitiesAbi } = require('./blockcities.abi');
 const foamAbi = require('./foam.abi');
 
 const connectToBlockCities = (network) => {
@@ -50,7 +47,7 @@ function getWebSocketProviderUri(network) {
     return `wss://${getNetwork(network)}.infura.io/ws/v3/${INFURA_KEY}`;
 }
 
-const networkSplitter = (network, {ropsten, rinkeby, mainnet, local}) => {
+const networkSplitter = (network, { ropsten, rinkeby, mainnet, local }) => {
     switch (network) {
         case 1:
         case '1':
