@@ -1176,4 +1176,134 @@ module.exports = {
             14: { buildingType: 'Basketball', buildingUse: 'Business' },
         }
     },
+
+    30: {
+        bases: {
+            0: { buildingType: '16 Court', buildingUse: 'Business' },
+            1: { buildingType: '16 Court', buildingUse: 'Business' },
+            2: { buildingType: '16 Court', buildingUse: 'Business' },
+            
+
+        },
+        bodies: {
+            0: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            1: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            2: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            3: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            4: { buildingType: 'Rectangle', buildingUse: 'Business' },
+
+        },
+        roofs: {
+            0: { buildingType: 'Flat', buildingUse: 'Business' },
+            1: { buildingType: 'Open Hip', buildingUse: 'Business' },
+            2: { buildingType: 'Hip', buildingUse: 'Business' },
+            3: { buildingType: 'Hip', buildingUse: 'Business' },
+            4: { buildingType: 'Double Hip', buildingUse: 'Business' },
+            5: { buildingType: 'Double Register', buildingUse: 'Business' },
+            6: { buildingType: 'Steeple', buildingUse: 'Business' },
+            
+           
+        }
+    },
+
+    31: {
+        bases: {
+            0: { buildingType: '', buildingUse: 'Business' },
+            
+
+        },
+        bodies: {
+            0: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            1: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            2: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            3: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            4: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+
+        },
+        roofs: {
+            0: { buildingType: 'Flat', buildingUse: 'Condo' },
+            1: { buildingType: 'Helipad', buildingUse: 'Condo' },
+            2: { buildingType: 'Pool', buildingUse: 'Condo' },
+            3: { buildingType: 'Open Hip', buildingUse: 'Condo' },
+            4: { buildingType: 'Lighthouse', buildingUse: 'Condo' },
+            5: { buildingType: 'Pyramid Hip', buildingUse: 'Condo' },
+            6: { buildingType: 'Pyramid Hip', buildingUse: 'Condo' },
+            7: { buildingType: 'Pyramid Hip', buildingUse: 'Condo' },
+            8: { buildingType: 'Steeple', buildingUse: 'Condo' },
+            9: { buildingType: 'Double Register', buildingUse: 'Condo' },
+           
+        }
+    },
+
+    32: {
+        bases: {
+            0: { buildingType: '365 Bridge', buildingUse: 'Condo' },
+            
+
+        },
+        bodies: {
+            0: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            1: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            2: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            3: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+
+        },
+        roofs: {
+            0: { buildingType: 'Flat', buildingUse: 'Condo' },
+            1: { buildingType: 'Tower', buildingUse: 'Condo' },
+            2: { buildingType: 'Open Hip', buildingUse: 'Condo' },
+            3: { buildingType: 'Hip', buildingUse: 'Condo' },
+            4: { buildingType: 'Dome', buildingUse: 'Condo' },
+            5: { buildingType: 'Steeple', buildingUse: 'Condo' },
+            6: { buildingType: 'Steeple', buildingUse: 'Condo' },
+            7: { buildingType: 'Steeple', buildingUse: 'Condo' },
+           
+        }
+    },
+
+    33: {
+        bases: {
+            0: { buildingType: 'Williamsburgh Savings Bank Tower', buildingUse: 'Condo' },
+            
+
+        },
+        bodies: {
+            0: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            1: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            2: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            3: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            4: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+            5: { buildingType: 'Rectangle', buildingUse: 'Condo' },
+
+        },
+        roofs: {
+            0: { buildingType: 'Dome', buildingUse: 'Condo' },
+            1: { buildingType: 'Pool', buildingUse: 'Condo' },
+            2: { buildingType: 'Crown', buildingUse: 'Condo' },
+            3: { buildingType: 'Pyramid Hip', buildingUse: 'Condo' },
+            4: { buildingType: 'Open Hip', buildingUse: 'Condo' },
+            5: { buildingType: 'Hip', buildingUse: 'Condo' },
+            6: { buildingType: 'Pyramid Hip', buildingUse: 'Condo' },
+            7: { buildingType: 'Double Register', buildingUse: 'Condo' },
+            8: { buildingType: 'Steeple', buildingUse: 'Condo' },
+            9: { buildingType: 'Steeple', buildingUse: 'Condo' },
+           
+        }
+    },
+
+    34: {
+        bases: {
+            0: { buildingType: '', buildingUse: '' },
+            
+
+        },
+        bodies: {
+            0: { buildingType: 'Rectangle', buildingUse: '' },
+
+        },
+        roofs: {
+            0: { buildingType: '', buildingUse: '' },
+           
+        }
+    },
 };
