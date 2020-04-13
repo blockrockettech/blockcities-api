@@ -440,6 +440,25 @@ module.exports = {
             }
         },
 
+        orangestone: {
+            left: {
+                prim: '#8C5928',
+                light: '#9B642F',
+                dark: '#82552C',
+            },
+            right: {
+                prim: '#E6A653',
+                light: '#F7B65F',
+                dark: '#D09548',
+            },
+            top: {
+                prim: '#FFCE8F',
+                light: '#FFD9A8',
+                dark: '#F0C996',
+            }
+        },
+
+
         
 
 
