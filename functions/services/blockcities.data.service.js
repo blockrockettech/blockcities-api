@@ -3,7 +3,7 @@ const _ = require('lodash');
 const fs = require("fs");
 
 const blockcitiesContractService = require('./blockcities.contract.service');
-const webflowUpdateQueue = require('./webflow/webflowUpdateQueue.service');
+//const webflowUpdateQueue = require('./webflow/webflowUpdateQueue.service');
 const imageBuilderService = require('./imageBuilder.service');
 const buildingDataService = require('./building.data.service');
 

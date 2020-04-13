@@ -8,8 +8,8 @@ if (!INFURA_KEY) {
     throw new Error('No Infura key found');
 }
 
-const contracts =  require('blockcities-contract-artifacts').contracts;
-const tools =  require('blockcities-contract-artifacts').tools;
+const contracts = require('blockcities-contract-artifacts').contracts;
+const tools = require('blockcities-contract-artifacts').tools;
 
 const foamAbi = require('./foam.abi');
 

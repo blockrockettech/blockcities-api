@@ -313,9 +313,284 @@ module.exports = {
                 dark: '#CCC3AF',
             }
         },
+
+        limegrey: {
+            left: {
+                prim: '#A29D91',
+                light: '#B3AC9D',
+                dark: '#938D80',
+            },
+            right: {
+                prim: '#C2BDB1',
+                light: '#CEC9BC',
+                dark: '#B7B1A5',
+            },
+            top: {
+                prim: '#EEE9DE',
+                light: '#F4F0E6',
+                dark: '#E8E2D7',
+            } 
+        },
+
+        lightbrown: {
+            left: {
+                prim: '#71635A',
+                light: '#91837B',
+                dark: '#64574F',
+            },
+            right: {
+                prim: '#B7A590',
+                light: '#D5C6B5',
+                dark: '#A6937D',
+            },
+            top: {
+                prim: '#EEE5DF',
+                light: '#F7F1EC',
+                dark: '#E6DCD5',
+            } 
+        },
+
+        truegrey: {
+            left: {
+                prim: '#2E2E2E',
+                light: '#535353',
+                dark: '#242424',
+            },
+            right: {
+                prim: '#5D5D5D',
+                light: '#828282',
+                dark: '#444444',
+            },
+            top: {
+                prim: '#B9B9B9',
+                light: '#E8E8E8',
+                dark: '#A2A2A2',
+            }
+        },
+
+        redstone: {
+            left: {
+                prim: '#6B382B',
+                light: '#784335',
+                dark: '#592F24',
+            },
+            right: {
+                prim: '#905546',
+                light: '#9E6455',
+                dark: '#824C3E',
+            },
+            top: {
+                prim: '#CF9080',
+                light: '#D9A194',
+                dark: '#BD7D6D',
+            }
+        },
+
+        brownstone: {
+            left: {
+                prim: '#5C4430',
+                light: '#664F3C',
+                dark: '#4A3727',
+            },
+            right: {
+                prim: '#8A6B55',
+                light: '#7B5F4A',
+                dark: '#6B523E',
+            },
+            top: {
+                prim: '#E3C2AA',
+                light: '#EBD6C7',
+                dark: '#D6AC8D',
+            }
+        },
+
+        beigegrey: {
+            left: {
+                prim: '#C1B3A6',
+                light: '#CCBFB2',
+                dark: '#8A8178',
+            },
+            right: {
+                prim: '#CCC2B8',
+                light: '#DBD2C9',
+                dark: '#B5A99E',
+            },
+            top: {
+                prim: '#F0E8E2',
+                light: '#F9F1EB',
+                dark: '#E8DFD9',
+            }
+        },
+
+        cacao: {
+            left: {
+                prim: '#423B2D',
+                light: '#4A4536',
+                dark: '#393326',
+            },
+            right: {
+                prim: '#625A49',
+                light: '#6A6352',
+                dark: '#423D2F',
+            },
+            top: {
+                prim: '#D9C8B5',
+                light: '#EEDFCE',
+                dark: '#C8B8A5',
+            }
+        },
+
+        
+
+
+
+
     },
 
     slope: {
+        brownstone: {
+            left: {
+                prim: '#5C4430',
+                light: '#664F3C',
+                dark: '#4A3727',
+            },
+            right: {
+                prim: '#8A6B55',
+                light: '#7B5F4A',
+                dark: '#6B523E',
+            },
+            top: {
+                prim: '#E3C2AA',
+                light: '#EBD6C7',
+                dark: '#D6AC8D',
+            }
+        },
+        
+
+        navy: {
+            left: {
+                prim: '#1C3C4C',
+                dark: '#152C38',
+            },
+            right: {
+                prim: '#29596E',
+                dark: '#20495C',
+            },
+            top: {
+                prim: '#5F9DB8',
+                dark: '#4F88A1'
+            }
+        },
+
+
+        hottop: {
+            left: {
+                prim: '#C95C50',
+                dark: '#A84B42',
+            },
+            right: {
+                prim: '#D67C71',
+                dark: '#C9675A',
+            },
+            top: {
+                prim: '#F5AEA7',
+                dark: '#E09991'
+            }
+        },
+
+
+        twiceagedcopper: {
+            left: {
+                prim: '#9BD1C0',
+                dark: '#83B8A6',
+            },
+            right: {
+                prim: '#BEE5D8',
+                dark: '#A9D6C7',
+            },
+            top: {
+                prim: '#D6FAEF',
+                dark: '#CFEBE2'
+            }
+        },
+        
+
+
+        gold: {
+            left: {
+                prim: '#795A30',
+                dark: '#6F5129',
+            },
+            right: {
+                prim: '#EACB87',
+                dark: '#DFBD75',
+            },
+            top: {
+                prim: '#FFF3D8',
+                dark: '#FFEEC6'
+            }
+        },
+
+        silver: {
+            left: {
+                prim: '#727E8A',
+                dark: '#5C6670',
+            },
+            right: {
+                prim: '#D1D3D6',
+                dark: '#C0C3C8',
+            },
+            top: {
+                prim: '#F5F5F7',
+                dark: '#EFEFF2'
+            }
+        },
+
+        bronze: {
+            left: {
+                prim: '#823F10',
+                dark: '#8F4C1B',
+            },
+            right: {
+                prim: '#BB6E33',
+                dark: '#A65F29',
+            },
+            top: {
+                prim: '#FFD0AE',
+                dark: '#F7C4A0'
+            }
+        },
+
+        dullbrown: {
+            left: {
+                prim: '#686254',
+                dark: '#555044',
+            },
+            right: {
+                prim: '#958F81',
+                dark: '#888273',
+            },
+            top: {
+                prim: '#F7F1EC',
+                dark: '#E6DCD5'
+            }
+        },
+
+        stumpbrown: {
+            left: {
+                prim: '#6A5D55',
+                dark: '#514741',
+            },
+            right: {
+                prim: '#B7A897',
+                dark: '#A69A8D',
+            },
+            top: {
+                prim: '#F7F1EC',
+                dark: '#E6DCD5'
+            }
+        },
+
         oak: {
             left: {
                 prim: '#513E2C',
@@ -399,6 +674,118 @@ module.exports = {
     },
 
     crown: {
+        redstone: {
+            left: {
+                prim: '#6B382B',
+                dark: '#592F24',
+            },
+            right: {
+                prim: '#905546',
+                dark: '#824C3E',
+            },
+            top: {
+                prim: '#CF9080',
+                dark: '#BD7D6D',
+            }
+        },
+
+
+        brownstone: {
+            left: {
+                prim: '#5C4430',
+                light: '#664F3C',
+                dark: '#4A3727',
+            },
+            right: {
+                prim: '#8A6B55',
+                light: '#7B5F4A',
+                dark: '#6B523E',
+            },
+            top: {
+                prim: '#E3C2AA',
+                light: '#EBD6C7',
+                dark: '#D6AC8D',
+            }
+        },
+
+
+        gold: {
+            left: {
+                prim: '#795A30',
+                dark: '#6F5129',
+            },
+            right: {
+                prim: '#EACB87',
+                dark: '#DFBD75',
+            },
+            top: {
+                prim: '#FFF3D8',
+                dark: '#FFEEC6'
+            }
+        },
+
+        silver: {
+            left: {
+                prim: '#727E8A',
+                dark: '#5C6670',
+            },
+            right: {
+                prim: '#D1D3D6',
+                dark: '#C0C3C8',
+            },
+            top: {
+                prim: '#F5F5F7',
+                dark: '#EFEFF2'
+            }
+        },
+
+        bronze: {
+            left: {
+                prim: '#823F10',
+                dark: '#8F4C1B',
+            },
+            right: {
+                prim: '#BB6E33',
+                dark: '#A65F29',
+            },
+            top: {
+                prim: '#FFD0AE',
+                dark: '#F7C4A0'
+            }
+        },
+
+
+        stumpbrown: {
+            left: {
+                prim: '#6A5D55',
+                dark: '#514741',
+            },
+            right: {
+                prim: '#B7A897',
+                dark: '#A69A8D',
+            },
+            top: {
+                prim: '#F7F1EC',
+                dark: '#E6DCD5'
+            }
+        },
+
+
+        dullbrown: {
+            left: {
+                prim: '#686254',
+                dark: '#555044',
+            },
+            right: {
+                prim: '#958F81',
+                dark: '#888273',
+            },
+            top: {
+                prim: '#F7F1EC',
+                dark: '#E6DCD5'
+            }
+        },
+        
         oak: {
             left: {
                 prim: '#513E2C',
@@ -478,6 +865,24 @@ module.exports = {
                 light: '#A8A8A8',
                 dark: '#777777',
             }
+        },
+
+        black: {
+            left: {
+                prim: '#202020',
+                light: '#2A2A2A',
+                dark: '#000000',
+            },
+            right: {
+                prim: '#2E2E2E',
+                light: '#484848',
+                dark: '#202020',
+            },
+            top: {
+                prim: '#666666',
+                light: '#A4A4A4',
+                dark: '#4F4F4F',
+            } 
         },
     },
 
