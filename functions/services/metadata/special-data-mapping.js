@@ -334,6 +334,44 @@ module.exports = {
     widthInPx: 222.5,
     widthInFt: 259
   },
+  31: {
+    name: "21 Main",
+    bname: "21 Main",
+    city: NYC.name,
+    cityId: NYC.id,
+    background_color: backgrounConfig.GRAY.hex,
+    background_colorId: backgrounConfig.GRAY.id,
+    heightInFt: ,
+    heightInPx: ,
+    widthInPx: ,
+    widthInFt: 
+  },
+  32: {
+    name: "16 Court",
+    bname: "16 Court",
+    city: NYC.name,
+    cityId: NYC.id,
+    background_color: backgrounConfig.BEIGE.hex,
+    background_colorId: backgrounConfig.BEIGE.id,
+    heightInFt: ,
+    heightInPx: ,
+    widthInPx: ,
+    widthInFt: 
+  },
+  33: {
+    name: "365 Bridge",
+    bname: "365 Bridge",
+    city: NYC.name,
+    cityId: NYC.id,
+    background_color: backgrounConfig.LIGHT_ORANGE.hex,
+    background_colorId: backgrounConfig.LIGHT_ORANGE.id,
+    heightInFt: ,
+    heightInPx: ,
+    widthInPx: ,
+    widthInFt: 
+  },
+
+
 
   // token 1 - 5
   1000000: {
@@ -752,5 +790,17 @@ module.exports = {
     heightInPx: 822.724,
     widthInPx: 643.926,
     widthInFt: 191
+  },
+  1000036: {
+    name: "Brooklyn Gold",
+    bname: "Brooklyn Gold",
+    city: NYC.name,
+    cityId: NYC.id,
+    background_color: backgrounConfig.LIGHT_YELLOW.hex,
+    background_colorId: backgrounConfig.LIGHT_YELLOW.id,
+    heightInFt: ,
+    heightInPx: ,
+    widthInPx: ,
+    widthInFt: 
   }
 };
