@@ -1179,9 +1179,9 @@ module.exports = {
 
     30: {
         bases: {
-            0: { buildingType: '16 Court', buildingUse: 'Business' },
-            1: { buildingType: '16 Court', buildingUse: 'Business' },
-            2: { buildingType: '16 Court', buildingUse: 'Business' },
+            0: { buildingType: '16 Court', buildingUse: 'Retail' },
+            1: { buildingType: '16 Court', buildingUse: 'Retail' },
+            2: { buildingType: '16 Court', buildingUse: 'Retail' },
             
 
         },
@@ -1293,16 +1293,31 @@ module.exports = {
 
     34: {
         bases: {
-            0: { buildingType: '', buildingUse: '' },
+            0: { buildingType: '26 Court', buildingUse: 'Retail' },
             
 
         },
         bodies: {
-            0: { buildingType: 'Rectangle', buildingUse: '' },
+            0: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            1: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            2: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            3: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            4: { buildingType: 'Rectangle', buildingUse: 'Business' },
+            5: { buildingType: 'Rectangle', buildingUse: 'Business' },
+
+
 
         },
         roofs: {
-            0: { buildingType: '', buildingUse: '' },
+            0: { buildingType: 'Flat', buildingUse: 'Business' },
+            1: { buildingType: 'Flat', buildingUse: 'Business' },
+            2: { buildingType: 'Hip Valley', buildingUse: '' },
+            3: { buildingType: 'Hip Valley', buildingUse: '' },
+            4: { buildingType: 'Open Hip', buildingUse: '' },
+            5: { buildingType: 'Gable Valley', buildingUse: '' },
+            6: { buildingType: 'Open Hip', buildingUse: '' },
+            7: { buildingType: 'Gable Valley', buildingUse: '' },
+            8: { buildingType: 'Open Hip', buildingUse: '' },
            
         }
     },
