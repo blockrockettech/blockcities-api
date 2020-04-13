@@ -1213,6 +1213,681 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
+    '76': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'ink'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '77': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'twiceagedcopper'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '78': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'hottop'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '79': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'navy'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    //Redstone Buildings
+
+    '80': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'ink'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'brownstone'
+        },
+        concrete: 'classic',
+    },
+
+    '81': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'ink'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '82': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '83': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    '84': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'brownstone'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    '85': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'goldenoat'
+        },
+        concrete: 'classic',
+    },
+
+    '86': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '87': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'redstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'silver'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    // Blush Buildings
+
+    '88': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '89': {
+        exterior: {
+            roof: 'blush',
+            body: 'blush',
+            base: 'blush'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'hottop'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    //Golden Beige
+
+
+    '90': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'hottop'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    '91': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'agedcopper'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    '91': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'twiceagedcopper'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    '92': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'bronze'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    '93': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+
+    '94': {
+        exterior: {
+            roof: 'goldenbeige',
+            body: 'goldenbeige',
+            base: 'dijon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'beige'
+        },
+        concrete: 'classic',
+    },
+
+    //16 Court St Exterior
+
+    '95': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    '96': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    '97': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        concrete: 'classic',
+    },
+
+    '98': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'bronze'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    '99': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'twiceagedcopper'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    '100': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    //
+
+    '100': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
