@@ -341,10 +341,10 @@ module.exports = {
     cityId: NYC.id,
     background_color: backgrounConfig.GRAY.hex,
     background_colorId: backgrounConfig.GRAY.id,
-    heightInFt: ,
-    heightInPx: ,
-    widthInPx: ,
-    widthInFt: 
+    heightInFt: 228,
+    heightInPx: 842.116,
+    widthInPx: 740.018,
+    widthInFt: 200.357
   },
   32: {
     name: "16 Court",
@@ -353,10 +353,10 @@ module.exports = {
     cityId: NYC.id,
     background_color: backgrounConfig.BEIGE.hex,
     background_colorId: backgrounConfig.BEIGE.id,
-    heightInFt: ,
-    heightInPx: ,
-    widthInPx: ,
-    widthInFt: 
+    heightInFt: 462,
+    heightInPx: 1337.585,
+    widthInPx: 560,
+    widthInFt: 193.423
   },
   33: {
     name: "365 Bridge",
@@ -365,10 +365,10 @@ module.exports = {
     cityId: NYC.id,
     background_color: backgrounConfig.LIGHT_ORANGE.hex,
     background_colorId: backgrounConfig.LIGHT_ORANGE.id,
-    heightInFt: ,
-    heightInPx: ,
-    widthInPx: ,
-    widthInFt: 
+    heightInFt: 345,
+    heightInPx: 1077.265,
+    widthInPx: 640,
+    widthInFt: 204.963
   },
 
 
@@ -798,9 +798,9 @@ module.exports = {
     cityId: NYC.id,
     background_color: backgrounConfig.LIGHT_YELLOW.hex,
     background_colorId: backgrounConfig.LIGHT_YELLOW.id,
-    heightInFt: ,
-    heightInPx: ,
-    widthInPx: ,
-    widthInFt: 
+    heightInFt: 512,
+    heightInPx: 1592.505,
+    widthInPx: 836.2,
+    widthInFt: 268.843
   }
 };
