@@ -192,23 +192,60 @@ class ImageBuilderService {
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
+            // --- get body slope/crown
+            let slopeBody;
+            if (colourLogic[exteriorColorway].slope) {
+                if (colourways.slope[colourLogic[exteriorColorway].slope.body]) {
+                    slopeBody = colourways.slope[colourLogic[exteriorColorway].slope.body];
+                } else {
+                    slopeBody = colourways.slope[colourLogic[exteriorColorway].slope.base];
+                }
+            }
+            let crownBody;
+            if (colourLogic[exteriorColorway].crown) {
+                if (colourways.slope[colourLogic[exteriorColorway].crown.body]) {
+                    crownBody = colourways.crown[colourLogic[exteriorColorway].crown.body];
+                } else {
+                    crownBody = colourways.crown[colourLogic[exteriorColorway].crown.base];
+                }
+            }
+
             const styledBodySvg = cheerioSVGService.styleFill(
                 bodyConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.body],
                 colourways.windows[colourLogic[exteriorColorway].windows.body],
                 colourways.curtains[colourLogic[exteriorColorway].windows.body],
-                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.body] : null,
-                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.body] : null,
+                slopeBody,
+                crownBody,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
+
+            // --- get roof slope/crown
+            let slopeRoof;
+            if (colourLogic[exteriorColorway].slope) {
+                if (colourways.slope[colourLogic[exteriorColorway].slope.roof]) {
+                    slopeRoof = colourways.slope[colourLogic[exteriorColorway].slope.roof];
+                } else {
+                    slopeRoof = colourways.slope[colourLogic[exteriorColorway].slope.base];
+                }
+            }
+            let crownRoof;
+            if (colourLogic[exteriorColorway].crown) {
+                if (colourways.slope[colourLogic[exteriorColorway].crown.roof]) {
+                    crownRoof = colourways.crown[colourLogic[exteriorColorway].crown.roof];
+                } else {
+                    crownRoof = colourways.crown[colourLogic[exteriorColorway].crown.base];
+                }
+            }
+
 
             const styledRoofSvg = cheerioSVGService.styleFill(
                 roofConfig.rawSvg,
                 colourways.exteriors[colourLogic[exteriorColorway].exterior.roof],
                 colourways.windows[colourLogic[exteriorColorway].windows.roof],
                 colourways.curtains[colourLogic[exteriorColorway].windows.roof],
-                colourLogic[exteriorColorway].slope ? colourways.slope[colourLogic[exteriorColorway].slope.roof] : null,
-                colourLogic[exteriorColorway].crown ? colourways.crown[colourLogic[exteriorColorway].crown.roof] : null,
+                slopeRoof,
+                crownRoof,
                 colourways.concrete[colourLogic[exteriorColorway].concrete],
             );
 
