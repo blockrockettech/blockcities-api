@@ -826,7 +826,7 @@ const colorLogicObj = {
 
     //Black Towers
 
-    '61': {
+    '59': {
         exterior: {
             roof: 'darkgrey',
             body: 'darkgrey',
@@ -850,7 +850,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '62': {
+    '60': {
         exterior: {
             roof: 'darkgrey',
             body: 'darkgrey',
@@ -874,7 +874,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '63': {
+    '61': {
         exterior: {
             roof: 'darkgrey',
             body: 'darkgrey',
@@ -898,7 +898,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '64': {
+    '62': {
         exterior: {
             roof: 'truegrey',
             body: 'truegrey',
@@ -922,7 +922,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '65': {
+    '63': {
         exterior: {
             roof: 'truegrey',
             body: 'truegrey',
@@ -946,7 +946,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '66': {
+    '64': {
         exterior: {
             roof: 'truegrey',
             body: 'truegrey',
@@ -970,7 +970,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '67': {
+    '65': {
         exterior: {
             roof: 'carbon',
             body: 'carbon',
@@ -994,7 +994,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '68': {
+    '66': {
         exterior: {
             roof: 'carbon',
             body: 'carbon',
@@ -1018,7 +1018,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '69': {
+    '67': {
         exterior: {
             roof: 'carbon',
             body: 'carbon',
@@ -1042,7 +1042,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '70': {
+    '68': {
         exterior: {
             roof: 'carbon',
             body: 'carbon',
@@ -1067,7 +1067,7 @@ const colorLogicObj = {
     },
 
 
-    '71': {
+    '69': {
         exterior: {
             roof: 'carbon',
             body: 'carbon',
@@ -1093,7 +1093,7 @@ const colorLogicObj = {
 
     //Wburg Tower Exterior
 
-    '72': {
+    '70': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1117,7 +1117,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '73': {
+    '71': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1141,7 +1141,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '74': {
+    '72': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1165,7 +1165,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '75': {
+    '73': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1189,7 +1189,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '76': {
+    '74': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1213,7 +1213,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '77': {
+    '75': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1237,7 +1237,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '78': {
+    '76': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1261,7 +1261,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '79': {
+    '77': {
         exterior: {
             roof: 'lightbrown',
             body: 'lightbrown',
@@ -1287,7 +1287,7 @@ const colorLogicObj = {
 
     //Redstone Buildings
 
-    '80': {
+    '78': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1311,7 +1311,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '81': {
+    '79': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1335,55 +1335,55 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
+    '80': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'stumpbrown'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '81': {
+        exterior: {
+            roof: 'redstone',
+            body: 'redstone',
+            base: 'brownstone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'oak'
+        },
+        crown: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
     '82': {
-        exterior: {
-            roof: 'redstone',
-            body: 'redstone',
-            base: 'brownstone'
-        },
-        windows: {
-            roof: 'black',
-            body: 'black',
-            base: 'black'
-        },
-        slope: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
-            base: 'stumpbrown'
-        },
-        crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
-            base: 'stumpbrown'
-        },
-        concrete: 'classic',
-    },
-
-    '83': {
-        exterior: {
-            roof: 'redstone',
-            body: 'redstone',
-            base: 'brownstone'
-        },
-        windows: {
-            roof: 'black',
-            body: 'black',
-            base: 'black'
-        },
-        slope: {
-            roof: 'oak',
-            body: 'oak',
-            base: 'oak'
-        },
-        crown: {
-            roof: 'oak',
-            body: 'oak',
-            base: 'oak'
-        },
-        concrete: 'classic',
-    },
-
-    '84': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1407,7 +1407,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '85': {
+    '83': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1431,7 +1431,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '86': {
+    '84': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1455,7 +1455,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '87': {
+    '85': {
         exterior: {
             roof: 'redstone',
             body: 'redstone',
@@ -1481,7 +1481,7 @@ const colorLogicObj = {
 
     // Blush Buildings
 
-    '88': {
+    '86': {
         exterior: {
             roof: 'blush',
             body: 'blush',
@@ -1505,7 +1505,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '89': {
+    '87': {
         exterior: {
             roof: 'blush',
             body: 'blush',
@@ -1532,7 +1532,7 @@ const colorLogicObj = {
     //Golden Beige
 
 
-    '90': {
+    '88': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1556,7 +1556,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '91': {
+    '89': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1580,7 +1580,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '92': {
+    '90': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1604,7 +1604,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '92': {
+    '91': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1628,7 +1628,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '93': {
+    '92': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1653,7 +1653,7 @@ const colorLogicObj = {
     },
 
 
-    '94': {
+    '93': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1679,7 +1679,7 @@ const colorLogicObj = {
 
     //16 Court St Exterior
 
-    '95': {
+    '94': {
         exterior: {
             roof: 'beige',
             body: 'beige',
@@ -1694,6 +1694,30 @@ const colorLogicObj = {
             roof: 'goldenoat',
             body: 'goldenoat',
             base: 'goldenoat'
+        },
+        crown: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '95': {
+        exterior: {
+            roof: 'beige',
+            body: 'beige',
+            base: 'oat'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'gold',
+            body: 'gold',
+            base: 'gold'
         },
         crown: {
             roof: 'oak',
@@ -1720,38 +1744,14 @@ const colorLogicObj = {
             base: 'gold'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'gold',
+            body: 'gold',
             base: 'stumpbrown'
         },
         concrete: 'classic',
     },
 
     '97': {
-        exterior: {
-            roof: 'beige',
-            body: 'beige',
-            base: 'oat'
-        },
-        windows: {
-            roof: 'black',
-            body: 'black',
-            base: 'black'
-        },
-        slope: {
-            roof: 'gold',
-            body: 'gold',
-            base: 'gold'
-        },
-        crown: {
-            roof: 'gold',
-            body: 'gold',
-            base: 'stumpbrown'
-        },
-        concrete: 'classic',
-    },
-
-    '98': {
         exterior: {
             roof: 'beige',
             body: 'beige',
@@ -1775,7 +1775,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '99': {
+    '98': {
         exterior: {
             roof: 'beige',
             body: 'beige',
@@ -1799,7 +1799,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '100': {
+    '99': {
         exterior: {
             roof: 'beige',
             body: 'beige',
@@ -1825,7 +1825,7 @@ const colorLogicObj = {
 
     //1 Main St Exteriors
 
-    '101': {
+    '100': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -1849,7 +1849,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '102': {
+    '101': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -1864,6 +1864,30 @@ const colorLogicObj = {
             roof: 'stumpbrown',
             body: 'stumpbrown',
             base: 'stumpbrown'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'stumpbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '102': {
+        exterior: {
+            roof: 'beigegrey',
+            body: 'beigegrey',
+            base: 'beigegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'ink',
+            body: 'ink',
+            base: 'ink'
         },
         crown: {
             roof: 'stumpbrown',
@@ -1890,38 +1914,14 @@ const colorLogicObj = {
             base: 'ink'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
-            base: 'stumpbrown'
+            roof: 'ink',
+            body: 'ink',
+            base: 'ink'
         },
         concrete: 'classic',
     },
 
     '104': {
-        exterior: {
-            roof: 'beigegrey',
-            body: 'beigegrey',
-            base: 'beigegrey'
-        },
-        windows: {
-            roof: 'black',
-            body: 'black',
-            base: 'black'
-        },
-        slope: {
-            roof: 'ink',
-            body: 'ink',
-            base: 'ink'
-        },
-        crown: {
-            roof: 'ink',
-            body: 'ink',
-            base: 'ink'
-        },
-        concrete: 'classic',
-    },
-
-    '105': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -1946,7 +1946,7 @@ const colorLogicObj = {
     },
 
 
-    '106': {
+    '105': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -1970,7 +1970,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '107': {
+    '106': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -1994,7 +1994,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '108': {
+    '107': {
         exterior: {
             roof: 'beigegrey',
             body: 'beigegrey',
@@ -2021,7 +2021,7 @@ const colorLogicObj = {
     //26 Court St Exteriors
 
 
-    '109': {
+    '108': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2045,7 +2045,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '110': {
+    '109': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2070,7 +2070,7 @@ const colorLogicObj = {
     },
 
 
-    '111': {
+    '110': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2095,7 +2095,7 @@ const colorLogicObj = {
     },
 
 
-    '112': {
+    '111': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2119,7 +2119,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '113': {
+    '112': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2144,7 +2144,7 @@ const colorLogicObj = {
     },
 
 
-    '114': {
+    '113': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2168,7 +2168,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '115': {
+    '114': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2192,7 +2192,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '116': {
+    '115': {
         exterior: {
             roof: 'cacao',
             body: 'cacao',
@@ -2218,7 +2218,7 @@ const colorLogicObj = {
 
     // Orange Buildings
 
-    '117': {
+    '116': {
         exterior: {
             roof: 'orangestone',
             body: 'orangestone',
@@ -2243,7 +2243,7 @@ const colorLogicObj = {
     },
 
     
-    '118': {
+    '117': {
         exterior: {
             roof: 'orangestone',
             body: 'orangestone',
@@ -2268,7 +2268,7 @@ const colorLogicObj = {
     },
 
 
-    '119': {
+    '118': {
         exterior: {
             roof: 'orangestone',
             body: 'orangestone',
