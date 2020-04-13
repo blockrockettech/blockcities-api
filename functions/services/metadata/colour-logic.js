@@ -811,12 +811,12 @@ const colorLogicObj = {
         },
         slope: {
             roof: 'ink',
-            body: 'ink',
-            base: 'goldenoat'
+            body: 'oak',
+            base: 'oak'
         },
         crown: {
-            roof: 'ink',
-            body: 'ink',
+            roof: 'goldenoat',
+            body: 'goldenoat',
             base: 'goldenoat'
         },
         concrete: 'classic',
@@ -843,8 +843,8 @@ const colorLogicObj = {
             base: 'agedcopper'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -862,13 +862,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'ink',
+            body: 'ink',
             base: 'ink'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -886,13 +886,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'goldenoat',
+            body: 'goldenoat',
             base: 'goldenoat'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -910,13 +910,13 @@ const colorLogicObj = {
             base: 'lightgrey'
         },
         slope: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'agedcopper',
+            body: 'agedcopper',
             base: 'agedcopper'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -934,13 +934,13 @@ const colorLogicObj = {
             base: 'gold'
         },
         slope: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'agedcopper',
+            body: 'agedcopper',
             base: 'agedcopper'
         },
         crown: {
-            roof: 'stumpbrown',
-            body: 'stumpbrown',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -958,13 +958,13 @@ const colorLogicObj = {
             base: 'lightgrey'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'gold',
+            body: 'gold',
             base: 'gold'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -982,14 +982,14 @@ const colorLogicObj = {
             base: 'lightgrey'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'gold',
+            body: 'gold',
             base: 'gold'
         },
         crown: {
-            roof: '',
-            body: '',
-            base: 'gold'
+            roof: 'gold',
+            body: 'gold',
+            base: 'black'
         },
         concrete: 'classic',
     },
@@ -1006,13 +1006,13 @@ const colorLogicObj = {
             base: 'lightcarbon'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'gold',
+            body: 'gold',
             base: 'gold'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'black',
+            body: 'black',
             base: 'black'
         },
         concrete: 'classic',
@@ -2107,13 +2107,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'ink',
+            body: 'ink',
             base: 'ink'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'goldenoat',
+            body: 'goldenoat',
             base: 'goldenoat'
         },
         concrete: 'classic',
@@ -2131,13 +2131,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'ink',
+            body: 'ink',
             base: 'ink'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'goldenoat',
+            body: 'goldenoat',
             base: 'goldenoat'
         },
         concrete: 'classic',
@@ -2156,13 +2156,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'ink',
+            body: 'ink',
             base: 'ink'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'oak',
+            body: 'oak',
             base: 'oak'
         },
         concrete: 'classic',
@@ -2180,13 +2180,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'ink',
+            body: 'ink',
             base: 'ink'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'stumpbrown'
         },
         concrete: 'classic',
@@ -2204,13 +2204,13 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: '',
-            body: '',
+            roof: 'agedcopper',
+            body: 'agedcopper',
             base: 'agedcopper'
         },
         crown: {
-            roof: '',
-            body: '',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'stumpbrown'
         },
         concrete: 'classic',
