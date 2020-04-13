@@ -1086,7 +1086,7 @@ const colorLogicObj = {
         crown: {
             roof: 'silver',
             body: 'silver',
-            base: 'silver'
+            base: 'black'
         },
         concrete: 'classic',
     },
@@ -1306,7 +1306,7 @@ const colorLogicObj = {
         crown: {
             roof: 'brownstone',
             body: 'brownstone',
-            base: 'brownstone'
+            base: 'black'
         },
         concrete: 'classic',
     },
@@ -1580,7 +1580,7 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-    '91': {
+    '92': {
         exterior: {
             roof: 'goldenbeige',
             body: 'goldenbeige',
@@ -1698,7 +1698,7 @@ const colorLogicObj = {
         crown: {
             roof: 'oak',
             body: 'oak',
-            base: 'oak'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1722,7 +1722,7 @@ const colorLogicObj = {
         crown: {
             roof: 'oak',
             body: 'oak',
-            base: 'oak'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1746,7 +1746,7 @@ const colorLogicObj = {
         crown: {
             roof: 'gold',
             body: 'gold',
-            base: 'gold'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1770,7 +1770,7 @@ const colorLogicObj = {
         crown: {
             roof: 'oak',
             body: 'oak',
-            base: 'oak'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1794,7 +1794,7 @@ const colorLogicObj = {
         crown: {
             roof: 'oak',
             body: 'oak',
-            base: 'oak'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1818,7 +1818,7 @@ const colorLogicObj = {
         crown: {
             roof: 'oak',
             body: 'oak',
-            base: 'oak'
+            base: 'stumpbrown'
         },
         concrete: 'classic',
     },
@@ -1842,8 +1842,8 @@ const colorLogicObj = {
             base: 'oak'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'oak'
         },
         concrete: 'classic',
@@ -1938,8 +1938,8 @@ const colorLogicObj = {
             base: 'bronze'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'oak'
         },
         concrete: 'classic',
@@ -1963,8 +1963,8 @@ const colorLogicObj = {
             base: 'twiceagedcopper'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'oak'
         },
         concrete: 'classic',
@@ -1987,8 +1987,8 @@ const colorLogicObj = {
             base: 'gold'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'oak'
         },
         concrete: 'classic',
@@ -2011,8 +2011,8 @@ const colorLogicObj = {
             base: 'hottop'
         },
         crown: {
-            roof: 'oak',
-            body: 'oak',
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
             base: 'oak'
         },
         concrete: 'classic',
@@ -2215,6 +2215,86 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+
+    // Orange Buildings
+
+    '117': {
+        exterior: {
+            roof: 'orangestone',
+            body: 'orangestone',
+            base: 'orangestone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'oak'
+        },
+        crown: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'oak'
+        },
+        concrete: 'classic',
+    },
+
+    
+    '118': {
+        exterior: {
+            roof: 'orangestone',
+            body: 'orangestone',
+            base: 'orangestone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'oak',
+            body: 'oak',
+            base: 'oak'
+        },
+        crown: {
+            roof: 'orangebeige',
+            body: 'orangebeige',
+            base: 'orangebeige'
+        },
+        concrete: 'classic',
+    },
+
+
+    '119': {
+        exterior: {
+            roof: 'orangestone',
+            body: 'orangestone',
+            base: 'orangestone'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'bronze',
+            body: 'bronze',
+            base: 'bronze'
+        },
+        crown: {
+            roof: 'orangebeige',
+            body: 'orangebeige',
+            base: 'orangebeige'
+        },
+        concrete: 'classic',
+    },
+
+   
+
+
 
 
 

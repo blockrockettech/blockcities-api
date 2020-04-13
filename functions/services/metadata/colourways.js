@@ -693,6 +693,22 @@ module.exports = {
     },
 
     crown: {
+        orangebeige: {
+            left: {
+                prim: '#9D8C76',
+                dark: '#93826D',
+            },
+            right: {
+                prim: '#CCB395',
+                dark: '#BDA588',
+            },
+            top: {
+                prim: '#FFE8C9',
+                dark: '#DDC6A9',
+            }
+        },
+
+
         redstone: {
             left: {
                 prim: '#6B382B',
