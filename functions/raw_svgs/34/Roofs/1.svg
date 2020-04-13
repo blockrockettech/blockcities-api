@@ -29,11 +29,11 @@
         fill: #a6c6a4;
       }
 
-      .crown-L {
+      .crown-L-prim{
         fill: #8fa88c;
       }
 
-      .crown-R {
+      .crown-R-prim{
         fill: #bfd7bd;
       }
 
@@ -63,7 +63,7 @@
     </style>
   </defs>
   <title>Artboard 3</title>
-  <g>
+  <g id="root">
     <path class="top-light" d="M290,252.591l-10,5.774L120,165.989V154.442L90,137.121V125.574L0,73.613,127.5,0l230,132.791L450,79.386l130,75.056L500,200.63v11.547L390,275.685l-10-5.773-30,17.32Z"/>
     <path class="top-prim" d="M290,246.818l-10,5.773L125,163.102V151.555L95,134.234V122.687L10,73.612,127.5,5.774l230,132.79L450,85.16l120,69.282-75,43.301V209.29L390,269.912l-10-5.774-30,17.321Z"/>
     <path class="exterior-L-light" d="M120,10.104V21.651l7.5-4.33,230,132.79V138.564L127.5,5.774Z"/>
@@ -88,12 +88,12 @@
     <path class="crown-R-dark" d="M390,217.95l87.5-50.518,5-8.66v-5.774L390,206.403Z"/>
     <path class="crown-R-dark" d="M280,200.63l10-5.774V183.309l-10,5.774Z"/>
     <path class="crown-R-dark" d="M350,229.497l30-17.32V200.63l-30,17.32Z"/>
-    <path class="crown-L" d="M125,93.82l155,89.489,5-2.887v11.547l-5,2.887L125,105.367Z"/>
-    <path class="crown-L" d="M350,212.177v11.547l-60-34.641V177.536Z"/>
-    <path class="crown-L" d="M380,206.403l10,5.774V200.63l-10-5.774Z"/>
-    <path class="crown-R" d="M487.5,144.338v11.547L390,212.177V200.63Z"/>
-    <path class="crown-R" d="M280,194.856l10-5.773V177.536l-10,5.773Z"/>
-    <path class="crown-R" d="M350,212.177l30-17.321v11.547l-30,17.321Z"/>
+    <path class="crown-L-prim" d="M125,93.82l155,89.489,5-2.887v11.547l-5,2.887L125,105.367Z"/>
+    <path class="crown-L-prim" d="M350,212.177v11.547l-60-34.641V177.536Z"/>
+    <path class="crown-L-prim" d="M380,206.403l10,5.774V200.63l-10-5.774Z"/>
+    <path class="crown-R-prim" d="M487.5,144.338v11.547L390,212.177V200.63Z"/>
+    <path class="crown-R-prim" d="M280,194.856l10-5.773V177.536l-10,5.773Z"/>
+    <path class="crown-R-prim" d="M350,212.177l30-17.321v11.547l-30,17.321Z"/>
     <g>
       <path class="window-L-prim" d="M147.5,132.791l10,5.773v20.208l-10-5.774Z"/>
       <path class="top-prim" d="M157.5,161.658,145,154.442v-2.887l2.5-1.444v2.887l10,5.774Z"/>

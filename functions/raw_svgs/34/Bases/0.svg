@@ -49,7 +49,7 @@
         fill: #ffc8c6;
       }
 
-      .crown-R {
+      .crown-R-prim{
         fill: #bfd7bd;
       }
 
@@ -61,7 +61,7 @@
         fill: #6e806c;
       }
 
-      .crown-L {
+      .crown-L-prim{
         fill: #8fa88c;
       }
 
@@ -83,7 +83,7 @@
     </style>
   </defs>
   <title>Artboard 17</title>
-  <g>
+  <g id="root">
     <path class="cls-1" d="M0,433.026,395.0181,204.96l500,288.675L500,721.7021Z"/>
     <path class="cls-2" d="M500,721.7021v5.7729l395.018-228.067v-5.773Z"/>
     <path class="cls-3" d="M500.0181,721.688v5.7739L.0181,438.787v-5.774Z"/>
@@ -188,17 +188,17 @@
       <path class="exterior-L-light" d="M642.5271,515.285l-2.5-1.443V490.748l2.5,1.443Z"/>
       <path class="exterior-R-light" d="M642.5271,515.285h0c2.755-9.559,11.152-20.877,18.741-25.258h0c7.589-4.382,15.99-2.765,18.75,3.608h0V470.541l-37.491,21.65Z"/>
     </g>
-    <path class="crown-R" d="M500.0181,456.107l330-190.525V254.035l-330,189.848Z"/>
-    <path class="crown-R" d="M500.0181,508.069l330-190.526V305.996l-330,189.848Z"/>
-    <path class="crown-R" d="M500.0181,554.257l330-190.526v-5.773l-330,189.8479Z"/>
+    <path class="crown-R-prim" d="M500.0181,456.107l330-190.525V254.035l-330,189.848Z"/>
+    <path class="crown-R-prim" d="M500.0181,508.069l330-190.526V305.996l-330,189.848Z"/>
+    <path class="crown-R-prim" d="M500.0181,554.257l330-190.526v-5.773l-330,189.8479Z"/>
     <path class="crown-top-prim" d="M830.0181,254.035,390.0181,0l-330,190.526,440,254.034Z"/>
     <path class="crown-top-prim" d="M830.0181,305.996l-10-5.773v5.773l-320,184.752-430-248.26v-5.774l-10,5.774,440,254.034Z"/>
     <path class="crown-top-prim" d="M830.0181,357.958l-10-5.774v5.774l-320,184.752-430-248.261v-5.773l-10,5.773,440,254.0339Z"/>
     <path class="crown-L-dark" d="M65.0181,204.96l5,8.66,430,248.261v-5.774Z"/>
     <path class="crown-L-dark" d="M65.0181,256.921l5,8.661,430,248.26v-5.773Z"/>
-    <path class="crown-L" d="M60.0181,190.526v11.547l440,254.034V444.56Z"/>
-    <path class="crown-L" d="M60.0181,242.488v11.547l440,254.034V496.522Z"/>
-    <path class="crown-L" d="M60.0181,294.449v5.774l440,254.034v-5.7741Z"/>
+    <path class="crown-L-prim" d="M60.0181,190.526v11.547l440,254.034V444.56Z"/>
+    <path class="crown-L-prim" d="M60.0181,242.488v11.547l440,254.034V496.522Z"/>
+    <path class="crown-L-prim" d="M60.0181,294.449v5.774l440,254.034v-5.7741Z"/>
     <path class="exterior-R-dark" d="M500.0181,461.881l320-184.752v28.867l-320,184.752Z"/>
     <path class="exterior-L-dark" d="M500.0181,461.881l-430-248.261v28.868l430,248.26Z"/>
     <path class="crown-R-dark" d="M825.0181,268.468l-5,8.661-320,184.752v-5.774Z"/>

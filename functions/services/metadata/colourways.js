@@ -422,23 +422,25 @@ module.exports = {
             }
         },
 
-        whitestone: {
+        cacao: {
             left: {
-                prim: '#',
-                light: '#',
-                dark: '#',
+                prim: '#423B2D',
+                light: '#4A4536',
+                dark: '#393326',
             },
             right: {
-                prim: '#',
-                light: '#',
-                dark: '#',
+                prim: '#625A49',
+                light: '#6A6352',
+                dark: '#423D2F',
             },
             top: {
-                prim: '#',
-                light: '#',
-                dark: '#',
+                prim: '#D9C8B5',
+                light: '#EEDFCE',
+                dark: '#C8B8A5',
             }
         },
+
+        
 
 
 
