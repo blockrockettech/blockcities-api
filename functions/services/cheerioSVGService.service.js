@@ -45,9 +45,6 @@ class CheerioSVGService {
             _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
             _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
 
-            _.forEach(curtainsFill.left, (v, k) => $(`.curtain-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
-            _.forEach(curtainsFill.right, (v, k) => $(`.curtain-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
-
             if (slopeFill) {
                 _.forEach(slopeFill.left, (v, k) => $(`.slope-L-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
                 _.forEach(slopeFill.right, (v, k) => $(`.slope-R-${k.replace('_', '-').replace('_', '-')}`).attr('style', `fill: ${v}`));
