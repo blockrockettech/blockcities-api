@@ -130,6 +130,7 @@ class BlockcitiesContractService {
 
         const contract = connectToCityBuildingValidator(network);
         const buildingMappingsArray = await contract.buildingMappingsArray();
+        const exteriorMappingsArray = await contract.exteriorMappingsArray();
 
         const promises = buildingMappingsArray[0].map(async (building) => {
 
@@ -138,10 +139,11 @@ class BlockcitiesContractService {
             const buildingRoofMappingsArray = await contract.buildingRoofMappingsArray(building);
 
             return {
-                'building': building,
+                'building': building.toString(),
                 'base': buildingBaseMappingsArray['0'].map(val => val.toString()),
                 'body': buildingBodyMappingsArray['0'].map(val => val.toString()),
                 'roof': buildingRoofMappingsArray['0'].map(val => val.toString()),
+                'exteriors': exteriorMappingsArray['0'].map(val => val.toString()),
             }
         });
 
