@@ -48,6 +48,50 @@ const colorMapper = (color) => {
             return 'Carbon';
         case 'lightcarbon':
             return 'Light Carbon';
+        case 'beige':
+                return 'Beige';
+        case 'oat':
+                return 'Oat';
+        case 'goldenoat':
+                return 'Golden Oat';
+        case 'limegrey':
+                return 'Lime Grey';
+        case 'lightbrown':
+                return 'Light Brown';
+        case 'truegrey':
+                return 'True Grey';
+        case 'redstone':
+                return 'Red Stone';
+        case 'brownstone':
+                return 'Brown Stone';
+        case 'beigegrey':
+                return 'Beige Grey';
+        case 'cacao':
+                return 'Cacao';
+        case 'navy':
+                return 'Navy';
+        case 'hottop':
+                return 'Hot Top';
+        case 'twiceagedcopper':
+                return 'Twice Aged Copper';
+        case 'gold':
+                return 'Gold';
+        case 'silver':
+                return 'Silver';
+        case 'bronze':
+                return 'Bronze';
+        case 'dullbrown':
+                return 'Dullbrown';
+        case 'stumpbrown':
+                return 'Stumpbrown';
+        case 'oak':
+                return 'Oak';
+        case 'agedcopper':
+                return 'Aged Copper';
+        case 'ink':
+                return 'Ink';
+        case 'dullbrown':
+                return 'Dull Brown';
         default:
             console.error(`Unable to map color [${color}]`);
             return _.toString(color);
@@ -124,6 +168,16 @@ const buildingNameMapper = ({building, special}) => {
             return '845 United Nations Plaza';
         case 29:
             return '1 Parking Deck Way';
+        case 30:
+            return '16 Court';
+        case 31:
+            return '1 Main';
+        case 32:
+            return '365 Bridge';
+        case 33:
+            return 'Williamsburgh Savings Bank Tower';
+        case 34:
+            return '26 Court';
         default:
             console.error(`Unable to map building [${building}]`);
             return _.toString(building);

@@ -1208,7 +1208,7 @@ module.exports = {
 
     31: {
         bases: {
-            0: { buildingType: '', buildingUse: 'Business' },
+            0: { buildingType: '1 Main', buildingUse: 'Business' },
             
 
         },
