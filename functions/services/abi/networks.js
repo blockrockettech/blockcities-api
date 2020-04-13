@@ -3,7 +3,7 @@ const Eth = require('ethjs');
 const Web3 = require('web3');
 const functions = require('firebase-functions');
 
-const INFURA_KEY = functions.config().infura.key;
+const INFURA_KEY = '1'; //functions.config().infura.key;
 if (!INFURA_KEY) {
     throw new Error('No Infura key found');
 }

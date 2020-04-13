@@ -6,7 +6,7 @@ const events = require('express').Router({ mergeParams: true });
 const eventsService = require('../../services/events/events.service');
 const buildingDataService = require('../../services/building.data.service');
 
-const eventStreamKey = functions.config().eventstream.api.key;
+const eventStreamKey = '1'; //functions.config().eventstream.api.key;
 if (!eventStreamKey) {
     throw new Error('No event stream API Key found - is the project setup correctly - see README');
 }
