@@ -810,8 +810,8 @@ const colorLogicObj = {
             base: 'black'
         },
         slope: {
-            roof: 'ink',
-            body: 'ink',
+            // roof: 'ink',
+            // body: 'ink',
             base: 'goldenoat'
         },
         crown: {
@@ -845,6 +845,377 @@ const colorLogicObj = {
         },
         concrete: 'classic',
     },
+
+    
+
+    //Black Towers
+
+    '61': {
+        exterior: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'agedcopper'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '62': {
+        exterior: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'ink'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '63': {
+        exterior: {
+            roof: 'darkgrey',
+            body: 'darkgrey',
+            base: 'darkgrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'goldenoat'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '64': {
+        exterior: {
+            roof: 'truegrey',
+            body: 'truegrey',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'lightcarbon',
+            body: 'lightcarbon',
+            base: 'lightgrey'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'agedcopper'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '65': {
+        exterior: {
+            roof: 'truegrey',
+            body: 'truegrey',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'gold'
+        },
+        slope: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'agedcopper'
+        },
+        crown: {
+            roof: 'stumpbrown',
+            body: 'stumpbrown',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '66': {
+        exterior: {
+            roof: 'truegrey',
+            body: 'truegrey',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'lightgrey'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '67': {
+        exterior: {
+            roof: 'carbon',
+            body: 'carbon',
+            base: 'truegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'lightgrey'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        concrete: 'classic',
+    },
+
+    '68': {
+        exterior: {
+            roof: 'carbon',
+            body: 'carbon',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'lightcarbon',
+            body: 'lightcarbon',
+            base: 'lightcarbon'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '69': {
+        exterior: {
+            roof: 'carbon',
+            body: 'carbon',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'lightcarbon',
+            body: 'lightcarbon',
+            base: 'lightcarbon'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'bronze'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+    '70': {
+        exterior: {
+            roof: 'carbon',
+            body: 'carbon',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'lightcarbon',
+            body: 'lightcarbon',
+            base: 'lightcarbon'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'silver'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'black'
+        },
+        concrete: 'classic',
+    },
+
+
+    '71': {
+        exterior: {
+            roof: 'carbon',
+            body: 'carbon',
+            base: 'carbon'
+        },
+        windows: {
+            roof: 'lightcarbon',
+            body: 'lightcarbon',
+            base: 'lightcarbon'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'silver'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'silver'
+        },
+        concrete: 'classic',
+    },
+
+    //Wburg Tower Exterior
+
+    '72': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '73': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'agedcopper'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '74': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'gold'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+    '75': {
+        exterior: {
+            roof: 'lightbrown',
+            body: 'lightbrown',
+            base: 'limegrey'
+        },
+        windows: {
+            roof: 'black',
+            body: 'black',
+            base: 'black'
+        },
+        slope: {
+            roof: '',
+            body: '',
+            base: 'bronze'
+        },
+        crown: {
+            roof: '',
+            body: '',
+            base: 'dullbrown'
+        },
+        concrete: 'classic',
+    },
+
+
+
+
 
 
     '666': {
