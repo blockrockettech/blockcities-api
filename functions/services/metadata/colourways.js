@@ -172,7 +172,7 @@ module.exports = {
                 prim: '#F9E8D2',
                 light: '#FFF4DD',
                 dark: '#EEDDC6',
-            } 
+            }
         },
         blush: {
             left: {
@@ -189,7 +189,7 @@ module.exports = {
                 prim: '#ECCDC4',
                 light: '#FDE2DA',
                 dark: '#E1C1B9',
-            } 
+            }
         },
         dijon: {
             left: {
@@ -206,7 +206,7 @@ module.exports = {
                 prim: '#F2D6BC',
                 light: '#FFE4CA',
                 dark: '#EACEB4',
-            } 
+            }
         },
         coolgrey: {
             left: {
@@ -223,7 +223,7 @@ module.exports = {
                 prim: '#D5D5DB',
                 light: '#ECECF0',
                 dark: '#CDCDD2',
-            } 
+            }
         },
         limestone: {
             left: {
@@ -240,9 +240,9 @@ module.exports = {
                 prim: '#F2E3D5',
                 light: '#FFF3E8',
                 dark: '#E6D6C7',
-            } 
-         },
-         carbon: {
+            }
+        },
+        carbon: {
             left: {
                 prim: '#1E1F22',
                 light: '#27282C',
@@ -257,7 +257,7 @@ module.exports = {
                 prim: '#5B5C5E',
                 light: '#9FA2A6',
                 dark: '#4C4D4F',
-            } 
+            }
         },
 
         beige: {
@@ -275,7 +275,7 @@ module.exports = {
                 prim: '#E6DCD4',
                 light: '#F0E6DE',
                 dark: '#CAB7A5',
-            } 
+            }
         },
 
         oat: {
@@ -293,7 +293,7 @@ module.exports = {
                 prim: '#DFD8C9',
                 light: '#EAE4D8',
                 dark: '#CCC3AF',
-            } 
+            }
         },
 
         goldenoat: {
@@ -311,7 +311,7 @@ module.exports = {
                 prim: '#DFD8C9',
                 light: '#EAE4D8',
                 dark: '#CCC3AF',
-            } 
+            }
         },
     },
 
@@ -376,7 +376,7 @@ module.exports = {
                 prim: '#DFD8C9',
                 light: '#EAE4D8',
                 dark: '#CCC3AF',
-            } 
+            }
         },
 
         ink: {
@@ -394,7 +394,7 @@ module.exports = {
                 prim: '#8B8B8B',
                 light: '#A8A8A8',
                 dark: '#777777',
-            } 
+            }
         },
     },
 
@@ -459,7 +459,7 @@ module.exports = {
                 prim: '#DFD8C9',
                 light: '#EAE4D8',
                 dark: '#CCC3AF',
-            } 
+            }
         },
 
         ink: {
@@ -477,10 +477,10 @@ module.exports = {
                 prim: '#8B8B8B',
                 light: '#A8A8A8',
                 dark: '#777777',
-            } 
+            }
         },
     },
-        
+
 
     windows: {
         black: {

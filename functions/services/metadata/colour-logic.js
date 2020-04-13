@@ -846,7 +846,6 @@ const colorLogicObj = {
         concrete: 'classic',
     },
 
-
     '666': {
         exterior: {
             roof: 'red',
