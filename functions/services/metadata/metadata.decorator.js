@@ -298,10 +298,10 @@ const exteriorColorwayName = ({ exteriorColorway, special }) => {
             roofWindowColorway: colorMapper(colorArray.windows.roof),
             bodyWindowColorway: colorMapper(colorArray.windows.body),
             baseWindowColorway: colorMapper(colorArray.windows.base),
-            roofSlopeColorway: colorMapper(colorArray.slope.roof),
-            roofCrownColorway: colorMapper(colorArray.crown.roof),
-            bodyCrownColorway: colorMapper(colorArray.crown.body),
-            baseCrownColorway: colorMapper(colorArray.crown.base)
+            roofSlopeColorway: colorArray.slope ? colorMapper(colorArray.slope.roof) : undefined,
+            roofCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.roof) : undefined,
+            bodyCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.body) : undefined,
+            baseCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.base) : undefined
         };
     }
 
