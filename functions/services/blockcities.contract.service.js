@@ -6,6 +6,11 @@ const {
     web3HttpInstance
 } = require('./abi/networks');
 
+const {ethers, utils} = require('ethers');
+const {getWallet} = require('./provider');
+
+const contracts = require('blockcities-contract-artifacts').contracts;
+
 const moment = require('moment');
 
 class BlockcitiesContractService {
@@ -126,28 +131,54 @@ class BlockcitiesContractService {
     }
 
     async validatorRotation(network) {
-        console.log(`Finding rotation on network [${network}]`);
+        try {
+            console.log(`Finding rotation on network [${network}]`);
 
-        const contract = connectToCityBuildingValidator(network);
-        const buildingMappingsArray = await contract.buildingMappingsArray();
-        const exteriorMappingsArray = await contract.exteriorMappingsArray();
+            const contract = connectToCityBuildingValidator(network);
+            const buildingMappingsArray = await contract.buildingMappingsArray();
+            const exteriorMappingsArray = await contract.exteriorMappingsArray();
 
-        const promises = buildingMappingsArray[0].map(async (building) => {
+            const promises = buildingMappingsArray[0].map(async (building) => {
 
-            const buildingBaseMappingsArray = await contract.buildingBaseMappingsArray(building);
-            const buildingBodyMappingsArray = await contract.buildingBodyMappingsArray(building);
-            const buildingRoofMappingsArray = await contract.buildingRoofMappingsArray(building);
+                const buildingBaseMappingsArray = await contract.buildingBaseMappingsArray(building);
+                const buildingBodyMappingsArray = await contract.buildingBodyMappingsArray(building);
+                const buildingRoofMappingsArray = await contract.buildingRoofMappingsArray(building);
 
-            return {
-                'building': building.toString(),
-                'base': buildingBaseMappingsArray['0'].map(val => val.toString()),
-                'body': buildingBodyMappingsArray['0'].map(val => val.toString()),
-                'roof': buildingRoofMappingsArray['0'].map(val => val.toString()),
-                'exteriors': exteriorMappingsArray['0'].map(val => val.toString()),
-            }
-        });
+                return {
+                    'building': building.toString(),
+                    'base': buildingBaseMappingsArray['0'].map(val => val.toString()),
+                    'body': buildingBodyMappingsArray['0'].map(val => val.toString()),
+                    'roof': buildingRoofMappingsArray['0'].map(val => val.toString()),
+                    'exteriors': exteriorMappingsArray['0'].map(val => val.toString()),
+                };
+            });
 
-        return Promise.all(promises);
+            return Promise.all(promises);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async updateRotation(network, rotation) {
+        try {
+            console.log(`Updating rotation on network [${network}]`);
+
+            const address = contracts.addresses.CityBuildingValidator(network).address;
+            const abi = contracts.addresses.CityBuildingValidator(network).abi;
+            const signer = getWallet(network);
+
+            const contract = new ethers.Contract(
+                address,
+                abi,
+                signer,
+            );
+
+            return await contract.updateRotation(utils.bigNumberify(rotation), {
+                gasLimit: 400000
+            });
+        } catch (e) {
+            console.error(e);
+        }
     }
 }
 

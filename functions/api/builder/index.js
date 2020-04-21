@@ -86,4 +86,19 @@ builder.get('/network/:network/validator/current', async (request, response) => 
     }
 });
 
+builder.get('/network/:network/validator/rotation/:rotation/key/:key', async (request, response) => {
+    try {
+        const network = request.params.network;
+        const rotation = request.params.rotation;
+        const key = request.params.key;
+
+        await blockcitiesContractService.updateRotation(network, rotation);
+
+        return response.status(200);
+    } catch (e) {
+        console.error(e);
+        return response.status(400);
+    }
+});
+
 module.exports = builder;
