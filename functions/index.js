@@ -62,11 +62,12 @@ exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes
         await require('./services/events/events.service').processEventsForAddress(contracts.addresses.BlockCities(4).address);
     });
 
-exports.blockCitiesRotater =  functions.pubsub.schedule('*/1 * * * *')
+exports.blockCitiesRotater =  functions.pubsub.schedule('0,10,20,30,40,50 * * * *')
     .timeZone('America/New_York')
     .onRun(async (context) => {
-        console.log('This will be run every min in Eastern!');
-        return null;
+        const network = 1;
+        console.log(`Rotating network ${network}`);
+        await require('./services/blockcities.contract.service').rotate(network);
     });
 
 /**

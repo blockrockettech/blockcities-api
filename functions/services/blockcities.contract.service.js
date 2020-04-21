@@ -174,7 +174,49 @@ class BlockcitiesContractService {
             );
 
             return await contract.updateRotation(utils.bigNumberify(rotation), {
-                gasLimit: 400000
+                gasLimit: 400000,
+                gasPrice: 14000000000,
+            });
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async rotate(network) {
+        try {
+            console.log(`Updating rotation on network [${network}]`);
+
+            // FIXME need this somewhere better...
+            const rotationMappings = {};
+            rotationMappings['4'] = 1;
+            rotationMappings['1'] = 9;
+
+            const contractEthJs = connectToCityBuildingValidator(network);
+            const currentRotation = await contractEthJs.rotation();
+            const currentRotationInt = parseInt(currentRotation[0].toString(10));
+
+            console.log(`Current rotation ${currentRotationInt} on network [${network}]`);
+            console.log(`Rotation max ${rotationMappings[network.toString()]} on network [${network}]`);
+            let newRotationInt = currentRotationInt + 1;
+            if (newRotationInt > rotationMappings[network.toString()]) {
+               newRotationInt = 0;
+            }
+            console.log(`New rotation ${newRotationInt} on network [${network}]`);
+
+            const address = contracts.addresses.CityBuildingValidator(network).address;
+            const abi = contracts.addresses.CityBuildingValidator(network).abi;
+            const signer = getWallet(network);
+
+            const contract = new ethers.Contract(
+                address,
+                abi,
+                signer,
+            );
+
+            console.log(`Rotating to ${newRotationInt} on network [${network}]`);
+            return await contract.updateRotation(utils.bigNumberify(newRotationInt.toString()), {
+                gasLimit: 100000,
+                gasPrice: 14000000000, // 14 gwei
             });
         } catch (e) {
             console.error(e);
