@@ -3,9 +3,9 @@ const _ = require('lodash');
 const specialMappings = require('./special-data-mapping');
 const colorLogic = require('./colour-logic');
 const metadataMappings = require('./metadata-mappings');
-const {cityNameMapper} = require('./citymapper');
+const { cityNameMapper } = require('./citymapper');
 
-const {backgroundColorwaySwitch} = require('./background-colours');
+const { backgroundColorwaySwitch } = require('./background-colours');
 
 const colorMapper = (color) => {
 
@@ -49,49 +49,49 @@ const colorMapper = (color) => {
         case 'lightcarbon':
             return 'Light Carbon';
         case 'beige':
-                return 'Beige';
+            return 'Beige';
         case 'oat':
-                return 'Oat';
+            return 'Oat';
         case 'goldenoat':
-                return 'Golden Oat';
+            return 'Golden Oat';
         case 'limegrey':
-                return 'Lime Grey';
+            return 'Lime Grey';
         case 'lightbrown':
-                return 'Light Brown';
+            return 'Light Brown';
         case 'truegrey':
-                return 'True Grey';
+            return 'True Grey';
         case 'redstone':
-                return 'Red Stone';
+            return 'Red Stone';
         case 'brownstone':
-                return 'Brown Stone';
+            return 'Brown Stone';
         case 'beigegrey':
-                return 'Beige Grey';
+            return 'Beige Grey';
         case 'cacao':
-                return 'Cacao';
+            return 'Cacao';
         case 'navy':
-                return 'Navy';
+            return 'Navy';
         case 'hottop':
-                return 'Hot Top';
+            return 'Hot Top';
         case 'twiceagedcopper':
-                return 'Twice Aged Copper';
+            return 'Twice Aged Copper';
         case 'gold':
-                return 'Gold';
+            return 'Gold';
         case 'silver':
-                return 'Silver';
+            return 'Silver';
         case 'bronze':
-                return 'Bronze';
+            return 'Bronze';
         case 'dullbrown':
-                return 'Dullbrown';
+            return 'Dullbrown';
         case 'stumpbrown':
-                return 'Stumpbrown';
+            return 'Stumpbrown';
         case 'oak':
-                return 'Oak';
+            return 'Oak';
         case 'agedcopper':
-                return 'Aged Copper';
+            return 'Aged Copper';
         case 'ink':
-                return 'Ink';
+            return 'Ink';
         case 'dullbrown':
-                return 'Dull Brown';
+            return 'Dull Brown';
         default:
             console.error(`Unable to map color [${color}]`);
             return _.toString(color);
@@ -102,7 +102,7 @@ const classicOrSpecialMapper = (special) => {
     return (special < 1000000) ? 'Classic' : 'Special';
 };
 
-const buildingNameMapper = ({building, special}) => {
+const buildingNameMapper = ({ building, special }) => {
     if (special !== 0 && specialMappings[special]) {
         return specialMappings[special].name;
     }
@@ -184,13 +184,13 @@ const buildingNameMapper = ({building, special}) => {
     }
 };
 
-const windowTypeMapper = ({building, body, special}) => {
+const windowTypeMapper = ({ building, body, special }) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             return classicOrSpecialMapper(special);
         }
 
-        const {buildingType, buildingUse} = metadataMappings[building].bodies[body];
+        const { buildingType, buildingUse } = metadataMappings[building].bodies[body];
         return buildingType;
     } catch (e) {
         console.error(`Failed looking up type metadata for building ${building} body ${body} special ${special}`, e);
@@ -198,7 +198,7 @@ const windowTypeMapper = ({building, body, special}) => {
     }
 };
 
-const groundFloorMapper = ({building, base, special}) => {
+const groundFloorMapper = ({ building, base, special }) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             const value = classicOrSpecialMapper(special);
@@ -208,7 +208,7 @@ const groundFloorMapper = ({building, base, special}) => {
             };
         }
 
-        const {buildingType, buildingUse} = metadataMappings[building].bases[base];
+        const { buildingType, buildingUse } = metadataMappings[building].bases[base];
         return {
             groundFloorType: buildingType,
             groundFloorUse: buildingUse
@@ -222,7 +222,7 @@ const groundFloorMapper = ({building, base, special}) => {
     }
 };
 
-const roofTopMapper = ({building, roof, base, special}) => {
+const roofTopMapper = ({ building, roof, base, special }) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             const value = classicOrSpecialMapper(special);
@@ -235,14 +235,14 @@ const roofTopMapper = ({building, roof, base, special}) => {
         const found = metadataMappings[building].roofs[roof];
         if (!found) {
             // Trump tower does not have a roof mapping - when this happens fall back to the core mapping
-            const {groundFloorType, groundFloorUse} = groundFloorMapper({building, base, special});
+            const { groundFloorType, groundFloorUse } = groundFloorMapper({ building, base, special });
             return {
                 rooftopType: groundFloorType,
                 rooftopUse: groundFloorUse
             };
         }
 
-        const {buildingType, buildingUse} = found;
+        const { buildingType, buildingUse } = found;
         return {
             rooftopType: buildingType,
             rooftopUse: buildingUse
@@ -256,7 +256,7 @@ const roofTopMapper = ({building, roof, base, special}) => {
     }
 };
 
-const coreMapper = ({building, body, special}) => {
+const coreMapper = ({ building, body, special }) => {
     try {
         if (special !== 0 && specialMappings[special]) {
             const value = classicOrSpecialMapper(special);
@@ -266,7 +266,7 @@ const coreMapper = ({building, body, special}) => {
             };
         }
 
-        const {buildingType, buildingUse} = metadataMappings[building].bodies[body];
+        const { buildingType, buildingUse } = metadataMappings[building].bodies[body];
         return {
             coreType: buildingType,
             coreUse: buildingUse
@@ -280,7 +280,7 @@ const coreMapper = ({building, body, special}) => {
     }
 };
 
-const exteriorColorwayName = ({exteriorColorway, special}) => {
+const exteriorColorwayName = ({ exteriorColorway, special }) => {
     if (special !== 0 && specialMappings[special]) {
         return {
             exteriorColorway: classicOrSpecialMapper(special),
@@ -291,8 +291,6 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
     }
 
     const colorArray = colorLogic[exteriorColorway];
-    // console.log('exteriorColorway', exteriorColorway);
-    // console.log('colorArray', colorArray);
     if (colorArray) {
         return {
             // FIXME this isnt valid .. may cause issues (fixing last minute bug on live)
@@ -300,6 +298,10 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
             roofWindowColorway: colorMapper(colorArray.windows.roof),
             bodyWindowColorway: colorMapper(colorArray.windows.body),
             baseWindowColorway: colorMapper(colorArray.windows.base),
+            roofSlopeColorway: colorArray.slope ? colorMapper(colorArray.slope.roof) : null,
+            roofCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.roof) : null,
+            bodyCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.body) : null,
+            baseCrownColorway: colorArray.crown ? colorMapper(colorArray.crown.base) : null
         };
     }
 
@@ -309,7 +311,7 @@ const exteriorColorwayName = ({exteriorColorway, special}) => {
     };
 };
 
-const backgroundColorwayName = ({backgroundColorway, special}) => {
+const backgroundColorwayName = ({ backgroundColorway, special }) => {
     if (special !== 0 && specialMappings[special]) {
         return classicOrSpecialMapper(special);
     }

@@ -18,7 +18,7 @@ void async function () {
     const { tokenIdPointer } = await blockcitiesDataService.tokenPointers(NETWORK);
     console.log(`Total tokens ${tokenIdPointer}`);
 
-    for (let i = 3083; i <= tokenIdPointer; i++) {
+    for (let i = 3160; i <= tokenIdPointer; i++) {
         await blockcitiesDataService.updateBuildingData(NETWORK, i);
         console.log(`Update build data for ID [${i}]`);
     }
