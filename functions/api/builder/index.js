@@ -4,6 +4,9 @@ const blockcitiesContractService = require('../../services/blockcities.contract.
 
 const builder = require('express').Router({mergeParams: true});
 
+const functions = require('firebase-functions');
+const webflowKey = functions.config().webflow.api.key;
+
 // builder.get('/:building/:baseNo/:bodyNo/:roofNo', async (request, response) => {
 //
 //     try {
@@ -92,12 +95,16 @@ builder.get('/network/:network/validator/rotation/:rotation/key/:key', async (re
         const rotation = request.params.rotation;
         const key = request.params.key;
 
+        if (key !== webflowKey) {
+            return response.status(401).contentType('application/json').send('nok');
+        }
+
         await blockcitiesContractService.updateRotation(network, rotation);
 
-        return response.status(200);
+        return response.status(200).contentType('application/json').send('ok');
     } catch (e) {
         console.error(e);
-        return response.status(400);
+        return response.status(400).contentType('application/json').send('nok');
     }
 });
 

@@ -62,6 +62,13 @@ exports.blockCitiesRinkebyScheduler = functions.pubsub.schedule('every 5 minutes
         await require('./services/events/events.service').processEventsForAddress(contracts.addresses.BlockCities(4).address);
     });
 
+exports.blockCitiesRotater =  functions.pubsub.schedule('*/1 * * * *')
+    .timeZone('America/New_York')
+    .onRun(async (context) => {
+        console.log('This will be run every min in Eastern!');
+        return null;
+    });
+
 /**
  * Triggered when a new event is added to the DB
  */
