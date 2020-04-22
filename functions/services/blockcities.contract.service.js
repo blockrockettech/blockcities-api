@@ -216,7 +216,7 @@ class BlockcitiesContractService {
             console.log(`Rotating to ${newRotationInt} on network [${network}]`);
             return await contract.updateRotation(utils.bigNumberify(newRotationInt.toString()), {
                 gasLimit: 100000,
-                gasPrice: 11000000000, // 14 gwei
+                gasPrice: 14000000000, // 14 gwei
             });
         } catch (e) {
             console.error(e);
